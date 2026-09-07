@@ -1,0 +1,641 @@
+[
+  {
+    "name": "Financial Services & FinTech",
+    "slug": "financial-services",
+    "number": 1,
+    "heading": "Money has been here before.",
+    "body": [
+      "Every era of finance has had its jetpack. Double-entry bookkeeping. The telegraph. Electronic trading. Each promised speed and terrified the people who had to run on it, and each followed the same cycle: early adopters got burned, the tools didn't pay off until the institutions around them changed, and the firms that steered instead of braced wrote the rules for the next fifty years.",
+      "AI is finance's jetpack now. Models that price risk faster than any desk. Synthetic identities that pass KYC. Deepfake executives authorizing wire transfers. The technology is arriving faster than the trust infrastructure, and that gap is where the loss sits."
+    ],
+    "audiences": "Banks, insurers, asset managers, fintechs, regulators, associations",
+    "forces": [
+      {
+        "title": "The authorization problem",
+        "body": "A voice on a call is no longer proof of identity. What replaces it, and how fast can you deploy it before the first eight-figure loss."
+      },
+      {
+        "title": "Models nobody can interrogate",
+        "body": "Credit decisions that are more accurate and less explainable. Why regulators will force the issue and how to be ready."
+      },
+      {
+        "title": "The trust premium",
+        "body": "When everyone has the same models, trust is the only durable differentiator. How the winners are building it now."
+      }
+    ],
+    "logos": [
+      "ICI",
+      "Federal Reserve",
+      "Stansberry",
+      "CohnReznick",
+      "LinkedIn"
+    ],
+    "hero": "gofest-conquest.jpg",
+    "featured": true,
+    "featuredOrder": 1
+  },
+  {
+    "name": "Healthcare & Life Sciences",
+    "slug": "healthcare",
+    "number": 2,
+    "heading": "Medicine has been here before.",
+    "body": [
+      "Every era of medicine has had its jetpack. Germ theory. Anesthesia. The randomized trial. Each one promised new heights and terrified the people who had to fly it. And each one followed the same pattern: early adopters got burned, the tools didn't pay off until the system around them changed, and the organizations that steered instead of braced set the standard for the next fifty years.",
+      "AI is healthcare's jetpack now. Diagnostic models that outperform specialists on narrow tasks. Synthetic patient data that can train systems without a single real record. Deepfake telehealth that can impersonate a physician or a patient. The technology is arriving faster than the trust infrastructure around it, and that gap is where the risk lives."
+    ],
+    "audiences": "Health systems, pharma, payers, med-tech, associations",
+    "forces": [
+      {
+        "title": "The diagnosis trust gap",
+        "body": "Models that are right more often than doctors, and patients who still won't accept an answer they can't interrogate. Why accuracy isn't adoption, and what closes the gap."
+      },
+      {
+        "title": "Synthetic everything",
+        "body": "Synthetic patients, synthetic records, synthetic trial arms. The upside is enormous. The perceptual security problem, deciding what's real, is the one no one is budgeting for."
+      },
+      {
+        "title": "The workforce that stays",
+        "body": "Which clinical and administrative roles AI amplifies, which it absorbs, and how leaders keep the humans who make a health system worth trusting."
+      }
+    ],
+    "logos": [
+      "Pfizer",
+      "Columbia University",
+      "MIT",
+      "GE",
+      "CRN",
+      "United Nations"
+    ],
+    "hero": "audience-women.jpg",
+    "featured": true,
+    "featuredOrder": 2
+  },
+  {
+    "name": "Future of Work",
+    "slug": "future-of-work",
+    "number": 3,
+    "heading": "Work has been here before.",
+    "body": [
+      "The guild. The factory floor. The office. Remote. Every reorganization of how humans coordinate was a jetpack, and every one followed the same cycle: the tool arrived, the org chart didn't move, the productivity didn't show up, and then the organizations that redesigned work around the capability took the decade.",
+      "AI is the current one, and it arrived at the individual before it arrived at the institution. Workers save time on email and pour most of it back into the same meetings. That is not a technology problem. It is a redesign problem, and it is the exact chapter Sam's keynote is built for."
+    ],
+    "audiences": "HR and people leadership, L&D, executive offsites, workforce and future-of-work conferences",
+    "forces": [
+      {
+        "title": "The job is not the goal",
+        "body": "People and organizations defend the current expression of their value instead of the value itself. Why that stalls transformation, and how to release it."
+      },
+      {
+        "title": "Task, workflow, value",
+        "body": "Three levels of AI use. Almost everyone is on the first. The returns live two levels up, and the ladder for getting there."
+      },
+      {
+        "title": "Capacity you already have",
+        "body": "Most capacity for change is occupied by what people refuse to release. Unlearn before you upskill."
+      }
+    ],
+    "logos": [
+      "HR Southwest",
+      "Ivanti",
+      "Cisco",
+      "SIM",
+      "LinkedIn"
+    ],
+    "hero": "ivanti-team-human.jpg",
+    "featured": true,
+    "featuredOrder": 3
+  },
+  {
+    "name": "Technology & AI",
+    "slug": "technology-ai",
+    "number": 4,
+    "heading": "Tech has been here before.",
+    "body": [
+      "The industry that builds the jetpacks is the worst at steering them. Every platform shift, from mainframe to client-server to cloud to mobile, followed the same cycle: the tool arrived, the org chart didn't change, the productivity didn't show up, and then the companies that restructured around the tool took the decade.",
+      "AI is the fourth platform shift in forty years and it is moving faster than the three before it. The pattern still applies. The question is whether your organization is using it to do the old thing faster, or to do something that wasn't possible before."
+    ],
+    "audiences": "Software companies, platforms, IT leadership, engineering orgs, developer conferences",
+    "forces": [
+      {
+        "title": "The productivity paradox, again",
+        "body": "Why the tools aren't paying off yet, and what changed the last three times they finally did."
+      },
+      {
+        "title": "Org charts built for the old tool",
+        "body": "Every platform shift breaks a structure before it rewards one. Which structures break next."
+      },
+      {
+        "title": "Building for expansion, not efficiency",
+        "body": "The difference between the companies that survived each shift and the ones that defined it."
+      }
+    ],
+    "logos": [
+      "Cisco",
+      "Dell",
+      "SAP",
+      "IBM",
+      "Ivanti",
+      "Pinterest"
+    ],
+    "hero": "ivanti-acceleration.jpg",
+    "featured": true,
+    "featuredOrder": 7
+  },
+  {
+    "name": "Retail & Consumer Goods",
+    "slug": "retail",
+    "number": 5,
+    "heading": "Retail has been here before.",
+    "body": [
+      "Department stores. Catalogs. Big box. E-commerce. Every one of them was a jetpack, and every one followed the same cycle: the incumbents used the new channel to do the old thing, the challengers used it to do something new, and the gap between them became the decade's biggest transfer of value.",
+      "AI and synthetic media are the current jetpack. Generated influencers with real followings. Product photography with no product. Recommendation engines that shape demand rather than serve it. The brands that steer this will own the next decade of consumer trust."
+    ],
+    "audiences": "Retailers, CPG brands, e-commerce, travel retail, brand and marketing leadership",
+    "forces": [
+      {
+        "title": "Synthetic everything",
+        "body": "Generated influencers, generated reviews, generated product imagery. What happens to brand trust when the customer can't tell."
+      },
+      {
+        "title": "Demand you create versus demand you serve",
+        "body": "AI moved recommendation from responding to shaping. The strategic and ethical consequences."
+      },
+      {
+        "title": "The store that knows you",
+        "body": "Personalization at a level that delights or alarms, and where that line actually sits."
+      }
+    ],
+    "logos": [
+      "Coca-Cola",
+      "Nestlé",
+      "Unilever",
+      "P&G",
+      "LVMH",
+      "TFWA"
+    ],
+    "hero": "ballroom-retail.jpg",
+    "featured": true,
+    "featuredOrder": 8
+  },
+  {
+    "name": "Hospitality & Travel",
+    "slug": "hospitality",
+    "number": 6,
+    "heading": "Travel has been here before.",
+    "body": [
+      "The steamship. The jet. The online travel agency. Each one collapsed distance and terrified the operators who had to absorb it. Each followed the same cycle, and each time the businesses that steered the change instead of resisting it set the standard for the era that followed.",
+      "AI is the current jetpack. Agents that book without visiting your site. Synthetic reviews. Dynamic pricing that outpaces your revenue team. The gap between the technology and the guest relationship is where the risk and the opportunity both live."
+    ],
+    "audiences": "Hotels, airlines, cruise, travel retail, hospitality associations, destination marketing",
+    "forces": [
+      {
+        "title": "When the agent books, not the guest",
+        "body": "AI intermediaries are becoming the customer. What that does to loyalty, margin, and direct booking."
+      },
+      {
+        "title": "Reviews you can't verify",
+        "body": "Synthetic reviews at scale, and what replaces the review as a trust signal."
+      },
+      {
+        "title": "The human premium",
+        "body": "In an industry built on service, which human moments become more valuable as everything else automates."
+      }
+    ],
+    "logos": [
+      "TFWA",
+      "Global hotel groups",
+      "Travel retail associations"
+    ],
+    "hero": "chicago-ballroom.jpg",
+    "featured": true,
+    "featuredOrder": 6
+  },
+  {
+    "name": "Marketing & Advertising",
+    "slug": "marketing",
+    "number": 7,
+    "heading": "Attention has been here before.",
+    "body": [
+      "The printing press. Radio. Television. Search. Social. Every new channel was a jetpack that terrified the incumbents and rewarded the people who understood the medium rather than porting the old message into it. Every one followed the same cycle.",
+      "Generative AI is the current one, and it is the first channel that makes the creative itself. Synthetic influencers with real followings. Campaigns generated in minutes. The question isn't whether the machine can produce. It's what an audience will trust when production is free."
+    ],
+    "audiences": "CMOs, agencies, brand teams, media buyers, marketing associations and conferences",
+    "forces": [
+      {
+        "title": "When production costs nothing",
+        "body": "What becomes scarce when creative is infinite. The authenticity premium, and how brands are certifying the human hand."
+      },
+      {
+        "title": "Synthetic influence",
+        "body": "Generated personas with real audiences. What it does to trust, disclosure, and the economics of attention."
+      },
+      {
+        "title": "The channel is the pattern",
+        "body": "Every marketing era was decided by who understood the new channel first. Where the channel is moving now."
+      }
+    ],
+    "logos": [
+      "Coca-Cola",
+      "P&G",
+      "Unilever",
+      "Pinterest",
+      "LinkedIn",
+      "Audible"
+    ],
+    "hero": "crn-innovators.jpg",
+    "featured": false,
+    "featuredOrder": null
+  },
+  {
+    "name": "Insurance",
+    "slug": "insurance",
+    "number": 8,
+    "heading": "Insurance has been here before.",
+    "body": [
+      "Actuarial tables. Telematics. Catastrophe modeling. Every advance in measuring risk was a jetpack, and every one followed the same cycle: the tool arrived, the underwriting culture lagged, and the carriers that restructured around the new information took share from the ones that bolted it onto the old process.",
+      "AI is the current one, and it cuts both ways. Better risk models on one side. Synthetic claims, deepfake evidence, and fraud at machine speed on the other. The carriers that steer this will price risk nobody else can."
+    ],
+    "audiences": "Carriers, brokers, reinsurers, insurtech, industry associations",
+    "forces": [
+      {
+        "title": "Fraud at machine speed",
+        "body": "Deepfake claims evidence and synthetic identities. Why detection has to move from forensic to structural."
+      },
+      {
+        "title": "Risk you can now measure",
+        "body": "What becomes underwritable when the data and the models change, and what that does to your book."
+      },
+      {
+        "title": "The claim as a trust moment",
+        "body": "Automating the process without automating away the reason people buy insurance."
+      }
+    ],
+    "logos": [
+      "ICI",
+      "CohnReznick",
+      "Industry associations"
+    ],
+    "hero": "audience-women.jpg",
+    "featured": false,
+    "featuredOrder": null
+  },
+  {
+    "name": "Higher Education",
+    "slug": "higher-education",
+    "number": 9,
+    "heading": "Universities have been here before.",
+    "body": [
+      "The printing press. The lecture hall. The MOOC. Every one of them threatened to make the university obsolete, and every one followed the same cycle. Institutions that used the tool to do the old thing faster stagnated. The ones that reset on the real goal defined the next century of learning.",
+      "Generative AI is the current jetpack, and it arrived inside the classroom before anyone had a policy for it. The question isn't whether students use it. It's what a degree certifies when they do."
+    ],
+    "audiences": "Universities, business schools, education associations, academic leadership, student events",
+    "forces": [
+      {
+        "title": "What a degree certifies now",
+        "body": "When the assignment can be generated, what exactly is being assessed, and what replaces it."
+      },
+      {
+        "title": "Faculty as the differentiator",
+        "body": "Which parts of teaching become more valuable, not less, as content becomes abundant."
+      },
+      {
+        "title": "Preparing students for a moving target",
+        "body": "Teaching for careers that will change three times, using a pattern that hasn't changed in five thousand years."
+      }
+    ],
+    "logos": [
+      "Columbia University",
+      "MIT",
+      "Academic associations"
+    ],
+    "hero": "gofest-doctrine.jpg",
+    "featured": true,
+    "featuredOrder": 4
+  },
+  {
+    "name": "Government & Public Sector",
+    "slug": "government",
+    "number": 10,
+    "heading": "Government has been here before.",
+    "body": [
+      "The census. The telegraph. The federal database. Every expansion of state capacity was a jetpack, and every one followed the same cycle: the capability arrived, the institutional trust lagged, and the governments that closed that gap kept their legitimacy.",
+      "AI and synthetic media are the current jetpack, and they arrive at the one institution that runs entirely on public trust. Deepfaked officials. Generated constituent mail. Election-grade disinformation. Steering this is not optional."
+    ],
+    "audiences": "Federal and state agencies, national governments, NGOs, multilateral organizations, public-sector associations",
+    "forces": [
+      {
+        "title": "Legitimacy in a synthetic era",
+        "body": "When any official statement can be faked, what makes a real one credible."
+      },
+      {
+        "title": "Service delivery at machine speed",
+        "body": "Where automation genuinely serves citizens and where it quietly excludes them."
+      },
+      {
+        "title": "The procurement question",
+        "body": "Perceptual security is becoming a line item. What agencies should actually be buying."
+      }
+    ],
+    "logos": [
+      "United Nations",
+      "World Economic Forum",
+      "Federal Reserve",
+      "Gobierno de México"
+    ],
+    "hero": "gofest-social-os.jpg",
+    "featured": false,
+    "featuredOrder": null
+  },
+  {
+    "name": "Defense & National Security",
+    "slug": "defense",
+    "number": 11,
+    "heading": "Warfare has been here before.",
+    "body": [
+      "The stirrup. Gunpowder. The aircraft carrier. The nuclear deterrent. Every one of them was a jetpack that reorganized power, and every one followed the same cycle: the capability arrived, doctrine lagged by a generation, and the forces that rewrote doctrine first held the advantage.",
+      "AI and cognitive warfare are the current jetpack. The contested domain is no longer only physical. It is perception itself: what a population believes, what a commander trusts, what a system reports."
+    ],
+    "audiences": "Defense organizations, intelligence community, national security conferences, defense industrial base",
+    "forces": [
+      {
+        "title": "The cognitive domain",
+        "body": "Gray-zone operations that never cross a kinetic threshold and still achieve strategic effect."
+      },
+      {
+        "title": "Trust as infrastructure",
+        "body": "When sensor data and comms can be synthesized, verification becomes the critical system."
+      },
+      {
+        "title": "Doctrine at the speed of the tool",
+        "body": "Why the gap between capability and doctrine is where every era's surprises happen."
+      }
+    ],
+    "logos": [
+      "Illicit Shadows",
+      "Security and geopolitics organizations"
+    ],
+    "hero": "illicit-shadows-whitehouse.jpg",
+    "featured": false,
+    "featuredOrder": null
+  },
+  {
+    "name": "Manufacturing & Industrial",
+    "slug": "manufacturing",
+    "number": 12,
+    "heading": "The factory has been here before.",
+    "body": [
+      "The assembly line. Numerical control. Lean. Robotics. Every one of them was a jetpack, and every one followed the same cycle: the machine arrived, the process around it didn't change, the promised gains didn't appear, and then the plants that redesigned around the machine took the market.",
+      "AI and autonomous systems are the current jetpack. The pattern says the winners won't be the plants with the most automation. They'll be the ones that reset on the real goal instead of automating the old workflow."
+    ],
+    "audiences": "Manufacturers, industrial groups, operations leadership, supply-chain organizations",
+    "forces": [
+      {
+        "title": "Automating the wrong thing",
+        "body": "Why bolting AI onto an existing process reliably underdelivers, and what to do instead."
+      },
+      {
+        "title": "The workforce that stays",
+        "body": "Which roles amplify with these tools and how to keep the people who hold institutional knowledge."
+      },
+      {
+        "title": "Provenance on the line",
+        "body": "When components can be counterfeited convincingly, verification becomes a manufacturing function."
+      }
+    ],
+    "logos": [
+      "Whirlpool",
+      "GE",
+      "Federation of Thai Industries"
+    ],
+    "hero": "cta-audience.jpg",
+    "featured": false,
+    "featuredOrder": null
+  },
+  {
+    "name": "Automotive",
+    "slug": "automotive",
+    "number": 13,
+    "heading": "The car has been here before.",
+    "body": [
+      "Henry Ford said that if he had asked people what they wanted, they would have said faster horses. Every era of the automobile has repeated that: the tool arrives, people imagine it as a better version of the old thing, and then someone reimagines the whole system around it.",
+      "Autonomy, electrification, and software-defined vehicles are the current jetpack. The manufacturers still building faster horses will lose to the ones asking what transportation is actually for."
+    ],
+    "audiences": "OEMs, suppliers, mobility companies, automotive associations, dealer networks",
+    "forces": [
+      {
+        "title": "Faster horses",
+        "body": "Why incremental thinking has killed more automakers than any competitor."
+      },
+      {
+        "title": "The car as a software product",
+        "body": "What changes when the vehicle updates after it's sold, including who owns the relationship."
+      },
+      {
+        "title": "Trust at seventy miles an hour",
+        "body": "Autonomy is a perception problem before it's an engineering one."
+      }
+    ],
+    "logos": [
+      "BMW",
+      "Automotive associations"
+    ],
+    "hero": "gofest-faster-horses.jpg",
+    "featured": false,
+    "featuredOrder": null
+  },
+  {
+    "name": "Real Estate & PropTech",
+    "slug": "real-estate",
+    "number": 14,
+    "heading": "Property has been here before.",
+    "body": [
+      "The elevator. The mortgage. The MLS. Each one reorganized who could own what, and each followed the same cycle: the tool arrived, the industry used it to do the old thing, and then someone used it to change what a building or a transaction even was.",
+      "AI, synthetic media, and autonomous verification are the current jetpack. Generated listings. Valuation models nobody can interrogate. Fraudulent title at scale. The firms that steer this will define the next era of trust in property."
+    ],
+    "audiences": "Brokerages, developers, REITs, proptech, commercial real estate organizations",
+    "forces": [
+      {
+        "title": "Listings you can't verify",
+        "body": "Generated imagery and synthetic listings, and what replaces the photograph as proof."
+      },
+      {
+        "title": "Valuation as a black box",
+        "body": "When the model prices the asset, who is accountable for the number."
+      },
+      {
+        "title": "The office question, reframed",
+        "body": "Not how much space, but what a building is for once the work is portable."
+      }
+    ],
+    "logos": [
+      "JLL",
+      "Commercial real estate organizations"
+    ],
+    "hero": "cisco-live.jpg",
+    "featured": false,
+    "featuredOrder": null
+  },
+  {
+    "name": "Energy & Utilities",
+    "slug": "energy",
+    "number": 15,
+    "heading": "Power has been here before.",
+    "body": [
+      "Steam. The grid. Nuclear. Renewables. Every energy transition was a jetpack, and every one followed the same cycle: enormous capability, institutional lag, public trust as the limiting factor, and then the utilities that steered it defining the next fifty years of infrastructure.",
+      "AI is both a demand shock and a control system for the grid. It is driving load growth nobody planned for while simultaneously becoming the tool for managing it. That contradiction is the strategic question of the decade."
+    ],
+    "audiences": "Utilities, energy producers, grid operators, energy associations, regulators",
+    "forces": [
+      {
+        "title": "The demand nobody forecast",
+        "body": "Data-center load growth and what it does to a twenty-year capital plan."
+      },
+      {
+        "title": "A grid that runs on models",
+        "body": "Optimization that outperforms human operators, and the trust and accountability problem that creates."
+      },
+      {
+        "title": "Public license to operate",
+        "body": "Every energy transition has been decided by public trust as much as by engineering."
+      }
+    ],
+    "logos": [
+      "GE",
+      "Energy associations"
+    ],
+    "hero": "crn-innovators.jpg",
+    "featured": false,
+    "featuredOrder": null
+  },
+  {
+    "name": "Media & Entertainment",
+    "slug": "media",
+    "number": 16,
+    "heading": "Storytelling has been here before.",
+    "body": [
+      "The printing press. Film. Television. The internet. Every one of them was a jetpack that terrified the incumbents, and every one followed the same cycle: the tool arrived, the old business model broke, and the storytellers who understood the new medium rather than porting the old one defined the era.",
+      "Generative AI is the current jetpack, and it is the first one that makes the content itself. The question isn't whether it can produce. It's what an audience will value when production is free."
+    ],
+    "audiences": "Studios, publishers, broadcasters, streaming, media associations, creative organizations",
+    "forces": [
+      {
+        "title": "When production costs nothing",
+        "body": "What becomes scarce and valuable in a world of infinite content."
+      },
+      {
+        "title": "The authenticity premium",
+        "body": "Why verified human work may become a category rather than a default."
+      },
+      {
+        "title": "Distribution is the pattern",
+        "body": "Every media era was decided by distribution, not creation. Where distribution is moving now."
+      }
+    ],
+    "logos": [
+      "Audible",
+      "LinkedIn",
+      "Media organizations"
+    ],
+    "hero": "gofest-venue.jpg",
+    "featured": false,
+    "featuredOrder": null
+  },
+  {
+    "name": "Luxury & Fashion",
+    "slug": "luxury",
+    "number": 17,
+    "heading": "Luxury has been here before.",
+    "body": [
+      "The atelier. Ready-to-wear. The global flagship. E-commerce. Every one of them threatened to dilute the thing luxury sells, and every one followed the same cycle. The houses that steered the change deepened their meaning. The ones that resisted it became museums.",
+      "AI and synthetic media are the current jetpack, and they attack luxury at its foundation: authenticity, provenance, and scarcity. Which is also why the houses that solve it will be more valuable, not less."
+    ],
+    "audiences": "Luxury houses, fashion brands, travel retail, luxury associations",
+    "forces": [
+      {
+        "title": "Provenance as the product",
+        "body": "When counterfeits are indistinguishable, verifiable history becomes what you're actually selling."
+      },
+      {
+        "title": "Scarcity in an infinite medium",
+        "body": "What limited means when the digital expression is unlimited."
+      },
+      {
+        "title": "The craft premium",
+        "body": "Why human-made becomes a claim worth certifying, and how houses are certifying it."
+      }
+    ],
+    "logos": [
+      "LVMH",
+      "TFWA",
+      "Luxury retail organizations"
+    ],
+    "hero": "portrait-leopard.jpg",
+    "featured": false,
+    "featuredOrder": null
+  },
+  {
+    "name": "Professional Services",
+    "slug": "professional-services",
+    "number": 18,
+    "heading": "The firm has been here before.",
+    "body": [
+      "The billable hour. The photocopier. Email. Legal research databases. Every one of them was a jetpack, and every one followed the same cycle: the tool made the work faster, the business model didn't change, margins compressed, and the firms that reset on what clients actually buy took the next decade.",
+      "AI is the current jetpack and it is aimed directly at leverage. When the associate work compresses, the pyramid changes shape. The firms that steer this will sell judgment rather than hours."
+    ],
+    "audiences": "Law firms, consultancies, accounting, agencies, professional associations",
+    "forces": [
+      {
+        "title": "What the client is actually buying",
+        "body": "When execution compresses, the value moves to judgment. Repricing around that."
+      },
+      {
+        "title": "The pyramid, restructured",
+        "body": "If junior work automates, how does anyone become senior. The succession problem nobody is solving."
+      },
+      {
+        "title": "Trust as the deliverable",
+        "body": "In advisory work, the relationship was always the product. Now it's the only defensible part."
+      }
+    ],
+    "logos": [
+      "CohnReznick",
+      "Professional associations"
+    ],
+    "hero": "stage-white.jpg",
+    "featured": false,
+    "featuredOrder": null
+  },
+  {
+    "name": "Supply Chain & Logistics",
+    "slug": "supply-chain",
+    "number": 19,
+    "heading": "The supply chain has been here before.",
+    "body": [
+      "The container. The barcode. ERP. Just-in-time. Every one of them was a jetpack that promised efficiency, and every one followed the same cycle: enormous gains, hidden fragility, a shock that exposed it, and then the operators who redesigned for resilience rather than pure efficiency taking the next era.",
+      "AI, autonomous logistics, and provenance systems are the current jetpack. Sam co-founded a company that brought trust to global supply chains, so this one is personal as well as pattern."
+    ],
+    "audiences": "Manufacturers, logistics providers, retailers, supply-chain associations, procurement organizations",
+    "forces": [
+      {
+        "title": "Efficiency versus resilience",
+        "body": "Every optimization era ends in a shock. Designing for both instead of choosing."
+      },
+      {
+        "title": "Provenance you can prove",
+        "body": "Counterfeits, gray markets, and verification as infrastructure rather than audit."
+      },
+      {
+        "title": "Autonomy in the physical world",
+        "body": "Where autonomous logistics genuinely works and where the hype is running ahead."
+      }
+    ],
+    "logos": [
+      "Cisco",
+      "Chronicled",
+      "Supply-chain associations"
+    ],
+    "hero": "tfwa-cannes-wide.jpg",
+    "featured": true,
+    "featuredOrder": 5
+  }
+]
