@@ -18,6 +18,7 @@ function IndustriesMenu({ active }) {
         <span className="nav-caret" aria-hidden="true" />
       </Link>
       <div className="mega">
+        <div className="mega-inner">
         <div className="mega-head">
           <span className="t">Change impacting your industry</span>
           <span className="s">{industries.length} industries</span>
@@ -35,6 +36,7 @@ function IndustriesMenu({ active }) {
             One keynote, built around the forces reshaping your world. Don&apos;t see yours? Sam builds it.
           </span>
           <Link href="/book">Ask about your industry →</Link>
+        </div>
         </div>
       </div>
     </li>
