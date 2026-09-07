@@ -3,14 +3,13 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import {
   PhotoHero, YouAreHere, CtaBreak, LogoStrip, IndustryGrid, DispatchList,
-  Testimonials, TestimonialBanner, Moves, Eras, Bureau,
+  Testimonials, TestimonialBanner, Eras, Bureau, BookBar,
 } from '@/components/Blocks';
 import IndustryIcon from '@/components/IndustryIcon';
 import industries from '@/data/industries.json';
 import dispatches from '@/data/dispatches.json';
 import testimonials from '@/data/testimonials.json';
 import eras from '@/data/eras.json';
-import moves from '@/data/moves.json';
 import { meta } from '@/lib/site';
 
 export const metadata = meta({
@@ -28,17 +27,23 @@ export default function Home() {
       <Nav />
       <main id="main">
         <PhotoHero
-          image="tfwa-cannes-wide.jpg"
+          image="hero-work.jpg"
           eyebrow="The Change Futurist"
           descriptors={<>Anthropologist <span className="dot">·</span> 4× Tech Founder <span className="dot">·</span> #1 Bestselling Author</>}
-          lead={<>See it, and you&apos;re ready for whatever comes next. One keynote. Any industry. <strong>Your people walk out ready for what&apos;s coming.</strong></>}
+          lead={<>See it, and you&apos;re ready for whatever comes next.</>}
           cta={<Link href="/book" className="btn btn-mint">Book Sam →</Link>}
-          caption="TFWA 40th · Cannes"
+          caption="Ivanti Solutions Summit"
         >
           Change has<br />a <span className="mint-fill">pattern.</span>
         </PhotoHero>
 
-        <LogoStrip />
+        <section className="logo-divider" style={{ padding: '72px 0', background: 'var(--paper-soft)' }}>
+          <div className="wide">
+            <div className="lbl">Trusted by governments, Fortune 500s, and global institutions</div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/logos-past-audiences.png" alt="Past audiences include Dell, Pfizer, BMW, Cisco, MIT, the Federal Reserve, SAP, Columbia University, Nestlé, Coca-Cola, Pinterest, ICI, Audible, JLL, the World Economic Forum, GE, Whirlpool, the United Nations, Unilever, P&G, IBM, Gobierno de México, LinkedIn, and LVMH" />
+          </div>
+        </section>
 
         <section className="keynote-sec" id="keynote">
           <div className="narrow">
@@ -58,31 +63,26 @@ export default function Home() {
                 </div>
               </div>
               <div>
+                <div className="keynote-photo" style={{ marginTop: 0, marginBottom: 32 }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/gofest-mindset.jpg" alt="Sam Rad on stage at GOFEST Bogotá" />
+                </div>
                 <div className="facts">
                   <div className="fact"><div className="n">5,000</div><div className="l">Years of the same pattern</div></div>
                   <div className="fact"><div className="n">4</div><div className="l">Moves that turn the corner</div></div>
                   <div className="fact"><div className="n">Any</div><div className="l">Industry. Any room.</div></div>
                   <div className="fact"><div className="n">1</div><div className="l">Promise: you&apos;re going to be OK</div></div>
                 </div>
-                <div className="keynote-photo">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/gofest-mindset.jpg" alt="Sam Rad on stage at GOFEST Bogotá" />
-                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <Moves moves={moves} />
         <Eras eras={eras} />
 
-        <CtaBreak
-          image="tfwa-audience.jpg"
-          id="trusted"
-          tag="Trusted worldwide"
-          heading={<>Governments. Fortune 500s. <span className="mint-fill">Global</span> institutions.</>}
-          lead="Five continents. Two decades. One question every room is asking: what happens next, and are we ready for it?"
-          caption="TFWA · Cannes"
+        <BookBar
+          text="Sam doesn't just predict the future. She lives in it."
+          sub="Twenty years inside four technology revolutions. Now she hands the room the map."
         />
 
         <section className="split white" id="meet">
@@ -94,12 +94,11 @@ export default function Home() {
               </div>
               <div>
                 <div className="tag mint">Meet Sam</div>
-                <h2 className="h2" style={{ marginBottom: 32 }}>Curiosity of an anthropologist. Scars of a founder. <span className="mint-fill">Energy</span> of a rock star.</h2>
+                <h2 className="h2" style={{ marginBottom: 32 }}>Curiosity of an anthropologist. Grit of a tech founder. <span className="mint-fill">Energy</span> of a rock star.</h2>
                 <div className="split-body">
                   <p>Sam Rad is an anthropologist who spent twenty years inside technology revolutions, founding four companies through the rise of e-commerce, blockchain, and AI, and learning one thing above all: <em>change has a pattern.</em></p>
-                  <p>With the curiosity of an anthropologist, the scars of a founder, the candor of a friend, and the calm of an ex-professional skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
+                  <p>With the curiosity of an anthropologist, the grit of a tech founder, the candor of a friend, and the calm of an ex-professional skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
                   <p>She says the things other speakers won&apos;t, and she says them with warmth. Her talks lift the overwhelm, hand the room a simple way to read what&apos;s happening, and end on the promise every anxious audience needs to hear: <strong>you&apos;re going to be OK.</strong></p>
-                  <p><strong>Sam doesn&apos;t just predict the future. She lives in it.</strong></p>
                 </div>
                 <div className="stat-row">
                   <div><div className="n">5</div><div className="l">Continents</div></div>
@@ -135,6 +134,15 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <CtaBreak
+          image="tfwa-cannes-wide.jpg"
+          id="trusted"
+          tag="Trusted worldwide"
+          heading={<>Governments. Fortune 500s. <span className="mint-fill">Global</span> institutions.</>}
+          lead="Five continents. Two decades. One question every room is asking: what happens next, and are we ready for it?"
+          caption="TFWA 40th · Cannes"
+        />
 
         <section className="industries" id="industries">
           <div className="narrow">
@@ -178,6 +186,13 @@ export default function Home() {
             <div className="more"><Link href="/foresight" className="btn btn-ghost">All dispatches →</Link></div>
           </div>
         </section>
+
+        <BookBar
+          mint
+          text="Ready when you are."
+          sub="Tell us about the room and we'll be in touch within one business day."
+          cta="Check a date →"
+        />
 
         <section className="quote">
           <div className="narrow">

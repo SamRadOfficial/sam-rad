@@ -11,11 +11,11 @@ export function Bureau({ light }) {
   );
 }
 
-export function PhotoHero({ image, eyebrow, children, descriptors, lead, cta, caption, short }) {
+export function PhotoHero({ image, eyebrow, children, descriptors, lead, cta, caption, short, position }) {
   return (
     <section className={short ? 'photo-hero short' : 'photo-hero'}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={`/images/${image}`} alt="" />
+      <img src={`/images/${image}`} alt="" style={position ? { objectPosition: position } : undefined} />
       <div className="inner">
         <div className="eyebrow">{eyebrow}</div>
         <h1 className="h1">{children}</h1>
@@ -202,8 +202,8 @@ export function Eras({ eras }) {
   return (
     <section className="eras">
       <div className="wide">
-        <div className="tag mint">Six eras. One cycle.</div>
-        <h2 className="h2">Every jetpack in history <span className="mint-fill">followed the same pattern.</span></h2>
+        <div className="tag">Six eras. One cycle.</div>
+        <h2 className="h2">Every evolution in history <span className="mint-fill">followed the same pattern.</span></h2>
         <div className="eras-track">
           <div className="eras-line" />
           <div className="eras-grid">
@@ -227,9 +227,7 @@ export function Eras({ eras }) {
             ))}
           </div>
         </div>
-        <p style={{ marginTop: 40, fontFamily: 'var(--fd)', fontSize: 14, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(245,241,234,.5)' }}>
-          Next up: Bio-Integration · Quantum
-        </p>
+        <p className="eras-next">Next up: Bio-Integration · Quantum</p>
       </div>
     </section>
   );
