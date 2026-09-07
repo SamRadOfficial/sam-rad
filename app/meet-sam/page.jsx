@@ -116,6 +116,26 @@ export default function MeetSam() {
           </div>
         </section>
 
+        <section className="split">
+          <div className="narrow">
+            <div className="split-grid flip">
+              <div className="split-photo">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/skydive-exit.jpg" alt="Sam Rad exiting an aircraft as a competitive skydiver" />
+              </div>
+              <div>
+                <div className="tag">Where the calm comes from</div>
+                <h2 className="h2" style={{ marginBottom: 32 }}>Hundreds of jumps. <span className="mint-fill">One</span> lesson.</h2>
+                <div className="split-body">
+                  <p>Before the boardrooms, Sam was a competitive skydiver. Hundreds of jumps that funded her first company while she was still in college.</p>
+                  <p>It&apos;s where the keynote&apos;s jetpack metaphor comes from, and it&apos;s why the &ldquo;you&apos;re going to be OK&rdquo; at the end lands. She isn&apos;t reassuring the room from the ground. <strong>She&apos;s telling them what it looks like from the 14,000 foot view.</strong></p>
+                </div>
+                <Link href="/meet-sam" className="btn btn-ghost">The full story →</Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <YouAreHere
           eyebrow="You are here"
           heading={<>Twenty years inside the <span className="mint-fill">pattern.</span></>}

@@ -45,6 +45,40 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="split white" id="meet">
+          <div className="narrow">
+            <div className="split-grid">
+              <div className="split-photo">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/headshot.jpg" alt="Sam Rad" />
+              </div>
+              <div>
+                <div className="tag mint">Meet Sam</div>
+                <h2 className="h2" style={{ marginBottom: 32 }}>Curiosity of an anthropologist. Grit of a tech founder. <span className="mint-fill">Energy</span> of a rock star.</h2>
+                <div className="split-body">
+                  <p>Sam Rad is an anthropologist who spent twenty years inside technology revolutions, founding four companies through the rise of e-commerce, blockchain, and AI, and learning one thing above all: <em>change has a pattern.</em></p>
+                  <p>With the curiosity of an anthropologist, the grit of a tech founder, the candor of a friend, and the calm of an ex-professional skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
+                  <p>She says the things other speakers won&apos;t, and she says them with warmth. Her talks lift the overwhelm, hand the room a simple way to read what&apos;s happening, and end on the promise every anxious audience needs to hear: <strong>you&apos;re going to be OK.</strong></p>
+                </div>
+                <div className="stat-row">
+                  <div><div className="n">5</div><div className="l">Continents</div></div>
+                  <div><div className="n">50+</div><div className="l">Countries</div></div>
+                  <div><div className="n">2×</div><div className="l">#1 Bestsellers</div></div>
+                  <div><div className="n">4×</div><div className="l">Founder</div></div>
+                </div>
+                <Link href="/meet-sam" className="btn btn-ghost">Full bio →</Link>
+                <Bureau />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <BookBar
+          mint
+          text="Sam doesn't just predict the future. She lives in it."
+          sub="Twenty years inside four technology revolutions. Now she hands the room the map."
+        />
+
         <section className="keynote-sec" id="keynote">
           <div className="narrow">
             <div className="tag mint">Speaking · The keynote</div>
@@ -80,60 +114,7 @@ export default function Home() {
 
         <Eras eras={eras} />
 
-        <BookBar
-          text="Sam doesn't just predict the future. She lives in it."
-          sub="Twenty years inside four technology revolutions. Now she hands the room the map."
-        />
-
-        <section className="split white" id="meet">
-          <div className="narrow">
-            <div className="split-grid">
-              <div className="split-photo">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/headshot.jpg" alt="Sam Rad" />
-              </div>
-              <div>
-                <div className="tag mint">Meet Sam</div>
-                <h2 className="h2" style={{ marginBottom: 32 }}>Curiosity of an anthropologist. Grit of a tech founder. <span className="mint-fill">Energy</span> of a rock star.</h2>
-                <div className="split-body">
-                  <p>Sam Rad is an anthropologist who spent twenty years inside technology revolutions, founding four companies through the rise of e-commerce, blockchain, and AI, and learning one thing above all: <em>change has a pattern.</em></p>
-                  <p>With the curiosity of an anthropologist, the grit of a tech founder, the candor of a friend, and the calm of an ex-professional skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
-                  <p>She says the things other speakers won&apos;t, and she says them with warmth. Her talks lift the overwhelm, hand the room a simple way to read what&apos;s happening, and end on the promise every anxious audience needs to hear: <strong>you&apos;re going to be OK.</strong></p>
-                </div>
-                <div className="stat-row">
-                  <div><div className="n">5</div><div className="l">Continents</div></div>
-                  <div><div className="n">50+</div><div className="l">Countries</div></div>
-                  <div><div className="n">2×</div><div className="l">#1 Bestsellers</div></div>
-                  <div><div className="n">4×</div><div className="l">Founder</div></div>
-                </div>
-                <Link href="/meet-sam" className="btn btn-ghost">Full bio →</Link>
-                <Bureau />
-              </div>
-            </div>
-          </div>
-        </section>
-
         <TestimonialBanner />
-
-        <section className="split">
-          <div className="narrow">
-            <div className="split-grid flip">
-              <div className="split-photo">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/skydive-exit.jpg" alt="Sam Rad exiting an aircraft as a competitive skydiver" />
-              </div>
-              <div>
-                <div className="tag">Where the calm comes from</div>
-                <h2 className="h2" style={{ marginBottom: 32 }}>Hundreds of jumps. <span className="mint-fill">One</span> lesson.</h2>
-                <div className="split-body">
-                  <p>Before the boardrooms, Sam was a competitive skydiver. Hundreds of jumps that funded her first company while she was still in college.</p>
-                  <p>It&apos;s where the keynote&apos;s jetpack metaphor comes from, and it&apos;s why the &ldquo;you&apos;re going to be OK&rdquo; at the end lands. She isn&apos;t reassuring the room from the ground. <strong>She&apos;s telling them what it looks like from the 14,000 foot view.</strong></p>
-                </div>
-                <Link href="/meet-sam" className="btn btn-ghost">The full story →</Link>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <CtaBreak
           image="tfwa-cannes-wide.jpg"
@@ -188,7 +169,7 @@ export default function Home() {
         </section>
 
         <BookBar
-          mint
+          deep
           text="Ready when you are."
           sub="Tell us about the room and we'll be in touch within one business day."
           cta="Check a date →"
@@ -254,7 +235,7 @@ export default function Home() {
               ['gp-d', 'hillary-tfwa.jpg', 'TFWA 40th · with Hillary Clinton'],
               ['gp-e', 'neil-degrasse-tyson.jpg', 'With Neil deGrasse Tyson'],
               ['gp-f', 'cisco-live.jpg', 'Cisco Live · IT Leadership'],
-              ['gp-g', 'chicago-ballroom.jpg', 'Chicago'],
+              ['gp-g', 'skydive-exit.jpg', 'Competitive skydiving'],
             ].map(([cls, img, label]) => (
               <div className={`gp ${cls}`} key={img}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}

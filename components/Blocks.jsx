@@ -256,9 +256,10 @@ export function Sizzle() {
   );
 }
 
-export function BookBar({ text, sub, mint, cta = 'Book Sam →' }) {
+export function BookBar({ text, sub, mint, deep, cta = 'Book Sam →' }) {
+  const cls = mint ? 'bookbar mint' : deep ? 'bookbar deep' : 'bookbar';
   return (
-    <section className={mint ? 'bookbar mint' : 'bookbar'}>
+    <section className={cls}>
       <div className="inner">
         <div>
           <div className="txt">{text}</div>
