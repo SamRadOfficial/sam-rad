@@ -73,6 +73,28 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="split">
+          <div className="narrow">
+            <div className="split-grid flip">
+              <div className="split-photo">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/skydive-exit.jpg" alt="Sam Rad exiting an aircraft as a competitive skydiver" />
+              </div>
+              <div>
+                <div className="tag">Where the calm comes from</div>
+                <h2 className="h2" style={{ marginBottom: 32 }}>Hundreds of jumps. <span className="mint-fill">One</span> lesson.</h2>
+                <div className="split-body">
+                  <p>Before the boardrooms, Sam was a competitive skydiver. Hundreds of jumps that funded her first company while she was still in college.</p>
+                  <p>It&apos;s where the keynote&apos;s jetpack metaphor comes from, and it&apos;s why the &ldquo;you&apos;re going to be OK&rdquo; at the end lands. She isn&apos;t reassuring the room from the ground. <strong>She&apos;s telling them what it looks like from the 14,000 foot view.</strong></p>
+                </div>
+                <Link href="/meet-sam" className="btn btn-ghost">The full story →</Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <TestimonialBanner />
+
         <BookBar
           mint
           text="Sam doesn't just predict the future. She lives in it."
@@ -113,8 +135,6 @@ export default function Home() {
         </section>
 
         <Eras eras={eras} />
-
-        <TestimonialBanner />
 
         <CtaBreak
           image="tfwa-cannes-wide.jpg"
@@ -212,6 +232,13 @@ export default function Home() {
           </div>
         </section>
 
+        <BookBar
+          mint
+          text="The worldview in print. The keynote, live."
+          sub="Radical Next is the Age of Acceleration at book length. Bring the stage version to your room."
+          cta="Book the keynote →"
+        />
+
         <section className="stats">
           <div className="stats-grid">
             <div className="stat"><div className="n">5</div><div className="l">Continents</div></div>
@@ -235,7 +262,7 @@ export default function Home() {
               ['gp-d', 'hillary-tfwa.jpg', 'TFWA 40th · with Hillary Clinton'],
               ['gp-e', 'neil-degrasse-tyson.jpg', 'With Neil deGrasse Tyson'],
               ['gp-f', 'cisco-live.jpg', 'Cisco Live · IT Leadership'],
-              ['gp-g', 'skydive-exit.jpg', 'Competitive skydiving'],
+              ['gp-g', 'chicago-ballroom.jpg', 'Chicago'],
             ].map(([cls, img, label]) => (
               <div className={`gp ${cls}`} key={img}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
