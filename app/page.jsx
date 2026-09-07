@@ -2,13 +2,11 @@ import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import {
-  PhotoHero, YouAreHere, CtaBreak, LogoStrip, IndustryGrid, DispatchList,
-  Testimonials, TestimonialBanner, Eras, Bureau, BookBar,
+  PhotoHero, YouAreHere, CtaBreak, LogoStrip, IndustryGrid,
+  TestimonialBanner, Eras, Bureau, BookBar,
 } from '@/components/Blocks';
 import IndustryIcon from '@/components/IndustryIcon';
 import industries from '@/data/industries.json';
-import dispatches from '@/data/dispatches.json';
-import testimonials from '@/data/testimonials.json';
 import eras from '@/data/eras.json';
 import { meta } from '@/lib/site';
 
@@ -54,10 +52,10 @@ export default function Home() {
               </div>
               <div>
                 <div className="tag mint">Meet Sam</div>
-                <h2 className="h2" style={{ marginBottom: 32 }}>Curiosity of an anthropologist. Grit of a tech founder. <span className="mint-fill">Energy</span> of a rock star.</h2>
+                <h2 className="h2" style={{ marginBottom: 32 }}><span className="mint-fill">Curiosity</span> of an anthropologist. <span className="mint-fill">Instinct</span> of a tech founder. <span className="mint-fill">Energy</span> of a rock star.</h2>
                 <div className="split-body">
                   <p>Sam Rad is an anthropologist who spent twenty years inside technology revolutions, founding four companies through the rise of e-commerce, blockchain, and AI, and learning one thing above all: <em>change has a pattern.</em></p>
-                  <p>With the curiosity of an anthropologist, the grit of a tech founder, the candor of a friend, and the calm of an ex-professional skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
+                  <p>With the curiosity of an anthropologist, the instinct of a tech founder, the candor of a friend, and the calm of an ex-professional skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
                   <p>She says the things other speakers won&apos;t, and she says them with warmth. Her talks lift the overwhelm, hand the room a simple way to read what&apos;s happening, and end on the promise every anxious audience needs to hear: <strong>you&apos;re going to be OK.</strong></p>
                 </div>
                 <div className="stat-row">
@@ -139,9 +137,9 @@ export default function Home() {
         <CtaBreak
           image="tfwa-cannes-wide.jpg"
           id="trusted"
-          tag="Trusted worldwide"
-          heading={<>Governments. Fortune 500s. <span className="mint-fill">Global</span> institutions.</>}
-          lead="Five continents. Two decades. One question every room is asking: what happens next, and are we ready for it?"
+          tag="Five continents"
+          heading={<>Every room is asking the <span className="mint-fill">same</span> question.</>}
+          lead="What happens next, and are we ready for it? Sam has answered it for rooms in Cannes, Bogotá, Bangkok, and beyond."
           caption="TFWA 40th · Cannes"
         />
 
@@ -177,31 +175,6 @@ export default function Home() {
           cta={<Link href="/speaking" className="btn btn-mint">See the pattern →</Link>}
         />
 
-        <section className="dispatches" id="foresight">
-          <div className="narrow">
-            <div className="section-header">
-              <div className="tag">Foresight</div>
-              <h2 className="h2">Latest dispatches<br />from the <span className="mint-fill">frontier.</span></h2>
-            </div>
-            <DispatchList dispatches={dispatches} />
-            <div className="more"><Link href="/foresight" className="btn btn-ghost">All dispatches →</Link></div>
-          </div>
-        </section>
-
-        <BookBar
-          deep
-          text="Ready when you are."
-          sub="Tell us about the room and we'll be in touch within one business day."
-          cta="Check a date →"
-        />
-
-        <section className="quote">
-          <div className="narrow">
-            <h2 className="q">The future belongs to the pattern breakers.</h2>
-            <div className="a">Sam Rad</div>
-          </div>
-        </section>
-
         <section className="work" id="work">
           <div className="narrow">
             <div className="section-header">
@@ -233,20 +206,11 @@ export default function Home() {
         </section>
 
         <BookBar
-          mint
+          deep
           text="The worldview in print. The keynote, live."
           sub="Radical Next is the Age of Acceleration at book length. Bring the stage version to your room."
           cta="Book the keynote →"
         />
-
-        <section className="stats">
-          <div className="stats-grid">
-            <div className="stat"><div className="n">5</div><div className="l">Continents</div></div>
-            <div className="stat"><div className="n">50+</div><div className="l">Countries</div></div>
-            <div className="stat"><div className="n">2×</div><div className="l">#1 Bestsellers</div></div>
-            <div className="stat"><div className="n">4×</div><div className="l">Tech Founder</div></div>
-          </div>
-        </section>
 
         <section className="gallery">
           <div className="gallery-head">
@@ -273,23 +237,13 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="testimonials">
-          <div className="narrow">
-            <div className="section-header">
-              <div className="tag">What people say</div>
-              <h2 className="h2">What audiences<br />say <span className="mint-fill">afterward.</span></h2>
-            </div>
-            <Testimonials items={testimonials} />
-          </div>
-        </section>
-
         <CtaBreak
           image="gofest-faster-horses.jpg"
           center
           bureau
           tag="Book Sam Rad"
-          heading={<>Your people are facing change. Let&apos;s make sure they walk out <span className="mint-fill">ready.</span></>}
-          lead="Sam Rad is the speaker you book when your people are facing change and you need them to walk out ready for it. You're going to be OK."
+          heading={<>Walk out <span className="mint-fill">ready.</span></>}
+          lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
           caption="GOFEST 2026 · Bogotá"
         />
       </main>
