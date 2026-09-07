@@ -153,7 +153,7 @@ export default function Home() {
               ))}
               <Link className="ind custom" href="/industries">
                 <IndustryIcon slug="custom" />
-                <div className="n">All 19</div>
+                <div className="n">All 20</div>
                 <div className="t">See every industry.</div>
                 <div className="a">Industries →</div>
               </Link>

@@ -50,6 +50,9 @@ export const ICONS = {
   'supply-chain': (
     <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="13" width="19" height="14" rx="1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/><path d="M22 18h7l6 6v3h-13z" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/><circle cx="11" cy="30" r="3" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/><circle cx="29" cy="30" r="3" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
   ),
+  'associations': (
+    <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="20" cy="20" r="6" stroke="currentColor" strokeWidth="2" fill="none"/><circle cx="20" cy="6" r="3.2" stroke="currentColor" strokeWidth="2" fill="none"/><circle cx="20" cy="34" r="3.2" stroke="currentColor" strokeWidth="2" fill="none"/><circle cx="6" cy="20" r="3.2" stroke="currentColor" strokeWidth="2" fill="none"/><circle cx="34" cy="20" r="3.2" stroke="currentColor" strokeWidth="2" fill="none"/><path d="M20 9.2v4.8M20 26v4.8M9.2 20h4.8M26 20h4.8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>
+  ),
   'custom': (
     <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="20" cy="20" r="15" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="4 4"/><path d="M20 13v14M13 20h14" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
   ),

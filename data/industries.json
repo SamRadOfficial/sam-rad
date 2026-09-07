@@ -637,5 +637,41 @@
     "hero": "tfwa-cannes-wide.jpg",
     "featured": true,
     "featuredOrder": 5
+  },
+  {
+    "name": "Associations & Membership",
+    "slug": "associations",
+    "number": 20,
+    "heading": "Associations have been here before.",
+    "body": [
+      "The guild hall. The trade journal. The annual convention. Every era of membership has had its jetpack, and every one followed the same cycle: the tool arrived, the association used it to do the old thing a little faster, members drifted, and then the organizations that reset on why they existed came back stronger than before.",
+      "AI is the current one, and it hits associations at the core of the value proposition. When any member can generate an industry briefing in seconds, what is the content library for? When the network is searchable, what is the directory for? The associations that steer this will matter more to their members, not less."
+    ],
+    "audiences": "Trade associations, professional societies, membership organizations, annual meetings and conventions",
+    "forces": [
+      {
+        "title": "When information stops being the product",
+        "body": "Research, briefings, and standards were the membership benefit. Now they're generatable. What replaces them, and why belonging becomes the thing you actually sell."
+      },
+      {
+        "title": "The convention still matters",
+        "body": "Everything digital got cheaper and easier. The room did not. Why in-person gatherings are becoming more valuable as everything else automates, and how to make that case to a board."
+      },
+      {
+        "title": "Serving members who are living the dip",
+        "body": "Your members bought the tools and the returns haven't come. The association that explains why, first, becomes indispensable."
+      }
+    ],
+    "logos": [
+      "TFWA",
+      "HR Southwest",
+      "CRN",
+      "ICI",
+      "SIM",
+      "Federation of Thai Industries"
+    ],
+    "hero": "chicago-ballroom.jpg",
+    "featured": false,
+    "featuredOrder": null
   }
 ]

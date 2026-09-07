@@ -3,7 +3,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import {
   PhotoHero, YouAreHere, CtaBreak, IndustryGrid, Testimonials, TestimonialBanner,
-  Moves, Cycle, Eras, Sizzle, Bureau, JsonLd,
+  Moves, Cycle, Eras, Sizzle, Bureau, BookBar, JsonLd,
 } from '@/components/Blocks';
 import industries from '@/data/industries.json';
 import testimonials from '@/data/testimonials.json';
@@ -25,7 +25,7 @@ const faq = {
   mainEntity: [
     ['Who is Sam Rad?', 'Sam Rad (Samantha Radocchia) is a keynote speaker, anthropologist, and four-time technology founder who wrote the #1 bestseller Radical Next. She delivers the keynote Change Has a Pattern to Fortune 500s, governments, and associations worldwide.'],
     ['What is Sam Rad\'s keynote about?', 'Change Has a Pattern shows audiences the cycle every big change follows, why new tools are not paying off yet, and the four moves that turn the corner: see the pattern, let go of the old way, lead the jetpack, and take it off.'],
-    ['What industries does Sam Rad speak to?', 'Sam customizes the keynote for nineteen industries including financial services, healthcare, future of work, higher education, supply chain, hospitality, technology, retail, insurance, and government.'],
+    ['What industries does Sam Rad speak to?', 'Sam customizes the keynote for twenty industries including financial services, healthcare, future of work, higher education, supply chain, hospitality, technology, retail, insurance, and government.'],
     ['How long is the keynote?', 'The standard format is 45 to 60 minutes. A keynote with Q&A and a half-day workshop are also available, in person or virtual.'],
     ['Where does Sam Rad travel from?', 'Sam Rad travels from New York City and has keynoted on five continents.'],
     ['How do you book Sam Rad?', 'Sam Rad is represented by Brandy Gibson at Executive Speakers Bureau. Booking inquiries go through the form at sam-rad.com/book.'],
@@ -102,6 +102,12 @@ export default function Speaking() {
           </div>
         </section>
 
+        <BookBar
+          mint
+          text="Bring the pattern to your stage."
+          sub="45 to 60 minutes, customized to your industry. In person or virtual."
+        />
+
         <section className="moment">
           <div className="narrow">
             <div className="tag">The moment</div>
@@ -118,8 +124,20 @@ export default function Speaking() {
         </section>
 
         <Cycle stages={cycle} />
+
+        <BookBar
+          text="Your people are living the dip right now."
+          sub="The keynote shows them the chapter after it."
+        />
+
         <Moves moves={moves} />
         <Eras eras={eras} />
+
+        <BookBar
+          mint
+          text="Five thousand years of the same cycle. One hour to hand it to your room."
+          cta="Check a date →"
+        />
 
         <YouAreHere
           eyebrow="You are here"
@@ -137,6 +155,11 @@ export default function Speaking() {
             <img src="/images/logos-past-audiences.png" alt="Past audiences: Dell, Pfizer, BMW, Cisco, MIT, Federal Reserve, SAP, Columbia, Nestlé, Coca-Cola, Pinterest, ICI, Audible, JLL, World Economic Forum, GE, Whirlpool, United Nations, Unilever, P&G, IBM, Gobierno de México, LinkedIn, LVMH" />
           </div>
         </section>
+
+        <BookBar
+          text="Cisco, Dell, SAP, the UN, the Federal Reserve."
+          sub="Sam has keynoted on five continents. Your event next."
+        />
 
         <section className="industries">
           <div className="narrow">
@@ -159,6 +182,12 @@ export default function Speaking() {
             <Testimonials items={testimonials} />
           </div>
         </section>
+
+        <BookBar
+          mint
+          text="Ready when you are."
+          sub="Tell us about the room and we'll be in touch within one business day."
+        />
 
         <CtaBreak
           image="cta-red.jpg" center bureau

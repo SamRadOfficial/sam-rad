@@ -8,7 +8,7 @@ import { meta } from '@/lib/site';
 
 export const metadata = meta({
   title: 'Foresight | Dispatches from the Frontier',
-  description: 'One dispatch a day, rotating across nineteen industries. Real sources, Sam Rad\'s lens, the pattern applied to what happened this week.',
+  description: 'One dispatch a day, rotating across twenty industries. Real sources, Sam Rad\'s lens, the pattern applied to what happened this week.',
   path: '/foresight',
 });
 
@@ -21,7 +21,7 @@ export default function Foresight() {
           image="hero-home.jpg"
           eyebrow="Foresight · You are here"
           short
-          lead={<>One dispatch a day, rotating across nineteen industries. Real sources, Sam&apos;s lens, <strong>the pattern applied to what happened this week.</strong></>}
+          lead={<>One dispatch a day, rotating across twenty industries. Real sources, Sam&apos;s lens, <strong>the pattern applied to what happened this week.</strong></>}
           cta={<Link href="#latest" className="btn btn-mint">Latest dispatches ↓</Link>}
           caption="TFWA · Cannes · Age of Acceleration"
         >
@@ -49,7 +49,7 @@ export default function Foresight() {
           <div className="narrow">
             <div className="section-header">
               <div className="tag">Browse by industry</div>
-              <h2 className="h2">Nineteen industries. <span className="mint-fill">One</span> lens.</h2>
+              <h2 className="h2">Twenty industries. <span className="mint-fill">One</span> lens.</h2>
             </div>
             <IndustryGrid industries={industries} total={industries.length} cta="Dispatches + keynote →" />
           </div>

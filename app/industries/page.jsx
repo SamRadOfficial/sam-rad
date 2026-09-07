@@ -7,8 +7,8 @@ import dispatches from '@/data/dispatches.json';
 import { meta } from '@/lib/site';
 
 export const metadata = meta({
-  title: 'Industries | Change Has a Pattern, Customized',
-  description: 'One keynote, built for nineteen industries. Sam Rad maps the forces reshaping your world and the four moves that turn the corner.',
+  title: 'Industries | Change Impacting Your Industry',
+  description: 'One keynote, built for twenty industries. Sam Rad maps the forces reshaping your world and the four moves that turn the corner.',
   path: '/industries',
 });
 
@@ -24,7 +24,7 @@ export default function Industries() {
           lead={<>The same pattern has reshaped every industry for five thousand years. Sam builds each keynote around the forces reshaping yours, so it lands as your story, not a generic future.</>}
           caption="GOFEST 2026 · Bogotá"
         >
-          One keynote.<br /><span className="mint-fill">Nineteen</span> industries.
+          Change impacting<br /><span className="mint-fill">your</span> industry.
         </PhotoHero>
 
         <section className="industries">

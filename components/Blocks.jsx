@@ -258,6 +258,20 @@ export function Sizzle() {
   );
 }
 
+export function BookBar({ text, sub, mint, cta = 'Book Sam →' }) {
+  return (
+    <section className={mint ? 'bookbar mint' : 'bookbar'}>
+      <div className="inner">
+        <div>
+          <div className="txt">{text}</div>
+          {sub && <div className="sub">{sub}</div>}
+        </div>
+        <Link href="/book" className={mint ? 'btn btn-ink' : 'btn btn-mint'}>{cta}</Link>
+      </div>
+    </section>
+  );
+}
+
 export function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
