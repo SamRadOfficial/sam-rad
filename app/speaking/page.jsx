@@ -58,7 +58,7 @@ export default function Speaking() {
           Change has<br />a <span className="mint-fill">pattern.</span>
         </PhotoHero>
 
-        <LogoStrip label="Past audiences" dark />
+        <LogoStrip label="Past audiences" />
 
 
         <section className="prose" id="detail">
@@ -66,7 +66,8 @@ export default function Speaking() {
             <div className="prose-grid">
               <div>
                 <div className="tag mint">The keynote</div>
-                <h2 className="h2" style={{ marginBottom: 40 }}>Every powerful new technology is a <span className="mint-fill">jetpack.</span></h2>
+                <div className="keynote-name">Change Has a Pattern</div>
+                <h2 className="h2" style={{ marginBottom: 40 }}>Every powerful new technology is like a <span className="mint-fill">jetpack.</span></h2>
                 <div className="prose-body">
                   <p>It promises new heights, and it scares you about where it might take you. Once everyone has one, not having one is how you get left behind. But owning it isn&apos;t the point, and neither is using it. <strong>Steering it is.</strong></p>
                   <p>In <em>Change Has a Pattern</em>, anthropologist and futurist Sam Rad shows audiences the cycle every big change follows, why the new tools aren&apos;t paying off yet, and the four moves that turn the corner. The pattern has repeated through five thousand years of recorded history, which is why the message works in any industry and lands with any room: it is universal, and above all, human.</p>
@@ -110,11 +111,6 @@ export default function Speaking() {
         />
 
         <Eras eras={eras} />
-
-        <BookBar
-          text="Five thousand years of the same cycle. One hour to hand it to your room."
-          cta="Check a date →"
-        />
 
         <BookBar
           mint

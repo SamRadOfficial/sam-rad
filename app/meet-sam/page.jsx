@@ -116,6 +116,12 @@ export default function MeetSam() {
           </div>
         </section>
 
+        <section className="photo-band">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/plane-window.jpg" alt="Sam Rad pointing out an aircraft window" />
+          <div className="cap">In transit</div>
+        </section>
+
         <section className="split">
           <div className="narrow">
             <div className="split-grid flip">

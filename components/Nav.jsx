@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import industries from '@/data/industries.json';
 import { ICONS } from './IndustryIcon';
@@ -18,13 +18,34 @@ const featured = industries
   .sort((a, b) => a.featuredOrder - b.featuredOrder);
 
 function IndustriesMenu({ active }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (!open) return undefined;
+    const onDoc = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
+    const onKey = (e) => { if (e.key === 'Escape') setOpen(false); };
+    document.addEventListener('mousedown', onDoc);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('mousedown', onDoc);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [open]);
+
   return (
-    <li className="nav-drop">
-      <Link href="/industries" className={active === 'Industries' ? 'active' : undefined}>
+    <li className={open ? 'nav-drop open' : 'nav-drop'} ref={ref}>
+      <button
+        type="button"
+        className={`nav-dropbtn${active === 'Industries' ? ' active' : ''}`}
+        aria-expanded={open}
+        aria-haspopup="true"
+        onClick={() => setOpen((v) => !v)}
+      >
         Industries
         <span className="nav-caret" aria-hidden="true" />
-      </Link>
-      <div className="mega">
+      </button>
+      <div className="mega" onClick={() => setOpen(false)}>
         <div className="mega-inner">
           <div className="mega-head">
             <span className="t">Change impacting your industry</span>
