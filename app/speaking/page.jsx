@@ -53,7 +53,7 @@ export default function Speaking() {
           eyebrow="Speaking · The keynote"
           lead={<>The cycle every big change follows, why the new tools aren&apos;t paying off yet, and the four moves that turn the corner. <strong>Customized to your industry, your audience, your moment.</strong></>}
           cta={<Link href="/book" className="btn btn-mint">Book this keynote →</Link>}
-          caption="Keynote"
+          caption="SHRM · Dallas"
         >
           Change has<br />a <span className="mint-fill">pattern.</span>
         </PhotoHero>
@@ -172,7 +172,7 @@ export default function Speaking() {
           tag="Book Sam Rad"
           heading={<>Walk out <span className="mint-fill">ready.</span></>}
           lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
-          caption="Keynote · 2024"
+          caption="Stansberry Research"
         />
       </main>
       <Footer />

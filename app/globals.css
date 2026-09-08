@@ -513,7 +513,8 @@ body.nav-open{overflow:hidden;}
 .side-card ul li{padding:12px 0;border-bottom:1px solid var(--rule);font-size:15px;color:var(--ink);}
 .side-card ul li:last-child{border-bottom:0;}
 .side-card .btn{width:100%;justify-content:center;margin-top:20px;}
-.side-photo{margin-top:24px;aspect-ratio:4/5;overflow:hidden;}
+.side-photo{margin-top:24px;aspect-ratio:4/5;overflow:hidden;position:relative;}
+.side-photo .sp-cap{position:absolute;left:0;right:0;bottom:0;padding:22px 14px 10px;font-family:var(--fd);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,241,234,.85);background:linear-gradient(180deg,rgba(8,19,42,0),rgba(8,19,42,.8));}
 .side-photo img{width:100%;height:100%;object-fit:cover;}
 
 /* ARTICLE / DISPATCH */

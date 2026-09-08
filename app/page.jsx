@@ -49,7 +49,7 @@ export default function Home() {
                 <h2 className="h2" style={{ marginBottom: 32 }}><span className="mint-fill">Curiosity</span> of an anthropologist. <span className="mint-fill">Instinct</span> of a tech founder. <span className="mint-fill">Energy</span> of a rock star.</h2>
                 <div className="split-body">
                   <p>Sam Rad is an anthropologist who spent twenty years inside technology revolutions, founding four companies through the rise of e-commerce, blockchain, and AI, and learning one thing above all: <em>change has a pattern.</em></p>
-                  <p>With the curiosity of an anthropologist, the instinct of a tech founder, the candor of a friend, and the calm of an ex-professional skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
+                  <p>With the curiosity of an anthropologist, the instinct of a tech founder, the candor of a friend, and the calm of an ex-competitive skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
                   <p>She says the things other speakers won&apos;t, and she says them with warmth. Her talks lift the overwhelm, hand the room a simple way to read what&apos;s happening, and end on the promise every anxious audience needs to hear: <strong>you&apos;re going to be OK.</strong></p>
                 </div>
                 <div className="stat-row">
@@ -69,8 +69,8 @@ export default function Home() {
 
         <section className="photo-band">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/crn-innovators.jpg" alt="Sam Rad on stage beside a screen reading The Future Needs Innovators" />
-          <div className="cap">CRN · The future needs innovators</div>
+          <img src="/images/crn-innovators.jpg" alt="Sam Rad on stage at CITE beside a screen reading The Future Needs Innovators" />
+          <div className="cap">CITE · The future needs innovators</div>
         </section>
 
         <section className="keynote-sec" id="keynote">
@@ -197,11 +197,11 @@ export default function Home() {
               ['gp-h', 'gofest-faster-horses.jpg', 'GOFEST 2026 · Bogotá'],
               ['gp-a', 'stage-hrsw.jpg', 'HR Southwest · Fort Worth'],
               ['gp-b', 'panel-dell.jpg', 'Dell Technologies World'],
-              ['gp-c', 'cta-red.jpg', 'CRN · Keynote'],
+              ['gp-c', 'cta-red.jpg', 'Stansberry Research'],
               ['gp-d', 'hillary-tfwa.jpg', 'TFWA 40th · with Hillary Clinton'],
               ['gp-e', 'neil-degrasse-tyson.jpg', 'With Neil deGrasse Tyson'],
               ['gp-f', 'cisco-live.jpg', 'Cisco Live · IT Leadership'],
-              ['gp-g', 'chicago-ballroom.jpg', 'Chicago'],
+              ['gp-g', 'chicago-ballroom.jpg', 'CRMC · Chicago'],
             ].map(([cls, img, label]) => (
               <div className={`gp ${cls}`} key={img}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -50,7 +50,7 @@ export default function Book() {
           </div>
         </section>
 
-        <TestimonialBanner />
+        <TestimonialBanner noCta />
       </main>
       <Footer />
     </>

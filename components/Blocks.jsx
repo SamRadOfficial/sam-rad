@@ -7,7 +7,7 @@ export function Bureau({ light }) {
   return (
     <div className={light ? 'bureau-line light' : 'bureau-line'}>
       Managed by <a href={SITE.bureau.mailto}>{SITE.bureau.agent}</a> at{' '}
-      <a href={SITE.bureau.orgUrl}>{SITE.bureau.org}</a>
+      <a href={SITE.bureau.orgUrl} target="_blank" rel="noopener noreferrer">{SITE.bureau.org}</a>
     </div>
   );
 }
@@ -45,7 +45,7 @@ export function YouAreHere({ eyebrow, heading, lead, cta, tall }) {
   );
 }
 
-export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, btn = 'Book Sam →', id = 'book' }) {
+export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, btn = 'Book Sam →', id = 'book', href, external }) {
   return (
     <section className={center ? 'cta-break center' : 'cta-break'} id={id}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -54,11 +54,15 @@ export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, b
         <div className="tag">{tag}</div>
         <h2 className="h2">{heading}</h2>
         {lead && <p className="lead">{lead}</p>}
-        <Link href="/book" className="btn btn-mint">{btn}</Link>
+        {external ? (
+          <a href={href} className="btn btn-mint" target="_blank" rel="noopener noreferrer">{btn}</a>
+        ) : (
+          <Link href={href || '/book'} className="btn btn-mint">{btn}</Link>
+        )}
         {bureau && (
           <div className="bureau">
             Managed by <a href={SITE.bureau.mailto}>{SITE.bureau.agent}</a> at{' '}
-            <a href={SITE.bureau.orgUrl}>{SITE.bureau.org}</a>
+            <a href={SITE.bureau.orgUrl} target="_blank" rel="noopener noreferrer">{SITE.bureau.org}</a>
           </div>
         )}
       </div>
@@ -143,7 +147,7 @@ export function Testimonials({ items }) {
   );
 }
 
-export function TestimonialBanner({ item }) {
+export function TestimonialBanner({ noCta }) {
   return (
     <section className="tbanner">
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -154,7 +158,7 @@ export function TestimonialBanner({ item }) {
           Sam is a rare individual who has the unique ability to <u>catalyze and inspire</u> everyone around her.
         </h2>
         <div className="who">Asael Meir · Partner, CohnReznick LLP</div>
-        <Link href="/book" className="btn btn-mint tb-cta">Book Sam →</Link>
+        {!noCta && <Link href="/book" className="btn btn-mint tb-cta">Book Sam →</Link>}
       </div>
     </section>
   );
@@ -254,7 +258,7 @@ export function Sizzle() {
         </div>
         <div style={{ marginTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
           <div className="bureau-line light" style={{ margin: 0 }}>Sizzle reel</div>
-          <a href={SITE.social.youtube} className="btn btn-outline-light">More on YouTube →</a>
+          <a href={SITE.social.youtube} className="btn btn-outline-light" target="_blank" rel="noopener noreferrer">More on YouTube →</a>
         </div>
       </div>
     </section>

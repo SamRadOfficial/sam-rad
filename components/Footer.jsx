@@ -28,18 +28,19 @@ export default function Footer() {
           <div>
             <div className="f-col-title">Connect</div>
             <ul className="f-links">
-              <li><a href={SITE.social.linkedin}>LinkedIn</a></li>
-              <li><a href={SITE.social.instagram}>Instagram</a></li>
-              <li><a href={SITE.social.youtube}>YouTube</a></li>
-              <li><a href={SITE.social.twitter}>Twitter / X</a></li>
+              <li><a href={SITE.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href={SITE.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href={SITE.social.youtube} target="_blank" rel="noopener noreferrer">YouTube</a></li>
+              <li><a href={SITE.social.illicitShadows} target="_blank" rel="noopener noreferrer">Illicit Shadows</a></li>
+              <li><a href={SITE.social.x} target="_blank" rel="noopener noreferrer">X</a></li>
             </ul>
           </div>
           <div>
             <div className="f-col-title">Booking</div>
             <ul className="f-links">
               <li><Link href="/book">Inquire</Link></li>
-              <li><a href={SITE.bureau.orgUrl}>Executive Speakers Bureau</a></li>
-              <li><Link href="/body-of-work">Media kit</Link></li>
+              <li><a href={SITE.bureau.orgUrl} target="_blank" rel="noopener noreferrer">Executive Speakers Bureau</a></li>
+              <li><Link href="/body-of-work#books">Order the books</Link></li>
             </ul>
           </div>
         </div>

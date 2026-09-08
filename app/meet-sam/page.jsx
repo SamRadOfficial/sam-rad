@@ -45,9 +45,9 @@ export default function MeetSam() {
                 <h2 className="h2" style={{ marginBottom: 32 }}><span className="mint-fill">Curiosity</span> of an anthropologist. <span className="mint-fill">Instinct</span> of a tech founder. <span className="mint-fill">Energy</span> of a rock star.</h2>
                 <div className="split-body">
                   <p>Sam Rad (born Samantha Radocchia) is an anthropologist who spent twenty years inside technology revolutions, founding four companies through the rise of e-commerce, blockchain, and AI, and learning one thing above all: <em>change has a pattern.</em></p>
-                  <p>With the curiosity of an anthropologist, the instinct of a tech founder, the candor of a friend, and the calm of an ex-professional skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
+                  <p>With the curiosity of an anthropologist, the instinct of a tech founder, the candor of a friend, and the calm of an ex-competitive skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
                   <p>She says the things other speakers won&apos;t, and she says them with warmth. Her talks lift the overwhelm, hand the room a simple way to read what&apos;s happening, and end on the promise every anxious audience needs to hear: <strong>you&apos;re going to be OK.</strong></p>
-                  <p>Managed by <a href={SITE.bureau.mailto}>Brandy Gibson</a> at <a href={SITE.bureau.orgUrl}>Executive Speakers Bureau</a>, Sam Rad is the speaker you book when your people are facing change and you need them to walk out ready for it.</p>
+                  <p>Managed by <a href={SITE.bureau.mailto}>Brandy Gibson</a> at <a href={SITE.bureau.orgUrl} target="_blank" rel="noopener noreferrer">Executive Speakers Bureau</a>, Sam Rad is the speaker you book when your people are facing change and you need them to walk out ready for it.</p>
                 </div>
                 <div className="stat-row">
                   <div><div className="n">5</div><div className="l">Continents</div></div>
@@ -68,7 +68,7 @@ export default function MeetSam() {
               <div className="prose-body">
                 <h3 style={{ marginTop: 0 }}>The technologist</h3>
                 <p>Trained in anthropology and linguistics, Sam focused her research on simulated realities, cognitive security, and post-human society. She was among the first anthropologists to live inside the virtual world Second Life in 2009, and in 2020 she deepfaked herself in a project called SamRad.AI. She calls herself an archaeologist of the future: applying an ethnographic approach to envisioning what comes next.</p>
-                <p>A four-time entrepreneur, she co-founded <a href="https://www.youm.ai/">NYOUM (YOUM.AI)</a>, a London-based generative AI communication platform, and Chronicled, a San Francisco blockchain company bringing trust to global commerce and supply chains. Prior to Chronicled, Sam founded two companies leveraging AI to map personal taste.</p>
+                <p>A four-time entrepreneur, she co-founded <a href="https://www.youm.ai/" target="_blank" rel="noopener noreferrer">NYOUM (YOUM.AI)</a>, a London-based generative AI communication platform, and Chronicled, a San Francisco blockchain company bringing trust to global commerce and supply chains. Prior to Chronicled, Sam founded two companies leveraging AI to map personal taste.</p>
 
                 <h3>The inventor</h3>
                 <p>Sam holds a family of patents linking the physical and digital worlds, all filed at Chronicled with co-inventors David Aho, Ryan Orr, and Maurizio Greco, and is noted for early blockchain protocols that contributed to ERC-721, the standard behind NFTs.</p>
@@ -79,7 +79,7 @@ export default function MeetSam() {
                         <div className="t">{t}</div>
                         <div className="d">{d}</div>
                       </div>
-                      <div className="n">{href ? <a href={href}>{num}</a> : num}</div>
+                      <div className="n">{href ? <a href={href} target="_blank" rel="noopener noreferrer">{num}</a> : num}</div>
                     </div>
                   ))}
                 </div>
@@ -108,7 +108,8 @@ export default function MeetSam() {
                 </div>
                 <div className="side-photo">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/stage-white.jpg" alt="Sam Rad on stage" />
+                  <img src="/images/stage-white.jpg" alt="Sam Rad keynoting for American Express" />
+                  <span className="sp-cap">American Express</span>
                 </div>
               </aside>
             </div>

@@ -42,7 +42,7 @@ export default function BodyOfWork() {
           short
           lead={<>Two #1 bestsellers. An investigative production and the institute behind it. Patents, inventions, and a stage archive spanning five continents. <strong>This is the work behind the keynote.</strong></>}
           cta={<Link href="#books" className="btn btn-mint">The books ↓</Link>}
-          caption="Chicago"
+          caption="CRMC · Chicago"
         >
           Built across <span className="mint-fill">decades</span> &amp; disciplines.
         </PhotoHero>
@@ -73,7 +73,7 @@ export default function BodyOfWork() {
                   <p>As humans merge ever more deeply with technologies that seem to be advancing impossibly fast, we have entered a new era, the Age of Acceleration, that will call our very humanity into question. Are you ready for what comes next?</p>
                   <p>Drawing from cutting-edge science and deep personal experience, <strong>Radical Next</strong> is both a forward-thinking manual for deprogramming from the conventional operating systems that have defined us for centuries and a provocative call to action to shape a future that is balanced, connected, and profoundly human.</p>
                 </div>
-                <a href="https://www.amazon.com/Radical-Next-Reclaiming-Humanity-Post-Human/dp/B0DGV4265T" className="btn btn-ink">Buy the book →</a>
+                <a href="https://www.amazon.com/Radical-Next-Reclaiming-Humanity-Post-Human/dp/B0DGV4265T" className="btn btn-ink" target="_blank" rel="noopener noreferrer">Buy on Amazon →</a>
               </div>
             </div>
 
@@ -89,7 +89,7 @@ export default function BodyOfWork() {
                   <p>Whether you&apos;re a business leader preparing for a decentralized future or simply curious about blockchain, this guide will boost your confidence and enthusiasm, offering a broader perspective that makes the technology&apos;s possibilities exciting rather than intimidating.</p>
                   <p>Published under Samantha Radocchia.</p>
                 </div>
-                <a href="https://www.amazon.com/Bitcoin-Pizza-No-Bullshit-Guide-Blockchain/dp/1544504438" className="btn btn-ink">Buy the book →</a>
+                <a href="https://www.amazon.com/Bitcoin-Pizza-No-Bullshit-Guide-Blockchain/dp/1544504438" className="btn btn-ink" target="_blank" rel="noopener noreferrer">Buy on Amazon →</a>
               </div>
             </div>
           </div>
@@ -100,7 +100,9 @@ export default function BodyOfWork() {
           tag="Productions"
           heading={<>Illicit <span className="mint-fill">Shadows.</span></>}
           lead="An investigative documentary series exploring the dark forces shaping the global criminal underworld, produced by RADOC. Through Illicit Shadows, LLC, Sam co-founded MISTIC, an institute mapping organized crime, emerging technology, and global threat networks, and home to Project Helix: an AI intelligence fusion center and predictive convergence system."
-          btn="Explore the production →"
+          href={SITE.social.illicitShadows}
+          external
+          btn="Visit Illicit Shadows →"
           caption="Illicit Shadows · Washington, DC"
         />
 
@@ -123,7 +125,7 @@ export default function BodyOfWork() {
               ['gp-a', 'headshot.jpg', 'Studio'],
               ['gp-b', 'cta-audience.jpg', 'Bangkok'],
               ['gp-c', 'stage-hrsw.jpg', 'HR Southwest'],
-              ['gp-d', 'cta-red.jpg', 'Keynote'],
+              ['gp-d', 'cta-red.jpg', 'Stansberry Research'],
               ['gp-e', 'backstage.jpg', 'Backstage'],
             ].map(([cls, img, label]) => (
               <div className={`gp ${cls}`} key={img}>
@@ -134,7 +136,7 @@ export default function BodyOfWork() {
             ))}
           </div>
           <div className="more">
-            <a href={SITE.social.youtube} className="btn btn-ghost">All videos on YouTube →</a>
+            <a href={SITE.social.youtube} className="btn btn-ghost" target="_blank" rel="noopener noreferrer">All videos on YouTube →</a>
           </div>
         </section>
 
@@ -143,7 +145,7 @@ export default function BodyOfWork() {
           tag="Book Sam Rad"
           heading={<>Walk out <span className="mint-fill">ready.</span></>}
           lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
-          caption="Keynote · 2024"
+          caption="Stansberry Research"
         />
       </main>
       <Footer />
