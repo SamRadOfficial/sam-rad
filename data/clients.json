@@ -1,27 +1,126 @@
 [
-  { "name": "Cisco", "svg": "cisco.svg" },
-  { "name": "Dell" },
-  { "name": "SAP", "svg": "sap.svg" },
-  { "name": "IBM" },
-  { "name": "American Express", "svg": "americanexpress.svg", "short": "Amex" },
-  { "name": "United Nations", "svg": "unitednations.svg", "short": "United Nations" },
-  { "name": "World Economic Forum", "short": "WEF" },
-  { "name": "Federal Reserve" },
-  { "name": "Pfizer" },
-  { "name": "Coca-Cola", "svg": "cocacola.svg" },
-  { "name": "Nestlé" },
-  { "name": "Unilever", "svg": "unilever.svg" },
-  { "name": "P&G" },
-  { "name": "GE", "svg": "generalelectric.svg" },
-  { "name": "BMW", "svg": "bmw.svg" },
-  { "name": "Whirlpool" },
-  { "name": "MIT" },
-  { "name": "Columbia University", "short": "Columbia" },
-  { "name": "LVMH" },
-  { "name": "JLL" },
-  { "name": "LinkedIn" },
-  { "name": "Pinterest", "svg": "pinterest.svg" },
-  { "name": "Audible", "svg": "audible.svg" },
-  { "name": "Gobierno de México", "short": "Gob. de México" },
-  { "name": "ICI" }
+  {
+    "name": "American Express",
+    "file": "american-express.svg"
+  },
+  {
+    "name": "Audible",
+    "file": "audible.svg"
+  },
+  {
+    "name": "Baxter",
+    "file": "baxter.png"
+  },
+  {
+    "name": "BMW",
+    "file": "bmw.svg"
+  },
+  {
+    "name": "Cardinal Health",
+    "file": "cardinal-health.png"
+  },
+  {
+    "name": "Cisco",
+    "file": "cisco.svg"
+  },
+  {
+    "name": "Coca-Cola",
+    "file": "cocacola.svg"
+  },
+  {
+    "name": "Columbia University",
+    "file": "columbia.svg"
+  },
+  {
+    "name": "Dell",
+    "file": "dell.svg"
+  },
+  {
+    "name": "Federal Reserve",
+    "file": "federal-reserve.png"
+  },
+  {
+    "name": "GE",
+    "file": "generalelectric.svg"
+  },
+  {
+    "name": "GS1",
+    "file": "gs1.png"
+  },
+  {
+    "name": "IBM",
+    "file": "ibm.svg"
+  },
+  {
+    "name": "Ivanti",
+    "file": "ivanti.png"
+  },
+  {
+    "name": "JLL",
+    "file": "jll.png"
+  },
+  {
+    "name": "Johnson & Johnson",
+    "file": "johnson-and-johnson.png"
+  },
+  {
+    "name": "LinkedIn",
+    "file": "linkedin.svg"
+  },
+  {
+    "name": "LVMH",
+    "file": "lvmh.svg"
+  },
+  {
+    "name": "Mayo Clinic",
+    "file": "mayo-clinic.png"
+  },
+  {
+    "name": "MIT",
+    "file": "mit.png"
+  },
+  {
+    "name": "Nestlé",
+    "file": "nestle.png"
+  },
+  {
+    "name": "P&G",
+    "file": "pg.png"
+  },
+  {
+    "name": "Pfizer",
+    "file": "pfizer.png"
+  },
+  {
+    "name": "Pinterest",
+    "file": "pinterest.svg"
+  },
+  {
+    "name": "SAP",
+    "file": "sap.svg"
+  },
+  {
+    "name": "Sky",
+    "file": "sky.png"
+  },
+  {
+    "name": "TFWA",
+    "file": "tfwa.png"
+  },
+  {
+    "name": "United Nations",
+    "file": "unitednations.svg"
+  },
+  {
+    "name": "Unilever",
+    "file": "unilever.svg"
+  },
+  {
+    "name": "Whirlpool",
+    "file": "whirlpool.svg"
+  },
+  {
+    "name": "World Economic Forum",
+    "file": "wef.png"
+  }
 ]

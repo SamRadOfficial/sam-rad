@@ -115,8 +115,8 @@ export default function Speaking() {
 
         <section className="photo-band">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/chicago-ballroom.jpg" alt="A packed ballroom audience watching Sam Rad keynote in Chicago" style={{ objectPosition: 'center 55%' }} />
-          <div className="cap">CRMC · Chicago</div>
+          <img src="/images/gofest-doctrine.jpg" alt="Sam Rad on stage at GOFEST in Bogota presenting the Classical Era of the change cycle" style={{ objectPosition: 'center 40%' }} />
+          <div className="cap">GOFEST 2026 · Bogotá</div>
         </section>
 
         <Moves moves={moves} />

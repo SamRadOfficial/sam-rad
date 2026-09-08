@@ -24,11 +24,13 @@
       }
     ],
     "logos": [
-      "ICI",
+      "American Express",
       "Federal Reserve",
+      "ICI",
       "Stansberry",
       "CohnReznick",
-      "LinkedIn"
+      "Members Development Conference",
+      "Credit union associations"
     ],
     "featured": true,
     "featuredOrder": 1,
@@ -59,12 +61,11 @@
       }
     ],
     "logos": [
+      "Johnson & Johnson",
+      "Cardinal Health",
+      "Baxter",
       "Pfizer",
-      "Columbia University",
-      "MIT",
-      "GE",
-      "CRN",
-      "United Nations"
+      "Mayo Clinic"
     ],
     "featured": true,
     "featuredOrder": 2,

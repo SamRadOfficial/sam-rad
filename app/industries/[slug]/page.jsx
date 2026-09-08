@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
-import { PhotoHero, CtaBreak, LogoStrip, DispatchList, Bureau, JsonLd } from '@/components/Blocks';
+import { PhotoHero, CtaBreak, LogoStrip, ClientLogos, DispatchList, Bureau, JsonLd } from '@/components/Blocks';
 import industries from '@/data/industries.json';
 import dispatches from '@/data/dispatches.json';
 import { meta, SITE } from '@/lib/site';
@@ -63,7 +63,7 @@ export default function IndustryPage({ params }) {
           The future of <span className="mint-fill">{lower}.</span>
         </PhotoHero>
 
-        <LogoStrip label={`Past ${lower} audiences include`} logos={ind.logos} />
+        <LogoStrip />
 
         <section className="prose">
           <div className="narrow">
@@ -100,6 +100,8 @@ export default function IndustryPage({ params }) {
             </div>
           </div>
         </section>
+
+        <ClientLogos names={ind.logos} label={`Sam has spoken for ${lower} organizations including`} />
 
         <section className="photo-band">
           {/* eslint-disable-next-line @next/next/no-img-element */}

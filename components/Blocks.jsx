@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import { SITE } from '@/lib/site';
+import clients from '@/data/clients.json';
+
+const LOGO_FILES = Object.fromEntries(clients.filter((c) => c.file).map((c) => [c.name, c]));
 import IndustryIcon from './IndustryIcon';
 import { MOVE_ICONS } from './MoveIcon';
 
@@ -86,6 +89,26 @@ export function LogoStrip({ label = 'Trusted by governments, Fortune 500s, and g
     </section>
   );
 }
+
+export function ClientLogos({ names = [], label }) {
+  const marks = names.map((n) => LOGO_FILES[n]).filter(Boolean);
+  if (marks.length < 2) return null;
+  return (
+    <section className="client-logos">
+      <div className="narrow">
+        <div className="logo-strip-label">{label}</div>
+        <div className="client-logo-row">
+          {marks.map((m) => (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img className="logo-mark" key={m.file} src={`/logos/${m.file}`} alt={m.name} title={m.name} loading="lazy" />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
 
 export function IndustryGrid({ industries, total, cta = 'See the keynote →', showCustom = true, numbered = true }) {
   return (

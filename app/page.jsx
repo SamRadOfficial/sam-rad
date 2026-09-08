@@ -145,8 +145,8 @@ export default function Home() {
 
         <section className="photo-band">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/hero-home.jpg" alt="Sam Rad on stage at TFWA Cannes beside a slide reading You Are Here, Age of Acceleration" style={{ objectPosition: 'center 30%' }} />
-          <div className="cap">TFWA · Cannes · Age of Acceleration</div>
+          <img src="/images/chicago-ballroom.jpg" alt="Sam Rad keynoting to a full ballroom under chandeliers at CRMC in Chicago" style={{ objectPosition: 'center 26%' }} />
+          <div className="cap">CRMC · Chicago</div>
         </section>
 
         <section className="work" id="work">
