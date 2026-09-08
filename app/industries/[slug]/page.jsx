@@ -15,8 +15,9 @@ function get(slug) {
   return industries.find((i) => i.slug === slug);
 }
 
-export function generateMetadata({ params }) {
-  const ind = get(params.slug);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const ind = get(slug);
   if (!ind) return {};
   const short = ind.name.split(' & ')[0];
   return meta({
@@ -28,8 +29,9 @@ export function generateMetadata({ params }) {
   });
 }
 
-export default function IndustryPage({ params }) {
-  const ind = get(params.slug);
+export default async function IndustryPage({ params }) {
+  const { slug } = await params;
+  const ind = get(slug);
   if (!ind) notFound();
   const short = ind.name.split(' & ')[0];
   const lower = short.toLowerCase();
