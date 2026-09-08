@@ -2,14 +2,12 @@ import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import {
-  PhotoHero, YouAreHere, CtaBreak, IndustryGrid, Testimonials, TestimonialBanner,
-  Moves, Cycle, Eras, Sizzle, Bureau, BookBar, JsonLd,
+  PhotoHero, CtaBreak, IndustryGrid, Testimonials, TestimonialBanner,
+  Moves, Eras, Sizzle, Bureau, BookBar, LogoStrip, JsonLd,
 } from '@/components/Blocks';
-import industries from '@/data/industries.json';
 import testimonials from '@/data/testimonials.json';
 import eras from '@/data/eras.json';
 import moves from '@/data/moves.json';
-import cycle from '@/data/cycle.json';
 import { meta, SITE } from '@/lib/site';
 
 export const metadata = meta({
@@ -60,6 +58,9 @@ export default function Speaking() {
           Change has<br />a <span className="mint-fill">pattern.</span>
         </PhotoHero>
 
+        <LogoStrip label="Past audiences" dark />
+
+
         <section className="prose" id="detail">
           <div className="narrow">
             <div className="prose-grid">
@@ -87,7 +88,7 @@ export default function Speaking() {
                     <li><strong>Role in the room</strong><br />Open the day or close it. The catalyst, not the consultant.</li>
                     <li><strong>Audience</strong><br />Fortune 500, associations, government, NGOs</li>
                     <li><strong>Delivery</strong><br />In-person or virtual</li>
-                    <li><strong>Customization</strong><br />Built for your industry</li>
+                    <li><strong>Customization</strong><br /><Link href="/industries" style={{ color: 'var(--mint-deep)', textDecoration: 'underline', textUnderlineOffset: 3 }}>Built for 20 industries →</Link></li>
                     <li><strong>Travels from</strong><br />New York City</li>
                   </ul>
                   <Link href="/book" className="btn btn-ink">Book Sam →</Link>
@@ -108,68 +109,49 @@ export default function Speaking() {
           sub="45 to 60 minutes, customized to your industry. In person or virtual."
         />
 
-        <section className="moment">
-          <div className="narrow">
-            <div className="tag">The moment</div>
-            <h2 className="h2">It&apos;s not working like <span className="mint-fill">you want it to.</span></h2>
-            <p className="lead" style={{ maxWidth: 720, marginTop: 20 }}>
-              <strong>Everyone strapped on the jetpack. Almost nobody is flying.</strong>
-            </p>
-            <div className="moment-grid">
-              <div className="mstat"><div className="n">9 in 10</div><div className="d">Companies use AI somewhere. About four in ten see any effect on earnings.</div><div className="s">McKinsey 2025 · Gallup 2026</div></div>
-              <div className="mstat"><div className="n">14%</div><div className="d">Of employees say it has transformed how work gets done. Time saved on email goes back into the same work.</div><div className="s">Gallup · NBER</div></div>
-              <div className="mstat"><div className="n">4%</div><div className="d">Of adopting firms have redesigned comprehensively. The few that have are nearly three times as likely to see returns.</div><div className="s">U.S. Census 2026 · BCG · McKinsey</div></div>
-            </div>
-          </div>
-        </section>
-
-        <Cycle stages={cycle} />
-
-        <BookBar
-          text="Your people are living the dip right now."
-          sub="The keynote shows them the chapter after it."
-        />
-
-        <Moves moves={moves} />
         <Eras eras={eras} />
 
         <BookBar
-          mint
           text="Five thousand years of the same cycle. One hour to hand it to your room."
           cta="Check a date →"
         />
 
-        <YouAreHere
-          eyebrow="You are here"
-          heading={<>This is the <span className="mint-fill">dip.</span></>}
-          lead="The tools arrived. The returns didn't. Every revolution has this chapter, and every one of them made it to the other side."
-          cta={<Link href="/book" className="btn btn-mint">Book Sam →</Link>}
+        <BookBar
+          mint
+          text="Your people already have the jetpack."
+          sub="This is the hour where they learn to steer it."
         />
 
-        <Sizzle />
-
-        <section className="logo-divider">
-          <div className="wide">
-            <div className="lbl">Past audiences</div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/logos-past-audiences.png" alt="Past audiences: Dell, Pfizer, BMW, Cisco, MIT, Federal Reserve, SAP, Columbia, Nestlé, Coca-Cola, Pinterest, ICI, Audible, JLL, World Economic Forum, GE, Whirlpool, United Nations, Unilever, P&G, IBM, Gobierno de México, LinkedIn, LVMH" />
-          </div>
-        </section>
+        <Moves moves={moves} />
 
         <BookBar
-          text="Cisco, Dell, SAP, the UN, the Federal Reserve."
-          sub="Sam has keynoted on five continents. Your event next."
+          text="Four moves. One room. Everything after is different."
+          sub="Tell us about your audience and we'll be in touch within one business day."
+          cta="Check a date →"
         />
 
-        <section className="industries">
+        <section className="split white" id="jetpack">
           <div className="narrow">
-            <div className="section-header">
-              <div className="tag">Customized by industry</div>
-              <h2 className="h2">The keynote, built for <span className="mint-fill">your</span> world.</h2>
+            <div className="split-grid flip">
+              <div className="split-photo">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/skydive-exit.jpg" alt="Sam Rad exiting an aircraft as a competitive skydiver" />
+              </div>
+              <div>
+                <div className="tag mint">The jetpack</div>
+                <h2 className="h2" style={{ marginBottom: 32 }}>Owning it isn&apos;t the point. <span className="mint-fill">Steering</span> is.</h2>
+                <div className="split-body">
+                  <p>Every powerful new technology arrives the same way. It promises new heights, and it scares you about where it might take you. Once everyone has one, not having one is how you get left behind.</p>
+                  <p>So everyone straps in. And almost nobody flies. <strong>The tool is not the transformation.</strong></p>
+                  <p>Sam knows the feeling from the inside. Before the boardrooms she was a competitive skydiver, hundreds of jumps that funded her first company while she was still in college. It is where the metaphor comes from, and it is why the promise at the end of the keynote lands.</p>
+                  <p>She isn&apos;t reassuring the room from the ground. <strong>She&apos;s telling them what it looks like from the 14,000 foot view.</strong></p>
+                </div>
+              </div>
             </div>
-            <IndustryGrid industries={industries} total={industries.length} />
           </div>
         </section>
+
+        <Sizzle />
 
         <TestimonialBanner />
 
@@ -193,7 +175,7 @@ export default function Speaking() {
           image="cta-red.jpg" center bureau
           tag="Book Sam Rad"
           heading={<>Let&apos;s make sure your people walk out <span className="mint-fill">ready.</span></>}
-          lead="Sam Rad is the speaker you book when your people are facing change and you need them to walk out ready for it."
+          lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
           caption="Keynote · 2024"
         />
       </main>

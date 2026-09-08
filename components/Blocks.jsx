@@ -66,14 +66,18 @@ export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, b
   );
 }
 
-export function LogoStrip({ label = 'Trusted by governments, Fortune 500s, and global institutions', logos }) {
-  const list = logos || ['Cisco','Dell','SAP','United Nations','WEF','IBM','Pfizer','Coca-Cola','Federal Reserve','MIT','LVMH','P&G'];
+export function LogoStrip({ label = 'Trusted by governments, Fortune 500s, and global institutions', dark }) {
   return (
-    <section className="logo-strip">
+    <section className={dark ? 'logo-strip dark' : 'logo-strip'}>
       <div className="logo-strip-label">{label}</div>
-      <div className="logo-row">
-        {list.map((l) => <div className="logo-item" key={l}>{l}</div>)}
+      <div className="logo-shot">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/logos-past-audiences.png"
+          alt="Past audiences include Dell, Pfizer, BMW, Cisco, MIT, the Federal Reserve, SAP, Columbia University, Nestle, Coca-Cola, Pinterest, ICI, Audible, JLL, the World Economic Forum, GE, Whirlpool, the United Nations, Unilever, P&G, IBM, Gobierno de Mexico, LinkedIn, and LVMH"
+        />
       </div>
+      <span className="logo-hint">Swipe to see all</span>
     </section>
   );
 }
@@ -149,6 +153,7 @@ export function TestimonialBanner({ item }) {
           Sam is a rare individual who has the unique ability to <u>catalyze and inspire</u> everyone around her.
         </h2>
         <div className="who">Asael Meir · Partner, CohnReznick LLP</div>
+        <Link href="/book" className="btn btn-mint tb-cta">Book Sam →</Link>
       </div>
     </section>
   );

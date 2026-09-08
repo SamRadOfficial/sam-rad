@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import {
-  PhotoHero, YouAreHere, CtaBreak, LogoStrip, IndustryGrid,
+  PhotoHero, CtaBreak, LogoStrip, IndustryGrid,
   TestimonialBanner, Eras, Bureau, BookBar,
 } from '@/components/Blocks';
 import IndustryIcon from '@/components/IndustryIcon';
@@ -35,13 +35,7 @@ export default function Home() {
           Change has<br />a <span className="mint-fill">pattern.</span>
         </PhotoHero>
 
-        <section className="logo-divider" style={{ padding: '72px 0', background: 'var(--paper-soft)' }}>
-          <div className="wide">
-            <div className="lbl">Trusted by governments, Fortune 500s, and global institutions</div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/logos-past-audiences.png" alt="Past audiences include Dell, Pfizer, BMW, Cisco, MIT, the Federal Reserve, SAP, Columbia University, Nestlé, Coca-Cola, Pinterest, ICI, Audible, JLL, the World Economic Forum, GE, Whirlpool, the United Nations, Unilever, P&G, IBM, Gobierno de México, LinkedIn, and LVMH" />
-          </div>
-        </section>
+        <LogoStrip />
 
         <section className="split white" id="meet">
           <div className="narrow">
@@ -71,33 +65,13 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="split">
-          <div className="narrow">
-            <div className="split-grid flip">
-              <div className="split-photo">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/skydive-exit.jpg" alt="Sam Rad exiting an aircraft as a competitive skydiver" />
-              </div>
-              <div>
-                <div className="tag">Where the calm comes from</div>
-                <h2 className="h2" style={{ marginBottom: 32 }}>Hundreds of jumps. <span className="mint-fill">One</span> lesson.</h2>
-                <div className="split-body">
-                  <p>Before the boardrooms, Sam was a competitive skydiver. Hundreds of jumps that funded her first company while she was still in college.</p>
-                  <p>It&apos;s where the keynote&apos;s jetpack metaphor comes from, and it&apos;s why the &ldquo;you&apos;re going to be OK&rdquo; at the end lands. She isn&apos;t reassuring the room from the ground. <strong>She&apos;s telling them what it looks like from the 14,000 foot view.</strong></p>
-                </div>
-                <Link href="/meet-sam" className="btn btn-ghost">The full story →</Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <TestimonialBanner />
 
-        <BookBar
-          mint
-          text="Sam doesn't just predict the future. She lives in it."
-          sub="Twenty years inside four technology revolutions. Now she hands the room the map."
-        />
+        <section className="photo-band">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/crn-innovators.jpg" alt="Sam Rad on stage beside a screen reading The Future Needs Innovators" />
+          <div className="cap">CRN · The future needs innovators</div>
+        </section>
 
         <section className="keynote-sec" id="keynote">
           <div className="narrow">
@@ -168,13 +142,6 @@ export default function Home() {
           </div>
         </section>
 
-        <YouAreHere
-          eyebrow="The Age of Acceleration"
-          heading={<>You are <span className="mint-fill">here.</span></>}
-          lead="Every era gets a name, a date range, and a jetpack. This is the one you're living in. The pattern says what comes next."
-          cta={<Link href="/speaking" className="btn btn-mint">See the pattern →</Link>}
-        />
-
         <section className="work" id="work">
           <div className="narrow">
             <div className="section-header">
@@ -207,10 +174,18 @@ export default function Home() {
 
         <BookBar
           deep
-          text="The worldview in print. The keynote, live."
-          sub="Radical Next is the Age of Acceleration at book length. Bring the stage version to your room."
-          cta="Book the keynote →"
+          text="Sam doesn't just predict the future. She lives in it."
+          sub="Twenty years inside four technology revolutions. Now she hands the room the map."
         />
+
+        <section className="stats desktop-only">
+          <div className="stats-grid">
+            <div className="stat"><div className="n">5</div><div className="l">Continents</div></div>
+            <div className="stat"><div className="n">50+</div><div className="l">Countries</div></div>
+            <div className="stat"><div className="n">2×</div><div className="l">#1 Bestsellers</div></div>
+            <div className="stat"><div className="n">4×</div><div className="l">Tech Founder</div></div>
+          </div>
+        </section>
 
         <section className="gallery">
           <div className="gallery-head">
