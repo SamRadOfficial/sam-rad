@@ -68,7 +68,7 @@ export default function MeetSam() {
               <div className="prose-body">
                 <h3 style={{ marginTop: 0 }}>The technologist</h3>
                 <p>Trained in anthropology and linguistics, Sam focused her research on simulated realities, cognitive security, and post-human society. She was among the first anthropologists to live inside the virtual world Second Life in 2009, and in 2020 she deepfaked herself in a project called SamRad.AI. She calls herself an archaeologist of the future: applying an ethnographic approach to envisioning what comes next.</p>
-                <p>A four-time entrepreneur, she co-founded <a href="https://www.youm.ai/" target="_blank" rel="noopener noreferrer">NYOUM (YOUM.AI)</a>, a London-based generative AI communication platform, and Chronicled, a San Francisco blockchain company bringing trust to global commerce and supply chains. Prior to Chronicled, Sam founded two companies leveraging AI to map personal taste.</p>
+                <p>A four-time entrepreneur, she co-founded NYOUM (YOUM.AI), a London-based generative AI communication platform, and Chronicled, a San Francisco blockchain company bringing trust to global commerce and supply chains. Prior to Chronicled, Sam founded two companies leveraging AI to map personal taste.</p>
 
                 <h3>The inventor</h3>
                 <p>Sam holds a family of patents linking the physical and digital worlds, all filed at Chronicled with co-inventors David Aho, Ryan Orr, and Maurizio Greco, and is noted for early blockchain protocols that contributed to ERC-721, the standard behind NFTs.</p>

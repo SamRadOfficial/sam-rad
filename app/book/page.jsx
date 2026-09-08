@@ -34,16 +34,16 @@ export default function Book() {
                 <h2 className="h3">One keynote. Built for your room.</h2>
                 <p><em>Change Has a Pattern</em> is delivered as a 45 to 60 minute keynote, or a keynote with Q&amp;A, in person or virtual. Every version is customized to your industry and your organization&apos;s moment.</p>
                 <p>Sam can open the day (lift the overwhelm, prime the room for what follows) or close it (send them out fired up, with an optimism they didn&apos;t walk in with). Say which on the planning call.</p>
-                <div className="who">
+                <a className="who" href={SITE.bureau.mailto}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/images/brandy-gibson.jpg" alt="Brandy Gibson" />
                   <div>
                     <b>{SITE.bureau.agent}</b>
                     <span>{SITE.bureau.org}</span>
                     <br />
-                    <a href={SITE.bureau.mailto}>brandy@executivespeakers.com</a>
+                    <span className="who-mail">brandy@executivespeakers.com</span>
                   </div>
-                </div>
+                </a>
                 <p><strong>Travels from</strong> New York City. <strong>Requirements</strong>: Full rider on request.</p>
               </div>
             </div>
