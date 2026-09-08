@@ -46,7 +46,7 @@ export default function Home() {
               </div>
               <div>
                 <div className="tag mint">Meet Sam</div>
-                <h2 className="h2" style={{ marginBottom: 32 }}><span className="mint-fill">Curiosity</span> of an anthropologist. <span className="mint-fill">Instinct</span> of a tech founder. <span className="mint-fill">Energy</span> of a rock star.</h2>
+                <h2 className="h2" style={{ marginBottom: 32 }}><span className="mint-word">Curiosity</span> of an anthropologist. <span className="mint-word">Instinct</span> of a tech founder. <span className="mint-word">Energy</span> of a rock star.</h2>
                 <div className="split-body">
                   <p>Sam Rad is an anthropologist who spent twenty years inside technology revolutions, founding four companies through the rise of e-commerce, blockchain, and AI, and learning one thing above all: <em>change has a pattern.</em></p>
                   <p>With the curiosity of an anthropologist, the instinct of a tech founder, the candor of a friend, and the calm of an ex-competitive skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>

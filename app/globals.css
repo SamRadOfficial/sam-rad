@@ -125,6 +125,8 @@ body.nav-open{overflow:hidden;}
 .h1{font-family:var(--fd);font-size:clamp(72px,10vw,164px);line-height:.86;text-transform:uppercase;letter-spacing:.005em;font-weight:400;}
 .h2{font-family:var(--fd);font-size:clamp(56px,7vw,108px);line-height:.88;text-transform:uppercase;letter-spacing:.005em;font-weight:400;color:var(--ink);}
 .h3{font-family:var(--fd);font-size:clamp(36px,4vw,56px);line-height:.92;text-transform:uppercase;font-weight:400;color:var(--ink);}
+.mint-word{color:var(--mint-deep);}
+.photo-hero .mint-word,.cta-break .mint-word,.yah .mint-word{color:var(--mint);}
 .mint-fill{background:var(--mint);color:var(--ink);padding:0 14px 6px;display:inline-block;text-shadow:none;}
 .lead{font-size:clamp(19px,1.6vw,22px);line-height:1.55;color:var(--ink-soft);}
 .section-header{margin-bottom:64px;}
@@ -641,7 +643,23 @@ footer{background:var(--ink-deep);color:var(--paper);padding:96px 0 40px;}
   .split-photo{position:static;top:auto;aspect-ratio:auto;}
   .split-photo img{position:static;width:100%;height:auto;object-fit:contain;}
   .split-grid.flip .split-photo{order:0;}
-  .side{position:static;} .side-photo{aspect-ratio:4/3;}
+  .side{position:static;}
+
+  /* Meet Sam prose: lead with the photo, uncropped, then the copy, then credentials. */
+  .prose-grid{display:flex;flex-direction:column;}
+  .prose-grid > .side{display:contents;}
+  .prose-grid .side-photo{order:1;aspect-ratio:auto;margin-top:0;}
+  .prose-grid .side-photo img{height:auto;object-fit:contain;}
+  .prose-grid .prose-body{order:2;}
+  .prose-grid .side-card{order:3;}
+
+  /* Skydive split: photo sits under the headline, above the paragraphs. */
+  .split-grid.flip:has(.split-copy){display:flex;flex-direction:column;}
+  .split-grid.flip .split-copy{display:contents;}
+  .split-grid.flip .split-copy .tag{order:1;}
+  .split-grid.flip .split-copy .h2{order:2;margin-bottom:24px !important;}
+  .split-grid.flip:has(.split-copy) .split-photo{order:3;margin-bottom:28px;}
+  .split-grid.flip .split-copy .split-body{order:4;}
   .keynote-photo{aspect-ratio:16/10;}
 
   .stat-row,.stats-grid,.work-grid,.ind-grid{grid-template-columns:1fr 1fr;}

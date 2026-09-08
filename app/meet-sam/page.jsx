@@ -23,14 +23,14 @@ export default function MeetSam() {
       <Nav active="Meet Sam" />
       <main id="main">
         <PhotoHero
-          image="cisco-live.jpg"
+          image="cta-audience.jpg"
           eyebrow="Meet Sam"
           short
           lead={<>Anthropologist. Four-time tech founder. #1 bestselling author. Twenty years inside technology revolutions, and one lesson above all: <strong>change has a pattern.</strong></>}
           cta={<Link href="/book" className="btn btn-mint">Book Sam →</Link>}
-          caption="Cisco Live · IT Leadership Program"
+          caption="Bangkok"
         >
-          The change <span className="mint-fill">futurist.</span>
+          The <span className="mint-fill">change</span> futurist.
         </PhotoHero>
 
         <section className="split white">
@@ -42,7 +42,7 @@ export default function MeetSam() {
               </div>
               <div>
                 <div className="tag mint">Biography</div>
-                <h2 className="h2" style={{ marginBottom: 32 }}><span className="mint-fill">Curiosity</span> of an anthropologist. <span className="mint-fill">Instinct</span> of a tech founder. <span className="mint-fill">Energy</span> of a rock star.</h2>
+                <h2 className="h2" style={{ marginBottom: 32 }}><span className="mint-word">Curiosity</span> of an anthropologist. <span className="mint-word">Instinct</span> of a tech founder. <span className="mint-word">Energy</span> of a rock star.</h2>
                 <div className="split-body">
                   <p>Sam Rad (born Samantha Radocchia) is an anthropologist who spent twenty years inside technology revolutions, founding four companies through the rise of e-commerce, blockchain, and AI, and learning one thing above all: <em>change has a pattern.</em></p>
                   <p>With the curiosity of an anthropologist, the instinct of a tech founder, the candor of a friend, and the calm of an ex-competitive skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
@@ -118,8 +118,8 @@ export default function MeetSam() {
 
         <section className="photo-band">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/hero-industries.jpg" alt="Sam Rad on stage at the Stansberry Conference" style={{ objectPosition: 'center 12%' }} />
-          <div className="cap">Stansberry Conference · Boston</div>
+          <img src="/images/cisco-live.jpg" alt="Sam Rad on stage at Cisco Live" style={{ objectPosition: 'center 42%' }} />
+          <div className="cap">Cisco Live · IT Leadership Program</div>
         </section>
 
         <section className="split">
@@ -129,7 +129,7 @@ export default function MeetSam() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/skydive-exit.jpg" alt="Sam Rad exiting an aircraft as a competitive skydiver" />
               </div>
-              <div>
+              <div className="split-copy">
                 <div className="tag">Where the calm comes from</div>
                 <h2 className="h2" style={{ marginBottom: 32 }}>Hundreds of jumps. <span className="mint-fill">One</span> lesson.</h2>
                 <div className="split-body">

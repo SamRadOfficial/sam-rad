@@ -61,7 +61,7 @@ function IndustriesMenu({ active }) {
           </div>
           <div className="mega-foot">
             <span className="note">
-              One keynote, built around the forces reshaping your world. Don&apos;t see yours? Sam builds it.
+              Custom built around the forces shaping your world.
             </span>
             <Link href="/industries">See all {industries.length} industries →</Link>
           </div>
