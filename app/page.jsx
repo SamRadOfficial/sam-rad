@@ -28,6 +28,7 @@ export default function Home() {
       <main id="main">
         <PhotoHero
           image="hero-work.jpg"
+          position="center top"
           eyebrow="The Change Futurist"
           lead={<>See it, and you&apos;re ready for whatever comes next.</>}
           cta={<Link href="/book" className="btn btn-mint">Book Sam →</Link>}

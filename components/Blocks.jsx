@@ -137,7 +137,7 @@ export function DispatchList({ dispatches }) {
   return (
     <div className="disp-list">
       {dispatches.map((d) => (
-        <Link className="disp" href={`/foresight/${d.slug}`} key={d.number}>
+        <Link className="disp" href={`/writing/${d.slug}`} key={d.number}>
           <div className="th">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={`/images/${d.image}`} alt="" />

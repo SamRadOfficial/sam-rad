@@ -7,21 +7,21 @@ import dispatches from '@/data/dispatches.json';
 import { meta } from '@/lib/site';
 
 export const metadata = meta({
-  title: 'Foresight | Dispatches from the Frontier',
+  title: 'Writing | Dispatches from the Frontier',
   description: 'One dispatch a day, rotating across twenty industries. Real sources, Sam Rad\'s lens, the pattern applied to what happened this week.',
-  path: '/foresight',
+  path: '/writing',
   image: '/images/cta-audience.jpg',
   imageAlt: 'Sam Rad keynoting to a seated audience in Bangkok',
 });
 
-export default function Foresight() {
+export default function Writing() {
   return (
     <>
-      <Nav active="Foresight" />
+      <Nav active="Writing" />
       <main id="main">
         <PhotoHero
           image="cta-audience.jpg"
-          eyebrow="Foresight · You are here"
+          eyebrow="Writing · You are here"
           short
           lead={<>One dispatch a day, rotating across twenty industries. Real sources, Sam&apos;s lens, <strong>the pattern applied to what happened this week.</strong></>}
           cta={<Link href="#latest" className="btn btn-mint">Latest dispatches ↓</Link>}

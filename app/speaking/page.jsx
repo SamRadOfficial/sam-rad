@@ -14,8 +14,8 @@ export const metadata = meta({
   title: 'Speaking | Change Has a Pattern',
   description: 'The cycle every big change follows, the four moves that turn the corner. A foresight keynote customized to your industry. Book Sam Rad.',
   path: '/speaking',
-  image: '/images/hero-foresight.jpg',
-  imageAlt: 'Sam Rad keynoting at the Ivanti Solutions Summit in front of a projected map',
+  image: '/images/hero-meet.jpg',
+  imageAlt: 'Sam Rad delivering a keynote at the SIM Executive Conference',
 });
 
 const faq = {
@@ -50,11 +50,11 @@ export default function Speaking() {
         <JsonLd data={service} />
         <JsonLd data={faq} />
         <PhotoHero
-          image="hero-foresight.jpg"
+          image="hero-meet.jpg"
           eyebrow="Speaking · The keynote"
           lead={<>The cycle every big change follows, why the new tools aren&apos;t paying off yet, and the four moves that turn the corner. <strong>Customized to your industry, your audience, your moment.</strong></>}
           cta={<Link href="/book" className="btn btn-mint">Book this keynote →</Link>}
-          caption="Ivanti Solutions Summit"
+          caption="SIM Executive Conference"
         >
           Change has<br />a <span className="mint-fill">pattern.</span>
         </PhotoHero>

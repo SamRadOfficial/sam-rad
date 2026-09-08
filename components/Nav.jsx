@@ -9,7 +9,7 @@ const ITEMS = [
   ['Meet Sam', '/meet-sam'],
   ['Speaking', '/speaking'],
   ['Industries', '/industries'],
-  ['Foresight', '/foresight'],
+  ['Writing', '/writing'],
   ['Body of Work', '/body-of-work'],
 ];
 

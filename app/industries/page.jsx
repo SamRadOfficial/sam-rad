@@ -47,7 +47,7 @@ export default function Industries() {
         <section className="dispatches">
           <div className="narrow">
             <div className="section-header">
-              <div className="tag">Foresight</div>
+              <div className="tag">Writing</div>
               <h2 className="h2">Latest across<br />all <span className="mint-fill">industries.</span></h2>
             </div>
             <DispatchList dispatches={dispatches} />

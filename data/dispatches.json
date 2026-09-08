@@ -1,7 +1,371 @@
 [
-  {"number":"0247","slug":"deepfake-ceo-fraud-tipping-point","industry":"Financial Services","industrySlug":"financial-services","title":"Why deepfake CEO fraud just hit a tipping point, and what CFOs miss about it","date":"2026-09-07","image":"gofest-conquest.jpg","deck":"Voice is no longer proof of identity. Most finance teams are still budgeting as though it is."},
-  {"number":"0246","slug":"synthetic-patient","industry":"Healthcare","industrySlug":"healthcare","title":"The synthetic patient: why AI-generated medical records are coming for clinical trials","date":"2026-09-06","image":"ivanti-team-human.jpg","deck":"Synthetic data was supposed to be the privacy fix. It's about to become the biggest perceptual security problem in medicine."},
-  {"number":"0245","slug":"election-grade-perceptual-security","industry":"Government","industrySlug":"government","title":"Election-grade perceptual security is becoming a procurement category","date":"2026-09-05","image":"gofest-doctrine.jpg","deck":"What agencies are actually buying when they buy trust infrastructure."},
-  {"number":"0244","slug":"synthetic-influencers-beauty","industry":"Retail","industrySlug":"retail","title":"Synthetic influencers are eating beauty brands: three signs your category is next","date":"2026-09-04","image":"ballroom-retail.jpg","deck":"Generated personas with real followings, and what happens to brand trust when the customer can't tell."},
-  {"number":"0243","slug":"gray-zone-playbook","industry":"Defense","industrySlug":"defense","title":"The new gray-zone playbook: cognitive warfare for the boardroom","date":"2026-09-03","image":"gofest-social-os.jpg","deck":"Operations that never cross a kinetic threshold and still achieve strategic effect."}
+  {
+    "number": "0002",
+    "slug": "blurring-reality-ai-and-the-perceptual-breakdown",
+    "industry": "Technology & AI",
+    "industrySlug": "technology-ai",
+    "title": "Blurring Reality: AI and the Perceptual Breakdown",
+    "date": "2025-09-17",
+    "image": "panel-dell.jpg",
+    "imageAlt": "Sam Rad on stage at Dell Technologies World 2023 with John Roese and Sinead Bovell",
+    "deck": "Will AI fragment our shared reality? It already has. Not madness in the brain, but a slow, society-wide drift in how we decide what is real.",
+    "tags": [
+      "AI",
+      "Security",
+      "Perception",
+      "Psychology"
+    ],
+    "legacyUrl": "/blog/blurring-reality-ai-and-the-perceptual-breakdown",
+    "body": [
+      {
+        "t": "p",
+        "x": "This morning, my brother **Mike Radocchia** sent me an article called [*The Rise of Parasitic AI*](https://www.lesswrong.com/posts/6ZnznCaTcbGYsCmqu/the-rise-of-parasitic-ai). Mike's a neuroscientist focused on digital mental health and WAY smarter than I am. So our conversations about the future of humanity are always… let's just say, very cerebral."
+      },
+      {
+        "t": "p",
+        "x": "It sparked me to reflect on a question I'm often asked:"
+      },
+      {
+        "t": "h3",
+        "x": "Will AI Fragment our Shared Reality?"
+      },
+      {
+        "t": "p",
+        "x": "The Answer? It Already Has."
+      },
+      {
+        "t": "p",
+        "x": "When most people hear *psychosis*, they think of delusions or hallucinations. What I'm pointing to isn't a psychological diagnosis, but rather, a cultural condition: a **Perceptual Breakdown**."
+      },
+      {
+        "t": "p",
+        "x": "Think of it as a slow, society-wide reality drift. A collective fracture in how we determine what is real."
+      },
+      {
+        "t": "h3",
+        "x": "A Story from 2023"
+      },
+      {
+        "t": "p",
+        "x": "I remember it vividly. It was early 2023 and I'd just returned from fieldwork in the Amazon. I stepped onstage at [**Dell Technologies World**](https://web.archive.org/web/20241208003133/https://www.dell.com/en-us/blog/innovation-or-irritation-the-future-of-new-and-disruptive-technologies/) with Dell's CTO, John Roese and fellow futurist, Sinead Bovell to talk AI, quantum computing, and immersive realities."
+      },
+      {
+        "t": "img",
+        "src": "panel-dell.jpg",
+        "cap": "Dell Technologies World 2023 · with John Roese and Sinead Bovell"
+      },
+      {
+        "t": "p",
+        "x": "ChatGPT had just swept the world by storm after its November 2022 release. AI had entered the mainstream. Not as an abstract futuristic concept from an 80s flick, but as a tool everyone was suddenly using."
+      },
+      {
+        "t": "p",
+        "x": "Onstage, I said something that would feel eerily prophetic some years later:"
+      },
+      {
+        "t": "pull",
+        "x": "AI is blurring the lines between what's real and what's not."
+      },
+      {
+        "t": "p",
+        "x": "I explained that when the trifecta of emerging technologies — AI, quantum computing, and immersive realities — converged with embedded interfaces (think brain-machine interfaces such as neural implants, nanotechnology, etc.), people would begin to lose touch with reality. Not in a distant dystopian sci-fi future, but sooner than we imagined."
+      },
+      {
+        "t": "p",
+        "x": "At the time, I thought I was anticipating something five to ten years away. But as any good futurist learns, sometimes the timeline accelerates far faster than we could imagine."
+      },
+      {
+        "t": "p",
+        "x": "... and never make predictions! ;)"
+      },
+      {
+        "t": "p",
+        "x": "You can watch that conversation here:"
+      },
+      {
+        "t": "ul",
+        "items": [
+          "[**Dell Technologies World 2023 fireside chat (YouTube)**](https://www.youtube.com/watch?v=NrSFmzD4Yzc&t=2857s)",
+          "[**Innovation or Irritation? The future of new and disruptive technologies**](https://web.archive.org/web/20241208003133/https://www.dell.com/en-us/blog/innovation-or-irritation-the-future-of-new-and-disruptive-technologies/) (Dell Blog, since removed)"
+        ]
+      },
+      {
+        "t": "h3",
+        "x": "Defining AI Psychosis"
+      },
+      {
+        "t": "p",
+        "x": "AI psychosis is not about individuals \"going crazy.\" It is the subtle, widespread erosion of our shared reality."
+      },
+      {
+        "t": "p",
+        "x": "Let me illustrate my point. It might look like this:"
+      },
+      {
+        "t": "ul",
+        "items": [
+          "A teenager scrolling TikTok who can't tell if the influencer they're watching is real or AI-generated.",
+          "A grandmother [**convinced by a synthetic voice**](https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes) that her grandchild is in danger. (FTC)",
+          "A CEO making a decision based on a memo that turns out to be algorithmically fabricated. Or a CFO erroneously wiring $25m based on a [**deepfake video conference call.**](https://www.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk) (CNN)",
+          "A community grieving after a viral story, [**later revealed as a deepfake**](https://www.theguardian.com/technology/2023/may/22/pentagon-ai-generated-image-explosion), spreads faster than any correction could catch it. (The Guardian)",
+          "A nation divided over social media posts generated by and amplified by foreign adversaries, through a sophisticated information-to-influencer-to-bot network. (See BLACKBIRD.AI and their work in Narrative Intelligence)"
+        ]
+      },
+      {
+        "t": "p",
+        "x": "Meanwhile, new cultural currents amplify the drift: some creators market [**\"sentient\" AI guides**](https://www.wired.com/story/spiritual-influencers-say-sentient-ai-can-help-you-solve-lifes-mysteries/) for spirituality and life decisions, an alluring mix of anthropomorphism and apophenia (pattern recognition on steroids) that can pull vulnerable minds deeper into algorithmically-shaped narratives."
+      },
+      {
+        "t": "p",
+        "x": "When we can no longer reliably anchor our sense of \"what happened\" or \"what's real,\" we slip into a kind of cultural psychosis."
+      },
+      {
+        "t": "p",
+        "x": "Not madness in the brain. It's far more subtle and nefarious than that. Rather, a sort of parasite that feeds off of unsuspecting hosts. Devouring data, and leaking delusion in its wake. Ultimately leading to a number of second and third order effects: most notably socio-cultural fragmentation."
+      },
+      {
+        "t": "h3",
+        "x": "Why This Matters"
+      },
+      {
+        "t": "p",
+        "x": "Why does it matter if people are tricked by a fake video or a synthetic voice? Isn't this just another version of misinformation? Don't we already have the tools to fight this?"
+      },
+      {
+        "t": "p",
+        "x": "This goes beyond \"misinformation.\""
+      },
+      {
+        "t": "p",
+        "x": "AI now generates not just content but context. Personalized, embodied experiences that feel *true*. That shift is why the stakes are so high for provenance and trust. Even major tech leaders have flagged deepfakes as a top societal risk, and regulators have scrambled to warn consumers about [**voice-cloning scams,**](https://www.theguardian.com/technology/2023/may/25/deepfakes-ai-concern-microsoft-brad-smith) for example, as an impetus to explore countermeasures."
+      },
+      {
+        "t": "p",
+        "x": "Research is also starting to quantify what many of us intuitively sense:"
+      },
+      {
+        "t": "pull",
+        "x": "Heavy LLM assistance can dampen cognitive engagement and externalize thinking."
+      },
+      {
+        "t": "p",
+        "x": "An [**MIT Media Lab**](https://www.media.mit.edu/publications/your-brain-on-chatgpt/) study tracking neural and behavioral signals during writing tasks reported weaker executive control and lower originality in AI-assisted groups—raising questions about \"cognitive debt\" when we lean too hard on generative tools."
+      },
+      {
+        "t": "p",
+        "x": "That's the real psychosis: the collapse of the scaffolding we use to orient ourselves in the world."
+      },
+      {
+        "t": "p",
+        "x": "A breakdown of what I call in my book, *Radical Next (2025)*, society's operating system."
+      },
+      {
+        "t": "h3",
+        "x": "The Speed of Acceleration"
+      },
+      {
+        "t": "p",
+        "x": "Three years have passed since the November 2022 release of ChatGPT, and in 2025 deepfakes, synthetic news, AI influencers, and [**voice-cloned extortion**](https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes) have gone from edge cases to household stories."
+      },
+      {
+        "t": "p",
+        "x": "I remember calling home to my family in 2022, a bit frazzled, saying, \"How can I trust that it's you I'm speaking to? And I've not been SIM swapped?!\" If you've seen the grandparent or fake-kidnapping calls, you know how convincing they can sound."
+      },
+      {
+        "t": "p",
+        "x": "A few months later, I find myself on stage at Dell Technologies World, and John and I echoed sentiments that we'd need \"secret passwords\" with our families and colleagues."
+      },
+      {
+        "t": "p",
+        "x": "So here's the thing: our nervous systems evolved to parse a physical world. We relied on the senses. Now we're asked to parse synthetic worlds at computational speed. Which needs some sort of... extra sensory perception, it seems."
+      },
+      {
+        "t": "p",
+        "x": "No wonder \"What's real?\" feels less rhetorical and more existential. Or even a bit, dare I say, metaphysical?"
+      },
+      {
+        "t": "h3",
+        "x": "What We Can Do About It"
+      },
+      {
+        "t": "p",
+        "x": "The answer isn't entirely clear. But it's certainly not to freak out! We must equip ourselves to navigate the change and adapt at ever-increasing, accelerating speeds. But here are a few ideas:"
+      },
+      {
+        "t": "ol",
+        "items": [
+          "**Rebuild Provenance**: Cryptographic media provenance, watermarking, and open registries",
+          "**Teach Verification as Literacy**: We need shared protocols for checking sources, assessing synthetic risk, and pausing before amplifying",
+          "**Perceptual Security:** Reconnection to our physical, cognitive, emotional, nervous system, intuitive security"
+        ]
+      },
+      {
+        "t": "h3",
+        "x": "A Closing Reflection"
+      },
+      {
+        "t": "p",
+        "x": "I'm often asked if AI will cause psychosis. Here's my reframing:"
+      },
+      {
+        "t": "pull",
+        "x": "AI is accelerating a Perceptual Breakdown."
+      },
+      {
+        "t": "p",
+        "x": "The danger isn't a world of people losing their minds. It's a society slowly losing its ability to share one. The good news: we're not powerless. With better infrastructure, literacy, and incentives, we can fortify the very thing AI is testing: our collective anchor to truth."
+      },
+      {
+        "t": "p",
+        "x": "Stay Rad!"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Wired — \"Spiritual Influencers Say 'Sentient' AI Can Help You Solve Life's Mysteries\" (2025)",
+        "url": "https://www.wired.com/story/spiritual-influencers-say-sentient-ai-can-help-you-solve-lifes-mysteries/"
+      },
+      {
+        "x": "LessWrong — \"The Rise of Parasitic AI\"",
+        "url": "https://www.lesswrong.com/posts/6ZnznCaTcbGYsCmqu/the-rise-of-parasitic-ai"
+      },
+      {
+        "x": "MIT Media Lab — \"Your Brain on ChatGPT\"",
+        "url": "https://www.media.mit.edu/publications/your-brain-on-chatgpt/"
+      },
+      {
+        "x": "FTC Consumer Alerts — AI voice cloning and grandparent scams; Voice Cloning Challenge",
+        "url": "https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes"
+      },
+      {
+        "x": "The Guardian — \"Fake AI-generated image of explosion near Pentagon\" (2023)",
+        "url": "https://www.theguardian.com/technology/2023/may/22/pentagon-ai-generated-image-explosion"
+      },
+      {
+        "x": "CNN — Finance worker pays out $25m after deepfake video call (2024)",
+        "url": "https://www.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk"
+      }
+    ]
+  },
+  {
+    "number": "0001",
+    "slug": "will-quantum-computing-break-encryption",
+    "industry": "Technology & AI",
+    "industrySlug": "technology-ai",
+    "title": "Will Quantum Computing Break Encryption?",
+    "date": "2024-05-30",
+    "image": "era-quantum.jpg",
+    "imageAlt": "Illustration of nested quantum worlds and immersive realities",
+    "deck": "Modern encryption relies on problems too complex for conventional computers. Quantum computers can theoretically slice through them almost instantly. Breaking everything.",
+    "tags": [
+      "Quantum",
+      "AI"
+    ],
+    "legacyUrl": "/blog/will-quantum-computing-break-encryption",
+    "body": [
+      {
+        "t": "p",
+        "x": "I am often asked, \"Will quantum computing break traditional encryption?\""
+      },
+      {
+        "t": "p",
+        "x": "**The answer?**"
+      },
+      {
+        "t": "p",
+        "x": "Modern encryption relies on algorithms too complex for conventional computers to crack in any reasonable timeframe. To name a few:"
+      },
+      {
+        "t": "ul",
+        "items": [
+          "RSA (Rivest-Shamir-Adleman)",
+          "AES (Advanced Encryption Standard)",
+          "SHA-256 (Secure Hash Algorithm 256 bit)",
+          "ECC (Elliptic Curve Cryptography)",
+          "Diffie-Hellman Key Exchange"
+        ]
+      },
+      {
+        "t": "p",
+        "x": "However, quantum computers can theoretically slice through these protocols almost instantly."
+      },
+      {
+        "t": "p",
+        "x": "In short? Breaking everything."
+      },
+      {
+        "t": "p",
+        "x": "From digital security, banking, online passcodes, infrastructure, virtual currencies, the list goes on."
+      },
+      {
+        "t": "p",
+        "x": "Quantum Cryptography proposes new approaches harnessing principles of quantum mechanics to encrypt and transmit data in an entirely secure manner, making it theoretically immune to hacking and eavesdropping. Two examples are: Shor's algorithm and Grover's algorithm."
+      },
+      {
+        "t": "p",
+        "x": "Now, this is cool, but are we not simply building an 'Emperor in New Clothing?'"
+      },
+      {
+        "t": "p",
+        "x": "You see, when we look at any technological system — whether that be the Large Language Models (LLMs) that power AI chatbots, or quantum-resistant algorithms — it all boils down to the following:"
+      },
+      {
+        "t": "pull",
+        "x": "An algorithmic (logical, step-by-step, repeatable) protocol that relies on pattern-recognition and statistical probabilities to function."
+      },
+      {
+        "t": "p",
+        "x": "Like that ChatGPT, Claude, AI chatbot you spend so much time talking to."
+      },
+      {
+        "t": "p",
+        "x": "The LLM is simply throwing a bunch of data and probabilities at the next logical occurrence of a word."
+      },
+      {
+        "t": "p",
+        "x": "It's still a pattern. Trained on vast amounts of data."
+      },
+      {
+        "t": "p",
+        "x": "But what if... we lived in a world beyond patterns and the abilities to recognize them?"
+      },
+      {
+        "t": "p",
+        "x": "Not only does our concept of 'intelligence' and 'IQ' change, but our entire, ...er... concept of reality changes."
+      },
+      {
+        "t": "p",
+        "x": "And this is where I've been really geeking out!!"
+      },
+      {
+        "t": "p",
+        "x": "Recently, mathematicians have created a geometric shape — dubbed 'Einstein Tile' — that can cover an infinite plane with patterns that never repeat."
+      },
+      {
+        "t": "p",
+        "x": "I've never seen something so chaotically beautiful."
+      },
+      {
+        "t": "p",
+        "x": "Fractal geometry and conventional physics. The organizing mathematical principle of nature, music, and mathematics; the golden ratio; the solfeggio scale; the Fibonacci sequence."
+      },
+      {
+        "t": "h3",
+        "x": "What does this mean for AI systems, quantum computing, and cybersecurity?"
+      },
+      {
+        "t": "p",
+        "x": "How would you build your company, your security infrastructure, your human organizational processes... in a world with infinitely repeating variance?"
+      },
+      {
+        "t": "p",
+        "x": "A world of systematically engineered entropy."
+      },
+      {
+        "t": "p",
+        "x": "A world where every occurrence truly is a unique, emergent, snowflake?"
+      }
+    ],
+    "sources": []
+  }
 ]

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import ShareLinks from './ShareLinks';
+import Body from './Body';
 import { CtaBreak, Bureau, JsonLd } from '@/components/Blocks';
 import dispatches from '@/data/dispatches.json';
 import industries from '@/data/industries.json';
@@ -20,7 +21,7 @@ export function generateMetadata({ params }) {
   return meta({
     title: `${d.title} | Dispatch Nº ${d.number}`,
     description: d.deck,
-    path: `/foresight/${d.slug}`,
+    path: `/writing/${d.slug}`,
     image: `/images/${d.image}`,
     imageAlt: d.title,
   });
@@ -49,7 +50,7 @@ export default function Dispatch({ params }) {
 
   return (
     <>
-      <Nav active="Foresight" />
+      <Nav active="Writing" />
       <main id="main">
         <JsonLd data={article} />
         <section className="article-hero">
@@ -82,24 +83,22 @@ export default function Dispatch({ params }) {
           <div className="narrow">
             <div className="article-grid">
               <div className="article-body">
-                <p>Every powerful new technology is a jetpack. It promises new heights, and it scares you about where it might take you. This week, {d.industry.toLowerCase()} got another reminder of what that means in practice.</p>
-                <p><strong>We&apos;ve been here before.</strong></p>
-                <h3>The pattern, again</h3>
-                <p>Every advance in this industry has followed the same arc. It arrives promising new heights. Early adopters get burned because the system around the tool hasn&apos;t changed. Then the institutions that steer instead of brace write the rules everyone else follows for the next generation.</p>
-                <div className="pull">Accuracy isn&apos;t the risk. Untraceability is.</div>
-                <p>That&apos;s not a technology problem. It&apos;s a redesign problem, and it is the chapter we are in right now.</p>
-                <h3>What leaders should do now</h3>
-                <p><strong>See the pattern.</strong> The cycle is recognizable, and recognizing it is what turns a headline into a chapter rather than a crisis.</p>
-                <p><strong>Let go of the old way.</strong> Unlearn before you upskill. The process built for the old tool is the thing holding the returns hostage.</p>
-                <p><strong>Lead the jetpack.</strong> Aim it at the real goal, not the old process. Task to workflow to value.</p>
-                <p>Change has a pattern. This is the part where you steer.</p>
-                <div className="sources">
-                  <div className="h">Sources</div>
-                  <ol>
-                    <li>Placeholder. The dispatch pipeline cites real, dated sources on every published article.</li>
-                  </ol>
-                </div>
-                <ShareLinks url={`${SITE.url}/foresight/${d.slug}`} title={d.title} />
+                <Body blocks={d.body} />
+                {d.sources && d.sources.length > 0 && (
+                  <div className="sources">
+                    <div className="h">Sources</div>
+                    <ol>
+                      {d.sources.map((src, i) => (
+                        <li key={i}>
+                          {src.url
+                            ? <a href={src.url} target="_blank" rel="noopener noreferrer">{src.x}</a>
+                            : src.x}
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                )}
+                <ShareLinks url={`${SITE.url}/writing/${d.slug}`} title={d.title} />
               </div>
               <aside className="side">
                 <div className="side-card">
@@ -114,7 +113,7 @@ export default function Dispatch({ params }) {
                   <div className="h">More dispatches</div>
                   <div className="mini-list">
                     {more.map((m) => (
-                      <Link className="mini" href={`/foresight/${m.slug}`} key={m.slug}>
+                      <Link className="mini" href={`/writing/${m.slug}`} key={m.slug}>
                         <div className="n">Nº {m.number}</div>
                         <div className="t">{m.title}</div>
                       </Link>

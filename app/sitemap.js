@@ -8,7 +8,7 @@ export default function sitemap() {
     ['', 1.0],
     ['/speaking', 0.9],
     ['/industries', 0.8],
-    ['/foresight', 0.8],
+    ['/writing', 0.8],
     ['/meet-sam', 0.8],
     ['/body-of-work', 0.7],
     ['/book', 0.9],
@@ -17,6 +17,6 @@ export default function sitemap() {
   return [
     ...statics,
     ...industries.map((i) => ({ url: `${SITE.url}/industries/${i.slug}`, lastModified: now, priority: 0.8 })),
-    ...dispatches.map((d) => ({ url: `${SITE.url}/foresight/${d.slug}`, lastModified: new Date(d.date), priority: 0.6 })),
+    ...dispatches.map((d) => ({ url: `${SITE.url}/writing/${d.slug}`, lastModified: new Date(d.date), priority: 0.6 })),
   ];
 }
