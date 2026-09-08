@@ -31,7 +31,7 @@ export default function Dispatch({ params }) {
   const d = get(params.slug);
   if (!d) notFound();
   const ind = industries.find((i) => i.slug === d.industrySlug);
-  const more = dispatches.filter((x) => x.slug !== d.slug).slice(0, 3);
+  const more = dispatches.filter((x) => x.slug !== d.slug && !x.archived).slice(0, 3);
   const date = new Date(d.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
 
   const article = {
@@ -57,7 +57,7 @@ export default function Dispatch({ params }) {
           <div className="narrow">
             <div className="meta">
               <span className="n">Nº {d.number}</span><span className="sep" />
-              <span>{d.industry}</span><span className="sep" />
+              {d.industry && <><span>{d.industry}</span><span className="sep" /></>}
               <span>{date}</span><span className="sep" />
               <span>6 min read</span>
             </div>
@@ -98,15 +98,23 @@ export default function Dispatch({ params }) {
                     </ol>
                   </div>
                 )}
+                <div className="follow">
+                  <p>
+                    More like this on LinkedIn.{' '}
+                    <a href={SITE.social.linkedin} target="_blank" rel="noopener noreferrer">Follow @samradofficial →</a>
+                  </p>
+                </div>
                 <ShareLinks url={`${SITE.url}/writing/${d.slug}`} title={d.title} />
               </div>
               <aside className="side">
                 <div className="side-card">
                   <div className="h">Bring this to your room</div>
                   <p style={{ fontSize: 15, lineHeight: 1.6, color: 'var(--ink-soft)', marginBottom: 8 }}>
-                    Every dispatch is a preview of the keynote. Sam delivers <em>Change Has a Pattern</em> built for {d.industry.toLowerCase()} audiences.
+                    Every dispatch is a preview of the keynote. Sam delivers <em>Change Has a Pattern</em>{d.industry ? ` built for ${d.industry.toLowerCase()} audiences` : ''}.
                   </p>
-                  {ind && <Link href={`/industries/${ind.slug}`} className="btn btn-ink">The {d.industry.toLowerCase()} keynote →</Link>}
+                  {ind
+                    ? <Link href={`/industries/${ind.slug}`} className="btn btn-ink">The {d.industry.toLowerCase()} keynote →</Link>
+                    : <Link href="/speaking" className="btn btn-ink">The keynote →</Link>}
                   <Bureau />
                 </div>
                 <div className="side-card" style={{ marginTop: 24 }}>

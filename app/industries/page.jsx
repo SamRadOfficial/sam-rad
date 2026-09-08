@@ -40,7 +40,7 @@ export default function Industries() {
 
         <section className="photo-band">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/gofest-venue.jpg" alt="The GOFEST 2026 conference venue in Bogota" />
+          <img src="/images/gofest-mindset.jpg" alt="Sam Rad keynoting at GOFEST in Bogota beside a slide reading Mindset for the Future" style={{ objectPosition: 'center 38%' }} />
           <div className="cap">GOFEST 2026 · Bogotá</div>
         </section>
 

@@ -35,7 +35,7 @@ export default function Writing() {
             <div className="disp-head" style={{ marginBottom: 48 }}>
               <h2 className="h2">Latest <span className="mint-fill">dispatches.</span></h2>
             </div>
-            <DispatchList dispatches={dispatches} />
+            <DispatchList dispatches={dispatches.filter((d) => !d.archived)} />
           </div>
         </section>
 

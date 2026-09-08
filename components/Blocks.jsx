@@ -143,7 +143,7 @@ export function DispatchList({ dispatches }) {
             <img src={`/images/${d.image}`} alt="" />
           </div>
           <div className="n">Nº {d.number}</div>
-          <div className="i">{d.industry}</div>
+          <div className="i">{d.industry || 'Writing'}</div>
           <div className="t">{d.title}</div>
           <div className="d">
             {new Date(d.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}

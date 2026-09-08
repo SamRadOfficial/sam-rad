@@ -35,7 +35,7 @@ export default function IndustryPage({ params }) {
   const lower = short.toLowerCase();
   const display = (ind.display || short).toLowerCase();
   const related = industries.filter((i) => i.slug !== ind.slug).slice(0, 4);
-  const feed = dispatches.slice(0, 4);
+  const feed = dispatches.filter((d) => !d.archived).slice(0, 4);
 
   const serviceSchema = {
     '@context': 'https://schema.org',
