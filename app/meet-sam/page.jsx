@@ -13,7 +13,6 @@ export const metadata = meta({
 
 const PATENTS = [
   ['Open Registry for Identity of Things', 'Registering and verifying physical objects on a shared, tamper-resistant ledger. Granted as US 11,354,676. Foundational work for provenance and digital twins.', 'US 2016/0358186', 'https://patents.google.com/patent/US20160358186A1/en'],
-  ['Open Registry for Internet of Things', 'Extending the registry model to connected devices and sensors, linking physical assets to verifiable digital identities.', 'US 2017/0300928', 'https://patents.google.com/patent/US20170300928A1/en'],
   ['Open Registry for Provenance and Tracking of Goods in the Supply Chain', 'Chain-of-custody and authenticity for goods moving through global supply chains. The work Chronicled was built on.', 'US 2018/0108024', 'https://patents.google.com/patent/US20180108024A1/en'],
   ['Early protocols behind ERC-721', 'Non-fungible, uniquely identifiable digital assets, developed at Chronicled, that fed into what became the ERC-721 standard.', '2016–2017', null],
 ];
@@ -116,10 +115,10 @@ export default function MeetSam() {
           </div>
         </section>
 
-        <section className="photo-band desktop-only">
+        <section className="photo-band">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/plane-window.jpg" alt="Sam Rad pointing out an aircraft window" />
-          <div className="cap">In transit</div>
+          <img src="/images/hero-industries.jpg" alt="Sam Rad on stage at the Stansberry Conference" style={{ objectPosition: 'center 12%' }} />
+          <div className="cap">Stansberry Conference · Boston</div>
         </section>
 
         <section className="split">
@@ -136,7 +135,6 @@ export default function MeetSam() {
                   <p>Before the boardrooms, Sam was a competitive skydiver. Hundreds of jumps that funded her first company while she was still in college.</p>
                   <p>It&apos;s where the keynote&apos;s jetpack metaphor comes from, and it&apos;s why the &ldquo;you&apos;re going to be OK&rdquo; at the end lands. She isn&apos;t reassuring the room from the ground. <strong>She&apos;s telling them what it looks like from the 14,000 foot view.</strong></p>
                 </div>
-                <Link href="/meet-sam" className="btn btn-ghost">The full story →</Link>
               </div>
             </div>
           </div>
