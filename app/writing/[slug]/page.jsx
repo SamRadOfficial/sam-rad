@@ -65,7 +65,7 @@ export default function Dispatch({ params }) {
             <p className="deck">{d.deck}</p>
             <div className="byline">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/headshot.jpg" alt="Sam Rad" />
+              <img src="/images/headshot-avatar.jpg" alt="Sam Rad" />
               <div>
                 <div className="who">Sam Rad</div>
                 <div className="what">The Change Futurist · Dispatches from the frontier</div>
