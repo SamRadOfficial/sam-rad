@@ -59,7 +59,7 @@ export default function Industries() {
           tag="Book Sam Rad"
           heading={<>Walk out <span className="mint-fill">ready.</span></>}
           lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
-          caption="Stansberry Research"
+          caption="CITE"
         />
       </main>
       <Footer />

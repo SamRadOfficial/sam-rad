@@ -150,12 +150,12 @@ export default function Home() {
             </div>
             <div className="work-grid">
               {[
-                ['Books', 'Radical Next', '#1 bestseller. Reclaiming your humanity in a post-human world.', 'book', '/images/book-radical-next.png', 'Read'],
-                ['Books', 'Bitcoin Pizza', 'The no-bullshit guide to blockchain. Bestselling primer on Web3.', 'book', '/images/book-bitcoin-pizza.png', 'Read'],
-                ['Productions', 'Illicit Shadows', 'An investigative documentary series on the forces shaping the global criminal underworld, and the institute mapping them.', 'c3', '/images/illicit-shadows-whitehouse.jpg', 'Explore'],
-                ['Media', 'On Stage', 'Keynotes, panels, and interviews from Dell Technologies World, TFWA, Cisco Live, GOFEST, and more.', 'c4', '/images/gofest-mindset-portrait.jpg', 'Watch'],
-              ].map(([eyebrow, title, desc, cover, img, link]) => (
-                <Link className="work-card" href="/body-of-work" key={title}>
+                ['Books', 'Radical Next', '#1 bestseller. Reclaiming your humanity in a post-human world.', 'book', '/images/book-radical-next.png', 'Read', '/body-of-work#radical-next'],
+                ['Books', 'Bitcoin Pizza', 'The no-bullshit guide to blockchain. Bestselling primer on Web3.', 'book', '/images/book-bitcoin-pizza.png', 'Read', '/body-of-work#bitcoin-pizza'],
+                ['Productions', 'Illicit Shadows', 'An investigative documentary series on the forces shaping the global criminal underworld, and the institute mapping them.', 'c3', '/images/illicit-shadows-whitehouse.jpg', 'Explore', '/body-of-work#illicit'],
+                ['Media', 'On Stage', 'Keynotes, panels, and interviews from Dell Technologies World, TFWA, Cisco Live, GOFEST, and more.', 'c4', '/images/gofest-mindset-portrait.jpg', 'Watch', '/body-of-work#media'],
+              ].map(([eyebrow, title, desc, cover, img, link, href]) => (
+                <Link className="work-card" href={href} key={title}>
                   <div className={`work-cover ${cover}`}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={img} alt={title} />
@@ -197,9 +197,9 @@ export default function Home() {
               ['gp-h', 'gofest-faster-horses.jpg', 'GOFEST 2026 · Bogotá'],
               ['gp-a', 'stage-hrsw.jpg', 'HR Southwest · Fort Worth'],
               ['gp-b', 'panel-dell.jpg', 'Dell Technologies World'],
-              ['gp-c', 'cta-red.jpg', 'Stansberry Research'],
+              ['gp-c', 'cta-red.jpg', 'CITE'],
               ['gp-d', 'hillary-tfwa.jpg', 'TFWA 40th · with Hillary Clinton'],
-              ['gp-e', 'neil-degrasse-tyson.jpg', 'With Neil deGrasse Tyson'],
+              ['gp-e', 'neil-degrasse-tyson.jpg', 'Dell Technologies World · with Neil deGrasse Tyson'],
               ['gp-f', 'cisco-live.jpg', 'Cisco Live · IT Leadership'],
               ['gp-g', 'chicago-ballroom.jpg', 'CRMC · Chicago'],
             ].map(([cls, img, label]) => (

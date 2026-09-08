@@ -53,7 +53,7 @@ export default function BodyOfWork() {
               <div className="tag">Books</div>
               <h2 className="h2">Two #1 <span className="mint-fill">bestsellers.</span></h2>
             </div>
-            <div className="split-grid" style={{ alignItems: 'start' }}>
+            <div className="split-grid" id="radical-next" style={{ alignItems: 'start' }}>
               <div>
                 <div className="book-cover">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -67,8 +67,9 @@ export default function BodyOfWork() {
                 </div>
               </div>
               <div>
-                <div className="tag mint">2025 · Amplify · ISBN 979-8-89138-248-0</div>
-                <h3 className="h3" style={{ marginBottom: 20 }}>Radical Next: Reclaiming Your Humanity in a Post-Human World</h3>
+                <div className="tag mint">2025</div>
+                <h3 className="h3" style={{ marginBottom: 10 }}>Radical Next: Reclaiming Your Humanity in a Post-Human World</h3>
+                <div className="book-meta">Amplify · ISBN 979-8-89138-248-0</div>
                 <div className="split-body">
                   <p>As humans merge ever more deeply with technologies that seem to be advancing impossibly fast, we have entered a new era, the Age of Acceleration, that will call our very humanity into question. Are you ready for what comes next?</p>
                   <p>Drawing from cutting-edge science and deep personal experience, <strong>Radical Next</strong> is both a forward-thinking manual for deprogramming from the conventional operating systems that have defined us for centuries and a provocative call to action to shape a future that is balanced, connected, and profoundly human.</p>
@@ -77,14 +78,15 @@ export default function BodyOfWork() {
               </div>
             </div>
 
-            <div className="split-grid flip" style={{ alignItems: 'start', marginTop: 96 }}>
+            <div className="split-grid flip" id="bitcoin-pizza" style={{ alignItems: 'start', marginTop: 96 }}>
               <div className="book-cover">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/book-bitcoin-pizza.png" alt="Bitcoin Pizza" />
               </div>
               <div>
-                <div className="tag mint">2019 · ISBN 978-1-5445-0443-8</div>
-                <h3 className="h3" style={{ marginBottom: 20 }}>Bitcoin Pizza: The No-Bullshit Guide to Blockchain</h3>
+                <div className="tag mint">2019</div>
+                <h3 className="h3" style={{ marginBottom: 10 }}>Bitcoin Pizza: The No-Bullshit Guide to Blockchain</h3>
+                <div className="book-meta">ISBN 978-1-5445-0443-8</div>
                 <div className="split-body">
                   <p>Whether you&apos;re a business leader preparing for a decentralized future or simply curious about blockchain, this guide will boost your confidence and enthusiasm, offering a broader perspective that makes the technology&apos;s possibilities exciting rather than intimidating.</p>
                   <p>Published under Samantha Radocchia.</p>
@@ -106,7 +108,7 @@ export default function BodyOfWork() {
           caption="Illicit Shadows · Washington, DC"
         />
 
-        <Sizzle />
+        <div id="media"><Sizzle /></div>
 
         <YouAreHere
           eyebrow="You are here"
@@ -125,7 +127,7 @@ export default function BodyOfWork() {
               ['gp-a', 'headshot.jpg', 'Studio'],
               ['gp-b', 'cta-audience.jpg', 'Bangkok'],
               ['gp-c', 'stage-hrsw.jpg', 'HR Southwest'],
-              ['gp-d', 'cta-red.jpg', 'Stansberry Research'],
+              ['gp-d', 'cta-red.jpg', 'CITE'],
               ['gp-e', 'backstage.jpg', 'Backstage'],
             ].map(([cls, img, label]) => (
               <div className={`gp ${cls}`} key={img}>
@@ -145,7 +147,7 @@ export default function BodyOfWork() {
           tag="Book Sam Rad"
           heading={<>Walk out <span className="mint-fill">ready.</span></>}
           lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
-          caption="Stansberry Research"
+          caption="CITE"
         />
       </main>
       <Footer />

@@ -24,7 +24,7 @@ const faq = {
     ['Who is Sam Rad?', 'Sam Rad (Samantha Radocchia) is a keynote speaker, anthropologist, and four-time technology founder who wrote the #1 bestseller Radical Next. She delivers the keynote Change Has a Pattern to Fortune 500s, governments, and associations worldwide.'],
     ['What is Sam Rad\'s keynote about?', 'Change Has a Pattern shows audiences the cycle every big change follows, why new tools are not paying off yet, and the four moves that turn the corner: see the pattern, let go of the old way, lead the jetpack, and take it off.'],
     ['What industries does Sam Rad speak to?', 'Sam customizes the keynote for twenty industries including financial services, healthcare, future of work, higher education, supply chain, hospitality, technology, retail, insurance, and government.'],
-    ['How long is the keynote?', 'The standard format is 45 to 60 minutes. A keynote with Q&A and a half-day workshop are also available, in person or virtual.'],
+    ['How long is the keynote?', 'The standard format is 45 to 60 minutes. A keynote with Q&A is also available, in person or virtual.'],
     ['Where does Sam Rad travel from?', 'Sam Rad travels from New York City and has keynoted on five continents.'],
     ['How do you book Sam Rad?', 'Sam Rad is represented by Brandy Gibson at Executive Speakers Bureau. Booking inquiries go through the form at sam-rad.com/book.'],
   ].map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
@@ -85,7 +85,7 @@ export default function Speaking() {
                 <div className="side-card">
                   <div className="h">At a glance</div>
                   <ul>
-                    <li><strong>Format</strong><br />Keynote 45–60 min · Half-day workshop</li>
+                    <li><strong>Format</strong><br />Keynote 45–60 min · Keynote + Q&amp;A</li>
                     <li><strong>Role in the room</strong><br />Open the day or close it. The catalyst, not the consultant.</li>
                     <li><strong>Audience</strong><br />Fortune 500, associations, government, NGOs</li>
                     <li><strong>Delivery</strong><br />In-person or virtual</li>
@@ -172,7 +172,7 @@ export default function Speaking() {
           tag="Book Sam Rad"
           heading={<>Walk out <span className="mint-fill">ready.</span></>}
           lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
-          caption="Stansberry Research"
+          caption="CITE"
         />
       </main>
       <Footer />

@@ -82,7 +82,7 @@ export default function IndustryPage({ params }) {
                 <div className="side-card">
                   <div className="h">Book for {lower}</div>
                   <ul>
-                    <li><strong>Format</strong><br />Keynote 45–60 min · Half-day workshop</li>
+                    <li><strong>Format</strong><br />Keynote 45–60 min · Keynote + Q&amp;A</li>
                     <li><strong>Audiences</strong><br />{ind.audiences}</li>
                     <li><strong>Customized</strong><br />Built around your agenda and your audience</li>
                     <li><strong>Delivery</strong><br />In-person or virtual</li>
@@ -155,7 +155,7 @@ export default function IndustryPage({ params }) {
           tag="Book Sam Rad"
           heading={<>Book Sam for your {lower} <span className="mint-fill">event.</span></>}
           lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
-          caption="Stansberry Research"
+          caption="CITE"
         />
       </main>
       <Footer />

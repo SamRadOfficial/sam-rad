@@ -17,8 +17,8 @@ export default function Book() {
       <main id="main">
         <PhotoHero
           image="hero-home.jpg"
-          eyebrow="Booking · You are here"
-          short
+          eyebrow="Booking"
+          compact
           lead="Your people are facing change. Let's make sure they walk out ready for it. Tell us about the room and we'll be in touch within one business day."
           caption="TFWA · Cannes · Age of Acceleration"
         >
@@ -32,11 +32,11 @@ export default function Book() {
               <div className="book-side">
                 <div className="tag mint">How booking works</div>
                 <h2 className="h3">One keynote. Built for your room.</h2>
-                <p><em>Change Has a Pattern</em> is delivered as a 45 to 60 minute keynote, a keynote with Q&amp;A, or a half-day workshop, in person or virtual. Every version is customized to your industry and your organization&apos;s moment.</p>
+                <p><em>Change Has a Pattern</em> is delivered as a 45 to 60 minute keynote, or a keynote with Q&amp;A, in person or virtual. Every version is customized to your industry and your organization&apos;s moment.</p>
                 <p>Sam can open the day (lift the overwhelm, prime the room for what follows) or close it (send them out fired up, with an optimism they didn&apos;t walk in with). Say which on the planning call.</p>
                 <div className="who">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/headshot.jpg" alt="Sam Rad" />
+                  <img src="/images/brandy-gibson.jpg" alt="Brandy Gibson" />
                   <div>
                     <b>{SITE.bureau.agent}</b>
                     <span>{SITE.bureau.org}</span>

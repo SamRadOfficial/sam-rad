@@ -12,9 +12,9 @@ export function Bureau({ light }) {
   );
 }
 
-export function PhotoHero({ image, eyebrow, children, descriptors, lead, cta, caption, short, position }) {
+export function PhotoHero({ image, eyebrow, children, descriptors, lead, cta, caption, short, compact, position }) {
   return (
-    <section className={short ? 'photo-hero short' : 'photo-hero'}>
+    <section className={`photo-hero${short ? ' short' : ''}${compact ? ' compact' : ''}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={`/images/${image}`} alt="" style={position ? { objectPosition: position } : undefined} />
       <div className="inner">
@@ -221,7 +221,7 @@ export function Eras({ eras }) {
           <div className="eras-line" />
           <div className="eras-grid">
             {eras.map((e) => (
-              <div className={`era-t ${e.now ? 'now' : ''}`} key={e.name}>
+              <div className={`era-t ${e.now ? 'now' : ''} ${e.future ? 'future' : ''}`} key={e.name}>
                 <div className="ph">
                   {e.image && (
                     /* eslint-disable-next-line @next/next/no-img-element */
@@ -236,7 +236,6 @@ export function Eras({ eras }) {
             ))}
           </div>
         </div>
-        <p className="eras-next">Next up: Bio-Integration · Quantum</p>
       </div>
     </section>
   );
