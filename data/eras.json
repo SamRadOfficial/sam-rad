@@ -1,8 +1,8 @@
 [
-  {"name":"Agrarian","dates":"10,000 – 800 BCE","image":null,"alt":"Grain<br/>& Plough"},
-  {"name":"Classical","dates":"8th c. BCE – 5th c. AD","image":"era-classical.jpg"},
-  {"name":"Exploration","dates":"1400s – 1600s","image":"era-exploration.jpg"},
-  {"name":"Industrial","dates":"1760 – 1900","image":null,"alt":"Steam<br/>& Loom"},
-  {"name":"Internet","dates":"1990s – 2010s","image":"era-internet.jpg"},
-  {"name":"Acceleration","dates":"You are here","image":"era-acceleration.jpg","now":true}
+  {"name":"Agrarian","dates":"10,000 – 800 BCE","image":"era-agrarian.jpg","tech":"Grain & Plough"},
+  {"name":"Classical","dates":"8th c. BCE – 5th c. AD","image":"era-classical.jpg","tech":"Medicine & Math"},
+  {"name":"Exploration","dates":"1400s – 1600s","image":"era-exploration.jpg","tech":"Ships & Maps"},
+  {"name":"Industrial","dates":"1760 – 1900","image":"era-industrial.jpg","tech":"Steam & Loom"},
+  {"name":"Internet","dates":"1990s – 2010s","image":"era-internet.jpg","tech":"Air & Mobile"},
+  {"name":"Acceleration","dates":"You are here","image":"era-acceleration.jpg","tech":"AI & Space","now":true}
 ]

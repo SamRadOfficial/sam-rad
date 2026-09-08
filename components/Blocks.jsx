@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { SITE } from '@/lib/site';
 import IndustryIcon from './IndustryIcon';
+import { MOVE_ICONS } from './MoveIcon';
 
 export function Bureau({ light }) {
   return (
@@ -169,7 +170,10 @@ export function Moves({ moves, dark }) {
           {moves.map((m) => (
             <div className="move" key={m.n}>
               <div className="n">{m.n}</div>
-              <div className="t">{m.title}</div>
+              <div className="mv-head">
+                <div className="t">{m.title}</div>
+                <span className="mv-ico">{MOVE_ICONS[m.n]}</span>
+              </div>
               <div className="d">{m.body}</div>
               <div className="k">{m.tag}</div>
             </div>
@@ -214,17 +218,13 @@ export function Eras({ eras }) {
           <div className="eras-grid">
             {eras.map((e) => (
               <div className={`era-t ${e.now ? 'now' : ''}`} key={e.name}>
-                {e.image ? (
-                  <div className="ph">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                <div className="ph">
+                  {e.image && (
+                    /* eslint-disable-next-line @next/next/no-img-element */
                     <img src={`/images/${e.image}`} alt={`${e.name} era`} />
-                  </div>
-                ) : (
-                  <div className="ph empty">
-                    <span dangerouslySetInnerHTML={{ __html: e.alt }} />
-                    <small>{e.name}</small>
-                  </div>
-                )}
+                  )}
+                  {e.tech && <span className="tech">{e.tech}</span>}
+                </div>
                 <div className="dot" />
                 <div className="nm">{e.name}</div>
                 <div className="dt">{e.dates}</div>

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
-import { PhotoHero, YouAreHere, CtaBreak, TestimonialBanner, Bureau } from '@/components/Blocks';
+import { PhotoHero, CtaBreak, TestimonialBanner, BookBar, Bureau } from '@/components/Blocks';
 import { meta, SITE } from '@/lib/site';
 
 export const metadata = meta({
@@ -116,7 +116,7 @@ export default function MeetSam() {
           </div>
         </section>
 
-        <section className="photo-band">
+        <section className="photo-band desktop-only">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/plane-window.jpg" alt="Sam Rad pointing out an aircraft window" />
           <div className="cap">In transit</div>
@@ -142,11 +142,10 @@ export default function MeetSam() {
           </div>
         </section>
 
-        <YouAreHere
-          eyebrow="You are here"
-          heading={<>Twenty years inside the <span className="mint-fill">pattern.</span></>}
-          lead="Four companies through e-commerce, blockchain, and AI. Sam has lived through this cycle from the inside, which is why she can hand the room the map."
-          cta={<Link href="/book" className="btn btn-mint">Book Sam →</Link>}
+        <BookBar
+          deep
+          text="Sam doesn't just predict the future. She lives in it."
+          sub="Twenty years inside four technology revolutions. Now she hands the room the map."
         />
 
         <section className="gallery">
@@ -174,8 +173,8 @@ export default function MeetSam() {
         <CtaBreak
           image="hero-work.jpg" center bureau
           tag="Book Sam Rad"
-          heading={<>Let&apos;s make sure your people walk out <span className="mint-fill">ready.</span></>}
-          lead="Sam Rad is the speaker you book when your people are facing change and you need them to walk out ready for it."
+          heading={<>Walk out <span className="mint-fill">ready.</span></>}
+          lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
           caption="Ivanti Solutions Summit"
         />
       </main>

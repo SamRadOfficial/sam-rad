@@ -154,7 +154,7 @@ export default function IndustryPage({ params }) {
           image="cta-red.jpg" center bureau
           tag="Book Sam Rad"
           heading={<>Book Sam for your {lower} <span className="mint-fill">event.</span></>}
-          lead="Sam Rad is the speaker you book when your people are facing change and you need them to walk out ready for it."
+          lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
           caption="Keynote · 2024"
         />
       </main>

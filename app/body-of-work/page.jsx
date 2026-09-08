@@ -141,8 +141,8 @@ export default function BodyOfWork() {
         <CtaBreak
           image="cta-red.jpg" center bureau
           tag="Book Sam Rad"
-          heading={<>Let&apos;s make sure your people walk out <span className="mint-fill">ready.</span></>}
-          lead="Sam Rad is the speaker you book when your people are facing change and you need them to walk out ready for it."
+          heading={<>Walk out <span className="mint-fill">ready.</span></>}
+          lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
           caption="Keynote · 2024"
         />
       </main>
