@@ -116,15 +116,6 @@ export default function Nav({ active }) {
         {ITEMS.map(([label, href]) => (
           <Link href={href} key={href} onClick={() => setOpen(false)}>{label}</Link>
         ))}
-        <div className="d-sub">Top industries</div>
-        {featured.map((ind) => (
-          <Link className="d-ind" href={`/industries/${ind.slug}`} key={ind.slug} onClick={() => setOpen(false)}>
-            {ind.name}
-          </Link>
-        ))}
-        <Link className="d-ind" href="/industries" onClick={() => setOpen(false)}>
-          See all {industries.length} industries →
-        </Link>
         <Link className="d-book" href="/book" onClick={() => setOpen(false)}>Book Sam</Link>
       </div>
     </>
