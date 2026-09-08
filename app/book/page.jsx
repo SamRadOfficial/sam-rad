@@ -44,7 +44,7 @@ export default function Book() {
                     <a href={SITE.bureau.mailto}>brandy@executivespeakers.com</a>
                   </div>
                 </div>
-                <p><strong>Travels from</strong> New York City. <strong>Requirements</strong>: earset lavalier mic, confidence monitor, countdown clock, clear front-stage area. Full rider on request.</p>
+                <p><strong>Travels from</strong> New York City. <strong>Requirements</strong>: Full rider on request.</p>
               </div>
             </div>
           </div>

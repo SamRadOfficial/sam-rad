@@ -126,7 +126,7 @@ export default function BookingForm() {
             <a href="mailto:sam@sam-rad.com">sam@sam-rad.com</a> and we will pick it up from there.
           </>
         ) : (
-          'Goes straight to Sam. Expect a reply within one business day.'
+          'Expect a reply within one business day.'
         )}
       </div>
     </form>
