@@ -18,12 +18,12 @@ export default function Foresight() {
       <Nav active="Foresight" />
       <main id="main">
         <PhotoHero
-          image="hero-home.jpg"
+          image="hero-foresight.jpg"
           eyebrow="Foresight · You are here"
           short
           lead={<>One dispatch a day, rotating across twenty industries. Real sources, Sam&apos;s lens, <strong>the pattern applied to what happened this week.</strong></>}
           cta={<Link href="#latest" className="btn btn-mint">Latest dispatches ↓</Link>}
-          caption="TFWA · Cannes · Age of Acceleration"
+          caption=""
         >
           Dispatches from<br />the <span className="mint-fill">frontier.</span>
         </PhotoHero>

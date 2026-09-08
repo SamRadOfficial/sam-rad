@@ -18,11 +18,11 @@ export default function Industries() {
       <Nav active="Industries" />
       <main id="main">
         <PhotoHero
-          image="gofest-faster-horses.jpg"
+          image="hero-industries.jpg"
           eyebrow="Industries"
           short
           lead={<>The same pattern has reshaped every industry for five thousand years. Sam builds each keynote around the forces reshaping yours, so it lands as your story, not a generic future.</>}
-          caption="GOFEST 2026 · Bogotá"
+          caption="Stansberry Conference · Boston"
         >
           Change impacting<br /><span className="mint-fill">your</span> industry.
         </PhotoHero>

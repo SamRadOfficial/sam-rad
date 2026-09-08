@@ -16,11 +16,11 @@ export default function Book() {
       <Nav />
       <main id="main">
         <PhotoHero
-          image="hero-home.jpg"
+          image="panel-dell.jpg"
           eyebrow="Booking"
           compact
           lead="Your people are facing change. Let's make sure they walk out ready for it. Tell us about the room and we'll be in touch within one business day."
-          caption="TFWA · Cannes · Age of Acceleration"
+          caption="Dell Technologies World"
         >
           Book <span className="mint-fill">Sam Rad.</span>
         </PhotoHero>

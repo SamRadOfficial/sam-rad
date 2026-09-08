@@ -8,7 +8,7 @@ export const metadata = meta({
   title: 'Body of Work | Books, Productions & Media',
   description: 'Radical Next, Bitcoin Pizza, Illicit Shadows, MISTIC, and keynote video from five continents.',
   path: '/body-of-work',
-  image: '/images/chicago-ballroom.jpg',
+  image: '/images/hero-meet.jpg',
 });
 
 const books = [
@@ -37,12 +37,12 @@ export default function BodyOfWork() {
       <main id="main">
         {books.map((b) => <JsonLd data={b} key={b.isbn} />)}
         <PhotoHero
-          image="chicago-ballroom.jpg"
+          image="hero-meet.jpg"
           eyebrow="Body of Work"
           short
           lead={<>Two #1 bestsellers. An investigative production and the institute behind it. Patents, inventions, and a stage archive spanning five continents. <strong>This is the work behind the keynote.</strong></>}
           cta={<Link href="#books" className="btn btn-mint">The books ↓</Link>}
-          caption="CRMC · Chicago"
+          caption="SIM Executive Conference"
         >
           Built across <span className="mint-fill">decades</span> &amp; disciplines.
         </PhotoHero>
