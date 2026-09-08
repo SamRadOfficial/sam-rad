@@ -30,9 +30,9 @@
       "CohnReznick",
       "LinkedIn"
     ],
-    "hero": "gofest-conquest.jpg",
     "featured": true,
-    "featuredOrder": 1
+    "featuredOrder": 1,
+    "band": "gofest-conquest.jpg"
   },
   {
     "name": "Healthcare & Life Sciences",
@@ -66,9 +66,9 @@
       "CRN",
       "United Nations"
     ],
-    "hero": "cisco-live.jpg",
     "featured": true,
-    "featuredOrder": 2
+    "featuredOrder": 2,
+    "band": "cisco-live.jpg"
   },
   {
     "name": "Future of Work",
@@ -101,9 +101,9 @@
       "SIM",
       "LinkedIn"
     ],
-    "hero": "ivanti-team-human.jpg",
     "featured": true,
-    "featuredOrder": 3
+    "featuredOrder": 3,
+    "band": "ivanti-team-human.jpg"
   },
   {
     "name": "Technology & AI",
@@ -137,9 +137,9 @@
       "Ivanti",
       "Pinterest"
     ],
-    "hero": "ivanti-acceleration.jpg",
     "featured": true,
-    "featuredOrder": 7
+    "featuredOrder": 7,
+    "band": "ivanti-acceleration.jpg"
   },
   {
     "name": "Retail & Consumer Goods",
@@ -173,9 +173,9 @@
       "LVMH",
       "TFWA"
     ],
-    "hero": "ballroom-retail.jpg",
     "featured": true,
-    "featuredOrder": 8
+    "featuredOrder": 8,
+    "band": "ballroom-retail.jpg"
   },
   {
     "name": "Hospitality & Travel",
@@ -206,9 +206,9 @@
       "Global hotel groups",
       "Travel retail associations"
     ],
-    "hero": "chicago-ballroom.jpg",
     "featured": true,
-    "featuredOrder": 6
+    "featuredOrder": 6,
+    "band": "chicago-ballroom.jpg"
   },
   {
     "name": "Marketing & Advertising",
@@ -242,9 +242,9 @@
       "LinkedIn",
       "Audible"
     ],
-    "hero": "crn-innovators.jpg",
     "featured": false,
-    "featuredOrder": null
+    "featuredOrder": null,
+    "band": "crn-innovators.jpg"
   },
   {
     "name": "Insurance",
@@ -275,9 +275,9 @@
       "CohnReznick",
       "Industry associations"
     ],
-    "hero": "gofest-venue.jpg",
     "featured": false,
-    "featuredOrder": null
+    "featuredOrder": null,
+    "band": "gofest-venue.jpg"
   },
   {
     "name": "Higher Education",
@@ -308,9 +308,9 @@
       "MIT",
       "Academic associations"
     ],
-    "hero": "gofest-doctrine.jpg",
     "featured": true,
-    "featuredOrder": 4
+    "featuredOrder": 4,
+    "band": "gofest-doctrine.jpg"
   },
   {
     "name": "Government & Public Sector",
@@ -342,9 +342,9 @@
       "Federal Reserve",
       "Gobierno de México"
     ],
-    "hero": "gofest-social-os.jpg",
     "featured": false,
-    "featuredOrder": null
+    "featuredOrder": null,
+    "band": "gofest-social-os.jpg"
   },
   {
     "name": "Defense & National Security",
@@ -374,9 +374,9 @@
       "Illicit Shadows",
       "Security and geopolitics organizations"
     ],
-    "hero": "illicit-shadows-whitehouse.jpg",
     "featured": false,
-    "featuredOrder": null
+    "featuredOrder": null,
+    "band": "illicit-shadows-whitehouse.jpg"
   },
   {
     "name": "Manufacturing & Industrial",
@@ -407,9 +407,9 @@
       "GE",
       "Federation of Thai Industries"
     ],
-    "hero": "cta-audience.jpg",
     "featured": false,
-    "featuredOrder": null
+    "featuredOrder": null,
+    "band": "cta-audience.jpg"
   },
   {
     "name": "Automotive",
@@ -439,9 +439,9 @@
       "BMW",
       "Automotive associations"
     ],
-    "hero": "gofest-faster-horses.jpg",
     "featured": false,
-    "featuredOrder": null
+    "featuredOrder": null,
+    "band": "gofest-faster-horses.jpg"
   },
   {
     "name": "Real Estate & PropTech",
@@ -471,9 +471,9 @@
       "JLL",
       "Commercial real estate organizations"
     ],
-    "hero": "cisco-live.jpg",
     "featured": false,
-    "featuredOrder": null
+    "featuredOrder": null,
+    "band": "cisco-live.jpg"
   },
   {
     "name": "Energy & Utilities",
@@ -503,9 +503,9 @@
       "GE",
       "Energy associations"
     ],
-    "hero": "crn-innovators.jpg",
     "featured": false,
-    "featuredOrder": null
+    "featuredOrder": null,
+    "band": "crn-innovators.jpg"
   },
   {
     "name": "Media & Entertainment",
@@ -536,9 +536,9 @@
       "LinkedIn",
       "Media organizations"
     ],
-    "hero": "gofest-venue.jpg",
     "featured": false,
-    "featuredOrder": null
+    "featuredOrder": null,
+    "band": "gofest-venue.jpg"
   },
   {
     "name": "Luxury & Fashion",
@@ -569,9 +569,9 @@
       "TFWA",
       "Luxury retail organizations"
     ],
-    "hero": "portrait-leopard.jpg",
     "featured": false,
-    "featuredOrder": null
+    "featuredOrder": null,
+    "band": "portrait-leopard.jpg"
   },
   {
     "name": "Professional Services",
@@ -601,9 +601,9 @@
       "CohnReznick",
       "Professional associations"
     ],
-    "hero": "stage-white.jpg",
     "featured": false,
-    "featuredOrder": null
+    "featuredOrder": null,
+    "band": "stage-white.jpg"
   },
   {
     "name": "Supply Chain & Logistics",
@@ -634,9 +634,9 @@
       "Chronicled",
       "Supply-chain associations"
     ],
-    "hero": "tfwa-cannes-wide.jpg",
     "featured": true,
-    "featuredOrder": 5
+    "featuredOrder": 5,
+    "band": "tfwa-cannes-wide.jpg"
   },
   {
     "name": "Associations & Membership",
@@ -670,8 +670,8 @@
       "SIM",
       "Federation of Thai Industries"
     ],
-    "hero": "chicago-ballroom.jpg",
     "featured": false,
-    "featuredOrder": null
+    "featuredOrder": null,
+    "band": "chicago-ballroom.jpg"
   }
 ]

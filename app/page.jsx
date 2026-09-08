@@ -15,6 +15,8 @@ export const metadata = meta({
   description:
     "Anthropologist, four-time tech founder, and #1 bestselling author. Sam Rad shows leaders the pattern behind every big change, so they're ready for what's next.",
   path: '/',
+  image: '/images/hero-work.jpg',
+  imageAlt: 'Sam Rad keynoting at the Ivanti Solutions Summit',
 });
 
 const featured = industries.filter((i) => i.featuredOrder).sort((a, b) => a.featuredOrder - b.featuredOrder);

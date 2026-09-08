@@ -9,6 +9,7 @@ export const metadata = meta({
   description: 'Radical Next, Bitcoin Pizza, Illicit Shadows, MISTIC, and keynote video from five continents.',
   path: '/body-of-work',
   image: '/images/hero-meet.jpg',
+  imageAlt: 'Sam Rad delivering a keynote at the SIM Executive Conference',
 });
 
 const books = [

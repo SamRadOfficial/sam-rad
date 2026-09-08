@@ -23,7 +23,8 @@ export function generateMetadata({ params }) {
     title: `The Future of ${short} | Keynote by Sam Rad`,
     description: `Sam Rad's ${short.toLowerCase()} keynote maps the forces reshaping the industry and the four moves that turn the corner. Book a ${short.toLowerCase()} futurist speaker.`,
     path: `/industries/${ind.slug}`,
-    image: `/images/${ind.hero}`,
+    image: '/images/hero-industries.jpg',
+    imageAlt: `Sam Rad keynoting on change for ${ind.name} leaders`,
   });
 }
 
@@ -53,7 +54,7 @@ export default function IndustryPage({ params }) {
       <main id="main">
         <JsonLd data={serviceSchema} />
         <PhotoHero
-          image={ind.hero}
+          image="hero-industries.jpg"
           eyebrow={`Industries · ${ind.name}`}
           short
           lead={<><em>Change Has a Pattern</em>, built for {lower} leaders. The cycle every big change follows, applied to the forces reshaping your world right now. <strong>Your people walk out ready for it.</strong></>}
@@ -98,6 +99,11 @@ export default function IndustryPage({ params }) {
               </aside>
             </div>
           </div>
+        </section>
+
+        <section className="photo-band">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={`/images/${ind.band}`} alt={`Sam Rad keynoting for a ${lower} audience`} />
         </section>
 
         <section className="themes">

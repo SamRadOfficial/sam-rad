@@ -11,6 +11,7 @@ export const metadata = meta({
   description: 'One dispatch a day, rotating across twenty industries. Real sources, Sam Rad\'s lens, the pattern applied to what happened this week.',
   path: '/foresight',
   image: '/images/cta-audience.jpg',
+  imageAlt: 'Sam Rad keynoting to a seated audience in Bangkok',
 });
 
 export default function Foresight() {

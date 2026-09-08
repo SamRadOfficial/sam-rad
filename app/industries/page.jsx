@@ -10,6 +10,7 @@ export const metadata = meta({
   description: 'One keynote, built for twenty industries. Sam Rad maps the forces reshaping your world and the four moves that turn the corner.',
   path: '/industries',
   image: '/images/hero-industries.jpg',
+  imageAlt: 'Sam Rad keynoting in a red suit at the Stansberry Conference in Boston',
 });
 
 export default function Industries() {

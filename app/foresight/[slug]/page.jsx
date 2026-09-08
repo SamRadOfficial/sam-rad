@@ -21,6 +21,7 @@ export function generateMetadata({ params }) {
     description: d.deck,
     path: `/foresight/${d.slug}`,
     image: `/images/${d.image}`,
+    imageAlt: d.title,
   });
 }
 

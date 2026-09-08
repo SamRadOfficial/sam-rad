@@ -9,6 +9,7 @@ export const metadata = meta({
   description: 'Sam Rad (born Samantha Radocchia) is an anthropologist, four-time tech founder, inventor, and #1 bestselling author of Radical Next.',
   path: '/meet-sam',
   image: '/images/audience-women.jpg',
+  imageAlt: 'Sam Rad on stage in front of a full audience at SHRM in Dallas',
 });
 
 const PATENTS = [

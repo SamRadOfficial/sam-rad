@@ -15,6 +15,7 @@ export const metadata = meta({
   description: 'The cycle every big change follows, the four moves that turn the corner. A foresight keynote customized to your industry. Book Sam Rad.',
   path: '/speaking',
   image: '/images/hero-foresight.jpg',
+  imageAlt: 'Sam Rad keynoting at the Ivanti Solutions Summit in front of a projected map',
 });
 
 const faq = {

@@ -9,6 +9,7 @@ export const metadata = meta({
   description: 'Booking inquiries for Sam Rad, represented by Brandy Gibson at Executive Speakers Bureau. Keynote, 45 to 60 minutes, customized to your industry.',
   path: '/book',
   image: '/images/panel-dell.jpg',
+  imageAlt: 'Sam Rad on a panel at Dell Technologies World',
 });
 
 export default function Book() {
