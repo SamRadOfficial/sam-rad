@@ -1,7 +1,6 @@
-import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
-import { PhotoHero, YouAreHere, CtaBreak, IndustryGrid, DispatchList } from '@/components/Blocks';
+import { PhotoHero, CtaBreak, IndustryGrid, DispatchList } from '@/components/Blocks';
 import industries from '@/data/industries.json';
 import dispatches from '@/data/dispatches.json';
 import { meta } from '@/lib/site';
@@ -10,6 +9,7 @@ export const metadata = meta({
   title: 'Industries | Change Impacting Your Industry',
   description: 'One keynote, built for twenty industries. Sam Rad maps the forces reshaping your world and the four moves that turn the corner.',
   path: '/industries',
+  image: '/images/hero-industries.jpg',
 });
 
 export default function Industries() {
@@ -37,12 +37,11 @@ export default function Industries() {
           </div>
         </section>
 
-        <YouAreHere
-          eyebrow="You are here"
-          heading={<>Same pattern. <span className="mint-fill">Your</span> industry.</>}
-          lead="Each page carries the keynote framed for that audience, the three forces Sam maps on stage, and everything a booker needs to say yes."
-          cta={<Link href="/book" className="btn btn-mint">Book Sam →</Link>}
-        />
+        <section className="photo-band">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/gofest-venue.jpg" alt="The GOFEST 2026 conference venue in Bogota" />
+          <div className="cap">GOFEST 2026 · Bogotá</div>
+        </section>
 
         <section className="dispatches">
           <div className="narrow">

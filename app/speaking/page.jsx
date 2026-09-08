@@ -14,7 +14,7 @@ export const metadata = meta({
   title: 'Speaking | Change Has a Pattern',
   description: 'The cycle every big change follows, the four moves that turn the corner. A foresight keynote customized to your industry. Book Sam Rad.',
   path: '/speaking',
-  image: '/images/gofest-conquest.jpg',
+  image: '/images/hero-foresight.jpg',
 });
 
 const faq = {
@@ -49,11 +49,11 @@ export default function Speaking() {
         <JsonLd data={service} />
         <JsonLd data={faq} />
         <PhotoHero
-          image="audience-women.jpg"
+          image="hero-foresight.jpg"
           eyebrow="Speaking · The keynote"
           lead={<>The cycle every big change follows, why the new tools aren&apos;t paying off yet, and the four moves that turn the corner. <strong>Customized to your industry, your audience, your moment.</strong></>}
           cta={<Link href="/book" className="btn btn-mint">Book this keynote →</Link>}
-          caption="SHRM · Dallas"
+          caption="Ivanti Solutions Summit"
         >
           Change has<br />a <span className="mint-fill">pattern.</span>
         </PhotoHero>
@@ -112,11 +112,11 @@ export default function Speaking() {
 
         <Eras eras={eras} />
 
-        <BookBar
-          mint
-          text="Your people already have the jetpack."
-          sub="This is the hour where they learn to steer it."
-        />
+        <section className="photo-band">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/chicago-ballroom.jpg" alt="A packed ballroom audience watching Sam Rad keynote in Chicago" style={{ objectPosition: 'center 55%' }} />
+          <div className="cap">CRMC · Chicago</div>
+        </section>
 
         <Moves moves={moves} />
 

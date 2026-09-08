@@ -141,6 +141,12 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="photo-band">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/hero-home.jpg" alt="Sam Rad on stage at TFWA Cannes beside a slide reading You Are Here, Age of Acceleration" style={{ objectPosition: 'center 30%' }} />
+          <div className="cap">TFWA · Cannes · Age of Acceleration</div>
+        </section>
+
         <section className="work" id="work">
           <div className="narrow">
             <div className="section-header">

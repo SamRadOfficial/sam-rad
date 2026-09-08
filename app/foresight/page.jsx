@@ -10,6 +10,7 @@ export const metadata = meta({
   title: 'Foresight | Dispatches from the Frontier',
   description: 'One dispatch a day, rotating across twenty industries. Real sources, Sam Rad\'s lens, the pattern applied to what happened this week.',
   path: '/foresight',
+  image: '/images/cta-audience.jpg',
 });
 
 export default function Foresight() {
@@ -18,12 +19,12 @@ export default function Foresight() {
       <Nav active="Foresight" />
       <main id="main">
         <PhotoHero
-          image="hero-foresight.jpg"
+          image="cta-audience.jpg"
           eyebrow="Foresight · You are here"
           short
           lead={<>One dispatch a day, rotating across twenty industries. Real sources, Sam&apos;s lens, <strong>the pattern applied to what happened this week.</strong></>}
           cta={<Link href="#latest" className="btn btn-mint">Latest dispatches ↓</Link>}
-          caption=""
+          caption="Bangkok"
         >
           Dispatches from<br />the <span className="mint-fill">frontier.</span>
         </PhotoHero>

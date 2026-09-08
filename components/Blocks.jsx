@@ -255,8 +255,7 @@ export function Sizzle() {
             allowFullScreen
           />
         </div>
-        <div style={{ marginTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
-          <div className="bureau-line light" style={{ margin: 0 }}>Sizzle reel</div>
+        <div style={{ marginTop: 24, display: 'flex', justifyContent: 'flex-end', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
           <a href={SITE.social.youtube} className="btn btn-outline-light" target="_blank" rel="noopener noreferrer">More on YouTube →</a>
         </div>
       </div>

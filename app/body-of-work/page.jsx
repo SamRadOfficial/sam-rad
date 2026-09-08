@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
-import { PhotoHero, YouAreHere, CtaBreak, Sizzle, JsonLd } from '@/components/Blocks';
+import { PhotoHero, CtaBreak, Sizzle, JsonLd } from '@/components/Blocks';
 import { meta, SITE } from '@/lib/site';
 
 export const metadata = meta({
@@ -110,12 +110,11 @@ export default function BodyOfWork() {
 
         <div id="media"><Sizzle /></div>
 
-        <YouAreHere
-          eyebrow="You are here"
-          heading={<>The worldview, <span className="mint-fill">in print.</span></>}
-          lead="Radical Next is the Age of Acceleration at book length. The keynote is the same idea, on stage."
-          cta={<Link href="/speaking" className="btn btn-mint">The keynote →</Link>}
-        />
+        <section className="photo-band">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/gofest-faster-horses.jpg" alt="Sam Rad keynoting to a full auditorium at GOFEST in Bogota" style={{ objectPosition: 'center 45%' }} />
+          <div className="cap">GOFEST 2026 · Bogotá</div>
+        </section>
 
         <section className="gallery">
           <div className="gallery-head">

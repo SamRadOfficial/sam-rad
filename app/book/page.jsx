@@ -8,6 +8,7 @@ export const metadata = meta({
   title: 'Book Sam Rad | Keynote Speaker',
   description: 'Booking inquiries for Sam Rad, represented by Brandy Gibson at Executive Speakers Bureau. Keynote, 45 to 60 minutes, customized to your industry.',
   path: '/book',
+  image: '/images/panel-dell.jpg',
 });
 
 export default function Book() {
@@ -19,7 +20,8 @@ export default function Book() {
           image="panel-dell.jpg"
           eyebrow="Booking"
           compact
-          lead="Your people are facing change. Let's make sure they walk out ready for it. Tell us about the room and we'll be in touch within one business day."
+          position="center bottom"
+          lead="Your people are facing change. Let's make sure they walk out ready for it."
           caption="Dell Technologies World"
         >
           Book <span className="mint-fill">Sam Rad.</span>
@@ -33,7 +35,6 @@ export default function Book() {
                 <div className="tag mint">How booking works</div>
                 <h2 className="h3">One keynote. Built for your room.</h2>
                 <p><em>Change Has a Pattern</em> is delivered as a 45 to 60 minute keynote, or a keynote with Q&amp;A, in person or virtual. Every version is customized to your industry and your organization&apos;s moment.</p>
-                <p>Sam can open the day (lift the overwhelm, prime the room for what follows) or close it (send them out fired up, with an optimism they didn&apos;t walk in with). Say which on the planning call.</p>
                 <a className="who" href={SITE.bureau.mailto}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/images/brandy-gibson.jpg" alt="Brandy Gibson" />
