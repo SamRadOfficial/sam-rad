@@ -15,9 +15,8 @@ export function generateStaticParams() {
 
 const get = (slug) => dispatches.find((d) => d.slug === slug);
 
-export async function generateMetadata({ params }) {
-  const { slug } = await params;
-  const d = get(slug);
+export function generateMetadata({ params }) {
+  const d = get(params.slug);
   if (!d) return {};
   return meta({
     title: `${d.title} | Dispatch Nº ${d.number}`,
@@ -28,9 +27,8 @@ export async function generateMetadata({ params }) {
   });
 }
 
-export default async function Dispatch({ params }) {
-  const { slug } = await params;
-  const d = get(slug);
+export default function Dispatch({ params }) {
+  const d = get(params.slug);
   if (!d) notFound();
   const ind = industries.find((i) => i.slug === d.industrySlug);
   const more = dispatches.filter((x) => x.slug !== d.slug).slice(0, 3);

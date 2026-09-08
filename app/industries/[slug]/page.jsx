@@ -15,9 +15,8 @@ function get(slug) {
   return industries.find((i) => i.slug === slug);
 }
 
-export async function generateMetadata({ params }) {
-  const { slug } = await params;
-  const ind = get(slug);
+export function generateMetadata({ params }) {
+  const ind = get(params.slug);
   if (!ind) return {};
   const short = ind.name.split(' & ')[0];
   return meta({
@@ -29,9 +28,8 @@ export async function generateMetadata({ params }) {
   });
 }
 
-export default async function IndustryPage({ params }) {
-  const { slug } = await params;
-  const ind = get(slug);
+export default function IndustryPage({ params }) {
+  const ind = get(params.slug);
   if (!ind) notFound();
   const short = ind.name.split(' & ')[0];
   const lower = short.toLowerCase();
@@ -137,8 +135,8 @@ export default async function IndustryPage({ params }) {
         <section className="dispatches" id="dispatches">
           <div className="narrow">
             <div className="section-header">
-              <div className="tag">Writing · {short}</div>
-              <h2 className="h2">Latest {lower} <span className="mint-fill">dispatches.</span></h2>
+              <div className="tag">Writing</div>
+              <h2 className="h2">Latest <span className="mint-fill">dispatches.</span></h2>
             </div>
             <DispatchList dispatches={feed} />
             <div className="more"><Link href="/writing" className="btn btn-ghost">All writing →</Link></div>
