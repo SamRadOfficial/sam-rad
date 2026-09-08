@@ -18,7 +18,7 @@ function get(slug) {
 export function generateMetadata({ params }) {
   const ind = get(params.slug);
   if (!ind) return {};
-  const short = ind.name.split(' & ')[0];
+  const short = ind.display || ind.name.split(' & ')[0];
   return meta({
     title: `The Future of ${short} | Keynote by Sam Rad`,
     description: `Sam Rad's ${short.toLowerCase()} keynote maps the forces reshaping the industry and the four moves that turn the corner. Book a ${short.toLowerCase()} futurist speaker.`,
@@ -33,6 +33,7 @@ export default function IndustryPage({ params }) {
   if (!ind) notFound();
   const short = ind.name.split(' & ')[0];
   const lower = short.toLowerCase();
+  const display = (ind.display || short).toLowerCase();
   const related = industries.filter((i) => i.slug !== ind.slug).slice(0, 4);
   const feed = dispatches.slice(0, 4);
 
@@ -60,7 +61,7 @@ export default function IndustryPage({ params }) {
           lead={<><em>Change Has a Pattern</em>, built for {lower} leaders. The cycle every big change follows, applied to the forces reshaping your world right now. <strong>Your people walk out ready for it.</strong></>}
           cta={<Link href="/book" className="btn btn-mint">Book Sam for your {lower} event →</Link>}
         >
-          The future of <span className="mint-fill">{lower}.</span>
+          The future of <span className="mint-fill">{display}.</span>
         </PhotoHero>
 
         <LogoStrip />

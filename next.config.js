@@ -31,6 +31,20 @@ const nextConfig = {
       { source: '/cart', destination: '/', permanent: true },
       // /speaking exists on both sites at the same path. No redirect needed.
 
+      // ── Industry pages retired 2026-09-08. Copy preserved in
+      //    data/industries-archive.json. Restore by moving the entry back.
+      { source: '/industries/marketing', destination: '/industries/retail', permanent: true },
+      { source: '/industries/insurance', destination: '/industries', permanent: true },
+      { source: '/industries/defense', destination: '/industries', permanent: true },
+      { source: '/industries/manufacturing', destination: '/industries', permanent: true },
+      { source: '/industries/automotive', destination: '/industries', permanent: true },
+      { source: '/industries/real-estate', destination: '/industries', permanent: true },
+      { source: '/industries/energy', destination: '/industries', permanent: true },
+      { source: '/industries/media', destination: '/industries', permanent: true },
+      { source: '/industries/luxury', destination: '/industries', permanent: true },
+      { source: '/industries/professional-services', destination: '/industries', permanent: true },
+      { source: '/industries/associations', destination: '/industries', permanent: true },
+
       // ── Blog taxonomy pages: send to Foresight, not the legacy archive ──
       { source: '/blog/category/:cat*', destination: '/writing', permanent: true },
       { source: '/blog/tag/:tag*', destination: '/writing', permanent: true },
