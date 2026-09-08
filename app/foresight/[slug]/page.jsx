@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import ShareLinks from './ShareLinks';
 import { CtaBreak, Bureau, JsonLd } from '@/components/Blocks';
 import dispatches from '@/data/dispatches.json';
 import industries from '@/data/industries.json';
@@ -98,10 +99,7 @@ export default function Dispatch({ params }) {
                     <li>Placeholder. The dispatch pipeline cites real, dated sources on every published article.</li>
                   </ol>
                 </div>
-                <div className="share">
-                  <a href="#">Share on LinkedIn</a>
-                  <a href="#">Copy link</a>
-                </div>
+                <ShareLinks url={`${SITE.url}/foresight/${d.slug}`} title={d.title} />
               </div>
               <aside className="side">
                 <div className="side-card">

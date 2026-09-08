@@ -583,8 +583,8 @@ body.nav-open{overflow:hidden;}
 .mini .t{font-family:var(--fd);font-size:20px;line-height:1.05;text-transform:uppercase;color:var(--ink);}
 .mini:hover .t{color:var(--mint-deep);}
 .share{display:flex;gap:10px;margin-top:20px;}
-.share a{font-family:var(--fd);font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border:1px solid var(--ink);color:var(--ink);}
-.share a:hover{background:var(--ink);color:var(--paper);}
+.share a,.share button{font-family:var(--fd);font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border:1px solid var(--ink);color:var(--ink);background:transparent;cursor:pointer;line-height:inherit;transition:background .15s,color .15s;}
+.share a:hover,.share button:hover{background:var(--ink);color:var(--paper);}
 
 /* INDUSTRY PAGE */
 .themes{background:var(--paper-white);padding:120px 0;}
