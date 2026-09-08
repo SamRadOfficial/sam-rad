@@ -30,7 +30,7 @@ export default function MeetSam() {
           cta={<Link href="/book" className="btn btn-mint">Book Sam →</Link>}
           caption="Bangkok"
         >
-          The <span className="mint-fill">change</span> futurist.
+          The <span className="mint-fill">change</span><br />futurist.
         </PhotoHero>
 
         <section className="split white">
@@ -86,7 +86,7 @@ export default function MeetSam() {
 
                 <h3>The author and producer</h3>
                 <p>She is the author of two #1 bestselling books, <strong>Radical Next: Reclaiming Your Humanity in a Post-Human World</strong> (2025) and <strong>Bitcoin Pizza: The No-Bullshit Guide to Blockchain</strong> (2019), and the founder of <strong>RAD Original Creations (RADOC)</strong>, a next-generation media studio producing stories that shape a better future.</p>
-                <p>RADOC is the producer of <strong>Illicit Shadows</strong>, an investigative documentary series exploring the dark forces shaping the global criminal underworld. Through Illicit Shadows, LLC, Sam co-founded <strong>MISTIC</strong>, the Illicit Shadows Media, Technology, and Innovation Convergence institute, mapping where organized crime, emerging technology, and global threat networks intersect. MISTIC is home to <strong>Project Helix</strong>, an AI intelligence fusion center and predictive convergence system. She also coined <strong>perceptual security</strong>, a framework for protecting human judgment, trust, and decision-making in an era of synthetic media and AI.</p>
+                <p>RADOC is the producer of <strong>Illicit Shadows</strong>, an investigative documentary series exploring the dark forces shaping the global criminal underworld. She co-founded Illicit Shadows, LLC with David M. Luna, a former U.S. diplomat and State Department official. Out of it came <strong>MISTIC</strong>, the Illicit Shadows Media, Technology, and Innovation Convergence institute, mapping where organized crime, emerging technology, and global threat networks intersect. MISTIC is home to <strong>Project Helix</strong>, an AI intelligence fusion center and predictive convergence system. She also coined <strong>perceptual security</strong>, a framework for protecting human judgment, trust, and decision-making in an era of synthetic media and AI.</p>
 
                 <h3>The speaker</h3>
                 <p>A Forbes 30 Under 30 honoree and former Forbes contributor, Sam has keynoted on five continents and advised the United Nations, the World Economic Forum, and the Federal Reserve Bank. True to her &ldquo;Rad&rdquo; name, she is no stranger to risk: hundreds of jumps as an ex-competitive skydiver, and the calm that comes with it.</p>

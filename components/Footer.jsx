@@ -45,6 +45,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="f-bottom">
+          <div className="f-cred">Anthropologist <span className="dot">·</span> Tech Entrepreneur <span className="dot">·</span> Bestselling Author</div>
           <div>© {new Date().getFullYear()} Sam Rad · Samantha Radocchia</div>
           <div className="f-sig">Stay Rad</div>
         </div>

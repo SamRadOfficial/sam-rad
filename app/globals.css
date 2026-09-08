@@ -612,6 +612,8 @@ footer{background:var(--ink-deep);color:var(--paper);padding:96px 0 40px;}
 .f-links a{font-size:14px;color:rgba(245,241,234,.7);}
 .f-links a:hover{color:var(--mint);}
 .f-bottom{padding-top:32px;border-top:1px solid rgba(245,241,234,.15);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;font-family:var(--fd);font-size:13px;letter-spacing:.12em;color:rgba(245,241,234,.55);text-transform:uppercase;}
+.f-cred{font-family:var(--fd);font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,241,234,.72);}
+.f-cred .dot{color:var(--mint);margin:0 6px;}
 .f-sig{color:var(--mint);letter-spacing:.3em;}
 
 /* MOBILE */

@@ -27,7 +27,6 @@ export default function Home() {
         <PhotoHero
           image="hero-work.jpg"
           eyebrow="The Change Futurist"
-          descriptors={<>Anthropologist <span className="dot">·</span> 4× Tech Founder <span className="dot">·</span> #1 Bestselling Author</>}
           lead={<>See it, and you&apos;re ready for whatever comes next.</>}
           cta={<Link href="/book" className="btn btn-mint">Book Sam →</Link>}
           caption="Ivanti Solutions Summit"
