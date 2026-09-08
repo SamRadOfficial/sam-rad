@@ -3,8 +3,8 @@
 // The Squarespace site stays live at this host after cutover, noindexed.
 // Archive content with no equivalent on the new site (blog, press, events,
 // glossary) redirects here so nothing 404s. As dispatches are backfilled,
-// add a bespoke /blog/:slug -> /writing/:slug rule above the legacy catch-all.
-const LEGACY = 'https://legacy.sam-rad.com';
+// add a bespoke /blog/:slug -> /writing/:slug rule above the archive catch-all.
+const ARCHIVE = 'https://archive.sam-rad.com';
 
 const nextConfig = {
   reactStrictMode: true,
@@ -35,22 +35,22 @@ const nextConfig = {
       { source: '/blog/category/:cat*', destination: '/writing', permanent: true },
       { source: '/blog/tag/:tag*', destination: '/writing', permanent: true },
 
-      // ── Posts already backfilled to the new site (keep ABOVE the legacy catch-all) ──
+      // ── Posts already backfilled to the new site (keep ABOVE the archive catch-all) ──
       { source: '/blog/blurring-reality-ai-and-the-perceptual-breakdown', destination: '/writing/blurring-reality-ai-and-the-perceptual-breakdown', permanent: true },
       { source: '/blog/will-quantum-computing-break-encryption', destination: '/writing/will-quantum-computing-break-encryption', permanent: true },
 
-      // ── Archive content preserved on the legacy host ────────────────────
-      { source: '/blog/:slug*', destination: `${LEGACY}/blog/:slug*`, permanent: true },
-      { source: '/press', destination: `${LEGACY}/press`, permanent: true },
-      { source: '/press/:path*', destination: `${LEGACY}/press/:path*`, permanent: true },
-      { source: '/events/all', destination: `${LEGACY}/events/all`, permanent: true },
-      { source: '/events/all/:path*', destination: `${LEGACY}/events/all/:path*`, permanent: true },
-      { source: '/bitcoin-pizza-glossary', destination: `${LEGACY}/bitcoin-pizza-glossary`, permanent: true },
-      { source: '/bitcoin-pizza-glossary/:path*', destination: `${LEGACY}/bitcoin-pizza-glossary/:path*`, permanent: true },
-      { source: '/glossary', destination: `${LEGACY}/bitcoin-pizza-glossary`, permanent: true },
-      { source: '/bitcoin', destination: `${LEGACY}/bitcoin`, permanent: true },
-      { source: '/resources/:path*', destination: `${LEGACY}/resources/:path*`, permanent: true },
-      { source: '/jobs', destination: `${LEGACY}/jobs`, permanent: true },
+      // ── Archive content preserved on the archive host ────────────────────
+      { source: '/blog/:slug*', destination: `${ARCHIVE}/blog/:slug*`, permanent: true },
+      { source: '/press', destination: `${ARCHIVE}/press`, permanent: true },
+      { source: '/press/:path*', destination: `${ARCHIVE}/press/:path*`, permanent: true },
+      { source: '/events/all', destination: `${ARCHIVE}/events/all`, permanent: true },
+      { source: '/events/all/:path*', destination: `${ARCHIVE}/events/all/:path*`, permanent: true },
+      { source: '/bitcoin-pizza-glossary', destination: `${ARCHIVE}/bitcoin-pizza-glossary`, permanent: true },
+      { source: '/bitcoin-pizza-glossary/:path*', destination: `${ARCHIVE}/bitcoin-pizza-glossary/:path*`, permanent: true },
+      { source: '/glossary', destination: `${ARCHIVE}/bitcoin-pizza-glossary`, permanent: true },
+      { source: '/bitcoin', destination: `${ARCHIVE}/bitcoin`, permanent: true },
+      { source: '/resources/:path*', destination: `${ARCHIVE}/resources/:path*`, permanent: true },
+      { source: '/jobs', destination: `${ARCHIVE}/jobs`, permanent: true },
     ];
   },
 };

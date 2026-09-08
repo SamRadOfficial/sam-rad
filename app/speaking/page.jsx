@@ -107,7 +107,7 @@ export default function Speaking() {
 
         <BookBar
           mint
-          text="Bring the pattern to your stage."
+          text="Bring change to your stage."
           sub="45 to 60 minutes, customized to your industry. In person or virtual."
         />
 
