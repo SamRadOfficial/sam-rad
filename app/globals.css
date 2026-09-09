@@ -878,7 +878,13 @@ details.earlier[open] summary{margin-bottom:44px;}
 /* Writing page: Forbes contributor block */
 .fb-block{background:var(--paper-white);padding:104px 0;}
 .fb-grid{display:grid;grid-template-columns:0.42fr 1fr;gap:64px;align-items:start;}
-.fb-mark img{width:100%;max-width:230px;height:auto;display:block;}
+.fb-mark{display:block;text-decoration:none;}
+.fb-mark img{width:100%;max-width:230px;height:auto;display:block;transition:opacity .18s;}
+.fb-mark:hover img{opacity:.62;}
+.fb-mark-cta{display:block;margin-top:14px;font-family:var(--fd);font-size:12px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-muted);word-break:break-all;line-height:1.5;}
+.fb-mark:hover .fb-mark-cta{color:var(--mint-deep);}
+.fb-btns{display:flex;gap:14px;flex-wrap:wrap;}
 .fb-block p{font-size:18px;line-height:1.75;color:var(--ink-soft);margin:24px 0 34px;max-width:640px;}
 .fb-list{border-top:2px solid var(--ink);margin-bottom:30px;}
 .fb-list a{display:flex;justify-content:space-between;gap:24px;align-items:baseline;padding:14px 2px;border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink-soft);font-size:16px;line-height:1.45;transition:color .15s;}

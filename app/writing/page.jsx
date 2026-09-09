@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import { PhotoHero, CtaBreak, IndustryGrid, DispatchList } from '@/components/Blocks';
 import industries from '@/data/industries.json';
 import dispatches from '@/data/dispatches.json';
-import { meta } from '@/lib/site';
+import { meta, SITE } from '@/lib/site';
 
 
 const FORBES_PICKS = [
@@ -58,10 +58,17 @@ export default function Writing() {
         <section className="fb-block">
           <div className="wide">
             <div className="fb-grid">
-              <div className="fb-mark">
+              <a
+                className="fb-mark"
+                href={SITE.social.forbes}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Sam Rad's author page on Forbes"
+              >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/logos/forbes.png" alt="Forbes" />
-              </div>
+                <span className="fb-mark-cta">forbes.com/sites/samantharadocchia ↗</span>
+              </a>
               <div>
                 <div className="tag">Contributor · 2017–2020</div>
                 <h2 className="h2">Fifty pieces, <span className="mint-fill">one thread.</span></h2>
@@ -77,7 +84,17 @@ export default function Writing() {
                     </a>
                   ))}
                 </div>
-                <Link href="/press#bylines" className="btn btn-ink">Every byline →</Link>
+                <div className="fb-btns">
+                  <a
+                    className="btn btn-ink"
+                    href={SITE.social.forbes}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Read on Forbes ↗
+                  </a>
+                  <Link href="/press#bylines" className="btn btn-ghost">All 64 bylines →</Link>
+                </div>
               </div>
             </div>
           </div>
