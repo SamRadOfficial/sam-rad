@@ -1,6 +1,6 @@
 [
   {
-    "number": "0018",
+    "number": "0008",
     "slug": "blurring-reality-ai-and-the-perceptual-breakdown",
     "industry": "Technology & AI",
     "industrySlug": "technology-ai",
@@ -250,7 +250,7 @@
     "legacyPath": "/blog/blurring-reality-ai-and-the-perceptual-breakdown"
   },
   {
-    "number": "0017",
+    "number": "0007",
     "slug": "will-quantum-computing-break-encryption",
     "industry": "Technology & AI",
     "industrySlug": "technology-ai",
@@ -474,8 +474,7 @@
       }
     ],
     "sources": [],
-    "archived": true,
-    "number": "0016"
+    "archived": true
   },
   {
     "slug": "is-bitcoin-a-fad-addressing-the-critiques-of-prominent-skeptics",
@@ -602,8 +601,7 @@
     "sources": [],
     "industry": "Financial Services & FinTech",
     "industrySlug": "financial-services",
-    "archived": true,
-    "number": "0015"
+    "archived": true
   },
   {
     "slug": "who-is-satoshi-nakamoto-a-brief-exploration-of-bitcoins-mysterious-founder",
@@ -729,8 +727,7 @@
     "sources": [],
     "industry": "Financial Services & FinTech",
     "industrySlug": "financial-services",
-    "archived": true,
-    "number": "0014"
+    "archived": true
   },
   {
     "slug": "i-bought-a-goruck-gr2-travel-bag-with-bitcoin-heres-how-you-can-too",
@@ -839,8 +836,7 @@
       }
     ],
     "sources": [],
-    "archived": true,
-    "number": "0013"
+    "archived": true
   },
   {
     "slug": "engineering-serendipity-for-happiness-and-success",
@@ -968,7 +964,7 @@
     "sources": [],
     "industry": "Future of Work",
     "industrySlug": "future-of-work",
-    "number": "0012",
+    "number": "0006",
     "imagePosition": "center 22%"
   },
   {
@@ -1628,8 +1624,7 @@
       }
     ],
     "sources": [],
-    "archived": true,
-    "number": "0011"
+    "archived": true
   },
   {
     "slug": "the-art-of-saying-no",
@@ -1777,7 +1772,7 @@
     "sources": [],
     "industry": "Future of Work",
     "industrySlug": "future-of-work",
-    "number": "0010",
+    "number": "0005",
     "imagePosition": "center 22%"
   },
   {
@@ -1945,7 +1940,7 @@
     "sources": [],
     "industry": "Future of Work",
     "industrySlug": "future-of-work",
-    "number": "0009",
+    "number": "0004",
     "imageAlt": "Three question marks"
   },
   {
@@ -2131,7 +2126,7 @@
     "sources": [],
     "industry": "Future of Work",
     "industrySlug": "future-of-work",
-    "number": "0008",
+    "number": "0003",
     "imagePosition": "center 22%"
   },
   {
@@ -2299,8 +2294,7 @@
     "sources": [],
     "industry": "Financial Services & FinTech",
     "industrySlug": "financial-services",
-    "archived": true,
-    "number": "0007"
+    "archived": true
   },
   {
     "slug": "what-competitive-skydiving-taught-me-about-business-risk-taking",
@@ -2452,7 +2446,7 @@
     "sources": [],
     "industry": "Future of Work",
     "industrySlug": "future-of-work",
-    "number": "0006",
+    "number": "0002",
     "imagePosition": "center 22%"
   },
   {
@@ -2613,8 +2607,7 @@
     "sources": [],
     "industry": "Supply Chain & Logistics",
     "industrySlug": "supply-chain",
-    "archived": true,
-    "number": "0005"
+    "archived": true
   },
   {
     "slug": "why-blockchain-will-change-the-collectibles-landscape-its-more-than-authentication",
@@ -2782,8 +2775,7 @@
     "sources": [],
     "industry": "Retail & Consumer Brands",
     "industrySlug": "retail",
-    "archived": true,
-    "number": "0004"
+    "archived": true
   },
   {
     "slug": "the-next-industry-to-be-disrupted-by-blockchain-real-estate",
@@ -2885,8 +2877,7 @@
       }
     ],
     "sources": [],
-    "archived": true,
-    "number": "0003"
+    "archived": true
   },
   {
     "slug": "the-new-society-of-the-spectacle-and-the-future-of-technology-innovation",
@@ -3014,7 +3005,7 @@
     "sources": [],
     "industry": "Technology & AI",
     "industrySlug": "technology-ai",
-    "number": "0002"
+    "number": "0001"
   },
   {
     "slug": "build-a-blog-based-site-with-refinerycms",
@@ -3236,7 +3227,6 @@
     "sources": [],
     "industry": "Technology & AI",
     "industrySlug": "technology-ai",
-    "archived": true,
-    "number": "0001"
+    "archived": true
   }
 ]

@@ -157,8 +157,8 @@ export function DispatchList({ dispatches }) {
   return (
     <div className="disp-list">
       {dispatches.map((d) => (
-        <Link className="disp" href={`/writing/${d.slug}`} key={d.number}>
-          <div className="n">Nº {d.number}</div>
+        <Link className="disp" href={`/writing/${d.slug}`} key={d.slug}>
+          <div className="n">{d.number ? `Nº ${d.number}` : ''}</div>
           <div className="i">{d.industry || 'Writing'}</div>
           <div className="t">{d.title}</div>
           <div className="d">

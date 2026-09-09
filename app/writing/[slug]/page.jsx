@@ -18,7 +18,7 @@ export function generateMetadata({ params }) {
   const d = get(params.slug);
   if (!d) return {};
   return meta({
-    title: `${d.title} | Dispatch Nº ${d.number}`,
+    title: d.number ? `${d.title} | Dispatch Nº ${d.number}` : d.title,
     description: d.deck,
     path: `/writing/${d.slug}`,
     image: `/images/${d.image}`,
@@ -54,7 +54,7 @@ export default function Dispatch({ params }) {
         <section className="article-hero">
           <div className="narrow">
             <div className="meta">
-              <span className="n">Nº {d.number}</span><span className="sep" />
+              {d.number && <><span className="n">Nº {d.number}</span><span className="sep" /></>}
               {d.industry && <><span>{d.industry}</span><span className="sep" /></>}
               <span>{date}</span><span className="sep" />
               <span>6 min read</span>
@@ -120,7 +120,7 @@ export default function Dispatch({ params }) {
                   <div className="mini-list">
                     {more.map((m) => (
                       <Link className="mini" href={`/writing/${m.slug}`} key={m.slug}>
-                        <div className="n">Nº {m.number}</div>
+                        <div className="n">{m.number ? `Nº ${m.number}` : ''}</div>
                         <div className="t">{m.title}</div>
                       </Link>
                     ))}
