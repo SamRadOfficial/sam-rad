@@ -34,7 +34,7 @@
     ],
     "featured": true,
     "featuredOrder": 1,
-    "band": "gofest-conquest.jpg"
+    "band": "cisco-live.jpg"
   },
   {
     "name": "Healthcare & Life Sciences",
@@ -69,7 +69,7 @@
     ],
     "featured": true,
     "featuredOrder": 2,
-    "band": "cisco-live.jpg"
+    "band": "chicago-ballroom.jpg"
   },
   {
     "name": "Future of Work",
@@ -104,7 +104,7 @@
     ],
     "featured": true,
     "featuredOrder": 3,
-    "band": "ivanti-team-human.jpg"
+    "band": "gofest-faster-horses.jpg"
   },
   {
     "name": "Technology & AI",
@@ -140,7 +140,7 @@
     ],
     "featured": true,
     "featuredOrder": 7,
-    "band": "ivanti-acceleration.jpg"
+    "band": "cisco-live.jpg"
   },
   {
     "name": "Retail & Consumer Brands",
@@ -179,7 +179,7 @@
     ],
     "featured": true,
     "featuredOrder": 8,
-    "band": "ballroom-retail.jpg",
+    "band": "gofest-faster-horses.jpg",
     "display": "Retail and Consumer Brands"
   },
   {
@@ -246,7 +246,7 @@
     ],
     "featured": true,
     "featuredOrder": 4,
-    "band": "gofest-doctrine.jpg"
+    "band": "chicago-ballroom.jpg"
   },
   {
     "name": "Government & Public Sector",
@@ -280,7 +280,7 @@
     ],
     "featured": true,
     "featuredOrder": 9,
-    "band": "gofest-social-os.jpg"
+    "band": "cisco-live.jpg"
   },
   {
     "name": "Supply Chain & Logistics",
@@ -313,6 +313,6 @@
     ],
     "featured": true,
     "featuredOrder": 5,
-    "band": "tfwa-cannes-wide.jpg"
+    "band": "gofest-faster-horses.jpg"
   }
 ]
