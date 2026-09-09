@@ -104,7 +104,7 @@ export function LogoStrip({ label = 'Trusted by governments, Fortune 500s, and g
           {logoWall.map((l) => (
             <div className="lw-cell" key={l.file}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={`/logos/mono/${l.file}`} alt={l.name} loading="lazy" />
+              <img src={`/logos/${l.file.replace(/\.svg$/, '.png')}`} alt={l.name} loading="lazy" />
             </div>
           ))}
         </div>
@@ -123,7 +123,7 @@ export function ClientLogos({ names = [], label }) {
         <div className="client-logo-row">
           {marks.map((m) => (
             /* eslint-disable-next-line @next/next/no-img-element */
-            <img className="logo-mark" key={m.file} src={`/logos/mono/${m.file.replace(/\.svg$/, '.png')}`} alt={m.name} title={m.name} loading="lazy" />
+            <img className="logo-mark" key={m.file} src={`/logos/${m.file.replace(/\.svg$/, '.png')}`} alt={m.name} title={m.name} loading="lazy" />
           ))}
         </div>
       </div>
