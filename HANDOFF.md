@@ -362,6 +362,13 @@ at the edge before the app runs, so a rule there would never fire. Vercel's auto
 `.vercel.app` domain assigned to current production, so without this it would compete
 with sam-rad.com in search.
 
+**There is no newsletter.** The footer form was removed on 9 Sep 2026: it posted to
+`action="#"`, so it silently discarded every address while appearing to work. Sam has
+a Substack she does not write, and judged that a speaker site's traffic books rather
+than subscribes. The footer now links to `/writing` and LinkedIn instead. Do not
+re-add a signup form without a real ESP behind it (opt-in and unsubscribe are a GDPR
+requirement, and Sam is in Spain).
+
 **Analytics.** Two, both mounted in `app/layout.jsx`:
 - **Vercel Web Analytics** via `@vercel/analytics`. Also has to be switched on in the
   Vercel dashboard under Project, Analytics; the package alone does nothing. No-ops in
@@ -453,6 +460,10 @@ Images ship as standalone files or in a separate `sam-rad-logos.zip`.
   retired; they redirect to `/writing`.
 - Only **3 testimonials**. She wants more.
 - Speaking stat sources not yet cited on the page.
+- **Export the Squarespace newsletter subscribers before cancelling.** The old site
+  ran a working Radical Next signup and those addresses live in the Squarespace
+  account. Squarespace, Contacts or Marketing, export CSV. Do this before the Sept 22
+  retirement or the list is gone.
 
 **Images**
 - `hero-work.jpg` (home) is a Lanczos upscale of a 1179px original. `hero-foresight.jpg`

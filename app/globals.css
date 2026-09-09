@@ -849,3 +849,12 @@ details.earlier[open] summary{margin-bottom:44px;}
 .res-strip h3{font-family:var(--fd);font-size:32px;line-height:1;text-transform:uppercase;margin:8px 0 8px;}
 .res-strip p{font-size:15px;color:var(--ink-muted);margin:0;}
 @media (max-width:900px){.res-strip-inner{flex-direction:column;align-items:flex-start;gap:18px;}}
+
+/* Footer: where to actually find new work, replacing the dead newsletter form */
+.f-where{display:flex;flex-direction:column;align-items:flex-start;gap:16px;margin-top:24px;}
+.btn-li{display:inline-flex;align-items:center;gap:11px;background:var(--mint);color:var(--ink-deep);
+  font-family:var(--fd);font-size:16px;letter-spacing:.13em;text-transform:uppercase;
+  padding:13px 22px;border:2px solid var(--mint);transition:background .18s,color .18s;}
+.btn-li svg{width:17px;height:17px;fill:currentColor;flex:0 0 17px;}
+.btn-li:hover{background:transparent;color:var(--mint);}
+.f-where-link:hover{color:var(--paper);}
