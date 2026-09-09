@@ -40,7 +40,6 @@ export default function Writing() {
           eyebrow="Writing · You are here"
           short
           lead={<>Essays on perception, technology, and change. Some written this year, some a decade ago. <strong>The pattern was always the same.</strong></>}
-          cta={<Link href="#latest" className="btn btn-mint">Latest dispatches ↓</Link>}
           caption="Bangkok"
         >
           Dispatches from<br />the <span className="mint-fill">frontier.</span>

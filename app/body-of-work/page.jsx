@@ -71,7 +71,6 @@ export default function BodyOfWork() {
           eyebrow="Body of Work"
           short
           lead={<>Two #1 bestsellers. An investigative production and the institute behind it. Patents, inventions, and a stage archive spanning five continents. <strong>This is the work behind the keynote.</strong></>}
-          cta={<Link href="#books" className="btn btn-mint">The books ↓</Link>}
           caption="Ivanti Solutions Summit"
         >
           Built across <span className="mint-fill">decades</span> &amp; disciplines.
