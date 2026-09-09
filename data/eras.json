@@ -3,7 +3,7 @@
     "name": "Agrarian",
     "dates": "10,000 – 800 BCE",
     "image": "era-agrarian.jpg",
-    "tech": "Grain & Plough"
+    "tech": "Plow"
   },
   {
     "name": "Renaissance",
@@ -15,33 +15,33 @@
     "name": "Industrial",
     "dates": "1760 – 1900",
     "image": "era-industrial.jpg",
-    "tech": "Electricity & Steam"
+    "tech": "Electricity"
   },
   {
     "name": "Information",
     "dates": "1990s – 2010s",
     "image": "era-internet.jpg",
-    "tech": "Internet & Globalization"
+    "tech": "Internet"
   },
   {
     "name": "Acceleration",
     "dates": "You are here",
     "image": "era-acceleration.jpg",
-    "tech": "AI & Space",
+    "tech": "AI",
     "now": true
   },
   {
     "name": "Longevity",
     "dates": "Next",
     "image": "era-bio.jpg",
-    "tech": "Chips & Cells",
+    "tech": "Biotech",
     "future": true
   },
   {
     "name": "Universal Energy",
     "dates": "After next",
     "image": "era-quantum.jpg",
-    "tech": "Quantum & Energy",
+    "tech": "Quantum",
     "future": true
   }
 ]
