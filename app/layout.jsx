@@ -1,4 +1,6 @@
 import './globals.css';
+import { Analytics } from '@vercel/analytics/next';
+import Script from 'next/script';
 import { SITE, personSchema } from '@/lib/site';
 
 export const metadata = {
@@ -29,6 +31,25 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
+
+        {/* Vercel Web Analytics. No-ops in dev and outside Vercel. */}
+        <Analytics />
+
+        {/* Google Analytics 4. Renders only when NEXT_PUBLIC_GA_ID is set. */}
+        {SITE.gaId && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${SITE.gaId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4" strategy="afterInteractive">
+              {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${SITE.gaId}');`}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );

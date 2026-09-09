@@ -323,6 +323,17 @@ at the edge before the app runs, so a rule there would never fire. Vercel's auto
 `.vercel.app` domain assigned to current production, so without this it would compete
 with sam-rad.com in search.
 
+**Analytics.** Two, both mounted in `app/layout.jsx`:
+- **Vercel Web Analytics** via `@vercel/analytics`. Also has to be switched on in the
+  Vercel dashboard under Project, Analytics; the package alone does nothing. No-ops in
+  dev and off-Vercel. Cookieless, so no consent banner.
+- **Google Analytics 4**, controlled by `SITE.gaId` in `lib/site.js`. The script
+  renders only when that string is non-empty. The measurement ID is **not a secret**
+  (it is in the page source of every site using GA), so it is hardcoded alongside
+  `formEndpoint` and `sizzleId` rather than hidden in an env var, which would fail
+  silently if unset. GA sets cookies and carries consent obligations that Vercel
+  Analytics does not.
+
 **Booking form** posts to Formspree (`https://formspree.io/f/xgaepolw`), set in
 `lib/site.js` as `formEndpoint`. Notifications go to sam@sam-rad.com only; adding
 Brandy is a Formspree dashboard change on a paid plan. Honeypot `_gotcha` field,
@@ -347,11 +358,10 @@ it serves both `archive.sam-rad.com` and the DNS zone.
 3. **New sizzle reel** cut for the industry pages, replacing the placeholder. See
    open items.
 4. **Three alt domains** → redirect to sam-rad.com via Vercel.
-5. **Analytics.** None installed.
-6. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
+5. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
    until the design settles. Studio would live at `/admin`. On-demand revalidation
    preferred over full-rebuild webhooks.
-7. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
+6. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
    keep working in chat with the zip-and-copy loop. Worth revisiting for mechanical
    work (bulk migrations, repeated builds) while keeping copy and design decisions
    in chat, where the reasoning is discussed rather than just executed. A fresh
@@ -395,4 +405,4 @@ Images ship as standalone files or in a separate `sam-rad-logos.zip`.
 **Technical**
 - postcss advisory, see §2.
 - Open Graph images are 3:2; the spec wants 1200×630. Platforms centre-crop.
-- No analytics, no CMS.
+- No CMS.
