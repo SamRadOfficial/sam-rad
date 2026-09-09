@@ -351,8 +351,9 @@ including five Google Workspace MX records. Disconnecting risks taking the zone 
 and her email — with it. It shows "DNS Error" in Squarespace; that is expected and
 correct.
 
-**Other domains still on Squarespace:** `samradocchia.com`, `samradofficial.com`,
-`samantharadocchia.com`. The last one **has its own MX records** — do not delete it.
+**Other domains.** `samrad.ai`, `samradocchia.com`, `samradofficial.com`, and
+`samantharadocchia.com` all redirect at GoDaddy and were disconnected from Squarespace
+on 9 Sep 2026. `samrad.ai` points at `/samrad-ai`; the rest at the homepage.
 
 **The `samradsite.vercel.app` domain 301s to sam-rad.com**, configured in the Vercel
 dashboard under Project, Settings, Domains. Not in `next.config.js`: Vercel redirects
@@ -402,17 +403,16 @@ it serves both `archive.sam-rad.com` and the DNS zone.
    Order matters — content must move before Squarespace is cancelled.
 3. **New sizzle reel** cut for the industry pages, replacing the placeholder. See
    open items.
-4. **Three alt domains** → redirect to sam-rad.com via Vercel.
-5. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
+4. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
    until the design settles. Studio would live at `/admin`. On-demand revalidation
    preferred over full-rebuild webhooks.
-6. **Responsive images.** Parked 9 Sep 2026. A phone downloads the same 2358px hero
+5. **Responsive images.** Parked 9 Sep 2026. A phone downloads the same 2358px hero
    as a desktop: 797KB where 195KB would do, a 75% saving on mobile. WebP and
    `fetchPriority` are already in place, so this is the remaining win. Two options:
    the cheap one adds a 900px WebP per hero plus a `srcset` to the `<picture>`
    elements in `Blocks.jsx`, about an hour; the thorough one converts all 38 `<img>`
    tags to Next's `Image`, about a day. Do the cheap one first.
-7. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
+6. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
    keep working in chat with the zip-and-copy loop. Worth revisiting for mechanical
    work (bulk migrations, repeated builds) while keeping copy and design decisions
    in chat, where the reasoning is discussed rather than just executed. A fresh

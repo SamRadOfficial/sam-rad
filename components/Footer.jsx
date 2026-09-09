@@ -25,6 +25,8 @@ export default function Footer() {
               <li><Link href="/body-of-work">Body of Work</Link></li>
               <li><Link href="/press">Press</Link></li>
               <li><Link href="/podcasts">Podcasts</Link></li>
+              <li><Link href="/samrad-ai">SamRad.AI</Link></li>
+              <li><Link href="/samrad-ai">SamRad.AI</Link></li>
             </ul>
           </div>
           <div>

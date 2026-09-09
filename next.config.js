@@ -29,9 +29,9 @@ const nextConfig = {
       { source: '/photos', destination: '/body-of-work', permanent: true },
       { source: '/photos/all', destination: '/body-of-work', permanent: true },
       { source: '/events', destination: '/speaking', permanent: true },
-      { source: '/meta-human', destination: '/meet-sam', permanent: true },
-      { source: '/virtual-likeness', destination: '/meet-sam', permanent: true },
-      { source: '/conversations-with-myself', destination: '/meet-sam', permanent: true },
+      { source: '/meta-human', destination: '/samrad-ai', permanent: true },
+      { source: '/virtual-likeness', destination: '/samrad-ai', permanent: true },
+      { source: '/conversations-with-myself', destination: '/samrad-ai', permanent: true },
       { source: '/cart', destination: '/', permanent: true },
       // /speaking exists on both sites at the same path. No redirect needed.
 

@@ -179,6 +179,35 @@ export default function BodyOfWork() {
           </div>
         </section>
 
+        <section className="work" id="samrad-ai" style={{ background: 'var(--paper-soft)' }}>
+          <div className="wide">
+            <div className="tag">SAM RAD™</div>
+            <h2 className="h2">She built the <span className="mint-fill">deepfake.</span></h2>
+            <div className="split-grid" style={{ alignItems: 'center', marginTop: 40 }}>
+              <div className="split-photo">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/samrad-ai-avatar.jpg" alt="SamRad.AI, Sam Rad's meta-human avatar" />
+              </div>
+              <div>
+                <div className="split-body">
+                  <p>
+                    In 2020 Sam became one of the first people to build a working digital clone of
+                    herself. SamRad.AI has her voice, her face, and fifteen years of her own commonplace
+                    books as a mind. She has appeared on stage in conversation with her human original.
+                  </p>
+                  <p>
+                    Most futurists talk about synthetic media. Sam made one of herself to find out what
+                    it felt like, and the answer became the argument she now makes on stage.
+                  </p>
+                </div>
+                <Link href="/samrad-ai" className="btn btn-ink" style={{ marginTop: 26 }}>
+                  Meet SamRad.AI →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <div id="media"><Sizzle /></div>
 
         <section className="photo-band">
