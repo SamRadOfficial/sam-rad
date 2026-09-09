@@ -316,6 +316,13 @@ correct.
 **Other domains still on Squarespace:** `samradocchia.com`, `samradofficial.com`,
 `samantharadocchia.com`. The last one **has its own MX records** — do not delete it.
 
+**The `samradsite.vercel.app` domain 301s to sam-rad.com**, configured in the Vercel
+dashboard under Project, Settings, Domains. Not in `next.config.js`: Vercel redirects
+at the edge before the app runs, so a rule there would never fire. Vercel's automatic
+`x-robots-tag: noindex` covers preview and *outdated* production deployments, not a
+`.vercel.app` domain assigned to current production, so without this it would compete
+with sam-rad.com in search.
+
 **Booking form** posts to Formspree (`https://formspree.io/f/xgaepolw`), set in
 `lib/site.js` as `formEndpoint`. Notifications go to sam@sam-rad.com only; adding
 Brandy is a Formspree dashboard change on a paid plan. Honeypot `_gotcha` field,
