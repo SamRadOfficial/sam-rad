@@ -60,7 +60,7 @@ export function YouAreHere({ eyebrow, heading, lead, cta, tall }) {
   );
 }
 
-export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, position, btn = 'Book Sam', id = 'book', href, external }) {
+export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, position, btn = 'Book Sam →', id = 'book', href, external }) {
   return (
     <section className={center ? 'cta-break center' : 'cta-break'} id={id}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -217,7 +217,7 @@ export function TestimonialBanner({ noCta }) {
           Sam is a rare individual who has the unique ability to <u>catalyze and inspire</u> everyone around her.
         </h2>
         <div className="who">Asael Meir · Partner, CohnReznick LLP</div>
-        {!noCta && <Link href="/book" className="btn btn-mint tb-cta">Book Sam</Link>}
+        {!noCta && <Link href="/book" className="btn btn-mint tb-cta">Book Sam →</Link>}
       </div>
     </section>
   );
@@ -321,7 +321,7 @@ export function Sizzle() {
   );
 }
 
-export function BookBar({ text, sub, mint, deep, cta = 'Book Sam' }) {
+export function BookBar({ text, sub, mint, deep, cta = 'Book Sam →' }) {
   const cls = mint ? 'bookbar mint' : deep ? 'bookbar deep' : 'bookbar';
   return (
     <section className={cls}>

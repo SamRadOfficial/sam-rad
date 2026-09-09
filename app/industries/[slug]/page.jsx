@@ -64,7 +64,7 @@ export default function IndustryPage({ params }) {
           eyebrow={`Industries · ${ind.name}`}
           short
           lead={<><em>Change Has a Pattern</em>, built for {lower} leaders. The cycle every big change follows, applied to the forces reshaping your world right now. <strong>Your people walk out ready for it.</strong></>}
-          cta={<Link href="/book" className="btn btn-mint">Book Sam for your {lower} event</Link>}
+          cta={<Link href="/book" className="btn btn-mint">Book Sam for your {lower} event →</Link>}
         >
           The future of <span className="mint-fill">{display}.</span>
         </PhotoHero>
@@ -97,7 +97,7 @@ export default function IndustryPage({ params }) {
                     <li><strong>Delivery</strong><br />In-person or virtual</li>
                     <li><strong>Travels from</strong><br />New York City</li>
                   </ul>
-                  <Link href="/book" className="btn btn-ink">Book Sam</Link>
+                  <Link href="/book" className="btn btn-ink">Book Sam →</Link>
                   <Bureau />
                 </div>
 

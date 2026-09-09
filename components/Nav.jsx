@@ -100,7 +100,7 @@ export default function Nav({ active }) {
             )
           )}
         </ul>
-        <Link href="/book" className="book-btn">Book Sam</Link>
+        <Link href="/book" className="book-btn">Book Sam →</Link>
         <button
           className="nav-toggle"
           aria-label="Open menu"
@@ -116,7 +116,7 @@ export default function Nav({ active }) {
         {ITEMS.map(([label, href]) => (
           <Link href={href} key={href} onClick={() => setOpen(false)}>{label}</Link>
         ))}
-        <Link className="d-book" href="/book" onClick={() => setOpen(false)}>Book Sam</Link>
+        <Link className="d-book" href="/book" onClick={() => setOpen(false)}>Book Sam →</Link>
       </div>
     </>
   );
