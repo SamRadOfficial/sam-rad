@@ -9,6 +9,8 @@ export default function sitemap() {
     ['/speaking', 0.9],
     ['/industries', 0.8],
     ['/writing', 0.8],
+    ['/press', 0.6],
+    ['/podcasts', 0.6],
     ['/meet-sam', 0.8],
     ['/body-of-work', 0.7],
     ['/book', 0.9],

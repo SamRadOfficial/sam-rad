@@ -23,6 +23,8 @@ export default function Footer() {
               <li><Link href="/industries">Industries</Link></li>
               <li><Link href="/writing">Writing</Link></li>
               <li><Link href="/body-of-work">Body of Work</Link></li>
+              <li><Link href="/press">Press</Link></li>
+              <li><Link href="/podcasts">Podcasts</Link></li>
             </ul>
           </div>
           <div>

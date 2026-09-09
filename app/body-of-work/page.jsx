@@ -4,6 +4,35 @@ import Footer from '@/components/Footer';
 import { PhotoHero, CtaBreak, Sizzle, JsonLd } from '@/components/Blocks';
 import { meta, SITE } from '@/lib/site';
 
+
+const EMBEDS = [
+  { show: 'POLITICO Tech', title: "A futurist's take on institutional power in a post-human world",
+    url: 'https://open.spotify.com/embed/episode/0SLp31uYGxR9WZRZgZlpEH' },
+  { show: 'Leaders of AI', title: 'AI, Ego Death, and the End of Reality?',
+    url: 'https://open.spotify.com/embed/episode/1HupFJHkD9sC9rGAfllynr' },
+  { show: 'The Quiet Professional', title: 'Illicit Shadows: Criminal Networks Shape the Global Underworld',
+    url: 'https://open.spotify.com/embed/episode/2kOVEDDPvuKh3P1VZlXTqU' },
+];
+
+const HIGHLIGHTS = [
+  { outlet: 'POLITICO Tech', title: "A futurist's take on institutional power in a post-human world", year: '2025',
+    url: 'https://open.spotify.com/episode/0SLp31uYGxR9WZRZgZlpEH' },
+  { outlet: 'TFWA Cannes', title: 'Keynote programme alongside Hillary Clinton', year: '2024',
+    url: 'https://www.trbusiness.com/regional-news/international/hillary-clinton-to-deliver-keynote-at-20' },
+  { outlet: 'Dell Technologies', title: 'Innovation or Irritation? The future of disruptive technologies', year: '2023',
+    url: 'https://www.dell.com/en-us/perspectives/innovation-or-irritation-the-future-of-new-and-disrupti' },
+  { outlet: 'TechCrunch', title: 'LOVE unveils a modern video messaging app', year: '2021',
+    url: 'https://techcrunch.com/2021/08/25/love-unveils-a-modern-video-messaging-app-with-a-business-mod' },
+  { outlet: 'Newsweek', title: 'Blockchain Impact Award winner', year: '2019',
+    url: 'https://www.newsweek.com/2019/03/08/introducing-blockchain-impact-award-winner-chronicled-13393' },
+  { outlet: 'The New York Times', title: 'Beyond the Bitcoin Bubble', year: '2018',
+    url: 'https://mobile.nytimes.com/2018/01/16/magazine/beyond-the-bitcoin-bubble.html' },
+  { outlet: 'Fortune', title: 'MediLedger tracks meds', year: '2017',
+    url: 'http://fortune.com/2017/09/21/pharma-blockchain/' },
+  { outlet: 'Forbes', title: '30 Under 30, Enterprise Technology', year: '2017',
+    url: 'https://www.forbes.com/30-under-30-2017/enterprise-technology/' },
+];
+
 export const metadata = meta({
   title: 'Body of Work | Books, Productions & Media',
   description: 'Radical Next, Bitcoin Pizza, Illicit Shadows, MISTIC, and keynote video from five continents.',
@@ -98,6 +127,48 @@ export default function BodyOfWork() {
           </div>
         </section>
 
+        <section className="work" id="press" style={{ background: 'var(--paper-white)' }}>
+          <div className="wide">
+            <div className="tag">Press &amp; podcasts</div>
+            <h2 className="h2">Covered on <span className="mint-fill">the record.</span></h2>
+
+            <div className="pod-grid">
+              {EMBEDS.map((e) => (
+                <div className="pod-card" key={e.url}>
+                  <div className="pl">{e.show}</div>
+                  <div className="pt">{e.title}</div>
+                  <iframe
+                    src={e.url}
+                    loading="lazy"
+                    title={`${e.show}: ${e.title}`}
+                    allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  />
+                </div>
+              ))}
+            </div>
+
+            <div className="hl-grid">
+              {HIGHLIGHTS.map((h) => (
+                <a className="hl" href={h.url} target="_blank" rel="noopener noreferrer" key={h.url}>
+                  <div className="hl-out">{h.outlet}</div>
+                  <div className="hl-ttl">{h.title}</div>
+                  <div className="hl-yr">{h.year}</div>
+                </a>
+              ))}
+            </div>
+
+            <div className="press-foot">
+              <div className="bureau-line">
+                Former <a href={SITE.social.forbes} target="_blank" rel="noopener noreferrer">Forbes contributor</a>.
+              </div>
+              <div className="press-btns">
+                <Link href="/press" className="btn btn-ink">All press →</Link>
+                <Link href="/podcasts" className="btn btn-ghost">All podcasts →</Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <CtaBreak
           image="illicit-shadows-whitehouse.jpg" id="illicit"
           tag="Productions"
@@ -143,7 +214,7 @@ export default function BodyOfWork() {
         </section>
 
         <CtaBreak
-          image="cta-red.jpg" center bureau position="center top"
+          image="cta-red.jpg" center bureau position="center 15%"
           tag="Book Sam Rad"
           heading={<>Walk out <span className="mint-fill">ready.</span></>}
           lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."

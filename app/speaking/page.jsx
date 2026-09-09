@@ -90,7 +90,7 @@ export default function Speaking() {
                     <li><strong>Role in the room</strong><br />Open the day or close it. The catalyst, not the consultant.</li>
                     <li><strong>Audience</strong><br />Fortune 500, associations, government, NGOs</li>
                     <li><strong>Delivery</strong><br />In-person or virtual</li>
-                    <li><strong>Customization</strong><br /><Link href="/industries" style={{ color: 'var(--mint-deep)', textDecoration: 'underline', textUnderlineOffset: 3 }}>Built for 20 industries →</Link></li>
+                    <li><strong>Customization</strong><br /><Link href="/industries" style={{ color: 'var(--mint-deep)', textDecoration: 'underline', textUnderlineOffset: 3 }}>Built for your industry →</Link></li>
                     <li><strong>Travels from</strong><br />New York City</li>
                   </ul>
                   <Link href="/book" className="btn btn-ink">Book Sam →</Link>
@@ -169,7 +169,7 @@ export default function Speaking() {
         />
 
         <CtaBreak
-          image="cta-red.jpg" center bureau position="center top"
+          image="cta-red.jpg" center bureau position="center 15%"
           tag="Book Sam Rad"
           heading={<>Walk out <span className="mint-fill">ready.</span></>}
           lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."

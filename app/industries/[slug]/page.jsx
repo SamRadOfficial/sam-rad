@@ -160,7 +160,7 @@ export default function IndustryPage({ params }) {
         </section>
 
         <CtaBreak
-          image="cta-red.jpg" center bureau position="center top"
+          image="cta-red.jpg" center bureau position="center 15%"
           tag="Book Sam Rad"
           heading={<>Book Sam for your {lower} <span className="mint-fill">event.</span></>}
           lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
