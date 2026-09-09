@@ -25,7 +25,7 @@ export default function Resources() {
           short
           lead="Sam does not ask a room to take her word for it. These are the primary sources behind the keynote: peer-reviewed research, regulator rulings, and the incident reports behind the headlines."
         >
-          The research behind <span className="mint-fill">the keynote.</span>
+          The <span className="mint-fill">research</span> behind the keynote.
         </PhotoHero>
 
         <section className="work" style={{ background: 'var(--paper)' }}>
@@ -37,9 +37,6 @@ export default function Resources() {
                   <span className="ttl">
                     <strong>{r.title}</strong>
                     <span className="sub">{r.deck}</span>
-                  </span>
-                  <span className="yrc">
-                    {r.sections.reduce((n, sec) => n + sec.items.length, 0)} sources
                   </span>
                   <span className="arw">→</span>
                 </Link>
