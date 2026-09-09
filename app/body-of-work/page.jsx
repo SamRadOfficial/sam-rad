@@ -182,7 +182,7 @@ export default function BodyOfWork() {
         <section className="work" id="samrad-ai" style={{ background: 'var(--paper-soft)' }}>
           <div className="wide">
             <div className="tag">SAM RAD™</div>
-            <h2 className="h2">She built the <span className="mint-fill">deepfake.</span></h2>
+            <h2 className="h2">She built her own <span className="mint-fill">AI clone.</span></h2>
             <div className="split-grid" style={{ alignItems: 'center', marginTop: 40 }}>
               <div className="split-photo">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
