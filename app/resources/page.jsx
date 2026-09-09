@@ -40,7 +40,6 @@ export default function Resources() {
                   </span>
                   <span className="yrc">
                     {r.sections.reduce((n, sec) => n + sec.items.length, 0)} sources
-                    <span className="upd">Updated {r.updated}</span>
                   </span>
                   <span className="arw">→</span>
                 </Link>

@@ -38,7 +38,8 @@ export default async function ResourcePage({ params }) {
           image={r.image}
           eyebrow={`Resources · ${r.industry}`}
           short
-          lead={`${r.deck} Updated ${r.updated}.`}
+          lead={r.deck}
+          note={`Updated ${r.updated}`}
         >
           {r.title}
         </PhotoHero>

@@ -14,7 +14,7 @@ export function Bureau({ light }) {
   );
 }
 
-export function PhotoHero({ image, eyebrow, children, descriptors, lead, cta, caption, short, compact, position }) {
+export function PhotoHero({ image, eyebrow, children, descriptors, lead, note, cta, caption, short, compact, position }) {
   return (
     <section className={`photo-hero${short ? ' short' : ''}${compact ? ' compact' : ''}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -34,6 +34,7 @@ export function PhotoHero({ image, eyebrow, children, descriptors, lead, cta, ca
         <h1 className="h1">{children}</h1>
         {descriptors && <div className="descriptors">{descriptors}</div>}
         {lead && <p className="lead">{lead}</p>}
+        {note && <div className="hero-note">{note}</div>}
         {cta && <div className="cta">{cta}</div>}
       </div>
       {caption && <div className="cap">{caption}</div>}

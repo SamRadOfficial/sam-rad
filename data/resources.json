@@ -12,26 +12,195 @@
       {
         "title": "Research reports",
         "items": [
-          { "title": "AI-Enabled Future Crime", "source": "Caldwell, Andrews, Tanay et al · Crime Science · 2020", "url": "https://rdcu.be/dxNnt" },
-          { "title": "The Future of Analysis", "source": "Joseph W. Gartin · CIA", "url": "https://www.cia.gov/static/8bdbc27e6a29bf09201ccdaf45677a61/Future-of-Analysis.pdf" }
+          {
+            "title": "AI-Enabled Future Crime",
+            "source": "Caldwell, Andrews, Tanay et al · Crime Science · 2020",
+            "url": "https://rdcu.be/dxNnt"
+          },
+          {
+            "title": "The Future of Analysis",
+            "source": "Joseph W. Gartin · CIA",
+            "url": "https://www.cia.gov/static/8bdbc27e6a29bf09201ccdaf45677a61/Future-of-Analysis.pdf"
+          }
         ]
       },
       {
         "title": "Attack vectors",
         "items": [
-          { "title": "Unmasking hypnotized AI: the hidden risks of large language models", "source": "Security Intelligence · 2023", "url": "https://securityintelligence.com/posts/unmasking-hypnotized-ai-hidden-risks-large-language-models/" },
-          { "title": "How audio-jacking using gen AI can distort live audio transactions", "source": "VentureBeat · 2024", "url": "https://venturebeat.com/security/how-audio-jacking-using-gen-ai-can-distort-live-audio-transactions/" },
-          { "title": "Audio-jacking: using generative AI to distort live audio transactions", "source": "Security Intelligence · 2024", "url": "https://securityintelligence.com/posts/using-generative-ai-distort-live-audio-transactions/" },
-          { "title": "How I used deepfakes to bypass security verifications in a bank", "source": "Payment Village · 2023", "url": "https://www.paymentvillage.org/blog/how-i-used-deepfakes-to-bypass-security-verifications-in-a-bank" },
-          { "title": "Finance worker pays out $25 million after video call with a deepfake CFO", "source": "CNN · 2024", "url": "https://www.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk" }
+          {
+            "title": "Unmasking hypnotized AI: the hidden risks of large language models",
+            "source": "Security Intelligence · 2023",
+            "url": "https://securityintelligence.com/posts/unmasking-hypnotized-ai-hidden-risks-large-language-models/"
+          },
+          {
+            "title": "How audio-jacking using gen AI can distort live audio transactions",
+            "source": "VentureBeat · 2024",
+            "url": "https://venturebeat.com/security/how-audio-jacking-using-gen-ai-can-distort-live-audio-transactions/"
+          },
+          {
+            "title": "Audio-jacking: using generative AI to distort live audio transactions",
+            "source": "Security Intelligence · 2024",
+            "url": "https://securityintelligence.com/posts/using-generative-ai-distort-live-audio-transactions/"
+          },
+          {
+            "title": "How I used deepfakes to bypass security verifications in a bank",
+            "source": "Payment Village · 2023",
+            "url": "https://www.paymentvillage.org/blog/how-i-used-deepfakes-to-bypass-security-verifications-in-a-bank"
+          },
+          {
+            "title": "Finance worker pays out $25 million after video call with a deepfake CFO",
+            "source": "CNN · 2024",
+            "url": "https://www.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk"
+          }
         ]
       },
       {
         "title": "Defensive measures",
         "items": [
-          { "title": "FCC bans AI-generated robocalls", "source": "FCC ruling · February 2024", "url": "https://docs.fcc.gov/public/attachments/FCC-24-17A1.pdf" },
-          { "title": "This new data poisoning tool lets artists fight back against generative AI", "source": "MIT Technology Review · 2023", "url": "https://www.technologyreview.com/2023/10/23/1082189/data-poisoning-artists-fight-generative-ai/" },
-          { "title": "Spycraft and Statecraft", "source": "William J. Burns · Foreign Affairs · 2024", "url": "https://www.foreignaffairs.com/united-states/cia-spycraft-and-statecraft-william-burns" }
+          {
+            "title": "FCC bans AI-generated robocalls",
+            "source": "FCC ruling · February 2024",
+            "url": "https://docs.fcc.gov/public/attachments/FCC-24-17A1.pdf"
+          },
+          {
+            "title": "This new data poisoning tool lets artists fight back against generative AI",
+            "source": "MIT Technology Review · 2023",
+            "url": "https://www.technologyreview.com/2023/10/23/1082189/data-poisoning-artists-fight-generative-ai/"
+          },
+          {
+            "title": "Spycraft and Statecraft",
+            "source": "William J. Burns · Foreign Affairs · 2024",
+            "url": "https://www.foreignaffairs.com/united-states/cia-spycraft-and-statecraft-william-burns"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "trust-in-clinical-ai",
+    "industrySlug": "healthcare",
+    "industry": "Healthcare & Life Sciences",
+    "title": "Trust in Clinical AI",
+    "deck": "The research behind the healthcare keynote. What is actually authorized, what the evidence does and does not show, and who is accountable when a model is wrong.",
+    "updated": "September 2026",
+    "image": "cisco-live.jpg",
+    "imageAlt": "Sam Rad keynoting to a healthcare audience",
+    "sections": [
+      {
+        "title": "What is actually approved",
+        "items": [
+          {
+            "title": "AI-Enabled Medical Device List",
+            "source": "US Food and Drug Administration · updated continuously",
+            "url": "https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-enabled-medical-devices"
+          },
+          {
+            "title": "Three decades of FDA authorizations: persistent specialty concentration and the care-delivery gap, 1995–2025",
+            "source": "medRxiv · 2026 · 1,430 devices analyzed; radiology accounts for 76.5%",
+            "url": "https://www.medrxiv.org/content/10.64898/2026.05.08.26352766.full.pdf"
+          },
+          {
+            "title": "FDA oversight: understanding the regulation of health AI tools",
+            "source": "Bipartisan Policy Center · 2025",
+            "url": "https://bipartisanpolicy.org/issue-brief/fda-oversight-understanding-the-regulation-of-health-ai-tools/"
+          }
+        ]
+      },
+      {
+        "title": "Where the evidence is thin",
+        "items": [
+          {
+            "title": "Machine learning-enabled devices authorized in 2024: regulatory characteristics, predicate lineage, and transparency reporting",
+            "source": "PMC · under 4% of authorized devices report the race or ethnicity of their validation cohorts",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12730494/"
+          },
+          {
+            "title": "Dissecting racial bias in an algorithm used to manage the health of populations",
+            "source": "Obermeyer, Powers, Vogeli & Mullainathan · Science · 2019",
+            "url": "https://www.science.org/doi/10.1126/science.aax2342"
+          },
+          {
+            "title": "Sources of bias in artificial intelligence that perpetuate healthcare disparities: a global review",
+            "source": "Celi et al · PLOS Digital Health · 2022",
+            "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000022"
+          }
+        ]
+      },
+      {
+        "title": "Governance and accountability",
+        "items": [
+          {
+            "title": "Ethics and governance of artificial intelligence for health: guidance on large multi-modal models",
+            "source": "World Health Organization · January 2024 · over 40 recommendations",
+            "url": "https://www.who.int/publications/i/item/9789240084759"
+          },
+          {
+            "title": "The imperative for regulatory oversight of large language models in healthcare",
+            "source": "Meskó & Topol · npj Digital Medicine · 2023",
+            "url": "https://www.nature.com/articles/s41746-023-00873-0"
+          },
+          {
+            "title": "Assessing the potential of GPT-4 to perpetuate racial and gender biases in health care",
+            "source": "Zack et al · The Lancet Digital Health · 2024",
+            "url": "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00225-X/fulltext"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "provenance-and-counterfeit",
+    "industrySlug": "supply-chain",
+    "industry": "Supply Chain & Logistics",
+    "title": "Provenance and Counterfeit",
+    "deck": "The research behind the supply chain keynote. What proving an item is real actually costs, the standards that exist, and the pilots that worked. Sam co-founded Chronicled, which convened the MediLedger consortium.",
+    "updated": "September 2026",
+    "image": "gofest-faster-horses.jpg",
+    "imageAlt": "Sam Rad keynoting at GOFEST in Bogota",
+    "sections": [
+      {
+        "title": "The scale of the problem",
+        "items": [
+          {
+            "title": "Mapping Global Trade in Fakes 2025: global trends and enforcement challenges",
+            "source": "OECD & EUIPO · 2025 · $467bn in 2021, 2.3% of global trade",
+            "url": "https://www.oecd.org/en/publications/mapping-global-trade-in-fakes-2025_94d3b29f-en.html"
+          },
+          {
+            "title": "Global trade in fake goods reached USD 467 billion",
+            "source": "OECD press release · May 2025 · China and Hong Kong account for ~62% of seizures",
+            "url": "https://www.oecd.org/en/about/news/press-releases/2025/05/global-trade-in-fake-goods-reached-USD-467-billion-posing-risks-to-consumer-safety-and-compromising-intellectual-property.html"
+          }
+        ]
+      },
+      {
+        "title": "What was actually built",
+        "items": [
+          {
+            "title": "DSCSA pilot project program report",
+            "source": "US Food and Drug Administration · February 2020 · Chronicled led the MediLedger working group",
+            "url": "https://www.fda.gov/media/168283/download"
+          },
+          {
+            "title": "EIP-721: Non-Fungible Token Standard",
+            "source": "Ethereum Improvement Proposals · Sam's early protocol work contributed to this standard",
+            "url": "https://eips.ethereum.org/EIPS/eip-721"
+          }
+        ]
+      },
+      {
+        "title": "Standards and enforcement",
+        "items": [
+          {
+            "title": "GS1 standards for traceability",
+            "source": "GS1 · the identification layer most global supply chains already run on",
+            "url": "https://www.gs1.org/standards"
+          },
+          {
+            "title": "International AntiCounterfeiting Coalition",
+            "source": "IACC · the enforcement side of the same problem",
+            "url": "https://www.iacc.org/"
+          }
         ]
       }
     ]
