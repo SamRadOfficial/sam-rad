@@ -294,7 +294,7 @@ export function Sizzle() {
           />
         </div>
         <div style={{ marginTop: 24, display: 'flex', justifyContent: 'flex-end', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
-          <a href={SITE.social.youtube} className="btn btn-outline-light" target="_blank" rel="noopener noreferrer">More on YouTube →</a>
+          <a href={SITE.social.youtube} className="btn btn-outline-light" target="_blank" rel="noopener noreferrer">More on YouTube ↗</a>
         </div>
       </div>
     </section>

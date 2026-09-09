@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="narrow">
         <div className="f-grid">
           <div>
-            <h3 className="f-title">Radical <span className="mint">Next</span></h3>
+            <h3 className="f-title">Ready for what&apos;s <span className="mint">next?</span></h3>
             <p className="f-copy">What&apos;s coming next is radically different. Sam writes about what happens after the future happens.</p>
             <div className="f-where">
               <a className="btn-li" href={SITE.social.linkedin} target="_blank" rel="noopener noreferrer">

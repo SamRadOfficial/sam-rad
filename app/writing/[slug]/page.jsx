@@ -99,7 +99,7 @@ export default function Dispatch({ params }) {
                 <div className="follow">
                   <p>
                     More like this on LinkedIn.{' '}
-                    <a href={SITE.social.linkedin} target="_blank" rel="noopener noreferrer">Follow @samradofficial →</a>
+                    <a href={SITE.social.linkedin} target="_blank" rel="noopener noreferrer">Follow @samradofficial ↗</a>
                   </p>
                 </div>
                 <ShareLinks url={`${SITE.url}/writing/${d.slug}`} title={d.title} />

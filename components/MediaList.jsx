@@ -13,7 +13,7 @@ function Year({ year, items }) {
           <a className="mrow" href={url} target="_blank" rel="noopener noreferrer" key={url + title}>
             <span className="out">{outlet}</span>
             <span className="ttl">{title}</span>
-            <span className="arw">→</span>
+            <span className="arw">↗</span>
           </a>
         ))}
       </div>
