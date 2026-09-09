@@ -133,28 +133,23 @@ export function ClientLogos({ names = [], label }) {
 
 
 
-export function IndustryGrid({ industries, cta = 'See the keynote →', showCustom = true, numbered = true }) {
+export function IndustryGrid({ industries, numbered = true }) {
   return (
     <div className="ind-grid">
       {industries.map((ind, i) => (
         <Link className="ind" href={`/industries/${ind.slug}`} key={ind.slug}>
-          <IndustryIcon slug={ind.slug} />
-          <div className="n">{String(numbered ? ind.number : i + 1).padStart(2, '0')}</div>
-          <div className="t">{ind.name}</div>
-          <div className="a">{cta}</div>
+          <span className="lead">
+            <IndustryIcon slug={ind.slug} />
+            <span className="n">{String(numbered ? ind.number : i + 1).padStart(2, '0')}</span>
+          </span>
+          <span className="t">{ind.name}</span>
+          <span className="arw" aria-hidden="true">→</span>
         </Link>
       ))}
-      {showCustom && (
-        <Link className="ind custom" href="/book">
-          <IndustryIcon slug="custom" />
-          <div className="n">Custom</div>
-          <div className="t">Your industry next.</div>
-          <div className="a">Ask about your industry →</div>
-        </Link>
-      )}
     </div>
   );
 }
+
 
 export function DispatchList({ dispatches }) {
   return (

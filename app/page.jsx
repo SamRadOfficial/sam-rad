@@ -126,16 +126,7 @@ export default function Home() {
               <h2 className="h2">One <span className="mint-fill">powerful</span> message.<br />Customized to your industry.</h2>
               <Link href="/industries" className="sec-link">See all industries →</Link>
             </div>
-            <div className="ind-grid">
-              {featured.map((ind, i) => (
-                <Link className="ind" href={`/industries/${ind.slug}`} key={ind.slug}>
-                  <IndustryIcon slug={ind.slug} />
-                  <div className="n">{String(i + 1).padStart(2, '0')}</div>
-                  <div className="t">{ind.name}</div>
-                  <div className="a">See the keynote →</div>
-                </Link>
-              ))}
-            </div>
+            <IndustryGrid industries={featured} numbered={false} />
           </div>
         </section>
 

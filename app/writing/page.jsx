@@ -111,9 +111,10 @@ export default function Writing() {
           <div className="narrow">
             <div className="section-header">
               <div className="tag">Browse by industry</div>
-              <h2 className="h2">Twenty industries. <span className="mint-fill">One</span> lens.</h2>
+              <h2 className="h2">Every industry. <span className="mint-fill">One</span> lens.</h2>
+              <Link href="/industries" className="sec-link">See all industries →</Link>
             </div>
-            <IndustryGrid industries={industries} cta="Dispatches + keynote →" />
+            <IndustryGrid industries={industries} />
           </div>
         </section>
 
