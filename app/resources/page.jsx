@@ -30,15 +30,19 @@ export default function Resources() {
 
         <section className="work" style={{ background: 'var(--paper)' }}>
           <div className="wide">
-            <div className="res-cards">
-              {resources.map((r, i) => (
-                <Link className="res-card" href={`/resources/${r.slug}`} key={r.slug}>
-                  <div className="n">{String(i + 1).padStart(2, '0')} · {r.industry}</div>
-                  <div className="t">{r.title}</div>
-                  <div className="d">{r.deck}</div>
-                  <div className="c">
-                    {r.sections.reduce((n, s) => n + s.items.length, 0)} sources · Updated {r.updated}
-                  </div>
+            <div className="mlist bordered">
+              {resources.map((r) => (
+                <Link className="mrow res-row" href={`/resources/${r.slug}`} key={r.slug}>
+                  <span className="out">{r.industry}</span>
+                  <span className="ttl">
+                    <strong>{r.title}</strong>
+                    <span className="sub">{r.deck}</span>
+                  </span>
+                  <span className="yrc">
+                    {r.sections.reduce((n, sec) => n + sec.items.length, 0)} sources
+                    <span className="upd">Updated {r.updated}</span>
+                  </span>
+                  <span className="arw">→</span>
                 </Link>
               ))}
             </div>
