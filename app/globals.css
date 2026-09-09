@@ -866,22 +866,35 @@ details.earlier[open] summary{margin-bottom:44px;}
 .hero-note{font-family:var(--fd);font-size:12px;letter-spacing:.22em;text-transform:uppercase;
   color:rgba(245,241,234,.5);margin-top:18px;}
 
-/* Writing page: Forbes contributor block */
+/* Writing page: Forbes contributor block.
+   Heading and mark share a ruled header row; everything below is on one left edge. */
 .fb-block{background:var(--paper-white);padding:104px 0;}
-.fb-grid{display:grid;grid-template-columns:0.42fr 1fr;gap:64px;align-items:start;}
-.fb-mark{display:block;text-decoration:none;}
-.fb-mark img{width:100%;max-width:230px;height:auto;display:block;transition:opacity .18s;}
-.fb-mark:hover img{opacity:.62;}
-.fb-mark-cta{display:block;margin-top:14px;font-family:var(--fd);font-size:12px;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--ink-muted);word-break:break-all;line-height:1.5;}
-.fb-mark:hover .fb-mark-cta{color:var(--mint-deep);}
-.fb-btns{display:flex;gap:14px;flex-wrap:wrap;}
-.fb-block p{font-size:18px;line-height:1.75;color:var(--ink-soft);margin:24px 0 34px;max-width:640px;}
+/* Stamp, then the Forbes mark, then its link. One left edge throughout, with a rule
+   under the header. */
+.fb-head{border-bottom:2px solid var(--ink);padding-bottom:26px;margin-bottom:30px;}
+.fb-head .tag{margin-bottom:20px;}
+.fb-logo{display:inline-block;text-decoration:none;}
+.fb-logo img{width:250px;max-width:100%;height:auto;display:block;opacity:.9;transition:opacity .18s;}
+.fb-mark-cta{display:block;margin-top:12px;font-family:var(--fd);font-size:12px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-muted);}
+.fb-logo:hover .fb-mark-cta{color:var(--mint-deep);}
+.fb-logo:hover img{opacity:.6;}
+.fb-block p{font-size:18px;line-height:1.75;color:var(--ink-soft);margin:0 0 34px;max-width:700px;}
 .fb-list{border-top:2px solid var(--ink);margin-bottom:30px;}
-.fb-list a{display:flex;justify-content:space-between;gap:24px;align-items:baseline;padding:14px 2px;border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink-soft);font-size:16px;line-height:1.45;transition:color .15s;}
+.fb-list a{display:flex;justify-content:space-between;gap:24px;align-items:baseline;padding:14px 2px;
+  border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink-soft);font-size:16px;
+  line-height:1.45;transition:color .15s;}
 .fb-list a:hover{color:var(--ink);}
-.fb-list em{font-family:var(--fd);font-style:normal;font-size:13px;letter-spacing:.14em;color:var(--ink-muted);flex:0 0 auto;}
-@media (max-width:900px){.fb-grid{grid-template-columns:1fr;gap:30px;} .fb-block{padding:56px 0;} .fb-mark img{max-width:150px;}}
+.fb-list em{font-family:var(--fd);font-style:normal;font-size:13px;letter-spacing:.14em;
+  color:var(--ink-muted);flex:0 0 auto;}
+.fb-btns{display:flex;gap:14px;flex-wrap:wrap;}
+@media (max-width:900px){
+  .fb-block{padding:56px 0;}
+  .fb-head{padding-bottom:20px;margin-bottom:24px;}
+  .fb-logo img{width:180px;}
+  .fb-logo img{width:150px;}
+  .fb-block p{font-size:17px;margin:22px 0 28px;}
+}
 
 /* Logo wall: 24 marks, one navy, uniform cell height */
 /* Logos are pre-normalised to a uniform canvas and equal ink area (public/logos/mono),

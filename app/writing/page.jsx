@@ -56,9 +56,10 @@ export default function Writing() {
 
         <section className="fb-block">
           <div className="wide">
-            <div className="fb-grid">
+            <div className="fb-head">
+              <div className="tag">Contributor · 2017–2020</div>
               <a
-                className="fb-mark"
+                className="fb-logo"
                 href={SITE.social.forbes}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -66,35 +67,33 @@ export default function Writing() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/logos/forbes.png" alt="Forbes" />
-                <span className="fb-mark-cta">forbes.com/sites/samantharadocchia<span className="ext" aria-hidden="true" /></span>
+                <span className="fb-mark-cta">
+                  forbes.com/sites/samantharadocchia<span className="ext" aria-hidden="true" />
+                </span>
               </a>
-              <div>
-                <div className="tag">Contributor · 2017–2020</div>
-                <h2 className="h2">Fifty pieces, <span className="mint-fill">one thread.</span></h2>
-                <p>
-                  Sam wrote for Forbes between 2017 and 2020, publishing over fifty pieces on the
-                  intersection of emerging technology and cultural trends, from supply chain provenance
-                  and environmental crime to remote work and digital identity.
-                </p>
-                <div className="fb-list">
-                  {FORBES_PICKS.map((f) => (
-                    <a href={f.url} target="_blank" rel="noopener noreferrer" key={f.url}>
-                      <span>{f.title}</span><em>{f.year}</em>
-                    </a>
-                  ))}
-                </div>
-                <div className="fb-btns">
-                  <a
-                    className="btn btn-ink"
-                    href={SITE.social.forbes}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Read on Forbes<span className="ext" aria-hidden="true" />
-                  </a>
-                  <Link href="/press#bylines" className="btn btn-ghost">All 64 bylines</Link>
-                </div>
-              </div>
+            </div>
+            <p>
+              Sam wrote for Forbes between 2017 and 2020, publishing over fifty pieces on the
+              intersection of emerging technology and cultural trends, from supply chain provenance
+              and environmental crime to remote work and digital identity.
+            </p>
+            <div className="fb-list">
+              {FORBES_PICKS.map((f) => (
+                <a href={f.url} target="_blank" rel="noopener noreferrer" key={f.url}>
+                  <span>{f.title}</span><em>{f.year}</em>
+                </a>
+              ))}
+            </div>
+            <div className="fb-btns">
+              <a
+                className="btn btn-ink"
+                href={SITE.social.forbes}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read on Forbes<span className="ext" aria-hidden="true" />
+              </a>
+              <Link href="/press#bylines" className="btn btn-ghost">All 64 bylines</Link>
             </div>
           </div>
         </section>

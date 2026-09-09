@@ -1,7 +1,7 @@
 # sam-rad.com — Handoff
 
 Read this before touching anything. Written for a fresh agent picking up with no
-memory of prior sessions. Last updated 8 September 2026, the day the site went live.
+memory of prior sessions. Last updated 9 September 2026.
 
 **Live:** https://sam-rad.com
 **Old site:** https://archive.sam-rad.com (Squarespace, still serving ~300 legacy URLs)
@@ -12,6 +12,14 @@ memory of prior sessions. Last updated 8 September 2026, the day the site went l
 taught: method, patterns, pitfalls, and the reusable scripts. It exists so the next
 site (illicitshadows.com) starts from the lessons rather than relearning them. This
 file is project-specific; that one is not.
+
+**Build the preview tooling first.** Every design and copy decision on this project is
+reviewed as a standalone HTML file with all assets inlined, not as a description. Do
+not propose a change in prose when you could show it. `scripts/preview.py` and
+`scripts/mobile.py` in the kit do this; if they are missing, write them before
+anything else. They must inline `src`, `href`, `srcSet` **and** `srcSet` in camelCase,
+and the mobile one must flatten `@media` blocks, since clamping the viewport does not
+trigger them. A preview generator that misses `srcSet` silently blanks every hero.
 
 Sam has the working copy with all images. Ask her to zip and upload
 `app/ components/ data/ lib/ next.config.js` (and `public/images/` only if you need
