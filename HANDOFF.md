@@ -52,6 +52,23 @@ unconditionally, then wrap the body in a 390px frame.
 **Verify counts after any data change.** Cutting industries from 20 to 9 left stale
 `number` fields rendering "19 / 9" in the grid. Grep the built HTML, don't assume.
 
+**Check `next.config.js` before adding a route.** Redirects run *before* page
+rendering, so a rule matching a new path silently shadows the page. `/press`
+served the archive for a day because of this.
+
+**Use `:path+`, not `:path*`, when a redirect's own base path is a real page.**
+`*` matches zero segments, so `/press/:path*` matched `/press` and redirected it to
+itself. That shipped an `ERR_TOO_MANY_REDIRECTS` loop. There is a loop simulator
+pattern: walk every rule up to six hops and flag any chain that doesn't terminate.
+
+**Never key ordered data by year in a JSON object.** JavaScript reorders
+integer-like object keys ascending, which put 2024 above 2025 on `/podcasts` and
+2017 above 2018 on `/press`. `data/media.json` uses arrays of `{ year, items }`
+for this reason. Don't "tidy" it back into an object.
+
+**Update this file in the same batch as the change**, and include `HANDOFF.md` in
+the zip. Sam asked for this explicitly on 9 Sep 2026.
+
 ---
 
 ## 2. Stack
@@ -68,6 +85,8 @@ app/
   industries/page.jsx     /industries
   industries/[slug]/      9 pages from data/industries.json
   writing/page.jsx        /writing   (was /foresight until 8 Sep 2026)
+  press/page.jsx          /press     archive list, 2018 and earlier collapsed
+  podcasts/page.jsx       /podcasts  archive list, newest first
   writing/[slug]/         18 posts from data/dispatches.json
     Body.jsx              renders the block format (see §5)
     ShareLinks.jsx        client component: LinkedIn intent + copy to clipboard
@@ -76,12 +95,14 @@ components/
   Nav.jsx                 client: desktop mega-menu (3 cols) + mobile drawer
   Footer.jsx              credential line, nav, socials, newsletter
   Blocks.jsx              every shared section (see §4)
-  IndustryIcon.jsx  MoveIcon.jsx  logos.jsx (logos.jsx unused)
+  MediaList.jsx           renders /press and /podcasts from data/media.json
+  IndustryIcon.jsx  MoveIcon.jsx  logos.jsx (both now unused)
 data/
   industries.json         9 live entries
   industries-archive.json 10 retired entries, restorable
   dispatches.json         18 posts, 8 visible + 10 unlisted
   clients.json            31-brand name → logo file registry
+  media.json              press + podcast archives, ARRAYS of { year, items }
   eras.json moves.json cycle.json testimonials.json
 lib/site.js               config, meta() helper, Person schema
 next.config.js            60 redirect rules
@@ -92,7 +113,7 @@ public/logos/             33 brand marks + LICENSE.md
 ```bash
 npm install
 npm run dev      # localhost:3000
-npm run build    # must print "Generating static pages (39/39)"
+npm run build    # must print "Generating static pages (41/41)"
 ```
 
 **Known issue:** npm audit flags a high-severity postcss advisory. The only fix is
@@ -129,6 +150,21 @@ times. Check what sits above and below before adding a section.
 Photos have no borders. UI cards (industry cells, move cards, sidebars, testimonial
 cards) do.
 
+**No counters on lists.** Never render "All 20", "9 industries", "20 items", or any
+count of things in a list. Sam asked for these removed site-wide on 9 Sep 2026: the
+numbers go stale the moment the list changes and nobody is counting. Use "See all"
+or nothing. The `IndustryGrid` `total` prop was deleted so it cannot drift back.
+This does **not** cover the stats row ("50+ Countries", "2× Bestsellers",
+"4× Founder") — those are claims about Sam, not counters on a list.
+
+**Don't label an embed with what the embed already says.** The first version of
+"Covered on the record" printed the show name and episode title above each Spotify
+player, which prints both itself. Let third-party embeds speak for themselves.
+
+**Media rows are the shared pattern.** `/press`, `/podcasts`, and the Body of Work
+highlights all use `.mrow`: outlet in Bebas, title in Inter, year right-aligned,
+arrow on hover. Keep new media listings in this pattern rather than inventing cards.
+
 ---
 
 ## 4. Components in `Blocks.jsx`
@@ -143,11 +179,12 @@ cards) do.
 | `IndustryGrid` | industry cells with icons |
 | `DispatchList` | post rows with thumbnails |
 | `Testimonials` / `TestimonialBanner` | cards / full-bleed banner |
-| `Moves` | four moves, icons right-aligned |
+| `Moves` | four moves. **Icons removed 9 Sep 2026**; `MoveIcon.jsx` and its CSS remain in case they return. |
 | `Eras` | six-era timeline (see §6) |
 | `Sizzle` | YouTube embed, `itaGfenlxPw` |
 | `Bureau` | "Managed by Brandy Gibson…" line |
 | `JsonLd` | schema injection |
+| `MediaList` | (own file) renders `/press` and `/podcasts`. `openYears` puts the rest behind a `<details>` toggle. |
 | `Cycle`, `YouAreHere` | **unused.** Both cut. Do not reinstate without asking. |
 
 Not in Blocks: `.photo-band`, a pure image divider with no copy, written inline.
@@ -298,17 +335,14 @@ it serves both `archive.sam-rad.com` and the DNS zone.
 1. **Industry page copy.** 9 pages, agency-drafted, only Healthcare reviewed. Needs
    Sam's real client names per sector — several pages show no logo row because their
    `logos` lists are placeholders like "Automotive associations".
-2. **Press section.** Sam is supplying the links. The Squarespace export contains 35
-   press items with **no body and no external URLs**, only titles and screenshots.
-   Build as one page, linked from Body of Work and the footer.
-3. **Sept 22 task:** check Search Console, move DNS to GoDaddy, retire Squarespace.
+2. **Sept 22 task:** check Search Console, move DNS to GoDaddy, retire Squarespace.
    Order matters — content must move before Squarespace is cancelled.
-4. **Three alt domains** → redirect to sam-rad.com via Vercel.
-5. **Analytics.** None installed.
-6. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
+3. **Three alt domains** → redirect to sam-rad.com via Vercel.
+4. **Analytics.** None installed.
+5. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
    until the design settles. Studio would live at `/admin`. On-demand revalidation
    preferred over full-rebuild webhooks.
-7. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
+6. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
    keep working in chat with the zip-and-copy loop. Worth revisiting for mechanical
    work (bulk migrations, repeated builds) while keeping copy and design decisions
    in chat, where the reasoning is discussed rather than just executed. A fresh
@@ -326,6 +360,8 @@ Images ship as standalone files or in a separate `sam-rad-logos.zip`.
 ## 10. Known open items
 
 **Content**
+- **35 press links and 25 podcast links** are live but their URLs are **unverified**;
+  many are 7-9 years old and some will have rotted. Needs a link check.
 - 8 migrated posts have **auto-generated decks** cut from their first paragraph.
   Need a pass in Sam's voice.
 - **8 inline images dropped** during migration; they live on Squarespace's CDN and

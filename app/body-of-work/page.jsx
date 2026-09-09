@@ -132,27 +132,26 @@ export default function BodyOfWork() {
             <div className="tag">Press &amp; podcasts</div>
             <h2 className="h2">Covered on <span className="mint-fill">the record.</span></h2>
 
-            <div className="pod-grid">
+            <div className="emb3">
               {EMBEDS.map((e) => (
-                <div className="pod-card" key={e.url}>
-                  <div className="pl">{e.show}</div>
-                  <div className="pt">{e.title}</div>
-                  <iframe
-                    src={e.url}
-                    loading="lazy"
-                    title={`${e.show}: ${e.title}`}
-                    allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  />
-                </div>
+                <iframe
+                  key={e.url}
+                  src={e.url}
+                  loading="lazy"
+                  title={`${e.show}: ${e.title}`}
+                  allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                />
               ))}
             </div>
 
-            <div className="hl-grid">
+            <div className="subh">Selected coverage</div>
+            <div className="mlist bordered">
               {HIGHLIGHTS.map((h) => (
-                <a className="hl" href={h.url} target="_blank" rel="noopener noreferrer" key={h.url}>
-                  <div className="hl-out">{h.outlet}</div>
-                  <div className="hl-ttl">{h.title}</div>
-                  <div className="hl-yr">{h.year}</div>
+                <a className="mrow" href={h.url} target="_blank" rel="noopener noreferrer" key={h.url}>
+                  <span className="out">{h.outlet}</span>
+                  <span className="ttl">{h.title}</span>
+                  <span className="yrc">{h.year}</span>
+                  <span className="arw">→</span>
                 </a>
               ))}
             </div>
