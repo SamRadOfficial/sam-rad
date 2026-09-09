@@ -55,9 +55,10 @@ export default function Writing() {
         </section>
 
         <section className="fb-block">
-          <div className="wide">
+          <div className="narrow">
             <div className="fb-head">
               <div className="tag">Contributor · 2017–2020</div>
+              <h2 className="h2">Fifty pieces, <span className="mint-fill">one thread.</span></h2>
               <a
                 className="fb-logo"
                 href={SITE.social.forbes}
