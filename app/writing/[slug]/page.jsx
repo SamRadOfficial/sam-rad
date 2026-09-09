@@ -6,7 +6,6 @@ import ShareLinks from './ShareLinks';
 import Body from './Body';
 import { CtaBreak, Bureau, JsonLd } from '@/components/Blocks';
 import dispatches from '@/data/dispatches.json';
-import industries from '@/data/industries.json';
 import { meta, SITE } from '@/lib/site';
 
 export function generateStaticParams() {
@@ -30,7 +29,6 @@ export function generateMetadata({ params }) {
 export default function Dispatch({ params }) {
   const d = get(params.slug);
   if (!d) notFound();
-  const ind = industries.find((i) => i.slug === d.industrySlug);
   const more = dispatches.filter((x) => x.slug !== d.slug && !x.archived).slice(0, 3);
   const date = new Date(d.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
 
@@ -76,7 +74,7 @@ export default function Dispatch({ params }) {
 
         <div className="article-photo">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`/images/${d.image}`} alt="" />
+          <img src={`/images/${d.image}`} alt={d.imageAlt || ''} style={d.imagePosition ? { objectPosition: d.imagePosition } : undefined} />
         </div>
 
         <section className="article">
@@ -110,11 +108,11 @@ export default function Dispatch({ params }) {
                 <div className="side-card">
                   <div className="h">Bring this to your room</div>
                   <p style={{ fontSize: 15, lineHeight: 1.6, color: 'var(--ink-soft)', marginBottom: 8 }}>
-                    Every dispatch is a preview of the keynote. Sam delivers <em>Change Has a Pattern</em>{d.industry ? ` built for ${d.industry.toLowerCase()} audiences` : ''}.
+                    Every dispatch is a preview of the keynote. Sam delivers <em>Change Has a Pattern</em>, customized to the room in front of her.
                   </p>
-                  {ind
-                    ? <Link href={`/industries/${ind.slug}`} className="btn btn-ink">The {d.industry.toLowerCase()} keynote →</Link>
-                    : <Link href="/speaking" className="btn btn-ink">The keynote →</Link>}
+                  {/* Deliberately generic. Once a sector has enough posts of its own,
+                      this can point at that industry page instead. See the roadmap. */}
+                  <Link href="/speaking" className="btn btn-ink">The keynote →</Link>
                   <Bureau />
                 </div>
                 <div className="side-card" style={{ marginTop: 24 }}>

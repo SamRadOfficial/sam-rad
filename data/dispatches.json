@@ -6,8 +6,8 @@
     "industrySlug": "technology-ai",
     "title": "Blurring Reality: AI and the Perceptual Breakdown",
     "date": "2025-09-17",
-    "image": "panel-dell.jpg",
-    "imageAlt": "Sam Rad on stage at Dell Technologies World 2023 with John Roese and Sinead Bovell",
+    "image": "writing-perceptual-breakdown.jpg",
+    "imageAlt": "Sam Rad in conversation on stage",
     "deck": "Will AI fragment our shared reality? It already has. Not madness in the brain, but a slow, society-wide drift in how we decide what is real.",
     "tags": [
       "AI",
@@ -256,8 +256,8 @@
     "industrySlug": "technology-ai",
     "title": "Will Quantum Computing Break Encryption?",
     "date": "2024-05-30",
-    "image": "era-quantum.jpg",
-    "imageAlt": "Illustration of nested quantum worlds and immersive realities",
+    "image": "writing-einstein-tile.jpg",
+    "imageAlt": "The Einstein Tile, a shape that covers a plane without ever repeating",
     "deck": "Modern encryption relies on problems too complex for conventional computers. Quantum computers can theoretically slice through them almost instantly. Breaking everything.",
     "tags": [
       "Quantum",
@@ -968,7 +968,8 @@
     "sources": [],
     "industry": "Future of Work",
     "industrySlug": "future-of-work",
-    "number": "0012"
+    "number": "0012",
+    "imagePosition": "center 22%"
   },
   {
     "slug": "how-to-get-into-ketosis-fast",
@@ -1776,14 +1777,15 @@
     "sources": [],
     "industry": "Future of Work",
     "industrySlug": "future-of-work",
-    "number": "0010"
+    "number": "0010",
+    "imagePosition": "center 22%"
   },
   {
     "slug": "5-questions-to-ask-before-shaking-hands-with-a-new-business-partner",
     "title": "5 Questions To Ask Before Shaking Hands With A New Business Partner",
     "date": "2019-04-16",
     "deck": "Once you find the right business partner, the relationship becomes something like a…",
-    "image": "backstage.jpg",
+    "image": "writing-five-questions.jpg",
     "tags": [
       "Leadership",
       "Entrepreneurship",
@@ -1943,7 +1945,8 @@
     "sources": [],
     "industry": "Future of Work",
     "industrySlug": "future-of-work",
-    "number": "0009"
+    "number": "0009",
+    "imageAlt": "Three question marks"
   },
   {
     "slug": "stop-the-grind-a-realistic-solution-to-halt-hustle-culture",
@@ -2128,7 +2131,8 @@
     "sources": [],
     "industry": "Future of Work",
     "industrySlug": "future-of-work",
-    "number": "0008"
+    "number": "0008",
+    "imagePosition": "center 22%"
   },
   {
     "slug": "why-the-us-tax-system-is-preventing-crypto-adoption-for-digital-nomads",
@@ -2448,7 +2452,8 @@
     "sources": [],
     "industry": "Future of Work",
     "industrySlug": "future-of-work",
-    "number": "0006"
+    "number": "0006",
+    "imagePosition": "center 22%"
   },
   {
     "slug": "how-deforestation-and-timber-issues-can-be-solved-with-blockchain",

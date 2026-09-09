@@ -403,16 +403,23 @@ it serves both `archive.sam-rad.com` and the DNS zone.
    Order matters — content must move before Squarespace is cancelled.
 3. **New sizzle reel** cut for the industry pages, replacing the placeholder. See
    open items.
-4. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
+4. **Re-industrialize the dispatch CTAs.** The sidebar on every writing post links to
+   `/speaking` with generic copy, and the industry dispatch feed only appears once a
+   sector has two posts of its own. Both were deliberate on 9 Sep 2026: with 8 visible
+   posts there was not enough per-sector content to justify pointing a healthcare
+   reader at the healthcare keynote. Once the archive is backfilled, point the sidebar
+   at the matching industry page (the `industrySlug` field on each post already
+   carries it) and the feeds will reappear on their own.
+5. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
    until the design settles. Studio would live at `/admin`. On-demand revalidation
    preferred over full-rebuild webhooks.
-5. **Responsive images.** Parked 9 Sep 2026. A phone downloads the same 2358px hero
+6. **Responsive images.** Parked 9 Sep 2026. A phone downloads the same 2358px hero
    as a desktop: 797KB where 195KB would do, a 75% saving on mobile. WebP and
    `fetchPriority` are already in place, so this is the remaining win. Two options:
    the cheap one adds a 900px WebP per hero plus a `srcset` to the `<picture>`
    elements in `Blocks.jsx`, about an hour; the thorough one converts all 38 `<img>`
    tags to Next's `Image`, about a day. Do the cheap one first.
-6. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
+7. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
    keep working in chat with the zip-and-copy loop. Worth revisiting for mechanical
    work (bulk migrations, repeated builds) while keeping copy and design decisions
    in chat, where the reasoning is discussed rather than just executed. A fresh

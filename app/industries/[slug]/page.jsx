@@ -4,6 +4,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import { PhotoHero, CtaBreak, BookBar, LogoStrip, ClientLogos, DispatchList, Bureau, JsonLd } from '@/components/Blocks';
 import industries from '@/data/industries.json';
+import resources from '@/data/resources.json';
 import dispatches from '@/data/dispatches.json';
 import { meta, SITE } from '@/lib/site';
 
@@ -39,6 +40,7 @@ export default function IndustryPage({ params }) {
   // A generic feed put 2019 essays on a healthcare booking page.
   const matches = dispatches.filter((d) => !d.archived && d.industrySlug === ind.slug);
   const feed = matches.length >= 2 ? matches.slice(0, 4) : [];
+  const resource = resources.find((r) => r.industrySlug === ind.slug);
 
   const serviceSchema = {
     '@context': 'https://schema.org',
@@ -266,6 +268,26 @@ export default function IndustryPage({ params }) {
           lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
           caption="CITE"
         />
+        {/* Deliberately below the booking CTA. Anyone who scrolls past that without
+            booking is researching, not buying; give them the sources at that point
+            rather than offering an exit halfway down the page. */}
+        {resource && (
+          <section className="res-strip">
+            <div className="narrow">
+              <div className="res-strip-inner">
+                <div>
+                  <div className="tag">Go deeper</div>
+                  <h3>{resource.title}</h3>
+                  <p>The research behind this keynote. Primary sources, updated {resource.updated}.</p>
+                </div>
+                <Link href={`/resources/${resource.slug}`} className="btn btn-ghost">
+                  See the sources →
+                </Link>
+              </div>
+            </div>
+          </section>
+        )}
+
       </main>
       <Footer />
     </>

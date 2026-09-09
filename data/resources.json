@@ -1,0 +1,39 @@
+[
+  {
+    "slug": "fighting-ai-driven-fraud",
+    "industrySlug": "financial-services",
+    "industry": "Financial Services & FinTech",
+    "title": "Fighting AI-Driven Fraud",
+    "deck": "The research behind the financial services keynote. Primary sources on how synthetic media is being used against banks, and what is being done about it.",
+    "updated": "February 2024",
+    "image": "era-quantum.jpg",
+    "imageAlt": "Abstract illustration of nested digital worlds",
+    "sections": [
+      {
+        "title": "Research reports",
+        "items": [
+          { "title": "AI-Enabled Future Crime", "source": "Caldwell, Andrews, Tanay et al · Crime Science · 2020", "url": "https://rdcu.be/dxNnt" },
+          { "title": "The Future of Analysis", "source": "Joseph W. Gartin · CIA", "url": "https://www.cia.gov/static/8bdbc27e6a29bf09201ccdaf45677a61/Future-of-Analysis.pdf" }
+        ]
+      },
+      {
+        "title": "Attack vectors",
+        "items": [
+          { "title": "Unmasking hypnotized AI: the hidden risks of large language models", "source": "Security Intelligence · 2023", "url": "https://securityintelligence.com/posts/unmasking-hypnotized-ai-hidden-risks-large-language-models/" },
+          { "title": "How audio-jacking using gen AI can distort live audio transactions", "source": "VentureBeat · 2024", "url": "https://venturebeat.com/security/how-audio-jacking-using-gen-ai-can-distort-live-audio-transactions/" },
+          { "title": "Audio-jacking: using generative AI to distort live audio transactions", "source": "Security Intelligence · 2024", "url": "https://securityintelligence.com/posts/using-generative-ai-distort-live-audio-transactions/" },
+          { "title": "How I used deepfakes to bypass security verifications in a bank", "source": "Payment Village · 2023", "url": "https://www.paymentvillage.org/blog/how-i-used-deepfakes-to-bypass-security-verifications-in-a-bank" },
+          { "title": "Finance worker pays out $25 million after video call with a deepfake CFO", "source": "CNN · 2024", "url": "https://www.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk" }
+        ]
+      },
+      {
+        "title": "Defensive measures",
+        "items": [
+          { "title": "FCC bans AI-generated robocalls", "source": "FCC ruling · February 2024", "url": "https://docs.fcc.gov/public/attachments/FCC-24-17A1.pdf" },
+          { "title": "This new data poisoning tool lets artists fight back against generative AI", "source": "MIT Technology Review · 2023", "url": "https://www.technologyreview.com/2023/10/23/1082189/data-poisoning-artists-fight-generative-ai/" },
+          { "title": "Spycraft and Statecraft", "source": "William J. Burns · Foreign Affairs · 2024", "url": "https://www.foreignaffairs.com/united-states/cia-spycraft-and-statecraft-william-burns" }
+        ]
+      }
+    ]
+  }
+]

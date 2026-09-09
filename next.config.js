@@ -25,7 +25,6 @@ const nextConfig = {
       { source: '/blog', destination: '/writing', permanent: true },
       { source: '/foresight', destination: '/writing', permanent: true },
       { source: '/foresight/:slug', destination: '/writing/:slug', permanent: true },
-      { source: '/resources', destination: '/writing', permanent: true },
       { source: '/photos', destination: '/body-of-work', permanent: true },
       { source: '/photos/all', destination: '/body-of-work', permanent: true },
       { source: '/events', destination: '/speaking', permanent: true },
@@ -84,7 +83,9 @@ const nextConfig = {
       { source: '/bitcoin-pizza-glossary/:path*', destination: `${ARCHIVE}/bitcoin-pizza-glossary/:path*`, permanent: true },
       { source: '/glossary', destination: `${ARCHIVE}/bitcoin-pizza-glossary`, permanent: true },
       { source: '/bitcoin', destination: `${ARCHIVE}/bitcoin`, permanent: true },
-      { source: '/resources/:path*', destination: `${ARCHIVE}/resources/:path*`, permanent: true },
+      // /resources and /resources/:slug are real pages now. The archive only ever
+      // had one resource page and it is recreated at the same slug, so no rule here:
+      // a catch-all would shadow the real pages the way /press did.
       { source: '/jobs', destination: `${ARCHIVE}/jobs`, permanent: true },
     ];
   },
