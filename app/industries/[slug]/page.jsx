@@ -108,6 +108,22 @@ export default function IndustryPage({ params }) {
           </div>
         </section>
 
+        <section className="themes">
+          <div className="narrow">
+            <div className="tag">The pattern in {lower}</div>
+            <h2 className="h2">Three forces Sam maps <span className="mint-fill">on stage.</span></h2>
+            <div className="theme-grid">
+              {ind.forces.map((f, i) => (
+                <div className="theme" key={f.title}>
+                  <div className="n">{String(i + 1).padStart(2, '0')}</div>
+                  <div className="t">{f.title}</div>
+                  <div className="d">{f.body}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <ClientLogos names={ind.logos} label={`Sam has spoken for ${lower} organizations including`} />
 
         {ind.consortium && (
@@ -191,22 +207,6 @@ export default function IndustryPage({ params }) {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
-            </div>
-          </div>
-        </section>
-
-        <section className="themes">
-          <div className="narrow">
-            <div className="tag">The pattern in {lower}</div>
-            <h2 className="h2">Three forces Sam maps <span className="mint-fill">on stage.</span></h2>
-            <div className="theme-grid">
-              {ind.forces.map((f, i) => (
-                <div className="theme" key={f.title}>
-                  <div className="n">{String(i + 1).padStart(2, '0')}</div>
-                  <div className="t">{f.title}</div>
-                  <div className="d">{f.body}</div>
-                </div>
-              ))}
             </div>
           </div>
         </section>
