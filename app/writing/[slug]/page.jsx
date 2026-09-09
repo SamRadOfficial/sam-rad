@@ -136,7 +136,7 @@ export default function Dispatch({ params }) {
         <CtaBreak
           image="cta-audience.jpg" center bureau
           tag="Read it here. Hear it live."
-          heading={<>Bring the pattern to your <span className="mint-fill">room.</span></>}
+          heading={<>Bring change to your <span className="mint-fill">stage.</span></>}
           lead="One keynote, customized to your industry. Your people walk out ready for what's coming."
           caption="Federation of Thai Industries · Bangkok"
         />

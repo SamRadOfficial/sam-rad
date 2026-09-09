@@ -700,7 +700,12 @@ footer{background:var(--ink-deep);color:var(--paper);padding:96px 0 40px;}
   .bookbar .txt{font-size:26px;} .bookbar .btn{width:100%;justify-content:center;}
 
   .disp{grid-template-columns:80px 1fr;gap:10px 14px;padding:16px 0;} .disp .th{grid-row:span 3;width:80px;} .disp .d{text-align:left;}
-  .gal-grid{grid-template-columns:repeat(6,1fr);padding:0 20px;gap:12px;} .gp-a,.gp-b,.gp-c,.gp-d,.gp-e,.gp-f,.gp-g,.gp-h{grid-column:span 6;aspect-ratio:4/3;}
+  .gal-grid{grid-template-columns:repeat(6,1fr);padding:0 20px;gap:12px;}
+  .gp-a,.gp-b,.gp-c,.gp-d,.gp-e,.gp-f,.gp-g,.gp-h{grid-column:span 6;}
+  /* Keep each tile near its source ratio. Forcing every image to 4:3 cropped
+     50% of the height off the portrait shots and cut heads off. */
+  .gp-b,.gp-f,.gp-g,.gp-h{aspect-ratio:3/2;}   /* landscape sources */
+  .gp-a,.gp-c,.gp-d,.gp-e{aspect-ratio:4/5;}    /* portrait + square sources */
 
   .logo-divider{padding:48px 0;} .logo-divider img{min-width:620px;}
   .logo-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
@@ -808,3 +813,11 @@ details.earlier[open] summary{margin-bottom:44px;}
 /* Booking page sidebar photo */
 .book-photo{margin-top:28px;}
 .book-photo img{width:100%;height:auto;display:block;}
+
+.section-header{position:relative;}
+.sec-link{position:absolute;right:0;bottom:6px;font-family:var(--fd);font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--mint-deep);border-bottom:2px solid var(--mint-deep);padding-bottom:2px;}
+.sec-link:hover{color:var(--ink);border-color:var(--ink);}
+@media (max-width:900px){.sec-link{position:static;display:inline-block;margin-top:18px;}}
+
+/* Gallery: portrait tiles anchor to the upper third so heads stay in frame */
+.gp-a img,.gp-c img,.gp-d img{object-position:center 18%;}

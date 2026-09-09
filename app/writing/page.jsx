@@ -41,7 +41,7 @@ export default function Writing() {
 
         <CtaBreak
           image="cta-audience.jpg"
-          tag="Bring the pattern to your room"
+          tag="Bring change to your stage"
           heading={<>Read it here. <span className="mint-fill">Hear</span> it live.</>}
           lead="Every dispatch is a preview of the keynote. Book Sam to bring the full pattern to your audience."
           caption="Federation of Thai Industries · Bangkok"

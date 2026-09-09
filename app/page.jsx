@@ -124,6 +124,7 @@ export default function Home() {
             <div className="section-header">
               <div className="tag">Industries</div>
               <h2 className="h2">One keynote.<br />Customized to <span className="mint-fill">your</span> industry.</h2>
+              <Link href="/industries" className="sec-link">See all industries →</Link>
             </div>
             <div className="ind-grid">
               {featured.map((ind, i) => (
@@ -134,12 +135,6 @@ export default function Home() {
                   <div className="a">See the keynote →</div>
                 </Link>
               ))}
-              <Link className="ind custom" href="/industries">
-                <IndustryIcon slug="custom" />
-                <div className="n">See all</div>
-                <div className="t">Every industry.</div>
-                <div className="a">Industries →</div>
-              </Link>
             </div>
           </div>
         </section>

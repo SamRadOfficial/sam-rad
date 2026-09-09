@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
-import { PhotoHero, CtaBreak, LogoStrip, ClientLogos, DispatchList, Bureau, JsonLd } from '@/components/Blocks';
+import { PhotoHero, CtaBreak, BookBar, LogoStrip, ClientLogos, DispatchList, Bureau, JsonLd } from '@/components/Blocks';
 import industries from '@/data/industries.json';
 import dispatches from '@/data/dispatches.json';
 import { meta, SITE } from '@/lib/site';
@@ -124,6 +124,12 @@ export default function IndustryPage({ params }) {
           </div>
         </section>
 
+        <BookBar
+          mint
+          text="Bring change to your stage."
+          sub="Sam customizes every keynote to the room."
+        />
+
         <ClientLogos names={ind.logos} label={`Sam has spoken for ${lower} organizations including`} />
 
         {ind.consortium && (
@@ -153,6 +159,12 @@ export default function IndustryPage({ params }) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={`/images/${ind.band}`} alt={`Sam Rad keynoting for a ${lower} audience`} />
         </section>
+
+        <BookBar
+          deep
+          text="Dates go fast."
+          sub={`Tell us about your ${lower} event and we will be in touch within one business day.`}
+        />
 
         <section className="bio-split">
           <div className="narrow">

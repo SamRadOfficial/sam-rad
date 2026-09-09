@@ -127,6 +127,17 @@ export default function BodyOfWork() {
           </div>
         </section>
 
+        <CtaBreak
+          image="illicit-shadows-whitehouse.jpg" id="illicit"
+          tag="Productions"
+          heading={<>Illicit <span className="mint-fill">Shadows.</span></>}
+          lead="An investigative documentary series exploring the dark forces shaping the global criminal underworld, produced by RADOC. Through Illicit Shadows, LLC, Sam co-founded MISTIC, an institute mapping organized crime, emerging technology, and global threat networks, and home to Project Helix: an AI intelligence fusion center and predictive convergence system."
+          href={SITE.social.illicitShadows}
+          external
+          btn="Visit Illicit Shadows →"
+          caption="Illicit Shadows · Washington, DC"
+        />
+
         <section className="work" id="press" style={{ background: 'var(--paper-white)' }}>
           <div className="wide">
             <div className="tag">Press &amp; podcasts</div>
@@ -167,17 +178,6 @@ export default function BodyOfWork() {
             </div>
           </div>
         </section>
-
-        <CtaBreak
-          image="illicit-shadows-whitehouse.jpg" id="illicit"
-          tag="Productions"
-          heading={<>Illicit <span className="mint-fill">Shadows.</span></>}
-          lead="An investigative documentary series exploring the dark forces shaping the global criminal underworld, produced by RADOC. Through Illicit Shadows, LLC, Sam co-founded MISTIC, an institute mapping organized crime, emerging technology, and global threat networks, and home to Project Helix: an AI intelligence fusion center and predictive convergence system."
-          href={SITE.social.illicitShadows}
-          external
-          btn="Visit Illicit Shadows →"
-          caption="Illicit Shadows · Washington, DC"
-        />
 
         <div id="media"><Sizzle /></div>
 
