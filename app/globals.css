@@ -623,7 +623,7 @@ body.nav-open{overflow:hidden;}
 
 /* FOOTER */
 footer{background:var(--ink-deep);color:var(--paper);padding:96px 0 40px;}
-.f-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr 1fr;gap:44px;margin-bottom:64px;}
+.f-grid{display:grid;grid-template-columns:1.9fr 1fr 1fr 1fr;gap:56px;margin-bottom:64px;}
 .f-title{font-family:var(--fd);font-size:32px;line-height:.95;text-transform:uppercase;margin-bottom:16px;}
 .f-title .mint{color:var(--mint);}
 .f-copy{font-size:14px;color:rgba(245,241,234,.7);margin-bottom:20px;line-height:1.5;}
