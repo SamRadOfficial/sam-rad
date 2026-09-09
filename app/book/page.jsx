@@ -22,7 +22,7 @@ export default function Book() {
           eyebrow="Booking"
           compact
           position="center bottom"
-          lead="Your people are facing change. Let's make sure they walk out ready for it."
+          lead="Your room is facing change. Let's make sure it walks out ready for it."
           caption="Dell Technologies World"
         >
           Book <span className="mint-fill">Sam Rad.</span>

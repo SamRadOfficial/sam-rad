@@ -135,7 +135,7 @@ export default function Dispatch({ params }) {
           image="cta-audience.jpg" center bureau
           tag="Read it here. Hear it live."
           heading={<>Bring change to your <span className="mint-fill">stage.</span></>}
-          lead="One keynote, customized to your industry. Your people walk out ready for what's coming."
+          lead="One keynote, customized to your industry. The room walks out ready for what's coming."
           caption="Federation of Thai Industries · Bangkok"
         />
       </main>

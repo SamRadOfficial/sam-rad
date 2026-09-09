@@ -52,7 +52,7 @@ export default function Home() {
                 <div className="split-body">
                   <p>Sam Rad is an anthropologist who spent twenty years inside technology revolutions, founding four companies through the rise of e-commerce, blockchain, and AI, and learning one thing above all: <em>change has a pattern.</em></p>
                   <p>With the curiosity of an anthropologist, the instinct of a tech founder, the candor of a friend, and the calm of an ex-competitive skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
-                  <p>She says the things other speakers won&apos;t, and she says them with warmth. Her talks lift the overwhelm, hand the room a simple way to read what&apos;s happening, and end on the promise every anxious audience needs to hear: <strong>you&apos;re going to be OK.</strong></p>
+                  <p>She says the things other speakers won&apos;t, and she says them with warmth. Her talks lift the overwhelm, hand the room a simple way to read what&apos;s happening, and end on the promise every anxious audience needs to hear: <strong>we&apos;re going to be OK.</strong></p>
                 </div>
                 <div className="stat-row">
                   <div><div className="n">5</div><div className="l">Continents</div></div>
@@ -101,7 +101,7 @@ export default function Home() {
                   <div className="fact"><div className="n">5,000</div><div className="l">Years of the same pattern</div></div>
                   <div className="fact"><div className="n">4</div><div className="l">Moves that turn the corner</div></div>
                   <div className="fact"><div className="n">Any</div><div className="l">Industry. Any room.</div></div>
-                  <div className="fact"><div className="n">1</div><div className="l">Promise: you&apos;re going to be OK</div></div>
+                  <div className="fact"><div className="n">1</div><div className="l">Promise: we&apos;re going to be OK</div></div>
                 </div>
               </div>
             </div>
@@ -115,7 +115,7 @@ export default function Home() {
           id="trusted"
           tag="Five continents"
           heading={<>Every room is asking the <span className="mint-fill">same</span> question.</>}
-          lead="What happens next, and are we ready for it? Sam has answered it for rooms in Cannes, Bogotá, Bangkok, and beyond."
+          lead="What happens next, and are we ready for it? Sam has answered it for rooms in New York, London, Cannes, and beyond."
           caption="TFWA 40th · Cannes"
         />
 
@@ -123,7 +123,7 @@ export default function Home() {
           <div className="narrow">
             <div className="section-header">
               <div className="tag">Industries</div>
-              <h2 className="h2">One keynote.<br />Customized to <span className="mint-fill">your</span> industry.</h2>
+              <h2 className="h2">One <span className="mint-fill">powerful</span> message.<br />Customized to your industry.</h2>
               <Link href="/industries" className="sec-link">See all industries →</Link>
             </div>
             <div className="ind-grid">
@@ -141,8 +141,8 @@ export default function Home() {
 
         <section className="photo-band">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/chicago-ballroom.jpg" alt="Sam Rad keynoting to a full ballroom under chandeliers at CRMC in Chicago" style={{ objectPosition: 'center 26%' }} />
-          <div className="cap">CRMC · Chicago</div>
+          <img src="/images/cta-audience.jpg" alt="Sam Rad on a runway stage before a packed ballroom in Bangkok" style={{ objectPosition: 'center 52%' }} />
+          <div className="cap">Federation of Thai Industries · Bangkok</div>
         </section>
 
         <section className="work" id="work">
@@ -221,7 +221,7 @@ export default function Home() {
           bureau
           tag="Book Sam Rad"
           heading={<>Walk out <span className="mint-fill">ready.</span></>}
-          lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
+          lead="Sam Rad is the speaker you book when you are facing change, and you want the room to walk out inspired to shape what comes next."
           caption="GOFEST 2026 · Bogotá"
         />
       </main>

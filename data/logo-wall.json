@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Dell",
+    "file": "dell.png"
+  },
+  {
+    "name": "Pfizer",
+    "file": "pfizer.png"
+  },
+  {
+    "name": "BMW",
+    "file": "bmw.png"
+  },
+  {
+    "name": "Cisco",
+    "file": "cisco.png"
+  },
+  {
+    "name": "MIT",
+    "file": "mit.png"
+  },
+  {
+    "name": "Federal Reserve",
+    "file": "federal-reserve.png"
+  },
+  {
+    "name": "SAP",
+    "file": "sap.png"
+  },
+  {
+    "name": "Hilton",
+    "file": "hilton.png"
+  },
+  {
+    "name": "Nestlé",
+    "file": "nestle.png"
+  },
+  {
+    "name": "Coca-Cola",
+    "file": "cocacola.png"
+  },
+  {
+    "name": "Pinterest",
+    "file": "pinterest.png"
+  },
+  {
+    "name": "Investment Company Institute",
+    "file": "ici.png"
+  },
+  {
+    "name": "Audible",
+    "file": "audible.png"
+  },
+  {
+    "name": "JLL",
+    "file": "jll.png"
+  },
+  {
+    "name": "World Economic Forum",
+    "file": "wef.png"
+  },
+  {
+    "name": "GE",
+    "file": "generalelectric.png"
+  },
+  {
+    "name": "Whirlpool",
+    "file": "whirlpool.png"
+  },
+  {
+    "name": "United Nations",
+    "file": "unitednations.png"
+  },
+  {
+    "name": "Unilever",
+    "file": "unilever.png"
+  },
+  {
+    "name": "P&G",
+    "file": "pg.png"
+  },
+  {
+    "name": "IBM",
+    "file": "ibm.png"
+  },
+  {
+    "name": "OECD",
+    "file": "oecd.png"
+  },
+  {
+    "name": "LinkedIn",
+    "file": "linkedin.png"
+  },
+  {
+    "name": "LVMH",
+    "file": "lvmh.png"
+  }
+]

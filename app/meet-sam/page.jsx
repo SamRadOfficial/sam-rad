@@ -47,7 +47,7 @@ export default function MeetSam() {
                 <div className="split-body">
                   <p>Sam Rad (born Samantha Radocchia) is an anthropologist who spent twenty years inside technology revolutions, founding four companies through the rise of e-commerce, blockchain, and AI, and learning one thing above all: <em>change has a pattern.</em></p>
                   <p>With the curiosity of an anthropologist, the instinct of a tech founder, the candor of a friend, and the calm of an ex-competitive skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
-                  <p>She says the things other speakers won&apos;t, and she says them with warmth. Her talks lift the overwhelm, hand the room a simple way to read what&apos;s happening, and end on the promise every anxious audience needs to hear: <strong>you&apos;re going to be OK.</strong></p>
+                  <p>She says the things other speakers won&apos;t, and she says them with warmth. Her talks lift the overwhelm, hand the room a simple way to read what&apos;s happening, and end on the promise every anxious audience needs to hear: <strong>we&apos;re going to be OK.</strong></p>
                   <p>Managed by <a href={SITE.bureau.mailto}>Brandy Gibson</a> at <a href={SITE.bureau.orgUrl} target="_blank" rel="noopener noreferrer">Executive Speakers Bureau</a>, Sam Rad is the speaker you book when your people are facing change and you need them to walk out ready for it.</p>
                 </div>
                 <div className="stat-row">
@@ -135,7 +135,7 @@ export default function MeetSam() {
                 <h2 className="h2" style={{ marginBottom: 32 }}>Hundreds of jumps. <span className="mint-fill">One</span> lesson.</h2>
                 <div className="split-body">
                   <p>Before the boardrooms, Sam was a competitive skydiver. Hundreds of jumps that funded her first company while she was still in college.</p>
-                  <p>It&apos;s where the keynote&apos;s jetpack metaphor comes from, and it&apos;s why the &ldquo;you&apos;re going to be OK&rdquo; at the end lands. She isn&apos;t reassuring the room from the ground. <strong>She&apos;s telling them what it looks like from the 14,000 foot view.</strong></p>
+                  <p>It&apos;s where the keynote&apos;s jetpack metaphor comes from, and it&apos;s why the &ldquo;we&apos;re going to be OK&rdquo; at the end lands. She isn&apos;t reassuring the room from the ground. <strong>She&apos;s telling them what it looks like from the 14,000 foot view.</strong></p>
                 </div>
               </div>
             </div>
@@ -174,7 +174,7 @@ export default function MeetSam() {
           image="hero-work.jpg" center bureau
           tag="Book Sam Rad"
           heading={<>Walk out <span className="mint-fill">ready.</span></>}
-          lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."
+          lead="Sam Rad is the speaker you book when you are facing change, and you want the room to walk out inspired to shape what comes next."
           caption="Ivanti Solutions Summit"
         />
       </main>

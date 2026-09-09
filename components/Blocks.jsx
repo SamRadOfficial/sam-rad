@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { SITE } from '@/lib/site';
 import clients from '@/data/clients.json';
+import logoWall from '@/data/logo-wall.json';
 
 const LOGO_FILES = Object.fromEntries(clients.filter((c) => c.file).map((c) => [c.name, c]));
 import IndustryIcon from './IndustryIcon';
@@ -98,14 +99,16 @@ export function LogoStrip({ label = 'Trusted by governments, Fortune 500s, and g
   return (
     <section className={dark ? 'logo-strip dark' : 'logo-strip'}>
       <div className="logo-strip-label">{label}</div>
-      <div className="logo-shot">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/images/logos-past-audiences.png"
-          alt="Past audiences include Dell, Pfizer, BMW, Cisco, MIT, the Federal Reserve, SAP, Columbia University, Nestle, Coca-Cola, Pinterest, ICI, Audible, JLL, the World Economic Forum, GE, Whirlpool, the United Nations, Unilever, P&G, IBM, Gobierno de Mexico, LinkedIn, and LVMH"
-        />
+      <div className="wide">
+        <div className="logo-wall">
+          {logoWall.map((l) => (
+            <div className="lw-cell" key={l.file}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`/logos/mono/${l.file}`} alt={l.name} loading="lazy" />
+            </div>
+          ))}
+        </div>
       </div>
-      <span className="logo-hint">Swipe to see all</span>
     </section>
   );
 }
@@ -120,7 +123,7 @@ export function ClientLogos({ names = [], label }) {
         <div className="client-logo-row">
           {marks.map((m) => (
             /* eslint-disable-next-line @next/next/no-img-element */
-            <img className="logo-mark" key={m.file} src={`/logos/${m.file}`} alt={m.name} title={m.name} loading="lazy" />
+            <img className="logo-mark" key={m.file} src={`/logos/mono/${m.file.replace(/\.svg$/, '.png')}`} alt={m.name} title={m.name} loading="lazy" />
           ))}
         </div>
       </div>
@@ -253,7 +256,7 @@ export function Eras({ eras }) {
   return (
     <section className="eras">
       <div className="wide">
-        <div className="tag">Six eras. One cycle.</div>
+        <div className="tag">Every era. One cycle.</div>
         <h2 className="h2">Every evolution in history <span className="mint-fill">followed the same pattern.</span></h2>
         <div className="eras-track">
           <div className="eras-line" />
