@@ -18,7 +18,17 @@ export function PhotoHero({ image, eyebrow, children, descriptors, lead, cta, ca
   return (
     <section className={`photo-hero${short ? ' short' : ''}${compact ? ' compact' : ''}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={`/images/${image}`} alt="" style={position ? { objectPosition: position } : undefined} />
+      <picture>
+        <source srcSet={`/images/${image.replace(/\.jpe?g$/i, '.webp')}`} type="image/webp" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`/images/${image}`}
+          alt=""
+          fetchPriority="high"
+          decoding="async"
+          style={position ? { objectPosition: position } : undefined}
+        />
+      </picture>
       <div className="inner">
         <div className="eyebrow">{eyebrow}</div>
         <h1 className="h1">{children}</h1>
@@ -51,7 +61,17 @@ export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, p
   return (
     <section className={center ? 'cta-break center' : 'cta-break'} id={id}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={`/images/${image}`} alt="" style={position ? { objectPosition: position } : undefined} />
+      <picture>
+        <source srcSet={`/images/${image.replace(/\.jpe?g$/i, '.webp')}`} type="image/webp" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`/images/${image}`}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          style={position ? { objectPosition: position } : undefined}
+        />
+      </picture>
       <div className="inner">
         <div className="tag">{tag}</div>
         <h2 className="h2">{heading}</h2>

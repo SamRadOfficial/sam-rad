@@ -78,7 +78,7 @@ static at build time. One hand-written CSS file. No Tailwind. **No CMS yet.**
 
 ```
 app/
-  layout.jsx              fonts via <link>, Person JSON-LD, skip link
+  layout.jsx              fonts, Person JSON-LD, skip link, Vercel Analytics, GA4
   globals.css             ~48KB, all styling, design tokens at top
   page.jsx                /
   speaking/  meet-sam/  book/  body-of-work/
@@ -101,7 +101,7 @@ data/
   industries.json         9 live entries
   industries-archive.json 10 retired entries, restorable
   dispatches.json         18 posts, 8 visible + 10 unlisted
-  clients.json            31-brand name → logo file registry
+  clients.json            59-brand name → logo file registry
   media.json              press + podcast archives, ARRAYS of { year, items }
   eras.json moves.json cycle.json testimonials.json
 lib/site.js               config, meta() helper, Person schema
@@ -116,9 +116,40 @@ npm run dev      # localhost:3000
 npm run build    # must print "Generating static pages (41/41)"
 ```
 
-**Known issue:** npm audit flags a high-severity postcss advisory. The only fix is
-Next 16, which broke the Vercel deploy previously (Turbopack). Do not upgrade to 16
-without testing on a preview branch.
+### Dependencies
+
+Deliberately minimal. Four runtime packages, no UI library, no CSS framework, no
+analytics SDK beyond Vercel's.
+
+| Package | Version | Why |
+|---|---|---|
+| `next` | 15.5.25 | Framework. Upgraded from 14.2.5 on 8 Sep 2026 to close a security advisory. |
+| `react` / `react-dom` | 19 | Required by Next 15. |
+| `@vercel/analytics` | 2.0.1 | Web Analytics collector. Added 9 Sep 2026. |
+| `eslint` / `eslint-config-next` | 8 / 15 | Dev only. |
+
+Fonts load from Google Fonts via `<link>` in `app/layout.jsx`, not a package.
+Everything else is hand-written.
+
+### When to check for updates
+
+- **Monthly:** `npm outdated` and `npm audit`. Patch and minor bumps on Next and
+  React are usually safe; run `npm run build` and confirm 41/41 before pushing.
+- **Never bump a major version without a preview branch.** Next 16 broke the Vercel
+  deploy once already (Turbopack). Push to a branch, let Vercel build a preview, and
+  click through Home, an industry page, a writing post, and the booking form before
+  merging.
+- **After any dependency change**, check the two dynamic routes specifically
+  (`industries/[slug]`, `writing/[slug]`). Next 15 made route `params` async and
+  those were the only files that needed code changes.
+- **`npm audit` currently flags a high-severity postcss advisory.** The only fix is
+  Next 16. Known and accepted; do not chase it without testing on a preview.
+
+### Version control
+
+`main` is the only branch and it auto-deploys to production on push. There is no
+staging environment. **The site is live, so every push goes straight to sam-rad.com.**
+For anything structural, push to a branch first and use the Vercel preview URL.
 
 ---
 
@@ -327,12 +358,19 @@ with sam-rad.com in search.
 - **Vercel Web Analytics** via `@vercel/analytics`. Also has to be switched on in the
   Vercel dashboard under Project, Analytics; the package alone does nothing. No-ops in
   dev and off-Vercel. Cookieless, so no consent banner.
-- **Google Analytics 4**, controlled by `SITE.gaId` in `lib/site.js`. The script
-  renders only when that string is non-empty. The measurement ID is **not a secret**
-  (it is in the page source of every site using GA), so it is hardcoded alongside
-  `formEndpoint` and `sizzleId` rather than hidden in an env var, which would fail
-  silently if unset. GA sets cookies and carries consent obligations that Vercel
-  Analytics does not.
+- **Google Analytics 4**, property `G-KLJW49X8L4`, set as `SITE.gaId` in
+  `lib/site.js` and rendered from `app/layout.jsx` on all 41 pages. The script
+  renders only when that string is non-empty, so emptying it disables GA site-wide.
+  The measurement ID is **not a secret** (it is in the page source of every site
+  using GA), so it is hardcoded alongside `formEndpoint` and `sizzleId` rather than
+  hidden in an env var, which would fail silently if unset. GA sets cookies and
+  carries consent obligations that Vercel Analytics does not.
+
+To verify either is working: GA has **Reports, Realtime**, which shows a visit within
+about 30 seconds; Vercel shows an "online" count on the Analytics tab. Both are
+blocked by ad blockers and Brave shields, so test in a clean browser. Vercel's
+"Get Started" panel is onboarding, not an off switch: Web Analytics is on by default
+and the panel disappears once the first event lands.
 
 **Booking form** posts to Formspree (`https://formspree.io/f/xgaepolw`), set in
 `lib/site.js` as `formEndpoint`. Notifications go to sam@sam-rad.com only; adding
