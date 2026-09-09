@@ -63,7 +63,7 @@ function IndustriesMenu({ active }) {
             <span className="note">
               Custom built around the forces shaping your world.
             </span>
-            <Link href="/industries">See all industries →</Link>
+            <Link href="/industries">See all industries</Link>
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ export default function MeetSam() {
           eyebrow="Meet Sam"
           short
           lead={<>Anthropologist. Four-time tech founder. #1 bestselling author. Twenty years inside technology revolutions, and one lesson above all: <strong>change has a pattern.</strong></>}
-          cta={<Link href="/book" className="btn btn-mint">Book Sam →</Link>}
+          cta={<Link href="/book" className="btn btn-mint">Book Sam</Link>}
           caption="SHRM · Dallas"
         >
           The <span className="mint-fill">change</span><br />futurist.
@@ -104,7 +104,7 @@ export default function MeetSam() {
                     <li>Keynoted on five continents</li>
                     <li>Early protocols behind ERC-721</li>
                   </ul>
-                  <Link href="/book" className="btn btn-ink">Book Sam →</Link>
+                  <Link href="/book" className="btn btn-ink">Book Sam</Link>
                   <Bureau />
                 </div>
                 <div className="side-photo">

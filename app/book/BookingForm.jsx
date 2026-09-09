@@ -116,7 +116,7 @@ export default function BookingForm() {
       <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hp" />
 
       <button type="submit" className="btn btn-ink" disabled={status === 'sending'}>
-        {status === 'sending' ? 'Sending…' : 'Send inquiry →'}
+        {status === 'sending' ? 'Sending…' : 'Send inquiry'}
       </button>
 
       <div className="fine" role="status" aria-live="polite">

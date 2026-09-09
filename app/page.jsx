@@ -2,11 +2,12 @@ import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import {
-  PhotoHero, CtaBreak, LogoStrip, IndustryGrid,
-  TestimonialBanner, Eras, Bureau, BookBar,
+  PhotoHero, CtaBreak, LogoStrip, IndustryGrid, FeaturedIn,
+  TestimonialBanner, Testimonials, Eras, Bureau, BookBar,
 } from '@/components/Blocks';
 import IndustryIcon from '@/components/IndustryIcon';
 import industries from '@/data/industries.json';
+import testimonials from '@/data/testimonials.json';
 import eras from '@/data/eras.json';
 import { meta } from '@/lib/site';
 
@@ -31,7 +32,7 @@ export default function Home() {
           position="center top"
           eyebrow="The Change Futurist"
           lead={<>See it, and you&apos;re ready for whatever comes next.</>}
-          cta={<Link href="/book" className="btn btn-mint">Book Sam →</Link>}
+          cta={<Link href="/book" className="btn btn-mint">Book Sam</Link>}
           caption="Ivanti Solutions Summit"
         >
           Change has<br />a <span className="mint-fill">pattern.</span>
@@ -60,7 +61,7 @@ export default function Home() {
                   <div><div className="n">2×</div><div className="l">#1 Bestsellers</div></div>
                   <div><div className="n">4×</div><div className="l">Founder</div></div>
                 </div>
-                <Link href="/meet-sam" className="btn btn-ghost">Full bio →</Link>
+                <Link href="/meet-sam" className="btn btn-ghost">Full bio</Link>
                 <Bureau />
               </div>
             </div>
@@ -88,7 +89,7 @@ export default function Home() {
                   <p>People don&apos;t just walk out ready for what&apos;s next. <strong>They walk out wanting it.</strong></p>
                 </div>
                 <div style={{ marginTop: 40 }}>
-                  <Link href="/speaking" className="btn btn-mint">The full keynote →</Link>
+                  <Link href="/speaking" className="btn btn-mint">The full keynote</Link>
                   <Bureau light />
                 </div>
               </div>
@@ -124,7 +125,7 @@ export default function Home() {
             <div className="section-header">
               <div className="tag">Industries</div>
               <h2 className="h2">One <span className="mint-fill">powerful</span> message.<br />Customized to your industry.</h2>
-              <Link href="/industries" className="sec-link">See all industries →</Link>
+              <Link href="/industries" className="sec-link">See all industries</Link>
             </div>
             <IndustryGrid industries={featured} numbered={false} />
           </div>
@@ -136,32 +137,42 @@ export default function Home() {
           <div className="cap">Federation of Thai Industries · Bangkok</div>
         </section>
 
-        <section className="work" id="work">
+        <section className="rn" id="work">
           <div className="narrow">
-            <div className="section-header">
-              <div className="tag">Body of Work</div>
-              <h2 className="h2">Built across<br /><span className="mint-fill">decades</span> &amp; disciplines.</h2>
-            </div>
-            <div className="work-grid">
-              {[
-                ['Books', 'Radical Next', '#1 bestseller. Reclaiming your humanity in a post-human world.', 'book', '/images/book-radical-next.png', 'Read', '/body-of-work#radical-next'],
-                ['Books', 'Bitcoin Pizza', 'The no-bullshit guide to blockchain. Bestselling primer on Web3.', 'book', '/images/book-bitcoin-pizza.png', 'Read', '/body-of-work#bitcoin-pizza'],
-                ['Productions', 'Illicit Shadows', 'An investigative documentary series on the forces shaping the global criminal underworld, and the institute mapping them.', 'c3', '/images/illicit-shadows-whitehouse.jpg', 'Explore', '/body-of-work#illicit'],
-                ['Media', 'On Stage', 'Keynotes, panels, and interviews from Dell Technologies World, TFWA, Cisco Live, GOFEST, and more.', 'c4', '/images/gofest-mindset-portrait.jpg', 'Watch', '/body-of-work#media'],
-              ].map(([eyebrow, title, desc, cover, img, link, href]) => (
-                <Link className="work-card" href={href} key={title}>
-                  <div className={`work-cover ${cover}`}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={img} alt={title} />
-                  </div>
-                  <div className="work-body">
-                    <div className="work-eyebrow">{eyebrow}</div>
-                    <h3 className="work-title">{title}</h3>
-                    <p className="work-desc">{desc}</p>
-                    <span className="work-link">{link}</span>
-                  </div>
-                </Link>
-              ))}
+            <div className="rn-grid">
+              <div className="rn-head">
+                <div className="rn-badge">#1 Bestseller</div>
+                <h2 className="rn-h">
+                  Are you ready for what&apos;s <span className="mint-fill">next?</span>
+                </h2>
+              </div>
+              <div className="rn-body">
+                <p className="rn-lead">What&apos;s coming next is radically different.</p>
+                <p>
+                  As humans merge ever more deeply with technologies that seem to be advancing
+                  impossibly fast, we have entered a new era, the Age of Acceleration, that will call
+                  our very humanity into question.
+                </p>
+                <p>
+                  With transformative technologies like artificial intelligence, extended realities,
+                  and quantum computing increasingly blurring the boundaries between human and machine,
+                  organic and synthetic, reality and virtuality, we find ourselves at a crossroads of
+                  history, contemplating:
+                </p>
+                <div className="rn-qs">
+                  Who am I?<br />What is real?<br />
+                  And what does it mean to be human<br />in this new reality?
+                </div>
+                <div className="rn-btns">
+                  <a className="btn btn-ink" href="https://www.amazon.com/Radical-Next-Reclaiming-Humanity-Post-Human/dp/B0DGV4265T" target="_blank" rel="noopener noreferrer">
+                    Buy on Amazon ↗
+                  </a>
+                </div>
+              </div>
+              <div className="rn-cover">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/book-radical-next.png" alt="Radical Next: Reclaiming Your Humanity in a Post-Human World" />
+              </div>
             </div>
           </div>
         </section>
@@ -172,14 +183,7 @@ export default function Home() {
           sub="Twenty years inside four technology revolutions. Now she hands the room the map."
         />
 
-        <section className="stats desktop-only">
-          <div className="stats-grid">
-            <div className="stat"><div className="n">5</div><div className="l">Continents</div></div>
-            <div className="stat"><div className="n">50+</div><div className="l">Countries</div></div>
-            <div className="stat"><div className="n">2×</div><div className="l">#1 Bestsellers</div></div>
-            <div className="stat"><div className="n">4×</div><div className="l">Tech Founder</div></div>
-          </div>
-        </section>
+        <FeaturedIn cta={<Link href="/writing" className="btn btn-ghost">Read the writing</Link>} />
 
         <section className="gallery">
           <div className="gallery-head">
@@ -203,6 +207,16 @@ export default function Home() {
                 <div className="lbl">{label}</div>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="tests" style={{ background: 'var(--paper-white)' }}>
+          <div className="narrow">
+            <div className="section-header">
+              <div className="tag">What rooms say</div>
+              <h2 className="h2">Unlike anything <span className="mint-fill">we&apos;ve experienced.</span></h2>
+            </div>
+            <Testimonials items={testimonials} />
           </div>
         </section>
 

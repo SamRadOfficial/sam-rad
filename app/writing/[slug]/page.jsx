@@ -112,7 +112,7 @@ export default function Dispatch({ params }) {
                   </p>
                   {/* Deliberately generic. Once a sector has enough posts of its own,
                       this can point at that industry page instead. See the roadmap. */}
-                  <Link href="/speaking" className="btn btn-ink">The keynote →</Link>
+                  <Link href="/speaking" className="btn btn-ink">The keynote</Link>
                   <Bureau />
                 </div>
                 <div className="side-card" style={{ marginTop: 24 }}>

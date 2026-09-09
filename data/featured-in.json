@@ -1,0 +1,9 @@
+[
+  { "name": "The New York Times", "file": "nyt.png" },
+  { "name": "Forbes", "file": "forbes.png" },
+  { "name": "Bloomberg", "file": "bloomberg.png" },
+  { "name": "POLITICO", "file": "politico.png" },
+  { "name": "Newsweek", "file": "newsweek.png" },
+  { "name": "Fast Company", "file": "fast-company.png" },
+  { "name": "Business Insider", "file": "business-insider.png" }
+]

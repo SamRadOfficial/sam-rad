@@ -53,7 +53,7 @@ export default function Speaking() {
           image="hero-meet.jpg"
           eyebrow="Speaking · The keynote"
           lead={<>The cycle every big change follows, why the new tools aren&apos;t paying off yet, and the four moves that turn the corner. <strong>Customized to your industry, your audience, your moment.</strong></>}
-          cta={<Link href="/book" className="btn btn-mint">Book this keynote →</Link>}
+          cta={<Link href="/book" className="btn btn-mint">Book this keynote</Link>}
           caption="SIM Executive Conference"
         >
           Change has<br />a <span className="mint-fill">pattern.</span>
@@ -90,10 +90,10 @@ export default function Speaking() {
                     <li><strong>Role in the room</strong><br />Open the day or close it. The catalyst, not the consultant.</li>
                     <li><strong>Audience</strong><br />Fortune 500, associations, government, NGOs</li>
                     <li><strong>Delivery</strong><br />In-person or virtual</li>
-                    <li><strong>Customization</strong><br /><Link href="/industries" style={{ color: 'var(--mint-deep)', textDecoration: 'underline', textUnderlineOffset: 3 }}>Built for your industry →</Link></li>
+                    <li><strong>Customization</strong><br /><Link href="/industries" style={{ color: 'var(--mint-deep)', textDecoration: 'underline', textUnderlineOffset: 3 }}>Built for your industry</Link></li>
                     <li><strong>Travels from</strong><br />New York City</li>
                   </ul>
-                  <Link href="/book" className="btn btn-ink">Book Sam →</Link>
+                  <Link href="/book" className="btn btn-ink">Book Sam</Link>
                   <Bureau />
                 </div>
                 <div className="side-photo">
@@ -124,7 +124,7 @@ export default function Speaking() {
         <BookBar
           text="Four moves. One room. Everything after is different."
           sub="Tell us about your audience and we'll be in touch within one business day."
-          cta="Check a date →"
+          cta="Check a date"
         />
 
         <section className="split white" id="jetpack">

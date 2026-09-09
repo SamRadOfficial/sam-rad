@@ -92,7 +92,7 @@ export default function Writing() {
                   >
                     Read on Forbes ↗
                   </a>
-                  <Link href="/press#bylines" className="btn btn-ghost">All 64 bylines →</Link>
+                  <Link href="/press#bylines" className="btn btn-ghost">All 64 bylines</Link>
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@ export default function Writing() {
             <div className="section-header">
               <div className="tag">Browse by industry</div>
               <h2 className="h2">Every industry. <span className="mint-fill">One</span> lens.</h2>
-              <Link href="/industries" className="sec-link">See all industries →</Link>
+              <Link href="/industries" className="sec-link">See all industries</Link>
             </div>
             <IndustryGrid industries={industries} />
           </div>

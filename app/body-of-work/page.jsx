@@ -171,8 +171,8 @@ export default function BodyOfWork() {
                 Former <a href={SITE.social.forbes} target="_blank" rel="noopener noreferrer">Forbes contributor</a>.
               </div>
               <div className="press-btns">
-                <Link href="/press" className="btn btn-ink">All press →</Link>
-                <Link href="/podcasts" className="btn btn-ghost">All podcasts →</Link>
+                <Link href="/press" className="btn btn-ink">All press</Link>
+                <Link href="/podcasts" className="btn btn-ghost">All podcasts</Link>
               </div>
             </div>
           </div>
@@ -200,7 +200,7 @@ export default function BodyOfWork() {
                   </p>
                 </div>
                 <Link href="/samrad-ai" className="btn btn-ink" style={{ marginTop: 26 }}>
-                  Meet SamRad.AI →
+                  Meet SamRad.AI
                 </Link>
               </div>
             </div>

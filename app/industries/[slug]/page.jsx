@@ -64,7 +64,7 @@ export default function IndustryPage({ params }) {
           eyebrow={`Industries · ${ind.name}`}
           short
           lead={<><em>Change Has a Pattern</em>, built for {lower} leaders. The cycle every big change follows, applied to the forces reshaping your world right now. <strong>Your people walk out ready for it.</strong></>}
-          cta={<Link href="/book" className="btn btn-mint">Book Sam for your {lower} event →</Link>}
+          cta={<Link href="/book" className="btn btn-mint">Book Sam for your {lower} event</Link>}
         >
           The future of <span className="mint-fill">{display}.</span>
         </PhotoHero>
@@ -97,7 +97,7 @@ export default function IndustryPage({ params }) {
                     <li><strong>Delivery</strong><br />In-person or virtual</li>
                     <li><strong>Travels from</strong><br />New York City</li>
                   </ul>
-                  <Link href="/book" className="btn btn-ink">Book Sam →</Link>
+                  <Link href="/book" className="btn btn-ink">Book Sam</Link>
                   <Bureau />
                 </div>
 
@@ -204,7 +204,7 @@ export default function IndustryPage({ params }) {
                   <div><div className="n">2×</div><div className="l">#1 Bestsellers</div></div>
                   <div><div className="n">4×</div><div className="l">Founder</div></div>
                 </div>
-                <Link href="/meet-sam" className="btn btn-ghost" style={{ marginTop: 26 }}>Full bio →</Link>
+                <Link href="/meet-sam" className="btn btn-ghost" style={{ marginTop: 26 }}>Full bio</Link>
               </div>
             </div>
           </div>
@@ -241,7 +241,7 @@ export default function IndustryPage({ params }) {
                 <h2 className="h2">Latest <span className="mint-fill">dispatches.</span></h2>
               </div>
               <DispatchList dispatches={feed} />
-              <div className="more"><Link href="/writing" className="btn btn-ghost">All writing →</Link></div>
+              <div className="more"><Link href="/writing" className="btn btn-ghost">All writing</Link></div>
             </div>
           </section>
         )}
@@ -281,7 +281,7 @@ export default function IndustryPage({ params }) {
                   <p>The research behind this keynote. Primary sources, updated {resource.updated}.</p>
                 </div>
                 <Link href={`/resources/${resource.slug}`} className="btn btn-ghost">
-                  See the sources →
+                  See the sources
                 </Link>
               </div>
             </div>

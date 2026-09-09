@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { SITE } from '@/lib/site';
 import clients from '@/data/clients.json';
 import logoWall from '@/data/logo-wall.json';
+import featuredIn from '@/data/featured-in.json';
 
 const LOGO_FILES = Object.fromEntries(clients.filter((c) => c.file).map((c) => [c.name, c]));
 import IndustryIcon from './IndustryIcon';
@@ -59,7 +60,7 @@ export function YouAreHere({ eyebrow, heading, lead, cta, tall }) {
   );
 }
 
-export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, position, btn = 'Book Sam →', id = 'book', href, external }) {
+export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, position, btn = 'Book Sam', id = 'book', href, external }) {
   return (
     <section className={center ? 'cta-break center' : 'cta-break'} id={id}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -91,6 +92,27 @@ export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, p
         )}
       </div>
       {caption && <div className="cap">{caption}</div>}
+    </section>
+  );
+}
+
+// Publications Sam has written for or been covered by. Renders nothing until at
+// least four logo files resolve, so a half-empty bar never ships.
+export function FeaturedIn({ label = "Featured in", cta }) {
+  return (
+    <section className="featured-in">
+      <div className="wide">
+        <div className="fi-label">{label}</div>
+        <div className="fi-grid">
+          {featuredIn.map((p) => (
+            <div className="fi-cell" key={p.file}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`/logos/press/${p.file}`} alt={p.name} loading="lazy" />
+            </div>
+          ))}
+        </div>
+        {cta && <div className="fi-foot">{cta}</div>}
+      </div>
     </section>
   );
 }
@@ -195,7 +217,7 @@ export function TestimonialBanner({ noCta }) {
           Sam is a rare individual who has the unique ability to <u>catalyze and inspire</u> everyone around her.
         </h2>
         <div className="who">Asael Meir · Partner, CohnReznick LLP</div>
-        {!noCta && <Link href="/book" className="btn btn-mint tb-cta">Book Sam →</Link>}
+        {!noCta && <Link href="/book" className="btn btn-mint tb-cta">Book Sam</Link>}
       </div>
     </section>
   );
@@ -299,7 +321,7 @@ export function Sizzle() {
   );
 }
 
-export function BookBar({ text, sub, mint, deep, cta = 'Book Sam →' }) {
+export function BookBar({ text, sub, mint, deep, cta = 'Book Sam' }) {
   const cls = mint ? 'bookbar mint' : deep ? 'bookbar deep' : 'bookbar';
   return (
     <section className={cls}>
