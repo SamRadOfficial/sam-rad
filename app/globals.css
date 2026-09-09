@@ -444,9 +444,12 @@ body.nav-open{overflow:hidden;}
 .live-dot{width:9px;height:9px;border-radius:50%;background:var(--mint);animation:pulse 1.8s ease-in-out infinite;}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(91,196,160,.7)}70%{box-shadow:0 0 0 10px rgba(91,196,160,0)}100%{box-shadow:0 0 0 0 rgba(91,196,160,0)}}
 .disp-list{border-top:2px solid var(--ink);}
-.disp{color:inherit;text-decoration:none;display:grid;grid-template-columns:96px 100px 150px 1fr 100px;gap:28px;padding:20px 12px;border-bottom:1px solid var(--rule-strong);align-items:center;cursor:pointer;transition:all .2s;}
+.disp{color:inherit;text-decoration:none;display:grid;grid-template-columns:100px 150px 1fr 100px;gap:28px;padding:20px 12px;border-bottom:1px solid var(--rule-strong);align-items:center;cursor:pointer;transition:all .2s;}
+/* Dispatch thumbnails removed 9 Sep 2026: four of eight posts shared the same NYC
+   portrait set, so the column showed near-identical crops. Rules kept for when the
+   archive has enough distinct images to bring them back. See the roadmap.
 .disp .th{width:96px;aspect-ratio:4/3;overflow:hidden;}
-.disp .th img{width:100%;height:100%;object-fit:cover;}
+.disp .th img{width:100%;height:100%;object-fit:cover;} */
 .disp:hover{padding-left:28px;background:var(--paper-soft);}
 .disp:hover .t{color:var(--mint-deep);}
 .disp .n{font-family:var(--fd);font-size:20px;color:var(--mint-deep);letter-spacing:.04em;}
@@ -701,7 +704,7 @@ footer{background:var(--ink-deep);color:var(--paper);padding:96px 0 40px;}
   .bookbar .inner{padding:0 20px;flex-direction:column;align-items:flex-start;gap:20px;}
   .bookbar .txt{font-size:26px;} .bookbar .btn{width:100%;justify-content:center;}
 
-  .disp{grid-template-columns:80px 1fr;gap:10px 14px;padding:16px 0;} .disp .th{grid-row:span 3;width:80px;} .disp .d{text-align:left;}
+  .disp{grid-template-columns:1fr;gap:4px;padding:16px 0;} .disp .d{text-align:left;}
   .gal-grid{grid-template-columns:repeat(6,1fr);padding:0 20px;gap:12px;}
   .gp-a,.gp-b,.gp-c,.gp-d,.gp-e,.gp-f,.gp-g,.gp-h{grid-column:span 6;}
   /* Keep each tile near its source ratio. Forcing every image to 4:3 cropped
@@ -748,9 +751,10 @@ details.earlier summary:hover{background:var(--ink);color:var(--paper);}
 details.earlier summary .c{font-size:13px;letter-spacing:.16em;color:var(--ink-muted);}
 details.earlier summary:hover .c{color:var(--mint);}
 details.earlier[open] summary{margin-bottom:44px;}
-.byline-note{margin-top:12px;padding:28px 32px;background:var(--ink);color:var(--paper);}
-.byline-note p{font-size:17px;line-height:1.7;margin:0;color:rgba(245,241,234,.85);}
-.byline-note a{color:var(--mint);text-decoration:underline;text-underline-offset:3px;}
+.byline-block{margin-top:64px;padding-top:52px;border-top:2px solid var(--ink);}
+.byline-block > p{font-size:17px;line-height:1.7;color:var(--ink-soft);max-width:720px;margin:20px 0 34px;}
+.byline-block .mlist{border-top:2px solid var(--ink);}
+.byline-block .btn{margin-top:30px;}
 
 /* Body of Work: Covered on the record */
 .emb3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:32px;}
@@ -870,3 +874,14 @@ details.earlier[open] summary{margin-bottom:44px;}
 /* Small note under a hero lead, e.g. "Updated September 2026" */
 .hero-note{font-family:var(--fd);font-size:12px;letter-spacing:.22em;text-transform:uppercase;
   color:rgba(245,241,234,.5);margin-top:18px;}
+
+/* Writing page: Forbes contributor block */
+.fb-block{background:var(--paper-white);padding:104px 0;}
+.fb-grid{display:grid;grid-template-columns:0.42fr 1fr;gap:64px;align-items:start;}
+.fb-mark img{width:100%;max-width:230px;height:auto;display:block;}
+.fb-block p{font-size:18px;line-height:1.75;color:var(--ink-soft);margin:24px 0 34px;max-width:640px;}
+.fb-list{border-top:2px solid var(--ink);margin-bottom:30px;}
+.fb-list a{display:flex;justify-content:space-between;gap:24px;align-items:baseline;padding:14px 2px;border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink-soft);font-size:16px;line-height:1.45;transition:color .15s;}
+.fb-list a:hover{color:var(--ink);}
+.fb-list em{font-family:var(--fd);font-style:normal;font-size:13px;letter-spacing:.14em;color:var(--ink-muted);flex:0 0 auto;}
+@media (max-width:900px){.fb-grid{grid-template-columns:1fr;gap:30px;} .fb-block{padding:56px 0;} .fb-mark img{max-width:150px;}}

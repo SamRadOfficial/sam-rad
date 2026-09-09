@@ -6,6 +6,22 @@ import industries from '@/data/industries.json';
 import dispatches from '@/data/dispatches.json';
 import { meta } from '@/lib/site';
 
+
+const FORBES_PICKS = [
+  { year: '2018', title: 'Fighting fakes with blockchain: making anti-counterfeiting effective for luxury goods',
+    url: 'https://www.forbes.com/sites/samantharadocchia/2018/10/16/fighting-fakes-with-blockchain-how-to-make-anti-counterfeiting-methods-effective-for-luxury-goods/' },
+  { year: '2018', title: 'Combating illicit markets with blockchain: smart supply chain solutions',
+    url: 'https://www.forbes.com/sites/samantharadocchia/2018/07/03/combating-illicit-markets-with-blockchain-smart-supply-chains-solutions/' },
+  { year: '2019', title: 'Why identity fluidity and self-sovereignty matter in a virtually mediated future',
+    url: 'https://www.forbes.com/sites/samantharadocchia/2019/03/19/why-identity-fluidity-and-self-sovereignty-is-important-in-a-virtually-mediated-future/' },
+  { year: '2018', title: '50% of the US workforce will soon be remote. How founders can manage flexible working',
+    url: 'https://www.forbes.com/sites/samantharadocchia/2018/07/31/50-of-the-us-workforce-will-soon-be-remote-heres-how-founders-can-manage-flexible-working-styles/' },
+  { year: '2018', title: 'Why emerging technology needs to retain a human element',
+    url: 'https://www.forbes.com/sites/samantharadocchia/2018/08/06/why-emerging-technology-needs-to-retain-a-human-element/' },
+  { year: '2018', title: 'How non-fungible tokens from physical collectibles are strengthening asset-backed securities',
+    url: 'https://www.forbes.com/sites/samantharadocchia/2018/07/05/how-non-fungible-tokens-from-physical-collectibles-are-strengthening-asset-backed-securities/' },
+];
+
 export const metadata = meta({
   title: 'Writing | Dispatches from the Frontier',
   description: 'Essays on perception, technology, and change. Some written this year, some a decade ago. The pattern was always the same.',
@@ -36,6 +52,34 @@ export default function Writing() {
               <h2 className="h2">Latest <span className="mint-fill">dispatches.</span></h2>
             </div>
             <DispatchList dispatches={dispatches.filter((d) => !d.archived)} />
+          </div>
+        </section>
+
+        <section className="fb-block">
+          <div className="wide">
+            <div className="fb-grid">
+              <div className="fb-mark">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/logos/forbes.png" alt="Forbes" />
+              </div>
+              <div>
+                <div className="tag">Contributor · 2017–2020</div>
+                <h2 className="h2">Fifty pieces, <span className="mint-fill">one thread.</span></h2>
+                <p>
+                  Sam wrote for Forbes between 2017 and 2020, publishing over fifty pieces on the
+                  intersection of emerging technology and cultural trends, from supply chain provenance
+                  and environmental crime to remote work and digital identity.
+                </p>
+                <div className="fb-list">
+                  {FORBES_PICKS.map((f) => (
+                    <a href={f.url} target="_blank" rel="noopener noreferrer" key={f.url}>
+                      <span>{f.title}</span><em>{f.year}</em>
+                    </a>
+                  ))}
+                </div>
+                <Link href="/press#bylines" className="btn btn-ink">Every byline →</Link>
+              </div>
+            </div>
           </div>
         </section>
 

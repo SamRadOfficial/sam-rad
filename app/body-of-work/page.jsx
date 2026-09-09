@@ -20,7 +20,7 @@ const HIGHLIGHTS = [
   { outlet: 'TFWA Cannes', title: 'Keynote programme alongside Hillary Clinton', year: '2024',
     url: 'https://www.trbusiness.com/regional-news/international/hillary-clinton-to-deliver-keynote-at-20' },
   { outlet: 'Dell Technologies', title: 'Innovation or Irritation? The future of disruptive technologies', year: '2023',
-    url: 'https://www.dell.com/en-us/perspectives/innovation-or-irritation-the-future-of-new-and-disrupti' },
+    url: 'https://web.archive.org/web/20241208003133/https://www.dell.com/en-us/blog/innovation-or-irritation-the-future-of-new-and-disruptive-technologies/' },
   { outlet: 'TechCrunch', title: 'LOVE unveils a modern video messaging app', year: '2021',
     url: 'https://techcrunch.com/2021/08/25/love-unveils-a-modern-video-messaging-app-with-a-business-mod' },
   { outlet: 'Newsweek', title: 'Blockchain Impact Award winner', year: '2019',

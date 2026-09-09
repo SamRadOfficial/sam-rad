@@ -158,10 +158,6 @@ export function DispatchList({ dispatches }) {
     <div className="disp-list">
       {dispatches.map((d) => (
         <Link className="disp" href={`/writing/${d.slug}`} key={d.number}>
-          <div className="th">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={`/images/${d.image}`} alt="" />
-          </div>
           <div className="n">Nº {d.number}</div>
           <div className="i">{d.industry || 'Writing'}</div>
           <div className="t">{d.title}</div>

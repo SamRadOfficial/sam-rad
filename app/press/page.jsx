@@ -32,13 +32,20 @@ export default function Press() {
         <section className="media-page">
           <div className="wide">
             <MediaList kind="press" openYears={['2024', '2023', '2022', '2021', '2019']} />
-            <div className="byline-note">
+            <div className="byline-block" id="bylines">
+              <div className="tag">Bylines</div>
+              <h2 className="h2">Written by <span className="mint-fill">Sam.</span></h2>
               <p>
-                Sam wrote for <strong>Forbes</strong>, <strong>Inc.</strong>, <strong>HuffPost</strong>, and{' '}
-                <strong>IBTimes</strong> between 2017 and 2019, mostly on blockchain, supply chain, and emerging
-                technology. Read the archive on{' '}
-                <a href={SITE.social.forbes} target="_blank" rel="noopener noreferrer">Forbes →</a>
+                Sam wrote for <strong>Forbes</strong> between 2017 and 2020, publishing over fifty
+                pieces on the intersection of emerging technology and cultural trends, from supply
+                chain provenance and environmental crime to remote work and digital identity. She also
+                wrote for <strong>Inc.</strong>, <strong>HuffPost</strong>, <strong>IBTimes</strong>,
+                and <strong>Medium</strong>.
               </p>
+              <MediaList kind="bylines" openYears={['2020', '2019']} label="Show earlier writing" />
+              <a className="btn btn-ink" href={SITE.social.forbes} target="_blank" rel="noopener noreferrer">
+                The full Forbes archive →
+              </a>
             </div>
           </div>
         </section>

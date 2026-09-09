@@ -21,7 +21,7 @@ function Year({ year, items }) {
   );
 }
 
-export default function MediaList({ kind, openYears }) {
+export default function MediaList({ kind, openYears, label }) {
   const groups = media[kind];
   const open = openYears ? groups.filter((g) => openYears.includes(g.year)) : groups;
   const hidden = openYears ? groups.filter((g) => !openYears.includes(g.year)) : [];
@@ -31,8 +31,8 @@ export default function MediaList({ kind, openYears }) {
       {hidden.length > 0 && (
         <details className="earlier">
           <summary>
-            <span>Show earlier coverage</span>
-            <span className="c">{hidden[hidden.length - 1].year} and earlier</span>
+            <span>{label || 'Show earlier coverage'}</span>
+            <span className="c">{hidden[0].year} and earlier</span>
           </summary>
           {hidden.map((g) => <Year year={g.year} items={g.items} key={g.year} />)}
         </details>

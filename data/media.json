@@ -4,6 +4,11 @@
       "year": "2024",
       "items": [
         [
+          "ICAIE",
+          "ICAIE announces new investigative docuseries in partnership with Sam Rad",
+          "https://icaie.com/2024/09/icaie-announces-new-investigative-docuseries-illicit-economies-of-the-shadowverse-in-partnership-with-sam-rad/"
+        ],
+        [
           "Moodie Davitt Report",
           "TFWA reveals stellar speaker line-up for Cannes conference programme",
           "https://moodiedavittreport.com/tfwa-world-exhibition-conference-reveals-riveting-programme-and-stellar-speaker-lineup/"
@@ -29,9 +34,9 @@
       "year": "2023",
       "items": [
         [
-          "Dell Technologies",
+          "Dell Technologies · archived",
           "Innovation or Irritation? The future of new and disruptive technologies",
-          "https://www.dell.com/en-us/perspectives/innovation-or-irritation-the-future-of-new-and-disruptive-technologies/"
+          "https://web.archive.org/web/20241208003133/https://www.dell.com/en-us/blog/innovation-or-irritation-the-future-of-new-and-disruptive-technologies/"
         ],
         [
           "PhocusWire",
@@ -64,14 +69,9 @@
           "https://www.information-age.com/wit-usa-qa-work-to-be-done-regarding-tech-inclusivity-20147/"
         ],
         [
-          "Pendo",
-          "Reliving Pendomonium 2022",
-          "https://www.pendo.io/pendo-blog/reliving-pendomonium-2022-day-1-highlights/"
-        ],
-        [
           "Stansberry Research",
-          "Fall 2022 · Encore Boston Harbor",
-          "https://stansberryconferences.com/fall-2022/speaker/samantha-radocchia/"
+          "20th Stansberry Conference & Alliance Meeting · Encore Boston Harbor",
+          "https://stansberryboston2022.com/speakers.html"
         ]
       ]
     },
@@ -109,11 +109,6 @@
           "https://www.cmswire.com/leadership/5-ways-to-empower-women-in-your-workforce/"
         ],
         [
-          "Entrepreneur",
-          "SingularityU Mexico Summit",
-          "https://www.entrepreneur.com/article/339125"
-        ],
-        [
           "Irish Tech News",
           "Power and trust: tech insights",
           "https://irishtechnews.ie/power-and-trust-tech-insights-samantha-radocchia/"
@@ -134,29 +129,14 @@
           "https://www.vox.com/the-goods/2018/10/18/17989610/blockchain-retail-counterfeit-supply-chain-data"
         ],
         [
-          "The Block",
-          "10 reflections as bitcoin turns 10",
-          "https://www.theblockcrypto.com/2018/10/31/10-reflections-as-bitcoin-turns-10/"
-        ],
-        [
-          "CleanTechnica",
-          "Study Hall LA taught Los Angeles about sustainable fashion",
-          "https://cleantechnica.com/2018/09/03/study-hall-la-taught-los-angeles-about-sustainable-fashion/"
-        ],
-        [
-          "Denim Dudes",
-          "Study Hall LA: Circularity, Denim & Human Rights",
-          "http://www.denimdudes.co/study-hall-la-circularity-denim-human-rights/"
-        ],
-        [
           "Business News Daily",
           "How the Internet of Things is Changing Manufacturing",
           "https://www.businessnewsdaily.com/10395-iot-manufacturing-production-supply-chains.html"
         ],
         [
-          "Thrive Global",
-          "How Growing Up in a Spiritual Household Made Me a More Intuitive Programmer",
-          "https://www.thriveglobal.com/stories/25358-how-growing-up-in-a-spiritual-household-made-me-a-more-intuitive-programmer"
+          "bobsguide",
+          "How blockchain and the IoT are laying the groundwork for the digital economy",
+          "http://www.bobsguide.com/guide/news/2018/Jan/15/how-blockchain-and-the-iot-is-laying-the-groundwork-for-the-digital-economy/"
         ]
       ]
     },
@@ -209,11 +189,6 @@
           "https://hackernoon.com/100-people-to-watch-in-the-blockchain-and-crypto-space-b982249a0bea"
         ],
         [
-          "Cheddar",
-          "Backing Up Your Bag with Blockchain",
-          "https://cheddar.com/videos/chronicled-backing-up-your-bag-with-blockchain"
-        ],
-        [
           "Global Trade Magazine",
           "Chronicled achieves certification for its micro temp-logging solution",
           "http://www.globaltrademag.com/global-logistics/chronicled-achieves-certification-micro-temp-logging-solution"
@@ -224,9 +199,39 @@
           "https://www.blockchaintechnews.com/news/chronicled-blockchain-based-temperature-logger-fda-approved-for-supply-chain-use/"
         ],
         [
-          "CryptoCoinsNews",
-          "US Pharma Looks at Blockchain Tech to Track Prescription Drugs",
-          "https://www.cryptocoinsnews.com/us-pharma-taps-blockchain-tech-to-track-prescription-drugs/"
+          "HuffPost",
+          "4 blockchain thought leaders you should be turning to for advice",
+          "https://www.huffpost.com/entry/4-blockchain-thought-leaders-you-should-be-turning_b_59e00ccce4b003f928d5e58e"
+        ]
+      ]
+    },
+    {
+      "year": "2016",
+      "items": [
+        [
+          "Fast Company",
+          "How sneaker designers are busting knockoffs with Bitcoin tech",
+          "https://www.fastcompany.com/3060459/how-sneaker-designers-are-busting-knockoffs-with-bitcoin-tech"
+        ],
+        [
+          "Complex",
+          "Marshawn Lynch invests in eliminating fake sneakers",
+          "https://www.complex.com/sneakers/a/matt-welty/marshawn-lynch-invests-in-eliminating-fake-sneakers"
+        ],
+        [
+          "Complex",
+          "Chronicled is using blockchain technology to help prevent fake sneaker selling",
+          "https://www.complex.com/sneakers/a/marco-negrete/chronicled-using-blockchain-technology-help-prevent-fake-sneaker-selling"
+        ],
+        [
+          "CoinDesk",
+          "Why Chronicled believes sneakers could be blockchain's big market",
+          "https://www.coindesk.com/markets/2016/03/23/why-chronicled-believes-sneakers-could-be-blockchains-big-market"
+        ],
+        [
+          "IBTimes",
+          "Blockchain technology could solve the problem of fake sneakers",
+          "https://www.ibtimes.com/blockchain-technology-could-solve-problem-fake-sneakers-2334829"
         ]
       ]
     }
@@ -369,6 +374,348 @@
           "Finance Magnates",
           "Blockchain Podcast 24",
           "https://soundcloud.com/finance-magnates/blockchain-podcast-24-samantha-radocchia-co-founder-and-cmo-of-chronicled"
+        ]
+      ]
+    }
+  ],
+  "bylines": [
+    {
+      "year": "2020",
+      "items": [
+        [
+          "Forbes",
+          "Exclusive Interview: NFL Athlete Russell Okung Talks Bitcoin And Why Fold's New Visa Card Will Fast-Track Bitcoin Adoption",
+          "https://www.forbes.com/sites/samantharadocchia/2020/04/21/exclusive-interview-nfl-linebacker-russell-okung-talks-bitcoin-and-why-folds-new-debit-card-will-fast-track-bitcoin-adoption/"
+        ]
+      ]
+    },
+    {
+      "year": "2019",
+      "items": [
+        [
+          "Forbes",
+          "Reflections On The State Of Crypto Entrepreneurship In 2019",
+          "https://www.forbes.com/sites/samantharadocchia/2019/12/18/reflections-on-the-state-of-crypto-entrepreneurship-in-2019/"
+        ],
+        [
+          "Forbes",
+          "8 Reactions To Trump's Anti-Cryptocurrency Tweetstorm",
+          "https://www.forbes.com/sites/samantharadocchia/2019/07/11/8-reactions-to-trumps-anti-cryptocurrency-tweetstorm/"
+        ],
+        [
+          "Forbes",
+          "Ballers and Bitcoin: Miami Dolphins Set To Accept Cryptocurrencies For Payments",
+          "https://www.forbes.com/sites/samantharadocchia/2019/07/11/ballers-and-bitcoin-miami-dolphins-set-to-accept-cryptocurrencies-for-payments/"
+        ],
+        [
+          "Forbes",
+          "4 Tips For Presenting About Blockchain Without Boring Your Audience",
+          "https://www.forbes.com/sites/samantharadocchia/2019/04/30/4-tips-for-presenting-about-blockchain-without-boring-your-audience/"
+        ],
+        [
+          "Forbes",
+          "Tipping Streamers: The Donation Economy Is Being Built, But Can It Last?",
+          "https://www.forbes.com/sites/samantharadocchia/2019/03/26/can-the-donation-economy-last/"
+        ],
+        [
+          "Forbes",
+          "Why Identity Fluidity And Self-Sovereignty Is Important In A Virtually Mediated Future",
+          "https://www.forbes.com/sites/samantharadocchia/2019/03/19/why-identity-fluidity-and-self-sovereignty-is-important-in-a-virtually-mediated-future/"
+        ],
+        [
+          "Forbes",
+          "Step Aside, Lamborghini, Bitcoin is Coming for the Mass Market of Auto Shoppers",
+          "https://www.forbes.com/sites/samantharadocchia/2019/03/14/step-aside-lamborghini-bitcoin-is-coming-for-the-mass-market-of-auto-shoppers/"
+        ],
+        [
+          "Forbes",
+          "Stop The Grind: A Realistic Solution To Halt Hustle Culture",
+          "https://www.forbes.com/sites/samantharadocchia/2019/03/01/stop-the-grind-a-realistic-solution-to-halt-hustle-culture/"
+        ],
+        [
+          "Forbes",
+          "Why Key Management And Security Are Preventing Decentralized Exchange Adoption",
+          "https://www.forbes.com/sites/samantharadocchia/2019/02/19/why-key-management-and-security-are-preventing-decentralized-exchange-adoption/"
+        ],
+        [
+          "Forbes",
+          "4 Benefits And Challenges Of Decentralized, Distributed Teams That Disregard Hours Logged",
+          "https://www.forbes.com/sites/samantharadocchia/2019/02/12/4-benefits-and-challenges-of-decentralized-distributed-teams-that-disregard-hours-logged/"
+        ],
+        [
+          "Forbes",
+          "Everything About The Digital Nomad Lifestyle Sounds Great, Except The US Tax System",
+          "https://www.forbes.com/sites/samantharadocchia/2019/02/05/everything-about-the-digital-nomad-lifestyle-sounds-great-except-the-us-tax-system/"
+        ],
+        [
+          "Forbes",
+          "How The Crypto Community Is Paving The Way For Digital Nomads And Remote Work",
+          "https://www.forbes.com/sites/samantharadocchia/2019/01/31/how-the-crypto-community-is-paving-the-way-for-digital-nomads-and-remote-work/"
+        ],
+        [
+          "Forbes",
+          "What Gemini's 'Revolution Needs Rules' Campaign Means For The Crypto Community",
+          "https://www.forbes.com/sites/samantharadocchia/2019/01/29/what-geminis-revolution-needs-rules-campaign-means-for-the-crypto-community/"
+        ],
+        [
+          "Forbes",
+          "Why Consumer Demand For Faster Shipping Will Force Supply Chains To Change Strategies",
+          "https://www.forbes.com/sites/samantharadocchia/2019/01/18/why-consumer-demand-for-faster-shipping-will-force-supply-chains-to-change-strategies/"
+        ],
+        [
+          "Forbes",
+          "Chief Ecosystem Officer: The New Role Every Blockchain Company Needs",
+          "https://www.forbes.com/sites/samantharadocchia/2019/01/10/chief-ecosystem-officer-the-new-role-every-blockchain-company-needs/"
+        ],
+        [
+          "Forbes",
+          "Know What's GMO: Why Blockchain Will Build Faith In Food Labels",
+          "https://www.forbes.com/sites/samantharadocchia/2019/01/08/know-whats-gmo-why-blockchain-will-build-faith-in-food-labels/"
+        ],
+        [
+          "Forbes",
+          "How Blockchain Can Reduce Costs For The Shifting Electric Vehicle Landscape",
+          "https://www.forbes.com/sites/samantharadocchia/2019/01/04/how-blockchain-can-reduce-costs-for-the-shifting-electric-vehicle-landscape/"
+        ],
+        [
+          "Forbes",
+          "2018: A Year Of Historic Exchange Hacks",
+          "https://www.forbes.com/sites/samantharadocchia/2019/01/02/2018-a-year-of-historic-exchange-hacks/"
+        ]
+      ]
+    },
+    {
+      "year": "2018",
+      "items": [
+        [
+          "Forbes",
+          "What The Denim Industry Needs To Support A Sustainable Supply Chain",
+          "https://www.forbes.com/sites/samantharadocchia/2018/12/26/what-the-denim-industry-needs-to-support-a-sustainable-supply-chain/"
+        ],
+        [
+          "Forbes",
+          "Why Regulation Alone May Not Solve For Unsafe Supplements In The Supply Chain",
+          "https://www.forbes.com/sites/samantharadocchia/2018/12/17/why-regulation-alone-may-not-solve-for-unsafe-supplements-in-the-supply-chain/"
+        ],
+        [
+          "Forbes",
+          "4 Crypto Mistakes To Avoid When Starting Out",
+          "https://www.forbes.com/sites/samantharadocchia/2018/12/14/4-crypto-mistakes-to-avoid-when-starting-out/"
+        ],
+        [
+          "Forbes",
+          "Why Gamers (And Blockchain) Are Creating The Future Of Work And Society",
+          "https://www.forbes.com/sites/samantharadocchia/2018/12/04/why-gamers-and-blockchain-are-creating-the-future-of-work-and-society/"
+        ],
+        [
+          "Forbes",
+          "Cleaning Up The Chain Of Custody For Medical Implants With Blockchain",
+          "https://www.forbes.com/sites/samantharadocchia/2018/11/09/cleaning-up-the-chain-of-custody-for-medical-implants-with-blockchain/"
+        ],
+        [
+          "Forbes",
+          "Hair Product Diversion Is Dirty Business. Here's What It Will Take To Clean Up The Supply Chain",
+          "https://www.forbes.com/sites/samantharadocchia/2018/10/23/hair-product-diversion-is-dirty-business-heres-what-it-will-take-to-clean-up-the-supply-chain/"
+        ],
+        [
+          "Forbes",
+          "Fighting Fakes With Blockchain: How To Make Anti-Counterfeiting Methods Effective For Luxury Goods",
+          "https://www.forbes.com/sites/samantharadocchia/2018/10/16/fighting-fakes-with-blockchain-how-to-make-anti-counterfeiting-methods-effective-for-luxury-goods/"
+        ],
+        [
+          "Forbes",
+          "How Blockchain Can Increase Brand Value For Both New And Established Supply Chains",
+          "https://www.forbes.com/sites/samantharadocchia/2018/10/11/how-blockchain-can-increase-brand-value-for-both-new-and-established-supply-chains/"
+        ],
+        [
+          "Forbes",
+          "Understanding D Corps As The Future Of Decentralized Autonomous Organizations",
+          "https://www.forbes.com/sites/samantharadocchia/2018/10/10/understanding-d-corps-as-the-future-of-decentralized-autonomous-organizations/"
+        ],
+        [
+          "Forbes",
+          "Opt-Out Versus Opt-In: How Blockchain Will Change The Data Collection Culture",
+          "https://www.forbes.com/sites/samantharadocchia/2018/10/02/opt-out-versus-opt-in-how-blockchain-will-change-the-data-collection-culture/"
+        ],
+        [
+          "Forbes",
+          "How A Blockchain Payment Processor Can Improve Industry Transactions",
+          "https://www.forbes.com/sites/samantharadocchia/2018/09/28/how-a-blockchain-payment-processor-can-improve-industry-transactions/"
+        ],
+        [
+          "Forbes",
+          "Blockchain For Brands: 3 Tips For Educating Customers And Building Your Brand",
+          "https://www.forbes.com/sites/samantharadocchia/2018/09/11/blockchain-for-brands-3-tips-for-educating-customers-and-building-your-brand/"
+        ],
+        [
+          "Forbes",
+          "Why Smart Contracts Standards Are Essential For Large-Scale Adoption",
+          "https://www.forbes.com/sites/samantharadocchia/2018/09/07/why-smart-contracts-standards-are-essential-for-large-scale-adoption/"
+        ],
+        [
+          "Forbes",
+          "3 Tips For Staying On Top Of The Rapidly-Changing Blockchain Industry",
+          "https://www.forbes.com/sites/samantharadocchia/2018/08/22/3-tips-for-staying-on-top-of-the-rapidly-changing-blockchain-industry/"
+        ],
+        [
+          "Forbes",
+          "Why Tech Companies Can Benefit From Passion Projects",
+          "https://www.forbes.com/sites/samantharadocchia/2018/08/14/why-tech-companies-can-benefit-from-passion-projects/"
+        ],
+        [
+          "Forbes",
+          "Why Emerging Technology Needs To Retain A Human Element",
+          "https://www.forbes.com/sites/samantharadocchia/2018/08/06/why-emerging-technology-needs-to-retain-a-human-element/"
+        ],
+        [
+          "Forbes",
+          "50% Of The U.S. Workforce Will Soon Be Remote. Here's How Founders Can Manage Flexible Working Styles",
+          "https://www.forbes.com/sites/samantharadocchia/2018/07/31/50-of-the-us-workforce-will-soon-be-remote-heres-how-founders-can-manage-flexible-working-styles/"
+        ],
+        [
+          "Forbes",
+          "Blockchain And The Keto Diet: How Tech Is Changing The Definition Of 'Meathead'",
+          "https://www.forbes.com/sites/samantharadocchia/2018/07/24/blockchain-and-the-keto-diet-how-tech-is-changing-the-definition-of-meathead/"
+        ],
+        [
+          "Forbes",
+          "Why Controlling Your Credit History Is Possible Through Blockchain Technology",
+          "https://www.forbes.com/sites/samantharadocchia/2018/07/10/why-controlling-your-credit-history-is-possible-through-blockchain-technology/"
+        ],
+        [
+          "Forbes",
+          "How Non-Fungible Tokens From Physical Collectibles Are Strengthening Asset-Backed Securities",
+          "https://www.forbes.com/sites/samantharadocchia/2018/07/05/how-non-fungible-tokens-from-physical-collectibles-are-strengthening-asset-backed-securities/"
+        ],
+        [
+          "Forbes",
+          "Combating Illicit Markets With Blockchain: Smart Supply Chains Solutions",
+          "https://www.forbes.com/sites/samantharadocchia/2018/07/03/combating-illicit-markets-with-blockchain-smart-supply-chains-solutions/"
+        ],
+        [
+          "Forbes",
+          "Altering The Apparel Industry: How The Blockchain Is Changing Fashion",
+          "https://www.forbes.com/sites/samantharadocchia/2018/06/27/altering-the-apparel-industry-how-the-blockchain-is-changing-fashion/"
+        ],
+        [
+          "Forbes",
+          "3 Automotive Consumer Safety Issues Blockchain Will Help Resolve",
+          "https://www.forbes.com/sites/samantharadocchia/2018/06/21/3-automotive-consumer-safety-issues-blockchain-will-help-resolve/"
+        ],
+        [
+          "Forbes",
+          "Why The Extraction Of Natural Resources Needs A Blockchain Solution",
+          "https://www.forbes.com/sites/samantharadocchia/2018/06/19/why-the-extraction-of-natural-resources-needs-a-blockchain-solution/"
+        ],
+        [
+          "Forbes",
+          "Why The Blockchain Is Standardizing What It Means To Be Authentic And Sustainable",
+          "https://www.forbes.com/sites/samantharadocchia/2018/06/13/why-the-blockchain-is-standardizing-what-it-means-to-be-authentic-and-sustainable/"
+        ],
+        [
+          "Forbes",
+          "The Impacts Of Illegal Fishing And How Blockchain Can Improve The Industry",
+          "https://www.forbes.com/sites/samantharadocchia/2018/06/08/the-impacts-of-illegal-fishing-and-how-blockchain-can-improve-the-industry/"
+        ],
+        [
+          "Forbes",
+          "How Deforestation And Timber Issues Can Be Battled With Blockchain",
+          "https://www.forbes.com/sites/samantharadocchia/2018/05/15/how-deforestation-and-timber-issues-can-be-battled-with-blockchain/"
+        ],
+        [
+          "Forbes",
+          "Why Blockchain Can Be An Effective Tool For Fighting Environmental Crime",
+          "https://www.forbes.com/sites/samantharadocchia/2018/05/10/why-blockchain-can-be-an-effective-tool-for-fighting-environmental-crime/"
+        ],
+        [
+          "Forbes",
+          "Combating Water Wars: What It Means To Manage Our Supply With Blockchain",
+          "https://www.forbes.com/sites/samantharadocchia/2018/05/07/combating-water-wars-what-it-means-to-manage-our-supply-with-blockchain/"
+        ],
+        [
+          "Forbes",
+          "How To Develop An Organic Culture Within A Blockchain Company",
+          "https://www.forbes.com/sites/samantharadocchia/2018/04/27/how-to-develop-an-organic-culture-within-a-blockchain-company/"
+        ],
+        [
+          "Forbes",
+          "3 Innovative Ways Blockchain Will Build Trust In The Food Industry",
+          "https://www.forbes.com/sites/samantharadocchia/2018/04/26/3-innovative-ways-blockchain-will-build-trust-in-the-food-industry/"
+        ],
+        [
+          "Forbes",
+          "Why zk-SNARKs Are Crucial For Blockchain Data Privacy",
+          "https://www.forbes.com/sites/samantharadocchia/2018/04/24/why-zk-snarks-are-crucial-for-blockchain-data-privacy/"
+        ],
+        [
+          "Forbes",
+          "Electric Vehicles Are Sparking Demand For Ethically-Sourced Materials And Blockchain Solutions",
+          "https://www.forbes.com/sites/samantharadocchia/2018/04/19/electric-vehicles-are-sparking-demand-for-ethically-sourced-materials-and-blockchain-solutions/"
+        ],
+        [
+          "Forbes",
+          "3 Simple Tools To Help With Your Crypto Taxes - You Still Have Time",
+          "https://www.forbes.com/sites/samantharadocchia/2018/04/17/3-simple-tools-to-help-with-your-crypto-taxes-you-still-have-time/"
+        ],
+        [
+          "Medium",
+          "From sneakers to pharma: an inside look at the evolution of Chronicled",
+          "https://medium.com/@SamRadOfficial/from-sneakers-to-pharma-an-inside-look-at-the-evolution-of-chronicled-882ea00a22c9"
+        ]
+      ]
+    },
+    {
+      "year": "2017",
+      "items": [
+        [
+          "CoinDesk",
+          "No one should control the blockchain supply chain",
+          "https://www.coindesk.com/markets/2017/12/28/no-one-should-control-the-blockchain-supply-chain/"
+        ],
+        [
+          "Forbes",
+          "What's holding blockchain back from large-scale adoption?",
+          "https://www.forbes.com/sites/quora/2017/09/21/whats-holding-blockchain-back-from-large-scale-adoption/"
+        ],
+        [
+          "Forbes",
+          "How blockchain could eventually change the way governments function",
+          "https://www.forbes.com/sites/quora/2017/11/29/how-blockchain-could-eventually-change-the-way-governments-function/"
+        ],
+        [
+          "HuffPost",
+          "How government can benefit from blockchain technology",
+          "https://www.huffpost.com/entry/how-government-can-benefit-from-blockchain-technology_b_5a1e332be4b09de1c3299e29"
+        ],
+        [
+          "HuffPost UK",
+          "How is Ethereum different from Bitcoin?",
+          "https://www.huffingtonpost.co.uk/publishers-725/how-is-ethereum-different_b_17999462.html"
+        ],
+        [
+          "HuffPost UK",
+          "Will Goldman Sachs start trading Bitcoin in the next six months?",
+          "http://www.huffingtonpost.co.uk/quora-uk/bitcoin_b_18451844.html"
+        ],
+        [
+          "IBTimes",
+          "How the net neutrality vote may block Bitcoin and cryptocurrency trading",
+          "https://www.ibtimes.com/how-net-neutrality-vote-may-block-bitcoin-cryptocurrency-trading-2628175"
+        ],
+        [
+          "Inc.",
+          "What's stopping blockchain from going mainstream?",
+          "https://www.inc.com/quora/whats-stopping-blockchain-from-going-mainstream.html"
+        ],
+        [
+          "Inc.",
+          "Bitcoin vs. Ethereum: what you need to know about the great cryptocurrency showdown",
+          "https://www.inc.com/quora/bitcoin-vs-ethereum-what-you-need-to-know-about-great-cryptocurrency-showdown.html"
+        ],
+        [
+          "Inc.",
+          "The single most powerful way to become more innovative this year",
+          "https://www.inc.com/quora/the-single-most-powerful-way-to-become-more-innovative-this-year.html"
         ]
       ]
     }
