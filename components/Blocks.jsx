@@ -4,7 +4,6 @@ import clients from '@/data/clients.json';
 
 const LOGO_FILES = Object.fromEntries(clients.filter((c) => c.file).map((c) => [c.name, c]));
 import IndustryIcon from './IndustryIcon';
-import { MOVE_ICONS } from './MoveIcon';
 
 export function Bureau({ light }) {
   return (
@@ -48,11 +47,11 @@ export function YouAreHere({ eyebrow, heading, lead, cta, tall }) {
   );
 }
 
-export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, btn = 'Book Sam →', id = 'book', href, external }) {
+export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, position, btn = 'Book Sam →', id = 'book', href, external }) {
   return (
     <section className={center ? 'cta-break center' : 'cta-break'} id={id}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={`/images/${image}`} alt="" />
+      <img src={`/images/${image}`} alt="" style={position ? { objectPosition: position } : undefined} />
       <div className="inner">
         <div className="tag">{tag}</div>
         <h2 className="h2">{heading}</h2>
@@ -110,13 +109,13 @@ export function ClientLogos({ names = [], label }) {
 
 
 
-export function IndustryGrid({ industries, total, cta = 'See the keynote →', showCustom = true, numbered = true }) {
+export function IndustryGrid({ industries, cta = 'See the keynote →', showCustom = true, numbered = true }) {
   return (
     <div className="ind-grid">
       {industries.map((ind, i) => (
         <Link className="ind" href={`/industries/${ind.slug}`} key={ind.slug}>
           <IndustryIcon slug={ind.slug} />
-          <div className="n">{numbered ? `${String(ind.number).padStart(2, '0')} / ${total}` : String(i + 1).padStart(2, '0')}</div>
+          <div className="n">{String(numbered ? ind.number : i + 1).padStart(2, '0')}</div>
           <div className="t">{ind.name}</div>
           <div className="a">{cta}</div>
         </Link>
@@ -192,14 +191,13 @@ export function Moves({ moves, dark }) {
     <section className={dark ? 'moves dark' : 'moves'} id="moves">
       <div className="narrow">
         <div className="tag mint">The four moves</div>
-        <h2 className="h2">See it. Let it go. Lead it. <span className="mint-fill">Take it off.</span></h2>
+        <h2 className="h2">See it. Let it go. <span className="mint-fill">Lead it.</span> Take it off.</h2>
         <div className="moves-grid">
           {moves.map((m) => (
             <div className="move" key={m.n}>
               <div className="n">{m.n}</div>
               <div className="mv-head">
                 <div className="t">{m.title}</div>
-                <span className="mv-ico">{MOVE_ICONS[m.n]}</span>
               </div>
               <div className="d">{m.body}</div>
               <div className="k">{m.tag}</div>

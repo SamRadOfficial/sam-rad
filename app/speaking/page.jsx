@@ -24,7 +24,7 @@ const faq = {
   mainEntity: [
     ['Who is Sam Rad?', 'Sam Rad (Samantha Radocchia) is a keynote speaker, anthropologist, and four-time technology founder who wrote the #1 bestseller Radical Next. She delivers the keynote Change Has a Pattern to Fortune 500s, governments, and associations worldwide.'],
     ['What is Sam Rad\'s keynote about?', 'Change Has a Pattern shows audiences the cycle every big change follows, why new tools are not paying off yet, and the four moves that turn the corner: see the pattern, let go of the old way, lead the jetpack, and take it off.'],
-    ['What industries does Sam Rad speak to?', 'Sam customizes the keynote for twenty industries including financial services, healthcare, future of work, higher education, supply chain, hospitality, technology, retail, insurance, and government.'],
+    ['What industries does Sam Rad speak to?', 'Sam customizes the keynote for your industry, including financial services, healthcare, future of work, higher education, supply chain, hospitality, technology, retail, insurance, and government.'],
     ['How long is the keynote?', 'The standard format is 45 to 60 minutes. A keynote with Q&A is also available, in person or virtual.'],
     ['Where does Sam Rad travel from?', 'Sam Rad travels from New York City and has keynoted on five continents.'],
     ['How do you book Sam Rad?', 'Sam Rad is represented by Brandy Gibson at Executive Speakers Bureau. Booking inquiries go through the form at sam-rad.com/book.'],
@@ -169,7 +169,7 @@ export default function Speaking() {
         />
 
         <CtaBreak
-          image="cta-red.jpg" center bureau
+          image="cta-red.jpg" center bureau position="center top"
           tag="Book Sam Rad"
           heading={<>Walk out <span className="mint-fill">ready.</span></>}
           lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."

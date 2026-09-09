@@ -295,22 +295,31 @@ it serves both `archive.sam-rad.com` and the DNS zone.
 
 ## 9. Roadmap
 
-1. **Move to Claude Code.** Direct repo access instead of the zip-and-copy loop,
-   which has caused three deploy mistakes. Read this file first; a fresh session
-   starts with no context.
-2. **Industry page copy.** 9 pages, agency-drafted, only Healthcare reviewed. Needs
+1. **Industry page copy.** 9 pages, agency-drafted, only Healthcare reviewed. Needs
    Sam's real client names per sector — several pages show no logo row because their
    `logos` lists are placeholders like "Automotive associations".
-3. **Press section.** Sam is supplying the links. The Squarespace export contains 35
+2. **Press section.** Sam is supplying the links. The Squarespace export contains 35
    press items with **no body and no external URLs**, only titles and screenshots.
    Build as one page, linked from Body of Work and the footer.
-4. **Sept 22 task:** check Search Console, move DNS to GoDaddy, retire Squarespace.
+3. **Sept 22 task:** check Search Console, move DNS to GoDaddy, retire Squarespace.
    Order matters — content must move before Squarespace is cancelled.
-5. **Three alt domains** → redirect to sam-rad.com via Vercel.
-6. **Analytics.** None installed.
-7. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
+4. **Three alt domains** → redirect to sam-rad.com via Vercel.
+5. **Analytics.** None installed.
+6. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
    until the design settles. Studio would live at `/admin`. On-demand revalidation
    preferred over full-rebuild webhooks.
+7. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
+   keep working in chat with the zip-and-copy loop. Worth revisiting for mechanical
+   work (bulk migrations, repeated builds) while keeping copy and design decisions
+   in chat, where the reasoning is discussed rather than just executed. A fresh
+   Claude Code session starts with no context: point it at this file first.
+
+**Working method, for now:** the agent produces `sam-rad-source.zip` containing
+`app components data lib next.config.js` (plus `HANDOFF.md` when it changes), Sam
+copies it into `~/Documents/sam-rad`, runs `npm run build`, then
+`git add -A && git commit -m "..." && git push`. Vercel deploys from `main`.
+Images ship as standalone files or in a separate `sam-rad-logos.zip`.
+**The site is live, so every push goes straight to sam-rad.com.**
 
 ---
 

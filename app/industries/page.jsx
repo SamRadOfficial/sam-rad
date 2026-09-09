@@ -7,7 +7,7 @@ import { meta } from '@/lib/site';
 
 export const metadata = meta({
   title: 'Industries | Change Impacting Your Industry',
-  description: 'One keynote, built for twenty industries. Sam Rad maps the forces reshaping your world and the four moves that turn the corner.',
+  description: 'One keynote, built for your industry. Sam Rad maps the forces reshaping your world and the four moves that turn the corner.',
   path: '/industries',
   image: '/images/hero-industries.jpg',
   imageAlt: 'Sam Rad keynoting in a red suit at the Stansberry Conference in Boston',
@@ -34,7 +34,7 @@ export default function Industries() {
               <div className="tag">Choose your industry</div>
               <h2 className="h2">The keynote, built for <span className="mint-fill">your</span> world.</h2>
             </div>
-            <IndustryGrid industries={industries} total={industries.length} />
+            <IndustryGrid industries={industries} />
           </div>
         </section>
 
@@ -55,7 +55,7 @@ export default function Industries() {
         </section>
 
         <CtaBreak
-          image="cta-red.jpg" center bureau
+          image="cta-red.jpg" center bureau position="center top"
           tag="Book Sam Rad"
           heading={<>Walk out <span className="mint-fill">ready.</span></>}
           lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."

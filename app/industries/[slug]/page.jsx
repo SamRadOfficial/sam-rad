@@ -151,7 +151,7 @@ export default function IndustryPage({ params }) {
             <div className="related-row">
               {related.map((r) => (
                 <Link className="rel" href={`/industries/${r.slug}`} key={r.slug}>
-                  <small>{String(r.number).padStart(2, '0')} / {industries.length}</small>
+                  <small>{String(r.number).padStart(2, '0')}</small>
                   {r.name}
                 </Link>
               ))}
@@ -160,7 +160,7 @@ export default function IndustryPage({ params }) {
         </section>
 
         <CtaBreak
-          image="cta-red.jpg" center bureau
+          image="cta-red.jpg" center bureau position="center top"
           tag="Book Sam Rad"
           heading={<>Book Sam for your {lower} <span className="mint-fill">event.</span></>}
           lead="Sam Rad is the speaker you book when you are facing change, and you want your people to walk out inspired to shape what comes next."

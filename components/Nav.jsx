@@ -49,7 +49,7 @@ function IndustriesMenu({ active }) {
         <div className="mega-inner">
           <div className="mega-head">
             <span className="t">Change impacting your industry</span>
-            <span className="s">{industries.length} industries</span>
+            
           </div>
           <div className="mega-grid">
             {featured.map((ind) => (
@@ -63,7 +63,7 @@ function IndustriesMenu({ active }) {
             <span className="note">
               Custom built around the forces shaping your world.
             </span>
-            <Link href="/industries">See all {industries.length} industries →</Link>
+            <Link href="/industries">See all industries →</Link>
           </div>
         </div>
       </div>

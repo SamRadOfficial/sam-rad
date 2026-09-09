@@ -8,7 +8,7 @@ import { meta } from '@/lib/site';
 
 export const metadata = meta({
   title: 'Writing | Dispatches from the Frontier',
-  description: 'One dispatch a day, rotating across twenty industries. Real sources, Sam Rad\'s lens, the pattern applied to what happened this week.',
+  description: 'Essays on perception, technology, and change. Some written this year, some a decade ago. The pattern was always the same.',
   path: '/writing',
   image: '/images/cta-audience.jpg',
   imageAlt: 'Sam Rad keynoting to a seated audience in Bangkok',
@@ -23,7 +23,7 @@ export default function Writing() {
           image="cta-audience.jpg"
           eyebrow="Writing · You are here"
           short
-          lead={<>One dispatch a day, rotating across twenty industries. Real sources, Sam&apos;s lens, <strong>the pattern applied to what happened this week.</strong></>}
+          lead={<>Essays on perception, technology, and change. Some written this year, some a decade ago. <strong>The pattern was always the same.</strong></>}
           cta={<Link href="#latest" className="btn btn-mint">Latest dispatches ↓</Link>}
           caption="Bangkok"
         >
@@ -53,7 +53,7 @@ export default function Writing() {
               <div className="tag">Browse by industry</div>
               <h2 className="h2">Twenty industries. <span className="mint-fill">One</span> lens.</h2>
             </div>
-            <IndustryGrid industries={industries} total={industries.length} cta="Dispatches + keynote →" />
+            <IndustryGrid industries={industries} cta="Dispatches + keynote →" />
           </div>
         </section>
 
