@@ -49,6 +49,13 @@ trigger `@media (max-width:900px)`; the browser reads the real viewport. Working
 pattern: unwrap every `max-width` media block ≥390px, append those rules
 unconditionally, then wrap the body in a 390px frame.
 
+**A `<picture>` `<source>` that 404s renders NOTHING.** The browser picks the source
+by format support, not by whether the file exists, and does not fall back to the
+`<img>`. Shipping WebP for only some images blanked two CTA banners on the live site.
+Every `.jpg` and `.png` in `public/images/` now has a matching `.webp`. Run
+`npm run check:images` after building; it audits every reference against disk and
+exits non-zero if one is missing.
+
 **Verify counts after any data change.** Cutting industries from 20 to 9 left stale
 `number` fields rendering "19 / 9" in the grid. Grep the built HTML, don't assume.
 
@@ -399,7 +406,13 @@ it serves both `archive.sam-rad.com` and the DNS zone.
 5. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
    until the design settles. Studio would live at `/admin`. On-demand revalidation
    preferred over full-rebuild webhooks.
-6. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
+6. **Responsive images.** Parked 9 Sep 2026. A phone downloads the same 2358px hero
+   as a desktop: 797KB where 195KB would do, a 75% saving on mobile. WebP and
+   `fetchPriority` are already in place, so this is the remaining win. Two options:
+   the cheap one adds a 900px WebP per hero plus a `srcset` to the `<picture>`
+   elements in `Blocks.jsx`, about an hour; the thorough one converts all 38 `<img>`
+   tags to Next's `Image`, about a day. Do the cheap one first.
+7. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
    keep working in chat with the zip-and-copy loop. Worth revisiting for mechanical
    work (bulk migrations, repeated builds) while keeping copy and design decisions
    in chat, where the reasoning is discussed rather than just executed. A fresh
@@ -441,6 +454,9 @@ Images ship as standalone files or in a separate `sam-rad-logos.zip`.
 - Era images are clean, text-free artwork. That old open item is resolved.
 
 **Technical**
+- **Content exports** live outside the repo: `sam-rad-content-export.xlsx` holds the
+  91-client roster, the Chronicled participants, and the press and podcast lists with
+  URLs. Regenerate from `data/media.json` and the roster if they drift.
 - postcss advisory, see §2.
 - Open Graph images are 3:2; the spec wants 1200×630. Platforms centre-crop.
 - No CMS.
