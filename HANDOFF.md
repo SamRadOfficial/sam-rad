@@ -344,12 +344,14 @@ it serves both `archive.sam-rad.com` and the DNS zone.
    `logos` lists are placeholders like "Automotive associations".
 2. **Sept 22 task:** check Search Console, move DNS to GoDaddy, retire Squarespace.
    Order matters — content must move before Squarespace is cancelled.
-3. **Three alt domains** → redirect to sam-rad.com via Vercel.
-4. **Analytics.** None installed.
-5. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
+3. **New sizzle reel** cut for the industry pages, replacing the placeholder. See
+   open items.
+4. **Three alt domains** → redirect to sam-rad.com via Vercel.
+5. **Analytics.** None installed.
+6. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
    until the design settles. Studio would live at `/admin`. On-demand revalidation
    preferred over full-rebuild webhooks.
-6. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
+7. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
    keep working in chat with the zip-and-copy loop. Worth revisiting for mechanical
    work (bulk migrations, repeated builds) while keeping copy and design decisions
    in chat, where the reasoning is discussed rather than just executed. A fresh
@@ -367,6 +369,10 @@ Images ship as standalone files or in a separate `sam-rad-logos.zip`.
 ## 10. Known open items
 
 **Content**
+- **The industry-page sizzle reel is a placeholder.** Every industry page embeds
+  `SITE.sizzleId` (`itaGfenlxPw`), the same reel used on Speaking and Body of Work.
+  Sam wants a purpose-cut reel for these pages. Changing `sizzleId` in `lib/site.js`
+  updates every instance at once.
 - **35 press links and 25 podcast links** are live but their URLs are **unverified**;
   many are 7-9 years old and some will have rotted. Needs a link check.
 - 8 migrated posts have **auto-generated decks** cut from their first paragraph.

@@ -47,6 +47,11 @@ export default function Book() {
                   </div>
                 </a>
                 <p><strong>Travels from</strong> New York City. <strong>Requirements</strong>: Full rider on request.</p>
+
+                <div className="book-photo">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/nyc-subway-stairs.jpg" alt="Sam Rad in New York City" />
+                </div>
               </div>
             </div>
           </div>

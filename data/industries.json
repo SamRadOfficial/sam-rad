@@ -26,11 +26,10 @@
     "logos": [
       "American Express",
       "Federal Reserve",
-      "ICI",
-      "Stansberry",
-      "CohnReznick",
-      "Members Development Conference",
-      "Credit union associations"
+      "Schonfeld",
+      "Investment Company Institute",
+      "Stansberry Research",
+      "America's Credit Unions"
     ],
     "featured": true,
     "featuredOrder": 1,
@@ -69,7 +68,41 @@
     ],
     "featured": true,
     "featuredOrder": 2,
-    "band": "chicago-ballroom.jpg"
+    "band": "chicago-ballroom.jpg",
+    "consortium": {
+      "tag": "MediLedger",
+      "heading": "The industry built it together.",
+      "body": "Sam co-founded Chronicled, the company that convened the MediLedger Project and led the analysis behind the FDA's DSCSA pilot. Twenty-five organizations across pharma manufacturing, distribution, logistics, and retail pharmacy took part, covering the wholesalers responsible for the overwhelming majority of US prescription drug sales.",
+      "members": [
+        "AmerisourceBergen (now Cencora)",
+        "Amgen",
+        "Cardinal Health",
+        "Chronicled",
+        "Dermira",
+        "Endo",
+        "FedEx",
+        "FFF Enterprises",
+        "Genentech",
+        "Gilead",
+        "GS1",
+        "GSK",
+        "Hikma",
+        "Inmar",
+        "Lilly",
+        "Maxor",
+        "McKesson",
+        "Novartis",
+        "Novo Nordisk",
+        "Pfizer",
+        "Sanofi",
+        "Vaxserve",
+        "Walgreens",
+        "Walmart"
+      ],
+      "note": "Final report submitted to the FDA, February 2020.",
+      "url": "https://www.fda.gov/media/168283/download",
+      "linkLabel": "Read the FDA pilot report →"
+    }
   },
   {
     "name": "Future of Work",
@@ -96,15 +129,17 @@
       }
     ],
     "logos": [
-      "HR Southwest",
-      "Ivanti",
-      "Cisco",
-      "SIM",
-      "LinkedIn"
+      "LinkedIn",
+      "SHRM",
+      "SCRUM Alliance",
+      "Skillsoft",
+      "DallasHR",
+      "Ivanti"
     ],
     "featured": true,
     "featuredOrder": 3,
-    "band": "gofest-faster-horses.jpg"
+    "band": "gofest-faster-horses.jpg",
+    "display": "Work"
   },
   {
     "name": "Technology & AI",
@@ -132,11 +167,11 @@
     ],
     "logos": [
       "Cisco",
-      "Dell",
-      "SAP",
       "IBM",
-      "Ivanti",
-      "Pinterest"
+      "SAP",
+      "Dell",
+      "Juniper Networks",
+      "NXP Semiconductors"
     ],
     "featured": true,
     "featuredOrder": 7,
@@ -173,14 +208,26 @@
       "Unilever",
       "P&G",
       "LVMH",
-      "Pinterest",
-      "LinkedIn",
-      "TFWA"
+      "Dentsu"
     ],
     "featured": true,
     "featuredOrder": 8,
     "band": "gofest-faster-horses.jpg",
-    "display": "Retail and Consumer Brands"
+    "display": "Retail and Consumer Brands",
+    "consortium": {
+      "tag": "Chronicled",
+      "heading": "Proving what's real, at scale.",
+      "body": "Before the keynote, Sam built the infrastructure. Chronicled, the company she co-founded, put cryptographic identity into physical products so a brand could prove an item was genuine without trusting whoever was holding it. The work ran with footwear and apparel brands facing counterfeiting at scale, and it is where the perceptual security argument she makes on stage started.",
+      "members": [
+        "Nike",
+        "New Balance",
+        "Adidas",
+        "Reebok"
+      ],
+      "note": "Chronicled clients and partners, not speaking engagements.",
+      "url": "",
+      "linkLabel": ""
+    }
   },
   {
     "name": "Hospitality & Travel",
@@ -207,9 +254,10 @@
       }
     ],
     "logos": [
+      "Hilton",
       "TFWA",
-      "Global hotel groups",
-      "Travel retail associations"
+      "FICP",
+      "MECSR"
     ],
     "featured": true,
     "featuredOrder": 6,
@@ -240,9 +288,12 @@
       }
     ],
     "logos": [
+      "University of Oxford",
       "Columbia University",
       "MIT",
-      "Academic associations"
+      "Singularity University",
+      "CITE",
+      "Skillsoft"
     ],
     "featured": true,
     "featuredOrder": 4,
@@ -276,7 +327,9 @@
       "United Nations",
       "World Economic Forum",
       "Federal Reserve",
-      "Gobierno de México"
+      "OECD",
+      "Agencia Nacional de Aduanas de México",
+      "City of New York"
     ],
     "featured": true,
     "featuredOrder": 9,
@@ -307,9 +360,12 @@
       }
     ],
     "logos": [
-      "Cisco",
-      "Chronicled",
-      "Supply-chain associations"
+      "Foxconn",
+      "Ingram Micro",
+      "Cardinal Health",
+      "GS1",
+      "Kellogg's",
+      "British American Tobacco"
     ],
     "featured": true,
     "featuredOrder": 5,

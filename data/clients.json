@@ -1,5 +1,17 @@
 [
   {
+    "name": "Agencia Nacional de Aduanas de México",
+    "file": "aduanas-mexico.png"
+  },
+  {
+    "name": "Alloya Credit Union",
+    "file": "alloya.png"
+  },
+  {
+    "name": "America's Credit Unions",
+    "file": "americas-credit-unions.png"
+  },
+  {
     "name": "American Express",
     "file": "american-express.svg"
   },
@@ -16,12 +28,24 @@
     "file": "bmw.svg"
   },
   {
+    "name": "British American Tobacco",
+    "file": "british-american-tobacco.svg"
+  },
+  {
     "name": "Cardinal Health",
     "file": "cardinal-health.png"
   },
   {
     "name": "Cisco",
     "file": "cisco.svg"
+  },
+  {
+    "name": "CITE",
+    "file": "cite.png"
+  },
+  {
+    "name": "City of New York",
+    "file": "nyc.png"
   },
   {
     "name": "Coca-Cola",
@@ -32,12 +56,32 @@
     "file": "columbia.svg"
   },
   {
+    "name": "DallasHR",
+    "file": "dallas-hr.png"
+  },
+  {
     "name": "Dell",
     "file": "dell.svg"
   },
   {
+    "name": "Dentsu",
+    "file": "dentsu.png"
+  },
+  {
+    "name": "East Carolina University",
+    "file": "east-carolina-university.png"
+  },
+  {
     "name": "Federal Reserve",
     "file": "federal-reserve.png"
+  },
+  {
+    "name": "FICP",
+    "file": "ficp.png"
+  },
+  {
+    "name": "Foxconn",
+    "file": "foxconn.png"
   },
   {
     "name": "GE",
@@ -48,8 +92,20 @@
     "file": "gs1.png"
   },
   {
+    "name": "Hilton",
+    "file": "hilton.svg"
+  },
+  {
     "name": "IBM",
     "file": "ibm.svg"
+  },
+  {
+    "name": "Ingram Micro",
+    "file": "ingram-micro.png"
+  },
+  {
+    "name": "Investment Company Institute",
+    "file": "ici.png"
   },
   {
     "name": "Ivanti",
@@ -64,6 +120,14 @@
     "file": "johnson-and-johnson.png"
   },
   {
+    "name": "Juniper Networks",
+    "file": "juniper.png"
+  },
+  {
+    "name": "Kellogg's",
+    "file": "kelloggs.svg"
+  },
+  {
     "name": "LinkedIn",
     "file": "linkedin.svg"
   },
@@ -76,12 +140,28 @@
     "file": "mayo-clinic.png"
   },
   {
+    "name": "MECSR",
+    "file": "mecsr.png"
+  },
+  {
+    "name": "Mindvalley",
+    "file": "mindvalley.png"
+  },
+  {
     "name": "MIT",
     "file": "mit.png"
   },
   {
     "name": "Nestlé",
     "file": "nestle.png"
+  },
+  {
+    "name": "NXP Semiconductors",
+    "file": "nxp.png"
+  },
+  {
+    "name": "OECD",
+    "file": "oecd.png"
   },
   {
     "name": "P&G",
@@ -100,20 +180,52 @@
     "file": "sap.svg"
   },
   {
+    "name": "Schonfeld",
+    "file": "schonfeld.png"
+  },
+  {
+    "name": "SCRUM Alliance",
+    "file": "scrum-alliance.png"
+  },
+  {
+    "name": "SHRM",
+    "file": "shrm.png"
+  },
+  {
+    "name": "Singularity University",
+    "file": "singularity-university.png"
+  },
+  {
+    "name": "Skillsoft",
+    "file": "skillsoft.png"
+  },
+  {
     "name": "Sky",
     "file": "sky.png"
+  },
+  {
+    "name": "Stansberry Research",
+    "file": "stansberry.png"
   },
   {
     "name": "TFWA",
     "file": "tfwa.png"
   },
   {
-    "name": "United Nations",
-    "file": "unitednations.svg"
+    "name": "The Institute of Internal Auditors",
+    "file": "internal-auditors.png"
   },
   {
     "name": "Unilever",
     "file": "unilever.svg"
+  },
+  {
+    "name": "United Nations",
+    "file": "unitednations.svg"
+  },
+  {
+    "name": "University of Oxford",
+    "file": "oxford.png"
   },
   {
     "name": "Whirlpool",

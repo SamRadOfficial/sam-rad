@@ -760,3 +760,51 @@ details.earlier[open] summary{margin-bottom:44px;}
   .mrow .yrc{display:none;}
   .press-foot{flex-direction:column;align-items:flex-start;}
 }
+
+/* MediLedger-style consortium block (industry pages) */
+.consortium{background:var(--ink);color:var(--paper);padding:110px 0;}
+.consortium .h2{color:var(--paper);margin-bottom:28px;}
+.consortium .c-body{font-size:19px;line-height:1.75;color:rgba(245,241,234,.86);max-width:760px;margin-bottom:40px;}
+.c-members{display:flex;flex-wrap:wrap;gap:12px 26px;padding:32px 0;border-top:1px solid rgba(245,241,234,.22);border-bottom:1px solid rgba(245,241,234,.22);}
+.c-name{font-family:var(--fd);font-size:21px;letter-spacing:.08em;text-transform:uppercase;color:rgba(245,241,234,.62);transition:color .2s;}
+.c-name:hover{color:var(--mint);}
+.c-foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;margin-top:28px;}
+.c-note{font-family:var(--fd);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,241,234,.55);}
+@media (max-width:900px){
+  .consortium{padding:64px 0;}
+  .consortium .c-body{font-size:17px;}
+  .c-members{gap:10px 18px;padding:24px 0;}
+  .c-name{font-size:17px;}
+  .c-foot{flex-direction:column;align-items:flex-start;}
+}
+
+/* Industry page: speaker bio + reel */
+.bio-split{background:var(--paper-white);padding:96px 0;}
+.bio-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:56px;align-items:start;}
+.bio-grid img{width:100%;height:auto;display:block;}
+.bio-grid p{font-size:18px;line-height:1.75;color:var(--ink-soft);margin:0 0 20px;}
+.bio-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink);margin-top:28px;}
+.bio-stats > div{padding:18px 0;}
+.bio-stats .n{font-family:var(--fd);font-size:44px;line-height:1;color:var(--mint-deep);}
+.bio-stats .l{font-family:var(--fd);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-muted);}
+.reel{background:var(--ink);padding:88px 0;}
+.reel .tag{color:var(--mint);}
+.reel .h2{color:var(--paper);margin-bottom:30px;}
+.reel-frame{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;}
+.reel-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+@media (max-width:900px){
+  .bio-split{padding:56px 0;}
+  .bio-grid{grid-template-columns:1fr;gap:30px;}
+  .bio-stats .n{font-size:34px;}
+  .reel{padding:52px 0;}
+}
+
+/* Credentials card, industry page sidebar */
+.spk-card{border:2px solid var(--ink);background:var(--paper-white);padding:22px 24px;margin-top:20px;}
+.spk-card .h{font-family:var(--fd);font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:12px;}
+.spk-card ul{list-style:none;margin:0;padding:0;font-size:14px;line-height:1.55;color:var(--ink-soft);}
+.spk-card li{padding:9px 0;border-top:1px solid var(--rule);}
+.spk-card li em{color:var(--ink);}
+/* Booking page sidebar photo */
+.book-photo{margin-top:28px;}
+.book-photo img{width:100%;height:auto;display:block;}
