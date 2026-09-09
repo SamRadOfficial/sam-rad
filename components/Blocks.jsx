@@ -60,7 +60,7 @@ export function YouAreHere({ eyebrow, heading, lead, cta, tall }) {
   );
 }
 
-export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, position, btn = 'Book Sam →', id = 'book', href, external }) {
+export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, position, btn = 'Book Sam →', btnExternal, id = 'book', href, external }) {
   return (
     <section className={center ? 'cta-break center' : 'cta-break'} id={id}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -80,7 +80,7 @@ export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, p
         <h2 className="h2">{heading}</h2>
         {lead && <p className="lead">{lead}</p>}
         {external ? (
-          <a href={href} className="btn btn-mint" target="_blank" rel="noopener noreferrer">{btn}</a>
+          <a href={href} className="btn btn-mint" target="_blank" rel="noopener noreferrer">{btn}{btnExternal && <span className="ext" aria-hidden="true" />}</a>
         ) : (
           <Link href={href || '/book'} className="btn btn-mint">{btn}</Link>
         )}
@@ -155,7 +155,7 @@ export function ClientLogos({ names = [], label }) {
 
 
 
-export function IndustryGrid({ industries, numbered = true }) {
+export function IndustryGrid({ industries, numbered = true, allLink = true }) {
   return (
     <div className="ind-grid">
       {industries.map((ind, i) => (
@@ -168,6 +168,12 @@ export function IndustryGrid({ industries, numbered = true }) {
           <span className="arw" aria-hidden="true">→</span>
         </Link>
       ))}
+      {allLink && (
+        <Link className="ind ind-all" href="/industries">
+          <span className="t">See all industries</span>
+          <span className="arw" aria-hidden="true">→</span>
+        </Link>
+      )}
     </div>
   );
 }
@@ -314,7 +320,7 @@ export function Sizzle() {
           />
         </div>
         <div style={{ marginTop: 24, display: 'flex', justifyContent: 'flex-end', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
-          <a href={SITE.social.youtube} className="btn btn-outline-light" target="_blank" rel="noopener noreferrer">More on YouTube ↗</a>
+          <a href={SITE.social.youtube} className="btn btn-outline-light" target="_blank" rel="noopener noreferrer">More on YouTube<span className="ext" aria-hidden="true" /></a>
         </div>
       </div>
     </section>

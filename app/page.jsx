@@ -123,8 +123,8 @@ export default function Home() {
         <section className="industries" id="industries">
           <div className="narrow">
             <div className="section-header">
-              <div className="tag">Industries</div>
-              <h2 className="h2">One <span className="mint-fill">powerful</span> message.<br />Customized to your industry.</h2>
+              <div className="sh-copy"><div className="tag">Industries</div>
+              <h2 className="h2">One <span className="mint-fill">powerful</span> message.<br />Customized to your industry.</h2></div>
               <Link href="/industries" className="sec-link">See all industries</Link>
             </div>
             <IndustryGrid industries={featured} numbered={false} />
@@ -165,7 +165,7 @@ export default function Home() {
                 </div>
                 <div className="rn-btns">
                   <a className="btn btn-ink" href="https://www.amazon.com/Radical-Next-Reclaiming-Humanity-Post-Human/dp/B0DGV4265T" target="_blank" rel="noopener noreferrer">
-                    Buy on Amazon ↗
+                    Buy on Amazon<span className="ext" aria-hidden="true" />
                   </a>
                 </div>
               </div>

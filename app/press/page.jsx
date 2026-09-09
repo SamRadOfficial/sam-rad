@@ -44,7 +44,7 @@ export default function Press() {
               </p>
               <MediaList kind="bylines" openYears={['2020', '2019']} label="Show earlier writing" />
               <a className="btn btn-ink" href={SITE.social.forbes} target="_blank" rel="noopener noreferrer">
-                Read Sam&apos;s Forbes author page ↗
+                Read Sam&apos;s Forbes author page<span className="ext" aria-hidden="true" />
               </a>
             </div>
           </div>

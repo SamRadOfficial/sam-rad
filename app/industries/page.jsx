@@ -34,7 +34,7 @@ export default function Industries() {
               <div className="tag">Choose your industry</div>
               <h2 className="h2">The keynote, built for <span className="mint-fill">your</span> world.</h2>
             </div>
-            <IndustryGrid industries={industries} />
+            <IndustryGrid industries={industries} allLink={false} />
           </div>
         </section>
 

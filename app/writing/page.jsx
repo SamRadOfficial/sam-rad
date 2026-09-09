@@ -66,7 +66,7 @@ export default function Writing() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/logos/forbes.png" alt="Forbes" />
-                <span className="fb-mark-cta">forbes.com/sites/samantharadocchia ↗</span>
+                <span className="fb-mark-cta">forbes.com/sites/samantharadocchia<span className="ext" aria-hidden="true" /></span>
               </a>
               <div>
                 <div className="tag">Contributor · 2017–2020</div>
@@ -90,7 +90,7 @@ export default function Writing() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Read on Forbes ↗
+                    Read on Forbes<span className="ext" aria-hidden="true" />
                   </a>
                   <Link href="/press#bylines" className="btn btn-ghost">All 64 bylines</Link>
                 </div>
@@ -110,8 +110,8 @@ export default function Writing() {
         <section className="industries">
           <div className="narrow">
             <div className="section-header">
-              <div className="tag">Browse by industry</div>
-              <h2 className="h2">Every industry. <span className="mint-fill">One</span> lens.</h2>
+              <div className="sh-copy"><div className="tag">Browse by industry</div>
+              <h2 className="h2">Every industry. <span className="mint-fill">One</span> lens.</h2></div>
               <Link href="/industries" className="sec-link">See all industries</Link>
             </div>
             <IndustryGrid industries={industries} />
