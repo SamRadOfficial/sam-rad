@@ -73,7 +73,7 @@ const nextConfig = {
       { source: '/blog/:slug*', destination: `${ARCHIVE}/blog/:slug*`, permanent: true },
       // /press now exists on this site. Old press detail pages were thin stubs
       // (title + screenshot, no article link), so they fold into the new index.
-      { source: '/press/:path*', destination: '/press', permanent: true },
+      { source: '/press/:path+', destination: '/press', permanent: true },
       { source: '/events/all', destination: `${ARCHIVE}/events/all`, permanent: true },
       { source: '/events/all/:path*', destination: `${ARCHIVE}/events/all/:path*`, permanent: true },
       { source: '/bitcoin-pizza-glossary', destination: `${ARCHIVE}/bitcoin-pizza-glossary`, permanent: true },
