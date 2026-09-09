@@ -8,6 +8,11 @@ memory of prior sessions. Last updated 8 September 2026, the day the site went l
 **Repo:** github.com/SamRadOfficial/sam-rad → Vercel project `samradsite` (auto-deploys on push to `main`)
 **Local:** `~/Documents/sam-rad`
 
+`PLAYBOOK.md`, alongside this file, is the generalized version of what this project
+taught: method, patterns, pitfalls, and the reusable scripts. It exists so the next
+site (illicitshadows.com) starts from the lessons rather than relearning them. This
+file is project-specific; that one is not.
+
 Sam has the working copy with all images. Ask her to zip and upload
 `app/ components/ data/ lib/ next.config.js` (and `public/images/` only if you need
 to see the photos).
@@ -403,9 +408,28 @@ it serves both `archive.sam-rad.com` and the DNS zone.
 
 ## 9. Roadmap
 
-1. **Industry page copy.** 9 pages, agency-drafted, only Healthcare reviewed. Needs
-   Sam's real client names per sector — several pages show no logo row because their
-   `logos` lists are placeholders like "Automotive associations".
+1. **Three more resource guides**, in this order and not all at once. Six lists is
+   double the upkeep of three; four current lists beat six stale ones.
+   - **Government & Public Sector — "Institutional Trust in a Synthetic Age."** The
+     strongest candidate and Sam's own territory: perceptual security, Illicit Shadows,
+     the Luna work. Client row is UN, WEF, Federal Reserve, OECD, Aduanas México, City
+     of New York. Likely anchors: EU AI Act transparency obligations, NIST AI Risk
+     Management Framework, OECD AI Policy Observatory, CISA deepfake guidance, and the
+     FCC robocall ruling already cited on the fraud page.
+   - **Future of Work — "What the Evidence Actually Says About AI and Jobs."** The
+     predictions are contested, the evidence is not, and separating the two is the value.
+     Deepest buyer group: SHRM, DallasHR, LinkedIn, Skillsoft, SCRUM Alliance. Anchors:
+     WEF Future of Jobs Report (Sam has advised WEF), MIT Media Lab "Your Brain on
+     ChatGPT" (already cited in Blurring Reality), ILO and Stanford AI Index labor chapters.
+   - **Retail & Consumer Brands — "Proving What's Real."** Connects the Chronicled
+     counterfeit work to the synthetic-influencer argument on that page. Anchors: C2PA
+     content provenance, FTC endorsement guides as applied to AI-generated influencers,
+     EU AI Act disclosure rules. Shares the OECD counterfeit data with supply chain.
+
+   **Avoid for now:** Technology & AI becomes a generic AI reading list; Hospitality and
+   Higher Education have content available but the smallest buyer groups. Ideally build
+   each one *after* booking in that sector, so it answers what a real room asked.
+
 2. **Sept 22 task:** check Search Console, move DNS to GoDaddy, retire Squarespace.
    Order matters — content must move before Squarespace is cancelled.
 3. **New sizzle reel** cut for the industry pages, replacing the placeholder. See
@@ -458,7 +482,6 @@ Images ship as standalone files or in a separate `sam-rad-logos.zip`.
   highest-traffic page.
 - **103 blog posts left unmigrated**, mostly 2017–2019 blockchain. Deliberately
   retired; they redirect to `/writing`.
-- Only **3 testimonials**. She wants more.
 - Speaking stat sources not yet cited on the page.
 - **Export the Squarespace newsletter subscribers before cancelling.** The old site
   ran a working Radical Next signup and those addresses live in the Squarespace
