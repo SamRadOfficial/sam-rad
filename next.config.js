@@ -10,6 +10,19 @@ const nextConfig = {
   reactStrictMode: true,
   async redirects() {
     return [
+      // ── Canonical host ─────────────────────────────────────────────────
+      // The project's own *.vercel.app domain is assigned to production, so
+      // Vercel does NOT add x-robots-tag: noindex to it. Left alone it serves
+      // identical content and competes with sam-rad.com in search. Exact host
+      // match only, so preview deployments (samradsite-git-*.vercel.app) still
+      // work normally.
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'samradsite.vercel.app' }],
+        destination: 'https://sam-rad.com/:path*',
+        permanent: true,
+      },
+
       // ── Pages with a direct equivalent on the new site ──────────────────
       { source: '/home', destination: '/', permanent: true },
       { source: '/about', destination: '/meet-sam', permanent: true },
