@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 // The Squarespace site stays live at this host after cutover, noindexed.
-// Archive content with no equivalent on the new site (blog, press, events,
+// Archive content with no equivalent on the new site (blog, events,
 // glossary) redirects here so nothing 404s. As dispatches are backfilled,
 // add a bespoke /blog/:slug -> /writing/:slug rule above the archive catch-all.
 const ARCHIVE = 'https://archive.sam-rad.com';
@@ -71,8 +71,9 @@ const nextConfig = {
 
       // ── Archive content preserved on the archive host ────────────────────
       { source: '/blog/:slug*', destination: `${ARCHIVE}/blog/:slug*`, permanent: true },
-      { source: '/press', destination: `${ARCHIVE}/press`, permanent: true },
-      { source: '/press/:path*', destination: `${ARCHIVE}/press/:path*`, permanent: true },
+      // /press now exists on this site. Old press detail pages were thin stubs
+      // (title + screenshot, no article link), so they fold into the new index.
+      { source: '/press/:path*', destination: '/press', permanent: true },
       { source: '/events/all', destination: `${ARCHIVE}/events/all`, permanent: true },
       { source: '/events/all/:path*', destination: `${ARCHIVE}/events/all/:path*`, permanent: true },
       { source: '/bitcoin-pizza-glossary', destination: `${ARCHIVE}/bitcoin-pizza-glossary`, permanent: true },
