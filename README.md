@@ -1,75 +1,37 @@
 # sam-rad.com
 
-Next.js 14 (App Router) marketing site for Sam Rad, keynote speaker and futurist.
-Static-generated, deployed on Vercel.
+Next.js App Router marketing site for Sam Rad, keynote speaker and futurist. Static
+generated, deployed on Vercel from `main`. **The site is live. Every push to `main`
+goes straight to production.**
+
+## Read this first
+
+**[`HANDOFF.md`](./HANDOFF.md)** is the working document: the rules that keep getting
+broken, the stack, the design system, the component inventory, verified content facts,
+page order, infrastructure, roadmap, and open items. It is kept current in the same
+batch as the change it describes. Nothing about this project should be inferred from
+this README instead.
+
+**[`PLAYBOOK.md`](./PLAYBOOK.md)** is the generalized version, written so the next site
+starts from the lessons rather than relearning them.
 
 ## Run locally
 
 ```bash
 npm install
-npm run dev        # http://localhost:3000
-npm run build      # production build
+npm run dev            # http://localhost:3000
+npm run build          # must print "Generating static pages (47/47)"
+npm run check:images   # run before every push
 ```
 
 Node 18.17+ required.
 
-## Structure
+## Before you push
 
-```
-app/
-  layout.jsx              fonts, Person JSON-LD, skip link
-  page.jsx                /
-  speaking/               /speaking            keynote, moves, cycle, eras, FAQ + Service schema
-  industries/
-    page.jsx              /industries          all 19
-    [slug]/page.jsx       /industries/:slug    generated from data/industries.json
-  foresight/
-    page.jsx              /foresight           dispatch index
-    [slug]/page.jsx       /foresight/:slug     dispatch article
-  meet-sam/               /meet-sam            bio, patents, RADOC / MISTIC / Project Helix
-  body-of-work/           /body-of-work        books (Book schema), Illicit Shadows, video
-  book/                   /book                booking form (mailto, MVP)
-  sitemap.js              generated from data/
-  robots.js               allows GPTBot, ClaudeBot, PerplexityBot, Google-Extended
-  not-found.jsx           404
-components/
-  Nav, Footer, Blocks (PhotoHero, YouAreHere, CtaBreak, IndustryGrid, DispatchList,
-  Moves, Cycle, Eras, Sizzle, Testimonials, JsonLd), IndustryIcon
-data/
-  industries.json         19 industries — edit here, pages regenerate
-  dispatches.json         dispatch feed
-  testimonials.json  eras.json  moves.json  cycle.json
-lib/site.js               config, metadata helper, Person schema
-public/images/            55 assets
-```
+Build, run `npm run check:images`, and grep the built HTML in `.next/server/app` to
+confirm your change actually landed. See HANDOFF section 1.
 
-## Editing content
+---
 
-**Industries.** `data/industries.json`. Each entry: name, slug, number, heading, body[2],
-audiences, forces[3], logos[], hero, featuredOrder. Add an entry, add a matching icon in
-`components/IndustryIcon.jsx`, push. Do not edit generated pages directly.
-
-**Dispatches.** `data/dispatches.json` now; the pipeline will write here (or to Sanity) later.
-
-**Images.** Drop into `public/images/`. Two era tiles are typographic placeholders until
-`era-agrarian.jpg` and `era-industrial.jpg` exist — see `corpus/ERA-IMAGE-PROMPTS.md`.
-
-**Design tokens.** Top of `app/globals.css`.
-
-## Booking form
-
-MVP has no backend. It composes a `mailto:` to Brandy Gibson with Sam cc'd,
-subject `SAM RAD | Keynote`. Untrackable by design for now.
-
-To add tracking later: create `app/api/book/route.js`, POST from `BookingForm.jsx`,
-send via Resend, and fire an analytics goal. `.env.example` has the variables.
-
-## Redirects
-
-`next.config.js` maps the known Squarespace paths. Expand after crawling the live site.
-
-## Fonts
-
-Loaded via `<link>` in `app/layout.jsx` so the repo builds in any environment.
-For better performance switch to `next/font/google` (self-hosts, no layout shift):
-uncomment the variables in globals.css and use the Bebas_Neue / Inter loaders.
+*This file was 75 lines of structure and editing notes that had drifted out of date by
+launch. It now points at the one document that is maintained. Do not rebuild it.*

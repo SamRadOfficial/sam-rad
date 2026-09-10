@@ -1,7 +1,7 @@
 # sam-rad.com — Handoff
 
 Read this before touching anything. Written for a fresh agent picking up with no
-memory of prior sessions. Last updated 9 September 2026.
+memory of prior sessions. Last updated 10 September 2026.
 
 **Live:** https://sam-rad.com
 **Old site:** https://archive.sam-rad.com (Squarespace, still serving ~300 legacy URLs)
@@ -12,6 +12,12 @@ memory of prior sessions. Last updated 9 September 2026.
 taught: method, patterns, pitfalls, and the reusable scripts. It exists so the next
 site (illicitshadows.com) starts from the lessons rather than relearning them. This
 file is project-specific; that one is not.
+
+`README.md` is a short pointer to this file, nothing more. `ROADMAP.md` was deleted on
+10 September 2026: it was a pre-launch document describing 27 pages, ten eras, the
+five-stage cycle and a `mailto:` booking form, all of which had been superseded, and a
+fresh agent reading it would have acted on retired facts. Its still-live items were
+folded into the roadmap in section 9. The original is in git history if it is wanted.
 
 **Build the preview tooling first.** Every design and copy decision on this project is
 reviewed as a standalone HTML file with all assets inlined, not as a description. Do
@@ -40,7 +46,7 @@ rather than replaces.
 Use a suffix when it matters (`sam-rad-source-LAUNCH-FIX.zip`).
 
 **`next.config.js` lives at the project root**, outside the four folders. It is easy
-to forget in the copy line and it now holds 60 redirect rules.
+to forget in the copy line and it now holds 57 redirect rules.
 
 **Never tell her to drag folders in Finder.** Finder's Replace deletes anything in
 the destination that isn't in the source. It wiped `components/Footer.jsx` once and
@@ -99,11 +105,15 @@ static at build time. One hand-written CSS file. No Tailwind. **No CMS yet.**
 ```
 app/
   layout.jsx              fonts, Person JSON-LD, skip link, Vercel Analytics, GA4
-  globals.css             ~48KB, all styling, design tokens at top
+  globals.css             ~73KB, all styling, design tokens at top
   page.jsx                /
   speaking/  meet-sam/  book/  body-of-work/
+  cv/page.jsx             /cv        Samantha Radocchia, renders from data/cv.json (see §8)
+  samrad-ai/page.jsx      /samrad-ai landing target for the samrad.ai domain
   industries/page.jsx     /industries
   industries/[slug]/      9 pages from data/industries.json
+  resources/page.jsx      /resources
+  resources/[slug]/       3 guides from data/resources.json
   writing/page.jsx        /writing   (was /foresight until 8 Sep 2026)
   press/page.jsx          /press     archive list, 2018 and earlier collapsed
   podcasts/page.jsx       /podcasts  archive list, newest first
@@ -113,7 +123,7 @@ app/
   sitemap.js robots.js not-found.jsx
 components/
   Nav.jsx                 client: desktop mega-menu (3 cols) + mobile drawer
-  Footer.jsx              credential line, nav, socials, newsletter
+  Footer.jsx              credential line, nav, socials. No newsletter, see §8.
   Blocks.jsx              every shared section (see §4)
   MediaList.jsx           renders /press and /podcasts from data/media.json
   IndustryIcon.jsx  MoveIcon.jsx  logos.jsx (both now unused)
@@ -123,18 +133,28 @@ data/
   dispatches.json         18 posts, 8 visible + 10 unlisted
   clients.json            59-brand name → logo file registry
   media.json              press + podcast archives, ARRAYS of { year, items }
+  resources.json          3 guides
+  cv.json                 the single source for /cv and both CV PDFs
   eras.json moves.json cycle.json testimonials.json
+  featured-in.json logo-wall.json
 lib/site.js               config, meta() helper, Person schema
-next.config.js            60 redirect rules
-public/images/            60+ photos
-public/logos/             33 brand marks + LICENSE.md
+next.config.js            57 redirect rules
+public/images/            154 photos
+public/logos/             88 files including press marks + LICENSE.md
+public/cv/                two generated PDFs, never hand-edited
+scripts/                  check-images.mjs, preview.py, mobile.py, build-cv-pdfs.py
+corpus/                   voice notes and samples, not built or deployed
 ```
 
 ```bash
 npm install
 npm run dev      # localhost:3000
-npm run build    # must print "Generating static pages (41/41)"
+npm run build    # must print "Generating static pages (47/47)"
+npm run check:images   # audits every image reference against disk, run before pushing
 ```
+
+`npm run build` prints one harmless warning, `autoprefixer: end value has mixed
+support`, from `align-items:end` at `globals.css` line 427. Cosmetic, not a bug.
 
 ### Dependencies
 
@@ -154,7 +174,7 @@ Everything else is hand-written.
 ### When to check for updates
 
 - **Monthly:** `npm outdated` and `npm audit`. Patch and minor bumps on Next and
-  React are usually safe; run `npm run build` and confirm 41/41 before pushing.
+  React are usually safe; run `npm run build` and confirm 47/47 before pushing.
 - **Never bump a major version without a preview branch.** Next 16 broke the Vercel
   deploy once already (Turbopack). Push to a branch, let Vercel build a preview, and
   click through Home, an industry page, a writing post, and the booking form before
@@ -242,7 +262,24 @@ Not in Blocks: `.photo-band`, a pure image divider with no copy, written inline.
 
 ---
 
-## 5. Writing posts
+## 5. Content schemas
+
+### Industry pages
+
+`data/industries.json`, one entry per page, rendered by `industries/[slug]/page.jsx`:
+
+```json
+{ "name": "...", "slug": "...", "number": "...", "heading": "...",
+  "body": ["...", "..."], "audiences": "...", "forces": ["...", "...", "..."],
+  "logos": ["..."], "band": "image.jpg",
+  "featured": true, "featuredOrder": 1 }
+```
+
+Adding a page is adding an entry plus a matching icon in `components/IndustryIcon.jsx`.
+Never edit a generated page directly. `logos` resolves through `clients.json` and needs
+at least two matches or the row does not render at all, see §4.
+
+### Writing posts
 
 `data/dispatches.json`. Each entry:
 
@@ -288,8 +325,14 @@ Every post ends with a LinkedIn follow line, then share links.
 - **Forbes 30 Under 30 (2017)** — Meet Sam sidebar only.
 - **2× #1 bestsellers.** Radical Next ISBN 979-8-89138-248-0 (2025);
   Bitcoin Pizza ISBN 978-1-5445-0443-8 (2019). No publisher listed for the 2019 book.
-- Three patents, all Chronicled: Identity of Things (US 2016/0358186, granted
-  US 11,354,676), Provenance and Tracking (US 2018/0108024), early ERC-721 protocols.
+- **Four granted patents**, all Chronicled, Sam first-named inventor: Identity of
+  Things (US 11,354,676, granted 2022), Identity of Things Including Social Record
+  (US 10,210,527, granted 2019), and the two 2021 continuations US 11,113,699 and
+  US 11,107,088. Two more filed in 2017 (Provenance and Tracking, Human
+  Identification). Plus early protocol work open sourced into the Ethereum
+  standards, predating and paralleling ERC-721. `data/cv.json` is the authority
+  here and both CV PDFs render from it. This entry said "three patents" until
+  10 Sep 2026, which contradicted the CV page.
 - Six eras: Agrarian (Grain & Plough) · Industrial (Steam & Loom) ·
   Internet (Air & Mobile) · **Acceleration (AI & Space, "You are here")** ·
   Bio-Integration (Chips & Cells, "Next") · Post-Quantum (Qubits & Worlds, "After next").
@@ -345,6 +388,18 @@ TestimonialBanner
 **Body of Work** — PhotoHero (`hero-foresight`) → Books → CtaBreak (Illicit Shadows) →
 Sizzle → band (`gofest-faster-horses`) → Gallery → CtaBreak
 
+**Resources** — PhotoHero (`hero-industries`) → guide cards → CtaBreak (`cta-red`)
+
+**Resource guide** — PhotoHero (per-guide `image`) → linked source list → CtaBreak
+(`cta-red`)
+
+**CV** — no PhotoHero. Its own `.cv-hero` (name, thesis, contact line, two PDF
+buttons) → at-a-glance panel and the narrative sections from `data/cv.json`. The only
+page that does not use the shared hero, deliberately: it is a document, not a pitch.
+
+**SamRad.AI** — PhotoHero (`samrad-ai-avatar`) → Prose → Themes → Gallery → Prose →
+CtaBreak (`cta-red`). Landing target for the `samrad.ai` domain, see §8.
+
 **Hero selection rule:** heroes must be visually quiet in the bottom-left text zone.
 A measured "busy" score (mean luminance gradient with the scrim applied) of ≤1.6 is
 the target; anything with legible slide text on an LED wall was rejected. Busy stage
@@ -387,7 +442,7 @@ requirement, and Sam is in Spain).
   Vercel dashboard under Project, Analytics; the package alone does nothing. No-ops in
   dev and off-Vercel. Cookieless, so no consent banner.
 - **Google Analytics 4**, property `G-KLJW49X8L4`, set as `SITE.gaId` in
-  `lib/site.js` and rendered from `app/layout.jsx` on all 41 pages. The script
+  `lib/site.js` and rendered from `app/layout.jsx` on all 47 pages. The script
   renders only when that string is non-empty, so emptying it disables GA site-wide.
   The measurement ID is **not a secret** (it is in the page source of every site
   using GA), so it is hardcoded alongside `formEndpoint` and `sizzleId` rather than
@@ -408,12 +463,16 @@ professional PDF leads with patents and ventures; the academic one with educatio
 and fieldwork and adds a research-interests paragraph. The page itself uses the
 narrative order with the at-a-glance panel.
 
+**Crawlers.** `app/robots.js` explicitly allows GPTBot, OAI-SearchBot, ClaudeBot,
+PerplexityBot and Google-Extended alongside `*`. This is deliberate: the AI-visibility
+checks in §9 assume these agents can read the site. Do not tighten it without saying so.
+
 **Booking form** posts to Formspree (`https://formspree.io/f/xgaepolw`), set in
 `lib/site.js` as `formEndpoint`. Notifications go to sam@sam-rad.com only; adding
 Brandy is a Formspree dashboard change on a paid plan. Honeypot `_gotcha` field,
 `_replyto` set to the inquirer.
 
-**Redirects:** 60 rules in `next.config.js`. Three tiers — pages with a new
+**Redirects:** 57 rules in `next.config.js`. Three tiers — pages with a new
 equivalent, the 18 migrated posts (**these must stay above** the `/blog/:slug*`
 catch-all), and everything else to `archive.sam-rad.com`.
 
@@ -477,11 +536,84 @@ it serves both `archive.sam-rad.com` and the DNS zone.
    in chat, where the reasoning is discussed rather than just executed. A fresh
    Claude Code session starts with no context: point it at this file first.
 
-**Working method, for now:** the agent produces `sam-rad-source.zip` containing
-`app components data lib next.config.js` (plus `HANDOFF.md` when it changes), Sam
-copies it into `~/Documents/sam-rad`, runs `npm run build`, then
+### Carried over from ROADMAP.md, folded in 10 September 2026
+
+These were the items still live when that file was retired. Everything else in it had
+already shipped or been superseded.
+
+**Sam's to do**
+- **Export LinkedIn posts.** Settings, Data Privacy, Get a copy of your data, Posts.
+  The voice corpus in `corpus/` needs it, and so does the dispatch backfill.
+- **Bureau listing audit.** Leading Authorities, BigSpeak, AAE, Keynote Curators,
+  Mollie Plotkin Group and Speakerpedia all still say LOVE rather than NYOUM, call
+  Radical Next an upcoming book, and carry the old training line. The blog footer
+  still names Kate DesRosier at Gotham Artists. Every one of these is an
+  entity-consistency leak for AI search.
+- **Review the industry page copy.** All nine except Healthcare are agent drafts.
+
+**Assets to source**
+- Speaking photos with industry context, with the client name visible: finance,
+  healthcare, insurance, education. Each industry page wants one. Retail is covered
+  by `ballroom-retail`.
+- YouTube clips titled as questions: "What is perceptual security?", "The four
+  moves", "What is the dip?" The highest-leverage AI-visibility item.
+- More testimonials. Three on the site, six to eight is the target. Priority order:
+  Future of Work, Education, Supply Chain, Hospitality.
+- A second studio headshot, non-mint, for variety.
+
+**Content**
+- The three speaking stats trace to McKinsey 2025 and Gallup 2026 (9-in-10 and
+  4-in-10), Gallup (14%), Census 2026 (4% redesigned), McKinsey/BCG (3x). Sam has
+  validated the numbers; the citations still need to go on the page. The viral
+  "95% of pilots fail" statistic is forbidden, see §6.
+- Press kit on `/press`: short and long bio, headshots, logos, speaking
+  requirements, book covers. Distinct from the press archive already there.
+- `/events`, upcoming appearances, once there are dates to list.
+- Op-ed: "Your company bought the jetpacks. Why is everyone still standing?", timed
+  to the next scaling survey.
+- Change Pattern Index, original research, Q1 2027.
+- Spanish version, after the English site is stable.
+- `/perceptual-security` page, **deferred at Sam's request.** Revisit only if
+  AI-citation tracking shows the term being asked about.
+
+**Measure monthly**
+- Booking inquiries by source. The only metric that pays.
+- Search Console impressions and clicks for `keynote futurist speaker`,
+  `change management speaker`, `future of [industry] speaker`.
+- Manual AI checks on ChatGPT, Claude, Perplexity and Gemini: "Who is Sam Rad?",
+  "top futurist keynote speakers", "what is perceptual security".
+- Bot logs: are GPTBot, ClaudeBot and PerplexityBot crawling?
+- Referrals from `chatgpt.com` and `perplexity.ai`.
+
+---
+
+### Delivery convention
+
+Sam asked for this on 10 September 2026. Every delivery is **two zips, never one**,
+each wrapping a single folder so it copies with a trailing `/.` and merges rather
+than replaces:
+
+1. **`sam-rad-source-<WHAT>.zip`** wraps a `sam-rad-source/` folder holding only the
+   **changed** source files at their repo-relative paths (`data/cv.json`,
+   `HANDOFF.md`, and so on). Never the whole tree, and **never `public/`**.
+   Copy: `cp -R ~/Downloads/sam-rad-source/. .`
+2. **`sam-rad-assets-<WHAT>.zip`** wraps a `sam-rad-assets/public/` folder holding
+   any images, logos or PDFs, mirroring the real `public/` tree.
+   Copy: `cp -R ~/Downloads/sam-rad-assets/public/. public/`
+
+The trailing `/.` is what makes both merge. A plain folder copy, or dragging in
+Finder, replaces the destination and deletes anything not in the source. That is how
+`public/images/` was wiped once.
+
+**Deletions cannot travel in a zip.** A removed file has to be an explicit
+`git rm <path>` line in the commands, or it silently stays in the repo.
+
+Name each zip for what it is. A generic `sam-rad-source.zip` in Downloads got
+deployed once from an older copy, shipping a stale `next.config.js` to production.
+
+Every delivery ends with the exact command block: copy lines, `npm run build` with
+the expected page count, `npm run check:images`, any `git rm`, then
 `git add -A && git commit -m "..." && git push`. Vercel deploys from `main`.
-Images ship as standalone files or in a separate `sam-rad-logos.zip`.
 **The site is live, so every push goes straight to sam-rad.com.**
 
 ---
@@ -521,4 +653,7 @@ Images ship as standalone files or in a separate `sam-rad-logos.zip`.
   URLs. Regenerate from `data/media.json` and the roster if they drift.
 - postcss advisory, see §2.
 - Open Graph images are 3:2; the spec wants 1200×630. Platforms centre-crop.
+- Fonts load via `<link>` in `app/layout.jsx`. Switching to `next/font/google` would
+  self-host them and remove the layout shift. The variables are already in
+  `globals.css`. Small win, never prioritized.
 - No CMS.
