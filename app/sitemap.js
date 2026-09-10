@@ -11,6 +11,7 @@ export default function sitemap() {
     ['/industries', 0.8],
     ['/writing', 0.8],
     ['/samrad-ai', 0.7],
+    ['/cv', 0.8],
     ['/resources', 0.6],
     ['/press', 0.6],
     ['/podcasts', 0.6],

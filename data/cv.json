@@ -1,0 +1,251 @@
+{
+  "name": "Samantha Radocchia",
+  "orcid": "0009-0006-9051-3345",
+  "location": "New York, NY",
+  "email": "sam@sam-rad.com",
+  "thesis": [],
+  "subhead": {
+    "web": "Anthropologist and technologist who builds. Four companies, four granted patents, two books, and field research from the Sacred Valley to a QAnon Discord server, all pointed at one problem: perceptual security, or what a society does when it can no longer agree on what is real. I build the systems, then go and see what happens to them.",
+    "professional": "Anthropologist and technologist. Four-time founder, first-named inventor on four granted US patents, and a field researcher in illicit economies. I build the systems, then go and see what happens to them.",
+    "academic": "Anthropologist working on perceptual security and illicit economies. Field research in Peru, Mexico, Ecuador, Colombia, Israel, and inside two persistent virtual worlds. Named inventor on four granted US patents in identity and provenance."
+  },
+  "interests": "Perceptual security: how synthetic media and cognitive manipulation alter what individuals and institutions are able to treat as real. Convergence in illicit economies, where trafficking, laundering, and contraband share corridors and infrastructure. Provenance and authentication of physical and digital objects. Identity formation in simulated and virtual landscapes. National myth and collective consciousness.",
+  "glance": [
+    [
+      "Now",
+      "Co-founder, Illicit Shadows and MISTIC. Founder, RADOC."
+    ],
+    [
+      "Built",
+      "Chronicled (MediLedger), NYOUM (YOUM.AI), Stunable."
+    ],
+    [
+      "Patents",
+      "Four granted, first-named inventor."
+    ],
+    [
+      "Books",
+      "Radical Next (2025). Bitcoin Pizza (2019)."
+    ],
+    [
+      "Field",
+      "Peru, Mexico, Ecuador, Colombia, Israel, Second Life, Discord."
+    ],
+    [
+      "Degrees",
+      "MA New York University. BA Colgate."
+    ]
+  ],
+  "sections": {
+    "current": [
+      {
+        "label": "2025 &ndash; present",
+        "html": "<b>Co-Founder, Illicit Shadows, LLC</b> &middot; Washington, DC<br/>Investigative documentary series on illicit economies, with David M. Luna. Custodian of <b>MISTIC</b> (Illicit Shadows Media, Technology, and Innovation Convergence), an institute mapping the convergence of organized crime, emerging technology, and global threat networks, and home to <b>Project Helix</b>, an AI-based predictive convergence system. Partners: International Coalition Against Illicit Economies and RADOC.<span class='sub'><b>Briefings, 2024 to present:</b> MISTIC findings on convergent crime, illicit finance, and synthetic media presented to delegations at the UN General Assembly, the OECD, and INTERPOL.</span>"
+      },
+      {
+        "label": "2011 &ndash; present",
+        "html": "<b>Founder, RADOC and Sam Rad Media</b><br/>Media studio working in narrative futurism and producing Illicit Shadows (RADOC, founded 2024), and the speaking practice through which Sam has keynoted on five continents to governments, Fortune 500 companies, trade associations, and international organizations (founded 2011)."
+      }
+    ],
+    "fieldwork": [
+      {
+        "label": "2024 &ndash; present",
+        "html": "<b>Mindo, Ecuador</b><br/>State actors and infrastructure in illicit economies: how public institutions and physical logistics are co-opted or captured."
+      },
+      {
+        "label": "2023",
+        "html": "<b>Medell&iacute;n, Colombia</b><br/>Use of marketplace dating applications by transnational organized crime groups for recruitment and targeting. Platform ethnography and offline follow-through."
+      },
+      {
+        "label": "2022 &ndash; 2023",
+        "html": "<b>Pisac, Peru and the Yucat&aacute;n, Mexico</b><br/>Convergence in illicit trade: where human trafficking and forced labour, money laundering, and contraband movement meet in the same corridors and the same local economies."
+      },
+      {
+        "label": "2020 &ndash; 2024",
+        "html": "<b>SamRad.AI</b> &middot; autoethnography<br/>Built a working cognitive, vocal, and visual likeness of herself, trained on fifteen years of her own commonplace books, published writing, and public output, then studied what it was able to do: hold opinions on material it had never seen, and convince colleagues and family on a video call. The most capable version was withheld from release. The project produced the questions that became her work on perceptual security."
+      },
+      {
+        "label": "2020 &ndash; 2021",
+        "html": "<b>Discord</b> &middot; virtual<br/>Cognitive and narrative attack vectors through perceptual communities of practice. Case study on Pastel QAnon."
+      },
+      {
+        "label": "2009 &ndash; 2010",
+        "html": "<b>Israel</b><br/>Independent research on the role of national myth in establishing collective consciousness and identity."
+      },
+      {
+        "label": "2009 &ndash; 2010",
+        "html": "<b>Second Life</b> &middot; virtual<br/>Constructing Identity in Virtual and Simulated Landscapes: an ethnography of Second Life. Among the first anthropologists to conduct sustained participant observation inside a persistent virtual world."
+      }
+    ],
+    "patents": [
+      {
+        "label": "US 11,354,676 B2",
+        "html": "<b>Open Registry for Identity of Things</b><br/>Granted 7 June 2022. First-named inventor. Assignee Chronicled, Inc."
+      },
+      {
+        "label": "US 10,210,527 B2",
+        "html": "<b>Open Registry for Identity of Things Including Social Record Feature</b><br/>Granted 19 February 2019. First-named inventor."
+      },
+      {
+        "label": "Filed 2017",
+        "html": "<b>Open Registry for Provenance and Tracking of Goods in the Supply Chain</b>"
+      },
+      {
+        "label": "Filed 2017",
+        "html": "<b>Open Registry for Human Identification</b>"
+      },
+      {
+        "label": "Also filed",
+        "html": "US 11,113,699 B2 and US 11,107,088 B2, continuations granted 2021 &middot; Including Sealed Materials &middot; Including Item Location Feature &middot; Including Tamperproof Tags"
+      },
+      {
+        "label": "Standards",
+        "html": "Early protocol work at Chronicled, open sourced into the Ethereum standards, predating and paralleling ERC-721."
+      }
+    ],
+    "appointments": [
+      {
+        "label": "2016 &ndash; 2023",
+        "html": "<b>Faculty, Singularity University</b> &middot; Santa Clara, CA<br/>Designed and delivered executive innovation programmes on technological, socio-cultural, and geopolitical convergence. Built workshops and prototyping formats used at global summits, and ran foresight sessions for Fortune 100 leadership teams on distributed ledgers, machine learning, advanced manufacturing, and extended realities.<span class='sub'><b>Built:</b> executive programme curriculum &middot; prototyping and foresight workshop formats &middot; keynote practice to audiences of 3,000+</span>"
+      },
+      {
+        "label": "2020 &ndash; 2022",
+        "html": "<b>CEO &amp; Co-Founder, NYOUM Ltd</b> &middot; London<br/>Founded and led an applied AI company from zero to product. Built <b>YOUM.AI</b>, an AI-native video communication platform, and the research function behind it: natural language processing, large language models, machine translation, speech and facial recognition, and biometrics. Hired the team, set the research agenda, took the product to market in the US, then led the pivot and the handover to a regional CEO.<span class='sub'><b>Built:</b> an AI research function from scratch &middot; one platform to market &middot; the pivot decision and succession</span>"
+      },
+      {
+        "label": "2014 &ndash; 2019",
+        "html": "<b>Co-Founder, Chief Product Officer, then CMO, Chronicled</b> &middot; San Francisco<br/>Venture-backed enterprise software company, $30M+ raised, 50+ staff. Founded the company&rsquo;s innovation infrastructure: the <b>Blockchain &times; IoT Laboratory</b>, the <b>Enterprise Protocol Lab</b>, and <b>Blockchain for Better</b>. Evaluated 1,500+ use cases across consumer and enterprise markets, incubated <b>20+ industry ecosystems</b>, and brought <b>10+ products</b> to market across authentication, cold chain, secure sealing, and track and trace. Built the <b>MediLedger</b> network (Pfizer, Genentech, AmerisourceBergen, McKesson, Cardinal Health) and Responsible Gold. Founding member of the Enterprise Ethereum Alliance, Trusted IoT Alliance, and MOBI. Educated <b>250+ Fortune 500 C-suite executives and board members</b>. Hired the initial team of 50+ designers and engineers, and acquired an additive manufacturing company to bring hardware in house.<span class='sub'><b>Illicit markets addressed:</b> counterfeit pharmaceuticals and diverted product, counterfeit luxury goods and apparel, illicit precious metals and minerals, grey-market automotive parts, and food fraud.</span>"
+      },
+      {
+        "label": "2011 &ndash; 2014",
+        "html": "<b>Founder &amp; CEO, Stunable</b> &middot; New York<br/>Built machine-learning recommendation systems for e-commerce, including the first-of-its-kind &ldquo;fashion genome project&rdquo; mapping consumer taste. Pioneered single-click inventory integration; the synchronisation engine was used by <b>10,000+ merchants</b>. Raised the funding, ran the company, and negotiated a multi-year docuseries contract with NBC as part of go-to-market.<span class='sub'><b>Built:</b> a taste-mapping ML system &middot; an inventory engine at 10,000+ merchant scale &middot; a network television partnership</span>"
+      },
+      {
+        "label": "2011 &ndash; present",
+        "html": "<b>Founder, Radical Next</b> &middot; R&amp;D lab<br/>An innovation vehicle for work with Fortune 500 companies, startups, non-profits, and governments. Projects: decentralised manufacturing and IP storage with 3D printers (<b>GE</b>); values and ingredient-based recommendation with decentralised shopper data (<b>Unilever</b>); identity and currency deployment in a Venezuelan and Brazilian refugee camp (<b>LoveCrypto</b>); secure file storage for journalists and sources in conflict zones (<b>ScreeningRoom</b>); tracking of volatile substances and chemicals (<b>Koch</b>, <b>Shell</b>); autonomous vehicle delivery and authentication; large-scale virtual world architecture and asset protocol (<b>World of Ether</b>)."
+      }
+    ],
+    "publications": [
+      {
+        "label": "2025",
+        "html": "<b>Radical Next: Reclaiming Your Humanity in a Post-Human World</b> &middot; #1 bestseller"
+      },
+      {
+        "label": "2019",
+        "html": "<b>Bitcoin Pizza: The No-Bullshit Guide to Blockchain</b> &middot; Lioncrest &middot; #1 Amazon bestseller on release"
+      },
+      {
+        "label": "2017 &ndash; 2021",
+        "html": "Contributing writer, <b>Forbes</b>. Over fifty pieces on emerging technology and society. Also Fast Company, Worth, HuffPost, Inc., IBTimes, CoinDesk."
+      },
+      {
+        "label": "Ongoing",
+        "html": "Curated primary-source guides on AI-driven fraud, clinical AI, and provenance."
+      }
+    ],
+    "cited": [
+      {
+        "label": "Regulator",
+        "html": "<b>US Securities and Exchange Commission</b> &middot; Commissioner Hester M. Peirce, remarks before the Small Business Capital Formation Advisory Committee, 8 May 2020."
+      },
+      {
+        "label": "Reference work",
+        "html": "<b>The Routledge Handbook of Artificial Intelligence and Social Sciences</b> &middot; Routledge"
+      },
+      {
+        "label": "Academic press",
+        "html": "<b>Regulation of Cryptocurrencies and Blockchain Technologies</b> &middot; Rosario Girasa &middot; Palgrave Macmillan"
+      },
+      {
+        "label": "Case study",
+        "html": "<b>Rethink: Smashing the Myths of Women in Business</b> &middot; Andi Simon &middot; a chapter-length case study on Sam"
+      },
+      {
+        "label": "Journal",
+        "html": "<b>Journal of Space Law</b>"
+      },
+      {
+        "label": "Working paper",
+        "html": "&Ccaron;elebi&cacute; et al., <i>Impact of Blockchain Technology on the Payment Management Systems</i>"
+      },
+      {
+        "label": "Patents",
+        "html": "Forward citations to US 11,354,676 and US 10,210,527 in subsequent filings"
+      }
+    ],
+    "education": [
+      {
+        "label": "2013",
+        "html": "<b>MA, Media, Culture, and Communication: Technology &amp; Society</b> &middot; New York University<br/>Thesis: <i>iCreated a Monster: Consumer Alienation and the Corporate Alien-Nation in the Digital Age</i>"
+      },
+      {
+        "label": "2011",
+        "html": "<b>BA, Anthropology and English (Linguistics)</b> &middot; Colgate University"
+      }
+    ],
+    "training": [
+      {
+        "label": "2025",
+        "html": "Cybersecurity &middot; Google"
+      },
+      {
+        "label": "2024",
+        "html": "Open-source intelligence &middot; Bellingcat"
+      },
+      {
+        "label": "2013",
+        "html": "Software engineering &middot; Flatiron School"
+      },
+      {
+        "label": "2012",
+        "html": "Organizational behaviour &middot; King&rsquo;s College London"
+      }
+    ],
+    "advisory": [
+      {
+        "label": "United Nations",
+        "html": "Emerging technology and illicit trade"
+      },
+      {
+        "label": "World Economic Forum",
+        "html": "Blockchain and supply chain provenance"
+      },
+      {
+        "label": "Federal Reserve Bank",
+        "html": "Distributed ledger applications in payments"
+      },
+      {
+        "label": "OECD",
+        "html": "Counterfeit and illicit market data"
+      }
+    ],
+    "awards": [
+      {
+        "label": "2019",
+        "html": "<b>Newsweek Blockchain Impact Award</b> &middot; to Chronicled for MediLedger"
+      },
+      {
+        "label": "2017",
+        "html": "<b>Forbes 30 Under 30</b> &middot; Enterprise Technology"
+      }
+    ],
+    "skills": [
+      {
+        "label": "Technical",
+        "html": "AI and large language models &middot; agentic design &middot; natural language processing &middot; distributed ledgers and applied cryptography &middot; Python, Ruby, Solidity, JavaScript &middot; IoT and hardware design &middot; additive manufacturing"
+      },
+      {
+        "label": "Method",
+        "html": "Ethnography and participant observation &middot; open-source intelligence &middot; foresight and scenario work &middot; product and protocol design"
+      },
+      {
+        "label": "Certifications",
+        "html": "EMT-B and remote EMT &middot; skydiving licence &middot; student pilot &middot; advanced open-water diver"
+      },
+      {
+        "label": "Earlier",
+        "html": "Competitive skydiver, Connecticut Parachutists, 2006&ndash;2010: 700+ jumps, four-way formation, competed internationally. Assistant Director, <i>Othello</i>, Theatre for a New Audience, 2009."
+      }
+    ]
+  }
+}

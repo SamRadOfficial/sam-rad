@@ -182,7 +182,7 @@
             "url": "https://www.fda.gov/media/168283/download"
           },
           {
-            "title": "EIP-721: Non-Fungible Token Standard",
+            "title": "ERC-721: Non-Fungible Token Standard",
             "source": "Ethereum Improvement Proposals · Sam's early blockchain protocol work and patents at Chronicled, open sourced into the Ethereum standards, predate and parallel this standard",
             "url": "https://eips.ethereum.org/EIPS/eip-721"
           }

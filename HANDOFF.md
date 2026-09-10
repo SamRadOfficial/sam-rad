@@ -400,6 +400,14 @@ blocked by ad blockers and Brave shields, so test in a clean browser. Vercel's
 "Get Started" panel is onboarding, not an off switch: Web Analytics is on by default
 and the panel disappears once the first event lands.
 
+**/cv** is the research and institutional page: Samantha Radocchia, not Sam Rad. It
+renders from `data/cv.json`, and two PDFs render from the **same** JSON via
+`python3 scripts/build-cv-pdfs.py` into `public/cv/`. Edit the JSON, rerun the script,
+ship both PDFs. Never edit the PDFs by hand or they drift from the page. The
+professional PDF leads with patents and ventures; the academic one with education
+and fieldwork and adds a research-interests paragraph. The page itself uses the
+narrative order with the at-a-glance panel.
+
 **Booking form** posts to Formspree (`https://formspree.io/f/xgaepolw`), set in
 `lib/site.js` as `formEndpoint`. Notifications go to sam@sam-rad.com only; adding
 Brandy is a Formspree dashboard change on a paid plan. Honeypot `_gotcha` field,

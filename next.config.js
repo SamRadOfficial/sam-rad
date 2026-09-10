@@ -12,6 +12,17 @@ const ARCHIVE = 'https://archive.sam-rad.com';
 
 const nextConfig = {
   reactStrictMode: true,
+  async headers() {
+    return [
+      {
+        // The CV page is what should rank, not the downloads. A PDF in the results
+        // gives a reader no navigation and goes stale if it is not regenerated.
+        source: '/cv/:file*.pdf',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex' }],
+      },
+    ];
+  },
+
   async redirects() {
     return [
       // ── Pages with a direct equivalent on the new site ──────────────────
