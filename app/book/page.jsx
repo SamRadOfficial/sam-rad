@@ -8,8 +8,8 @@ export const metadata = meta({
   title: 'Book Sam Rad | Keynote Speaker',
   description: 'Booking inquiries for Sam Rad, represented by Brandy Gibson at Executive Speakers Bureau. Keynote, 45 to 60 minutes, customized to your industry.',
   path: '/book',
-  image: '/images/panel-dell.jpg',
-  imageAlt: 'Sam Rad on a panel at Dell Technologies World',
+  image: '/images/hero-meet.jpg',
+  imageAlt: 'Sam Rad delivering a keynote at the SIM Executive Conference',
 });
 
 export default function Book() {
@@ -18,12 +18,12 @@ export default function Book() {
       <Nav />
       <main id="main">
         <PhotoHero
-          image="panel-dell.jpg"
+          image="hero-meet.jpg"
           eyebrow="Booking"
           compact
-          position="center bottom"
+          position="center 30%"
           lead="Your room is facing change. Let's make sure it walks out ready for it."
-          caption="Dell Technologies World"
+          caption="SIM Executive Conference"
         >
           Book <span className="mint-fill">Sam Rad.</span>
         </PhotoHero>
