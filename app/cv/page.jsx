@@ -14,15 +14,32 @@ export const metadata = meta({
   imageAlt: 'Samantha Radocchia',
 });
 
+// Bumped whenever the PDFs are regenerated, so a cached copy is never served.
+const PDF_V = '2026-09';
+
 const H = ({ html }) => <span dangerouslySetInnerHTML={{ __html: html }} />;
 
 function Rows({ items, tight }) {
-  return items.map((r, i) => (
-    <div className={tight ? 'cv-row tight' : 'cv-row'} key={i}>
-      <span className="l"><H html={r.label} /></span>
-      <span className="r"><H html={r.html} /></span>
-    </div>
-  ));
+  return items.map((r, i) =>
+    r.head ? (
+      <div className="cv-subhead" key={i}>
+        {r.head}
+      </div>
+    ) : r.note ? (
+      <p className="cv-note-row" key={i}>
+        <H html={r.note} />
+      </p>
+    ) : (
+      <div className={tight ? 'cv-row tight' : 'cv-row'} key={i}>
+        <span className="l">
+          <H html={r.label} />
+        </span>
+        <span className="r">
+          <H html={r.html} />
+        </span>
+      </div>
+    )
+  );
 }
 
 function Sec({ title, children }) {
@@ -48,7 +65,23 @@ export default function CV() {
           identifier: { '@type': 'PropertyValue', propertyID: 'ORCID', value: cv.orcid },
           url: `${SITE.url}/cv`,
           jobTitle: 'Anthropologist and technologist',
+          email: `mailto:${cv.email}`,
+          description: cv.subhead.professional,
           address: { '@type': 'PostalAddress', addressLocality: 'New York', addressRegion: 'NY' },
+          alumniOf: [
+            { '@type': 'CollegeOrUniversity', name: 'New York University' },
+            { '@type': 'CollegeOrUniversity', name: 'Colgate University' },
+          ],
+          award: ['Newsweek Blockchain Impact Award', 'Forbes 30 Under 30, Enterprise Technology'],
+          knowsAbout: cv.focusAreas,
+          sameAs: [
+            SITE.social.linkedin,
+            `https://orcid.org/${cv.orcid}`,
+            SITE.social.x,
+            SITE.social.youtube,
+            SITE.social.instagram,
+            SITE.bureau.orgUrl,
+          ],
         }}
       />
       <Nav />
@@ -61,15 +94,35 @@ export default function CV() {
                 <h1 className="cv-name">{cv.name}</h1>
                 <p className="cv-aka">Publishes and speaks as Sam Rad</p>
                 <p className="cv-sub">{cv.subhead.web}</p>
+                <p className="cv-focus">
+                  <b>Focus areas:</b> {cv.focusAreas.join(' · ')}
+                </p>
                 <div className="cv-meta">
-                  {cv.location} <span>&middot;</span> {cv.email} <span>&middot;</span> ORCID {cv.orcid}
+                  {cv.location} <span>&middot;</span> {cv.email} <span>&middot;</span>{' '}
+                  <a href={cv.linkedinUrl}>{cv.linkedin}</a> <span>&middot;</span> ORCID{' '}
+                  <a href={`https://orcid.org/${cv.orcid}`}>{cv.orcid}</a>
                 </div>
                 <div className="cv-dl">
-                  <a className="btn btn-ink" href="/cv/samantha-radocchia-cv.pdf" download>
+                  <a
+                    className="btn btn-ink"
+                    href={`/cv/samantha-radocchia-cv.pdf?v=${PDF_V}`}
+                    download
+                  >
                     Professional CV, PDF
                   </a>
-                  <a className="btn btn-ghost" href="/cv/samantha-radocchia-academic-cv.pdf" download>
+                  <a
+                    className="btn btn-ghost"
+                    href={`/cv/samantha-radocchia-academic-cv.pdf?v=${PDF_V}`}
+                    download
+                  >
                     Academic CV, PDF
+                  </a>
+                  <a
+                    className="btn btn-ghost"
+                    href={`/cv/samantha-radocchia-cv.docx?v=${PDF_V}`}
+                    download
+                  >
+                    Plain CV, Word
                   </a>
                 </div>
               </div>
@@ -106,13 +159,15 @@ export default function CV() {
             <Sec title="Skills and methods"><Rows items={s.skills} /></Sec>
 
             <div className="cv-note">
-              <h3>Speaking and commercial enquiries</h3>
+              <h3>Speaking and commercial inquiries</h3>
               <p>
                 This page covers research, publications, and institutional work. For keynotes, Sam is
                 represented by Executive Speakers Bureau.
               </p>
               <Link href="/speaking">Speaking and booking →</Link>
             </div>
+
+            <p className="cv-updated">Last updated: {cv.lastUpdated}</p>
           </div>
         </section>
       </main>

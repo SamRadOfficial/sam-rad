@@ -1,7 +1,7 @@
 # sam-rad.com — Handoff
 
 Read this before touching anything. Written for a fresh agent picking up with no
-memory of prior sessions. Last updated 10 September 2026.
+memory of prior sessions. Last updated 11 September 2026.
 
 **Live:** https://sam-rad.com
 **Old site:** https://archive.sam-rad.com (Squarespace, still serving ~300 legacy URLs)
@@ -134,15 +134,16 @@ data/
   clients.json            59-brand name → logo file registry
   media.json              press + podcast archives, ARRAYS of { year, items }
   resources.json          3 guides
-  cv.json                 the single source for /cv and both CV PDFs
+  cv.json                 the single source for /cv, both CV PDFs, and the ATS docx
   eras.json moves.json cycle.json testimonials.json
   featured-in.json logo-wall.json
 lib/site.js               config, meta() helper, Person schema
 next.config.js            57 redirect rules
 public/images/            154 photos
 public/logos/             88 files including press marks + LICENSE.md
-public/cv/                two generated PDFs, never hand-edited
-scripts/                  check-images.mjs, preview.py, mobile.py, build-cv-pdfs.py
+public/cv/                two generated PDFs and one docx, never hand-edited
+scripts/                  check-images.mjs, preview.py, mobile.py, build-cv-*.py
+scripts/fonts/            Inter subsets embedded in the CV PDFs, see §8
 corpus/                   voice notes and samples, not built or deployed
 ```
 
@@ -325,14 +326,21 @@ Every post ends with a LinkedIn follow line, then share links.
 - **Forbes 30 Under 30 (2017)** — Meet Sam sidebar only.
 - **2× #1 bestsellers.** Radical Next ISBN 979-8-89138-248-0 (2025);
   Bitcoin Pizza ISBN 978-1-5445-0443-8 (2019). No publisher listed for the 2019 book.
-- **Four granted patents**, all Chronicled, Sam first-named inventor: Identity of
-  Things (US 11,354,676, granted 2022), Identity of Things Including Social Record
-  (US 10,210,527, granted 2019), and the two 2021 continuations US 11,113,699 and
-  US 11,107,088. Two more filed in 2017 (Provenance and Tracking, Human
-  Identification). Plus early protocol work open sourced into the Ethereum
-  standards, predating and paralleling ERC-721. `data/cv.json` is the authority
-  here and both CV PDFs render from it. This entry said "three patents" until
-  10 Sep 2026, which contradicted the CV page.
+- **Four granted patents**, all assigned to Chronicled, Inc., Sam first-named
+  inventor on every one. Verified against Google Patents and Justia, 11 Sep 2026:
+  - US 11,354,676 B2, *Open Registry for Identity of Things*, granted 7 Jun 2022
+  - US 11,113,699 B2, *Open Registry for Identity of Things*, granted 7 Sep 2021
+  - US 11,107,088 B2, *Open Registry for Internet of Things*, granted 31 Aug 2021
+  - US 10,210,527 B2, *Open Registry for Identity of Things Including Social Record
+    Feature*, granted 19 Feb 2019
+
+  Five further applications are filed but not granted. **The two 2021 patents are
+  granted continuations, not pending applications**, and the "Including Sealed
+  Materials / Item Location Feature / Tamperproof Tags" titles belong to three of the
+  pending applications, not to those two numbers. `data/cv.json` conflated them until
+  11 Sep 2026. Plus early protocol work open sourced into the Ethereum standards,
+  predating and paralleling ERC-721. `data/cv.json` is the authority and all three CV
+  artifacts render from it. This entry said "three patents" until 10 Sep 2026.
 - Six eras: Agrarian (Grain & Plough) · Industrial (Steam & Loom) ·
   Internet (Air & Mobile) · **Acceleration (AI & Space, "You are here")** ·
   Bio-Integration (Chips & Cells, "Next") · Post-Quantum (Qubits & Worlds, "After next").
@@ -391,14 +399,14 @@ Sizzle → band (`gofest-faster-horses`) → Gallery → CtaBreak
 **Resources** — PhotoHero (`hero-industries`) → guide cards → CtaBreak (`cta-red`)
 
 **Resource guide** — PhotoHero (per-guide `image`) → linked source list → CtaBreak
-(`cta-red`)
 
-**CV** — no PhotoHero. Its own `.cv-hero` (name, thesis, contact line, two PDF
-buttons) → at-a-glance panel and the narrative sections from `data/cv.json`. The only
-page that does not use the shared hero, deliberately: it is a document, not a pitch.
+**CV** — no PhotoHero. Its own `.cv-hero` (name, thesis, focus areas, contact line,
+three download buttons) → at-a-glance panel and the narrative sections from
+`data/cv.json`. The only page that does not use the shared hero, deliberately: it is
+a document, not a pitch.
 
 **SamRad.AI** — PhotoHero (`samrad-ai-avatar`) → Prose → Themes → Gallery → Prose →
-CtaBreak (`cta-red`). Landing target for the `samrad.ai` domain, see §8.
+CtaBreak. Landing target for the `samrad.ai` domain, see §8.
 
 **Hero selection rule:** heroes must be visually quiet in the bottom-left text zone.
 A measured "busy" score (mean luminance gradient with the scrim applied) of ≤1.6 is
@@ -466,6 +474,48 @@ narrative order with the at-a-glance panel.
 **Crawlers.** `app/robots.js` explicitly allows GPTBot, OAI-SearchBot, ClaudeBot,
 PerplexityBot and Google-Extended alongside `*`. This is deliberate: the AI-visibility
 checks in §9 assume these agents can read the site. Do not tighten it without saying so.
+
+### The CV artifacts
+
+`data/cv.json` is the single source for **three** outputs: the `/cv` page, two PDFs,
+and an ATS docx. Edit the JSON, rerun both scripts, ship all three. Never edit a PDF
+or the docx by hand or they drift from the page.
+
+```bash
+python3 scripts/build-cv-pdfs.py   # public/cv/*.pdf   needs reportlab
+python3 scripts/build-cv-docx.py   # public/cv/*.docx  needs python-docx
+```
+
+The professional PDF leads with patents and ventures; the academic one with education
+and fieldwork and adds a research-interests paragraph. The **docx is the machine copy**:
+single column, no tables, conventional section names (Experience, Patents, Education,
+Skills) that applicant tracking systems recognize. It is plain on purpose. Do not
+style it.
+
+Three traps in the PDF builder, each of which shipped once:
+
+- **Fonts are embedded from `scripts/fonts/`** (Inter, subset to Latin Extended-A,
+  about 40KB each). The Helvetica built-ins are Type 1 with no diacritics, which is
+  why Medellín and Yucatán used to extract as black squares.
+- **Never convert `&amp;` to `&` before handing text to ReportLab.** It parses its own
+  mini-HTML, so a bare `&` becomes a broken entity. That is how "R&D lab" shipped as
+  "R&D; lab".
+- **Every entry is wrapped in `KeepTogether`** so a page break cannot land inside a
+  role and glue two roles together on extraction. After any layout change check with
+  **both** `pdftotext` and `pdftotext -layout`: every entry must start on its own line
+  with date, title, and organization.
+
+A row in any `cv.json` section can be `{"head": "..."}` instead of label and html.
+That renders a subhead: it is what groups patents into Granted and Filed, and what
+puts the Concurrent Appointments break inside Ventures and Appointments.
+
+The page links the files with a `?v=` query string, `PDF_V` in `app/cv/page.jsx`.
+**Bump it whenever the files are regenerated** or browsers serve the cached copy.
+
+The PDFs are not tagged PDFs. Open-source ReportLab cannot emit a structure tree, so
+item 2.5 of the September 2026 CV brief is unresolved. Reading order does extract
+correctly in both `pdftotext` modes, which covers parsers; real screen-reader tagging
+needs a different toolchain.
 
 **Booking form** posts to Formspree (`https://formspree.io/f/xgaepolw`), set in
 `lib/site.js` as `formEndpoint`. Notifications go to sam@sam-rad.com only; adding
@@ -589,30 +639,36 @@ already shipped or been superseded.
 
 ### Delivery convention
 
-Sam asked for this on 10 September 2026. Every delivery is **two zips, never one**,
-each wrapping a single folder so it copies with a trailing `/.` and merges rather
-than replaces:
+Sam set this on 10 September 2026, and corrected it the same day. **She replaces whole
+folders, she does not merge.** Whatever the zip contains overwrites the destination,
+and anything the zip is missing from a folder it does contain is deleted. That single
+fact governs everything below.
 
-1. **`sam-rad-source-<WHAT>.zip`** wraps a `sam-rad-source/` folder holding only the
-   **changed** source files at their repo-relative paths (`data/cv.json`,
-   `HANDOFF.md`, and so on). Never the whole tree, and **never `public/`**.
-   Copy: `cp -R ~/Downloads/sam-rad-source/. .`
+Every delivery is **two zips, never one**:
+
+1. **`sam-rad-source-<WHAT>.zip`** wraps a `sam-rad-source/` folder holding the
+   **complete** source tree, not just the files that changed: `app/ components/
+   data/ lib/ scripts/ corpus/` plus `next.config.js jsconfig.json package.json
+   package-lock.json .gitignore .env.example HANDOFF.md PLAYBOOK.md README.md`.
+   A partial `data/` folder deletes the JSON files left out of it.
+   **Never `public/`. Never `node_modules/`, `.next/`, `.git/` or `.vercel/`.**
 2. **`sam-rad-assets-<WHAT>.zip`** wraps a `sam-rad-assets/public/` folder holding
-   any images, logos or PDFs, mirroring the real `public/` tree.
-   Copy: `cp -R ~/Downloads/sam-rad-assets/public/. public/`
+   any images, logos or PDFs, mirroring the real `public/` tree. This is the only
+   route by which anything under `public/` travels, and it is copied with a trailing
+   `/.` so it merges: `cp -R ~/Downloads/sam-rad-assets/public/. public/`
 
-The trailing `/.` is what makes both merge. A plain folder copy, or dragging in
-Finder, replaces the destination and deletes anything not in the source. That is how
-`public/images/` was wiped once.
+Shipping `public/` inside a source zip is what deleted `public/images/` once. The
+split exists for that reason: the source zip is allowed to replace, the assets zip
+never is.
 
-**Deletions cannot travel in a zip.** A removed file has to be an explicit
+**Deletions cannot travel in a zip.** A removed root-level file has to be an explicit
 `git rm <path>` line in the commands, or it silently stays in the repo.
 
-Name each zip for what it is. A generic `sam-rad-source.zip` in Downloads got
-deployed once from an older copy, shipping a stale `next.config.js` to production.
+Name each zip for what it is. A generic `sam-rad-source.zip` in Downloads got deployed
+once from an older copy, shipping a stale `next.config.js` to production.
 
-Every delivery ends with the exact command block: copy lines, `npm run build` with
-the expected page count, `npm run check:images`, any `git rm`, then
+Every delivery ends with the exact command block: copy lines, `npm run build` with the
+expected page count, `npm run check:images`, any `git rm`, then
 `git add -A && git commit -m "..." && git push`. Vercel deploys from `main`.
 **The site is live, so every push goes straight to sam-rad.com.**
 
@@ -656,4 +712,11 @@ the expected page count, `npm run check:images`, any `git rm`, then
 - Fonts load via `<link>` in `app/layout.jsx`. Switching to `next/font/google` would
   self-host them and remove the layout shift. The variables are already in
   `globals.css`. Small win, never prioritized.
+- The CV PDFs are not tagged for screen readers; see §8.
+- Cited in is fully resolved as of 11 Sep 2026. The Routledge entry was mistitled:
+  the real volume is *The Routledge Social Science Handbook of AI*, Elliott, 2021.
+  *Journal of Space Law* was removed at Sam's request, as was the working paper and
+  the forward-citation count, which was dropped rather than guessed. Nothing in
+  `data/cv.json` is a placeholder now; grep for `SAM TO CONFIRM` before shipping the
+  CV anywhere formal and expect zero hits.
 - No CMS.
