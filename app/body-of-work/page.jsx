@@ -37,8 +37,8 @@ export const metadata = meta({
   title: 'Body of Work | Books, Productions & Media',
   description: 'Radical Next, Bitcoin Pizza, Illicit Shadows, MISTIC, and keynote video from five continents.',
   path: '/body-of-work',
-  image: '/images/hero-foresight.jpg',
-  imageAlt: 'Sam Rad keynoting at the Ivanti Solutions Summit in front of a projected map',
+  image: '/images/nyc-archway.jpg',
+  imageAlt: 'Sam Rad walking through a stone archway on a New York street',
 });
 
 const books = [
@@ -67,11 +67,12 @@ export default function BodyOfWork() {
       <main id="main">
         {books.map((b) => <JsonLd data={b} key={b.isbn} />)}
         <PhotoHero
-          image="hero-foresight.jpg"
+          image="nyc-archway.jpg"
+          position="center 30%"
           eyebrow="Body of Work"
           short
           lead={<>Two #1 bestsellers. An investigative production and the institute behind it. Patents, inventions, and a stage archive spanning five continents. <strong>This is the work behind the keynote.</strong></>}
-          caption="Ivanti Solutions Summit"
+          caption="New York"
         >
           Built across <span className="mint-fill">decades</span> &amp; disciplines.
         </PhotoHero>

@@ -36,8 +36,8 @@ export default function Footer() {
               <li><Link href="/podcasts">Podcasts</Link></li>
               <li><Link href="/resources">Resources</Link></li>
               <li><Link href="/samrad-ai">SamRad.AI</Link></li>
-              <li><Link href="/cv">CV</Link></li>
               <li><a href={SITE.social.illicitShadows} target="_blank" rel="noopener noreferrer">Illicit Shadows</a></li>
+              <li><Link href="/cv">CV</Link></li>
             </ul>
           </div>
           <div>
