@@ -124,6 +124,7 @@ app/
 components/
   Nav.jsx                 client: desktop mega-menu (3 cols) + mobile drawer
   Footer.jsx              credential line, nav, socials. No newsletter, see §8.
+                          "Order the books" removed from Learn, 11 Sep 2026.
   Blocks.jsx              every shared section (see §4)
   MediaList.jsx           renders /press and /podcasts from data/media.json
   IndustryIcon.jsx  MoveIcon.jsx  logos.jsx (both now unused)
@@ -713,6 +714,10 @@ expected page count, `npm run check:images`, any `git rm`, then
   self-host them and remove the layout shift. The variables are already in
   `globals.css`. Small win, never prioritized.
 - The CV PDFs are not tagged for screen readers; see §8.
+- **The CV brief of September 2026 is fully closed.** Its one optional item, team size
+  and capital raised for NYOUM and Stunable, was closed by Sam on 11 Sep 2026 without
+  the figures. The executive-scope line for Stunable is the markets line only. Do not
+  reopen this or ask for the numbers again.
 - Cited in is fully resolved as of 11 Sep 2026. The Routledge entry was mistitled:
   the real volume is *The Routledge Social Science Handbook of AI*, Elliott, 2021.
   *Journal of Space Law* was removed at Sam's request, as was the working paper and
