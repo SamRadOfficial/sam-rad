@@ -178,8 +178,13 @@ def build(path, sub, order, with_interests, subject):
     return path
 
 
-PRO_ORDER = ['patents', 'appointments', 'current', 'fieldwork', 'publications', 'cited',
-             'education', 'training', 'advisory', 'awards', 'skills']
+# Professional order, revised 11 Sep 2026. It led with patents from the first commit,
+# which answered a question the reader had not asked yet: inventions with no context
+# read as trivia. Current practice establishes who she is, patents then land as
+# evidence. Mirrors the section order on /cv. The academic order below is inverted on
+# purpose, because its reader wants credentials and research first.
+PRO_ORDER = ['current', 'patents', 'appointments', 'publications', 'advisory', 'awards',
+             'fieldwork', 'cited', 'education', 'training', 'skills']
 ACA_ORDER = ['education', 'fieldwork', 'current', 'publications', 'cited', 'patents',
              'appointments', 'training', 'advisory', 'awards', 'skills']
 

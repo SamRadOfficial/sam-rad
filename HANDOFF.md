@@ -487,8 +487,12 @@ python3 scripts/build-cv-pdfs.py   # public/cv/*.pdf   needs reportlab
 python3 scripts/build-cv-docx.py   # public/cv/*.docx  needs python-docx
 ```
 
-The professional PDF leads with patents and ventures; the academic one with education
-and fieldwork and adds a research-interests paragraph. The **docx is the machine copy**:
+Section order per artifact lives in `PRO_ORDER` and `ACA_ORDER` in the PDF script.
+The professional PDF led with patents from the first commit until 11 Sep 2026; it now
+opens with Current practice, then Invention and standards, then Ventures, matching
+`/cv`. Patents first answered a question the reader had not asked yet. The academic
+order is inverted on purpose, education and fieldwork first, and it adds a
+research-interests paragraph. Do not "align" the two. The **docx is the machine copy**:
 single column, no tables, conventional section names (Experience, Patents, Education,
 Skills) that applicant tracking systems recognize. It is plain on purpose. Do not
 style it.

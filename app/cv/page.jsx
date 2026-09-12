@@ -142,8 +142,8 @@ export default function CV() {
                 <Rows tight items={cv.glance.map(([label, html]) => ({ label, html }))} />
               </div>
               <div className="cv-side">
-                <div className="cv-h">Education</div>
-                <Rows tight items={s.education} />
+                <div className="cv-h">Advisory</div>
+                <Rows tight items={s.advisory} />
               </div>
             </div>
 
@@ -153,7 +153,7 @@ export default function CV() {
             <Sec title="Fieldwork"><Rows items={s.fieldwork} /></Sec>
             <Sec title="Publications"><Rows items={s.publications} /></Sec>
             <Sec title="Cited in"><Rows items={s.cited} /></Sec>
-            <Sec title="Advisory"><Rows items={s.advisory} /></Sec>
+            <Sec title="Education"><Rows items={s.education} /></Sec>
             <Sec title="Awards"><Rows items={s.awards} /></Sec>
             <Sec title="Training and certification"><Rows items={s.training} /></Sec>
             <Sec title="Skills and methods"><Rows items={s.skills} /></Sec>
