@@ -111,8 +111,20 @@ def row_table(rows):
 
 
 def section(title, rows):
-    out = [Paragraph(title.upper(), st_h),
-           HRFlowable(width='100%', thickness=1.1, color=INK, spaceAfter=2)]
+    # The heading, its rule and the first entry are bound together, or a page break
+    # can strand a section header alone at the foot of a page. ADVISORY did exactly
+    # that once the section order changed.
+    head = [Paragraph(title.upper(), st_h),
+            HRFlowable(width='100%', thickness=1.1, color=INK, spaceAfter=2)]
+    first = next((r for r in rows if 'head' not in r and 'note' not in r), None)
+    if first is not None:
+        # row_table() already wraps each entry in KeepTogether; nesting one inside
+        # another makes ReportLab mis-measure and the document triples in length.
+        # Unwrap the first entry and bind the raw table to the heading instead.
+        out = [KeepTogether(head + [row_table([first])[0]._content[0]])]
+        rows = [r for r in rows if r is not first]
+    else:
+        out = list(head)
     batch = []
     for r in rows:
         if 'head' in r:

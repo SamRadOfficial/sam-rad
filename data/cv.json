@@ -57,6 +57,10 @@
       {
         "label": "2024 – present",
         "html": "<b>Founder, RADOC</b><br/>Media studio working in narrative futurism. Producer of Illicit Shadows."
+      },
+      {
+        "label": "2017 – present",
+        "html": "<b>Sam Rad, Keynote Speaker</b><br/>Keynotes on five continents to governments, Fortune 500 companies, trade associations, and international organizations. Represented by Executive Speakers Bureau."
       }
     ],
     "fieldwork": [
@@ -125,10 +129,6 @@
       },
       {
         "head": "Concurrent Appointments"
-      },
-      {
-        "label": "2017 – present",
-        "html": "<b>Sam Rad, Keynote Speaker</b><br/>Keynotes on five continents to governments, Fortune 500 companies, trade associations, and international organizations."
       },
       {
         "label": "2016 – 2023",
@@ -205,20 +205,20 @@
     ],
     "advisory": [
       {
-        "label": "United Nations",
-        "html": "Emerging technology and illicit trade · Working Group on Sustainable Production and Consumption, 2018"
-      },
-      {
-        "label": "World Economic Forum",
-        "html": "Blockchain and supply chain provenance · Commissioned briefing, 2018"
+        "label": "OECD",
+        "html": "Counterfeit and illicit market data · Commissioned briefing, March 2026"
       },
       {
         "label": "Federal Reserve Bank of Chicago",
         "html": "Distributed ledger applications in payments · Commissioned briefing, September 2021"
       },
       {
-        "label": "OECD",
-        "html": "Counterfeit and illicit market data · Commissioned briefing, March 2026"
+        "label": "United Nations",
+        "html": "Emerging technology and illicit trade · Working Group on Sustainable Production and Consumption, 2018"
+      },
+      {
+        "label": "World Economic Forum",
+        "html": "Blockchain and supply chain provenance · Commissioned briefing, 2018"
       }
     ],
     "awards": [
