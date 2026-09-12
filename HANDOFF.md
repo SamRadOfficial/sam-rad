@@ -538,6 +538,22 @@ it serves both `archive.sam-rad.com` and the DNS zone.
 
 ## 9. Roadmap
 
+0. **Hero sizzle reel. Sam's stated priority, 12 September 2026.** A short looping
+   video in the homepage hero, in place of the still. Not yet started.
+   - The still is not wasted work: whatever image is in the hero becomes the video's
+     `poster`, which is what shows before the file loads and on any device that
+     refuses autoplay. `hero-meet.jpg` is the current poster candidate.
+   - `PhotoHero` renders a `<picture>` and would need a `video` branch: muted, loop,
+     playsInline, autoPlay, `preload="metadata"`, with the `<picture>` kept as the
+     fallback. The existing scrim, eyebrow, headline and caption layers sit on top
+     unchanged, so only the media element changes.
+   - Respect `prefers-reduced-motion`: fall back to the poster still, no exceptions.
+   - Budget the weight. The hero is the largest thing on the page already; a loop
+     over roughly 3MB will cost more than the still gains. Target 6 to 10 seconds,
+     no audio, H.264 MP4 plus WebM.
+   - `check:images` does not audit video. A missing `src` fails the same silent way a
+     missing `<picture>` source does, so extend the script when this lands.
+
 1. **Three more resource guides**, in this order and not all at once. Six lists is
    double the upkeep of three; four current lists beat six stale ones.
    - **Government & Public Sector — "Institutional Trust in a Synthetic Age."** The

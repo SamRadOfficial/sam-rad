@@ -30,7 +30,6 @@ export default function MeetSam() {
           short
           lead={<>Anthropologist. Four-time tech founder. #1 bestselling author. Twenty years inside technology revolutions, and one lesson above all: <strong>change has a pattern.</strong></>}
           cta={<Link href="/book" className="btn btn-mint">Book Sam →</Link>}
-          caption="SHRM · Dallas"
         >
           The <span className="mint-fill">change</span><br />futurist.
         </PhotoHero>
