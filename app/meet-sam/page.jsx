@@ -8,8 +8,8 @@ export const metadata = meta({
   title: 'Meet Sam | Sam Rad, The Change Futurist',
   description: 'Sam Rad (born Samantha Radocchia) is an anthropologist, four-time tech founder, inventor, and #1 bestselling author of Radical Next.',
   path: '/meet-sam',
-  image: '/images/audience-women.jpg',
-  imageAlt: 'Sam Rad on stage in front of a full audience at SHRM in Dallas',
+  image: '/images/meet-green-paper.jpg',
+  imageAlt: 'Sam Rad, portrait in a green suit',
 });
 
 const PATENTS = [
@@ -24,7 +24,8 @@ export default function MeetSam() {
       <Nav active="Meet Sam" />
       <main id="main">
         <PhotoHero
-          image="audience-women.jpg"
+          image="meet-green-paper.jpg"
+          light
           eyebrow="Meet Sam"
           short
           lead={<>Anthropologist. Four-time tech founder. #1 bestselling author. Twenty years inside technology revolutions, and one lesson above all: <strong>change has a pattern.</strong></>}

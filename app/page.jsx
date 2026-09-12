@@ -16,8 +16,8 @@ export const metadata = meta({
   description:
     "Anthropologist, four-time tech founder, and #1 bestselling author. Sam Rad shows leaders the pattern behind every big change, so they're ready for what's next.",
   path: '/',
-  image: '/images/hero-work.jpg',
-  imageAlt: 'Sam Rad keynoting at the Ivanti Solutions Summit',
+  image: '/images/hero-meet.jpg',
+  imageAlt: 'Sam Rad delivering a keynote at the SIM Executive Conference',
 });
 
 const featured = industries.filter((i) => i.featuredOrder).sort((a, b) => a.featuredOrder - b.featuredOrder);
@@ -28,12 +28,12 @@ export default function Home() {
       <Nav />
       <main id="main">
         <PhotoHero
-          image="hero-work.jpg"
-          position="center top"
+          image="hero-meet.jpg"
+          position="center 30%"
           eyebrow="The Change Futurist"
           lead={<>See it, and you&apos;re ready for whatever comes next.</>}
           cta={<Link href="/book" className="btn btn-mint">Book Sam →</Link>}
-          caption="Ivanti Solutions Summit"
+          caption="SIM Executive Conference"
         >
           Change has<br />a <span className="mint-fill">pattern.</span>
         </PhotoHero>

@@ -16,9 +16,12 @@ export function Bureau({ light }) {
   );
 }
 
-export function PhotoHero({ image, eyebrow, children, descriptors, lead, note, cta, caption, short, compact, position }) {
+export function PhotoHero({ image, eyebrow, children, descriptors, lead, note, cta, caption, short, compact, position, light }) {
+  // `light` is for plates with a pale field behind the copy (a cutout on paper,
+  // for instance). It drops the dark scrim and flips the type to ink. Without it
+  // the headline renders paper-on-paper and disappears.
   return (
-    <section className={`photo-hero${short ? ' short' : ''}${compact ? ' compact' : ''}`}>
+    <section className={`photo-hero${short ? ' short' : ''}${compact ? ' compact' : ''}${light ? ' light' : ''}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <picture>
         <source srcSet={`/images/${image.replace(/\.jpe?g$/i, '.webp')}`} type="image/webp" />
