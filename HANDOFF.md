@@ -472,6 +472,30 @@ professional PDF leads with patents and ventures; the academic one with educatio
 and fieldwork and adds a research-interests paragraph. The page itself uses the
 narrative order with the at-a-glance panel.
 
+### Bureau credit, linking policy
+
+Set 12 September 2026. **The credit text appears everywhere; the bureau's own URL
+does not.** `executivespeakers.com/speaker/sam-rad` has its own booking form on it, so
+linking it beside a "Book Sam" button hands the lead to a third party at the moment of
+conversion, and as of the September audit that page still calls *Radical Next*
+upcoming.
+
+- **Agent mailto stays live everywhere.** It is a second booking path, not leakage:
+  some buyers would rather email a named agent than fill in a form, and it is already
+  CC'd to Sam.
+- **Bureau URL is linked only where the page is not asking for a booking:** `/press`
+  (interview requests genuinely should reach the agent) and `/cv` (institutional
+  context). `Bureau` takes a `linked` prop for this. Do not set it on a page with a CTA.
+- The same unlinked rule is hardcoded in `CtaBreak`'s `bureau` block, which sits
+  directly under its button.
+- **The footer link stays**, and so does `SITE.bureau.orgUrl` in the Person schema
+  `sameAs`. Neither is at a decision point, and the schema entry is the entity
+  consistency the bureau audit is chasing.
+- Credits were cut from five to three: two on the homepage and two on Meet Sam read as
+  insecure. One per page.
+- `.bureau-line` is dark ink, so on a photo hero it needs `light` or it renders
+  invisible. That shipped broken for one build on `/press`.
+
 **Crawlers.** `app/robots.js` explicitly allows GPTBot, OAI-SearchBot, ClaudeBot,
 PerplexityBot and Google-Extended alongside `*`. This is deliberate: the AI-visibility
 checks in §9 assume these agents can read the site. Do not tighten it without saying so.
@@ -629,13 +653,39 @@ These were the items still live when that file was retired. Everything else in i
 already shipped or been superseded.
 
 **Sam's to do**
-- **Export LinkedIn posts.** Settings, Data Privacy, Get a copy of your data, Posts.
-  The voice corpus in `corpus/` needs it, and so does the dispatch backfill.
-- **Bureau listing audit.** Leading Authorities, BigSpeak, AAE, Keynote Curators,
-  Mollie Plotkin Group and Speakerpedia all still say LOVE rather than NYOUM, call
-  Radical Next an upcoming book, and carry the old training line. The blog footer
-  still names Kate DesRosier at Gotham Artists. Every one of these is an
-  entity-consistency leak for AI search.
+- **Export LinkedIn posts.** IN PROCESS as of 12 Sep 2026. Settings, Data Privacy,
+  Get a copy of your data, Posts. The voice corpus in `corpus/` needs it, and so does
+  the dispatch backfill.
+- **Bureau listing audit. DONE, 12 Sep 2026**, recorded in `sam-rad-bureau-audit.xlsx`
+  (not in this repo; Sam holds it). 31 listings audited, ranked by severity and
+  priority. **The remaining work is correction copy, which Sam is writing with her
+  team**, then sending the same text to every bureau. The audit's Correction Text tab
+  is the template and is deliberately blank.
+
+  What it found, since this is the entity-consistency picture AI search sees:
+  - Book called "upcoming" on 7 listings; published February 2025.
+  - Wrong book title, *Radical Next: Thriving in Times of Radical Change*, on 4. That
+    is an old working title, so two titles are in circulation.
+  - Company named LOVE rather than NYOUM on 3; "CEO of LOVE" on Keppler.
+  - Wrong training line, "anthropology, engineering, and symbolic systems", on 6.
+    AAE has the correct version (Colgate BA, NYU MA) and is the model to copy.
+  - Studio named "Radical Next" rather than RADOC on 6.
+  - Keynote either unnamed or given as Radical Next / Radiant Now / Web3 / Metaverse
+    on all 16 that list one. Nothing carries the current keynote.
+  - Exact fees published on 3, including AAE.
+  - Duplicate profiles at APB (2) and All American Speakers (2); ask both to merge.
+  - Keppler alone: wrong website (samantharadocchia.com), "CEO of LOVE", and a
+    Singularity University faculty claim the auditor could not verify externally.
+    **Resolved 12 Sep 2026:** Sam confirms the appointment is real and there is video
+    of it across the internet; SU removed her listing from their own site in 2023,
+    which is why it does not verify from the obvious source. The CV entry stands. Do
+    not soften or remove it.
+  - Three name variants in use across the set: Sam Rad, Samantha Radocchia, and both.
+  - Priority 1, fix first: Executive Speakers Bureau (the bureau the site points at),
+    CAA, Gotham Artists, Keppler, Leading Authorities, and the old blog footer.
+  - The blog footer naming Kate DesRosier at Gotham Artists: **DONE, 12 Sep 2026.**
+    Sam removed every mention from the Squarespace archive before the Sept 22
+    retirement.
 - **Review the industry page copy.** All nine except Healthcare are agent drafts.
 
 **Assets to source**
@@ -659,7 +709,15 @@ already shipped or been superseded.
 - Op-ed: "Your company bought the jetpacks. Why is everyone still standing?", timed
   to the next scaling survey.
 - Change Pattern Index, original research, Q1 2027.
-- Spanish version, after the English site is stable.
+- Spanish version. **PARKED 12 Sep 2026.** Reviewed and deliberately deferred, not
+  forgotten. The plumbing is about two days (a `[locale]` segment, hreflang pairs plus
+  x-default, sitemap and Person-schema alternates); the cost is the content and its
+  permanent upkeep, since every future edit becomes two and drift is invisible in a
+  language nobody proofreads weekly. Machine translation is worse than nothing for
+  voice-led copy. If it is revived, do a four-page `/es` slice only (landing, speaking,
+  short bio, booking form), keep the writing archive and CV English-only, and do it
+  **after** the CMS decision in item 6: translating a hand-edited codebase is how the
+  drift starts.
 - `/perceptual-security` page, **deferred at Sam's request.** Revisit only if
   AI-citation tracking shows the term being asked about.
 

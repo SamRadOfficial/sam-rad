@@ -7,11 +7,21 @@ import featuredIn from '@/data/featured-in.json';
 const LOGO_FILES = Object.fromEntries(clients.filter((c) => c.file).map((c) => [c.name, c]));
 import IndustryIcon from './IndustryIcon';
 
-export function Bureau({ light }) {
+// The agent mailto is a booking path and stays live everywhere: some buyers would
+// rather email a named person than fill in a form, and it is already CC'd to Sam.
+// The bureau's own URL is different. It lands on a page with its own booking form,
+// so linking it next to a "Book Sam" button hands the lead to a third party at the
+// moment of conversion. Pass `linked` only where the page is not asking for a
+// booking (press, CV). Do not set it on a page with a CTA.
+export function Bureau({ light, linked }) {
   return (
     <div className={light ? 'bureau-line light' : 'bureau-line'}>
       Managed by <a href={SITE.bureau.mailto}>{SITE.bureau.agent}</a> at{' '}
-      <a href={SITE.bureau.orgUrl} target="_blank" rel="noopener noreferrer">{SITE.bureau.org}</a>
+      {linked ? (
+        <a href={SITE.bureau.orgUrl} target="_blank" rel="noopener noreferrer">{SITE.bureau.org}</a>
+      ) : (
+        SITE.bureau.org
+      )}
     </div>
   );
 }
@@ -109,9 +119,10 @@ export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, p
           <Link href={href || '/book'} className="btn btn-mint">{btn}</Link>
         )}
         {bureau && (
+          // Sits directly under the Book Sam button, so the bureau's own URL stays
+          // unlinked here for the reason given on the Bureau component above.
           <div className="bureau">
-            Managed by <a href={SITE.bureau.mailto}>{SITE.bureau.agent}</a> at{' '}
-            <a href={SITE.bureau.orgUrl} target="_blank" rel="noopener noreferrer">{SITE.bureau.org}</a>
+            Managed by <a href={SITE.bureau.mailto}>{SITE.bureau.agent}</a> at {SITE.bureau.org}
           </div>
         )}
       </div>

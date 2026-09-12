@@ -23,7 +23,8 @@ export default function Press() {
           eyebrow="Press"
           short
           position="center 26%"
-          lead="Coverage of Sam's work across technology, supply chain, and the future of business. For interview requests, contact Brandy Gibson at Executive Speakers Bureau."
+          lead="Coverage of Sam's work across technology, supply chain, and the future of business."
+          note={<span className="bureau-line light">Interview requests: <a href={SITE.bureau.mailto}>Brandy Gibson</a> at <a href={SITE.bureau.orgUrl} target="_blank" rel="noopener noreferrer">Executive Speakers Bureau</a></span>}
           caption="CRMC · Chicago"
         >
           In the <span className="mint-fill">press.</span>

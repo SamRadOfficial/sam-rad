@@ -162,7 +162,11 @@ export default function CV() {
               <h3>Speaking and commercial inquiries</h3>
               <p>
                 This page covers research, publications, and institutional work. For keynotes, Sam is
-                represented by Executive Speakers Bureau.
+                represented by{' '}
+                <a href={SITE.bureau.orgUrl} target="_blank" rel="noopener noreferrer">
+                  Executive Speakers Bureau
+                </a>
+                .
               </p>
               <Link href="/speaking">Speaking and booking →</Link>
             </div>

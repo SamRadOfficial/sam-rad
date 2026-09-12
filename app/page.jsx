@@ -90,7 +90,6 @@ export default function Home() {
                 </div>
                 <div style={{ marginTop: 40 }}>
                   <Link href="/speaking" className="btn btn-mint">The full keynote</Link>
-                  <Bureau light />
                 </div>
               </div>
               <div>
