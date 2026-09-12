@@ -16,12 +16,16 @@ export function Bureau({ light }) {
   );
 }
 
-export function PhotoHero({ image, eyebrow, children, descriptors, lead, note, cta, caption, short, compact, position, light }) {
+export function PhotoHero({ image, eyebrow, children, descriptors, lead, note, cta, caption, short, compact, position, light, video }) {
   // `light` is for plates with a pale field behind the copy (a cutout on paper,
   // for instance). It drops the dark scrim and flips the type to ink. Without it
   // the headline renders paper-on-paper and disappears.
+  // `video` takes a basename in /public/video and plays .webm then .mp4, muted and
+  // looping, with `image` as the poster. The poster is what shows before the file
+  // loads, on a failed decode, and whenever the visitor has asked for reduced motion
+  // (handled in CSS, which hides the video and leaves the <picture> underneath).
   return (
-    <section className={`photo-hero${short ? ' short' : ''}${compact ? ' compact' : ''}${light ? ' light' : ''}`}>
+    <section className={`photo-hero${short ? ' short' : ''}${compact ? ' compact' : ''}${light ? ' light' : ''}${video ? ' has-video' : ''}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <picture>
         <source srcSet={`/images/${image.replace(/\.jpe?g$/i, '.webp')}`} type="image/webp" />
@@ -34,6 +38,23 @@ export function PhotoHero({ image, eyebrow, children, descriptors, lead, note, c
           style={position ? { objectPosition: position } : undefined}
         />
       </picture>
+      {video && (
+        <video
+          className="hero-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster={`/images/${image}`}
+          aria-hidden="true"
+          tabIndex={-1}
+          style={position ? { objectPosition: position } : undefined}
+        >
+          <source src={`/video/${video}.webm`} type="video/webm" />
+          <source src={`/video/${video}.mp4`} type="video/mp4" />
+        </video>
+      )}
       <div className="inner">
         <div className="eyebrow">{eyebrow}</div>
         <h1 className="h1">{children}</h1>

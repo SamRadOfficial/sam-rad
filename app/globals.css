@@ -141,7 +141,13 @@ body.nav-open{overflow:hidden;}
 .photo-hero.compact .lead{margin-bottom:0;max-width:680px;}
 .photo-hero picture{position:absolute;inset:0;display:block;}
 .photo-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;}
-.photo-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,19,42,.30) 0%,rgba(8,19,42,.42) 35%,rgba(8,19,42,.70) 62%,rgba(8,19,42,.92) 100%);}
+.photo-hero .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:1;pointer-events:none;}
+@media (prefers-reduced-motion:reduce){
+  /* Never animate at someone who has asked not to be animated at. The poster still
+     sits underneath in the <picture>, so hiding the video degrades to the image. */
+  .photo-hero .hero-video{display:none;}
+}
+.photo-hero::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(8,19,42,.30) 0%,rgba(8,19,42,.42) 35%,rgba(8,19,42,.70) 62%,rgba(8,19,42,.92) 100%);}
 .photo-hero .inner{position:relative;z-index:2;width:100%;max-width:1320px;margin:0 auto;padding:120px 56px 80px;}
 .photo-hero .eyebrow{font-family:var(--fd);font-size:22px;letter-spacing:.26em;text-transform:uppercase;color:var(--mint);margin-bottom:26px;display:inline-flex;align-items:center;gap:16px;-webkit-text-stroke:0.5px var(--mint);text-shadow:0 2px 14px rgba(8,19,42,.85),0 1px 3px rgba(8,19,42,.9);}
 .photo-hero .eyebrow::before{content:'';width:52px;height:3px;background:var(--mint);}

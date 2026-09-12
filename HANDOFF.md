@@ -538,21 +538,36 @@ it serves both `archive.sam-rad.com` and the DNS zone.
 
 ## 9. Roadmap
 
-0. **Hero sizzle reel. Sam's stated priority, 12 September 2026.** A short looping
-   video in the homepage hero, in place of the still. Not yet started.
-   - The still is not wasted work: whatever image is in the hero becomes the video's
-     `poster`, which is what shows before the file loads and on any device that
-     refuses autoplay. `hero-meet.jpg` is the current poster candidate.
-   - `PhotoHero` renders a `<picture>` and would need a `video` branch: muted, loop,
-     playsInline, autoPlay, `preload="metadata"`, with the `<picture>` kept as the
-     fallback. The existing scrim, eyebrow, headline and caption layers sit on top
-     unchanged, so only the media element changes.
-   - Respect `prefers-reduced-motion`: fall back to the poster still, no exceptions.
-   - Budget the weight. The hero is the largest thing on the page already; a loop
-     over roughly 3MB will cost more than the still gains. Target 6 to 10 seconds,
-     no audio, H.264 MP4 plus WebM.
-   - `check:images` does not audit video. A missing `src` fails the same silent way a
-     missing `<picture>` source does, so extend the script when this lands.
+0. **Hero sizzle reel. BUILT AND PARKED, 12 September 2026.** The plumbing is done and
+   on `main`; the homepage is back on the still. Sam parked it because the clip's
+   quality is not good enough and she will produce a new one. **Do not re-enable the
+   current reel.** When a better clip lands, re-encode it with the recipe below, drop
+   it in as `hero-sizzle.mp4` / `.webm`, and add `video="hero-sizzle"` back to the
+   `PhotoHero` on `app/page.jsx`. Nothing else needs to change.
+
+   `PhotoHero` takes `video="<basename>"`, which resolves to
+   `/public/video/<basename>.webm` then `.mp4`, with `image` serving as the poster.
+   The first clip was 1920x1080, 12.3s, with an audio track, at 4.3MB; it shipped as
+   1600x900, audio stripped, 1.3MB MP4 and 1.1MB WebM, and those files are still in
+   `public/video/` as a reference encode.
+   - Known weakness in the parked clip, worth avoiding in the replacement: around the
+     five-second mark it cuts to a pale blue interview shot and the headline contrast
+     drops even with the scrim. Keep the loop tonally dark, or dark in the lower left
+     where the type sits.
+   - The poster (`hero-sizzle-poster.jpg`) shows before load, on a decode failure, and
+     whenever the visitor prefers reduced motion. That last case is handled in CSS by
+     hiding `.hero-video`, which leaves the `<picture>` underneath visible. Do not
+     remove the `<picture>`; it is the fallback, not a leftover.
+   - The scrim (`.photo-hero::after`) carries `z-index:1` so it sits over the video,
+     not just the image. Drop that and the headline loses its contrast mid-loop.
+   - `preview.py` and `mobile.py` inline `/video` as well as `/images`, so a standalone
+     preview actually plays. Without that a video hero previews as a still poster and
+     the reviewer cannot tell.
+   - **`check:images` still does not audit video.** A missing or misnamed video source
+     fails silently, exactly like a broken `<picture>`. Extend the script.
+   - Re-encode recipe, for a replacement clip:
+     `ffmpeg -i in.mp4 -an -vf scale=1600:-2 -c:v libx264 -crf 27 -preset slow -movflags +faststart -pix_fmt yuv420p out.mp4`
+     and `-c:v libvpx-vp9 -crf 38 -b:v 0 -row-mt 1` for the WebM.
 
 1. **Three more resource guides**, in this order and not all at once. Six lists is
    double the upkeep of three; four current lists beat six stale ones.
@@ -578,8 +593,9 @@ it serves both `archive.sam-rad.com` and the DNS zone.
 
 2. **Sept 22 task:** check Search Console, move DNS to GoDaddy, retire Squarespace.
    Order matters — content must move before Squarespace is cancelled.
-3. **New sizzle reel** cut for the industry pages, replacing the placeholder. See
-   open items.
+3. **New sizzle reel** cut for the **industry pages**, replacing the placeholder.
+   Separate from the homepage hero reel in item 0; that one is a silent background
+   loop, this one is a watchable reel with sound.
 4. **Bring back dispatch thumbnails** once the Writing archive has enough posts with
    distinct images. Removed 9 Sep 2026: four of the eight visible posts shared the same
    NYC portrait set, so the 96px column showed near-identical crops, and a crop that

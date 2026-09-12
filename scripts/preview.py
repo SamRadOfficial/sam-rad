@@ -10,7 +10,9 @@ def b64(path):
     if not os.path.exists(p): print('MISSING', path); return path
     mt = mimetypes.guess_type(p)[0] or 'image/jpeg'
     return f'data:{mt};base64,' + base64.b64encode(open(p,'rb').read()).decode()
-html = re.sub(r'(src="|href="|srcSet="|srcset=")(/(?:images|logos)/[^"]+)(")',
+# /video is inlined too, or a standalone preview of a video hero silently shows
+# nothing but the poster and the reviewer cannot tell the difference.
+html = re.sub(r'(src="|href="|srcSet="|srcset=")(/(?:images|logos|video)/[^"]+)(")',
                 lambda m: m.group(1)+b64(m.group(2))+m.group(3), html)
 html = re.sub(r'url\((/(?:images|logos)/[^)]+)\)', lambda m: 'url('+b64(m.group(1))+')', html)
 css = re.sub(r'url\(["\']?(/(?:images|logos)/[^)"\']+)["\']?\)', lambda m: 'url('+b64(m.group(1))+')', css)
