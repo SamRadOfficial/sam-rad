@@ -29,6 +29,8 @@ const nextConfig = {
       { source: '/home', destination: '/', permanent: true },
       { source: '/about', destination: '/meet-sam', permanent: true },
       { source: '/contact', destination: '/book', permanent: true },
+      { source: '/booking', destination: '/book', permanent: true },
+      { source: '/hire', destination: '/book', permanent: true },
       { source: '/books', destination: '/body-of-work#books', permanent: true },
       { source: '/radicalnext', destination: '/body-of-work#radical-next', permanent: true },
       { source: '/radical-next-book', destination: '/body-of-work#radical-next', permanent: true },

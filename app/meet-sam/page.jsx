@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import { PhotoHero, CtaBreak, TestimonialBanner, BookBar, Bureau } from '@/components/Blocks';
-import { meta, SITE } from '@/lib/site';
+import { meta } from '@/lib/site';
 
 export const metadata = meta({
   title: 'Meet Sam | Sam Rad, The Change Futurist',
@@ -48,7 +48,7 @@ export default function MeetSam() {
                   <p>Sam Rad (born Samantha Radocchia) is an anthropologist who spent twenty years inside technology revolutions, founding four companies through the rise of e-commerce, blockchain, and AI, and learning one thing above all: <em>change has a pattern.</em></p>
                   <p>With the curiosity of an anthropologist, the instinct of a tech founder, the candor of a friend, and the calm of an ex-competitive skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
                   <p>She says the things other speakers won&apos;t, and she says them with warmth. Her talks lift the overwhelm, hand the room a simple way to read what&apos;s happening, and end on the promise every anxious audience needs to hear: <strong>we&apos;re going to be OK.</strong></p>
-                  <p>Managed by <a href={SITE.bureau.mailto}>Brandy Gibson</a> at Executive Speakers Bureau, Sam Rad is the speaker you book when your people are facing change and you need them to walk out ready for it.</p>
+                  <p>Managed by Brandy Gibson at Executive Speakers Bureau, Sam Rad is the speaker you book when your people are facing change and you need them to walk out ready for it.</p>
                 </div>
                 <div className="stat-row">
                   <div><div className="n">5</div><div className="l">Continents</div></div>

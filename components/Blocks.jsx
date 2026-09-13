@@ -7,16 +7,20 @@ import featuredIn from '@/data/featured-in.json';
 const LOGO_FILES = Object.fromEntries(clients.filter((c) => c.file).map((c) => [c.name, c]));
 import IndustryIcon from './IndustryIcon';
 
-// The agent mailto is a booking path and stays live everywhere: some buyers would
-// rather email a named person than fill in a form, and it is already CC'd to Sam.
-// The bureau's own URL is different. It lands on a page with its own booking form,
-// so linking it next to a "Book Sam" button hands the lead to a third party at the
-// moment of conversion. Pass `linked` only where the page is not asking for a
-// booking (press, CV). Do not set it on a page with a CTA.
+// Plain text by default, no links at all. Two reasons, both learned the hard way:
+// the bureau's own URL carries its own booking form, so linking it beside a
+// "Book Sam" button hands the lead to a third party at the moment of conversion;
+// and `mailto:` is blocked on plenty of corporate machines, where it fails silently
+// and readers report the link as broken. The credit is a trust signal, not a call to
+// action, and the CTA sits right next to it.
+//
+// `linked` is for pages that are not asking for a booking (press, CV). There the
+// agent's address is printed in full as well as linked, so a blocked mailto still
+// leaves something to copy. Never set `linked` on a page with a CTA.
 export function Bureau({ light, linked }) {
   return (
     <div className={light ? 'bureau-line light' : 'bureau-line'}>
-      Managed by <a href={SITE.bureau.mailto}>{SITE.bureau.agent}</a> at{' '}
+      Managed by {SITE.bureau.agent} at{' '}
       {linked ? (
         <a href={SITE.bureau.orgUrl} target="_blank" rel="noopener noreferrer">{SITE.bureau.org}</a>
       ) : (
@@ -119,10 +123,10 @@ export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, p
           <Link href={href || '/book'} className="btn btn-mint">{btn}</Link>
         )}
         {bureau && (
-          // Sits directly under the Book Sam button, so the bureau's own URL stays
-          // unlinked here for the reason given on the Bureau component above.
+          // Sits directly under the Book Sam button. Plain text, no links, for the
+          // reasons on the Bureau component above.
           <div className="bureau">
-            Managed by <a href={SITE.bureau.mailto}>{SITE.bureau.agent}</a> at {SITE.bureau.org}
+            Managed by {SITE.bureau.agent} at {SITE.bureau.org}
           </div>
         )}
       </div>

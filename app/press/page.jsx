@@ -24,7 +24,7 @@ export default function Press() {
           short
           position="center 26%"
           lead="Coverage of Sam's work across technology, supply chain, and the future of business."
-          note={<span className="bureau-line light">Interview requests: <a href={SITE.bureau.mailto}>Brandy Gibson</a> at <a href={SITE.bureau.orgUrl} target="_blank" rel="noopener noreferrer">Executive Speakers Bureau</a></span>}
+          note={<span className="bureau-line light">Interview requests: Brandy Gibson at <a href={SITE.bureau.orgUrl} target="_blank" rel="noopener noreferrer">Executive Speakers Bureau</a>, <a href={SITE.bureau.mailto}>brandy@executivespeakers.com</a></span>}
           caption="CRMC · Chicago"
         >
           In the <span className="mint-fill">press.</span>

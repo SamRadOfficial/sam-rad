@@ -480,9 +480,15 @@ linking it beside a "Book Sam" button hands the lead to a third party at the mom
 conversion, and as of the September audit that page still calls *Radical Next*
 upcoming.
 
-- **Agent mailto stays live everywhere.** It is a second booking path, not leakage:
-  some buyers would rather email a named agent than fill in a form, and it is already
-  CC'd to Sam.
+- **No `mailto:` anywhere it is the only affordance.** Corrected 12 Sep 2026 after
+  readers reported the agent link as broken: `mailto:` is blocked on many corporate
+  machines and fails **silently**, so a name that is only a mailto looks like a dead
+  link. Where an address is genuinely the right channel (`/press`, and the agent card
+  on `/book`), **print the address as visible text** and wrap that in the mailto, so a
+  blocked handler still leaves something to copy. Everywhere else the credit is plain
+  text and the Book Sam button carries the action.
+- **Redirect aliases** `/booking` and `/hire` point at `/book`, alongside `/contact`.
+  Cheap insurance against what people type.
 - **Bureau URL is linked only where the page is not asking for a booking:** `/press`
   (interview requests genuinely should reach the agent) and `/cv` (institutional
   context). `Bureau` takes a `linked` prop for this. Do not set it on a page with a CTA.
