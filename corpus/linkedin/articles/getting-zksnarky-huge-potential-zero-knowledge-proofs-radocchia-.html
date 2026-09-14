@@ -1,0 +1,147 @@
+<html>
+<head>
+  <title>Getting zkSNARKy: The Huge Potential of Zero-Knowledge Proofs</title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: 744px;
+      font-family: Source Serif Pro, serif;
+      line-height: 32px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 21px;
+    }
+    h1, h2, h3 {
+      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    }
+    h1 a, h1 a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1 {
+      line-height: 48px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 42px;
+      margin: 32px 0 20px;
+    }
+    h2 {
+      line-height: 32px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      margin: 28px 0;
+    }
+    h3 {
+      line-height: 28px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 21px;
+      margin: 24px 0;
+    }
+    p {
+      margin: 32px 0;
+    }
+    .created, .published {
+      color: rgba(0, 0, 0, 0.55);
+      font-size: 15px;
+      line-height: 15px;
+      margin: 20px 0;
+    }
+    .created + .published {
+      margin-top: -12px;
+    }
+    blockquote {
+      font-family: Georgia, Source Serif Pro, serif;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 36px;
+      margin: 48px 120px;
+      text-align: center;
+    }
+    a {
+      word-wrap: break-word;
+      outline: none;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      color: #008CC9;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #8C68CB;
+    }
+    .center {
+      text-align: center;
+    }
+    iframe {
+      display: block;
+      margin: 44px auto;
+    }
+    *:not(pre) + pre, pre:first-of-type {
+      margin-top: 32px;
+      padding-top: 32px;
+    }
+    pre:only-of-type {
+      margin: 32px 0;
+      padding: 32px;
+    }
+    pre {
+      background: #F3F6F8;
+      overflow-x: auto;
+      display: block;
+      font-size: 13px;
+      font-family: monospace;
+      line-height: 13px;
+      padding: 0 32px 32px;
+      white-space: pre;
+    }
+    a.embedded {
+      background: #F3F6F8;
+      display: block;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+    .slate-image-embed__resize-full-width img {
+      width: 100%;
+    }
+    .series-logo {
+      width: 48px;
+      height: 48px;
+      box-sizing: border-box;
+      background-clip: content-box;
+      border: 4px solid transparent;
+      border-radius: 6px;
+      object-fit: scale-down;
+      float: left;
+    }
+    .series-title {
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: top;
+    }
+    .series-description {
+      color: rgba(0,0,0,.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    div {
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body>
+    <img src="https://media.licdn.com/mediaC4E12AQG4F790D1Ukiw" alt="Photo by Dayne Topkin on Unsplash" title="Photo by Dayne Topkin on Unsplash" />
+      <h1><a href="https://www.linkedin.com/pulse/getting-zksnarky-huge-potential-zero-knowledge-proofs-radocchia-">Getting zkSNARKy: The Huge Potential of Zero-Knowledge Proofs</a></h1>
+    <p class="created">Created on 2019-08-28 20:44</p>
+  <p class="published">Published on 2019-10-02 19:35</p>
+  <div><p><em>The following is adapted from </em><a href="https://www.amazon.com/Bitcoin-Pizza-No-Bullshit-Guide-Blockchain-ebook/dp/B07TYHKVLF" target="_blank"><em>Bitcoin Pizza: The No-Bullshit Guide to Blockchain.</em></a></p><p>Fifteen years ago, most people were a little suspicious of providing payment details through the web. Now, we’ve gotten used to the idea that internet transactions are secure, and many of us do a large percentage of our shopping over the internet.</p><p>At the other end of the spectrum, many of us are becoming increasingly concerned about the amount of data the likes of Google and Facebook collect about us as we use their services. Despite this unease, we may not see much alternative to complying with their rules. They operate by harvesting our data, and we want to keep using them.</p><p>A recently developed security methodology that is becoming more common could represent a new way of handling security, both online and offline. The protocol is known as “zero-knowledge proof.” There are many types of such proofs, one of the most prominent being zkSNARK, which stands for “zero-knowledge succinct non-interactive argument of knowledge.”</p><p>The mathematics behind this methodology is so complicated that even Vitalik Buterin, the co-founder of Ethereum—the second-most popular cryptocurrency—calls it “moon math.” I’m guessing you don’t want to learn moon math, so instead of getting into the mathematical details, let’s take a higher-level look at what zkSNARK was designed to do and how this relates to blockchain.</p><p>In essence, a zero-knowledge proof is a way for one party to prove to another party that they know a secret piece of information, such as a password, without having to reveal the information itself.</p><p>Let’s say Bob wants to get into a bar in a state where the age limit for consuming alcohol is twenty-one. Of course, the simplest thing would be for him to show the bouncer his driver’s license with his date of birth on it. But what if he doesn’t want to reveal his date of birth or actual age, just that he is in fact twenty-one or older?</p><p>In that case, Bob would have to have a blockchain-based zero-knowledge-based ID card. The bouncer would scan the card to determine if Bob fits the age criteria for getting into the bar, without learning Bob’s actual age. All the bouncer will learn is either yes, Bob meets the requirement, or no, he does not.</p><p>This is a trivial, if intriguing, example that has much greater applicability. One of the most popular cryptocurrencies, Zcash, uses zkSNARK to substantiate the validity of transactions without revealing—that is, while keeping secure—the details of the transactions themselves. The approach, despite the underlying mathematical complexity, turns out to be highly computationally efficient.</p><p>Let’s consider another example. The zkSNARK methodology has wide applicability in different types of enterprise blockchains, such as the one my company Chronicled launched for the pharmaceutical industry. Pharmaceutical drugs are placed in containers with serial numbers that are then shipped globally. In this case, zkSNARK technology can be used to prove that a certain batch of pharmaceuticals with a specific serial number has been shipped from one party to another, without revealing the actual serial numbers or any of the other specifics of the transaction, such as the name or amount of the drug being shipped.</p><p>To return to Bob: if he has a certain medical condition requiring that he take a certain drug, zkSNARK technology can confirm both facts without revealing the details of either the condition or the drug. If, rather than wanting to get into a bar, Bob is traveling to a foreign country, a “smart” passport could verify that he is a citizen of another country, such as the United States, allowed to travel there, without actually revealing the fact that he is an American citizen. There are many types of data, such as sensitive information about your genotype, where privacy is a real and far-from-trivial concern.</p><p>It’s not too difficult to see how this approach could be used to verify transactions without revealing identifying details of the purchaser, or to utilize websites that thrive on collecting data, while simultaneously protecting privacy.</p><p>The underlying issues here are privacy, security, and the need to verify without having to trust. These methods allow peer-to-peer transactions to be made without revealing the details of the transactions even to the parties themselves, much less to third parties such as banks and governments.</p><p>The objection has been made that this could be done with criminal intent, and it could. But the same is true of many advances in technology. Criminality didn’t begin with the blockchain, and it won’t end there, either. Meanwhile, the security of certain types of data is critically important. Methodologies such as zkSNARK are ways of ensuring privacy in an environment where trust has become an increasingly rare commodity.</p><p>&nbsp;- - -</p><p><em>Hungry for more? For more insights on how emerging technologies like blockchain will impact your business and daily life, be sure to check out </em><a href="https://samantharadocchia.com/" target="_blank"><em>Samantha Radocchia</em></a><em>’s #1 Best Selling book — </em><a href="https://www.amazon.com/Bitcoin-Pizza-No-Bullshit-Guide-Blockchain/dp/1544504438/ref=sr_1_1?keywords=bitcoin+pizza&amp;qid=1566594458&amp;s=gateway&amp;sr=8-1" target="_blank"><em>Bitcoin Pizza: The No-Bullshit Guide to Blockchain&nbsp;</em></a></p><div class="slate-resizable-image-embed slate-image-embed__resize-middle" data-image-href="http://geni.us/bitcoinpizza"><a href="http://geni.us/bitcoinpizza" target="_blank"><img alt="Bitcoin Pizza: The No-Bullshit Guide to Blockchain" data-media-urn="urn:li:digitalmediaAsset:C4E12AQGpwJqMWAHaUg" src="https://media.licdn.com/dms/image/v2/C4E12AQGpwJqMWAHaUg/article-inline_image-shrink_400_744/article-inline_image-shrink_400_744/0/1567025107290?e=1790812800&amp;v=beta&amp;t=1TMF4QGd-p5p3OaBDrb1b9h9TeAeJkEkNY8cqpDosRU"></a></div><hr><p><em>This article first appeared in </em><a href="https://minutes.co/" target="_blank"><em>Minutes.</em></a></p><p><em>Samantha Radocchia is an early blockchain pioneer and advocate who combines the mindsets of an anthropologist and a technologist. She’s led corporate trainings at Fortune 100 companies, governments, and the United Nations, educating leaders on the technologies and cultural shifts that will shape their organizations—and daily lives—in the decades to come. Sam is a contributor to Forbes and was named to their 30 Under 30 List in 2017. A three-time entrepreneur, Sam holds several patents and is a cofounder of Chronicled, an enterprise blockchain company focused on supply chain. She now consults executives on emerging technologies and delivers keynotes at events worldwide as she works to build her next company.</em></p><p><br></p></div>
+</body>
+</html>
