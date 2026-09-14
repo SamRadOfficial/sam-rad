@@ -58,6 +58,11 @@ def clean(h):
     &amp; is deliberately left alone; see the module docstring.
     """
     h = re.sub(r'<br\s*/?>', '<br/>', h)
+    # <ul><li> from the JSON becomes hanging bullet lines; ReportLab has no list tag.
+    h = re.sub(r'<ul>', '', h)
+    h = re.sub(r'</ul>', '', h)
+    h = re.sub(r'<li>', '<br/>&bull;&nbsp;', h)
+    h = re.sub(r'</li>', '', h)
     # ReportLab's mini-HTML spells strikethrough <strike>, not <s>.
     h = h.replace('<s>', '<strike>').replace('</s>', '</strike>')
     h = re.sub(r"<span class='chip filed'>(.*?)</span>",

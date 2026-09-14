@@ -540,6 +540,15 @@ Three traps in the PDF builder, each of which shipped once:
   **both** `pdftotext` and `pdftotext -layout`: every entry must start on its own line
   with date, title, and organization.
 
+**Entry shape, decided 14 Sep 2026: prose paragraph plus labeled sub-lines, not
+bullets.** The role is four or five sentences of prose, voice intact. Structured facts
+(products, networks, verticals) go in `<span class='sub'>` lines with a bold label:
+`Products:`, `Networks:`, `Built:`. That is what a recruiter or ATS wants from bullets
+without the document reading as a job application. A full bullet version was built and
+rejected: it pushed the professional PDF from four pages to five and flattened the
+argument in every sentence into a feature. The renderers all handle `<ul><li>` if it
+is ever wanted, but do not reach for it.
+
 A row in any `cv.json` section can be `{"head": "..."}` instead of label and html.
 That renders a subhead: it is what groups patents into Granted and Filed, and what
 puts the Concurrent Appointments break inside Ventures and Appointments.
