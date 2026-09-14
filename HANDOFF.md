@@ -698,6 +698,11 @@ already shipped or been superseded.
   - Three name variants in use across the set: Sam Rad, Samantha Radocchia, and both.
   - Priority 1, fix first: Executive Speakers Bureau (the bureau the site points at),
     CAA, Gotham Artists, Keppler, Leading Authorities, and the old blog footer.
+  - **Content Authenticity Initiative, Member, 2023 to present.** Added to the CV on
+    14 Sep 2026 after a LinkedIn review found it listed only as a skill. It sits in
+    Advisory, second row, and `content provenance (C2PA)` was added to Technical
+    skills. Sam's stated capacity is member, not advisor or contributor; do not
+    upgrade it. The hero focus-areas line was deliberately left alone.
   - The blog footer naming Kate DesRosier at Gotham Artists: **DONE, 12 Sep 2026.**
     Sam removed every mention from the Squarespace archive before the Sept 22
     retirement.

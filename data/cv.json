@@ -178,11 +178,11 @@
     "education": [
       {
         "label": "2013",
-        "html": "<b>MA, Media, Culture, and Communication: Technology &amp; Society</b> · New York University<br/>Thesis: <i>iCreated a Monster: Consumer Alienation and the Corporate Alien-Nation in the Digital Age</i>"
+        "html": "<b>MA, Media, Culture, and Communication: Technology &amp; Society</b> · New York University · summa cum laude<br/>Thesis: <i>iCreated a Monster: Consumer Alienation and the Corporate Alien-Nation in the Digital Age</i>"
       },
       {
         "label": "2011",
-        "html": "<b>BA, Anthropology and English (Linguistics)</b> · Colgate University<br/>Anthropology thesis: <i>Constructing Identity in Virtual and Simulated Landscapes: Ethnography of Second Life</i><br/>English thesis: <i>Laundering Utopia for May 1968: The rhetorical switch from revolution to desire in 1960s–1970s Utopian and Science Fiction</i>"
+        "html": "<b>BA, Anthropology and English (Linguistics)</b> · Colgate University · magna cum laude<br/>Anthropology thesis: <i>Constructing Identity in Virtual and Simulated Landscapes: Ethnography of Second Life</i><br/>English thesis: <i>Laundering Utopia for May 1968: The rhetorical switch from revolution to desire in 1960s–1970s Utopian and Science Fiction</i>"
       }
     ],
     "training": [
@@ -209,16 +209,20 @@
         "html": "Counterfeit and illicit market data · Commissioned briefing, March 2026"
       },
       {
-        "label": "Federal Reserve Bank of Chicago",
-        "html": "Distributed ledger applications in payments · Commissioned briefing, September 2021"
+        "label": "Content Authenticity Initiative",
+        "html": "Content provenance and authentication standards for media · Member, 2023 to present"
       },
       {
-        "label": "United Nations",
-        "html": "Emerging technology and illicit trade · Working Group on Sustainable Production and Consumption, 2018"
+        "label": "Federal Reserve Bank of Chicago",
+        "html": "Distributed ledger technologies for countering illicit finance · Commissioned briefing, September 2021"
       },
       {
         "label": "World Economic Forum",
-        "html": "Blockchain and supply chain provenance · Commissioned briefing, 2018"
+        "html": "AI, blockchain, and machine learning for supply chain security and provenance · Commissioned briefing, 2018"
+      },
+      {
+        "label": "United Nations",
+        "html": "Frontier technologies for responsible production and consumption (SDG 12), supply chains, logistics, and countering illicit trade · Member, Working Group on Sustainable Production and Consumption, 2017 to 2018"
       }
     ],
     "awards": [
@@ -234,7 +238,7 @@
     "skills": [
       {
         "label": "Technical",
-        "html": "AI and large language models · agentic design · natural language processing · distributed ledgers and applied cryptography · Python, Ruby, Solidity, JavaScript · IoT and hardware design · additive manufacturing"
+        "html": "AI and large language models · agentic design · natural language processing · distributed ledgers and applied cryptography · content provenance (C2PA) · Python, Ruby, Solidity, JavaScript · IoT and hardware design · additive manufacturing"
       },
       {
         "label": "Method",
