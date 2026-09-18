@@ -423,10 +423,44 @@ DNS zone is edited inside Squarespace. `A @ → 216.198.79.1` and
 `CNAME www → 5525d82313f37756.vercel-dns-017.com` point at Vercel.
 `CNAME archive → ext-cust.squarespace.com` serves the old site.
 
-**Do not remove sam-rad.com from Squarespace.** Squarespace hosts the DNS zone
-including five Google Workspace MX records. Disconnecting risks taking the zone —
-and her email — with it. It shows "DNS Error" in Squarespace; that is expected and
-correct.
+**Do not remove sam-rad.com from Squarespace** while the zone still lives there.
+Squarespace hosts the DNS zone including five Google Workspace MX records.
+Disconnecting takes the zone, and her email, with it. It shows "DNS Error" in
+Squarespace; that is expected and correct.
+
+### Moving DNS to GoDaddy
+
+Started 14 September 2026, ahead of the Sept 22 date. The principle: **build the new
+zone at GoDaddy first and only flip nameservers once both zones answer identically.**
+Then propagation, which can take up to 48 hours, is invisible, because whichever
+nameserver a resolver reaches gives the same answer.
+
+`scripts/dns-snapshot.sh` exists for this. Run it as `before`, do the work, run it as
+`after`, and diff. An empty diff is the goal. It queries 1.1.1.1 directly rather than
+the local resolver, which caches and will report no change when everything changed.
+
+The order, and it is not negotiable:
+
+1. **Snapshot.** `./scripts/dns-snapshot.sh before`. Also screenshot the Squarespace
+   DNS panel, because a `dig` sweep only finds records you thought to ask about.
+2. **Recreate every record at GoDaddy**, in GoDaddy's own DNS management, while the
+   nameservers still point at Squarespace. Nothing goes live yet, so this is safe.
+   The easy records to forget are not A and CNAME, they are **TXT**: SPF, the
+   `google._domainkey` DKIM record, `_dmarc`, and any domain-verification strings.
+   Losing those does not stop mail; it quietly sends it to spam, which is worse
+   because nobody notices for a week.
+3. **Flip the nameservers** at GoDaddy from Squarespace's to GoDaddy's own.
+4. **Wait, then verify.** `./scripts/dns-snapshot.sh after`, diff against `before`.
+   Separately, send and receive a test email in both directions. MX resolving is not
+   the same as mail flowing.
+5. **Only then** deal with Squarespace. `archive.sam-rad.com` still CNAMEs to
+   `ext-cust.squarespace.com`, so cancelling the subscription kills it. Either move
+   that content off first or retire the subdomain deliberately with redirects. Do not
+   discover this after cancelling.
+
+**Do not lower TTLs first.** It is the usual advice and it is wrong here: TTLs live in
+the Squarespace zone, so lowering them means editing the thing you are leaving, then
+waiting for the old TTL to expire anyway. Identical zones make the TTL question moot.
 
 **Other domains.** `samrad.ai`, `samradocchia.com`, `samradofficial.com`, and
 `samantharadocchia.com` all redirect at GoDaddy and were disconnected from Squarespace
@@ -463,14 +497,6 @@ about 30 seconds; Vercel shows an "online" count on the Analytics tab. Both are
 blocked by ad blockers and Brave shields, so test in a clean browser. Vercel's
 "Get Started" panel is onboarding, not an off switch: Web Analytics is on by default
 and the panel disappears once the first event lands.
-
-**/cv** is the research and institutional page: Samantha Radocchia, not Sam Rad. It
-renders from `data/cv.json`, and two PDFs render from the **same** JSON via
-`python3 scripts/build-cv-pdfs.py` into `public/cv/`. Edit the JSON, rerun the script,
-ship both PDFs. Never edit the PDFs by hand or they drift from the page. The
-professional PDF leads with patents and ventures; the academic one with education
-and fieldwork and adds a research-interests paragraph. The page itself uses the
-narrative order with the at-a-glance panel.
 
 ### Bureau credit, linking policy
 
@@ -668,9 +694,16 @@ These were the items still live when that file was retired. Everything else in i
 already shipped or been superseded.
 
 **Sam's to do**
-- **Export LinkedIn posts.** IN PROCESS as of 12 Sep 2026. Settings, Data Privacy,
-  Get a copy of your data, Posts. The voice corpus in `corpus/` needs it, and so does
-  the dispatch backfill.
+- **Export LinkedIn posts. DONE, 14 Sep 2026.** In the repo at `corpus/linkedin/`:
+  904 posts and 53 articles, all public visibility. Read `corpus/linkedin/README.md`
+  first; the corpus contains two distinct eras of writing and the guide must weight
+  the recent one. This unblocks two things:
+  - **The voice guide.** Being done in a **separate thread**, not this one, and the
+    output lands in `corpus/VOICE.md`. Until that file exists, `VOICE-NOTES.md` is the
+    reference. **Read `corpus/VOICE.md` before writing any copy for the site once it
+    exists.** That single line is the entire coupling between the two threads.
+  - **The dispatch backfill** on `/writing`. Eighteen posts on the site; the export is
+    the pool to draw from. Waits on the voice guide.
 - **Bureau listing audit. DONE, 12 Sep 2026**, recorded in `sam-rad-bureau-audit.xlsx`
   (not in this repo; Sam holds it). 31 listings audited, ranked by severity and
   priority. **The remaining work is correction copy, which Sam is writing with her
