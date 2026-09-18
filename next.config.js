@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 
-// The Squarespace site stays live at this host after cutover, noindexed.
-// Archive content with no equivalent on the new site (blog, events,
-// glossary) redirects here so nothing 404s. As dispatches are backfilled,
-// add a bespoke /blog/:slug -> /writing/:slug rule above the archive catch-all.
-const ARCHIVE = 'https://archive.sam-rad.com';
+// ARCHIVE is no longer referenced by any rule. Until 14 Sep 2026 eight rules
+// redirected here, which made the Squarespace subscription load-bearing: cancelling
+// it would have sent every old blog URL on the internet into a dead domain, which is
+// worse than a 404 because it leaves the site entirely. Those rules now land on real
+// pages. The constant stays only so that a bespoke
+// /blog/:slug -> /writing/:slug rule can be added above the catch-all as dispatches
+// are backfilled. Do not point live traffic at it again.
+const ARCHIVE = 'https://archive.sam-rad.com'; // eslint-disable-line no-unused-vars
 
 // Note: samradsite.vercel.app -> sam-rad.com is handled by a 301 configured in
 // the Vercel dashboard (Project, Settings, Domains), not here. Vercel redirects
@@ -85,21 +88,24 @@ const nextConfig = {
       { source: '/blog/why-the-us-tax-system-is-preventing-crypto-adoption-for-digital-nomads-n36h3-s3yct', destination: '/writing/why-the-us-tax-system-is-preventing-crypto-adoption-for-digital-nomads', permanent: true },
       { source: '/blog/will-quantum-computing-break-encryption', destination: '/writing/will-quantum-computing-break-encryption', permanent: true },
 
-      // ── Archive content preserved on the archive host ────────────────────
-      { source: '/blog/:slug*', destination: `${ARCHIVE}/blog/:slug*`, permanent: true },
+      // ── Legacy paths with no equivalent page ─────────────────────────────
+      // These used to point at archive.sam-rad.com. They land on this site now, so
+      // retiring Squarespace cannot break them. A reader who followed a five-year-old
+      // link gets the closest live section rather than a dead host.
+      { source: '/blog/:slug*', destination: '/writing', permanent: true },
       // /press now exists on this site. Old press detail pages were thin stubs
       // (title + screenshot, no article link), so they fold into the new index.
       { source: '/press/:path+', destination: '/press', permanent: true },
-      { source: '/events/all', destination: `${ARCHIVE}/events/all`, permanent: true },
-      { source: '/events/all/:path*', destination: `${ARCHIVE}/events/all/:path*`, permanent: true },
-      { source: '/bitcoin-pizza-glossary', destination: `${ARCHIVE}/bitcoin-pizza-glossary`, permanent: true },
-      { source: '/bitcoin-pizza-glossary/:path*', destination: `${ARCHIVE}/bitcoin-pizza-glossary/:path*`, permanent: true },
-      { source: '/glossary', destination: `${ARCHIVE}/bitcoin-pizza-glossary`, permanent: true },
-      { source: '/bitcoin', destination: `${ARCHIVE}/bitcoin`, permanent: true },
+      { source: '/events/all', destination: '/speaking', permanent: true },
+      { source: '/events/all/:path*', destination: '/speaking', permanent: true },
+      { source: '/bitcoin-pizza-glossary', destination: '/body-of-work#bitcoin-pizza', permanent: true },
+      { source: '/bitcoin-pizza-glossary/:path*', destination: '/body-of-work#bitcoin-pizza', permanent: true },
+      { source: '/glossary', destination: '/body-of-work#bitcoin-pizza', permanent: true },
+      { source: '/bitcoin', destination: '/body-of-work#bitcoin-pizza', permanent: true },
       // /resources and /resources/:slug are real pages now. The archive only ever
       // had one resource page and it is recreated at the same slug, so no rule here:
       // a catch-all would shadow the real pages the way /press did.
-      { source: '/jobs', destination: `${ARCHIVE}/jobs`, permanent: true },
+      { source: '/jobs', destination: '/meet-sam', permanent: true },
     ];
   },
 };

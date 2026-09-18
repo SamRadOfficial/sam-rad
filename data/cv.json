@@ -241,8 +241,20 @@
         "html": "AI and large language models · agentic design · natural language processing · distributed ledgers and applied cryptography · content provenance (C2PA) · Python, Ruby, Solidity, JavaScript · IoT and hardware design · additive manufacturing"
       },
       {
-        "label": "Method",
-        "html": "Ethnography and participant observation · open-source intelligence · foresight and scenario work · product and protocol design"
+        "label": "Domains",
+        "html": "Artificial intelligence and large language models (LLMs) · blockchain and distributed systems · cybersecurity · supply chain security · trust and safety · fraud and financial crime · synthetic media"
+      },
+      {
+        "label": "Research and method",
+        "html": "Anthropology · ethnography and participant observation · open-source intelligence (OSINT) · intelligence analysis · foresight and strategic forecasting · scenario work · research and development (R&amp;D) · product and protocol design"
+      },
+      {
+        "label": "Business",
+        "html": "Entrepreneurship and early-stage startups · product development · marketing · innovation management · business strategy · negotiation"
+      },
+      {
+        "label": "Communication",
+        "html": "Keynote speaking · public speaking · storytelling"
       },
       {
         "label": "Certifications",
@@ -250,7 +262,7 @@
       },
       {
         "label": "Earlier",
-        "html": "Competitive skydiver, Connecticut Parachutists, 2006–2010: 700+ jumps, four-way formation, competed internationally. Assistant Director, <i>Othello</i>, Theatre for a New Audience, 2009."
+        "html": "Competitive skydiver, 2006–2010. Assistant Director, <i>Othello</i>, Theatre for a New Audience, 2009."
       }
     ]
   }

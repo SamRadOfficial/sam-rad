@@ -453,10 +453,16 @@ The order, and it is not negotiable:
 4. **Wait, then verify.** `./scripts/dns-snapshot.sh after`, diff against `before`.
    Separately, send and receive a test email in both directions. MX resolving is not
    the same as mail flowing.
-5. **Only then** deal with Squarespace. `archive.sam-rad.com` still CNAMEs to
-   `ext-cust.squarespace.com`, so cancelling the subscription kills it. Either move
-   that content off first or retire the subdomain deliberately with redirects. Do not
-   discover this after cancelling.
+5. **Squarespace is no longer load-bearing, as of 14 Sep 2026.** Until then, eight
+   rules in `next.config.js` redirected to `archive.sam-rad.com`, so cancelling the
+   subscription would have sent every old blog URL into a dead host, which is worse
+   than a 404 because the visitor leaves the site entirely. Those eight now land on
+   live pages: `/blog/:slug*` and `/events/all*` to `/writing` and `/speaking`,
+   the glossary, `/bitcoin` and `/glossary` to `/body-of-work#bitcoin-pizza`, and
+   `/jobs` to `/meet-sam`. Grep for `ARCHIVE` before cancelling and expect zero rules
+   using it; the constant is kept only as a reference for backfill work.
+   The `archive` CNAME can stay in the zone harmlessly, or be dropped with the
+   subscription.
 
 **Do not lower TTLs first.** It is the usual advice and it is wrong here: TTLs live in
 the Squarespace zone, so lowering them means editing the thing you are leaving, then
@@ -656,8 +662,12 @@ it serves both `archive.sam-rad.com` and the DNS zone.
    Higher Education have content available but the smallest buyer groups. Ideally build
    each one *after* booking in that sector, so it answers what a real room asked.
 
-2. **Sept 22 task:** check Search Console, move DNS to GoDaddy, retire Squarespace.
-   Order matters — content must move before Squarespace is cancelled.
+2. **DNS move to GoDaddy**, started 14 Sep 2026, ahead of the Sept 22 date. Runbook in
+   §8. Squarespace retirement is now **decoupled** from it: no redirect depends on the
+   archive any more, so the two can happen independently and in either order. Still
+   outstanding before cancelling: decide whether the 103 retired blog posts are
+   backfilled into `/writing` as dispatches or simply let go. Until then, every old
+   blog URL lands on the `/writing` index rather than on its own post.
 3. **New sizzle reel** cut for the **industry pages**, replacing the placeholder.
    Separate from the homepage hero reel in item 0; that one is a silent background
    loop, this one is a watchable reel with sound.
