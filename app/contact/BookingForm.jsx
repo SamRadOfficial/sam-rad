@@ -71,6 +71,12 @@ export default function BookingForm() {
   return (
     <form className="form" onSubmit={handleSubmit} noValidate={false}>
       <h3>Tell us about your event</h3>
+      {/* /contact is the URL people type for anything, but this form only asks about
+          events. One line routes everyone else before they hit fields that do not
+          apply to them. */}
+      <p className="form-route">
+        Press or interview request? <a href="/press">Go to the press page</a>.
+      </p>
 
       <div className="frow">
         <div><label htmlFor="name">Your name</label><input id="name" name="name" autoComplete="name" required /></div>

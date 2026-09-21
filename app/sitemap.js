@@ -17,7 +17,7 @@ export default function sitemap() {
     ['/podcasts', 0.6],
     ['/meet-sam', 0.8],
     ['/body-of-work', 0.7],
-    ['/book', 0.9],
+    ['/contact', 0.9],
   ].map(([p, priority]) => ({ url: `${SITE.url}${p}`, lastModified: now, priority }));
 
   return [

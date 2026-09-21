@@ -516,11 +516,11 @@ upcoming.
   readers reported the agent link as broken: `mailto:` is blocked on many corporate
   machines and fails **silently**, so a name that is only a mailto looks like a dead
   link. Where an address is genuinely the right channel (`/press`, and the agent card
-  on `/book`), **print the address as visible text** and wrap that in the mailto, so a
+  on `/contact`), **print the address as visible text** and wrap that in the mailto, so a
   blocked handler still leaves something to copy. Everywhere else the credit is plain
   text and the Book Sam button carries the action.
-- **Redirect aliases** `/booking` and `/hire` point at `/book`, alongside `/contact`.
-  Cheap insurance against what people type.
+- **Redirect aliases** `/book`, `/booking` and `/hire` point at `/contact`, the form's
+  canonical URL since 21 Sep 2026. Cheap insurance against what people type.
 - **Bureau URL is linked only where the page is not asking for a booking:** `/press`
   (interview requests genuinely should reach the agent) and `/cv` (institutional
   context). `Bureau` takes a `linked` prop for this. Do not set it on a page with a CTA.
@@ -609,6 +609,42 @@ it serves both `archive.sam-rad.com` and the DNS zone.
 
 ## 9. Roadmap
 
+### Booking form moved to `/contact`: DONE 21 September 2026
+
+The form lived at `/book`, which on an author's site reads as the books. Two
+failures proved the point: the CV linked both book titles to the booking form by
+mistake, and the URL was about to travel bare in the YouTube description and the
+bureau correction copy. First planned as `/booking`, then changed to `/contact` on
+21 Sep once Sam set the rule below, because the form's URL no longer needs to be
+self-describing; it needs to be what people type.
+
+**The rule: every external booking link points at `/speaking`, never at the form.**
+YouTube, the bureau correction copy, business cards, slides, email signatures.
+`/speaking` makes the case and carries the button; a buyer dropped cold onto a form
+asking for event date and audience size is being asked to commit before being
+persuaded. The form is one click from `/speaking`.
+
+What shipped:
+
+- `app/book` moved to `app/contact`, canonical and sitemap follow.
+- **The redirect trap, handled.** `/contact` was itself a redirect *to* `/book`. That
+  rule was **deleted**, not reversed, because redirects run before pages and it would
+  have shadowed the new route. Same failure class as the `/press` loop in §1.
+- `/book`, `/booking` and `/hire` each resolve to `/contact` in **one hop**, verified by
+  walking every alias through the redirect table: zero loops, zero chains.
+- All fifteen internal links rewritten, including the default `href` in `CtaBreak`
+  (`Blocks.jsx`), which feeds every call-to-action band without appearing in a page
+  file. Built HTML carries zero `href="/book"`.
+- `/books` untouched, still `/body-of-work#books`.
+- **A routing line above the form**: "Press or interview request? Go to the press
+  page." `/contact` is what people type for anything, but the form only asks about
+  events.
+- The page headline stays "Book Sam Rad." and every button still reads "Book Sam". The
+  URL changed, not the language.
+- `channels/youtube.md` updated to `/speaking` in all four places.
+
+---
+
 0. **Hero sizzle reel. BUILT AND PARKED, 12 September 2026.** The plumbing is done and
    on `main`; the homepage is back on the still. Sam parked it because the clip's
    quality is not good enough and she will produce a new one. **Do not re-enable the
@@ -640,7 +676,41 @@ it serves both `archive.sam-rad.com` and the DNS zone.
      `ffmpeg -i in.mp4 -an -vf scale=1600:-2 -c:v libx264 -crf 27 -preset slow -movflags +faststart -pix_fmt yuv420p out.mp4`
      and `-c:v libvpx-vp9 -crf 38 -b:v 0 -row-mt 1` for the WebM.
 
-1. **Three more resource guides**, in this order and not all at once. Six lists is
+1. **Audit the site for AI discoverability and keywords.** Added 18 September 2026.
+   The site is fully indexed by Google (42 of 42 URLs) but nothing has checked how it
+   reads to the systems that increasingly do the recommending. This is the audit, not
+   the fix; it produces a list, and the fixes get scheduled after.
+
+   What to actually check:
+   - **Entity consistency.** Same job the bureau audit did off-site, done on-site.
+     Is Sam described identically in the Person schema, the meta descriptions, the
+     hero copy and the CV? Divergent job titles and company names are what make a
+     model hedge.
+   - **Schema coverage.** `/cv` has a Person block. Nothing else does. Candidates:
+     `Book` on Body of Work, `Event` once `/events` exists, `Article` on each writing
+     post, `FAQPage` where a page genuinely answers questions, `Organization` for
+     RADOC and Illicit Shadows, and `speakableSpecification` on the keynote copy.
+   - **Answerability.** Models quote passages that answer a question cleanly in one
+     place. Check whether "what is perceptual security", "what are the four moves"
+     and "what is the dip" each have a single quotable paragraph, or whether the
+     answer is scattered across three sections.
+   - **The stat citations.** Still uncited on Speaking, see below. An uncited number
+     is one a model will not repeat.
+   - **Keyword reality check.** Search Console query data against the terms the site
+     actually targets: `keynote futurist speaker`, `change management speaker`,
+     `future of [industry] speaker`. Where impressions are high and clicks are low,
+     the title and description are the problem, not the content.
+   - **Crawler access.** `robots.js` already allows GPTBot, OAI-SearchBot, ClaudeBot,
+     PerplexityBot and Google-Extended. Confirm from server logs that they are
+     actually crawling, which is the monthly check nobody has run yet.
+   - **The `/sources` idea from the Illicit Shadows brief applies here too.** A page
+     that makes claims citable is the highest-leverage thing a site can do for AI
+     search, and this site currently has none.
+
+   Do this **after** the DNS move settles, so Search Console data is not confounded by
+   a nameserver change.
+
+2. **Three more resource guides**, in this order and not all at once. Six lists is
    double the upkeep of three; four current lists beat six stale ones.
    - **Government & Public Sector — "Institutional Trust in a Synthetic Age."** The
      strongest candidate and Sam's own territory: perceptual security, Illicit Shadows,
@@ -662,37 +732,38 @@ it serves both `archive.sam-rad.com` and the DNS zone.
    Higher Education have content available but the smallest buyer groups. Ideally build
    each one *after* booking in that sector, so it answers what a real room asked.
 
-2. **DNS move to GoDaddy**, started 14 Sep 2026, ahead of the Sept 22 date. Runbook in
+3. **DNS move to GoDaddy.** The `/contact` rename above must be deployed and verified
+   first; do not let them land in the same window. Started 14 Sep 2026, ahead of the Sept 22 date. Runbook in
    §8. Squarespace retirement is now **decoupled** from it: no redirect depends on the
    archive any more, so the two can happen independently and in either order. Still
    outstanding before cancelling: decide whether the 103 retired blog posts are
    backfilled into `/writing` as dispatches or simply let go. Until then, every old
    blog URL lands on the `/writing` index rather than on its own post.
-3. **New sizzle reel** cut for the **industry pages**, replacing the placeholder.
+4. **New sizzle reel** cut for the **industry pages**, replacing the placeholder.
    Separate from the homepage hero reel in item 0; that one is a silent background
    loop, this one is a watchable reel with sound.
-4. **Bring back dispatch thumbnails** once the Writing archive has enough posts with
+5. **Bring back dispatch thumbnails** once the Writing archive has enough posts with
    distinct images. Removed 9 Sep 2026: four of the eight visible posts shared the same
    NYC portrait set, so the 96px column showed near-identical crops, and a crop that
    small carries no information anyway. The CSS rules are commented in `globals.css`
    next to `.disp`. Revisit at roughly twenty posts.
-5. **Re-industrialize the dispatch CTAs.** The sidebar on every writing post links to
+6. **Re-industrialize the dispatch CTAs.** The sidebar on every writing post links to
    `/speaking` with generic copy, and the industry dispatch feed only appears once a
    sector has two posts of its own. Both were deliberate on 9 Sep 2026: with 8 visible
    posts there was not enough per-sector content to justify pointing a healthcare
    reader at the healthcare keynote. Once the archive is backfilled, point the sidebar
    at the matching industry page (the `industrySlug` field on each post already
    carries it) and the feeds will reappear on their own.
-6. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
+7. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
    until the design settles. Studio would live at `/admin`. On-demand revalidation
    preferred over full-rebuild webhooks.
-7. **Responsive images.** Parked 9 Sep 2026. A phone downloads the same 2358px hero
+8. **Responsive images.** Parked 9 Sep 2026. A phone downloads the same 2358px hero
    as a desktop: 797KB where 195KB would do, a 75% saving on mobile. WebP and
    `fetchPriority` are already in place, so this is the remaining win. Two options:
    the cheap one adds a 900px WebP per hero plus a `srcset` to the `<picture>`
    elements in `Blocks.jsx`, about an hour; the thorough one converts all 38 `<img>`
    tags to Next's `Image`, about a day. Do the cheap one first.
-8. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
+9. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
    keep working in chat with the zip-and-copy loop. Worth revisiting for mechanical
    work (bulk migrations, repeated builds) while keeping copy and design decisions
    in chat, where the reasoning is discussed rather than just executed. A fresh
@@ -750,13 +821,35 @@ already shipped or been superseded.
     Sam removed every mention from the Squarespace archive before the Sept 22
     retirement.
 - **Review the industry page copy.** All nine except Healthcare are agent drafts.
+- **Update and curate the YouTube channel.** Added 18 Sep 2026.
+  `youtube.com/@samradofficial`, linked from the footer and listed in the Person
+  schema `sameAs`, so it is an entity source whether or not it is maintained.
+  - **Rebrand to The Change Futurist.** The site, the meta titles and the dispatch
+    byline all say The Change Futurist; the channel and much of the bureau set still
+    say Radical Futurist. Same entity-consistency problem the bureau audit found, and
+    a channel is a stronger signal than a directory listing because models and
+    viewers both reach it directly. Channel name, handle where possible, banner,
+    about text, and the links block.
+  - **Curate.** Pin or feature the keynote reel, hide or playlist off anything from
+    the Chronicled era that now conflicts with the current positioning, and group what
+    remains into playlists by keynote theme rather than by event.
+  - **Then the clips.** The "titled as questions" item under Assets below depends on
+    this. Posting well-titled clips onto an unbranded, uncurated channel wastes them.
+  - Sequence: rebrand, curate, then clips.
+  - **Audit done 18 Sep 2026: `channels/youtube.md`.** Paste-ready channel name,
+    774-character description, links block, playlist structure, trailer retitle, and
+    the rules for the manual pass over old videos. **Keep the handle
+    `@samradofficial`**; it is in the footer and the Person schema. **Do not delete
+    the archive**: the Singularity University talks are the only public verification
+    of a faculty appointment SU no longer lists.
 
 **Assets to source**
 - Speaking photos with industry context, with the client name visible: finance,
   healthcare, insurance, education. Each industry page wants one. Retail is covered
   by `ballroom-retail`.
 - YouTube clips titled as questions: "What is perceptual security?", "The four
-  moves", "What is the dip?" The highest-leverage AI-visibility item.
+  moves", "What is the dip?" The highest-leverage AI-visibility item, but it comes
+  **after** the channel rebrand and curation above, not before.
 - More testimonials. Three on the site, six to eight is the target. Priority order:
   Future of Work, Education, Supply Chain, Hospitality.
 - A second studio headshot, non-mint, for variety.

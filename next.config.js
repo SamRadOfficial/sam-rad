@@ -31,9 +31,13 @@ const nextConfig = {
       // ── Pages with a direct equivalent on the new site ──────────────────
       { source: '/home', destination: '/', permanent: true },
       { source: '/about', destination: '/meet-sam', permanent: true },
-      { source: '/contact', destination: '/book', permanent: true },
-      { source: '/booking', destination: '/book', permanent: true },
-      { source: '/hire', destination: '/book', permanent: true },
+      // /contact is the booking form's canonical URL as of 21 Sep 2026. It was a
+      // redirect *to* /book until then; that rule had to be deleted, not just
+      // reversed, because redirects run before pages and would have shadowed it.
+      // Every alias resolves to /contact in one hop, never via another alias.
+      { source: '/book', destination: '/contact', permanent: true },
+      { source: '/booking', destination: '/contact', permanent: true },
+      { source: '/hire', destination: '/contact', permanent: true },
       { source: '/books', destination: '/body-of-work#books', permanent: true },
       { source: '/radicalnext', destination: '/body-of-work#radical-next', permanent: true },
       { source: '/radical-next-book', destination: '/body-of-work#radical-next', permanent: true },

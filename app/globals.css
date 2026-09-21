@@ -1034,6 +1034,8 @@ details.earlier[open] summary{margin-bottom:44px;}
 .cv-row .r ul{margin:8px 0 0;padding-left:18px;}
 .cv-row .r li{margin:0 0 5px;padding-left:2px;}
 .cv-row .r li::marker{color:var(--mint-deep);}
+.form .form-route{margin:-4px 0 22px;font-size:14px;color:var(--ink-muted);}
+.form .form-route a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--rule-strong);}
 .cv-summary{display:grid;grid-template-columns:1fr 1fr;gap:56px;padding-top:56px;align-items:start;}
 .cv-note{background:var(--ink);color:var(--paper);padding:40px 44px;margin-top:64px;}
 .cv-note h3{font-family:var(--fd);font-size:30px;text-transform:uppercase;margin:0 0 14px;color:var(--paper);}

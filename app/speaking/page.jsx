@@ -54,7 +54,7 @@ export default function Speaking() {
           position="center 40%"
           eyebrow="Speaking · The keynote"
           lead={<>The cycle every big change follows, why the new tools aren&apos;t paying off yet, and the four moves that turn the corner. <strong>Customized to your industry, your audience, your moment.</strong></>}
-          cta={<Link href="/book" className="btn btn-mint">Book this keynote →</Link>}
+          cta={<Link href="/contact" className="btn btn-mint">Book this keynote →</Link>}
           caption="SHRM · Dallas"
         >
           Change has<br />a <span className="mint-fill">pattern.</span>
@@ -94,7 +94,7 @@ export default function Speaking() {
                     <li><strong>Customization</strong><br /><Link href="/industries" style={{ color: 'var(--mint-deep)', textDecoration: 'underline', textUnderlineOffset: 3 }}>Built for your industry</Link></li>
                     <li><strong>Travels from</strong><br />New York City</li>
                   </ul>
-                  <Link href="/book" className="btn btn-ink">Book Sam →</Link>
+                  <Link href="/contact" className="btn btn-ink">Book Sam →</Link>
                   <Bureau />
                 </div>
                 <div className="side-photo">

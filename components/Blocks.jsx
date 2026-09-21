@@ -120,7 +120,7 @@ export function CtaBreak({ image, tag, heading, lead, caption, center, bureau, p
         {external ? (
           <a href={href} className="btn btn-mint" target="_blank" rel="noopener noreferrer">{btn}{btnExternal && <span className="ext" aria-hidden="true" />}</a>
         ) : (
-          <Link href={href || '/book'} className="btn btn-mint">{btn}</Link>
+          <Link href={href || '/contact'} className="btn btn-mint">{btn}</Link>
         )}
         {bureau && (
           // Sits directly under the Book Sam button. Plain text, no links, for the
@@ -262,7 +262,7 @@ export function TestimonialBanner({ noCta }) {
           Sam is a rare individual who has the unique ability to <u>catalyze and inspire</u> everyone around her.
         </h2>
         <div className="who">Asael Meir · Partner, CohnReznick LLP</div>
-        {!noCta && <Link href="/book" className="btn btn-mint tb-cta">Book Sam →</Link>}
+        {!noCta && <Link href="/contact" className="btn btn-mint tb-cta">Book Sam →</Link>}
       </div>
     </section>
   );
@@ -375,7 +375,7 @@ export function BookBar({ text, sub, mint, deep, cta = 'Book Sam →' }) {
           <div className="txt">{text}</div>
           {sub && <div className="sub">{sub}</div>}
         </div>
-        <Link href="/book" className={mint ? 'btn btn-ink' : 'btn btn-mint'}>{cta}</Link>
+        <Link href="/contact" className={mint ? 'btn btn-ink' : 'btn btn-mint'}>{cta}</Link>
       </div>
     </section>
   );

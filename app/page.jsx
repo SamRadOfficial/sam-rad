@@ -32,7 +32,7 @@ export default function Home() {
           position="center 30%"
           eyebrow="The Change Futurist"
           lead={<>See it, and you&apos;re ready for whatever comes next.</>}
-          cta={<Link href="/book" className="btn btn-mint">Book Sam →</Link>}
+          cta={<Link href="/contact" className="btn btn-mint">Book Sam →</Link>}
           caption="SIM Executive Conference"
         >
           Change has<br />a <span className="mint-fill">pattern.</span>

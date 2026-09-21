@@ -7,7 +7,7 @@ import { meta, SITE } from '@/lib/site';
 export const metadata = meta({
   title: 'Book Sam Rad | Keynote Speaker',
   description: 'Booking inquiries for Sam Rad, represented by Brandy Gibson at Executive Speakers Bureau. Keynote, 45 to 60 minutes, customized to your industry.',
-  path: '/book',
+  path: '/contact',
   image: '/images/hero-meet.jpg',
   imageAlt: 'Sam Rad delivering a keynote at the SIM Executive Conference',
 });
