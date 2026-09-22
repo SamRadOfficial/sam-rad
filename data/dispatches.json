@@ -1,5 +1,2784 @@
 [
   {
+    "number": "0068",
+    "series": "rad",
+    "slug": "is-the-internet-about-to-split-in-two",
+    "title": "Is the internet about to split in two?",
+    "deck": "It already has, into several. Different rules, different platforms, different versions of the truth, depending on where you stand. That's not the end of the internet. It's what happened to every network before it, from railway gauges to television standards. The open web was a thirty-year exception. What comes next is bridges, and whoever builds them wins.",
+    "metaDescription": "It already has, into several. Different rules, different platforms, different versions of the truth, depending on where you stand.",
+    "stamp": "split",
+    "date": "2026-12-14",
+    "lastUpdated": "2026-12-14",
+    "nextReview": "2027-03-14",
+    "readingTime": "2 min read",
+    "industry": "Government & Public Sector",
+    "industrySlug": "government",
+    "tags": [
+      "internet",
+      "geopolitics",
+      "standards",
+      "technology"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In the 1840s, Britain's railways ran on two different gauges. Trains from one company couldn't run on the other's tracks. Passengers changed trains at the border between networks, and freight got unloaded and reloaded by hand."
+      },
+      {
+        "t": "p",
+        "x": "They called it the gauge war. It took a Royal Commission and an act of Parliament to end it."
+      },
+      {
+        "t": "p",
+        "x": "The internet is having its gauge war."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every network starts open and fragments. Railways had gauges. Electricity had AC versus DC and, to this day, different plugs in every country. Television had three incompatible color standards. Mobile phones had GSM and CDMA."
+      },
+      {
+        "t": "p",
+        "x": "The open, single, global internet lasted about thirty years, which is a long time for a network to stay unified. Now it's splitting along the lines networks always split: by government, by platform, by language, by which version of a fact your feed shows you."
+      },
+      {
+        "t": "p",
+        "x": "I wrote in Radical Next about how large language models filter and rank information based on collective patterns, so that dominant perspectives become the paradigm. Add borders to that, and you get several internets, each with its own dominant perspective, each confident it's the real one."
+      },
+      {
+        "t": "p",
+        "x": "The pattern says this doesn't reverse. Networks don't re-unify by good intentions. They get bridged: standards, adapters, treaties, the equivalent of a train that can change its wheels at the border."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Stop planning for one internet. If your business assumes a single global web, it's assuming 2010. Plan for several, with different rules, and know which ones you're in."
+      },
+      {
+        "t": "p",
+        "x": "Build for the bridge. Data portability, open standards, systems that work across borders. The companies that made adapters in the gauge war did very well."
+      },
+      {
+        "t": "p",
+        "x": "And check your own filter. If your team's picture of the world comes from one platform in one language, you're already on one side of the split and don't know it. Read across."
+      },
+      {
+        "t": "p",
+        "x": "The single internet was the exception. Bridges are the rule. Build them."
+      },
+      {
+        "t": "p",
+        "x": "Which internet is your company on, and who's on the other side?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Will you have to prove you're human online?](/writing/will-you-have-to-prove-youre-human-online)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Gauge Commission, 1845, and the Regulating the Gauge of Railways Act 1846, UK Parliament."
+      },
+      {
+        "x": "Sam Rad, Radical Next (2025), Knowledge and Education chapter, on algorithmic ranking and dominant perspectives."
+      }
+    ],
+    "internalId": "RAD-0060"
+  },
+  {
+    "number": "0067",
+    "series": "rad",
+    "slug": "will-we-trust-ai-more-than-each-other",
+    "title": "Will we trust AI more than each other?",
+    "deck": "For some things, we already do, and we've done it before. We trust the elevator with no operator, the autopilot, the calculator. That's fine for tasks. The danger is trusting the machine for judgment, because it's confident and consistent and never has a bad day, when judgment is exactly the thing it doesn't have. Trust it with the task. Keep the call.",
+    "metaDescription": "For some things, we already do, and we've done it before. We trust the elevator with no operator, the autopilot, the calculator. That's fine for tasks.",
+    "stamp": "trust",
+    "date": "2026-12-11",
+    "lastUpdated": "2026-12-11",
+    "nextReview": "2027-03-11",
+    "readingTime": "2 min read",
+    "industry": "Technology & AI",
+    "industrySlug": "technology-ai",
+    "tags": [
+      "AI",
+      "trust",
+      "judgment",
+      "human connection"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In 1945, elevator operators in New York went on strike, and the city seized up. Nobody would ride an automatic elevator. The technology had existed for years. People just didn't trust a box that moved on its own."
+      },
+      {
+        "t": "p",
+        "x": "Within a couple of decades, the operator was gone and nobody thought twice. We'd learned to trust the box."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "We've been handing tasks to machines and learning to trust them for two centuries. The clock. The thermostat. The autopilot, which flies most of every commercial flight you take. Each time, the same arc: refusal, then reluctance, then forgetting there was ever a person in the loop."
+      },
+      {
+        "t": "p",
+        "x": "That arc is fine for tasks. An elevator has one job."
+      },
+      {
+        "t": "p",
+        "x": "Where it goes wrong is judgment. In my next book I write about how the mind gets hijacked: it trusts what's confident, consistent, and familiar. AI is all three. It never hesitates, never has a bad week, and never says \"I'm not sure\" unless it's told to. Which makes it feel more trustworthy than a person, on exactly the questions where it's less."
+      },
+      {
+        "t": "p",
+        "x": "A colleague who says \"I don't know, let me think\" is showing you judgment. A model that answers instantly is showing you probability. We're wired to prefer the second. That's the trap."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Sort your decisions into tasks and calls. The task, the machine can own. The call, a human owns, even if the machine advises."
+      },
+      {
+        "t": "p",
+        "x": "Reward hesitation. The person who says \"something feels off\" is doing the thing the machine can't. If your culture punishes that as slow, you'll get a company that trusts the confident box every time."
+      },
+      {
+        "t": "p",
+        "x": "And keep practicing trust in each other. It's a skill. It atrophies. A team that only checks with the machine forgets how to check with the person next to them."
+      },
+      {
+        "t": "p",
+        "x": "We learned to trust the elevator. Good. Let's not learn to trust it for where we should be going."
+      },
+      {
+        "t": "p",
+        "x": "What did you last take from a machine without a second thought, and would you have taken it from a colleague?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Is perception the new battlefield?](/writing/is-perception-the-new-battlefield)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "NPR, \"Remembering When Driverless Elevators Drew Skepticism,\" July 31, 2015, on the New York elevator operators' strike of September 1945.",
+        "url": "https://www.npr.org/2015/07/31/427990392/remembering-when-driverless-elevators-drew-skepticism"
+      }
+    ],
+    "internalId": "RAD-0050"
+  },
+  {
+    "number": "0066",
+    "series": "rad",
+    "slug": "do-we-work-too-much-or-on-the-wrong-things",
+    "title": "Do we work too much, or on the wrong things?",
+    "deck": "The wrong things. Hours have barely moved in eighty years, but the share of them spent on work that matters keeps shrinking, eaten by meetings, messages, and reporting about work instead of doing it. The four-day week experiments work not because people do less, but because the cut forces the pointless part out first.",
+    "metaDescription": "The wrong things. Hours have barely moved in eighty years, but the share of them spent on work that matters keeps shrinking, eaten by meetings, messages,.",
+    "stamp": "work",
+    "date": "2026-12-10",
+    "lastUpdated": "2026-12-10",
+    "nextReview": "2027-03-10",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "productivity",
+      "four-day week",
+      "attention",
+      "future of work"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In 1938, the United States set the workweek at forty hours."
+      },
+      {
+        "t": "p",
+        "x": "The economist John Maynard Keynes had predicted eight years earlier that by now we'd be working fifteen. Productivity did roughly what he expected. The hours didn't."
+      },
+      {
+        "t": "p",
+        "x": "So where did the time go?"
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every era fills the hours it has. Farm work filled the daylight. Factory work filled the shift. Office work filled the nine-to-five, and then, with a phone in every pocket, spilled past it."
+      },
+      {
+        "t": "p",
+        "x": "What changed is what fills it. Study after study finds knowledge workers spending most of their week in meetings, messages, and updates about work, and a minority on the work itself. The hours are the same. The share that matters keeps falling."
+      },
+      {
+        "t": "p",
+        "x": "That's why the four-day week trials keep surprising people. When Iceland, then the UK, ran large pilots, output mostly held. Not because people worked harder in four days, but because cutting a day forced every team to find the day's worth of work that didn't matter. It was always there. Nobody had a reason to look."
+      },
+      {
+        "t": "p",
+        "x": "I write in my next book about attention as the thing that gets hijacked first. A workweek that's mostly reaction, pings, and reporting is a hijacked week. It feels full. It produces almost nothing."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Run the cut as an experiment. Take a day, or a meeting-free block, from one team for a quarter. Watch what disappears. That's your list of things that never mattered."
+      },
+      {
+        "t": "p",
+        "x": "Measure real work, once. Ask people to log a week: making versus talking about making. The ratio is the most honest productivity number you'll ever see."
+      },
+      {
+        "t": "p",
+        "x": "And stop rewarding the appearance of busy. The always-on reply, the late email. Those are symptoms. Reward the finished thing."
+      },
+      {
+        "t": "p",
+        "x": "We don't need fewer hours as much as we need fewer wrong ones. Keynes wasn't wrong about the productivity. He was wrong about what we'd do with it."
+      },
+      {
+        "t": "p",
+        "x": "What share of your week is the work, and what share is about the work?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Is your attention the most valuable thing your company owns?](/writing/is-your-attention-the-most-valuable-thing-your-company-owns)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "John Maynard Keynes, \"Economic Possibilities for our Grandchildren,\" 1930."
+      },
+      {
+        "x": "Autonomy and 4 Day Week Global, UK four-day week pilot results, February 2023; Iceland trials 2015 to 2019 (Alda and Autonomy, 2021).",
+        "url": "https://autonomy.work/portfolio/uk4dwpilotresults/"
+      }
+    ],
+    "internalId": "RAD-0039"
+  },
+  {
+    "number": "0065",
+    "series": "rad",
+    "slug": "what-happens-when-your-city-can-see-everything",
+    "title": "What happens when your city can see everything?",
+    "deck": "It gets safer and it gets quieter, and the second part is the cost. Cameras, sensors, and license plate readers now cover most large cities. Every era of surveillance has started with a real problem, crime, disease, traffic, and ended by watching things it was never built for. The question isn't whether to see. It's who decides what the city is allowed to remember.",
+    "metaDescription": "It gets safer and it gets quieter, and the second part is the cost. Cameras, sensors, and license plate readers now cover most large cities.",
+    "stamp": "city",
+    "date": "2026-12-09",
+    "lastUpdated": "2026-12-09",
+    "nextReview": "2027-03-09",
+    "readingTime": "2 min read",
+    "industry": "Government & Public Sector",
+    "industrySlug": "government",
+    "tags": [
+      "surveillance",
+      "smart cities",
+      "privacy",
+      "government"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In 1667, Paris installed streetlights. Lanterns on the corners, lit at dusk."
+      },
+      {
+        "t": "p",
+        "x": "It was a policing measure. Light made crime harder. It also changed the city: people went out at night, commerce moved later, the streets became a place. Nobody could have predicted the second part."
+      },
+      {
+        "t": "p",
+        "x": "Every layer of watching since has worked the same way."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Surveillance always starts with a real problem. Fire watchmen. Streetlights. Traffic cameras. Then disease tracking. Then terrorism. Each layer is added for a reason nobody can argue with, and each stays after the reason fades, and finds new work."
+      },
+      {
+        "t": "p",
+        "x": "The layer being added now is different in one respect: it remembers. A watchman forgot your face. A camera with facial recognition and a database doesn't. A city that can see everything and store it is a city that can answer, years later, where you were on a Tuesday."
+      },
+      {
+        "t": "p",
+        "x": "I've spent years thinking about perception and security. What I'd say to any mayor is this: the danger isn't the seeing. Cities have always been watched. The danger is the memory, and who gets to query it, and for what."
+      },
+      {
+        "t": "p",
+        "x": "The passport, which I've written about elsewhere, was invented for wartime security and became the instrument of immigration control within a decade. Proof layers never stay narrow. Neither do cameras."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things, if you run anything public."
+      },
+      {
+        "t": "p",
+        "x": "Set the memory before the camera. How long is data kept? Who can search it? For what? Decide in law, in advance, not in a crisis."
+      },
+      {
+        "t": "p",
+        "x": "Separate seeing from identifying. A camera that counts cars is a different tool from one that names drivers. Treat them differently, and say so."
+      },
+      {
+        "t": "p",
+        "x": "And make the watching visible. A city that hides its sensors is asking to be distrusted. One that publishes what it collects and why is building the thing surveillance usually destroys, which is consent."
+      },
+      {
+        "t": "p",
+        "x": "Paris got safer streets and a nightlife it didn't plan. Your city will get something it didn't plan too. Decide what it's allowed to remember before it starts."
+      },
+      {
+        "t": "p",
+        "x": "What does your city remember about you, and who's allowed to ask?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Will you have to prove you're human online?](/writing/will-you-have-to-prove-youre-human-online)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Sam Rad, \"Will you have to prove you're human online?\" sam-rad.com/writing, on proof layers.",
+        "url": "https://sam-rad.com/writing/will-you-have-to-prove-youre-human-online"
+      },
+      {
+        "x": "Holly Tucker, \"How Paris Became the City of Light,\" Lapham's Quarterly, 2017, from City of Light, City of Poison (2017), on La Reynie's lanterns from 1667.",
+        "url": "https://www.laphamsquarterly.org/roundtable/how-paris-became-city-light"
+      }
+    ],
+    "internalId": "RAD-0059"
+  },
+  {
+    "number": "0064",
+    "series": "rad",
+    "slug": "what-jobs-will-ai-create-that-dont-exist-yet",
+    "title": "What jobs will AI create that don't exist yet?",
+    "deck": "Nobody can name them, and that's the point. Nobody in 1990 could name \"social media manager\" or \"app developer\" either. What history does tell us is the shape: every automation wave killed tasks, not jobs, and grew the jobs that sit next to the machine. The ATM didn't end bank tellers. It multiplied branches. Look at what gets cheaper, and follow it.",
+    "metaDescription": "Nobody can name them, and that's the point. Nobody in 1990 could name \"social media manager\" or \"app developer\" either.",
+    "stamp": "jobs",
+    "date": "2026-12-08",
+    "lastUpdated": "2026-12-08",
+    "nextReview": "2027-03-08",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "AI",
+      "jobs",
+      "future of work",
+      "automation"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Here's a thing that surprises people."
+      },
+      {
+        "t": "p",
+        "x": "The ATM arrived in the 1970s. Everyone predicted the end of the bank teller. By 2010 there were more tellers in the United States than there had been before the machine."
+      },
+      {
+        "t": "p",
+        "x": "The economist James Bessen worked out why. ATMs made a branch cheaper to run. So banks opened more branches. Each one needed fewer tellers, but there were far more branches, and the tellers' jobs shifted from counting cash to selling and solving."
+      },
+      {
+        "t": "p",
+        "x": "The task died. The job changed. The number went up."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "\"Computer\" used to be a job title. Rooms of people, mostly women, doing calculations by hand. The machine took their name and their task. It also created every job in software, which nobody in 1940 could have described."
+      },
+      {
+        "t": "p",
+        "x": "That's the honest answer about AI jobs. The specific titles aren't knowable. The shape is. When something gets dramatically cheaper, we do far more of it, and new work appears around the edges of the cheap thing."
+      },
+      {
+        "t": "p",
+        "x": "Writing is getting cheap. Analysis is getting cheap. First drafts of everything are getting cheap. So expect far more of all of it, and expect the valuable human work to move to the edges: choosing, verifying, deciding, being accountable, and being the person who was actually there."
+      },
+      {
+        "t": "p",
+        "x": "I say the job is not the goal. This is why. The jobs will change names. The goal, useful work done by people who care, doesn't."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Follow what's getting cheap. Whatever AI makes nearly free in your business, you're about to do ten times more of. Staff for the ten times, not the cut."
+      },
+      {
+        "t": "p",
+        "x": "Grow the edge roles now. The verifier, the person who owns the decision, the one who explains it to the customer. Those are the teller jobs of this wave."
+      },
+      {
+        "t": "p",
+        "x": "And stop asking \"what job will this replace.\" Ask \"what will we do far more of, and who will need to be there when we do.\""
+      },
+      {
+        "t": "p",
+        "x": "The ATM story isn't reassurance. It's a map. The tellers who did well were the ones who became something the machine wasn't."
+      },
+      {
+        "t": "p",
+        "x": "What's getting cheap in your business, and who's ready for ten times more of it?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Will AI replace middle managers?](/writing/will-ai-replace-middle-managers)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "James Bessen, \"Toil and Technology,\" Finance and Development (IMF), March 2015, on ATMs and bank tellers.",
+        "url": "https://www.imf.org/external/pubs/ft/fandd/2015/03/bessen.htm"
+      }
+    ],
+    "internalId": "RAD-0049"
+  },
+  {
+    "number": "0063",
+    "series": "rad",
+    "slug": "should-you-hire-for-skills-or-for-curiosity",
+    "title": "Should you hire for skills or for curiosity?",
+    "deck": "Curiosity, and it isn't close. Skills have a half-life of a few years now, sometimes months. Curiosity is the machine that makes new skills. The hire who knows the current tool will be behind in two years. The hire who can't stop asking questions will have learned the tool you don't know about yet.",
+    "metaDescription": "Curiosity, and it isn't close. Skills have a half-life of a few years now, sometimes months. Curiosity is the machine that makes new skills.",
+    "stamp": "curiosity",
+    "date": "2026-12-07",
+    "lastUpdated": "2026-12-07",
+    "nextReview": "2027-03-07",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "hiring",
+      "curiosity",
+      "skills",
+      "talent"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "I've hired a lot of people. And the ones I got wrong had one thing in common: they were extremely good at something that stopped mattering."
+      },
+      {
+        "t": "p",
+        "x": "The ones I got right had one thing in common too. They asked better questions than I did."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "For most of the industrial century, hiring for skills made sense. The skill lasted. A machinist in 1950 was a machinist in 1980. Schools were built as factories for those skills, which I write about in Radical Next: humans in, worker bees out."
+      },
+      {
+        "t": "p",
+        "x": "Then skills started expiring. The technical stack I built my first company on in 2010 is gone. The tools I used at my third are quaint. If you hired me for what I knew in either year, you'd have a problem by the next."
+      },
+      {
+        "t": "p",
+        "x": "What didn't expire was the wanting to know. The four skills I keep coming back to are creativity, critical thinking, discourse, and discernment. Not one of them is a tool. Every one of them is a way of approaching a tool you haven't seen yet."
+      },
+      {
+        "t": "p",
+        "x": "Curiosity is the engine behind all four. And you can see it in an interview in about ten minutes, if you're looking."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Ask what they taught themselves lately. Not a course. Something they went after because they couldn't stand not knowing. The answer is worth more than the resume."
+      },
+      {
+        "t": "p",
+        "x": "Watch for questions. A candidate who asks nothing about the actual work is telling you something. One who asks something you hadn't thought of is telling you more."
+      },
+      {
+        "t": "p",
+        "x": "And hire for the next tool, not the current one. Any skill you can name today, you can also teach in a month. Curiosity you can't teach in a year."
+      },
+      {
+        "t": "p",
+        "x": "Skills get you through this year. Curiosity gets you through the next ten. Hire for the decade."
+      },
+      {
+        "t": "p",
+        "x": "When did someone last ask you a question in an interview that you couldn't answer?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Should you unlearn faster than you learn?](/writing/should-you-unlearn-faster-than-you-learn)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Sam Rad, Radical Next (2025), Knowledge and Education chapter, on essential human skills."
+      }
+    ],
+    "internalId": "RAD-0038"
+  },
+  {
+    "number": "0062",
+    "series": "rad",
+    "slug": "will-you-own-anything-in-2035",
+    "title": "Will you own anything in 2035?",
+    "deck": "Less than you do now, and the shift is being made for you. Software you rent. Cars with features you subscribe to. Books that vanish when the store closes. Ownership is quietly becoming access. That's fine when you choose it, and a trap when you don't. Private property was the cornerstone of one era. The next one is rewriting what it means.",
+    "metaDescription": "Less than you do now, and the shift is being made for you. Software you rent. Cars with features you subscribe to.",
+    "stamp": "own",
+    "date": "2026-12-04",
+    "lastUpdated": "2026-12-04",
+    "nextReview": "2027-03-04",
+    "readingTime": "2 min read",
+    "industry": "Retail & Consumer Brands",
+    "industrySlug": "retail",
+    "tags": [
+      "ownership",
+      "subscriptions",
+      "right to repair",
+      "consumer"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Try this. Look at what you paid for this month and ask what you own."
+      },
+      {
+        "t": "p",
+        "x": "The music: rented. The software: rented. The movie you \"bought\" online: a license that can be revoked. The heated seats in some cars: a subscription. The tractor a farmer bought outright: locked, until the manufacturer's technician arrives."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "I wrote in Radical Next that private property is considered by many scholars to be the cornerstone of civilization. It came with agriculture: settle, fence, own. And it expanded, eventually, to ideas, as intellectual property."
+      },
+      {
+        "t": "p",
+        "x": "Now it's contracting again, for most of us, in a way that's almost invisible. Access is replacing ownership. Sometimes that's liberating. I lived a year off-grid with two outfits and I'm not sentimental about stuff. Owning less is often freedom."
+      },
+      {
+        "t": "p",
+        "x": "But there's a difference between choosing to own less and being denied the option. When the thing you bought can be switched off, repaired only by its maker, or deleted from your library because a licensing deal expired, you didn't buy it. You rented it with extra steps."
+      },
+      {
+        "t": "p",
+        "x": "The fight over this is already on. Right-to-repair laws are passing state by state. Farmers sued for the right to fix their own equipment. The pattern is the same one we've seen with every new form of property: the technology gets ahead, the rules catch up, and in between, whoever controls the terms controls the person."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "If you sell things: be honest about what the customer gets. \"Buy\" should mean own. If it means rent, say rent. The brands caught blurring that line will pay for it in trust."
+      },
+      {
+        "t": "p",
+        "x": "If you buy things, for yourself or a company: ask what happens when the vendor disappears. Can you keep it? Fix it? Export it? If not, price that risk."
+      },
+      {
+        "t": "p",
+        "x": "And support the rules that keep the choice open. Access is a fine model. Access with no alternative is a trap."
+      },
+      {
+        "t": "p",
+        "x": "Ownership is being rewritten for the next era. Make sure you're in the room, not just on the terms of service."
+      },
+      {
+        "t": "p",
+        "x": "What did you pay for this month that you couldn't take with you if the company vanished?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [When your customer is a bot, what is a brand?](/writing/when-your-customer-is-a-bot-what-is-a-brand)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Sam Rad, Radical Next (2025), on private property and intellectual property."
+      },
+      {
+        "x": "Right-to-repair legislation in U.S. states (e.g., New York Digital Fair Repair Act, 2022; Colorado agricultural equipment law, 2023)."
+      }
+    ],
+    "internalId": "RAD-0058"
+  },
+  {
+    "number": "0061",
+    "series": "rad",
+    "slug": "should-governments-regulate-ai-like-drugs-or-like-cars",
+    "title": "Should governments regulate AI like drugs or like cars?",
+    "deck": "Like cars, mostly. Drugs get approved before they're sold, one at a time, after years of trials. Cars get rules, seatbelts, crash tests, liability, and then anyone can build one. AI is too general and too fast for the drug model. What it needs is what cars got in 1966: standards, testing, and someone who's clearly liable when it crashes.",
+    "metaDescription": "Like cars, mostly. Drugs get approved before they're sold, one at a time, after years of trials.",
+    "stamp": "regulate",
+    "date": "2026-12-03",
+    "lastUpdated": "2026-12-03",
+    "nextReview": "2027-03-03",
+    "readingTime": "2 min read",
+    "industry": "Government & Public Sector",
+    "industrySlug": "government",
+    "tags": [
+      "AI",
+      "regulation",
+      "policy",
+      "governance"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Here's a question I get from policymakers."
+      },
+      {
+        "t": "p",
+        "x": "Should we approve AI models before they're released, the way we approve medicines? Or set rules of the road and let people build?"
+      },
+      {
+        "t": "p",
+        "x": "The history of both approaches has an answer."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Drugs got pre-approval in 1938, after a medicine called Elixir Sulfanilamide killed more than a hundred people, many of them children. The rule: prove it's safe before you sell it. It works because a drug is one specific thing with one specific use, and you can test it."
+      },
+      {
+        "t": "p",
+        "x": "Cars took a different road. For sixty years there were almost no federal rules. Then in 1965, Ralph Nader published Unsafe at Any Speed, and in 1966 Congress created the agency that gave us crash standards, seatbelts, and eventually airbags. Nobody has to approve your car before you build it. It has to meet standards, and if it fails, someone is liable."
+      },
+      {
+        "t": "p",
+        "x": "AI is a car, not a drug. It's general purpose. It's built by thousands of actors. It's updated constantly. A pre-approval system would either grind to a halt or approve things that changed the day after. The car model, standards, testing, and liability, scales."
+      },
+      {
+        "t": "p",
+        "x": "And notice what actually made cars safe. Not the ban some people wanted. The seatbelt, the crash test, and the lawyer."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things, if you sit anywhere near policy."
+      },
+      {
+        "t": "p",
+        "x": "Set standards for the use, not the model. A model that writes poems and a model that decides parole are the same technology and wildly different risks. Regulate the parole."
+      },
+      {
+        "t": "p",
+        "x": "Mandate testing you can see. Crash tests worked because the results were public. Require the equivalent for high-stakes AI, and publish it."
+      },
+      {
+        "t": "p",
+        "x": "And make liability clear before the crash. The single most powerful rule in car safety was that the manufacturer could be sued. Say who's liable when an AI system harms someone. Everything else follows."
+      },
+      {
+        "t": "p",
+        "x": "We didn't ban cars. We made them survivable. That's the job here."
+      },
+      {
+        "t": "p",
+        "x": "If an AI system in your jurisdiction harmed someone tomorrow, who would be liable, and would they know it?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Who is accountable when your bank's AI says no?](/writing/who-is-accountable-when-your-banks-ai-says-no)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Federal Food, Drug, and Cosmetic Act of 1938, following the Elixir Sulfanilamide deaths of 1937."
+      },
+      {
+        "x": "National Traffic and Motor Vehicle Safety Act of 1966; Ralph Nader, Unsafe at Any Speed (1965)."
+      }
+    ],
+    "internalId": "RAD-0048"
+  },
+  {
+    "number": "0060",
+    "series": "rad",
+    "slug": "can-a-company-have-a-nervous-system",
+    "title": "Can a company have a nervous system?",
+    "deck": "It does, and it gets triggered just like yours. Organizations have a fight-or-flight response: the reorg after one bad quarter, the hiring freeze after one scary headline, the panic email. Reactive companies exhaust themselves. The calm ones aren't calmer by nature. They've built the pause in.",
+    "metaDescription": "It does, and it gets triggered just like yours. Organizations have a fight-or-flight response: the reorg after one bad quarter, the hiring freeze after.",
+    "stamp": "nervous",
+    "date": "2026-12-02",
+    "lastUpdated": "2026-12-02",
+    "nextReview": "2027-03-02",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "resilience",
+      "leadership",
+      "reactivity",
+      "organizational health"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Here's a scene."
+      },
+      {
+        "t": "p",
+        "x": "A competitor announces something. By lunch there's an emergency meeting. By evening there's a new priority. By Friday, three teams have dropped what they were doing."
+      },
+      {
+        "t": "p",
+        "x": "Nothing about the competitor's announcement was actually a threat. But the company reacted like a body that heard a twig snap."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "In my next book I write about triggers: the nervous system flaring at a shadow because it once saw a real threat. The pounding chest, the urge to fight or run, when there's no bear. It's a learned response. And you can't think your way out of it in the moment. You can only learn to pause before it takes the wheel."
+      },
+      {
+        "t": "p",
+        "x": "Organizations have the exact same wiring. A company that got burned in 2008 flinches at every downturn headline. A company that lost a big client once treats every complaint as an emergency. The trigger fires, the whole body reacts, and everyone drops what mattered."
+      },
+      {
+        "t": "p",
+        "x": "The tell is the same as in a person. Reactivity looks like energy but it's the opposite. A reactive company is always busy and never gets anywhere."
+      },
+      {
+        "t": "p",
+        "x": "The organizations that come through change well aren't the ones with no triggers. They're the ones that built a pause between the stimulus and the response."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Find your triggers. What news makes your company drop everything? Name them out loud. A trigger you can see is one you can pause."
+      },
+      {
+        "t": "p",
+        "x": "Install a pause. A rule that no priority changes on the day of the news. Sleep on it. Most emergencies look different at breakfast."
+      },
+      {
+        "t": "p",
+        "x": "And learn the trigger's story. Every organizational flinch traces back to a real wound. Tell that story so people understand the reflex, and can decide whether it still serves them."
+      },
+      {
+        "t": "p",
+        "x": "You can't stop a company from having a nervous system. You can teach it to breathe."
+      },
+      {
+        "t": "p",
+        "x": "What's the headline that makes your company drop everything, and did it ever actually need to?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Does change fatigue exist, or is it change without a pattern?](/writing/does-change-fatigue-exist-or-is-it-change-without-a-pattern)*"
+      }
+    ],
+    "sources": [],
+    "internalId": "RAD-0037"
+  },
+  {
+    "number": "0059",
+    "series": "rad",
+    "slug": "will-nuclear-power-make-a-comeback",
+    "title": "Will nuclear power make a comeback?",
+    "deck": "It's already back, and AI is the reason. A shut-down reactor at Three Mile Island is being restarted to power data centers. Countries that swore off nuclear are reversing. The pattern is familiar: a technology gets frozen by one fear, then a bigger need arrives and thaws it. The fear was real. So is the need.",
+    "metaDescription": "It's already back, and AI is the reason. A shut-down reactor at Three Mile Island is being restarted to power data centers.",
+    "stamp": "nuclear",
+    "date": "2026-12-01",
+    "lastUpdated": "2026-12-01",
+    "nextReview": "2027-03-01",
+    "readingTime": "2 min read",
+    "industry": "Energy & Utilities",
+    "industrySlug": "energy",
+    "tags": [
+      "nuclear",
+      "energy",
+      "AI",
+      "infrastructure"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In 2024, Microsoft signed a deal to restart a reactor at Three Mile Island."
+      },
+      {
+        "t": "p",
+        "x": "Three Mile Island. The name that ended nuclear expansion in America in 1979. Now it's coming back online to run AI."
+      },
+      {
+        "t": "p",
+        "x": "That's the whole story in one sentence."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Technologies don't die because they stop working. They get frozen by a moment. Three Mile Island in 1979. Chernobyl in 1986. Fukushima in 2011. Each one froze nuclear for a decade in a different part of the world."
+      },
+      {
+        "t": "p",
+        "x": "Then a bigger need arrives. The need this time is electricity, enormous amounts of it, clean and constant, for data centers that can't wait for the wind. The International Energy Agency reported that global nuclear generation hit a record in 2025, with more than sixty reactors under construction."
+      },
+      {
+        "t": "p",
+        "x": "In Radical Next I wrote that we need urgent, efficient, regenerative energy options here and now, and that the chip wars and the race for compute make it more urgent. I meant it about every option. Nuclear is one of the few that's clean, constant, and already proven at scale."
+      },
+      {
+        "t": "p",
+        "x": "The fears weren't irrational. They were the panic stage, and the panic had a real grain of truth inside it. But sixty years of safety engineering later, the calculation has changed, and so has the alternative."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "If you buy power: ask about the mix. Data centers signing nuclear deals are locking in constant clean supply for decades. That's a competitive position, not just a sustainability line."
+      },
+      {
+        "t": "p",
+        "x": "If you set policy: separate 1979 fear from 2026 fact. The small modular reactors now being licensed are not the plants of the 1970s. Judge them on what they are."
+      },
+      {
+        "t": "p",
+        "x": "And watch the timeline honestly. New reactors take a decade. Restarts take years. The nuclear comeback is real and slow. Plan for both."
+      },
+      {
+        "t": "p",
+        "x": "The reactor that ended an era is starting a new one. That's the pattern. Nothing stays frozen when the need gets big enough."
+      },
+      {
+        "t": "p",
+        "x": "What's the technology your industry froze in fear that a bigger need is about to thaw?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Will AI's power bill decide who wins the next decade?](/writing/will-ais-power-bill-decide-who-wins-the-next-decade)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Constellation Energy and Microsoft, agreement to restart Three Mile Island Unit 1 (Crane Clean Energy Center), September 20, 2024.",
+        "url": "https://www.constellationenergy.com/newsroom/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html"
+      },
+      {
+        "x": "Sam Rad, Radical Next (2025), Energy Solutions."
+      },
+      {
+        "x": "International Energy Agency, \"The Path to a New Era for Nuclear Energy,\" January 2025 (record generation expected in 2025; 63 reactors under construction) and Global Energy Review 2026 (the 2025 record confirmed).",
+        "url": "https://www.iea.org/reports/the-path-to-a-new-era-for-nuclear-energy/executive-summary"
+      }
+    ],
+    "internalId": "RAD-0057"
+  },
+  {
+    "number": "0058",
+    "series": "rad",
+    "slug": "will-ai-make-us-lonelier",
+    "title": "Will AI make us lonelier?",
+    "deck": "It can, and it can also do the opposite. A companion that never disagrees and never needs anything is a comfortable way to stop practicing the hard parts of being with people. But loneliness was already an epidemic before the chatbot arrived. The question isn't whether to let AI in. It's whether we let it replace connection or use it to find our way back.",
+    "metaDescription": "It can, and it can also do the opposite. A companion that never disagrees and never needs anything is a comfortable way to stop practicing the hard parts.",
+    "stamp": "lonelier",
+    "date": "2026-11-30",
+    "lastUpdated": "2026-11-30",
+    "nextReview": "2027-02-28",
+    "readingTime": "2 min read",
+    "industry": "Healthcare & Life Sciences",
+    "industrySlug": "healthcare",
+    "tags": [
+      "AI",
+      "loneliness",
+      "human connection",
+      "mental health"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In 2023, the U.S. Surgeon General published an advisory calling loneliness an epidemic. About half of American adults reported experiencing it. The health effect, he wrote, was comparable to smoking up to fifteen cigarettes a day."
+      },
+      {
+        "t": "p",
+        "x": "That was before AI companions became a category with millions of users."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every technology that made connection easier also made it thinner. The telephone let you talk to someone far away and stop visiting someone nearby. Social media gave you five hundred friends and, for many people, fewer close ones. Each step was more reach and less depth."
+      },
+      {
+        "t": "p",
+        "x": "AI companions are the next step, and the thinnest yet. A friend who's always available, always agreeable, never tired, never needs you back. That's not a friend. That's a mirror with a warm voice."
+      },
+      {
+        "t": "p",
+        "x": "In my next book I write about glimmers: the small moments of real connection, the kind word, the door held open, that plant something in a nervous system. A companion app can't give you a glimmer, because a glimmer requires another person who could have chosen not to."
+      },
+      {
+        "t": "p",
+        "x": "But I also don't think the answer is to ban the thing. For someone isolated, in pain, at three in the morning, a patient voice is not nothing. The danger isn't the voice. It's making the voice the destination instead of the bridge."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things, especially in health and care."
+      },
+      {
+        "t": "p",
+        "x": "Design AI as a bridge, not a room. Every companion tool should have one job underneath the conversation: get the person to a human, eventually."
+      },
+      {
+        "t": "p",
+        "x": "Measure connection, not engagement. An app that people talk to for hours a day is not succeeding if they talk to no one else."
+      },
+      {
+        "t": "p",
+        "x": "And protect the friction. The hard parts of being with people, disagreement, need, the risk of being known, are the parts that make it worth anything. Don't optimize them away."
+      },
+      {
+        "t": "p",
+        "x": "Loneliness was here before the machine. The machine can make it comfortable, which is worse, or it can point back toward each other. That's a design choice, and someone is making it right now."
+      },
+      {
+        "t": "p",
+        "x": "Who did you last have a real conversation with, the kind that could have gone wrong?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [How do you lead through uncertainty without pretending to be certain?](/writing/how-do-you-lead-through-uncertainty-without-pretending-to-be-certain)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "U.S. Surgeon General, \"Our Epidemic of Loneliness and Isolation,\" May 2023.",
+        "url": "https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf"
+      }
+    ],
+    "internalId": "RAD-0047"
+  },
+  {
+    "number": "0057",
+    "series": "rad",
+    "slug": "how-do-you-tell-a-trend-from-a-fad",
+    "title": "How do you tell a trend from a fad?",
+    "deck": "A fad changes what people buy. A trend changes what people can do. Fads spike and vanish because they're about taste. Trends compound because they're about capability. Ask what a new thing lets a person do that they couldn't do before. If the answer is nothing, it's a fad, no matter how big the numbers get.",
+    "metaDescription": "A fad changes what people buy. A trend changes what people can do. Fads spike and vanish because they're about taste.",
+    "stamp": "trend",
+    "date": "2026-11-27",
+    "lastUpdated": "2026-11-27",
+    "nextReview": "2027-02-25",
+    "readingTime": "2 min read",
+    "industry": "Retail & Consumer Brands",
+    "industrySlug": "retail",
+    "tags": [
+      "trends",
+      "strategy",
+      "change",
+      "innovation"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Every leader I meet is drowning in \"the next big thing.\""
+      },
+      {
+        "t": "p",
+        "x": "The metaverse was the next big thing. NFTs were. Clubhouse was. Some of you spent real money on those."
+      },
+      {
+        "t": "p",
+        "x": "Meanwhile, quietly, remote work, cheap solar, and generative AI compounded in the background. Here's how to tell the difference before you spend."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "A fad rides on taste. It spreads because it's new and everyone wants to be seen with it. Then it's not new anymore, and the reason to have it disappears. Pet rocks. Pogs. The particular flavor of app everyone downloaded that one summer."
+      },
+      {
+        "t": "p",
+        "x": "A trend rides on capability. It spreads because it lets someone do something they couldn't do before, and once they can, they don't go back. The car. The credit card. The search bar. Nobody went back."
+      },
+      {
+        "t": "p",
+        "x": "The test is simple. Ask: what can a person now do that they couldn't before? The bicycle let a woman travel alone. The smartphone put a computer in every pocket. If the answer is \"have something cool,\" it's a fad. If the answer is a verb, it's a trend."
+      },
+      {
+        "t": "p",
+        "x": "The tricky ones look like both. Crypto was a fad on the surface, all speculation and celebrities, and a trend underneath, programmable money. I wrote a whole book about the underneath part. The fad died. The trend is still compounding."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Ask for the verb. Every pitch, every new thing: what does this let someone do? If the pitch can't name it, walk."
+      },
+      {
+        "t": "p",
+        "x": "Watch the second year, not the first. Fads peak in year one. Trends look boring in year one and undeniable in year three."
+      },
+      {
+        "t": "p",
+        "x": "And separate the surface from the underneath. The loudest version of a technology is almost always the fad. The quiet version is the trend."
+      },
+      {
+        "t": "p",
+        "x": "What's the thing everyone's excited about right now, and what does it actually let anyone do?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [When your customer is a bot, what is a brand?](/writing/when-your-customer-is-a-bot-what-is-a-brand)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Samantha Radocchia, Bitcoin Pizza: The No-Bullshit Guide to Blockchain (2019)."
+      }
+    ],
+    "internalId": "RAD-0036"
+  },
+  {
+    "number": "0056",
+    "series": "rad",
+    "slug": "will-robots-take-care-of-our-parents",
+    "title": "Will robots take care of our parents?",
+    "deck": "Partly, and the countries getting old fastest are already finding out what that means. Japan, where nearly a third of people are over 65, has robots that lift, remind, and keep company. What they've learned is the lesson from every automation: the machine takes the task, and the human part, the hand held and the story listened to, becomes the job.",
+    "metaDescription": "Partly, and the countries getting old fastest are already finding out what that means.",
+    "stamp": "parents",
+    "date": "2026-11-26",
+    "lastUpdated": "2026-11-26",
+    "nextReview": "2027-02-24",
+    "readingTime": "2 min read",
+    "industry": "Healthcare & Life Sciences",
+    "industrySlug": "healthcare",
+    "tags": [
+      "robotics",
+      "eldercare",
+      "longevity",
+      "human connection"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In Japan, about 29 percent of the population is over 65. The country has been living the future of aging for two decades, with too few young workers and too many people who need care."
+      },
+      {
+        "t": "p",
+        "x": "So it built robots. Machines that lift a patient out of bed. Seals that purr when stroked. Humanoids that lead exercise class."
+      },
+      {
+        "t": "p",
+        "x": "Here's what they found."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Care work has always been two jobs wearing one uniform. The physical task: lifting, washing, medicating, reminding. And the human part: noticing, listening, being there at three in the morning."
+      },
+      {
+        "t": "p",
+        "x": "Every automation in history has split those two. The machine takes the task. The human keeps the part that needs a human. The washing machine didn't end housework; it changed what housework meant. The ATM didn't end the teller; it changed what a teller did."
+      },
+      {
+        "t": "p",
+        "x": "Japan's care robots are running the same script. The lifting robot saves a nurse's back and gives her ten minutes. The reminder robot makes sure the pills are taken. And the nurse, freed from the lifting, does the thing the machine can't: sits down."
+      },
+      {
+        "t": "p",
+        "x": "The failures teach the same lesson. Robots designed to replace companionship rather than support it get abandoned in corners. An old man doesn't want a robot to love him. He wants his daughter to have time to visit because the robot did the laundry."
+      },
+      {
+        "t": "p",
+        "x": "And this is going to reach every country, fast. Longevity is the next era on my map. More people living longer means more years of care than any workforce can provide by hand."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Automate the task, not the presence. Lifting, monitoring, medication. Those are the machine's. The chair by the bed is not."
+      },
+      {
+        "t": "p",
+        "x": "Measure freed time, and protect it. If the robot saves a caregiver ten minutes, and those ten minutes go to more patients instead of more presence, you've automated the wrong thing."
+      },
+      {
+        "t": "p",
+        "x": "And design for the family. The best care technology is the kind that gives a daughter back an hour. Build for her, not just for the facility."
+      },
+      {
+        "t": "p",
+        "x": "Our parents will be cared for by machines and people. The machines will do more of the work. The people will do more of the care. That's a future worth building."
+      },
+      {
+        "t": "p",
+        "x": "What would you want a robot to do for your mother, and what would you never want it to?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Can a team stay human through a reorg?](/writing/can-a-team-stay-human-through-a-reorg)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Statistics Bureau of Japan, population aged 65 and over, approximately 29 percent (2024)."
+      },
+      {
+        "x": "Sam Rad, Radical Next (2025), the Longevity era."
+      }
+    ],
+    "internalId": "RAD-0056"
+  },
+  {
+    "number": "0055",
+    "series": "rad",
+    "slug": "should-ai-decide-who-gets-the-job-interview",
+    "title": "Should AI decide who gets the job interview?",
+    "deck": "It can help sort. It should never decide alone, because it learns from your past hiring, and your past hiring had a pattern you didn't choose. Amazon found this out when its recruiting model taught itself to downgrade women. The fix isn't to ban the tool. It's to test it like you'd test a new manager, and keep a human accountable for every no.",
+    "metaDescription": "It can help sort. It should never decide alone, because it learns from your past hiring, and your past hiring had a pattern you didn't choose.",
+    "stamp": "interview",
+    "date": "2026-11-25",
+    "lastUpdated": "2026-11-25",
+    "nextReview": "2027-02-23",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "AI",
+      "hiring",
+      "bias",
+      "accountability"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In 2018, Reuters reported that Amazon had quietly scrapped an AI recruiting tool."
+      },
+      {
+        "t": "p",
+        "x": "The system had been trained on ten years of the company's own hiring. It learned what the company had done. And what the company had done, mostly, was hire men. So the model penalized resumes that included the word \"women's,\" as in women's chess club captain."
+      },
+      {
+        "t": "p",
+        "x": "Nobody programmed that. The machine just learned the pattern that was already there."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every automated decision system is a mirror of the decisions it was trained on. That's the whole method. It's also the whole risk."
+      },
+      {
+        "t": "p",
+        "x": "When New York City passed a law in 2021 requiring bias audits for automated hiring tools, it was following a pattern that's now familiar: a new technology inherits an old bias, someone notices, a rule follows. Credit scoring went through it. Lending went through it. Hiring is going through it now."
+      },
+      {
+        "t": "p",
+        "x": "I've hired for four companies and I know exactly how my own biases work, because I've caught them. The difference with the machine is scale. A biased manager makes a hundred decisions a year. A biased model makes a hundred thousand, in the same direction, with a confidence score."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Audit before you trust. Run the tool on last year's applicants and look at who it would have screened out. If the pattern makes you uncomfortable, you found the bias before a journalist did."
+      },
+      {
+        "t": "p",
+        "x": "Let it sort, not decide. AI can rank a thousand applications by relevance in a minute. A human should be the one who says no, and be able to say why."
+      },
+      {
+        "t": "p",
+        "x": "And keep a name on every rejection. The Equal Credit Opportunity Act figured this out for loans in 1974: if you say no, you owe a reason. Hiring is heading there. Get ahead of it."
+      },
+      {
+        "t": "p",
+        "x": "Amazon's model didn't invent a bias. It found one and made it efficient. Yours will too, unless you look first."
+      },
+      {
+        "t": "p",
+        "x": "Who at your company can explain the last hundred people your system screened out?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Who is accountable when your bank's AI says no?](/writing/who-is-accountable-when-your-banks-ai-says-no)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Reuters, \"Amazon scraps secret AI recruiting tool that showed bias against women,\" October 10, 2018.",
+        "url": "https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G"
+      },
+      {
+        "x": "New York City Local Law 144 of 2021 (automated employment decision tools), enforced from July 5, 2023."
+      }
+    ],
+    "internalId": "RAD-0046"
+  },
+  {
+    "number": "0054",
+    "series": "rad",
+    "slug": "why-do-we-panic-about-every-new-technology",
+    "title": "Why do we panic about every new technology?",
+    "deck": "Because panic is the first stage of every adoption, and it always has been. Trains were going to shake loose our organs. Novels would corrupt young women. Telephones would end visiting. The panic is not a sign the technology is dangerous. It's a sign it's real. The useful move is to notice you're in the stage, and skip to the next one.",
+    "metaDescription": "Because panic is the first stage of every adoption, and it always has been. Trains were going to shake loose our organs. Novels would corrupt young women.",
+    "stamp": "panic",
+    "date": "2026-11-24",
+    "lastUpdated": "2026-11-24",
+    "nextReview": "2027-02-22",
+    "readingTime": "2 min read",
+    "industry": "Technology & AI",
+    "industrySlug": "technology-ai",
+    "tags": [
+      "change",
+      "technology adoption",
+      "fear",
+      "pattern"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In the 1890s, doctors warned about a new disease."
+      },
+      {
+        "t": "p",
+        "x": "Bicycle face. An expression of strain, some said permanent, caused by the effort of balancing. Women were especially at risk, along with their morals, since a bicycle could take them anywhere without a chaperone."
+      },
+      {
+        "t": "p",
+        "x": "The bicycle turned out to be a bicycle."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every technology arrives with a panic attached. The printing press would end memory. The train would injure the body at speeds over thirty miles an hour. The novel would rot young minds. The telephone would end the art of the visit. Television would end reading. Video games would end attention."
+      },
+      {
+        "t": "p",
+        "x": "Some of those panics had a grain of truth. Most were the sound of an old world sensing it was about to be replaced."
+      },
+      {
+        "t": "p",
+        "x": "I put panic as the first stage in the cycle I teach, because it's that reliable. And here's the thing worth knowing: the panic stage is the least useful place to spend energy. It's where the most words get written and the least gets decided."
+      },
+      {
+        "t": "p",
+        "x": "In my next book I write about how fear hijacks perception. The nervous system flares, the pattern-seeking mind fills in the threat, and suddenly a spreadsheet tool is the end of thought. That's happening to entire industries right now."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Name the stage. Say it in the meeting: \"We're in the panic stage, and the pattern says it passes.\" Watch the temperature drop."
+      },
+      {
+        "t": "p",
+        "x": "Separate the true grain from the noise. Every panic has one real risk in it. Find that one thing and address it. Ignore the other nine."
+      },
+      {
+        "t": "p",
+        "x": "And move to adoption early, with your eyes open. The organizations that came out of every past panic ahead were the ones that started using the thing while everyone else was still writing op-eds about it."
+      },
+      {
+        "t": "p",
+        "x": "The panic is real. It's also temporary. It always was."
+      },
+      {
+        "t": "p",
+        "x": "What are you panicking about that the pattern says will be furniture in ten years?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [What does 5,000 years of change say about the next five?](/writing/what-does-5-000-years-of-change-say-about-the-next-five)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "\"The Bicycle Face,\" The Literary Digest, September 7, 1895; see historian Sheila Hanlon, \"Bicycle Face: A guide to Victorian cycling diseases.\"",
+        "url": "https://www.sheilahanlon.com/?p=1990"
+      }
+    ],
+    "internalId": "RAD-0035"
+  },
+  {
+    "number": "0053",
+    "series": "rad",
+    "slug": "can-money-be-programmable",
+    "title": "Can money be programmable?",
+    "deck": "It already is. Money that only spends on certain things, releases when a condition is met, or expires: all of it exists, and stablecoins now move real volume under real law. The technology was never the hard part. Trust was. And trust in money has always come from one place: a rule someone can enforce.",
+    "metaDescription": "It already is. Money that only spends on certain things, releases when a condition is met, or expires: all of it exists, and stablecoins now move real.",
+    "stamp": "money",
+    "date": "2026-11-23",
+    "lastUpdated": "2026-11-23",
+    "nextReview": "2027-02-21",
+    "readingTime": "2 min read",
+    "industry": "Financial Services & FinTech",
+    "industrySlug": "financial-services",
+    "tags": [
+      "fintech",
+      "programmable money",
+      "stablecoins",
+      "blockchain"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In 2019 I wrote a book with a ridiculous title, Bitcoin Pizza, about a serious idea: money that carries its own rules."
+      },
+      {
+        "t": "p",
+        "x": "Money that can only be spent on food. Aid that releases when a shipment is confirmed. A contract that pays itself when the work is done. People thought it was a fantasy. Then it was a bubble. Now it's quietly infrastructure."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Money has always been programmable. It just used to be programmed by institutions. A food stamp is money with a rule attached. An escrow account is money that waits for a condition. A gift card is money that expires. We didn't call it programmable because a person, not code, enforced the rule."
+      },
+      {
+        "t": "p",
+        "x": "What changed is who can write the program. Code can now carry the rule inside the money itself. And in 2025, the United States passed its first federal law for stablecoins, digital dollars backed one-to-one, which was the moment programmable money stopped being a fringe experiment and became something a bank could build on."
+      },
+      {
+        "t": "p",
+        "x": "But here's the pattern I keep coming back to. The credit card wasn't trusted until 1970, when the law capped your liability for fraud. Programmable money will be trusted the same way: not because the code is clever, but because someone is clearly accountable when the code is wrong."
+      },
+      {
+        "t": "p",
+        "x": "I built supply chain systems on this idea at Chronicled. The technology worked from day one. What took years was the trust: who's liable, who can reverse, who do you call."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Start with a rule you already enforce by hand. Escrow, milestone payments, expense limits. Programmable money is easiest where the program already exists on paper."
+      },
+      {
+        "t": "p",
+        "x": "Ask who reverses it. Code that can't be undone is a feature for the person who trusts it and a nightmare for the one who made a typo. Design the undo before the launch."
+      },
+      {
+        "t": "p",
+        "x": "And watch the law, not the coin. The interesting news in this space is regulation, because regulation is what turns a clever demo into money people use."
+      },
+      {
+        "t": "p",
+        "x": "Money with rules inside it is here. The pizza was worth it."
+      },
+      {
+        "t": "p",
+        "x": "What's one rule your company enforces by hand that the money could enforce itself?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Would you let an AI agent spend your money?](/writing/would-you-let-an-ai-agent-spend-your-money)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Samantha Radocchia, Bitcoin Pizza: The No-Bullshit Guide to Blockchain (2019)."
+      },
+      {
+        "x": "Congressional Research Service, \"Stablecoin Legislation: An Overview of the GENIUS Act of 2025 (P.L. 119-27).\" The Guiding and Establishing National Innovation for U.S. Stablecoins Act was signed into law on July 18, 2025.",
+        "url": "https://www.congress.gov/crs-product/IN12553"
+      }
+    ],
+    "internalId": "RAD-0055"
+  },
+  {
+    "number": "0052",
+    "series": "rad",
+    "slug": "who-owns-what-the-ai-writes-for-you",
+    "title": "Who owns what the AI writes for you?",
+    "deck": "In the United States, probably nobody, unless a human did enough of the work. The Copyright Office has said purely AI-generated material can't be copyrighted, and it's drawn the line at the human contribution. That's not new. We fought the same fight over photographs in 1884. The answer then, and now, is that the machine is a tool and the author is the person using it.",
+    "metaDescription": "In the United States, probably nobody, unless a human did enough of the work.",
+    "stamp": "owns",
+    "date": "2026-11-20",
+    "lastUpdated": "2026-11-20",
+    "nextReview": "2027-02-18",
+    "readingTime": "2 min read",
+    "industry": "Technology & AI",
+    "industrySlug": "technology-ai",
+    "tags": [
+      "AI",
+      "copyright",
+      "ownership",
+      "creativity"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In 2023, a graphic novel called Zarya of the Dawn became a test case."
+      },
+      {
+        "t": "p",
+        "x": "The artist had written the story and arranged the pages. The images were generated by Midjourney. The U.S. Copyright Office granted copyright on the text and the arrangement, and refused it on the images themselves. Because, it said, a human hadn't made them."
+      },
+      {
+        "t": "p",
+        "x": "That's the line. And it's older than it looks."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "In 1884, the Supreme Court had to decide whether a photograph of Oscar Wilde could be copyrighted. The argument against was that a camera is a machine. The machine made the image, not the person."
+      },
+      {
+        "t": "p",
+        "x": "The court disagreed. The photographer chose the pose, the lighting, the arrangement. The camera was a tool. The author was the human who used it with intent."
+      },
+      {
+        "t": "p",
+        "x": "Every new creative machine reopens that question. The player piano. The sampler. Now the language model. And the answer keeps landing in the same place: what matters is how much of the choosing a human did."
+      },
+      {
+        "t": "p",
+        "x": "That's why this is a question about process, not technology. If you typed one prompt and published what came out, you probably own nothing. If you shaped it, selected, rewrote, and arranged, you own the shaping. Which is also, not coincidentally, the part worth owning."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Keep a record of the human work. Prompts, edits, decisions. If you ever need to prove authorship, the process is the evidence."
+      },
+      {
+        "t": "p",
+        "x": "Don't build a business on output you can't own. If your product is purely generated, anyone can copy it, and the law says they can."
+      },
+      {
+        "t": "p",
+        "x": "And treat the human contribution as the asset. It's what the law protects, what customers will pay for, and what your competitors can't generate."
+      },
+      {
+        "t": "p",
+        "x": "The camera didn't end authorship. It made us say what authorship is. AI is doing the same. The answer is still: the person who chose."
+      },
+      {
+        "t": "p",
+        "x": "How much of what your company published this year could you actually claim?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Can AI be creative?](/writing/can-ai-be-creative)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "U.S. Copyright Office, decision on Zarya of the Dawn, February 21, 2023.",
+        "url": "https://www.copyright.gov/docs/zarya-of-the-dawn.pdf"
+      },
+      {
+        "x": "Burrow-Giles Lithographic Co. v. Sarony, 111 U.S. 53 (1884)."
+      }
+    ],
+    "internalId": "RAD-0045"
+  },
+  {
+    "number": "0051",
+    "series": "rad",
+    "slug": "is-remote-work-a-phase-or-a-permanent-shift",
+    "title": "Is remote work a phase or a permanent shift?",
+    "deck": "It's a permanent shift disguised as a debate. The office was never the natural state of work. It was a hundred-year arrangement built for factories and filing cabinets. Remote isn't the disruption. The office was. We're returning to something older and mixing it with something new. The commute is what's ending.",
+    "metaDescription": "It's a permanent shift disguised as a debate. The office was never the natural state of work.",
+    "stamp": "remote",
+    "date": "2026-11-19",
+    "lastUpdated": "2026-11-19",
+    "nextReview": "2027-02-17",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "remote work",
+      "future of work",
+      "change",
+      "flexibility"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Every few months a headline announces that remote work is over. A big company orders everyone back. Then the next quarter, a bigger company quietly makes it permanent."
+      },
+      {
+        "t": "p",
+        "x": "Here's how to read the noise."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "For most of human history, people worked where they lived. The farm. The workshop under the house. The market down the road. Work and home were one place."
+      },
+      {
+        "t": "p",
+        "x": "Then the factory arrived, and work needed a building. Then the office arrived, because paper needed filing and bosses needed to see people. In 1938, the Fair Labor Standards Act settled America into the nine-to-five, and for eighty years it looked like the natural order."
+      },
+      {
+        "t": "p",
+        "x": "It wasn't. It was an arrangement built for a technology: the factory, the filing cabinet, the landline. The technology changed. The arrangement lasted, out of habit, until a pandemic ended the habit in a week."
+      },
+      {
+        "t": "p",
+        "x": "So remote work isn't new. It's the older pattern, coming back with a laptop. I wrote in Radical Next about a workforce shifting toward interdependent owner-operators, gig work, and flexible arrangements. That was the direction before 2020. The pandemic just removed the excuse."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Stop debating remote versus office. The real question is what the office is for. Answer it honestly: some work needs a room, most doesn't. Design for both."
+      },
+      {
+        "t": "p",
+        "x": "Measure output, not presence. Presence was a proxy for a world where you couldn't see the work. Now you can."
+      },
+      {
+        "t": "p",
+        "x": "And rebuild the rituals the office used to provide by accident. The hallway conversation. The mentor who overheard you. Those were real. They need to be designed now, not assumed."
+      },
+      {
+        "t": "p",
+        "x": "The office isn't dead. The commute as a condition of employment is. That's the permanent part."
+      },
+      {
+        "t": "p",
+        "x": "What's your office actually for?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [How do you get employees to adopt change they didn't ask for?](/writing/how-do-you-get-employees-to-adopt-change-they-didnt-ask-for)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Fair Labor Standards Act of 1938."
+      },
+      {
+        "x": "Sam Rad, Radical Next (2025), Work chapter."
+      }
+    ],
+    "internalId": "RAD-0034"
+  },
+  {
+    "number": "0050",
+    "series": "rad",
+    "slug": "will-we-hack-our-own-brains",
+    "title": "Will we hack our own brains?",
+    "deck": "We already are, clumsily, with caffeine, pills, and screens engineered to hijack us. The next tools are more precise: stimulation that targets a mood, drugs that promote plasticity, interfaces that read intent. The question I keep asking isn't whether we can. It's what we lose if we edit out every weakness, since some of them are the human part.",
+    "metaDescription": "We already are, clumsily, with caffeine, pills, and screens engineered to hijack us.",
+    "stamp": "brains",
+    "date": "2026-11-18",
+    "lastUpdated": "2026-11-18",
+    "nextReview": "2027-02-16",
+    "readingTime": "2 min read",
+    "industry": "Healthcare & Life Sciences",
+    "industrySlug": "healthcare",
+    "tags": [
+      "neuroscience",
+      "biohacking",
+      "health",
+      "attention"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "A friend who works in neuroscience once told me about a technique that could target the parts of the brain responsible for certain neurotransmitters directly. Instead of a pill that floods the whole system, precise stimulation that adjusts the balance."
+      },
+      {
+        "t": "p",
+        "x": "My first question, which I put in Radical Next, was: do you think biohackers will abuse this to overstimulate themselves for productivity, the way people without ADHD take Adderall like Tic Tacs?"
+      },
+      {
+        "t": "p",
+        "x": "He laughed. Then he stopped laughing."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every tool we've had for changing the mind has been used two ways: to heal and to get an edge. Coffee. Nicotine. Antidepressants. Stimulants. And now, screens designed by very smart people to hijack the reward system, which is brain hacking at scale, done to you, for someone else's profit."
+      },
+      {
+        "t": "p",
+        "x": "The next generation is more precise. Non-invasive stimulation. Psychedelics in clinical settings, which show real promise for depression and trauma. Brain-computer interfaces reading intent. Each one arrives with the same two futures attached: relief for people who are suffering, and an arms race for people who aren't."
+      },
+      {
+        "t": "p",
+        "x": "What worries me isn't the technology. It's the temptation, which I wrote about, to eliminate every perceived weakness. Sadness, restlessness, the slow days. Some of those aren't bugs. Some of them are how a human instrument tells you something's wrong. Edit them all out and you've built a very productive person who can't hear their own signal."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things, and I'm not a doctor, so these are about how we think, not what we take."
+      },
+      {
+        "t": "p",
+        "x": "Separate healing from optimization. A treatment for someone in pain and an edge for someone at a desk are different ethical questions. Don't let the first one launder the second."
+      },
+      {
+        "t": "p",
+        "x": "Protect the signal. Before you tune something out, ask what it was telling you. In my next book I write that our discomforts are data. Data is worth reading before you delete it."
+      },
+      {
+        "t": "p",
+        "x": "And notice who's already hacking your brain. The most powerful brain interface in the world is in your pocket, and it isn't tuned to your benefit."
+      },
+      {
+        "t": "p",
+        "x": "We'll hack our brains. We already do. The question is whether we do it to become more ourselves, or less."
+      },
+      {
+        "t": "p",
+        "x": "What's the weakness you'd edit out if you could, and what is it telling you?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Is off-grid the future, or a fantasy?](/writing/is-off-grid-the-future-or-a-fantasy)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Sam Rad, Radical Next (2025), Health chapter."
+      }
+    ],
+    "internalId": "RAD-0054"
+  },
+  {
+    "number": "0049",
+    "series": "rad",
+    "slug": "will-ai-end-the-resume",
+    "title": "Will AI end the resume?",
+    "deck": "Yes, and good riddance. The resume was a technology for a world where a stranger had to be summarized on a page. When both sides are using AI to write and read it, it summarizes nothing. What replaces it is older and better: proof of work. Show the thing you made, and let the person decide.",
+    "metaDescription": "Yes, and good riddance. The resume was a technology for a world where a stranger had to be summarized on a page.",
+    "stamp": "resume",
+    "date": "2026-11-17",
+    "lastUpdated": "2026-11-17",
+    "nextReview": "2027-02-15",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "AI",
+      "hiring",
+      "resume",
+      "talent"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Here's an arms race nobody planned."
+      },
+      {
+        "t": "p",
+        "x": "Applicants use AI to write the resume. Companies use AI to read it. The machine on one side optimizes for the machine on the other. And the person in the middle, the actual human being hired, has left the conversation."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "The resume is a technology. It solved a specific problem: a stranger needs to evaluate another stranger quickly, at a distance, without seeing their work. Leonardo da Vinci wrote what's often called the first one in the 1480s, a letter to the Duke of Milan listing what he could build."
+      },
+      {
+        "t": "p",
+        "x": "For most of history you didn't need one. You were hired by someone who'd seen you work, or by someone who knew someone who had. Apprenticeships. Guilds. Reputation in a town of a few thousand people."
+      },
+      {
+        "t": "p",
+        "x": "The resume scaled hiring past that. And then it became the thing itself: a performance of a career rather than a record of one. Keywords. Formats. The ritual of the objective statement nobody reads."
+      },
+      {
+        "t": "p",
+        "x": "AI finishes it off, because a document any machine can write and any machine can read carries no signal. And when a signal dies, hiring goes back to the thing that always worked. Show me."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Ask for the thing, not the description. A piece of work, a decision they made, a problem they solved. Portfolios for everyone, not just designers."
+      },
+      {
+        "t": "p",
+        "x": "Talk to a human early. The screening call used to be step four. Make it step one. AI made the top of the funnel worthless; the fix is to put the person back at the top."
+      },
+      {
+        "t": "p",
+        "x": "And rebuild reputation networks on purpose. The referral from someone who's seen the work is the oldest hiring signal there is, and the one AI can't fake. Pay attention to it again."
+      },
+      {
+        "t": "p",
+        "x": "The resume was a workaround for not knowing anyone. Now the workaround is broken. The answer is to know people again."
+      },
+      {
+        "t": "p",
+        "x": "When did you last hire someone because of something they made, not something they wrote?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Should you hire for skills or for curiosity?](/writing/should-you-hire-for-skills-or-for-curiosity)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Leonardo da Vinci, letter to Ludovico Sforza, c. 1482, often cited as the first resume."
+      }
+    ],
+    "internalId": "RAD-0044"
+  },
+  {
+    "number": "0048",
+    "series": "rad",
+    "slug": "should-you-unlearn-faster-than-you-learn",
+    "title": "Should you unlearn faster than you learn?",
+    "deck": "Yes. In a world that changes this fast, the skill that separates people isn't picking up new things. Almost everyone can do that. It's putting down the old thing that used to work. Unlearning is the most underrated skill of this decade, and almost nobody teaches it.",
+    "metaDescription": "Yes. In a world that changes this fast, the skill that separates people isn't picking up new things. Almost everyone can do that.",
+    "stamp": "unlearn",
+    "date": "2026-11-16",
+    "lastUpdated": "2026-11-16",
+    "nextReview": "2027-02-14",
+    "readingTime": "2 min read",
+    "industry": "Higher Education",
+    "industrySlug": "higher-education",
+    "tags": [
+      "unlearning",
+      "adaptability",
+      "learning",
+      "skills"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "I wrote in Radical Next that unlearning ranks among the most valuable and most underrated skills we have."
+      },
+      {
+        "t": "p",
+        "x": "Here's why I believe it more every year."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every expert is a collection of things that used to be true."
+      },
+      {
+        "t": "p",
+        "x": "The doctor trained in 1995 learned a set of rules that were right in 1995. The marketer who mastered search in 2010 mastered a search that no longer exists. The manager who learned to run a room learned it for rooms that are now half video."
+      },
+      {
+        "t": "p",
+        "x": "Learning is easy to see and easy to reward. Unlearning is invisible. Nobody gets a certificate for letting go of a method that no longer works. But the people who get stuck in every transition are never the ones who couldn't learn. They're the ones who couldn't stop knowing."
+      },
+      {
+        "t": "p",
+        "x": "I think of it like the maze I describe in my next book. Every path you walk often enough becomes a wall in your mind. The more expert you are, the more walls. Unlearning is tearing one down on purpose, before the maze gets too small to move in."
+      },
+      {
+        "t": "p",
+        "x": "Skydiving taught me this the hard way. Every instinct a body has about falling is wrong. You unlearn them or you don't jump twice."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Keep an unlearning list. Next to what you want to learn this year, write what you need to stop believing. It's harder to fill in, which tells you something."
+      },
+      {
+        "t": "p",
+        "x": "Ask experts what they've changed their mind about. It's the best interview question I know. The ones who can't answer are the ones whose expertise has hardened into walls."
+      },
+      {
+        "t": "p",
+        "x": "And make it safe to say \"that's how I used to do it.\" A team that can say that out loud unlearns fast. A team that has to pretend it was always right can't."
+      },
+      {
+        "t": "p",
+        "x": "The future doesn't belong to whoever learns fastest. It belongs to whoever can let go fastest, and still stand up."
+      },
+      {
+        "t": "p",
+        "x": "What did you believe five years ago that you'd be embarrassed to say today?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Why do smart organizations keep making the same change twice?](/writing/why-do-smart-organizations-keep-making-the-same-change-twice)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Sam Rad, Radical Next (2025), Knowledge and Education chapter, on unlearning."
+      }
+    ],
+    "internalId": "RAD-0033"
+  },
+  {
+    "number": "0047",
+    "series": "rad",
+    "slug": "is-the-smartphone-already-over",
+    "title": "Is the smartphone already over?",
+    "deck": "As the center of your life, yes. As an object, not for a while. The phone is doing what the PC did: fading from the thing you stare at into a thing that's just around. Glasses, earbuds, the agent that talks to your services for you. The screen is what's ending. And that's an opportunity for anyone who wants their attention back.",
+    "metaDescription": "As the center of your life, yes. As an object, not for a while.",
+    "stamp": "smartphone",
+    "date": "2026-11-13",
+    "lastUpdated": "2026-11-13",
+    "nextReview": "2027-02-11",
+    "readingTime": "2 min read",
+    "industry": "Technology & AI",
+    "industrySlug": "technology-ai",
+    "tags": [
+      "smartphone",
+      "attention",
+      "devices",
+      "future"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "I write in my next book about the first thing most people do in the morning. Reach for the phone. Before a thought of their own."
+      },
+      {
+        "t": "p",
+        "x": "I don't think that habit has ten more years in it. Not because we'll get better. Because the phone will move."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "The personal computer was the center of digital life for about twenty years. It was the thing you sat in front of. Then the phone arrived, and the PC didn't die. It became furniture: still there, still useful, no longer where life happened."
+      },
+      {
+        "t": "p",
+        "x": "The phone has been the center for about fifteen years. And the same thing is starting. Earbuds that talk. Glasses that see. Agents that do the tapping for you, so the app you'd have opened never gets opened. The phone stays in the pocket, and the pocket is where it ends up living."
+      },
+      {
+        "t": "p",
+        "x": "The pattern is that the screen we stare at keeps getting smaller and then disappears into the environment. Every era of computing moves closer to the body and further from the desk. The next step is no screen at all, most of the time."
+      },
+      {
+        "t": "p",
+        "x": "That's the risk and the opportunity in one. A world without the glowing rectangle could be a world where attention comes back. Or it could be a world where the feed is in your ear all day and you never notice you're in it."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "If you build products: stop designing for the screen first. Design for the moment the person doesn't look at anything. What does your service do when it's a voice, or an agent, or nothing at all?"
+      },
+      {
+        "t": "p",
+        "x": "If you build a brand: prepare to be chosen by an agent, not a thumb. The app icon is about to matter a lot less than the data behind it."
+      },
+      {
+        "t": "p",
+        "x": "And whoever you are: use the gap. As the phone moves out of the hand, you get a chance to decide what goes there instead. Decide on purpose."
+      },
+      {
+        "t": "p",
+        "x": "The PC didn't die. Neither will the phone. But the age of staring at it is closing, and what fills that gaze is up for grabs."
+      },
+      {
+        "t": "p",
+        "x": "What would you do with your hands if the phone weren't in them?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Is your attention the most valuable thing your company owns?](/writing/is-your-attention-the-most-valuable-thing-your-company-owns)*"
+      }
+    ],
+    "sources": [],
+    "internalId": "RAD-0053"
+  },
+  {
+    "number": "0046",
+    "series": "rad",
+    "slug": "can-ai-be-creative",
+    "title": "Can AI be creative?",
+    "deck": "It can be novel. It can't be original, and the difference matters. AI recombines what exists, brilliantly and at scale. Originality comes from somewhere the machine doesn't have: a life, a body, a reason. Photography didn't kill painting. It freed painting to become something a camera couldn't. AI is doing that to every creative field now.",
+    "metaDescription": "It can be novel. It can't be original, and the difference matters. AI recombines what exists, brilliantly and at scale.",
+    "stamp": "creative",
+    "date": "2026-11-12",
+    "lastUpdated": "2026-11-12",
+    "nextReview": "2027-02-10",
+    "readingTime": "2 min read",
+    "industry": "Technology & AI",
+    "industrySlug": "technology-ai",
+    "tags": [
+      "AI",
+      "creativity",
+      "art",
+      "originality"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In 1839, the painter Paul Delaroche saw a daguerreotype for the first time and reportedly said: from today, painting is dead."
+      },
+      {
+        "t": "p",
+        "x": "He was wrong in the most interesting way possible."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Photography could capture a face more accurately than any painter. So painters stopped competing on accuracy. Within forty years they gave us Impressionism, then everything after it. Painting didn't die. It got pushed toward the thing a camera couldn't do, which was to show how it felt to look."
+      },
+      {
+        "t": "p",
+        "x": "That's the pattern with every creative technology. The player piano. The synthesizer. Sampling. Each one was going to end music, and each one gave musicians a new instrument and pushed the humans toward what only humans could do."
+      },
+      {
+        "t": "p",
+        "x": "Here's where I land on AI. I say on stage that it's a mirror. It reflects, amplifies, and optimizes. It cannot originate, discern, or care. That's not a limitation somebody will patch. It's what the thing is. It generates the most probable next thing, from everything that came before."
+      },
+      {
+        "t": "p",
+        "x": "Novel, yes. Constantly. Original, no. Originality comes from a person with a body, a history, and a reason to say this particular thing. The machine has none of those. It has a very good memory of people who did."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things, if you run anything creative."
+      },
+      {
+        "t": "p",
+        "x": "Use it for the accuracy problem. Drafts, variations, the hundred versions of a layout. That's the daguerreotype. Let it be fast."
+      },
+      {
+        "t": "p",
+        "x": "Push your humans toward the Impressionism. What can they make that the mirror can't? Taste, a point of view, the choice of what not to say. Pay for that."
+      },
+      {
+        "t": "p",
+        "x": "And credit like it matters. Say what's human-made. As I've written elsewhere, that label is about to become a market."
+      },
+      {
+        "t": "p",
+        "x": "Delaroche was afraid of the wrong thing. So is everyone worried AI ends creativity. It ends the accuracy contest. The interesting part starts after."
+      },
+      {
+        "t": "p",
+        "x": "What's the thing you make that a mirror couldn't?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Is \"AI-free\" about to become a selling point?](/writing/is-ai-free-about-to-become-a-selling-point)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Paul Delaroche, attributed remark on the daguerreotype, 1839 (widely cited; the attribution is contested, say \"reportedly\")."
+      },
+      {
+        "x": "Sam Rad, \"AI is a mirror,\" LinkedIn, May 2026."
+      }
+    ],
+    "internalId": "RAD-0043"
+  },
+  {
+    "number": "0045",
+    "series": "rad",
+    "slug": "can-you-change-a-culture-or-only-the-people-in-it",
+    "title": "Can you change a culture, or only the people in it?",
+    "deck": "You can change it, but not by talking about it. Culture is what people do when the rules run out, and it changes when the consequences change. Posters and values decks don't move it. Who gets promoted, what gets forgiven, and what the leader does under pressure move it fast.",
+    "metaDescription": "You can change it, but not by talking about it. Culture is what people do when the rules run out, and it changes when the consequences change.",
+    "stamp": "culture",
+    "date": "2026-11-11",
+    "lastUpdated": "2026-11-11",
+    "nextReview": "2027-02-09",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "culture",
+      "leadership",
+      "change",
+      "organizational change"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Every company has two cultures."
+      },
+      {
+        "t": "p",
+        "x": "There's the one on the wall. Integrity. Innovation. Customer obsession. Somebody paid a designer."
+      },
+      {
+        "t": "p",
+        "x": "And there's the one in the hallway: what actually happens when a deadline slips, when the boss is wrong, when the numbers don't come in. That's the real one. Nobody wrote it down. Everybody knows it."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Anthropologists have a way of finding a culture. You don't ask people what they value. You watch what they do when they think it doesn't matter. Who they defer to. What they joke about. Which rules are real and which are decoration."
+      },
+      {
+        "t": "p",
+        "x": "By that measure, culture is the accumulated record of consequences. Every time someone was rewarded for cutting a corner, the culture learned. Every time someone was punished for raising a problem, it learned that too."
+      },
+      {
+        "t": "p",
+        "x": "Which is why the values workshop doesn't work. You're editing the poster while the consequences keep teaching the old lesson."
+      },
+      {
+        "t": "p",
+        "x": "The good news is that consequences can change fast. I've watched a culture shift in a single quarter because a leader promoted the person who told her the uncomfortable truth, publicly, and everyone saw it."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Audit your last ten promotions. Not the stated reasons. What did those ten people actually do that got them there? That's your culture, in writing."
+      },
+      {
+        "t": "p",
+        "x": "Change one consequence and make it visible. Forgive one honest failure loudly. Reward one uncomfortable truth in front of everyone. Culture learns from what it sees, not from what it reads."
+      },
+      {
+        "t": "p",
+        "x": "And watch yourself under pressure. The leader's worst day is the culture's textbook. Everyone remembers what you did when it went wrong."
+      },
+      {
+        "t": "p",
+        "x": "You don't need new people. You need new consequences. The same people will become a different culture within a year."
+      },
+      {
+        "t": "p",
+        "x": "What does your company reward when nobody's looking?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Can a team stay human through a reorg?](/writing/can-a-team-stay-human-through-a-reorg)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Sam Rad, Radical Next (2025), on anthropological method and observed versus stated values."
+      }
+    ],
+    "internalId": "RAD-0032"
+  },
+  {
+    "number": "0044",
+    "series": "rad",
+    "slug": "should-everything-be-decentralized",
+    "title": "Should everything be decentralized?",
+    "deck": "No, and anyone who says yes is selling something. Decentralization is a tool, not a religion. It's the right answer when trust is the problem and the wrong one when coordination is. I spent years building decentralized systems. The lesson wasn't that everything should be. It was knowing which half.",
+    "metaDescription": "No, and anyone who says yes is selling something. Decentralization is a tool, not a religion.",
+    "stamp": "decentralized",
+    "date": "2026-11-10",
+    "lastUpdated": "2026-11-10",
+    "nextReview": "2027-02-08",
+    "readingTime": "2 min read",
+    "industry": "Technology & AI",
+    "industrySlug": "technology-ai",
+    "tags": [
+      "decentralization",
+      "blockchain",
+      "architecture",
+      "trust"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "I've probably spent more of my career on decentralization than on any other idea. I co-founded a company that put supply chains on a blockchain. I wrote a book about it. I still believe in it."
+      },
+      {
+        "t": "p",
+        "x": "Which is why I can tell you where it doesn't work."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every technology era swings between central and distributed. Mainframes to PCs to the cloud, which is mainframes again with better marketing. Three broadcast networks to a million channels to five platforms that own them. Empire to nation to trading bloc."
+      },
+      {
+        "t": "p",
+        "x": "The swing never settles, because each pole solves a different problem. Centralization is good at coordination: one standard, one timetable, one grid. Decentralization is good at trust: no single point of failure, no one to bribe, no one to ask permission."
+      },
+      {
+        "t": "p",
+        "x": "The mistake, and I've watched a whole industry make it, is treating one pole as the destination. \"Decentralize everything\" produced a lot of systems that solved trust problems nobody had and created coordination problems nobody wanted. Twenty blockchains for a supply chain that needed one shared spreadsheet and a reason to trust it."
+      },
+      {
+        "t": "p",
+        "x": "The real question for any system is: which problem do you actually have? If the parties don't trust each other, decentralize the record. If they can't coordinate, centralize the standard. Often both, in different layers."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Name the problem before the architecture. Trust problem, or coordination problem? The answer picks the design. Never the other way around."
+      },
+      {
+        "t": "p",
+        "x": "Decentralize the thing that gets abused. Data ownership, verification, the record of what happened. Those are trust problems and they belong at the edge."
+      },
+      {
+        "t": "p",
+        "x": "And centralize the thing that has to match. Standards, protocols, the definition of a kilogram. Those are coordination problems and they need a center."
+      },
+      {
+        "t": "p",
+        "x": "The jungle taught me something about this too. Every tree is its own system. They still share one forest floor. Decentralized life, centralized ground. That's the pattern worth copying."
+      },
+      {
+        "t": "p",
+        "x": "Which of your problems is a trust problem, and which is a coordination problem wearing a trust costume?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Will AI replace middle managers?](/writing/will-ai-replace-middle-managers)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Samantha Radocchia, Bitcoin Pizza: The No-Bullshit Guide to Blockchain (2019)."
+      },
+      {
+        "x": "Sam Rad, Radical Next (2025), on decentralized governance."
+      }
+    ],
+    "internalId": "RAD-0052"
+  },
+  {
+    "number": "0043",
+    "series": "rad",
+    "slug": "should-your-company-have-a-chief-ai-officer",
+    "title": "Should your company have a Chief AI Officer?",
+    "deck": "For a few years, probably. Then no. Every general-purpose technology gets its own executive for a while, and the title fades once the technology is everywhere. AI is on the same path. The title is useful during the transition, dangerous if it becomes a place to park responsibility that belongs to everyone.",
+    "metaDescription": "For a few years, probably. Then no. Every general-purpose technology gets its own executive for a while, and the title fades once it is everywhere.",
+    "stamp": "officer",
+    "date": "2026-11-09",
+    "lastUpdated": "2026-11-09",
+    "nextReview": "2027-02-07",
+    "readingTime": "1 min read",
+    "industry": "Technology & AI",
+    "industrySlug": "technology-ai",
+    "tags": [
+      "AI",
+      "leadership",
+      "organization",
+      "AI adoption"
+    ],
+    "body": [
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every general-purpose technology gets its own executive for a while. Chief information officers appeared when computers were exotic. Chief digital officers appeared when the internet was a department. Both titles are fading as the thing they owned became the water everyone swims in."
+      },
+      {
+        "t": "p",
+        "x": "The Chief AI Officer is in year three of the same arc. Useful right now, because someone has to build the policies, pick the vendors, and stop twelve teams from buying twelve tools. Dangerous soon, because the moment AI belongs to one office, everyone else gets permission to stop thinking about it."
+      },
+      {
+        "t": "p",
+        "x": "I've watched companies hire the title as a way of feeling done. \"We have someone on it.\" That's the worst outcome. The point of the role is to work itself out of a job."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Hire the role with an expiry. Two or three years, with an explicit mission: make every leader capable of owning AI in their own function, then hand it over."
+      },
+      {
+        "t": "p",
+        "x": "Measure the role by what others can do. Not by how many models were deployed. By how many teams no longer need the office."
+      },
+      {
+        "t": "p",
+        "x": "And never let the title absorb accountability. If the AI in your lending team makes a bad decision, the answer is not \"ask the Chief AI Officer.\" It's the head of lending. Always."
+      },
+      {
+        "t": "p",
+        "x": "The best Chief AI Officer is the one whose office closes because everyone else learned the job. That's success."
+      },
+      {
+        "t": "p",
+        "x": "If you hired a Chief AI Officer tomorrow, what would have to be true for the role to close in 2029?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Will AI replace middle managers?](/writing/will-ai-replace-middle-managers)*"
+      }
+    ],
+    "sources": [],
+    "internalId": "RAD-0042"
+  },
+  {
+    "number": "0042",
+    "series": "rad",
+    "slug": "why-do-your-best-people-leave-right-after-the-transformation-succeeds",
+    "title": "Why do your best people leave right after the transformation succeeds?",
+    "deck": "Because the transformation was the job, and now it's over. The people who carry a company through change are built for the climb, not the plateau. When the new normal arrives, they look up and see a maintenance role. The fix isn't a retention bonus. It's the next climb, named before this one ends.",
+    "metaDescription": "Because the transformation was the job, and now it's over. The people who carry a company through change are built for the climb, not the plateau.",
+    "stamp": "leave",
+    "date": "2026-11-06",
+    "lastUpdated": "2026-11-06",
+    "nextReview": "2027-02-04",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "retention",
+      "transformation",
+      "talent",
+      "leading through change"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "It happens at the party."
+      },
+      {
+        "t": "p",
+        "x": "The new system is live. The reorg held. Someone gives a speech. And two weeks later, the person who did more than anyone to make it work hands in her notice."
+      },
+      {
+        "t": "p",
+        "x": "Everyone calls it bad timing. It isn't. It's the most predictable moment in the whole cycle."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every transformation runs on a small number of people who love the hard part. They're the ones in the room at midnight. They thrive on ambiguity because it means the map isn't drawn yet, and drawing maps is what they do."
+      },
+      {
+        "t": "p",
+        "x": "Then the map gets finished. And the same organization that needed cartographers now needs custodians. Good people, different people."
+      },
+      {
+        "t": "p",
+        "x": "The cartographer looks up, sees five years of maintaining what she built, and leaves for the next blank map. Not because she's disloyal. Because you built her a job and then quietly replaced it with a different one."
+      },
+      {
+        "t": "p",
+        "x": "I've been that person. I've co-founded four companies, and in every one, the moment it became stable was the moment I felt the itch. The job was never the goal. The change was."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Name the next climb before this one ends. Not a vague \"phase two.\" A real, hard problem with her name on it, announced before the launch party."
+      },
+      {
+        "t": "p",
+        "x": "Separate the builders from the keepers, on purpose. Some people want the plateau. Give it to them. Don't ask a builder to become a keeper and then act surprised."
+      },
+      {
+        "t": "p",
+        "x": "And tell the truth in the hiring conversation. \"This role will change shape in eighteen months\" is a promise builders will sign up for and keepers will thank you for skipping."
+      },
+      {
+        "t": "p",
+        "x": "The people who leave after the win aren't the problem. They're the signal that you finished something. Give them the next thing to finish."
+      },
+      {
+        "t": "p",
+        "x": "Who on your team is a cartographer with no map left to draw?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [What year is it inside your company?](/writing/what-year-is-it-inside-your-company)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Sam Rad, \"Change Has a Pattern\" keynote: the job is not the goal."
+      }
+    ],
+    "internalId": "RAD-0031"
+  },
+  {
+    "number": "0041",
+    "series": "rad",
+    "slug": "will-we-ever-really-live-on-mars",
+    "title": "Will we ever really live on Mars?",
+    "deck": "Some people will, the way some people live in Antarctica: in small stations, on rotation, doing science and mining. A city of a million, this century, is a story we tell ourselves. And it's a distracting one, because most of what we'd need to survive Mars is what we need to fix Earth. Build that, and the rocket comes later.",
+    "metaDescription": "Some people will, the way some people live in Antarctica: in small stations, on rotation, doing science and mining.",
+    "stamp": "Mars",
+    "date": "2026-11-05",
+    "lastUpdated": "2026-11-05",
+    "nextReview": "2027-02-03",
+    "readingTime": "2 min read",
+    "industry": "Technology & AI",
+    "industrySlug": "technology-ai",
+    "tags": [
+      "space",
+      "Mars",
+      "sustainability",
+      "future"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "I love space. I want to say that first, because what I'm about to say sounds like I don't."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Humans have been \"colonizing\" Antarctica since the 1950s. Seventy years later, about a thousand people live there in winter, five thousand in summer, in research stations, on rotation, supplied entirely from outside. Almost nobody is born there. Nobody retires there."
+      },
+      {
+        "t": "p",
+        "x": "Antarctica has air. It has water, frozen. It's a three-hour flight from Chile. Mars has none of that and is seven months away on a good day."
+      },
+      {
+        "t": "p",
+        "x": "So the honest forecast, the one that follows the pattern, is Antarctica: stations, scientists, maybe miners, on rotation. That's an achievement. It's not a city."
+      },
+      {
+        "t": "p",
+        "x": "In Radical Next I wrote about the interplanetary chapter with some wariness. Not because it's impossible, but because so much of the current push, asteroid mining for battery metals, Mars as a backup planet, is an extractivist reflex wearing a spacesuit. We ran out of the easy stuff here, so let's go take it there."
+      },
+      {
+        "t": "p",
+        "x": "Here's the irony. Everything you'd need to live on Mars, closed-loop water, food grown without soil, energy with no fossil fuels, materials made from almost nothing, is exactly what we need to keep living on Earth. The Mars program is an Earth program that's embarrassed to say so."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "If you're investing in space, invest in the closed loop. Water recycling, food systems, energy storage. Those pay off on Earth first and on Mars eventually."
+      },
+      {
+        "t": "p",
+        "x": "Be honest about the timeline. Stations by the 2040s is a real plan. A city is a marketing plan."
+      },
+      {
+        "t": "p",
+        "x": "And ask what the space program is really for. Science and inspiration are good answers. Escape is not. There is no backup planet. There's this one, and the technology to keep it."
+      },
+      {
+        "t": "p",
+        "x": "We'll go to Mars. A few of us, for a while. The rest of us will live in the future we build here with the same tools. That's the interesting mission."
+      },
+      {
+        "t": "p",
+        "x": "If you knew there was no backup planet, what would you build first?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Will biology replace the factory?](/writing/will-biology-replace-the-factory)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Sam Rad, Radical Next (2025), Planetary and Interplanetary chapter."
+      },
+      {
+        "x": "\"Demographics of Antarctica\": about 1,000 people in winter and 4,000 to 5,000 in summer, at research stations run under the Antarctic Treaty.",
+        "url": "https://en.wikipedia.org/wiki/Demographics_of_Antarctica"
+      }
+    ],
+    "internalId": "RAD-0051"
+  },
+  {
+    "number": "0040",
+    "series": "rad",
+    "slug": "will-your-kids-learn-from-an-ai-tutor",
+    "title": "Will your kids learn from an AI tutor?",
+    "deck": "Many already do, and the research says one-on-one tutoring is the single most effective thing in education. That's the promise. The catch is in who builds the tutor, what it optimizes for, and whether it teaches how to think or what to think. The tutor is coming. The question is whose values it carries.",
+    "metaDescription": "Many already do, and the research says one-on-one tutoring is the single most effective thing in education. That's the promise.",
+    "stamp": "tutor",
+    "date": "2026-11-04",
+    "lastUpdated": "2026-11-04",
+    "nextReview": "2027-02-02",
+    "readingTime": "2 min read",
+    "industry": "Higher Education",
+    "industrySlug": "higher-education",
+    "tags": [
+      "AI",
+      "education",
+      "tutoring",
+      "children"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In 1984, the education researcher Benjamin Bloom published a finding that has haunted teachers ever since."
+      },
+      {
+        "t": "p",
+        "x": "Students taught one-on-one by a good tutor performed about two standard deviations better than students in a normal classroom. The average tutored kid did better than 98 percent of the class."
+      },
+      {
+        "t": "p",
+        "x": "He called it the two sigma problem. Because we couldn't afford a tutor for every child. Now, suddenly, we can."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "I asked in Radical Next: as AI expands, will every student have a personalized AI tutor? And if so, who programs it, and how do we ensure its accuracy and safety?"
+      },
+      {
+        "t": "p",
+        "x": "Those questions are now live. Millions of kids are already asking an AI for homework help, with or without permission."
+      },
+      {
+        "t": "p",
+        "x": "Here's the pattern worth watching. Every education technology has promised to democratize the tutor. Radio lessons in the 1930s. Educational television. The MOOC. Each one delivered content at scale and failed at the thing tutoring actually does, which is notice the individual child and respond."
+      },
+      {
+        "t": "p",
+        "x": "This one can respond. That's genuinely new. But it can also respond in a way that gives the answer instead of the question, or that reflects whoever trained it. School, I wrote, is often a place where you're taught what to think, not how. An AI tutor can be either, at a scale no school ever reached."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things, whether you run a school or raise a kid."
+      },
+      {
+        "t": "p",
+        "x": "Ask what the tutor optimizes for. Completion? Engagement? Understanding? The answer is a design decision someone made, and it shapes your child."
+      },
+      {
+        "t": "p",
+        "x": "Insist on the question, not the answer. A tutor that says \"what do you think happens next?\" is teaching. One that says \"the answer is 42\" is a vending machine."
+      },
+      {
+        "t": "p",
+        "x": "And keep humans in the loop for the human part. The AI can drill fractions. It can't notice a kid is having a bad week."
+      },
+      {
+        "t": "p",
+        "x": "Bloom's problem was that we couldn't afford the tutor. Our problem is that we can, and now we have to decide what it teaches."
+      },
+      {
+        "t": "p",
+        "x": "Who wrote the values into the tutor your kid talks to?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Should you unlearn faster than you learn?](/writing/should-you-unlearn-faster-than-you-learn)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Benjamin S. Bloom, \"The 2 Sigma Problem,\" Educational Researcher 13, no. 6 (1984): 4 to 16.",
+        "url": "https://journals.sagepub.com/doi/10.3102/0013189X013006004"
+      },
+      {
+        "x": "Sam Rad, Radical Next (2025), Knowledge and Education chapter."
+      }
+    ],
+    "internalId": "RAD-0041"
+  },
+  {
+    "number": "0039",
+    "series": "rad",
+    "slug": "what-happens-after-the-future-happens",
+    "title": "What happens after the future happens?",
+    "deck": "It becomes ordinary. Every future we've feared or hoped for has arrived, and within a decade nobody could remember life without it. That's the fifth stage of the pattern and the most important one, because it's where you're living now, in somebody else's future. The question is never how to survive the future. It's what to do once it's furniture.",
+    "metaDescription": "It becomes ordinary. Every future we've feared or hoped for has arrived, and within a decade nobody could remember life without it.",
+    "stamp": "future",
+    "date": "2026-11-03",
+    "lastUpdated": "2026-11-03",
+    "nextReview": "2027-02-01",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "future",
+      "change",
+      "pattern",
+      "hope"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "That line is on my website. What happens after the future happens. People ask what it means."
+      },
+      {
+        "t": "p",
+        "x": "Here's what it means."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "You're living in a future right now. Someone in 1990 would look at your morning, the phone, the video call, the delivery, and see science fiction. You see Tuesday."
+      },
+      {
+        "t": "p",
+        "x": "That's what happens after the future happens. It becomes ordinary. It becomes furniture. And that's not a small thing. It's the whole point."
+      },
+      {
+        "t": "p",
+        "x": "Every transformation runs through panic, adoption, a dip, redesign, and then ordinary. We spend all our energy on the first four and none on the fifth. But the fifth is where we live. The internet is ordinary. Electricity is ordinary. And the things that feel impossible today, AI agents, gene editing, living to 120, will be ordinary to someone reading this in 2040."
+      },
+      {
+        "t": "p",
+        "x": "So the useful question isn't \"how do we survive this?\" We will. We always have. The useful question is: what do we do once it's ordinary? What kind of company, what kind of life, what kind of person, when the thing we're panicking about is just how things are?"
+      },
+      {
+        "t": "p",
+        "x": "I ended Radical Next on hope, on purpose. Not because the future is safe. Because after every future so far, we've still been here. Still human. Still asking."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Design for ordinary. Don't plan for the AI transition. Plan for the company you want to be when AI is as unremarkable as email."
+      },
+      {
+        "t": "p",
+        "x": "Keep the human part on purpose. Everything else becomes furniture. The things that stay valuable are the ones a machine can't be: judgment, care, the person who was actually there."
+      },
+      {
+        "t": "p",
+        "x": "And remember you've done this before. You're already living after several futures. You were fine. You'll be fine after this one."
+      },
+      {
+        "t": "p",
+        "x": "The future happens. Then it's Tuesday. Build for Tuesday."
+      },
+      {
+        "t": "p",
+        "x": "What's the future you're afraid of, and what will you do the morning after it's ordinary?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [What does 5,000 years of change say about the next five?](/writing/what-does-5-000-years-of-change-say-about-the-next-five)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Sam Rad, Radical Next (2025)."
+      },
+      {
+        "x": "Sam Rad, \"Change Has a Pattern\" keynote."
+      }
+    ],
+    "internalId": "RAD-0040"
+  },
+  {
     "number": "0038",
     "series": "rad",
     "slug": "will-biology-replace-the-factory",

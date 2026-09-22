@@ -364,6 +364,35 @@ Sam's decisions, 22 Sep:
   self-healing concrete is linked to Jonkers et al., *Ecological Engineering* (2010).
   The other linked sources in the batch were not re-checked here.
 
+### R-A-D batch 03, scheduled 22 Sep 2026
+
+Thirty questions, RAD-0031 to 0060, as **Nº 0039 to 0068, one per weekday from Tuesday
+3 November to Monday 14 December 2026**, matching `RAD-LINKEDIN-BATCH-03-EXPORT.md`.
+Hidden until each morning, like batch 02. **The run ends 14 December: batch 04 must be
+in the repo before then**, or the site and LinkedIn go quiet over the holidays.
+
+Standing decisions applied without asking again: *Mindjacked* is "the next book" (eight
+posts; self-citations dropped); the five stages stay (Nº 0039, 0054). Every source the
+export flagged "verify" was checked on 22 Sep and linked, or the claim changed:
+- **Cut:** the "vice president of electricity" story in "Should your company have a Chief
+  AI Officer?" (Nº 0043). No source for the title could be found. The post now opens on
+  its own pattern (CIOs, CDOs), with a new closing line; deck rewritten to match.
+- **Corrected:** "Nobody is born there" (Antarctica, Nº 0041) is now "Almost nobody": at
+  least eleven children have been. "A permanent expression of strain" (bicycle face,
+  Nº 0054) is now "some said permanent". The nuclear post (Nº 0059) no longer credits the
+  IEA with Belgium, Italy and Germany reversing course: that clause was not in the IEA's
+  reports, and the IEA recorded Belgian retirements in 2025.
+- **Confirmed and linked:** the GENIUS Act (signed 18 July 2025, P.L. 119-27, CRS); IEA
+  record generation in 2025 and 63 reactors under construction; the Literary Digest's
+  "The Bicycle Face", 7 Sep 1895; La Reynie's lanterns, 1667 (Lapham's Quarterly); the New
+  York elevator operators' strike, September 1945 (NPR); Antarctic population figures.
+- **Sam's call still open:** "Will we hack our own brains?" (Nº 0050) touches medical
+  territory under the Healthcare hub; it says "I'm not a doctor" and stays off treatment.
+
+**The uploaded `RAD-BATCH-02.zip` of 22 Sep is the pre-edit export. Do not install it**:
+batch 02 is already in `dispatches.json` with Sam's decisions applied, and the old copy
+would bring back the duplicate quantum question and the *Mindjacked* references.
+
 **Reviewing scheduled posts:** `PREVIEW_DATE=2026-11-02 npm run build` builds as if it were
 that day, so scheduled posts render for review. Never set it on Vercel.
 
@@ -385,8 +414,10 @@ Worldwide." Sam's final form: **"Latest writing."** with the stamp on "writing",
 `/writing`), and one **"Read the writing"** button under them, on every screen size.
 Because the daily publish job rebuilds the site each morning a post goes live, the
 homepage links to a fresh post every weekday, which is the point for discovery.
-The strip is **white** (`--paper-white`) so it separates from the paper-toned gallery
-below; on the same paper tone the two ran together. `LatestQuestions` in `Blocks.jsx` keeps the two other mocked layouts (`cards`, `lead`)
+Homepage section colors, final (Sam, 22 Sep 2026): Latest writing **cream** (`--paper`),
+On stage. Worldwide. **white** (`--paper-white`), testimonials **cream**, so each reads as
+its own band. The gallery's white is set inline on the homepage only; `.gallery` is shared
+with Meet Sam, SamRad.AI and Body of Work, which keep their color. `LatestQuestions` in `Blocks.jsx` keeps the two other mocked layouts (`cards`, `lead`)
 behind `variant`.
 
 ### Daily publishing, built 22 Sep 2026

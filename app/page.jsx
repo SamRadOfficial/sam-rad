@@ -193,7 +193,9 @@ export default function Home() {
         <LatestQuestions posts={latestQuestions} />
 
 
-        <section className="gallery">
+        {/* Homepage only: white, between the cream Latest writing and cream testimonials.
+            .gallery is shared with Meet Sam, SamRad.AI and Body of Work, which keep theirs. */}
+        <section className="gallery" style={{ background: 'var(--paper-white)' }}>
           <div className="gallery-head">
             <div className="gal-eyebrow">From the road</div>
             <h2 className="h2">On stage. <span style={{ color: 'var(--mint-deep)' }}>Worldwide.</span></h2>
@@ -218,7 +220,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="tests" style={{ background: 'var(--paper-white)' }}>
+        <section className="tests" style={{ background: 'var(--paper)' }}>
           <div className="narrow">
             <div className="section-header">
               <div className="tag">What rooms say</div>
