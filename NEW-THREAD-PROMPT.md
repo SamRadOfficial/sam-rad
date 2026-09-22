@@ -26,9 +26,13 @@ works.**
 mkdir -p ~/work && cd ~/work
 # unzip the source here
 npm install
-npm run build          # must print "Generating static pages (47/47)"
+npm run build          # must print "Generating static pages (N/N)", no failures
 npm run check:images   # must print "images ok"
 ```
+
+The page count is not a fixed number any more. It rises by one per post, and by two
+per R-A-D post, which also gets a generated preview card. Check it went up by what you
+added, not that it equals a number.
 
 `scripts/preview.py`, `scripts/mobile.py` and `scripts/check-images.mjs` are in the zip
 and they work. Do not rewrite them. Verify them:

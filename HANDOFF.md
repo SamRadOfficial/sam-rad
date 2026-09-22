@@ -307,8 +307,54 @@ Record fields that matter beyond the body: `series`, `readingTime` (else compute
 21:9 crop. Body blocks: `p h2 h3 pull ul ol img`; R-A-D uses `h2` for its two
 section heads, legacy posts use `h3`.
 
-Covers: `public/images/writing/<slug-short>.jpg` plus `.webp`. R-A-D's agent exports a
-1200x630 PNG near 900KB; convert to JPG at quality 88 (about 140KB) and WebP.
+**The `/writing` index**, set 22 Sep 2026: the newest live post is a **featured block**
+at the top of page 1 (`FeaturedPost` in `Blocks.jsx`, modeled on the Illicit Shadows
+newsroom's Featured slot), and is left out of page 1's list so it never appears twice.
+Below it the list is paginated at `PER_PAGE = 10` in `lib/writing.js`.
+
+- Page 1 is `/writing`. Pages 2 onward are `/writing/page/[n]`, statically generated.
+  `/writing/page/1` redirects to `/writing` so page 1 never exists at two URLs.
+- **Each page is canonical to itself**, not to page 1. Pointing them all at page 1
+  tells search engines the older listing does not exist.
+- `dynamicParams = false`: an out-of-range page is a 404, not a runtime render.
+- **The pager renders nothing while there is one page.** At nine posts there is no
+  `/writing/page/2` and no pager; they appear on their own at the twelfth live post.
+  Tested by building at three per page, which produced pages 2 and 3 with correct
+  canonicals and prev/next links, then restored to ten.
+- **Order is array order**, newest first. There is no date sort, so a new post is
+  prepended to `dispatches.json`, never appended. Sanity (item 7) should replace this
+  with a query ordered by `number`.
+- **The featured block is text only**, Sam's pick (option C) on 22 Sep 2026: meta row,
+  large title, deck, Read link. No cover, by design; the cover leads the post itself
+  and is the link preview everywhere else. Do not add it back without asking.
+
+**Images on writing posts, decided 22 Sep 2026.** R-A-D posts carry **no cover**. The
+thumbnail-style covers the series agent produced were off brand (yellow, not Bebas, YouTube
+grammar) and restated the question directly under an H1 that already asked it. The page
+goes straight from the ink header into the body. Legacy dispatches keep their stage
+photos, on the page and as their preview.
+
+**Link previews for R-A-D are generated, one per post,** by
+`app/writing/[slug]/opengraph-image.jsx` through `lib/og-card.jsx`: the question in Bebas
+on ink, the running number and kind in mint, one word in a mint block. The record's
+`stamp` field names that word; without it the last word is used, which is usually weak
+("FOR?"), so the series agent must supply it. Bebas is bundled at
+`lib/fonts/BebasNeue-Regular.ttf` (SIL Open Font License) because the site otherwise
+loads it from Google Fonts, which the renderer cannot read.
+
+**The trap, found the hard way:** in Next 15.5 the `openGraph.images` returned by
+`generateMetadata` **wins** over the file-convention image. The first build generated
+every card correctly and advertised none of them. `page.jsx` must name
+`/writing/<slug>/opengraph-image` explicitly as the image for posts without a photo.
+Verify by grepping `og:image` in the built HTML, never by the presence of the file.
+
+Only posts without `image` get a generated card (`dynamicParams = false`), so legacy
+posts are untouched and the build does not render images nobody links to. Each R-A-D
+post therefore adds **two** to the build's page count: the post and its card.
+
+**The site-wide default preview is `hero-meet.jpg`** since 22 Sep 2026, in `SITE.defaultOg`.
+It was `hero-work.jpg`, the red-stars stage shot taken off the homepage because it read
+as a politician, which meant every page without its own image had been sharing it.
 
 ### Writing posts (legacy dispatch format)
 
@@ -783,16 +829,75 @@ What shipped:
    reader at the healthcare keynote. Once the archive is backfilled, point the sidebar
    at the matching industry page (the `industrySlug` field on each post already
    carries it) and the feeds will reappear on their own.
-7. **Sanity CMS.** Draft schemas exist (industry, post, client, testimonial). Parked
-   until the design settles. Studio would live at `/admin`. On-demand revalidation
-   preferred over full-rebuild webhooks.
-8. **Responsive images.** Parked 9 Sep 2026. A phone downloads the same 2358px hero
+7. **Sanity CMS. Unparked 22 Sep 2026.** It was parked until the design settled, which
+   was the right call when writing meant eight posts. It no longer does. R-A-D publishes
+   about once a weekday, so roughly twenty posts a month would each be a hand edit to
+   `dispatches.json`, a full source zip, and a production deploy. That is code
+   deployment used as a publishing tool, and every post risks the site.
+
+   With Sanity, a post is a content edit and the code does not move. The zip-and-copy
+   loop stays for code and design; content stops using it.
+
+   - **Writing first, and only writing.** Industries, clients and testimonials change
+     monthly at most and can stay in JSON. Do not migrate what is not hurting.
+   - **The draft schemas predate today.** The `post` schema must gain everything the
+     record gained on 22 Sep: `series` (reference to a series document, so a new kind
+     is content rather than code), the running `number`, `readingTime`, `lastUpdated`,
+     `metaDescription`, `imageKind`, `tags`, `sources` as an array of label and URL,
+     and body blocks as Portable Text with `h2`, `h3`, `pull` and lists.
+   - **The number is assigned on publish, not on draft,** so two drafts can never claim
+     the same one. A Sanity document action can take the next integer.
+   - **Studio at `/admin`**, not on a Sanity subdomain, so it is one property.
+   - **On-demand revalidation** on publish, not full-rebuild webhooks. A post should go
+     live in seconds without triggering a production build.
+   - **Covers through Sanity's image CDN**, which gives responsive sizes for free and
+     retires item 9 for the writing covers at least.
+   - **Migration script first**, moving all 18 records including the ten archived ones,
+     then verify every `/writing/[slug]` renders byte-identical before switching.
+     Keep `dispatches.json` in the repo as a frozen fallback for one release.
+   - Do this on a branch with a Vercel preview, not on `main`. It is the largest change
+     the site has had since launch.
+
+8. **Automation with n8n.** Added 22 Sep 2026. **Comes after Sanity, not before.**
+   Automating writes into a JSON file in git automates the wrong thing; n8n writing to
+   Sanity's API is clean, reversible and auditable.
+
+   What it should do, in order of value:
+   - **The R-A-D pipeline.** The series agent's export (question, deck, body, cover,
+     sources, LinkedIn copy) becomes a **Sanity draft**, never a published post. Sam
+     approves in Studio; publishing is a human act.
+   - **Gate LinkedIn on the page being live.** Every export says "do not publish the
+     LinkedIn post until this page is live". Make that a check rather than a rule to
+     remember: on publish, n8n requests the URL, confirms a 200 and that the `og:image`
+     resolves, and only then posts or schedules at 8:00 a.m. Eastern.
+   - **Schedule the LinkedIn Article** seven days after the page, with the "Originally
+     published at" line top and bottom.
+   - **Append to the content log.** Sam keeps one running CSV catalog of every piece of
+     writing, tagged by type (provocative question, informational, educational,
+     motivational, statistic, infographic). n8n appends the rows the export already
+     specifies, with the live URLs filled in after posting.
+   - **Booking inquiries.** Formspree submissions from `/contact` into one sheet or
+     CRM with the source recorded, which is the "booking inquiries by source" metric
+     in the monthly list below, currently measured by nobody.
+   - **The monthly measurement.** Search Console clicks and impressions for the three
+     keyword groups, and the AI-crawler bot counts, pulled on the first of the month.
+
+   Guardrails, non-negotiable:
+   - **Nothing reaches the live site without a human approving it.** `main` deploys to
+     production and Illicit Shadows material has handling rules that an automation
+     cannot judge.
+   - **No credentials in this repo.** LinkedIn, Sanity and Google tokens live in n8n's
+     credential store only. Self-hosted or n8n Cloud is Sam's call; record which here.
+   - **Every workflow exports to JSON and is committed** under `automation/` so it can be
+     read, reviewed and restored. An automation nobody can read is a liability.
+
+9. **Responsive images.** Parked 9 Sep 2026. A phone downloads the same 2358px hero
    as a desktop: 797KB where 195KB would do, a 75% saving on mobile. WebP and
    `fetchPriority` are already in place, so this is the remaining win. Two options:
    the cheap one adds a 900px WebP per hero plus a `srcset` to the `<picture>`
    elements in `Blocks.jsx`, about an hour; the thorough one converts all 38 `<img>`
    tags to Next's `Image`, about a day. Do the cheap one first.
-9. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
+10. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
    keep working in chat with the zip-and-copy loop. Worth revisiting for mechanical
    work (bulk migrations, repeated builds) while keeping copy and design decisions
    in chat, where the reasoning is discussed rather than just executed. A fresh
@@ -901,7 +1006,7 @@ already shipped or been superseded.
   language nobody proofreads weekly. Machine translation is worse than nothing for
   voice-led copy. If it is revived, do a four-page `/es` slice only (landing, speaking,
   short bio, booking form), keep the writing archive and CV English-only, and do it
-  **after** the CMS decision in item 6: translating a hand-edited codebase is how the
+  **after** the Sanity migration in item 7: translating a hand-edited codebase is how the
   drift starts.
 - `/perceptual-security` page, **deferred at Sam's request.** Revisit only if
   AI-citation tracking shows the term being asked about.

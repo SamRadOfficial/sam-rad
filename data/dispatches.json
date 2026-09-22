@@ -10,9 +10,6 @@
     "lastUpdated": "2026-09-22",
     "nextReview": "2026-12-21",
     "readingTime": "3 min read",
-    "image": "writing/rad-0001-steer-change.jpg",
-    "imageKind": "card",
-    "imageAlt": "How do you get employees to adopt change they didn't ask for? R-A-D with Sam Rad.",
     "metaDescription": "You don't. Stop asking employees to adopt change and start asking them to steer it. Give the wheel back, even a little, and adoption follows.",
     "deck": "You don't. You stop asking them to adopt it and start asking them to steer it. People resist change that happens to them and volunteer for change they have a hand on. Most transformation programs hand out the tool and keep the wheel. Give the wheel back, even a little, and the adoption problem mostly disappears.",
     "tags": [
@@ -109,7 +106,8 @@
         "x": "Paul A. David, \"The Dynamo and the Computer: An Historical Perspective on the Modern Productivity Paradox,\" American Economic Review 80, no. 2 (May 1990): 355–361.",
         "url": "https://www.jstor.org/stable/2006600"
       }
-    ]
+    ],
+    "stamp": "change"
   },
   {
     "number": "0008",

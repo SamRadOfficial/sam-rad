@@ -27,7 +27,12 @@ export function generateMetadata({ params }) {
     title: s.key === 'rad' ? d.title : (d.number ? `${d.title} | Dispatch Nº ${d.number}` : d.title),
     description: d.metaDescription || d.deck,
     path: `/writing/${d.slug}`,
-    image: `/images/${d.image}`,
+    // Posts without a photo get the generated card beside this file. It has to be
+    // named here: the file convention alone loses to this config (see
+    // opengraph-image.jsx).
+    image: d.image ? `/images/${d.image}` : `/writing/${d.slug}/opengraph-image`,
+    imageType: d.image ? 'image/jpeg' : 'image/png',
+    imageSize: d.image ? undefined : { width: 1200, height: 630 },
     imageAlt: d.imageAlt || d.title,
     article: { published: d.date, modified: d.lastUpdated || d.date, tags: d.tags },
   });
@@ -53,7 +58,7 @@ export default function Dispatch({ params }) {
     publisher: { '@id': `${SITE.url}/#person` },
     datePublished: d.date,
     dateModified: d.lastUpdated || d.date,
-    image: `${SITE.url}/images/${d.image}`,
+    image: d.image ? `${SITE.url}/images/${d.image}` : `${SITE.url}/writing/${d.slug}/opengraph-image`,
     articleSection: d.industry,
     isPartOf: { '@type': 'Blog', name: 'Writing', url: `${SITE.url}/writing` },
     ...(s.key !== 'dispatch' ? { genre: s.name } : {}),
@@ -87,10 +92,14 @@ export default function Dispatch({ params }) {
           </div>
         </section>
 
-        <div className={d.imageKind === 'card' ? 'article-photo card' : 'article-photo'}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`/images/${d.image}`} alt={d.imageAlt || ''} style={d.imagePosition ? { objectPosition: d.imagePosition } : undefined} />
-        </div>
+        {/* Only legacy posts carry a photo. R-A-D posts go straight from the header into
+            the body; their link preview is generated in opengraph-image.jsx. */}
+        {d.image && (
+          <div className={d.imageKind === 'card' ? 'article-photo card' : 'article-photo'}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={`/images/${d.image}`} alt={d.imageAlt || ''} style={d.imagePosition ? { objectPosition: d.imagePosition } : undefined} />
+          </div>
+        )}
 
         <section className="article">
           <div className="narrow">
@@ -134,7 +143,7 @@ export default function Dispatch({ params }) {
                   </p>
                   {/* Deliberately generic. Once a sector has enough posts of its own,
                       this can point at that industry page instead. See the roadmap. */}
-                  <Link href="/speaking" className="btn btn-ink">The keynote</Link>
+                  <Link href="/speaking" className="btn btn-ink">Keynote</Link>
                   <Bureau />
                 </div>
                 <div className="side-card" style={{ marginTop: 24 }}>

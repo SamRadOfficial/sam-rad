@@ -236,6 +236,47 @@ export function DispatchList({ dispatches }) {
   );
 }
 
+// The newest post, given room. Text only, Sam's pick on 22 Sep 2026 (option C), on
+// the Illicit Shadows newsroom's Featured slot: a meta row, a large linked title, the
+// deck. The cover is left out deliberately; it already leads the post itself and is the
+// link preview everywhere else, so repeating it here pushed the list below the fold.
+export function FeaturedPost({ d }) {
+  if (!d) return null;
+  const s = seriesOf(d);
+  return (
+    <Link href={`/writing/${d.slug}`} className="featured-post">
+      <div className="fp-kicker">Latest</div>
+      <div className="fp-meta">
+        <span className="n">{numberLabel(d)}</span>
+        <span>{s.label}</span>
+        {d.industry && <span>{d.industry}</span>}
+        <span>{fmtDate(d.date)}</span>
+      </div>
+      <h2 className="fp-title">{d.title}</h2>
+      <p className="fp-deck">{d.deck}</p>
+      <span className="fp-read">Read <span aria-hidden="true">→</span></span>
+    </Link>
+  );
+}
+
+// Newer on the left, older on the right, page numbers between. Renders nothing when
+// there is only one page, so the pager appears on its own once the archive grows.
+export function Pager({ page, count, href }) {
+  if (count <= 1) return null;
+  const nums = Array.from({ length: count }, (_, i) => i + 1);
+  return (
+    <nav className="pager" aria-label="Writing pages">
+      {page > 1 ? <Link href={href(page - 1)} rel="prev" className="pg-step">← Newer</Link> : <span className="pg-step off">← Newer</span>}
+      <span className="pg-nums">
+        {nums.map((n) => n === page
+          ? <span key={n} className="pg-n on" aria-current="page">{n}</span>
+          : <Link key={n} href={href(n)} className="pg-n">{n}</Link>)}
+      </span>
+      {page < count ? <Link href={href(page + 1)} rel="next" className="pg-step">Older →</Link> : <span className="pg-step off">Older →</span>}
+    </nav>
+  );
+}
+
 export function Testimonials({ items }) {
   return (
     <div className="t-grid">

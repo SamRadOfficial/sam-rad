@@ -44,6 +44,7 @@ const nextConfig = {
       { source: '/bitcoin-pizza-book', destination: '/body-of-work#bitcoin-pizza', permanent: true },
       { source: '/blog', destination: '/writing', permanent: true },
       { source: '/foresight', destination: '/writing', permanent: true },
+      { source: '/writing/page/1', destination: '/writing', permanent: true },
       { source: '/foresight/:slug', destination: '/writing/:slug', permanent: true },
       { source: '/photos', destination: '/body-of-work', permanent: true },
       { source: '/photos/all', destination: '/body-of-work', permanent: true },

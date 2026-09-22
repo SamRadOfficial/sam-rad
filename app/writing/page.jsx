@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
-import { PhotoHero, CtaBreak, IndustryGrid, DispatchList } from '@/components/Blocks';
+import { PhotoHero, CtaBreak, IndustryGrid, DispatchList, FeaturedPost, Pager } from '@/components/Blocks';
+import { featured, pageItems, pageCount, pageHref } from '@/lib/writing';
 import industries from '@/data/industries.json';
-import dispatches from '@/data/dispatches.json';
 import { meta, SITE } from '@/lib/site';
 
 
@@ -47,10 +47,12 @@ export default function Writing() {
 
         <section className="dispatches" id="latest">
           <div className="narrow">
-            <div className="disp-head" style={{ marginBottom: 48 }}>
-              <h2 className="h2">Latest <span className="mint-fill">writing.</span></h2>
+            <FeaturedPost d={featured} />
+            <div className="disp-head" style={{ marginBottom: 32 }}>
+              <h2 className="h2">More <span className="mint-fill">writing.</span></h2>
             </div>
-            <DispatchList dispatches={dispatches.filter((d) => !d.archived)} />
+            <DispatchList dispatches={pageItems(1)} />
+            <Pager page={1} count={pageCount} href={pageHref} />
           </div>
         </section>
 

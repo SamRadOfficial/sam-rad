@@ -464,6 +464,27 @@ body.nav-open{overflow:hidden;}
 .disp .i{font-family:var(--fd);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-muted);}
 .disp .t{font-family:var(--fd);font-size:26px;line-height:1.05;color:var(--ink);text-transform:uppercase;transition:color .2s;}
 .disp .d{font-family:var(--fd);font-size:13px;letter-spacing:.12em;color:var(--ink-muted);text-align:right;}
+/* Featured post, /writing page 1. Text only (option C). */
+.featured-post{display:block;color:inherit;text-decoration:none;padding:0 0 64px;margin-bottom:56px;border-bottom:2px solid var(--ink);}
+.fp-kicker{font-family:var(--fd);font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--mint-deep);margin-bottom:14px;}
+.fp-meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--fd);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:18px;}
+.fp-meta .n{color:var(--mint-deep);}
+.fp-title{font-family:var(--fd);font-size:clamp(44px,5.2vw,76px);line-height:.96;text-transform:uppercase;color:var(--ink);margin:0 0 20px;max-width:900px;transition:color .2s;}
+.featured-post:hover .fp-title{color:var(--mint-deep);}
+.fp-deck{font-size:19px;line-height:1.6;color:var(--ink-soft);margin:0 0 24px;max-width:760px;}
+.fp-read{font-family:var(--fd);font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);border-bottom:2px solid var(--mint);padding-bottom:3px;}
+/* Pager */
+.pager{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:40px;font-family:var(--fd);letter-spacing:.14em;text-transform:uppercase;}
+.pager .pg-step{font-size:15px;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--mint);padding-bottom:2px;}
+.pager .pg-step.off{color:var(--ink-muted);opacity:.4;border-color:transparent;}
+.pager .pg-nums{display:flex;gap:6px;}
+.pager .pg-n{display:inline-flex;min-width:38px;height:38px;align-items:center;justify-content:center;font-size:16px;color:var(--ink);text-decoration:none;border:1px solid var(--rule-strong);}
+.pager .pg-n.on{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+.pager a.pg-n:hover{border-color:var(--ink);}
+@media (max-width:900px){
+  .featured-post{padding-bottom:44px;margin-bottom:40px;}
+  .pager .pg-nums{display:none;}
+}
 .more{margin-top:48px;display:flex;justify-content:center;}
 
 /* QUOTE */

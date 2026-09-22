@@ -18,7 +18,7 @@ export default function NotFound() {
             <p className="lead">Change has a pattern. Broken links, unfortunately, do too. Try one of these.</p>
             <div className="cta">
               <Link href="/" className="btn btn-mint">Home</Link>
-              <Link href="/speaking" className="btn btn-outline-light">The keynote</Link>
+              <Link href="/speaking" className="btn btn-outline-light">Keynote</Link>
             </div>
           </div>
         </section>
