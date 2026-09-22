@@ -42,7 +42,7 @@ export default function Writing() {
           lead={<>Questions, dispatches, and essays on change, technology, and what it means to be human. Some written this year, some a decade ago. <strong>The pattern was always the same.</strong></>}
           caption="Bangkok"
         >
-          Change has<br />a <span className="mint-fill">pattern.</span>
+          Read the<br /><span className="mint-fill">pattern.</span>
         </PhotoHero>
 
         <section className="dispatches" id="latest">

@@ -298,8 +298,9 @@ will be. The heading, the nav, the schema `isPartOf` and the byline all say Writ
 - **The word "dispatch" is out of reader-facing copy** except as the label on the
   legacy posts. Section heads say "Latest writing"; the keynote card says "Everything
   here is a preview of the keynote."
-- The index hero is now "Change has a pattern.", the same headline as the homepage,
-  because the section has no better one-line description than the thesis.
+- The index hero is "Read the pattern.", Sam's pick on 22 Sep 2026 over "Questions worth
+  asking." and "Notes from the frontier." It keeps the thesis without repeating the
+  homepage and Speaking headline, and works for every kind of post.
 
 Record fields that matter beyond the body: `series`, `readingTime` (else computed at
 220 wpm), `lastUpdated` (feeds `dateModified`), `metaDescription` (else the deck),
