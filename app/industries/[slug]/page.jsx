@@ -7,6 +7,7 @@ import industries from '@/data/industries.json';
 import resources from '@/data/resources.json';
 import dispatches from '@/data/dispatches.json';
 import { meta, SITE } from '@/lib/site';
+import { isPublished } from '@/lib/writing';
 
 export function generateStaticParams() {
   return industries.map((i) => ({ slug: i.slug }));
@@ -38,8 +39,11 @@ export default function IndustryPage({ params }) {
   const related = industries.filter((i) => i.slug !== ind.slug).slice(0, 4);
   // Only show the feed when this industry has at least two posts of its own.
   // A generic feed put 2019 essays on a healthcare booking page.
-  const matches = dispatches.filter((d) => !d.archived && d.industrySlug === ind.slug);
-  const feed = matches.length >= 2 ? matches.slice(0, 4) : [];
+  const matches = dispatches.filter((d) => isPublished(d) && d.industrySlug === ind.slug);
+  // Shown from one post, capped at three, since 22 Sep 2026. It used to wait for two,
+  // deliberately, when the archive was eight dispatches; after R-A-D batch 01 every hub
+  // has at least one post of its own, and six would otherwise have shown nothing.
+  const feed = matches.slice(0, 3);
   const resource = resources.find((r) => r.industrySlug === ind.slug);
 
   const serviceSchema = {

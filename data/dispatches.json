@@ -1,6 +1,6 @@
 [
   {
-    "number": "0009",
+    "number": "0021",
     "series": "rad",
     "slug": "how-do-you-get-employees-to-adopt-change-they-didnt-ask-for",
     "industry": "Future of Work",
@@ -42,15 +42,11 @@
       },
       {
         "t": "p",
-        "x": "Here's the pattern."
-      },
-      {
-        "t": "p",
         "x": "Around 1900, factories started buying electric motors. And they did the obvious thing: they bolted the motor where the steam engine used to be, and ran the same belts and shafts to the same machines."
       },
       {
         "t": "p",
-        "x": "Productivity barely moved. For thirty years."
+        "x": "Productivity barely moved. For decades."
       },
       {
         "t": "p",
@@ -108,6 +104,1401 @@
       }
     ],
     "stamp": "change"
+  },
+  {
+    "number": "0020",
+    "series": "rad",
+    "slug": "will-supply-chains-become-demand-chains",
+    "industry": "Supply Chain & Logistics",
+    "industrySlug": "supply-chain",
+    "title": "Will supply chains become demand chains?",
+    "date": "2026-09-21",
+    "lastUpdated": "2026-09-22",
+    "nextReview": "2026-12-20",
+    "readingTime": "2 min read",
+    "metaDescription": "Many already are. For a century, supply chains pushed: make a lot, far away, and hope it sells.",
+    "deck": "Many already are. For a century, supply chains pushed: make a lot, far away, and hope it sells. Demand chains pull: make it when it's wanted, close to where it's wanted, in modular pieces. I've been writing about this shift since 2014. It isn't a prediction. Toyota started it in the 1950s, after a visit to an American supermarket.",
+    "tags": [
+      "supply chain",
+      "demand chains",
+      "transformation",
+      "change"
+    ],
+    "stamp": "demand",
+    "body": [
+      {
+        "t": "p",
+        "x": "In the 1950s, a Toyota engineer named Taiichi Ohno became fascinated by the American supermarket."
+      },
+      {
+        "t": "p",
+        "x": "What caught his eye was the shelf. A customer took what they needed. The store restocked only what was taken. Nobody guessed. The empty space on the shelf was the signal."
+      },
+      {
+        "t": "p",
+        "x": "Ohno took that idea back to the factory floor. Instead of building parts on a forecast and pushing them downstream, each station would pull only what the next one used. Little cards, called kanban, carried the signal. It became the backbone of the Toyota Production System, and eventually of lean manufacturing everywhere."
+      },
+      {
+        "t": "p",
+        "x": "A supply chain pushes. A demand chain pulls."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Here's what I wrote in 2014, and again in Bitcoin Pizza: we're moving from complex, globalized supply chains to simplified, localized demand chains. On demand. Modular. Local."
+      },
+      {
+        "t": "p",
+        "x": "For most of the last century, that was only possible inside one company's factory. The rest of the chain still ran on forecasts, oceans, and warehouses full of stuff nobody had asked for yet."
+      },
+      {
+        "t": "p",
+        "x": "What's different now is that the signal can travel the whole chain. The purchase, the reorder, the empty shelf: that data can reach the factory, the supplier, and the supplier's supplier, in something close to real time. And production itself is getting smaller and closer: small batches, regional plants, on-demand printing of parts."
+      },
+      {
+        "t": "p",
+        "x": "It's Ohno's shelf, stretched across the world."
+      },
+      {
+        "t": "p",
+        "x": "The pattern underneath is one I see in every era. The first version of a technology centralizes. The mature version distributes. Mainframes became laptops. Power stations are becoming rooftops. Factories are becoming networks."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Start from the order, not the forecast. Pick one product line and ask: what would it take to make this only after someone wants it?"
+      },
+      {
+        "t": "p",
+        "x": "Shorten one chain. Not the whole company. One product, one region, one supplier closer to the customer. Learn what breaks."
+      },
+      {
+        "t": "p",
+        "x": "And make trust portable. A demand chain only works if every link can see and believe the signal. Provenance, shared data, verifiable records: this is the work I did at Chronicled, and it's the unglamorous part that makes the rest possible."
+      },
+      {
+        "t": "p",
+        "x": "We've watched supply chains buckle more than once in the last few years. That wasn't the end of global trade. It was the pull signal, arriving the hard way."
+      },
+      {
+        "t": "p",
+        "x": "If you only made what was already wanted, what would you stop making tomorrow?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [When your customer is a bot, what is a brand?](/writing/when-your-customer-is-a-bot-what-is-a-brand)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Taiichi Ohno, Toyota Production System: Beyond Large-Scale Production (Productivity Press, 1988; Japanese edition 1978)."
+      },
+      {
+        "x": "Samantha Radocchia, Bitcoin Pizza: The No-Bullshit Guide to Blockchain (2019), on demand chains."
+      }
+    ],
+    "internalId": "RAD-0013"
+  },
+  {
+    "number": "0019",
+    "series": "rad",
+    "slug": "how-do-you-lead-through-uncertainty-without-pretending-to-be-certain",
+    "industry": "Government & Public Sector",
+    "industrySlug": "government",
+    "title": "How do you lead through uncertainty without pretending to be certain?",
+    "date": "2026-09-20",
+    "lastUpdated": "2026-09-22",
+    "nextReview": "2026-12-19",
+    "readingTime": "2 min read",
+    "metaDescription": "Be confident about what you know and honest about what you don't. Research shows people prefer confident advisors, but not falsely certain advice.",
+    "deck": "Be confident about what you know and honest about what you don't. Research shows people prefer confident advisors, but not falsely certain advice. They'll follow the leader who says here's what we know, here's the range, here's what we do Monday. False certainty is what breaks trust, usually about six weeks later.",
+    "tags": [
+      "leading through change",
+      "leading through uncertainty",
+      "resilience",
+      "trust"
+    ],
+    "stamp": "uncertainty",
+    "body": [
+      {
+        "t": "p",
+        "x": "Every leader I work with has felt this pressure."
+      },
+      {
+        "t": "p",
+        "x": "The room wants an answer. The board wants a date. The team wants to know if their jobs are safe. And the honest answer is: I don't know yet."
+      },
+      {
+        "t": "p",
+        "x": "So most leaders do the thing that feels safe. They pick a number and say it with a straight face."
+      },
+      {
+        "t": "p",
+        "x": "It's the wrong move, and there's research on it."
+      },
+      {
+        "t": "p",
+        "x": "In 2018, the Wharton researchers Celia Gaertig and Joseph Simmons ran eleven studies with nearly five thousand people. They found two things. People do judge an advisor who says \"I'm not sure\" less favorably. But they don't dislike uncertain advice. Ranges, probabilities, \"this is more likely than that\": people were fine with it. And when asked to choose, they were more likely to pick the advisor who gave them the honest range."
+      },
+      {
+        "t": "p",
+        "x": "Confidence and certainty are two different things. People want the first. They don't need the second."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Admiral James Stockdale spent more than seven years as a prisoner of war in Vietnam. Jim Collins asked him, years later, who didn't make it out."
+      },
+      {
+        "t": "p",
+        "x": "The optimists, he said. The ones who were sure they'd be home by Christmas. Then Christmas came and went. Then Easter. Then Christmas again."
+      },
+      {
+        "t": "p",
+        "x": "Collins called it the Stockdale Paradox. You confront the brutal facts of your current reality, and you never lose faith that you'll prevail. Both at once."
+      },
+      {
+        "t": "p",
+        "x": "That's what leading through uncertainty actually is. Not certainty about the outcome. Certainty about the direction and the next step."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things. They matter most in the public sector, where the uncertainty is real and the audience is everyone."
+      },
+      {
+        "t": "p",
+        "x": "Separate the two sentences. \"I'm confident in this plan\" is a promise you can keep. \"This will definitely work\" is one you can't."
+      },
+      {
+        "t": "p",
+        "x": "Give the range and the date. \"Somewhere between three and six months, and we'll know more on the first of March.\" A range with a check-in date sounds like competence. A single number that moves sounds like spin."
+      },
+      {
+        "t": "p",
+        "x": "And name Monday. People can live with an uncertain year if they know exactly what happens next week."
+      },
+      {
+        "t": "p",
+        "x": "You don't have to know how it ends to lead people through it. You just have to be honest about the road and clear about the next step."
+      },
+      {
+        "t": "p",
+        "x": "What are you pretending to be certain about right now?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Is resilience a skill, or just what we call surviving?](/writing/is-resilience-a-skill-or-just-what-we-call-surviving)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Celia Gaertig and Joseph P. Simmons, \"Do People Inherently Dislike Uncertain Advice?\" Psychological Science 29, no. 4 (2018): 504 to 520.",
+        "url": "https://www.psychologicalscience.org/journals/psychological-science/0956797617739369/"
+      },
+      {
+        "x": "Jim Collins, Good to Great (HarperBusiness, 2001), chapter 4, on the Stockdale Paradox."
+      }
+    ],
+    "internalId": "RAD-0012"
+  },
+  {
+    "number": "0018",
+    "series": "rad",
+    "slug": "would-you-let-an-ai-agent-spend-your-money",
+    "industry": "Financial Services & FinTech",
+    "industrySlug": "financial-services",
+    "title": "Would you let an AI agent spend your money?",
+    "date": "2026-09-19",
+    "lastUpdated": "2026-09-22",
+    "nextReview": "2026-12-18",
+    "readingTime": "2 min read",
+    "metaDescription": "Not yet, and the card networks know it. Mastercard now lets you hand an AI agent a virtual card and let it buy without asking.",
+    "deck": "Not yet, and the card networks know it. Mastercard now lets you hand an AI agent a virtual card and let it buy without asking. Only a small minority of shoppers say they want that. But we've been here before. Every new way to pay looked like handing a stranger your wallet, until the rules caught up. Watch the rules, not the technology.",
+    "tags": [
+      "AI",
+      "AI agents",
+      "payments",
+      "trust"
+    ],
+    "stamp": "money",
+    "body": [
+      {
+        "t": "p",
+        "x": "In September 2026, Mastercard rolled out a payment option that lets you give an AI agent a virtual card. You set a spending cap. You restrict where it shops. And then it buys things, online, without checking in first."
+      },
+      {
+        "t": "p",
+        "x": "Visa is building the same thing. One payments executive told Fortune this is a land grab. Whoever sets the standards for agent checkout keeps the commerce in their house for decades."
+      },
+      {
+        "t": "p",
+        "x": "Shoppers are not lining up."
+      },
+      {
+        "t": "p",
+        "x": "In a survey commissioned by ACI Worldwide that same month, just 7 percent of shoppers said they'd let an AI assistant buy without approval. More than half said they were uncomfortable with AI buying for them at all."
+      },
+      {
+        "t": "p",
+        "x": "What did they want? Price alerts. Comparisons. Help me find it. Let me buy it."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "In February 1950, a man named Frank McNamara paid for lunch in New York with a piece of cardboard. The first Diners Club card. Within two years it had 42,000 members."
+      },
+      {
+        "t": "p",
+        "x": "And then it stalled. Banks mailed cards to people who never asked for them. Cards got stolen. And if a thief ran up your card, you paid. Adoption didn't stall on the technology. It stalled on fear."
+      },
+      {
+        "t": "p",
+        "x": "In 1970, Congress amended the Truth in Lending Act. Unsolicited cards were banned. And your liability for a stolen card was capped at fifty dollars."
+      },
+      {
+        "t": "p",
+        "x": "That fifty-dollar rule is the reason you hand your card to a waiter without thinking. The card never earned your trust. The rule did."
+      },
+      {
+        "t": "p",
+        "x": "So back to the agent. Mastercard says it keeps a record, something it calls Verifiable Intent: who authorized the agent, what it was allowed to buy. Fortune asked who pays if the agent buys something it wasn't told to. The answer pointed back at the record. It didn't name who pays."
+      },
+      {
+        "t": "p",
+        "x": "That's the open seam. And the 1950s had the same seam for twenty years."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "If you sell things: build for the agent that browses before the agent that buys. That's where the demand is."
+      },
+      {
+        "t": "p",
+        "x": "If you move money: the liability answer is the product. The first network that says \"you're covered, full stop\" wins the trust the others are still measuring."
+      },
+      {
+        "t": "p",
+        "x": "And if you're anyone else: watch for the rule, not the launch."
+      },
+      {
+        "t": "p",
+        "x": "We trusted a piece of cardboard once. We can learn to trust this. It'll take a rule, not a demo."
+      },
+      {
+        "t": "p",
+        "x": "Would you hand your card to a bot?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [When your customer is a bot, what is a brand?](/writing/when-your-customer-is-a-bot-what-is-a-brand)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Fortune, \"Card companies are on a 'land grab' to set the standards for AI shopping,\" September 18, 2026.",
+        "url": "https://fortune.com/2026/09/18/mastercard-visa-ai-shopping-payment-land-grab/"
+      },
+      {
+        "x": "ACI Worldwide research release, September 16, 2026, via Business Wire."
+      },
+      {
+        "x": "Diners Club International, \"History and Legacy.\"",
+        "url": "https://www.dinersclub.com/about-us/history/"
+      },
+      {
+        "x": "Smithsonian National Museum of American History, Diners' Club card, 1957.",
+        "url": "https://americanhistory.si.edu/collections/object/nmah_1445317"
+      },
+      {
+        "x": "Congressional Research Service, \"Overview of the Truth in Lending Act.\"",
+        "url": "https://www.congress.gov/crs-product/IF12769"
+      }
+    ],
+    "internalId": "RAD-0003"
+  },
+  {
+    "number": "0017",
+    "series": "rad",
+    "slug": "is-human-service-about-to-become-the-luxury-upgrade",
+    "industry": "Hospitality & Travel",
+    "industrySlug": "hospitality",
+    "title": "Is \"human service\" about to become the luxury upgrade?",
+    "date": "2026-09-18",
+    "lastUpdated": "2026-09-22",
+    "nextReview": "2026-12-17",
+    "readingTime": "2 min read",
+    "metaDescription": "Yes, and it's already happening. When a machine can do the task, a person doing it becomes the premium.",
+    "deck": "Yes, and it's already happening. When a machine can do the task, a person doing it becomes the premium. Hotels now use AI in most of their daily work, and the ones using it most are the most insistent that the welcome stays human. The luxury was never the service. It's the attention.",
+    "tags": [
+      "AI",
+      "hospitality",
+      "human connection",
+      "customer experience"
+    ],
+    "stamp": "luxury",
+    "body": [
+      {
+        "t": "p",
+        "x": "Almost every hotel is now running on AI."
+      },
+      {
+        "t": "p",
+        "x": "The hospitality platform Mews surveyed more than five hundred properties this year. Ninety-eight percent had used AI in their operations in the last six months. On average it's involved in eleven of the nineteen most common hotel tasks."
+      },
+      {
+        "t": "p",
+        "x": "And here's the part I love. Fifty-nine percent of hoteliers said the front desk welcome and check-in should stay human. That conviction was strongest among the hotels already using AI the most."
+      },
+      {
+        "t": "p",
+        "x": "The people who know the machine best are the ones drawing the clearest line around it."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Before the power loom, every piece of cloth was handwoven. It wasn't luxury. It was just cloth."
+      },
+      {
+        "t": "p",
+        "x": "Then machines made fabric cheap and everywhere. And within a generation, William Morris and the Arts and Crafts movement were arguing that the handmade thing was the valuable thing. What had been ordinary became precious, precisely because a machine could now do it."
+      },
+      {
+        "t": "p",
+        "x": "That's the pattern. Automation doesn't kill the human version. It turns it into a signal."
+      },
+      {
+        "t": "p",
+        "x": "Every time we automate something, the human doing it becomes a choice. And a choice, in hospitality, is a message: we decided you were worth a person."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Name your human moments. Not every touchpoint. The few with emotion in them: the arrival, the problem, the goodbye. Write them down. Those never go to a machine."
+      },
+      {
+        "t": "p",
+        "x": "Automate everything else, on purpose, so your people have the time for those moments. The point of the AI isn't fewer humans. It's humans who aren't buried in towel requests."
+      },
+      {
+        "t": "p",
+        "x": "And never make the human the fallback. \"Press zero to speak to an agent\" is the worst of both worlds: it tells the guest the person is what you get when the system fails. Design the human in, and price it like it matters."
+      },
+      {
+        "t": "p",
+        "x": "We've been here before. The machine made cloth cheap, and the hand became art. The bot will make service cheap, and attention will become the thing people travel for."
+      },
+      {
+        "t": "p",
+        "x": "What's the one moment in your business that should never be a machine?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [When your customer is a bot, what is a brand?](/writing/when-your-customer-is-a-bot-what-is-a-brand)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Mews, \"Most hoteliers use AI daily, but guest experience still needs a human touch,\" Mews Hotelier Survey 2026, May 18, 2026.",
+        "url": "https://www.mews.com/en/press/mews-research-ai-standard-in-hotel-operations"
+      },
+      {
+        "x": "PR Newswire release of the Mews Hotelier Survey 2026 (98% usage, 11 of 19 tasks, 59% human-led check-in).",
+        "url": "https://www.prnewswire.com/news-releases/most-hoteliers-use-ai-daily-but-guest-experience-still-needs-a-human-touch-302774631.html"
+      }
+    ],
+    "internalId": "RAD-0011"
+  },
+  {
+    "number": "0016",
+    "series": "rad",
+    "slug": "when-your-customer-is-a-bot-what-is-a-brand",
+    "industry": "Retail & Consumer Brands",
+    "industrySlug": "retail",
+    "title": "When your customer is a bot, what is a brand?",
+    "date": "2026-09-17",
+    "lastUpdated": "2026-09-22",
+    "nextReview": "2026-12-16",
+    "readingTime": "2 min read",
+    "metaDescription": "A brand is what's left when the shopper can't see your logo. AI assistants don't feel your ads. They read your data, your reviews, and your return policy.",
+    "deck": "A brand is what's left when the shopper can't see your logo. AI assistants don't feel your ads. They read your data, your reviews, and your return policy. Traffic from AI to retail sites is surging, and it now converts better than human visitors. Brands that are readable and provable get chosen. Brands built on vibes get skipped.",
+    "tags": [
+      "AI",
+      "brand",
+      "retail",
+      "agentic commerce",
+      "transformation"
+    ],
+    "stamp": "brand",
+    "body": [
+      {
+        "t": "p",
+        "x": "Here's a number that should reorganize every retail marketing plan."
+      },
+      {
+        "t": "p",
+        "x": "In March 2025, shoppers who arrived at U.S. retail sites from an AI assistant converted 38 percent worse than everyone else. Twelve months later, according to Adobe, which tracks more than a trillion retail visits, they converted 42 percent better. Traffic from AI sources to retail sites was up almost 400 percent year over year in the first quarter of 2026."
+      },
+      {
+        "t": "p",
+        "x": "The bot went from browsing to buying in a year."
+      },
+      {
+        "t": "p",
+        "x": "So here's the uncomfortable question. If an AI assistant is doing the shopping, who is your brand talking to?"
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Brands were invented for strangers."
+      },
+      {
+        "t": "p",
+        "x": "Before the late 1800s, you didn't buy oats. You bought oats from your grocer. He scooped them out of a barrel, and his name was the only brand that mattered. Then packaged goods arrived. Quaker Oats in a sealed box, with a face on the front, so that trust could travel without the grocer. The historian Susan Strasser tells this story beautifully: the package took over the job the shopkeeper used to do."
+      },
+      {
+        "t": "p",
+        "x": "The brand was a way to vouch for something when the person you trusted wasn't in the room."
+      },
+      {
+        "t": "p",
+        "x": "Now the person isn't in the room again. The agent is the new grocer. It scoops for you. And it doesn't care about your face on the box. It cares about whether your product data is clean, whether your price is real, whether your reviews hold up, and whether your return policy says what your ad says."
+      },
+      {
+        "t": "p",
+        "x": "A brand, for a bot, is evidence."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Be readable. Your product data, prices, sizes, and policies should be structured, current, and consistent everywhere. An agent that can't parse you can't pick you."
+      },
+      {
+        "t": "p",
+        "x": "Be provable. Every claim you make, an agent will check against what everyone else says about you. \"Sustainable,\" \"best-selling,\" \"loved by customers\": if you can't back it with evidence, it now costs you."
+      },
+      {
+        "t": "p",
+        "x": "And be worth asking for by name. The one thing an agent can't override is an instruction. \"Get me the one from the brand I love.\" That's the brand's real job now: to be the name a human says out loud before the bot goes shopping."
+      },
+      {
+        "t": "p",
+        "x": "Brands have been disrupted before. The package replaced the grocer, and the best brands got stronger, not weaker. This is the same story, with a new stranger in the room."
+      },
+      {
+        "t": "p",
+        "x": "What would a bot say about your brand if it had to explain why it picked you?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Would you let an AI agent spend your money?](/writing/would-you-let-an-ai-agent-spend-your-money)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Adobe Digital Insights, \"AI traffic grows but retail sites lag in AI search visibility,\" April 2026 (Q1 2026 data).",
+        "url": "https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable"
+      },
+      {
+        "x": "TechCrunch, \"AI traffic to US retailers rose 393% in Q1, and it's boosting their revenue too,\" April 16, 2026.",
+        "url": "https://techcrunch.com/2026/04/16/ai-traffic-to-us-retailers-rose-393-in-q1-and-its-boosting-their-revenue-too/"
+      },
+      {
+        "x": "Susan Strasser, Satisfaction Guaranteed: The Making of the American Mass Market (Pantheon, 1989)."
+      }
+    ],
+    "internalId": "RAD-0010"
+  },
+  {
+    "number": "0015",
+    "series": "rad",
+    "slug": "is-ai-making-us-dumber-or-just-faster",
+    "industry": "Higher Education",
+    "industrySlug": "higher-education",
+    "title": "Is AI making us dumber, or just faster?",
+    "date": "2026-09-16",
+    "lastUpdated": "2026-09-22",
+    "nextReview": "2026-12-15",
+    "readingTime": "3 min read",
+    "metaDescription": "Faster, mostly. And that's the problem. Every tool that made thinking faster also made it easier to skip.",
+    "deck": "Faster, mostly. And that's the problem. Every tool that made thinking faster also made it easier to skip. Socrates said writing would ruin memory, and he was half right: it did, and we got libraries. AI won't make us dumber. It will make it optional to think. The people who keep choosing to will own the next decade.",
+    "tags": [
+      "AI",
+      "education",
+      "critical thinking",
+      "positive AI"
+    ],
+    "stamp": "dumber",
+    "body": [
+      {
+        "t": "p",
+        "x": "In the Phaedrus, Plato has Socrates complain about a dangerous new technology."
+      },
+      {
+        "t": "p",
+        "x": "Writing."
+      },
+      {
+        "t": "p",
+        "x": "He says it will produce forgetfulness in the souls of those who learn it. People will stop exercising memory. They'll have the appearance of wisdom without the reality."
+      },
+      {
+        "t": "p",
+        "x": "He was right, by the way. We did stop memorizing epic poems. We also got libraries, science, and the ability to think about a thing for longer than one person's lifetime."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "That's the pattern. Every technology that makes thinking faster gets accused of making us dumber. The calculator. The search engine. GPS, which I'll admit really did do something to my sense of direction."
+      },
+      {
+        "t": "p",
+        "x": "And each time the accusation is half right. The tool takes over a skill. And the question is always the same: was that skill the point, or was it scaffolding for something else?"
+      },
+      {
+        "t": "p",
+        "x": "Here's what's different this time, and I don't say that lightly, because \"this time is different\" is usually wrong."
+      },
+      {
+        "t": "p",
+        "x": "The calculator did arithmetic. The search engine did retrieval. AI does the thing that looks like thinking. The draft, the summary, the argument, the answer. It produces the output that used to be evidence you'd done the work."
+      },
+      {
+        "t": "p",
+        "x": "So thinking doesn't get taken away. It gets made optional. You can still do it. You just don't have to, and nobody will be able to tell from the output."
+      },
+      {
+        "t": "p",
+        "x": "That's the risk, and it's not a technology risk. It's a habit risk."
+      },
+      {
+        "t": "p",
+        "x": "I say on stage that AI is a mirror. It reflects, it amplifies, it optimizes. It cannot originate. It cannot discern. It cannot care. And a mirror doesn't make you dumber. It just shows you exactly how much you were bringing to the room."
+      },
+      {
+        "t": "p",
+        "x": "So who wins? Not the people who refuse the tool. That's the faster-horses move, and it always loses."
+      },
+      {
+        "t": "p",
+        "x": "The people who win are the ones who use the tool and keep the muscle. Who write the first paragraph themselves before they ask for the rest. Who read the summary and then read the thing. Who ask \"who built this, and why, and who benefits\" about every answer that arrives too easily."
+      },
+      {
+        "t": "p",
+        "x": "Clear thinking. Fast discernment. The ability to make a call when the data runs out."
+      },
+      {
+        "t": "p",
+        "x": "That's the scarce resource in a world where generating an answer is free."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things, especially if you teach."
+      },
+      {
+        "t": "p",
+        "x": "Grade the thinking, not the output. If the output can be generated, the output isn't the assignment anymore."
+      },
+      {
+        "t": "p",
+        "x": "Make people show the question, not just the answer. The question is the part the machine can't do for you."
+      },
+      {
+        "t": "p",
+        "x": "And keep one thing hard on purpose. The struggle was never a bug. It was where the learning lived."
+      },
+      {
+        "t": "p",
+        "x": "Socrates was worried about the wrong thing. Writing didn't end thinking. It gave thinking somewhere to live."
+      },
+      {
+        "t": "p",
+        "x": "AI can do the same. If we keep showing up to the room."
+      },
+      {
+        "t": "p",
+        "x": "What's the last thing you thought all the way through, without asking anything?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Will you have to prove you're human online?](/writing/will-you-have-to-prove-youre-human-online)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Plato, Phaedrus, 274c to 275b (Socrates on writing and memory)."
+      }
+    ],
+    "internalId": "RAD-0008"
+  },
+  {
+    "number": "0014",
+    "series": "rad",
+    "slug": "will-we-live-to-120-and-who-pays-for-it",
+    "industry": "Healthcare & Life Sciences",
+    "industrySlug": "healthcare",
+    "title": "Will we live to 120, and who pays for it?",
+    "date": "2026-09-15",
+    "lastUpdated": "2026-09-22",
+    "nextReview": "2026-12-14",
+    "readingTime": "2 min read",
+    "metaDescription": "Some of us will, and the second question is the real one.",
+    "deck": "Some of us will, and the second question is the real one. Longevity is the era after this one on my map, and it'll arrive the way every era arrives: at the individual first, unevenly, before any institution is ready. The technology isn't the bottleneck. Pensions, careers, and a retirement age designed for a seventy-year life are.",
+    "tags": [
+      "longevity",
+      "biotech",
+      "future of work",
+      "change"
+    ],
+    "stamp": "pays",
+    "body": [
+      {
+        "t": "p",
+        "x": "I want to start in 1889."
+      },
+      {
+        "t": "p",
+        "x": "That year, Otto von Bismarck's Germany created the first national old-age pension. The age to collect it was seventy. Life expectancy at birth was around forty, pulled down by infant mortality, and even the adults who reached seventy could expect only a few more years."
+      },
+      {
+        "t": "p",
+        "x": "Read that again. A pension that started at seventy, in a country where most people never got there."
+      },
+      {
+        "t": "p",
+        "x": "The pension wasn't a plan for a third of your life. It was a reward for the rare survivor. A gold watch for outliving everyone."
+      },
+      {
+        "t": "p",
+        "x": "We kept the number and changed the life."
+      },
+      {
+        "t": "p",
+        "x": "Today, in most rich countries, retirement lands somewhere between sixty and sixty-seven, and life expectancy is in the eighties. That's already a twenty-year gap the system was never designed to fund. And now the biotech era is knocking."
+      },
+      {
+        "t": "p",
+        "x": "I'm not going to tell you that everyone alive today will reach 120. I don't make predictions, remember. But the direction is not in doubt. The tools to slow aging, edit genes, and grow replacement tissue are arriving on the same curve every other technology arrived on: expensive and uneven first, then cheaper, then ordinary."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Which means the first people to get the extra decades will be the people who can pay for them. That's not a scandal. It's the pattern. The first credit cards, the first cars, the first internet connections all went to the same people. Then they didn't."
+      },
+      {
+        "t": "p",
+        "x": "So the question was never \"will we live longer.\" It's what happens to everything built on the old number."
+      },
+      {
+        "t": "p",
+        "x": "A pension designed for seventy. A career designed for forty years of work, then stop. A mortgage. A marriage. A \"job\" that assumes you'll do roughly one thing."
+      },
+      {
+        "t": "p",
+        "x": "Sixty-year careers don't fit inside any of those. And here's the second-order effect, the one I actually think about: if you're going to work for sixty years, you can't afford to be one thing. The job is not the goal. It never was. Longevity just makes that impossible to ignore."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "If you run a company: stop treating age as a proxy for anything. Your most valuable hire in 2040 may be seventy-two and on her third career."
+      },
+      {
+        "t": "p",
+        "x": "If you run a pension or a benefits plan: model the sixty-year career now, before someone else has to explain why you didn't."
+      },
+      {
+        "t": "p",
+        "x": "And if you're a person: plan to begin again. And again. Not because the first thing failed, but because you'll have time for a second and a third."
+      },
+      {
+        "t": "p",
+        "x": "We have added years before. Sanitation, antibiotics, vaccines: each one broke a system that assumed people died on schedule. And each time, we rebuilt the system."
+      },
+      {
+        "t": "p",
+        "x": "We'll do it again. The question is whether we start before the bill arrives."
+      },
+      {
+        "t": "p",
+        "x": "What would you do with an extra twenty years, if you knew they were coming?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Is a chatbot now your patient's first doctor?](/writing/is-a-chatbot-now-your-patients-first-doctor)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Deutschlandmuseum, \"24 May 1889: The origin of statutory retirement insurance\" (pension from age 70; average life expectancy around 40).",
+        "url": "https://www.deutschlandmuseum.de/en/history/calendar/1889-05-24-the-origin-of-statutory-retirement-insurance"
+      },
+      {
+        "x": "OECD, Pensions at a Glance, latest edition, for current retirement ages and life expectancy."
+      },
+      {
+        "x": "Sam Rad, Radical Next (2025), the Longevity era."
+      }
+    ],
+    "internalId": "RAD-0007"
+  },
+  {
+    "number": "0013",
+    "series": "rad",
+    "slug": "why-does-every-transformation-feel-like-its-failing-halfway-through",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "title": "Why does every transformation feel like it's failing halfway through?",
+    "date": "2026-09-14",
+    "lastUpdated": "2026-09-22",
+    "nextReview": "2026-12-13",
+    "readingTime": "2 min read",
+    "metaDescription": "Because halfway is where the pattern has a dip, and nobody warned you.",
+    "deck": "Because halfway is where the pattern has a dip, and nobody warned you. Every technology revolution goes through it: the tool is everywhere, the results haven't arrived, and the people in charge start to wonder if they were wrong. They weren't. The dip is not the failure. It's the chapter before the returns, and it has shown up every single time.",
+    "tags": [
+      "transformation",
+      "change",
+      "AI adoption",
+      "leading through change"
+    ],
+    "stamp": "halfway",
+    "body": [
+      {
+        "t": "p",
+        "x": "Here's a sentence I hear in every boardroom, usually in a lower voice than the rest of the meeting."
+      },
+      {
+        "t": "p",
+        "x": "\"It's not working like we wanted it to.\""
+      },
+      {
+        "t": "p",
+        "x": "Nobody says it on stage. Everybody feels it. And it arrives right on schedule, about a year and a half after the big rollout."
+      },
+      {
+        "t": "p",
+        "x": "So let me tell you what's actually happening, because it's happened before."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every technology revolution I've studied, and I've lived through four from the inside, runs the same cycle. Panic first: the new thing reads as the end of the world. Then adoption: everyone gets the tool, mostly to do the old work a little faster. Then the dip. The results disappoint. The numbers don't move. The board asks what they paid for."
+      },
+      {
+        "t": "p",
+        "x": "And then, if you keep going, redesign. Work and roles get rebuilt around what the new thing can actually do. That's where the returns arrive. And finally, ordinary. It disappears into the furniture. Nobody wants the payphone back."
+      },
+      {
+        "t": "p",
+        "x": "You are in the dip. So is everyone else."
+      },
+      {
+        "t": "p",
+        "x": "Here's the evidence. According to McKinsey, about nine in ten companies now use AI somewhere. About four in ten see any effect on earnings. And according to the Census Bureau, only four percent of adopting firms have redesigned how they work in any comprehensive way."
+      },
+      {
+        "t": "p",
+        "x": "Nine in ten have the tool. Four in a hundred changed the work."
+      },
+      {
+        "t": "p",
+        "x": "That gap is the dip. It's not a failure of the technology. It's a description of where you are on the map."
+      },
+      {
+        "t": "p",
+        "x": "And here's the thing about the dip. It's the moment most organizations quit. They call the rollout a disappointment, they quietly stop funding it, and eighteen months later a competitor who kept going comes out the other side with a redesigned operation."
+      },
+      {
+        "t": "p",
+        "x": "The dip is where the leaders get separated from the adopters."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Name it. Tell your team: this is the dip, it's expected, here's what comes next. You'll feel the room exhale."
+      },
+      {
+        "t": "p",
+        "x": "Stop measuring adoption. You won. Everyone has the tool. Start measuring redesign: how many processes actually changed shape."
+      },
+      {
+        "t": "p",
+        "x": "And pick one thing to rebuild all the way through. Not a pilot. One workflow, redesigned around the capability, end to end. The returns show up there first, and then everyone believes you."
+      },
+      {
+        "t": "p",
+        "x": "We've been here before. Electricity had a dip. The internet had a dip. Every one of them ended the same way, for the organizations that kept going."
+      },
+      {
+        "t": "p",
+        "x": "You're not behind. You're on schedule."
+      },
+      {
+        "t": "p",
+        "x": "Where's your dip right now, and who's about to quit in it?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [How do you get employees to adopt change they didn't ask for?](/writing/how-do-you-get-employees-to-adopt-change-they-didnt-ask-for)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "McKinsey, The State of AI, 2025 (adoption and earnings-effect figures)."
+      },
+      {
+        "x": "U.S. Census Bureau, Business Trends and Outlook Survey, 2026 (share of adopting firms with comprehensive redesign)."
+      }
+    ],
+    "internalId": "RAD-0006"
+  },
+  {
+    "number": "0012",
+    "series": "rad",
+    "slug": "will-you-have-to-prove-youre-human-online",
+    "industry": "Technology & AI",
+    "industrySlug": "technology-ai",
+    "title": "Will you have to prove you're human online?",
+    "date": "2026-09-13",
+    "lastUpdated": "2026-09-22",
+    "nextReview": "2026-12-12",
+    "readingTime": "4 min read",
+    "metaDescription": "Yes, and sooner than most leaders expect.",
+    "deck": "Yes, and sooner than most leaders expect. Not through a login you already recognize, but through a credential that certifies personhood without revealing who you are. The technology exists. The open question was never whether we build it. It is who issues it, and what else gets attached to it once we do.",
+    "tags": [
+      "AI",
+      "identity",
+      "security",
+      "perception"
+    ],
+    "stamp": "human",
+    "body": [
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every time a new medium makes impersonation cheap, we build a proof layer. And the proof layer always outlives the crisis that created it."
+      },
+      {
+        "t": "p",
+        "x": "Before the First World War, most international travel required no document at all. Wartime security made passports mandatory, and in October 1920 the League of Nations convened delegates from 22 nations in Paris and standardized the booklet: 32 pages, a photograph required, national language plus French. By 1926, more than 40 countries had adopted it."
+      },
+      {
+        "t": "p",
+        "x": "Six years from emergency measure to global infrastructure. Then something else happened. The same decade that standardized the passport was the decade that built immigration quotas around it. The document created to verify who you were became the instrument that decided where you could go."
+      },
+      {
+        "t": "p",
+        "x": "That is the pattern, and it is the one to watch here. Proof layers never stay narrow."
+      },
+      {
+        "t": "h2",
+        "x": "I built the problem in 2020"
+      },
+      {
+        "t": "p",
+        "x": "In 2020, while I was CEO of a company developing AI video software, I became one of the first people to build a working digital clone of myself."
+      },
+      {
+        "t": "p",
+        "x": "Same face. Same voice. For the mind, fifteen years of my own commonplace books, everything I had published, everything I had ever posted on a public network. I sang to her. I read her poetry. Before long I had a program that could imitate not just my likeness but my attitude and my perspective, responding to things she had never seen before."
+      },
+      {
+        "t": "p",
+        "x": "I have shared a version of her publicly. I keep the most advanced version private, and the reason is simple: the whole thing freaks me out."
+      },
+      {
+        "t": "p",
+        "x": "When a clone can appear on a video call and convince business associates, and family, and friends, that they are talking to the real Sam Rad, the question stops being technical. She does not take my calls yet. Not quite. But soon."
+      },
+      {
+        "t": "p",
+        "x": "That was four years before the research community proposed a fix. The problem arrives first. It always does."
+      },
+      {
+        "t": "h2",
+        "x": "So what actually gets built?"
+      },
+      {
+        "t": "p",
+        "x": "The honest answer for why this is happening now is that the thing we used to verify humanness stopped working. CAPTCHAs were built on tasks machines could not do. Machines can do them."
+      },
+      {
+        "t": "p",
+        "x": "In 2024, a group of 32 researchers from MIT, OpenAI, Microsoft, Harvard and others published a proposal for what they call [personhood credentials](https://arxiv.org/abs/2408.07892): digital credentials that let you demonstrate you are a real person, issued one per person per issuer, verified cryptographically, disclosing nothing else. Their argument is that existing countermeasures are inadequate against sophisticated AI, while full identity verification is too invasive for ordinary use."
+      },
+      {
+        "t": "p",
+        "x": "That paper is now the reference point for a conversation that has moved out of research and into procurement."
+      },
+      {
+        "t": "h2",
+        "x": "What nobody is asking loudly enough"
+      },
+      {
+        "t": "p",
+        "x": "The design debate is about privacy, and on privacy the design is genuinely good. That is not where the risk is."
+      },
+      {
+        "t": "p",
+        "x": "The risk is bundling. A credential that proves personhood is cheap to issue alongside one that proves age, residency, employment, or creditworthiness, and whoever issues it will be asked to do exactly that within a year of launch. Not by conspiracy. By procurement, because it is more efficient."
+      },
+      {
+        "t": "p",
+        "x": "By 2029, I expect human verification to be a default requirement in at least one high-volume commercial category, and I expect it to arrive in enterprise before it arrives in social media. The agent problem hits business first. When your supplier's negotiating bot talks to your procurement bot, somebody has to be accountable for the contract."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "Three things, none of which require predicting the outcome."
+      },
+      {
+        "t": "p",
+        "x": "Decide what your organization actually needs to verify. Humanness, identity, and authorization are three different questions, and most systems currently collapse them into one. Separating them is the work."
+      },
+      {
+        "t": "p",
+        "x": "Assume any verification you adopt will be repurposed. Ask at design time what happens when someone requests this system answer a question it was not built for. Then decide in advance whether the answer is no."
+      },
+      {
+        "t": "p",
+        "x": "Watch who the issuers turn out to be. That is the whole game. A credential issued by a government behaves differently from one issued by a platform, and the difference will not be visible in the interface."
+      },
+      {
+        "t": "p",
+        "x": "We have built proof layers before, and we survived them. We also, every time, worked out what they were really for about a decade too late. This one we can see coming."
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Blurring Reality: AI and the Perceptual Breakdown](/writing/blurring-reality-ai-and-the-perceptual-breakdown)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Adler et al., \"Personhood credentials: Artificial intelligence and the value of privacy-preserving tools to distinguish who is real online,\" arXiv, August 2024.",
+        "url": "https://arxiv.org/abs/2408.07892"
+      },
+      {
+        "x": "MIT News, \"3 Questions: How to prove humanity online,\" August 16, 2024.",
+        "url": "https://news.mit.edu/2024/3-questions-proving-humanity-online-0816"
+      },
+      {
+        "x": "Paris Conference on Passports, Customs Formalities and Through Tickets, League of Nations, October 1920."
+      }
+    ],
+    "internalId": "RAD-0009"
+  },
+  {
+    "number": "0011",
+    "series": "rad",
+    "slug": "is-resilience-a-skill-or-just-what-we-call-surviving",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "title": "Is resilience a skill, or just what we call surviving?",
+    "date": "2026-09-12",
+    "lastUpdated": "2026-09-22",
+    "nextReview": "2026-12-11",
+    "readingTime": "2 min read",
+    "metaDescription": "It's a skill, and we've been teaching the wrong one. Most resilience training teaches endurance: hold on, push through, bounce back.",
+    "deck": "It's a skill, and we've been teaching the wrong one. Most resilience training teaches endurance: hold on, push through, bounce back. Real resilience is the opposite move. It's knowing what to let go of. The people and organizations that come through change well aren't the ones who held on tightest. They're the ones who could put something down.",
+    "tags": [
+      "resilience",
+      "adaptability",
+      "change",
+      "leading through change"
+    ],
+    "stamp": "surviving",
+    "body": [
+      {
+        "t": "p",
+        "x": "My third solo skydive nearly killed me."
+      },
+      {
+        "t": "p",
+        "x": "Thirteen and a half thousand feet. I pull, and instead of a canopy I get a horseshoe malfunction: the parachute wrapped around me instead of above me. I had about thirty-five seconds."
+      },
+      {
+        "t": "p",
+        "x": "Here's what I remember. Not fear, exactly. A very clear voice that said: you have to let go of this to fix it."
+      },
+      {
+        "t": "p",
+        "x": "So I did. I untangled it in time. And I went back up the same day."
+      },
+      {
+        "t": "p",
+        "x": "People hear that story and say, \"That's resilience. You held on.\" No. I let go. Holding on is the thing that would have killed me."
+      },
+      {
+        "t": "p",
+        "x": "That's the whole misunderstanding about resilience, in one jump."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "We teach it as endurance. Grit. Bounce back. Push through. Every corporate resilience program I've seen is really an endurance program with a nicer name."
+      },
+      {
+        "t": "p",
+        "x": "But endurance is holding on. Resilience is knowing what to put down."
+      },
+      {
+        "t": "p",
+        "x": "Here's the paradox I talk about on stage. I call it \"hold on loosely.\" With any new thing, a technology, a strategy, a role: you die without it. And you die holding it too tight. The skill isn't the grip. It's the release."
+      },
+      {
+        "t": "p",
+        "x": "Look at the people who came through the last three years well. Not the ones who worked hardest to keep everything the same. The ones who could say, this part of my job is gone, and I'm still here."
+      },
+      {
+        "t": "p",
+        "x": "People defend the current expression of their value instead of the value itself. Free yourself from the role, not from your worth."
+      },
+      {
+        "t": "p",
+        "x": "The job is not the goal."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So if you want a more resilient team, stop training them to endure. Train them to release."
+      },
+      {
+        "t": "p",
+        "x": "Practice putting things down before you have to. A process. A title. A way of working that made you feel safe in 2019."
+      },
+      {
+        "t": "p",
+        "x": "Name what you're holding too tight. Out loud, in the room. It's usually the thing everyone already knows."
+      },
+      {
+        "t": "p",
+        "x": "And take it off regularly. Presence isn't a wellness perk. It's the navigation system. You can't see what to let go of at 120 miles an hour with your eyes shut."
+      },
+      {
+        "t": "p",
+        "x": "You have more capacity for change than you think. You won't find it by adding transformation on top. You'll find it by putting something down."
+      },
+      {
+        "t": "p",
+        "x": "What are you holding on to that's holding you?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [How do you lead through uncertainty without pretending to be certain?](/writing/how-do-you-lead-through-uncertainty-without-pretending-to-be-certain)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Sam Rad, Radical Next (2025), \"Schrodinger's Skydive.\""
+      }
+    ],
+    "internalId": "RAD-0005"
+  },
+  {
+    "number": "0010",
+    "series": "rad",
+    "slug": "is-a-chatbot-now-your-patients-first-doctor",
+    "industry": "Healthcare & Life Sciences",
+    "industrySlug": "healthcare",
+    "title": "Is a chatbot now your patient's first doctor?",
+    "date": "2026-09-11",
+    "lastUpdated": "2026-09-22",
+    "nextReview": "2026-12-10",
+    "readingTime": "2 min read",
+    "metaDescription": "For about a third of American adults, yes.",
+    "deck": "For about a third of American adults, yes. Roughly a quarter use AI chatbots to diagnose their own symptoms, and a fifth of users say they turned to AI because they couldn't afford a provider. This isn't new behavior. It's the same self-diagnosis patients have always done, with a better interface. The question isn't whether patients ask a machine first. It's what the doctor becomes when they do.",
+    "tags": [
+      "AI",
+      "healthcare",
+      "patients",
+      "trust"
+    ],
+    "stamp": "doctor",
+    "body": [
+      {
+        "t": "p",
+        "x": "Pew Research asked more than three thousand Americans in June 2026. Thirty-four percent use AI chatbots for a health reason. About a quarter use them to diagnose symptoms."
+      },
+      {
+        "t": "p",
+        "x": "A separate poll from KFF found that among people who used AI for health, one in five said a major reason was that they couldn't afford to see a provider."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Now here's the number nobody puts next to it."
+      },
+      {
+        "t": "p",
+        "x": "In January 2013, Pew reported that 35 percent of Americans had gone online to figure out a medical condition. They called them \"online diagnosers.\" Half of them followed up with a doctor. And the doctor confirmed the guess more often than not."
+      },
+      {
+        "t": "p",
+        "x": "Thirty-five percent in 2013. Thirty-four percent in 2026."
+      },
+      {
+        "t": "p",
+        "x": "The share of people who look before they call hasn't moved in thirteen years."
+      },
+      {
+        "t": "p",
+        "x": "What moved is the quality of the answer. And the reason they're asking. In 2013 it was curiosity. In 2026, for one in five, it's cost."
+      },
+      {
+        "t": "p",
+        "x": "Before the search bar there was the medical encyclopedia on the shelf. Before that, the pharmacist. Patients have always triaged themselves. Medicine has always panicked about it. And then medicine absorbed it."
+      },
+      {
+        "t": "p",
+        "x": "So where's the real risk?"
+      },
+      {
+        "t": "p",
+        "x": "Not in the chatbot being wrong. Doctors have been correcting wrong self-diagnoses since the encyclopedia."
+      },
+      {
+        "t": "p",
+        "x": "The risk is the patient who gets a confident answer and never makes the call. In 2013, half followed up. The number to watch now is the half that doesn't, especially the ones who asked a machine because the visit costs too much."
+      },
+      {
+        "t": "p",
+        "x": "That's not a technology failure. That's an access failure wearing a technology costume."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "If you run a health system, three things."
+      },
+      {
+        "t": "p",
+        "x": "Assume the patient arrives with a draft diagnosis. Design the visit as a review, not a blank page. It's faster, and it's honest."
+      },
+      {
+        "t": "p",
+        "x": "Meet the one in five. If cost is why they asked a bot, then a chatbot inside your own system that ends with a real human triage line is the product."
+      },
+      {
+        "t": "p",
+        "x": "And train for the \"no.\" The most valuable skill in an AI-first intake is the confident correction, delivered without contempt for the person who asked a machine first."
+      },
+      {
+        "t": "p",
+        "x": "The doctor was never the first opinion. The doctor was always the one that counted."
+      },
+      {
+        "t": "p",
+        "x": "That's still true. If we build for it."
+      },
+      {
+        "t": "p",
+        "x": "When did you last look something up before you made the call?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Will we live to 120, and who pays for it?](/writing/will-we-live-to-120-and-who-pays-for-it)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Pew Research Center, \"From Diagnoses to Treatments, Why Americans Use AI Chatbots for Health,\" August 25, 2026.",
+        "url": "https://www.pewresearch.org/science/2026/08/25/from-diagnoses-to-treatments-why-americans-use-ai-chatbots-for-health/"
+      },
+      {
+        "x": "KFF Tracking Poll on Health Information and Trust, February 24 to March 2, 2026.",
+        "url": "https://www.kff.org/public-opinion/kff-tracking-poll-on-health-information-and-trust-use-of-ai-for-health-information-and-advice/"
+      },
+      {
+        "x": "Pew Research Center, \"Health Online 2013,\" January 15, 2013.",
+        "url": "https://www.pewresearch.org/internet/2013/01/15/health-online-2013/"
+      }
+    ],
+    "internalId": "RAD-0004"
+  },
+  {
+    "number": "0009",
+    "series": "rad",
+    "slug": "what-year-is-it-inside-your-company",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "title": "What year is it inside your company?",
+    "date": "2026-09-10",
+    "lastUpdated": "2026-09-22",
+    "nextReview": "2026-12-09",
+    "readingTime": "2 min read",
+    "metaDescription": "Not on the calendar. Inside the building.",
+    "deck": "Not on the calendar. Inside the building. Most organizations run on a year that ended a while ago: the processes, the meeting rhythm, the definition of a good employee. The tools are from this year. The clocks are not. Before you add anything new, find out what year it is in there. Then set the clocks.",
+    "tags": [
+      "change",
+      "transformation",
+      "leading through change",
+      "organizational change"
+    ],
+    "stamp": "year",
+    "body": [
+      {
+        "t": "p",
+        "x": "Every company keeps two calendars."
+      },
+      {
+        "t": "p",
+        "x": "There's the one on the wall. And there's the one the organization actually lives by: how decisions get made, who gets promoted, what counts as work."
+      },
+      {
+        "t": "p",
+        "x": "The second one is almost always older than you think."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "In 1840, the Great Western Railway in England started running its trains on London time. Nobody else did. Every town kept its own time, set by its own noon. Bristol ran about ten minutes behind London. Which was charming, until you tried to publish a timetable."
+      },
+      {
+        "t": "p",
+        "x": "The railways forced the question. If the train has to be somewhere at 9:04, then 9:04 has to mean the same thing everywhere. By 1847 most British railways had switched to Greenwich time. It took Parliament until 1880 to make it the law of the land."
+      },
+      {
+        "t": "p",
+        "x": "Forty years between the trains agreeing on the time and the country agreeing on it."
+      },
+      {
+        "t": "p",
+        "x": "Now look at your company."
+      },
+      {
+        "t": "p",
+        "x": "You've bought this year's tools. The AI, the platform, the dashboard. And you've dropped them into a building that still runs on 2019, or 2014, or whenever the founder last rewrote the org chart. The tool says it's 2026. The approval process says it isn't."
+      },
+      {
+        "t": "p",
+        "x": "That gap is what people mean when they say \"we adopted it and nothing happened.\""
+      },
+      {
+        "t": "p",
+        "x": "I call this the internal calendar. Every organization has one. Most leaders have never looked at it."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So here's the exercise. Pick one process everyone complains about. Ask when it was designed, and what the world looked like that year. Then ask whether anyone would design it that way today."
+      },
+      {
+        "t": "p",
+        "x": "You'll find the clock. It's usually set to the year of the last crisis."
+      },
+      {
+        "t": "p",
+        "x": "Set the clocks first. The rest gets easier."
+      },
+      {
+        "t": "p",
+        "x": "What year is it inside your company?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [How do you get employees to adopt change they didn't ask for?](/writing/how-do-you-get-employees-to-adopt-change-they-didnt-ask-for)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Science Museum Group, on Railway Time: the Great Western Railway's adoption of London time (1840) and the spread of Greenwich time on British railways (1847)."
+      },
+      {
+        "x": "Statutes (Definition of Time) Act 1880, UK Parliament."
+      }
+    ],
+    "internalId": "RAD-0002"
   },
   {
     "number": "0008",

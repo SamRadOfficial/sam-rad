@@ -2,6 +2,7 @@ import industries from '@/data/industries.json';
 import dispatches from '@/data/dispatches.json';
 import resources from '@/data/resources.json';
 import { SITE } from '@/lib/site';
+import { isDue } from '@/lib/writing';
 
 export default function sitemap() {
   const now = new Date();
@@ -24,6 +25,6 @@ export default function sitemap() {
     ...statics,
     ...industries.map((i) => ({ url: `${SITE.url}/industries/${i.slug}`, lastModified: now, priority: 0.8 })),
     ...resources.map((r) => ({ url: `${SITE.url}/resources/${r.slug}`, priority: 0.5 })),
-    ...dispatches.map((d) => ({ url: `${SITE.url}/writing/${d.slug}`, lastModified: new Date(d.date), priority: 0.6 })),
+    ...dispatches.filter(isDue).map((d) => ({ url: `${SITE.url}/writing/${d.slug}`, lastModified: new Date(d.lastUpdated || d.date), priority: 0.6 })),
   ];
 }

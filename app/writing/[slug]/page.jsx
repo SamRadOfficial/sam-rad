@@ -8,9 +8,10 @@ import { CtaBreak, Bureau, JsonLd } from '@/components/Blocks';
 import dispatches from '@/data/dispatches.json';
 import { meta, SITE } from '@/lib/site';
 import { seriesOf, numberLabel, fmtDate } from '@/lib/series';
+import { isDue, isPublished } from '@/lib/writing';
 
 export function generateStaticParams() {
-  return dispatches.map((d) => ({ slug: d.slug }));
+  return dispatches.filter(isDue).map((d) => ({ slug: d.slug }));
 }
 
 const get = (slug) => dispatches.find((d) => d.slug === slug);
@@ -41,7 +42,7 @@ export function generateMetadata({ params }) {
 export default function Dispatch({ params }) {
   const d = get(params.slug);
   if (!d) notFound();
-  const more = dispatches.filter((x) => x.slug !== d.slug && !x.archived).slice(0, 3);
+  const more = dispatches.filter((x) => x.slug !== d.slug && isPublished(x)).slice(0, 3);
   const s = seriesOf(d);
   const date = fmtDate(d.date);
   // Reading time comes from the record. It was hardcoded to "6 min read" for every

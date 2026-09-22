@@ -307,6 +307,50 @@ Record fields that matter beyond the body: `series`, `readingTime` (else compute
 21:9 crop. Body blocks: `p h2 h3 pull ul ol img`; R-A-D uses `h2` for its two
 section heads, legacy posts use `h3`.
 
+### R-A-D batch 01, published 22 Sep 2026, backdated
+
+Twelve questions from the series agent's batch export (internal IDs RAD-0002 to 0013)
+went live at once. **At Sam's decision they are backdated, one per day, 10 to 21
+September**, the days the site was being built, with the original Nº 0009 moving to
+Nº 0021 on the 22nd so numbers still follow dates. Advised against and decided anyway;
+recorded so nobody later mistakes the dates for the real publishing history.
+
+- **What was done to keep the backdate honest where it could be:** `lastUpdated` is the
+  real build day (22 Sep) on all twelve, so `dateModified` in the schema and `lastmod`
+  in the sitemap are true. Only `datePublished` is backdated.
+- **Ordering rules used, and to reuse:** no post dated before its own newest source
+  ("Would you let an AI agent spend your money?" cites 16 and 18 Sep pieces, so it sits
+  on the 19th), and no two neighbors share an industry hub, including the 22nd.
+- **Copy changes made:** "five years before" became "four years before" in "Will you have
+  to prove you're human online?" (clone 2020, personhood-credentials paper August 2024).
+  In Nº 0021: the duplicated "Here's the pattern." removed, "for thirty years" became
+  "for decades". Sam kept the five-stage cycle in "Why does every transformation feel
+  like it's failing halfway through?", and its two keynote statistics stay unlinked.
+- **Sources:** 9 of the 15 linked sources verified against search results before ship
+  (Fortune, Pew 2026, KFF, arXiv, TechCrunch, Adobe, Mews, PR Newswire, CRS IF12769).
+  Six not yet re-checked; see §10.
+- The export's cover plan (hooks, three crops, a default OG image) was superseded before
+  it landed: no covers, generated cards, one `stamp` word per post.
+
+### Scheduling: the publish-date gate
+
+`lib/writing.js` exports `isDue` (dated on or before the build day, UTC) and
+`isPublished` (due and not archived). **Every place a post is built or listed uses
+them**: the post pages and their cards, `/writing`, the hubs, the sidebar, the sitemap.
+A future-dated post is therefore invisible everywhere until a build runs on or after its
+date. Proven on 22 Sep with a post dated 2027-01-01: not built, not in the sitemap, not
+on `/writing`, not on its hub.
+
+**Sam's call, 22 Sep 2026: posts go live on arrival, all of them, even several on one
+day.** Nothing is held back for a daily cadence, so the gate is a capability, not a
+schedule; with every post dated on or before its push day it changes nothing. The
+daily-redeploy half (a Vercel Deploy Hook fired each morning by n8n or a GitHub Actions
+timer) is only needed if she later wants a post to appear on a future day by itself.
+Roadmap item 8.
+
+**Hubs** show writing from one post, capped at the three most recent (was: hidden below
+two posts, capped at four).
+
 **The `/writing` index**, set 22 Sep 2026: the newest live post is a **featured block**
 at the top of page 1 (`FeaturedPost` in `Blocks.jsx`, modeled on the Illicit Shadows
 newsroom's Featured slot), and is left out of page 1's list so it never appears twice.
@@ -1060,6 +1104,13 @@ expected page count, `npm run check:images`, any `git rm`, then
 ---
 
 ## 10. Known open items
+
+- **Six R-A-D batch 01 source links not re-verified at ship time:** Diners Club
+  history, the Smithsonian card record, Pew "Health Online 2013", the Deutschland Museum
+  1889 page, MIT News on proving humanity, and the APS journal page. If any fails, drop
+  the link and keep the citation. The other nine were verified.
+- **103 em dashes in the legacy dispatch records,** imported from Squarespace. None in
+  R-A-D. Separate cleanup pass.
 
 **Content**
 - **The industry-page sizzle reel is a placeholder.** Every industry page embeds

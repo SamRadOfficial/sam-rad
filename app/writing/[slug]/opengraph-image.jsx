@@ -1,5 +1,6 @@
 import dispatches from '@/data/dispatches.json';
 import { renderCard, OG_SIZE } from '@/lib/og-card';
+import { isDue } from '@/lib/writing';
 
 // Generated link-preview card for posts without a photo (R-A-D). Served at
 // /writing/<slug>/opengraph-image and referenced explicitly from generateMetadata in
@@ -16,7 +17,7 @@ export const alt = 'Writing by Sam Rad, The Change Futurist';
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return dispatches.filter((d) => !d.image).map((d) => ({ slug: d.slug }));
+  return dispatches.filter((d) => !d.image && isDue(d)).map((d) => ({ slug: d.slug }));
 }
 
 export default async function Image({ params }) {
