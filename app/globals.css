@@ -1091,7 +1091,7 @@ details.earlier[open] summary{margin-bottom:44px;}
 }
 
 /* Latest questions, homepage */
-.latest-q{background:var(--paper);padding:120px 0;}
+.latest-q{background:var(--paper-white);padding:120px 0;}  /* white, so it separates from the paper-toned gallery below (Sam, 22 Sep 2026) */
 .latest-q .featured-post{padding-bottom:44px;margin-bottom:0;}
 .lq-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;border-top:2px solid var(--ink);padding-top:32px;}
 .lq-card{display:flex;flex-direction:column;color:inherit;text-decoration:none;background:var(--paper-white);border:1px solid var(--rule-strong);padding:28px 26px;transition:border-color .2s;}

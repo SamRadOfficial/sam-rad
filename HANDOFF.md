@@ -385,7 +385,8 @@ Worldwide." Sam's final form: **"Latest writing."** with the stamp on "writing",
 `/writing`), and one **"Read the writing"** button under them, on every screen size.
 Because the daily publish job rebuilds the site each morning a post goes live, the
 homepage links to a fresh post every weekday, which is the point for discovery.
-`LatestQuestions` in `Blocks.jsx` keeps the two other mocked layouts (`cards`, `lead`)
+The strip is **white** (`--paper-white`) so it separates from the paper-toned gallery
+below; on the same paper tone the two ran together. `LatestQuestions` in `Blocks.jsx` keeps the two other mocked layouts (`cards`, `lead`)
 behind `variant`.
 
 ### Daily publishing, built 22 Sep 2026
