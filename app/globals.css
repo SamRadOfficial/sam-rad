@@ -583,6 +583,15 @@ body.nav-open{overflow:hidden;}
 .article-body{font-size:19px;line-height:1.8;color:var(--ink);}
 .article-body p+p{margin-top:24px;}
 .article-body h3{font-family:var(--fd);font-size:36px;line-height:.95;text-transform:uppercase;margin:56px 0 20px;}
+.article-body h2{font-family:var(--fd);font-size:36px;line-height:.95;text-transform:uppercase;margin:56px 0 20px;}
+/* A designed cover card has its type baked in, so it cannot be cropped the way a photo
+   can. The default .article-photo is a 21:9 full-bleed cover crop, which on a 1200x630
+   card cuts the series mark off the top and the question off the bottom. */
+.article-photo.card{aspect-ratio:auto;max-width:1040px;margin:0 auto;padding:0 32px;overflow:visible;}
+.article-photo.card img{height:auto;object-fit:contain;display:block;border:1px solid var(--rule);}
+.author-block{margin-top:48px;padding:24px 0 0;border-top:1px solid var(--rule-strong);font-size:16px;line-height:1.6;color:var(--ink-soft);}
+.author-block b{color:var(--ink);}
+.author-block a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--rule-strong);}
 .article-body strong{font-weight:600;}
 .article-body a{color:var(--mint-deep);text-decoration:underline;text-underline-offset:4px;}
 .pull{margin:56px 0;padding:0;border-left:4px solid var(--mint);padding-left:28px;font-family:var(--fd);font-size:40px;line-height:1;text-transform:uppercase;color:var(--ink);}

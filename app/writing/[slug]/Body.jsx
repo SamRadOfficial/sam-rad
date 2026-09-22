@@ -1,5 +1,5 @@
 // Renders a dispatch body from data/dispatches.json.
-// Blocks: p, h3, pull, ul, ol, img. Inline: **bold**, *italic*, [text](url).
+// Blocks: p, h2, h3, pull, ul, ol, img. h2 is for R-A-D; legacy posts use h3. Inline: **bold**, *italic*, [text](url).
 
 const INLINE = /\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*|\*([^*]+)\*/g;
 
@@ -27,6 +27,7 @@ export function inline(text) {
 export default function Body({ blocks = [] }) {
   return blocks.map((b, i) => {
     switch (b.t) {
+      case 'h2': return <h2 key={i}>{inline(b.x)}</h2>;
       case 'h3': return <h3 key={i}>{inline(b.x)}</h3>;
       case 'pull': return <div className="pull" key={i}>{inline(b.x)}</div>;
       case 'ul': return <ul key={i}>{b.items.map((it, j) => <li key={j}>{inline(it)}</li>)}</ul>;

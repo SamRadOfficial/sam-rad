@@ -1,5 +1,117 @@
 [
   {
+    "number": "0009",
+    "series": "rad",
+    "slug": "how-do-you-get-employees-to-adopt-change-they-didnt-ask-for",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "title": "How do you get employees to adopt change they didn't ask for?",
+    "date": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "nextReview": "2026-12-21",
+    "readingTime": "3 min read",
+    "image": "writing/rad-0001-steer-change.jpg",
+    "imageKind": "card",
+    "imageAlt": "How do you get employees to adopt change they didn't ask for? R-A-D with Sam Rad.",
+    "metaDescription": "You don't. Stop asking employees to adopt change and start asking them to steer it. Give the wheel back, even a little, and adoption follows.",
+    "deck": "You don't. You stop asking them to adopt it and start asking them to steer it. People resist change that happens to them and volunteer for change they have a hand on. Most transformation programs hand out the tool and keep the wheel. Give the wheel back, even a little, and the adoption problem mostly disappears.",
+    "tags": [
+      "change",
+      "transformation",
+      "employee adoption",
+      "leading through change",
+      "AI adoption"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Every leader I meet has a version of the same sentence."
+      },
+      {
+        "t": "p",
+        "x": "\"We rolled it out. We trained everyone. Six months later, half the team is back to the old way.\""
+      },
+      {
+        "t": "p",
+        "x": "They call it resistance."
+      },
+      {
+        "t": "p",
+        "x": "I've watched this from inside four technology revolutions, and it's almost never resistance. It's a room full of people who were told where they're going and never asked where they'd like to fly."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Here's the pattern."
+      },
+      {
+        "t": "p",
+        "x": "Around 1900, factories started buying electric motors. And they did the obvious thing: they bolted the motor where the steam engine used to be, and ran the same belts and shafts to the same machines."
+      },
+      {
+        "t": "p",
+        "x": "Productivity barely moved. For thirty years."
+      },
+      {
+        "t": "p",
+        "x": "The economist Paul David wrote the definitive account of this. Electricity only paid off when factories were rebuilt around it: small motors on every machine, floors laid out for the work instead of for the drive shaft. That redesign took a generation, because the people who ran the floor had to reinvent their own jobs."
+      },
+      {
+        "t": "p",
+        "x": "The tool arrived at the individual before the organization changed. Sound familiar?"
+      },
+      {
+        "t": "p",
+        "x": "Every powerful new technology is a jetpack. It promises new heights, and it scares you about where it might take you. Once everyone has one, not having one is how you get left behind. But owning it isn't the point, and neither is using it. Steering it is."
+      },
+      {
+        "t": "p",
+        "x": "Everyone strapped on the jetpack. Almost nobody is flying."
+      },
+      {
+        "t": "p",
+        "x": "And here's why. You gave people the jetpack and kept the map. Nobody adopts a jetpack they're not allowed to point."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Stop measuring adoption. Measure redesign. How many workflows have actually changed, not how many logins."
+      },
+      {
+        "t": "p",
+        "x": "Give the wheel back. Pick one process, hand it to the team that runs it, and let them rebuild it with the new tool. Not a pilot. Theirs."
+      },
+      {
+        "t": "p",
+        "x": "And say the true thing out loud: \"We bought the tool and it's not working like we wanted.\" Every leader feels that sentence. Almost nobody says it. The moment you do, the room stops defending and starts building."
+      },
+      {
+        "t": "p",
+        "x": "We don't have an adoption problem. We have a reinvention problem."
+      },
+      {
+        "t": "p",
+        "x": "Who in your building is holding a jetpack they're not allowed to steer?"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Paul A. David, \"The Dynamo and the Computer: An Historical Perspective on the Modern Productivity Paradox,\" American Economic Review 80, no. 2 (May 1990): 355–361.",
+        "url": "https://www.jstor.org/stable/2006600"
+      }
+    ]
+  },
+  {
     "number": "0008",
     "slug": "blurring-reality-ai-and-the-perceptual-breakdown",
     "industry": "Technology & AI",

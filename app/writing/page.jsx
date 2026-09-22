@@ -23,8 +23,8 @@ const FORBES_PICKS = [
 ];
 
 export const metadata = meta({
-  title: 'Writing | Dispatches from the Frontier',
-  description: 'Essays on perception, technology, and change. Some written this year, some a decade ago. The pattern was always the same.',
+  title: 'Writing',
+  description: 'Questions, dispatches, and essays on change, technology, and what it means to be human. Some written this year, some a decade ago. The pattern was always the same.',
   path: '/writing',
   image: '/images/cta-audience.jpg',
   imageAlt: 'Sam Rad keynoting to a seated audience in Bangkok',
@@ -39,16 +39,16 @@ export default function Writing() {
           image="cta-audience.jpg"
           eyebrow="Writing · You are here"
           short
-          lead={<>Essays on perception, technology, and change. Some written this year, some a decade ago. <strong>The pattern was always the same.</strong></>}
+          lead={<>Questions, dispatches, and essays on change, technology, and what it means to be human. Some written this year, some a decade ago. <strong>The pattern was always the same.</strong></>}
           caption="Bangkok"
         >
-          Dispatches from<br />the <span className="mint-fill">frontier.</span>
+          Change has<br />a <span className="mint-fill">pattern.</span>
         </PhotoHero>
 
         <section className="dispatches" id="latest">
           <div className="narrow">
             <div className="disp-head" style={{ marginBottom: 48 }}>
-              <h2 className="h2">Latest <span className="mint-fill">dispatches.</span></h2>
+              <h2 className="h2">Latest <span className="mint-fill">writing.</span></h2>
             </div>
             <DispatchList dispatches={dispatches.filter((d) => !d.archived)} />
           </div>
@@ -103,7 +103,7 @@ export default function Writing() {
           image="cta-audience.jpg"
           tag="Bring change to your stage"
           heading={<>Read it here. <span className="mint-fill">Hear</span> it live.</>}
-          lead="Every dispatch is a preview of the keynote. Book Sam to bring the full pattern to your audience."
+          lead="Everything here is a preview of the keynote. Book Sam to bring the full pattern to your audience."
           caption="Federation of Thai Industries · Bangkok"
         />
 

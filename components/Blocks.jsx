@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { numberLabel, fmtDate, seriesOf } from '@/lib/series';
 import { SITE } from '@/lib/site';
 import clients from '@/data/clients.json';
 import logoWall from '@/data/logo-wall.json';
@@ -223,11 +224,11 @@ export function DispatchList({ dispatches }) {
     <div className="disp-list">
       {dispatches.map((d) => (
         <Link className="disp" href={`/writing/${d.slug}`} key={d.slug}>
-          <div className="n">{d.number ? `Nº ${d.number}` : ''}</div>
-          <div className="i">{d.industry || 'Writing'}</div>
+          <div className="n">{numberLabel(d)}</div>
+          <div className="i">{seriesOf(d).label}{d.industry ? ` · ${d.industry}` : ''}</div>
           <div className="t">{d.title}</div>
           <div className="d">
-            {new Date(d.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+            {fmtDate(d.date)}
           </div>
         </Link>
       ))}

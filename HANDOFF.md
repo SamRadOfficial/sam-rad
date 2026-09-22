@@ -281,7 +281,36 @@ Adding a page is adding an entry plus a matching icon in `components/IndustryIco
 Never edit a generated page directly. `logos` resolves through `clients.json` and needs
 at least two matches or the row does not render at all, see §4.
 
-### Writing posts
+### Writing: one body of work, one number
+
+Decided 22 Sep 2026, the day R-A-D Nº 0009 went live. **`/writing` is the section and it
+is always Writing.** R-A-D is a series inside it, as Dispatches was, as essays and notes
+will be. The heading, the nav, the schema `isPartOf` and the byline all say Writing.
+
+- **One running number across everything**, four digits, continuing from the eight
+  dispatches. The next post is 0010 whatever kind it is. Never restart a sequence for
+  a new series; that was tried on the morning of 22 Sep and lasted an hour.
+- **The kind is a label beside the number, not a namespace:** "Nº 0009 · R-A-D". It
+  comes from `series` in the record (`dispatch` if absent) via `lib/series.js`. Add
+  new kinds there.
+- **No episode numbers.** R-A-D questions are evergreen; "episode 14" tells a reader
+  nothing and dates the piece. The pipeline's own `RAD-0001` IDs are internal.
+- **The word "dispatch" is out of reader-facing copy** except as the label on the
+  legacy posts. Section heads say "Latest writing"; the keynote card says "Everything
+  here is a preview of the keynote."
+- The index hero is now "Change has a pattern.", the same headline as the homepage,
+  because the section has no better one-line description than the thesis.
+
+Record fields that matter beyond the body: `series`, `readingTime` (else computed at
+220 wpm), `lastUpdated` (feeds `dateModified`), `metaDescription` (else the deck),
+`imageKind: "card"` for designed covers, which renders at native size instead of the
+21:9 crop. Body blocks: `p h2 h3 pull ul ol img`; R-A-D uses `h2` for its two
+section heads, legacy posts use `h3`.
+
+Covers: `public/images/writing/<slug-short>.jpg` plus `.webp`. R-A-D's agent exports a
+1200x630 PNG near 900KB; convert to JPG at quality 88 (about 140KB) and WebP.
+
+### Writing posts (legacy dispatch format)
 
 `data/dispatches.json`. Each entry:
 

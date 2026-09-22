@@ -238,7 +238,7 @@ export default function IndustryPage({ params }) {
             <div className="narrow">
               <div className="section-header">
                 <div className="tag">Writing</div>
-                <h2 className="h2">Latest <span className="mint-fill">dispatches.</span></h2>
+                <h2 className="h2">Latest <span className="mint-fill">writing.</span></h2>
               </div>
               <DispatchList dispatches={feed} />
               <div className="more"><Link href="/writing" className="btn btn-ghost">All writing</Link></div>
