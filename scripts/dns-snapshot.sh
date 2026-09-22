@@ -53,6 +53,16 @@ q() { # q <name> <type>
   q "_domainkey.${DOMAIN}" TXT
   echo
 
+  # SPF often points at another record with include:, and that record can live inside
+  # this same zone (Squarespace puts one at dc-<id>._spfm.<domain>). A sweep of the
+  # usual names misses it, which is exactly what happened on 14 Sep 2026. Follow every
+  # include one level down so it is captured before the zone moves.
+  echo "## SPF includes, followed one level"
+  for inc in $(dig +short "@${RESOLVER}" "${DOMAIN}" TXT | tr -d '"' | tr ' ' '\n' | sed -n 's/^include://p'); do
+    q "$inc" TXT
+  done
+  echo
+
   echo "## other"
   q "${DOMAIN}" CAA
   q "${DOMAIN}" SOA

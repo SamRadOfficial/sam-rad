@@ -852,29 +852,48 @@ What shipped:
    Higher Education have content available but the smallest buyer groups. Ideally build
    each one *after* booking in that sector, so it answers what a real room asked.
 
-3. **DNS move to GoDaddy.** The `/contact` rename above must be deployed and verified
-   first; do not let them land in the same window. Started 14 Sep 2026, ahead of the Sept 22 date. Runbook in
-   §8. Squarespace retirement is now **decoupled** from it: no redirect depends on the
-   archive any more, so the two can happen independently and in either order. Still
-   outstanding before cancelling: decide whether the 103 retired blog posts are
-   backfilled into `/writing` as dispatches or simply let go. Until then, every old
-   blog URL lands on the `/writing` index rather than on its own post.
-4. **New sizzle reel** cut for the **industry pages**, replacing the placeholder.
+3. **Leaving Squarespace.** Sam's five-step list, 22 Sep 2026, with where each stands:
+
+   | # | Step | Status |
+   |---|---|---|
+   | 1 | Migrate DNS to GoDaddy | **Done 22 Sep; verification pending.** Sam entered the target zone below and set `samradocchia.com` to forward to sam-rad.com. Still to confirm: the `after` snapshot, mail in both directions, and DKIM verified in Google Admin, after which DMARC goes to `p=quarantine`. Nameservers moved 22 Sep to `ns69`/`ns70.domaincontrol.com`, before the zone was rebuilt, so mail and `www` briefly depended on stale caches. Target zone: A `@` 216.198.79.1; CNAME `www` to the Vercel target `5525d82313f37756.vercel-dns-017.com`; CNAME `archive` to `ext-cust.squarespace.com` until retirement; **one** MX, `smtp.google.com` priority 1 (Google's current single-record setup, as on Illicit Shadows; the five `aspmx` records were retired); TXT SPF `v=spf1 include:_spf.google.com ~all`, replacing Squarespace's `_spfm` include, which died with the old zone; TXT `google-site-verification`; DKIM at `google._domainkey`; DMARC at `_dmarc`. GoDaddy auto-created a DMARC of `p=quarantine` reporting to its own mailbox, which with no DKIM and no SPF would have sent Sam's outgoing mail to spam; set to `p=none` until DKIM verifies. |
+   | 2 | Blog and press pages on sam-rad.com | **Done** as `/writing` and `/press`. What remains is the old posts themselves: see step 2b. |
+   | 2b | Capture the old blog | **Text captured 22 Sep; images pending.** Sam's WordPress export became `sam-rad-archive-2026-09-22`, kept at `~/Documents/sam-rad-archive`, outside this repo: the original XML, `archive.sqlite`, JSON and CSV. It holds 121 blog posts (18 already on `/writing`, 103 not), 67 glossary entries, 35 press items and 19 pages. The export links to 421 images on Squarespace's CDN but does not contain them. **Sam's call, 22 Sep: the images are not needed**, so they were not downloaded; the text is the record. Once Squarespace is cancelled, image links inside archived post bodies will stop working. The live site does not depend on any of them: checked, zero Squarespace-hosted URLs in the source or the built pages. If an old post is ever backfilled into `/writing`, it needs new images. `fetch-images.py` stays in the archive folder in case that changes before cancellation. The export omits event pages; `scripts/archive-squarespace.py` captures those if a record is wanted. |
+   | 3 | Re-point archive redirects | **Done 14 Sep.** No rule references `archive.sam-rad.com`. Old blog URLs land on `/writing`, the 18 backfilled slugs on their own posts. |
+   | 4 | Events and glossary | **Decided 22 Sep: keep the redirects as they are.** `/events/all` to `/speaking`; the Bitcoin Pizza glossary (67 entries), `/glossary` and `/bitcoin` to `/body-of-work#bitcoin-pizza`. The glossary text survives in the archive. |
+   | 5 | Retire Squarespace | After step 1 is verified (snapshot, mail both ways, DKIM), not before. Then delete the `archive` CNAME at GoDaddy. |
+
+   Decoupled on purpose: steps 1 and 5 no longer depend on each other, because nothing
+   on the live site depends on the archive.
+
+4. **Monthly R-A-D production session.** Added 22 Sep 2026, Sam's plan. One working
+   session a month produces the next month of R-A-D in a batch:
+   - **Writing:** the month's questions drafted, fact-checked and signed off together,
+     exported in the batch format of RAD-BATCH-01 (records plus one file per post).
+   - **Video:** each question recorded as a short, in the same sitting.
+   - **YouTube titles and descriptions written for AI search:** the title is the
+     question verbatim; the description opens with the 40 to 60 word answer, then links
+     to the post on `/writing`. The rules are in `channels/youtube.md`.
+   - **Scheduling:** posts go live on the site when they arrive (Sam's rule, 22 Sep);
+     the LinkedIn cuts go out one per weekday. Automating that is item 9, n8n.
+   - Each batch export should carry a `stamp` word per post and no blog cover.
+
+5. **New sizzle reel** cut for the **industry pages**, replacing the placeholder.
    Separate from the homepage hero reel in item 0; that one is a silent background
    loop, this one is a watchable reel with sound.
-5. **Bring back dispatch thumbnails** once the Writing archive has enough posts with
+6. **Bring back dispatch thumbnails** once the Writing archive has enough posts with
    distinct images. Removed 9 Sep 2026: four of the eight visible posts shared the same
    NYC portrait set, so the 96px column showed near-identical crops, and a crop that
    small carries no information anyway. The CSS rules are commented in `globals.css`
    next to `.disp`. Revisit at roughly twenty posts.
-6. **Re-industrialize the dispatch CTAs.** The sidebar on every writing post links to
+7. **Re-industrialize the dispatch CTAs.** The sidebar on every writing post links to
    `/speaking` with generic copy, and the industry dispatch feed only appears once a
    sector has two posts of its own. Both were deliberate on 9 Sep 2026: with 8 visible
    posts there was not enough per-sector content to justify pointing a healthcare
    reader at the healthcare keynote. Once the archive is backfilled, point the sidebar
    at the matching industry page (the `industrySlug` field on each post already
    carries it) and the feeds will reappear on their own.
-7. **Sanity CMS. Unparked 22 Sep 2026.** It was parked until the design settled, which
+8. **Sanity CMS. Unparked 22 Sep 2026.** It was parked until the design settled, which
    was the right call when writing meant eight posts. It no longer does. R-A-D publishes
    about once a weekday, so roughly twenty posts a month would each be a hand edit to
    `dispatches.json`, a full source zip, and a production deploy. That is code
@@ -896,14 +915,14 @@ What shipped:
    - **On-demand revalidation** on publish, not full-rebuild webhooks. A post should go
      live in seconds without triggering a production build.
    - **Covers through Sanity's image CDN**, which gives responsive sizes for free and
-     retires item 9 for the writing covers at least.
+     retires item 10 for the writing covers at least.
    - **Migration script first**, moving all 18 records including the ten archived ones,
      then verify every `/writing/[slug]` renders byte-identical before switching.
      Keep `dispatches.json` in the repo as a frozen fallback for one release.
    - Do this on a branch with a Vercel preview, not on `main`. It is the largest change
      the site has had since launch.
 
-8. **Automation with n8n.** Added 22 Sep 2026. **Comes after Sanity, not before.**
+9. **Automation with n8n.** Added 22 Sep 2026. **Comes after Sanity, not before.**
    Automating writes into a JSON file in git automates the wrong thing; n8n writing to
    Sanity's API is clean, reversible and auditable.
 
@@ -936,13 +955,13 @@ What shipped:
    - **Every workflow exports to JSON and is committed** under `automation/` so it can be
      read, reviewed and restored. An automation nobody can read is a liability.
 
-9. **Responsive images.** Parked 9 Sep 2026. A phone downloads the same 2358px hero
+10. **Responsive images.** Parked 9 Sep 2026. A phone downloads the same 2358px hero
    as a desktop: 797KB where 195KB would do, a 75% saving on mobile. WebP and
    `fetchPriority` are already in place, so this is the remaining win. Two options:
    the cheap one adds a 900px WebP per hero plus a `srcset` to the `<picture>`
    elements in `Blocks.jsx`, about an hour; the thorough one converts all 38 `<img>`
    tags to Next's `Image`, about a day. Do the cheap one first.
-10. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
+11. **Move to Claude Code.** Considered and deferred on 8 Sep 2026. Sam prefers to
    keep working in chat with the zip-and-copy loop. Worth revisiting for mechanical
    work (bulk migrations, repeated builds) while keeping copy and design decisions
    in chat, where the reasoning is discussed rather than just executed. A fresh
@@ -962,8 +981,8 @@ already shipped or been superseded.
     output lands in `corpus/VOICE.md`. Until that file exists, `VOICE-NOTES.md` is the
     reference. **Read `corpus/VOICE.md` before writing any copy for the site once it
     exists.** That single line is the entire coupling between the two threads.
-  - **The dispatch backfill** on `/writing`. Eighteen posts on the site; the export is
-    the pool to draw from. Waits on the voice guide.
+  - **The dispatch backfill** on `/writing` is **closed**: the 18 legacy posts were the
+    selection. New writing comes from R-A-D and the voice guide, not the old archive.
 - **Bureau listing audit. DONE, 12 Sep 2026**, recorded in `sam-rad-bureau-audit.xlsx`
   (not in this repo; Sam holds it). 31 listings audited, ranked by severity and
   priority. **The remaining work is correction copy, which Sam is writing with her
@@ -1051,7 +1070,7 @@ already shipped or been superseded.
   language nobody proofreads weekly. Machine translation is worse than nothing for
   voice-led copy. If it is revived, do a four-page `/es` slice only (landing, speaking,
   short bio, booking form), keep the writing archive and CV English-only, and do it
-  **after** the Sanity migration in item 7: translating a hand-edited codebase is how the
+  **after** the Sanity migration in item 8: translating a hand-edited codebase is how the
   drift starts.
 - `/perceptual-security` page, **deferred at Sam's request.** Revisit only if
   AI-citation tracking shows the term being asked about.
@@ -1127,12 +1146,15 @@ expected page count, `npm run check:images`, any `git rm`, then
 - "How to Get Into Ketosis Fast" converted to **143 blocks**. Unlisted, but it is her
   highest-traffic page.
 - **103 blog posts left unmigrated**, mostly 2017–2019 blockchain. Deliberately
-  retired; they redirect to `/writing`.
+  retired; they redirect to `/writing`. **The selection is settled; do not reopen it.**
+  The 18 that came across were chosen by the traffic and backlink analysis done before
+  launch, which is why an unlisted post such as the ketosis piece is on the site. The
+  other 103 were retired on purpose, and all of them are preserved in the 22 Sep
+  archive. Re-proposed on 22 Sep and correctly declined by Sam for exactly this
+  reason.
 - Speaking stat sources not yet cited on the page.
-- **Export the Squarespace newsletter subscribers before cancelling.** The old site
-  ran a working Radical Next signup and those addresses live in the Squarespace
-  account. Squarespace, Contacts or Marketing, export CSV. Do this before the Sept 22
-  retirement or the list is gone.
+- Newsletter subscribers: **exported by Sam** before retirement (254 contacts, 76 opted
+  in to marketing).
 
 **Images**
 - `hero-work.jpg` (home) is a Lanczos upscale of a 1179px original. `hero-foresight.jpg`
