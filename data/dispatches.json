@@ -1,5 +1,1653 @@
 [
   {
+    "number": "0038",
+    "series": "rad",
+    "slug": "will-biology-replace-the-factory",
+    "title": "Will biology replace the factory?",
+    "deck": "Part of it, and sooner than the factory expects. We already grow materials that used to be made: concrete that heals its own cracks, leather from mushroom roots, bricks from bacteria. Growing uses a fraction of the material that machining does. The factory of the next era looks less like an assembly line and more like a greenhouse.",
+    "metaDescription": "Part of it, and sooner than the factory expects. We already grow materials that used to be made: concrete that heals its own cracks, leather from mushroom.",
+    "stamp": "biology",
+    "date": "2026-11-02",
+    "lastUpdated": "2026-11-02",
+    "nextReview": "2027-01-31",
+    "readingTime": "2 min read",
+    "industry": "Manufacturing & Industrial",
+    "industrySlug": "manufacturing",
+    "tags": [
+      "biotech",
+      "manufacturing",
+      "materials",
+      "sustainability"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Here's a fact I can't stop thinking about."
+      },
+      {
+        "t": "p",
+        "x": "Some of the strongest structures we can now make use about 95 percent less material than a solid block. Not by being clever with steel, but by copying how bone and coral are built: lattices, gaps, geometry doing the work that mass used to do. We can only design them because of the computing we have now."
+      },
+      {
+        "t": "p",
+        "x": "I wrote about this in Radical Next. It's the tip of a much bigger shift."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "For two hundred years, making something meant taking a lot of material and cutting, melting, or pressing it into shape. Extract, transport, machine, discard the rest. That's the factory, and it's the reason a car weighs as much as it does."
+      },
+      {
+        "t": "p",
+        "x": "Biology never worked that way. A tree doesn't machine itself. It grows exactly what it needs, where it needs it, from air and water and light. And we're starting to build like that."
+      },
+      {
+        "t": "p",
+        "x": "Concrete that seals its own cracks, with bacteria that wake up when water gets in. Leather grown from mycelium, the root structure of fungi, in weeks instead of the years a cow takes. Bricks grown by microbes at room temperature instead of fired in kilns. Buildings being printed, layer by layer, in lattices that look like jungle gyms under a microscope."
+      },
+      {
+        "t": "p",
+        "x": "This is the pattern of every era: the new way arrives at the edges, looks like a novelty, and then quietly becomes the default. Electricity was a curiosity in factories for thirty years. Then it was the factory."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things. Especially if you make physical things."
+      },
+      {
+        "t": "p",
+        "x": "Find your first grown material. Somewhere in your product is a component that could be grown rather than made. Packaging is usually first. Find it and pilot it."
+      },
+      {
+        "t": "p",
+        "x": "Redesign for less, not just different. The lattice lesson applies everywhere. Ask what would happen if you used a tenth of the material. Then ask why you don't."
+      },
+      {
+        "t": "p",
+        "x": "And put a biologist in the room. Manufacturing has been the domain of mechanical engineers for two centuries. The next factory needs someone who thinks in growth."
+      },
+      {
+        "t": "p",
+        "x": "We didn't stop cutting wood because trees ran out. We'll stop machining because growing works better. That's the part worth getting ahead of."
+      },
+      {
+        "t": "p",
+        "x": "What in your product could be grown instead of made?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Why is the robot still waiting on the human?](/writing/why-is-the-robot-still-waiting-on-the-human)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Sam Rad, Radical Next (2025), Planetary and Interplanetary chapter, on lattice structures and regenerative materials."
+      },
+      {
+        "x": "Henk M. Jonkers, Arjan Thijssen, Gerard Muyzer, Oguzhan Copuroglu and Erik Schlangen (Delft University of Technology), \"Application of bacteria as self-healing agent for the development of sustainable concrete,\" Ecological Engineering 36, no. 2 (2010): 230 to 235.",
+        "url": "https://doi.org/10.1016/j.ecoleng.2008.12.036"
+      }
+    ],
+    "internalId": "RAD-0030"
+  },
+  {
+    "number": "0037",
+    "series": "rad",
+    "slug": "is-your-attention-the-most-valuable-thing-your-company-owns",
+    "title": "Is your attention the most valuable thing your company owns?",
+    "deck": "Yes, and almost nobody puts it on the balance sheet. Every strategy, every tool, every transformation runs on the same scarce input: people's focused attention. The companies that hoard it, by killing meetings, notifications, and priorities that don't matter, out-think the ones that spend it on everything. Focus is the last competitive advantage a machine can't buy you.",
+    "metaDescription": "Yes, and almost nobody puts it on the balance sheet. Every strategy, every tool, every transformation runs on the same scarce input: people's focused.",
+    "stamp": "attention",
+    "date": "2026-10-30",
+    "lastUpdated": "2026-10-30",
+    "nextReview": "2027-01-28",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "attention",
+      "focus",
+      "productivity",
+      "human connection"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Here's a question I ask leadership teams."
+      },
+      {
+        "t": "p",
+        "x": "What's the first thing your people do in the morning?"
+      },
+      {
+        "t": "p",
+        "x": "Nobody knows. But I do. They pick up the phone. Before coffee, before a thought of their own, they let someone else's feed set the pattern for the day."
+      },
+      {
+        "t": "p",
+        "x": "I write in my next book about what that habit does. Start the day with the feed and you've told your pattern-seeking brain that the feed comes first. You'll go back to the trough all day."
+      },
+      {
+        "t": "p",
+        "x": "Now multiply that by your entire company."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every era has one scarce resource that the winners figured out first. Land, in the agrarian age. Energy, in the industrial one. Information, when the internet arrived, until information became free and infinite."
+      },
+      {
+        "t": "p",
+        "x": "What's scarce now is attention. The ability to focus on one hard thing long enough to solve it. Every platform you use is engineered to take it, and most companies then spend whatever's left on Slack, back-to-back meetings, and eleven priorities that are all number one."
+      },
+      {
+        "t": "p",
+        "x": "Old attention economy joke: if you're not paying for the product, you are the product. Inside a company it's worse. You're paying people for their attention and then giving it away for free."
+      },
+      {
+        "t": "p",
+        "x": "The three defenses I write about for the individual mind are focus, discernment, and innovation. They're the same three for an organization. Where does attention go? What gets in? What new thing can we make with what's left?"
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Audit attention like money. For one week, count the hours your best people spend in meetings and messages versus on actual work. The number will scare you. Good."
+      },
+      {
+        "t": "p",
+        "x": "Protect one block a day. No meetings, no pings, for everyone, at the same time. Companies that do this describe it like discovering an extra day in the week."
+      },
+      {
+        "t": "p",
+        "x": "And declare one priority. Not three, one. Attention can only go to one place at a time, and that's what a priority is for."
+      },
+      {
+        "t": "p",
+        "x": "Your competitors can buy the same AI you can. They can't buy a focused team. That's still yours, if you keep it."
+      },
+      {
+        "t": "p",
+        "x": "Where does your attention actually go before nine a.m.?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Does change fatigue exist, or is it change without a pattern?](/writing/does-change-fatigue-exist-or-is-it-change-without-a-pattern)*"
+      }
+    ],
+    "sources": [],
+    "internalId": "RAD-0018"
+  },
+  {
+    "number": "0036",
+    "series": "rad",
+    "slug": "is-off-grid-the-future-or-a-fantasy",
+    "title": "Is off-grid the future, or a fantasy?",
+    "deck": "Neither. It's a preview. I spent a year living off-grid, and the lesson wasn't that everyone should. It's that the technologies that make it possible, solar, batteries, satellite internet, local water, are the same ones rewiring the grid itself. The future isn't everyone in the jungle. It's a grid that works more like the jungle did: local, resilient, and yours.",
+    "metaDescription": "Neither. It's a preview. I spent a year living off-grid, and the lesson wasn't that everyone should.",
+    "stamp": "off-grid",
+    "date": "2026-10-29",
+    "lastUpdated": "2026-10-29",
+    "nextReview": "2027-01-27",
+    "readingTime": "2 min read",
+    "industry": "Energy & Utilities",
+    "industrySlug": "energy",
+    "tags": [
+      "energy",
+      "resilience",
+      "decentralization",
+      "infrastructure"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "I spent a year living off-grid."
+      },
+      {
+        "t": "p",
+        "x": "Two outfits, both merino wool. Solar for power. A connection to the outside world that worked when the sky was clear. Water I had to think about. A rhythm set by sunrise instead of a calendar app."
+      },
+      {
+        "t": "p",
+        "x": "I write about that year in my next book, because it did something to my attention that no app ever has. But that's not the point of this post. The point is what it taught me about infrastructure."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every big system starts centralized and ends distributed."
+      },
+      {
+        "t": "p",
+        "x": "Computing began with mainframes in guarded rooms. Now it's in your pocket. Media began with three networks. Now it's everyone. Power began, and mostly still is, a handful of giant plants pushing electricity one way down long wires."
+      },
+      {
+        "t": "p",
+        "x": "That's changing, and the technologies doing it are the ones I lived on. A solar panel on a roof. A battery in a garage. A satellite dish that turns any hillside into an office. Each one takes a piece of the grid and moves it to the edge."
+      },
+      {
+        "t": "p",
+        "x": "Off-grid living was the extreme test case. It proved the pieces work. The interesting future isn't a million people copying me. It's those pieces stitched back into the grid: rooftops feeding batteries feeding neighborhoods, so that when the big wire fails, the small ones don't."
+      },
+      {
+        "t": "p",
+        "x": "Texas found out what a centralized grid does under stress in February 2021. Homes with their own solar and storage were the ones with lights on."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things. Especially if you run anything that depends on the grid staying up."
+      },
+      {
+        "t": "p",
+        "x": "Ask how long you'd last if the wire went dead. A day? An hour? That number is your resilience, and most organizations have never measured it."
+      },
+      {
+        "t": "p",
+        "x": "Move one thing to the edge. A battery, a generator, a solar array on the warehouse. Not to leave the grid. To have a second answer."
+      },
+      {
+        "t": "p",
+        "x": "And watch the regulation. The rules for selling power back, for microgrids, for who owns a battery in a building, are being written now. The organizations in those rooms will shape a grid that works for them."
+      },
+      {
+        "t": "p",
+        "x": "I came back from the jungle. But the jungle taught me what the future grid looks like: not one giant thing you depend on, but many small things you can trust."
+      },
+      {
+        "t": "p",
+        "x": "If your power went out tomorrow, what would still work?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Will AI's power bill decide who wins the next decade?](/writing/will-ais-power-bill-decide-who-wins-the-next-decade)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "University of Texas at Austin Energy Institute, \"The Timeline and Events of the February 2021 Texas Electric Grid Blackouts,\" July 2021.",
+        "url": "https://energy.utexas.edu/research/ercot-blackout-2021"
+      }
+    ],
+    "internalId": "RAD-0029"
+  },
+  {
+    "number": "0035",
+    "series": "rad",
+    "slug": "what-are-you-encrypting-today-that-must-stay-secret-in-2035",
+    "title": "What are you encrypting today that must stay secret in 2035?",
+    "deck": "More than you think. Adversaries are already harvesting encrypted data to decrypt later, once quantum computers can, most likely in the 2030s. Health records, government files, trade secrets: anything still valuable in ten years is exposed now. The standards to protect it have existed since 2024. Migrate what has the longest shelf life first.",
+    "metaDescription": "More than you think. Adversaries are harvesting encrypted data to decrypt once quantum computers can. Migrate what has the longest shelf life first.",
+    "stamp": "secret",
+    "date": "2026-10-28",
+    "lastUpdated": "2026-10-28",
+    "nextReview": "2027-01-26",
+    "readingTime": "2 min read",
+    "industry": "Technology & AI",
+    "industrySlug": "technology-ai",
+    "tags": [
+      "quantum",
+      "encryption",
+      "security",
+      "technology"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Here's the wrong question: when will a quantum computer break today's encryption?"
+      },
+      {
+        "t": "p",
+        "x": "Here's the right one: how much of what you encrypted this year still needs to be secret in 2035?"
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Remember Y2K? Two-digit years in old software. Nothing broke on January 1, 2000, and people called it a hoax. It wasn't. It was the largest coordinated repair job in computing history, done quietly and early, which is exactly why nothing broke."
+      },
+      {
+        "t": "p",
+        "x": "That's the pattern for quantum. Not a bang. A migration."
+      },
+      {
+        "t": "p",
+        "x": "The threat is real but slow. To break the encryption most of the internet uses, you'd need a quantum computer with millions of stable qubits. Today's best have on the order of hundreds to low thousands, and they're noisy. Most serious estimates put a cryptographically relevant machine somewhere in the 2030s, and estimates keep moving."
+      },
+      {
+        "t": "p",
+        "x": "But there's a twist that makes the date irrelevant. It's called harvest now, decrypt later. An adversary that records your encrypted traffic today doesn't need to break it today. They store it and wait. Health records, government files, trade secrets, anything that's still valuable in ten years is already exposed if it moved over the network this year."
+      },
+      {
+        "t": "p",
+        "x": "In August 2024, the U.S. National Institute of Standards and Technology published the first three post-quantum encryption standards. The math to defend against this exists and is approved. The remaining problem is the same as Y2K: finding every place the old thing lives and replacing it."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Inventory your cryptography. Most organizations don't know where their encryption lives. That inventory is step one, and it takes months, so start."
+      },
+      {
+        "t": "p",
+        "x": "Sort your data by shelf life. What needs to be secret in 2035? Migrate that first. What's worthless next week can wait."
+      },
+      {
+        "t": "p",
+        "x": "And ask your vendors. Every cloud, every device, every piece of software you rely on has a post-quantum plan or doesn't. Ask in writing."
+      },
+      {
+        "t": "p",
+        "x": "Y2K was a success story people mistook for a hoax. Quantum can be the same, if we do the boring work early."
+      },
+      {
+        "t": "p",
+        "x": "What's in your systems today that still needs to be secret in ten years?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Will quantum computing break encryption?](/writing/will-quantum-computing-break-encryption)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "National Institute of Standards and Technology, \"NIST Releases First 3 Finalized Post-Quantum Encryption Standards,\" August 13, 2024.",
+        "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"
+      }
+    ],
+    "internalId": "RAD-0024"
+  },
+  {
+    "number": "0034",
+    "series": "rad",
+    "slug": "why-do-smart-organizations-keep-making-the-same-change-twice",
+    "title": "Why do smart organizations keep making the same change twice?",
+    "deck": "Because they never wrote down why the first one failed. Organizations keep records of what they decided and almost none of what they learned. So every few years a new leader rediscovers the same idea, runs into the same wall, and calls it new. The fix is not better memory. It's a habit of naming the pattern out loud.",
+    "metaDescription": "Because they never wrote down why the first one failed. Organizations keep records of what they decided and almost none of what they learned.",
+    "stamp": "twice",
+    "date": "2026-10-27",
+    "lastUpdated": "2026-10-27",
+    "nextReview": "2027-01-25",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "change",
+      "transformation",
+      "organizational memory",
+      "leading through change"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Here's a scene I've watched in a dozen companies."
+      },
+      {
+        "t": "p",
+        "x": "A new leader arrives. She sees the obvious problem. She proposes the obvious fix: centralize it, or decentralize it, depending on the year."
+      },
+      {
+        "t": "p",
+        "x": "Someone older in the room goes quiet. Because they did exactly this in 2017. And it didn't take."
+      },
+      {
+        "t": "p",
+        "x": "But nobody says so. And the change runs again."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Organizations swing. Centralize, decentralize. Build in-house, outsource. Open floor plan, offices again. If you've been anywhere longer than a decade, you've watched the pendulum go both ways and heard each swing described as a revolution."
+      },
+      {
+        "t": "p",
+        "x": "The pendulum isn't the problem. Sometimes the answer really does change with the times. The problem is amnesia. Companies keep exquisite records of decisions: the memo, the org chart, the budget. They keep almost no record of lessons: why it stalled, who resisted and why, what it would have taken to work."
+      },
+      {
+        "t": "p",
+        "x": "So the lesson leaves the building with the person who learned it."
+      },
+      {
+        "t": "p",
+        "x": "I say on stage that change has a pattern, and that five thousand years of it repeat. That's true for civilizations. It's also true, on a smaller clock, inside your company. The same change comes around every seven or eight years, roughly the tenure of one leadership team. And each time, it arrives without its history."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Before any big change, ask one question in the open: \"Have we tried this before?\" Then let the quiet person answer. That's the cheapest research you will ever do."
+      },
+      {
+        "t": "p",
+        "x": "Write the lesson, not just the decision. One page, kept somewhere people can find it: what we tried, what happened, what we'd do differently. Not a post-mortem nobody reads. A note to the next leader."
+      },
+      {
+        "t": "p",
+        "x": "And keep one person whose job is remembering. Every organization needs an anthropologist. Someone who knows the stories, and is allowed to tell them in the room where decisions get made."
+      },
+      {
+        "t": "p",
+        "x": "Making the same change twice isn't stupidity. It's what happens when a smart organization forgets on purpose. You can stop forgetting."
+      },
+      {
+        "t": "p",
+        "x": "What's the change your company has already tried once, and is about to try again?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Why does every transformation feel like it's failing halfway through?](/writing/why-does-every-transformation-feel-like-its-failing-halfway-through)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Sam Rad, \"Change Has a Pattern\" keynote."
+      }
+    ],
+    "internalId": "RAD-0015"
+  },
+  {
+    "number": "0033",
+    "series": "rad",
+    "slug": "can-you-insure-against-a-deepfake",
+    "title": "Can you insure against a deepfake?",
+    "deck": "You can, and the market is being invented right now. Insurance has always shown up shortly after a new risk becomes common, from shipwrecks to cyberattacks. Deepfake fraud crossed that line in 2024. Policies exist but they're narrow, exclusions are wide, and the price will depend on one thing: whether you can prove your people were trained to pause.",
+    "metaDescription": "You can, and the market is being invented right now. Insurance has always shown up shortly after a new risk becomes common, from shipwrecks to.",
+    "stamp": "deepfake",
+    "date": "2026-10-26",
+    "lastUpdated": "2026-10-26",
+    "nextReview": "2027-01-24",
+    "readingTime": "2 min read",
+    "industry": "Insurance",
+    "industrySlug": "insurance",
+    "tags": [
+      "insurance",
+      "deepfakes",
+      "risk",
+      "security"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In the 1680s, a coffee house on Tower Street in London became the place ship owners went to find someone who'd bet on their cargo arriving."
+      },
+      {
+        "t": "p",
+        "x": "That coffee house was Lloyd's. It became the insurance market that still bears the name. Insurance didn't create shipping. It showed up when shipping got common enough, and dangerous enough, that people needed to share the risk."
+      },
+      {
+        "t": "p",
+        "x": "That's the pattern. First the risk becomes routine. Then the market prices it."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Cyber insurance ran the same script. Almost nobody had it in 2005. By the mid-2010s, after a decade of breaches, it was a normal line item. Then ransomware exploded, losses spiked, and insurers reacted the way they always do: raised prices, tightened terms, and started demanding proof that you'd done the basics. Multifactor authentication became a condition of coverage."
+      },
+      {
+        "t": "p",
+        "x": "Deepfakes are now at the 2015 stage of that curve. The Arup case in early 2024, where a finance employee wired about $25 million after a video call full of fake colleagues, was the moment it stopped being a novelty. Insurers noticed. Some policies now name deepfake-enabled fraud. Many still exclude it, or fold it into social engineering coverage with low limits."
+      },
+      {
+        "t": "p",
+        "x": "Here's what I expect. Within a few years, the question insurers ask won't be whether you have deepfake detection software. It'll be whether your people are trained to verify. Just as they now ask about multifactor authentication. The human pause will become a condition of coverage."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Read your policy for the words \"social engineering\" and \"voluntary transfer.\" That's where deepfake losses land, and where the limits are usually smallest."
+      },
+      {
+        "t": "p",
+        "x": "Document your verification rule. A written policy that any request to move money is confirmed on a second channel is both your best defense and your best evidence."
+      },
+      {
+        "t": "p",
+        "x": "And train it, then log the training. Insurers underwrite what they can see. A record of people practicing the pause is worth more than any detector."
+      },
+      {
+        "t": "p",
+        "x": "Lloyd's started in a coffee house because ships kept sinking. This market is starting because faces can be faked. The response is the same: share the risk, and prove you did the basics."
+      },
+      {
+        "t": "p",
+        "x": "Does your policy cover the day someone with your CFO's face asks for a wire?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Is perception the new battlefield?](/writing/is-perception-the-new-battlefield)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Lloyd's, \"Our history\" (origins at Edward Lloyd's coffee house, 1688).",
+        "url": "https://www.lloyds.com/about-lloyds/history"
+      },
+      {
+        "x": "CNN, on the Arup deepfake fraud, February 4, 2024.",
+        "url": "https://www.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk/index.html"
+      }
+    ],
+    "internalId": "RAD-0028"
+  },
+  {
+    "number": "0032",
+    "series": "rad",
+    "slug": "is-perception-the-new-battlefield",
+    "title": "Is perception the new battlefield?",
+    "deck": "It always was. What changed is that the weapons are cheap. Every war has been fought partly over what people believe is true, but now anyone can manufacture a convincing reality for the price of a subscription. The defense isn't a better detector. It's a population that knows how its own perception can be hijacked.",
+    "metaDescription": "It always was. What changed is that the weapons are cheap. Every war has been fought partly over what people believe is true, but now anyone can.",
+    "stamp": "perception",
+    "date": "2026-10-23",
+    "lastUpdated": "2026-10-23",
+    "nextReview": "2027-01-21",
+    "readingTime": "2 min read",
+    "industry": "Technology & AI",
+    "industrySlug": "technology-ai",
+    "tags": [
+      "AI",
+      "deepfakes",
+      "security",
+      "perception"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In 2024, a finance employee at the engineering firm Arup joined a video call with his chief financial officer and several colleagues."
+      },
+      {
+        "t": "p",
+        "x": "They asked him to make a series of transfers. He did. About $25 million."
+      },
+      {
+        "t": "p",
+        "x": "Everyone on that call except him was a deepfake."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Perception has been a battlefield for as long as there have been armies. The Trojan horse was a perception attack. So was every forged letter, every planted rumor, every propaganda leaflet dropped from a plane. Sun Tzu wrote that all warfare is based on deception, twenty-five centuries ago."
+      },
+      {
+        "t": "p",
+        "x": "What changed is the cost. Faking a person used to take a studio, a team, and weeks. Now it takes a laptop and an afternoon. When the cost of manufacturing reality drops to near zero, the volume goes up, and the target stops being generals. It's everyone. Your finance team. Your parents. You."
+      },
+      {
+        "t": "p",
+        "x": "I've spent the last few years thinking about this under a name I use: perceptual security. Cybersecurity protects the machine. Perceptual security protects the human looking at it. And right now we spend billions on the first and almost nothing on the second."
+      },
+      {
+        "t": "p",
+        "x": "In my next book I write about the three defenses: focus, discernment, and innovation. The Arup employee didn't lack technology. He lacked a moment of pause, and a culture that made it normal to say \"let me call you back on a number I trust.\""
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Build the pause in. Any request that moves money or data gets verified on a second channel, every time, no matter who appears to be asking. Make it a rule so nobody has to be brave."
+      },
+      {
+        "t": "p",
+        "x": "Train perception, not just passwords. Show your people what a deepfake looks like today. Then remind them it will look better tomorrow."
+      },
+      {
+        "t": "p",
+        "x": "And treat discernment as a skill you hire and promote for. The person who says \"something feels off\" is the most valuable sensor you own. Reward them for saying it, even when they're wrong."
+      },
+      {
+        "t": "p",
+        "x": "The battlefield was always perception. We just used to have more time. Now the time is what you have to build yourself."
+      },
+      {
+        "t": "p",
+        "x": "When did you last verify a request that looked completely normal?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Will you have to prove you're human online?](/writing/will-you-have-to-prove-youre-human-online)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "CNN, \"Finance worker pays out $25 million after video call with deepfake 'chief financial officer',\" February 4, 2024; Arup confirmed the incident in May 2024.",
+        "url": "https://www.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk/index.html"
+      }
+    ],
+    "internalId": "RAD-0023"
+  },
+  {
+    "number": "0031",
+    "series": "rad",
+    "slug": "does-change-fatigue-exist-or-is-it-change-without-a-pattern",
+    "title": "Does change fatigue exist, or is it change without a pattern?",
+    "deck": "Both, but the second one is the one you can fix. People aren't tired of change. They're tired of change that arrives with no shape: another tool, another reorg, another priority, none of it connected. Give people the pattern and the same amount of change feels lighter, because now they can see where it's going.",
+    "metaDescription": "Both, but the second one is the one you can fix. People aren't tired of change.",
+    "stamp": "fatigue",
+    "date": "2026-10-22",
+    "lastUpdated": "2026-10-22",
+    "nextReview": "2027-01-20",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "change fatigue",
+      "change",
+      "attention",
+      "leading through change"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Everyone's talking about change fatigue."
+      },
+      {
+        "t": "p",
+        "x": "Gartner has been measuring it for years. Employees' willingness to support organizational change has dropped sharply over the last decade; in Gartner's surveys it fell from about three quarters of employees in 2016 to under half in 2022."
+      },
+      {
+        "t": "p",
+        "x": "So yes, it's real. But I think we're naming it wrong."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "In my next book I write about what a constant feed does to a human nervous system. It isn't the volume of information that wears you down. It's information with no pattern. Random pings, out of order, each one demanding a reaction. That's what a brain can't rest inside."
+      },
+      {
+        "t": "p",
+        "x": "Work has become the same feed. A new platform in March. A reorg in June. A new strategy in the fall, with a new word for it. None of it connected. Each one presented as the thing that matters now."
+      },
+      {
+        "t": "p",
+        "x": "What people call change fatigue is mostly pattern fatigue. The brain is a pattern-seeking instrument. Give it a shape and it can carry a lot. Deny it a shape and even small things exhaust it."
+      },
+      {
+        "t": "p",
+        "x": "I've watched teams absorb enormous change without complaint, because someone drew the map. \"This is where we are. This is where we're going. These three moves are the same journey.\" And I've watched teams collapse under a fraction of that, because every change came from nowhere."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Connect every change to the one story. If you can't say how the new tool relates to the new strategy relates to the reorg, don't launch it yet. Not because the change is wrong, but because unconnected change costs more than it returns."
+      },
+      {
+        "t": "p",
+        "x": "Stop announcing. Start locating. Instead of \"we're launching X,\" say \"we're at step three of five, and this is step three.\" People can rest inside a sequence."
+      },
+      {
+        "t": "p",
+        "x": "And cut one thing for every thing you add. Fatigue also comes from nothing ever ending. Name what's over."
+      },
+      {
+        "t": "p",
+        "x": "Change has a pattern. When people can see it, they stop being tired of it and start steering it."
+      },
+      {
+        "t": "p",
+        "x": "What's the map your team is missing?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [What year is it inside your company?](/writing/what-year-is-it-inside-your-company)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Cian O Morain (Gartner), \"Employees Are Losing Patience with Change Initiatives,\" Harvard Business Review, May 9, 2023. Willingness to support enterprise change fell from 74% of employees in 2016 to 43% in 2022.",
+        "url": "https://hbr.org/2023/05/employees-are-losing-patience-with-change-initiatives"
+      }
+    ],
+    "internalId": "RAD-0017"
+  },
+  {
+    "number": "0030",
+    "series": "rad",
+    "slug": "will-ais-power-bill-decide-who-wins-the-next-decade",
+    "title": "Will AI's power bill decide who wins the next decade?",
+    "deck": "Yes. Every technology era is decided by who controls the energy underneath it, and AI is the hungriest one yet. Data centers used about as much electricity as Japan in 2024, and the demand is set to more than double by 2030. The countries and companies that can generate, store, and move that power will set the terms. The rest will rent.",
+    "metaDescription": "Yes. Every technology era is decided by who controls the energy underneath it, and AI is the hungriest one yet.",
+    "stamp": "power",
+    "date": "2026-10-21",
+    "lastUpdated": "2026-10-21",
+    "nextReview": "2027-01-19",
+    "readingTime": "2 min read",
+    "industry": "Energy & Utilities",
+    "industrySlug": "energy",
+    "tags": [
+      "energy",
+      "AI",
+      "infrastructure",
+      "strategy"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Let's talk about the part of AI nobody wants on a slide."
+      },
+      {
+        "t": "p",
+        "x": "The International Energy Agency estimated that data centers consumed around 415 terawatt-hours of electricity in 2024, roughly one and a half percent of the world's total. Their projection: about 945 terawatt-hours by 2030, more than doubling, with AI the main driver."
+      },
+      {
+        "t": "p",
+        "x": "That's about the electricity use of Japan, on its way to more."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Here's what history says. Every era runs on an energy source, and whoever controls it writes the rules."
+      },
+      {
+        "t": "p",
+        "x": "Coal built the British Empire. Oil built the American century. In Radical Next I write about the Kardashev scale, the physicist Nikolai Kardashev's idea that a civilization's advancement can be measured by how much energy it can harness. He was thinking about stars. But the logic works at the scale of nations and companies too."
+      },
+      {
+        "t": "p",
+        "x": "The next era's energy question isn't just how much. It's where, how fast, and how clean. Chip wars are really energy wars. Data center sites are chosen by grid capacity before anything else. Countries with cheap, reliable power are becoming the new resource states, and countries without it are becoming customers."
+      },
+      {
+        "t": "p",
+        "x": "And there's a second-order effect. When compute costs are dominated by electricity, the price of thinking becomes the price of power. That reshapes who gets to build, and where."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Know your AI's energy footprint before your board asks. It's coming as a question and a cost line."
+      },
+      {
+        "t": "p",
+        "x": "Treat power as strategy. If your operations depend on compute, your energy contracts are now part of your competitive position. Most companies leave that to facilities."
+      },
+      {
+        "t": "p",
+        "x": "And watch the grid, not just the model. The bottleneck of the next five years isn't chips. It's transformers, transmission lines, and permits. The organizations moving early on those will have compute when others are waiting."
+      },
+      {
+        "t": "p",
+        "x": "Every era has an energy question. This one arrived faster than the last, and it's already on your bill."
+      },
+      {
+        "t": "p",
+        "x": "Do you know what your AI cost you in electricity last month?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [How do you lead through uncertainty without pretending to be certain?](/writing/how-do-you-lead-through-uncertainty-without-pretending-to-be-certain)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "International Energy Agency, Energy and AI, April 2025.",
+        "url": "https://www.iea.org/reports/energy-and-ai"
+      },
+      {
+        "x": "Sam Rad, Radical Next (2025), on energy and the Kardashev scale."
+      }
+    ],
+    "internalId": "RAD-0027"
+  },
+  {
+    "number": "0029",
+    "series": "rad",
+    "slug": "is-ai-free-about-to-become-a-selling-point",
+    "title": "Is \"AI-free\" about to become a selling point?",
+    "deck": "Yes, and it will follow the path organic food took. First a fringe claim, then a premium, then a regulated label. When most content, products, and service are machine-made, human-made becomes a signal worth paying for. The brands that can prove it, not just say it, will own the top of the market.",
+    "metaDescription": "Yes, and it will follow the path organic food took. First a fringe claim, then a premium, then a regulated label.",
+    "stamp": "AI-free",
+    "date": "2026-10-20",
+    "lastUpdated": "2026-10-20",
+    "nextReview": "2027-01-18",
+    "readingTime": "2 min read",
+    "industry": "Retail & Consumer Brands",
+    "industrySlug": "retail",
+    "tags": [
+      "AI",
+      "brand",
+      "retail",
+      "human-made"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "I'll tell you where this is going by telling you where it's been."
+      },
+      {
+        "t": "p",
+        "x": "In 1990, the United States passed the Organic Foods Production Act. Before that, \"organic\" was a word anyone could put on a carrot. Farmers who meant it were competing with farmers who didn't, and shoppers couldn't tell the difference."
+      },
+      {
+        "t": "p",
+        "x": "So the word got a standard. And then it got a price."
+      },
+      {
+        "t": "p",
+        "x": "Organic went from a co-op bin to a $70 billion market. Not because organic food changed. Because the label became provable."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every time a technology makes something abundant, the scarce version gets a name and a premium. Machine-woven cloth made \"handmade\" valuable. Factory food made \"artisanal\" a word on a menu. Mass photography made \"original print\" a market."
+      },
+      {
+        "t": "p",
+        "x": "Now the machine can make everything: the product description, the customer service reply, the song, the image, the article. Pew found that over a third of web pages published since ChatGPT launched show signs of AI authorship. That's the abundance."
+      },
+      {
+        "t": "p",
+        "x": "So \"made by a human\" is becoming the label. Some brands already use it. Right now it's unregulated, like organic in 1989. Anyone can claim it."
+      },
+      {
+        "t": "p",
+        "x": "That won't last. The claim will get contested, then standardized, then certified. And at that point it stops being marketing and starts being a real market."
+      },
+      {
+        "t": "p",
+        "x": "I said in Radical Next that the Great Flattening, the reversion to the bland mean, is the risk of a world that trains on itself. The other side of that risk is opportunity. The human version becomes the thing worth choosing."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Decide where you're human on purpose. Not everywhere; that's not honest and not affordable. The parts that matter: the design, the service moment, the words with your name on them."
+      },
+      {
+        "t": "p",
+        "x": "Make it provable before someone makes you. A real person's name, a real photo, a process you can describe. When the standard arrives, be the brand that already meets it."
+      },
+      {
+        "t": "p",
+        "x": "And don't fake it. The organic market had its scandals. Brands caught claiming human-made when it wasn't will lose more than they gained."
+      },
+      {
+        "t": "p",
+        "x": "The label is coming. The only question is whether your brand is the one that earns it or the one that gets caught."
+      },
+      {
+        "t": "p",
+        "x": "What would your customers pay more for, if they knew a person made it?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [When your customer is a bot, what is a brand?](/writing/when-your-customer-is-a-bot-what-is-a-brand)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Organic Foods Production Act of 1990, 7 U.S.C. 6501 et seq."
+      },
+      {
+        "x": "Pew Research Center, \"How Much of the Internet Is Written With AI?,\" August 20, 2026.",
+        "url": "https://www.pewresearch.org/data-labs/2026/08/20/how-much-of-the-internet-is-written-with-ai/"
+      },
+      {
+        "x": "Sam Rad, Radical Next (2025), on the Great Flattening."
+      }
+    ],
+    "internalId": "RAD-0022"
+  },
+  {
+    "number": "0028",
+    "series": "rad",
+    "slug": "can-a-team-stay-human-through-a-reorg",
+    "title": "Can a team stay human through a reorg?",
+    "deck": "Yes, if you protect the one thing a reorg always breaks first: the small circle of people who actually trust each other. Org charts change in a day. Trust takes years. Most restructures redraw the boxes and forget the lines between them. Keep the lines, and people will follow you through almost any set of boxes.",
+    "metaDescription": "Yes, if you protect the one thing a reorg always breaks first: the small circle of people who actually trust each other. Org charts change in a day.",
+    "stamp": "human",
+    "date": "2026-10-19",
+    "lastUpdated": "2026-10-19",
+    "nextReview": "2027-01-17",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "human connection",
+      "change",
+      "reorg",
+      "leading through change"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Every reorg starts with a slide."
+      },
+      {
+        "t": "p",
+        "x": "Boxes move. Names move. Someone gets a dotted line. And in the room where the slide gets made, it looks like a clean solution."
+      },
+      {
+        "t": "p",
+        "x": "Then it lands on the floor, and something goes quiet."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "For most of the million years we've been human, we lived in groups of about 150. That number has a name now, Dunbar's number, after the anthropologist Robin Dunbar, who found that our brains seem to top out at roughly 150 stable relationships. Inside that circle, you know who to trust because you've watched them. Bad apples are hard to hide. Debts get settled face to face."
+      },
+      {
+        "t": "p",
+        "x": "I wrote about this in Radical Next, because it's the original operating system for trust. Localized. Direct. Earned."
+      },
+      {
+        "t": "p",
+        "x": "Companies are much bigger than 150. But look closely and you'll see they still run on circles of about that size, and inside those on circles of five or ten. The people who cover for you. The ones you'd call at midnight. That's the real org chart, and it never appears on the slide."
+      },
+      {
+        "t": "p",
+        "x": "A reorg redraws the boxes. Trust lives in the lines. Break enough lines at once and you don't have a new structure. You have strangers with new titles."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Map the lines before you move the boxes. Ask each team who they actually depend on. Then try not to sever more than one of those ties per person. That single constraint saves more reorgs than any change-management deck."
+      },
+      {
+        "t": "p",
+        "x": "Move circles, not individuals. If a group works, move it together. Splitting a working five to seed five new teams sounds efficient. It usually just kills the one team that worked."
+      },
+      {
+        "t": "p",
+        "x": "And give people a reason they can repeat. \"Why are we doing this?\" will be asked in every hallway. If the answer takes a slide, it will be replaced by a rumor by lunch."
+      },
+      {
+        "t": "p",
+        "x": "People have survived far bigger changes than a restructure. They did it in small circles that held. Keep the circles."
+      },
+      {
+        "t": "p",
+        "x": "Which line on your team would you never want to cut?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [What year is it inside your company?](/writing/what-year-is-it-inside-your-company)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "R.I.M. Dunbar, \"Neocortex size as a constraint on group size in primates,\" Journal of Human Evolution 22 (1992): 469 to 493."
+      },
+      {
+        "x": "Sam Rad, Radical Next (2025), on localized trust and Dunbar's number."
+      }
+    ],
+    "internalId": "RAD-0014"
+  },
+  {
+    "number": "0027",
+    "series": "rad",
+    "slug": "why-is-the-robot-still-waiting-on-the-human",
+    "title": "Why is the robot still waiting on the human?",
+    "deck": "Because the hard part was never the thinking. It was the hands. Robots can beat us at chess and can't fold laundry. That's called Moravec's paradox and it's been true since 1988. Factories that tried to remove the human found the robot waiting for a person to fix the one thing it couldn't. The winning design puts the two together.",
+    "metaDescription": "Because the hard part was never the thinking. It was the hands. Robots can beat us at chess and can't fold laundry.",
+    "stamp": "robot",
+    "date": "2026-10-16",
+    "lastUpdated": "2026-10-16",
+    "nextReview": "2027-01-14",
+    "readingTime": "2 min read",
+    "industry": "Manufacturing & Industrial",
+    "industrySlug": "manufacturing",
+    "tags": [
+      "robotics",
+      "manufacturing",
+      "automation",
+      "future of work"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In 2018, Tesla was trying to build the Model 3 at a rate the industry called impossible."
+      },
+      {
+        "t": "p",
+        "x": "It was failing. Elon Musk had built one of the most automated car factories in the world, and the line kept stopping. In April, he admitted on Twitter that excessive automation had been a mistake. His exact words: humans are underrated."
+      },
+      {
+        "t": "p",
+        "x": "The most automated factory on earth was waiting on the humans."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "In 1988, the roboticist Hans Moravec noticed something strange. The things we think of as hard, calculus, chess, logic, are easy for machines. The things we think of as easy, walking across a room, picking up an egg, noticing that a part is slightly wrong, are enormously hard."
+      },
+      {
+        "t": "p",
+        "x": "The reason is evolutionary. We've had a billion years to perfect perception and movement. We've had a few thousand years of abstract reasoning, so it's shallow, and easy to copy."
+      },
+      {
+        "t": "p",
+        "x": "That's Moravec's paradox, and it's the reason the robot is still waiting. Every factory that tried to go fully dark hit the same wall: the machine could do ten thousand identical motions and then stop, helpless, at the one part that came in slightly bent."
+      },
+      {
+        "t": "p",
+        "x": "The pattern shows up in every era. Steam didn't remove the machinist. Electricity didn't remove the line worker. Each one changed what the human did and made the remaining human work more valuable, not less."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Automate the identical, not the variable. Anything that happens the same way ten thousand times, give to the machine. Anything that varies, keep a person nearby, and design the job so the machine hands off gracefully instead of stopping."
+      },
+      {
+        "t": "p",
+        "x": "Measure the handoff. The productivity of a modern line lives at the moment the robot needs a human. Make that fast, obvious, and dignified."
+      },
+      {
+        "t": "p",
+        "x": "And pay for perception. The worker who notices the bent part before the line stops is worth more than the robot. Most pay scales say otherwise. Fix that."
+      },
+      {
+        "t": "p",
+        "x": "Humans are underrated. Tesla learned it the expensive way. You don't have to."
+      },
+      {
+        "t": "p",
+        "x": "Where in your operation is the machine waiting on a person, and how long does it wait?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [How do you get employees to adopt change they didn't ask for?](/writing/how-do-you-get-employees-to-adopt-change-they-didnt-ask-for)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Elon Musk on Twitter, April 13, 2018 (\"Excessive automation at Tesla was a mistake... Humans are underrated\"), as reported by CNBC.",
+        "url": "https://www.cnbc.com/2018/04/13/elon-musk-admits-humans-are-underrated-calls-excessive-automation-at-tesla-a-mistake.html"
+      },
+      {
+        "x": "Hans Moravec, Mind Children: The Future of Robot and Human Intelligence (Harvard University Press, 1988)."
+      }
+    ],
+    "internalId": "RAD-0026"
+  },
+  {
+    "number": "0026",
+    "series": "rad",
+    "slug": "who-is-accountable-when-your-banks-ai-says-no",
+    "title": "Who is accountable when your bank's AI says no?",
+    "deck": "The bank is, and the law already says so. Since 1974, a lender in the United States has had to tell you why it turned you down. That rule didn't anticipate machine learning, but it applies to it. The question isn't whether AI can say no. It's whether anyone at the bank can explain why, in a sentence a human could act on.",
+    "metaDescription": "The bank is, and the law already says so. Since 1974, a lender in the United States has had to tell you why it turned you down.",
+    "stamp": "no",
+    "date": "2026-10-15",
+    "lastUpdated": "2026-10-15",
+    "nextReview": "2027-01-13",
+    "readingTime": "2 min read",
+    "industry": "Financial Services & FinTech",
+    "industrySlug": "financial-services",
+    "tags": [
+      "AI",
+      "banking",
+      "accountability",
+      "trust"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Picture the letter."
+      },
+      {
+        "t": "p",
+        "x": "Your loan was declined. The reason, in the language regulators now warn against, is that the model said so."
+      },
+      {
+        "t": "p",
+        "x": "That letter is illegal. And it's been illegal for fifty years."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "In 1974, the United States passed the Equal Credit Opportunity Act. It was written for a world where a loan officer could look at a woman and decide she needed her husband's signature. Among other things, it required lenders to give a specific reason when they said no. Not \"insufficient credit.\" The actual factors."
+      },
+      {
+        "t": "p",
+        "x": "That reason requirement, the adverse action notice, is the part that matters now."
+      },
+      {
+        "t": "p",
+        "x": "Because the model can absolutely say no. It can say it faster and more consistently than any loan officer. What it often can't do is say why, in a way that means anything to the applicant. And in 2023, the Consumer Financial Protection Bureau made it explicit: a complex algorithm is not an excuse. If you use it, you still owe the reason."
+      },
+      {
+        "t": "p",
+        "x": "Every era of automation in finance has run into this. The credit score itself faced it in the 1990s. Regulators didn't ban the score. They required that it could be explained. The same will happen here. The banks that build the explanation in early will move fast. The ones that bolt it on later will pay for it in enforcement."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Make \"explain the no\" a design requirement, not a compliance afterthought. If the model can't produce a reason a person could act on, it isn't finished."
+      },
+      {
+        "t": "p",
+        "x": "Name the human. For every automated decision that affects a customer, one person should be accountable for the outcome. Not a committee. A name."
+      },
+      {
+        "t": "p",
+        "x": "And test for the answer you'd be embarrassed by. Run your declines through one question: would we be comfortable reading this reason aloud to the customer? If not, the model isn't the problem. The silence is."
+      },
+      {
+        "t": "p",
+        "x": "Accountability didn't get harder when the machine arrived. The rule was always the same. Say why."
+      },
+      {
+        "t": "p",
+        "x": "Could your bank explain its last hundred declines in one sentence each?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Would you let an AI agent spend your money?](/writing/would-you-let-an-ai-agent-spend-your-money)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Consumer Financial Protection Bureau, Circular 2023-03, \"Adverse action notification requirements and the proper use of the CFPB's sample forms provided in Regulation B,\" September 19, 2023.",
+        "url": "https://www.consumerfinance.gov/compliance/circulars/circular-2023-03-adverse-action-notification-requirements-and-the-proper-use-of-the-cfpbs-sample-forms-provided-in-regulation-b/"
+      },
+      {
+        "x": "Equal Credit Opportunity Act, 1974, and Regulation B."
+      }
+    ],
+    "internalId": "RAD-0021"
+  },
+  {
+    "number": "0025",
+    "series": "rad",
+    "slug": "should-leaders-tell-the-truth-about-how-hard-the-next-year-will-be",
+    "title": "Should leaders tell the truth about how hard the next year will be?",
+    "deck": "Yes. People can handle a hard truth far better than a soft lie they'll discover in six months. What they can't handle is not knowing what's real. The leaders people follow through the worst years are the ones who said the worst part out loud, and then said what we do next.",
+    "metaDescription": "Yes. People can handle a hard truth far better than a soft lie they'll discover in six months. What they can't handle is not knowing what's real.",
+    "stamp": "truth",
+    "date": "2026-10-14",
+    "lastUpdated": "2026-10-14",
+    "nextReview": "2027-01-12",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "leading through change",
+      "trust",
+      "leading through uncertainty",
+      "communication"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "I've watched a lot of leaders give the \"exciting times ahead\" speech."
+      },
+      {
+        "t": "p",
+        "x": "The team nods. Nobody believes it. And every person in that room walks out knowing one more thing: the boss will not tell us the truth when it's bad."
+      },
+      {
+        "t": "p",
+        "x": "That's the real cost of the soft speech. Not the year. The trust."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "In May 1940, three days into the job, Winston Churchill stood up in the House of Commons and offered his country nothing but blood, toil, tears, and sweat. He said the road would be long and hard. And then he said what they would do: fight, and aim for victory, because without it there was no survival."
+      },
+      {
+        "t": "p",
+        "x": "It's remembered as one of the great speeches. Notice what it isn't. It isn't optimistic. It's honest about the cost, and clear about the direction. That combination is what people can follow."
+      },
+      {
+        "t": "p",
+        "x": "I've been through four technology revolutions from the inside. In every one, the leaders who kept their teams were the ones who said the true thing early. \"This is going to be hard. Some of what we do today will be gone. Here's what I know, here's what I don't, here's Monday.\""
+      },
+      {
+        "t": "p",
+        "x": "The leaders who lost their teams weren't the pessimists. They were the ones who kept saying \"exciting\" while everyone could see the numbers."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Say the hard part first, in one sentence. Not buried in slide twelve. \"Next year will be the hardest one we've had.\" People relax when the worst thing has been named, because now they know what they're facing."
+      },
+      {
+        "t": "p",
+        "x": "Pair every hard truth with a next step. Truth without direction is just fear. \"It will be hard, and here's what we're doing on Monday\" is leadership."
+      },
+      {
+        "t": "p",
+        "x": "And don't confuse honesty with despair. The most honest thing you can say is often that we've done hard years before and came through them. That's true. Say that too."
+      },
+      {
+        "t": "p",
+        "x": "You'll be OK. And so will they, if you trust them with the truth."
+      },
+      {
+        "t": "p",
+        "x": "What's the true sentence you've been leaving out of your all-hands?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [How do you lead through uncertainty without pretending to be certain?](/writing/how-do-you-lead-through-uncertainty-without-pretending-to-be-certain)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Winston Churchill, speech to the House of Commons, May 13, 1940 (Hansard).",
+        "url": "https://hansard.parliament.uk/Commons/1940-05-13/debates/8fe4a47a-e0fb-4a19-a37c-2af7b39e2ed4/HisMajestySGovernment"
+      }
+    ],
+    "internalId": "RAD-0016"
+  },
+  {
+    "number": "0024",
+    "series": "rad",
+    "slug": "who-owns-the-right-to-your-genetic-code",
+    "title": "Who owns the right to your genetic code?",
+    "deck": "Right now, mostly whoever you gave it to. Millions of people mailed their DNA to a company that later went bankrupt, and the data was the asset on sale. This isn't new. Medicine has treated human tissue as raw material since 1951. The biotech era makes the question urgent: your genome is the most personal data you have, and you never agreed to the terms of a company that no longer exists.",
+    "metaDescription": "Right now, mostly whoever you gave it to. Millions of people mailed their DNA to a company that later went bankrupt, and the data was the asset on sale.",
+    "stamp": "genetic",
+    "date": "2026-10-13",
+    "lastUpdated": "2026-10-13",
+    "nextReview": "2027-01-11",
+    "readingTime": "2 min read",
+    "industry": "Healthcare & Life Sciences",
+    "industrySlug": "healthcare",
+    "tags": [
+      "biotech",
+      "genetics",
+      "privacy",
+      "data"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In March 2025, 23andMe filed for bankruptcy."
+      },
+      {
+        "t": "p",
+        "x": "Fifteen million people had spit in a tube and mailed it to that company. And in the bankruptcy, the most valuable thing on the table wasn't the lab. It was the database. Attorneys general in several states publicly reminded customers they could delete their data before it changed hands."
+      },
+      {
+        "t": "p",
+        "x": "Think about that. The most personal information you have, and the advice from your government was: hurry."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "In 1951, a woman named Henrietta Lacks was treated for cancer at Johns Hopkins. Cells taken from her tumor, without her knowledge, turned out to be immortal. They became the HeLa line, used in tens of thousands of studies, the polio vaccine, and a great deal of modern medicine. Her family learned about it decades later. They were never asked and never paid."
+      },
+      {
+        "t": "p",
+        "x": "That's the pattern: medicine has long treated the human body as a source of raw material. Blood, tissue, cells, now genomes. Each time, the science races ahead and the consent catches up a generation later, usually after a scandal."
+      },
+      {
+        "t": "p",
+        "x": "In Radical Next I write about the biotech era as the one after this one. Gene editing, personalized medicine, longevity. All of it runs on genomic data. Which means the question of who owns that data isn't a privacy footnote. It's the property question of the next era, the way land was for agriculture and IP was for the industrial age."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things. Especially if you touch health data."
+      },
+      {
+        "t": "p",
+        "x": "Treat consent as revocable, not one-time. If someone can't take their data back, you don't have consent. You have a signature."
+      },
+      {
+        "t": "p",
+        "x": "Plan for your own death. What happens to the genomes you hold if your company is acquired, sold, or bankrupt? If the answer is \"they're an asset,\" say so up front, and expect people to walk."
+      },
+      {
+        "t": "p",
+        "x": "And separate the sample from the person as early as possible. The value of a genome for research rarely requires knowing whose it is."
+      },
+      {
+        "t": "p",
+        "x": "We got the Lacks case wrong for seventy years. We're getting the chance to do this one right at the start. Take it."
+      },
+      {
+        "t": "p",
+        "x": "Where is your DNA right now, and who's allowed to sell it?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Will we live to 120, and who pays for it?](/writing/will-we-live-to-120-and-who-pays-for-it)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Reuters, \"23andMe files for bankruptcy as demand for DNA testing kits declines,\" March 24, 2025.",
+        "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/23andme-files-bankruptcy-protection-us-2025-03-24/"
+      },
+      {
+        "x": "Rebecca Skloot, The Immortal Life of Henrietta Lacks (Crown, 2010)."
+      },
+      {
+        "x": "Sam Rad, Radical Next (2025), the Biotech era."
+      }
+    ],
+    "internalId": "RAD-0025"
+  },
+  {
+    "number": "0023",
+    "series": "rad",
+    "slug": "will-ai-replace-middle-managers",
+    "title": "Will AI replace middle managers?",
+    "deck": "It will replace the part of the job that was always about passing information up and down. That part is most of it. What's left, judgment, coaching, and being the person who says the hard thing, becomes the whole job. Fewer managers, doing more of the human part. We've run this exact experiment before, in the 1980s.",
+    "metaDescription": "It will replace the part of the job that was always about passing information up and down. That part is most of it.",
+    "stamp": "managers",
+    "date": "2026-10-12",
+    "lastUpdated": "2026-10-12",
+    "nextReview": "2027-01-10",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "AI",
+      "management",
+      "future of work",
+      "AI adoption"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "In 1988, Peter Drucker wrote an essay in the Harvard Business Review called The Coming of the New Organization."
+      },
+      {
+        "t": "p",
+        "x": "His prediction: information technology would let companies cut their management layers by half and their managers by two thirds. Because most of what middle managers did, he argued, was relay information. Once the information could move on its own, the relay wasn't needed."
+      },
+      {
+        "t": "p",
+        "x": "He was early. But he wasn't wrong. Through the 1990s, companies \"delayered\" by the thousands. The word \"flat\" entered the vocabulary. And the managers who survived were the ones doing something a spreadsheet couldn't."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Every wave of information technology asks the same question of the middle: what are you for, if not for moving information?"
+      },
+      {
+        "t": "p",
+        "x": "The spreadsheet asked it. Email asked it. The dashboard asked it. Each time, the honest answer was that a lot of the job was relay, and a lot of the relay went away."
+      },
+      {
+        "t": "p",
+        "x": "AI is asking it again, harder. Status reports write themselves. Summaries arrive before the meeting. The agent can tell the VP what the team did this week without anyone in between."
+      },
+      {
+        "t": "p",
+        "x": "But here's what the 1990s also taught us. Companies that cut managers and kept the relay work, just spread across fewer people, burned out the survivors. The ones that came out ahead redefined the role first and cut second."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Separate the relay from the role. List what your managers actually do. Circle everything that is passing information up or down. That's what AI takes. What's left is the job description you should have written years ago."
+      },
+      {
+        "t": "p",
+        "x": "Redesign before you cut. A manager with twelve reports and no relay work has time to coach. A manager with twenty and the same relay work has a breakdown. The number matters less than what fills the day."
+      },
+      {
+        "t": "p",
+        "x": "And invest in the human part. Judgment, feedback, the difficult conversation, the sentence \"I don't think this is right.\" Nobody trained managers for this because the relay work filled the day. Now it doesn't."
+      },
+      {
+        "t": "p",
+        "x": "Drucker saw this coming nearly forty years ago. The technology finally caught up. The question was never whether the middle survives. It's whether it gets to become what it should have been."
+      },
+      {
+        "t": "p",
+        "x": "What do your managers do that a good summary couldn't?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [How do you get employees to adopt change they didn't ask for?](/writing/how-do-you-get-employees-to-adopt-change-they-didnt-ask-for)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Peter F. Drucker, \"The Coming of the New Organization,\" Harvard Business Review, January 1988.",
+        "url": "https://hbr.org/1988/01/the-coming-of-the-new-organization"
+      }
+    ],
+    "internalId": "RAD-0020"
+  },
+  {
+    "number": "0022",
+    "series": "rad",
+    "slug": "what-does-5-000-years-of-change-say-about-the-next-five",
+    "title": "What does 5,000 years of change say about the next five?",
+    "deck": "That the next five will feel like the end of the world, and won't be. Every big shift, from the plow to the printing press to the internet, has run the same cycle: panic, adoption, a dip, redesign, then ordinary. We're in the middle of it again. The people who know the pattern don't panic. They position.",
+    "metaDescription": "That the next five will feel like the end of the world, and won't be.",
+    "stamp": "change",
+    "date": "2026-10-09",
+    "lastUpdated": "2026-10-09",
+    "nextReview": "2027-01-07",
+    "readingTime": "2 min read",
+    "industry": "Future of Work",
+    "industrySlug": "future-of-work",
+    "tags": [
+      "change",
+      "history",
+      "pattern",
+      "transformation"
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "I'm an anthropologist by training. Which means when everyone else is looking at this year, I'm looking at the last five thousand."
+      },
+      {
+        "t": "p",
+        "x": "And here's what they say."
+      },
+      {
+        "t": "h2",
+        "x": "What's the pattern?"
+      },
+      {
+        "t": "p",
+        "x": "Around 10,000 BCE we learned to farm. It changed everything: settlements, property, hierarchy, the idea of measuring time. The people living through it had no idea they were in a revolution. They just knew the old ways were disappearing."
+      },
+      {
+        "t": "p",
+        "x": "The printing press, around 1450. Within decades, Europe was flooded with pamphlets, arguments, heresies. Authorities panicked. Then people learned to read, and to argue, and we got science and the modern world."
+      },
+      {
+        "t": "p",
+        "x": "The Industrial Revolution. Steam, then electricity. Sunrise-to-sunset factory work, then unions, then the nine-to-five that most of us still live inside."
+      },
+      {
+        "t": "p",
+        "x": "Then the internet. Then this."
+      },
+      {
+        "t": "p",
+        "x": "Every one of these ran the same shape. First, panic: this will destroy us. Then adoption: everyone gets the tool and uses it to do the old thing faster. Then the dip, where the results disappoint and the doubters feel vindicated. Then redesign, when we rebuild work around what the thing can actually do. And finally, ordinary, when nobody remembers it was ever new."
+      },
+      {
+        "t": "p",
+        "x": "The cycle doesn't change. What changes is the speed. The plow took millennia to spread. The printing press, a century. Electricity, decades. The internet, years. AI is running the same cycle in months."
+      },
+      {
+        "t": "p",
+        "x": "That acceleration is the story. Not the technology. The rate."
+      },
+      {
+        "t": "h2",
+        "x": "What should leaders do now?"
+      },
+      {
+        "t": "p",
+        "x": "So, three things."
+      },
+      {
+        "t": "p",
+        "x": "Locate yourself. Ask which stage you're in: panic, adoption, dip, redesign, or ordinary. The answer tells you what to do next far better than any forecast."
+      },
+      {
+        "t": "p",
+        "x": "Skip the panic. It's the least useful stage, and the pattern says it always passes. Save your energy for the redesign."
+      },
+      {
+        "t": "p",
+        "x": "And plan for ordinary. Every technology that terrifies us becomes furniture. The question isn't whether AI becomes ordinary. It's what your organization looks like when it does."
+      },
+      {
+        "t": "p",
+        "x": "Five thousand years say we've been here before, and we came through every time. Not by resisting. By seeing the pattern and moving with it."
+      },
+      {
+        "t": "p",
+        "x": "Which stage is your organization in right now?"
+      },
+      {
+        "t": "p",
+        "x": "*Related: [Why does every transformation feel like it's failing halfway through?](/writing/why-does-every-transformation-feel-like-its-failing-halfway-through)*"
+      }
+    ],
+    "sources": [
+      {
+        "x": "Sam Rad, Radical Next (2025), Welcome to the Age of Acceleration."
+      },
+      {
+        "x": "Sam Rad, \"Change Has a Pattern\" keynote."
+      }
+    ],
+    "internalId": "RAD-0019"
+  },
+  {
     "number": "0021",
     "series": "rad",
     "slug": "how-do-you-get-employees-to-adopt-change-they-didnt-ask-for",
@@ -103,7 +1751,8 @@
         "url": "https://www.jstor.org/stable/2006600"
       }
     ],
-    "stamp": "change"
+    "stamp": "change",
+    "internalId": "RAD-0001"
   },
   {
     "number": "0020",

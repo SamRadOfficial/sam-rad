@@ -90,8 +90,11 @@ def code_block(lines):
 
 def md_table(rows):
     head, body = rows[0], rows[2:]
-    data = [[Paragraph(f'<b>{inline(c)}</b>', S['li']) for c in head]]
-    data += [[Paragraph(inline(c), S['li']) for c in r] for r in body]
+    # Table cells use a plain style. The list style carries a 13pt indent for bullets,
+    # which in a narrow column is enough to break a short word in two.
+    cell = ParagraphStyle('cell', parent=S['li'], leftIndent=0, bulletIndent=0, firstLineIndent=0)
+    data = [[Paragraph(f'<b>{inline(c)}</b>', cell) for c in head]]
+    data += [[Paragraph(inline(c), cell) for c in r] for r in body]
     t = Table(data, colWidths=[165 * mm / max(1, len(head))] * len(head))
     t.setStyle(TableStyle([
         ('VALIGN', (0, 0), (-1, -1), 'TOP'),

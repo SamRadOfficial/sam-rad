@@ -3,13 +3,17 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import {
   PhotoHero, CtaBreak, LogoStrip, IndustryGrid, FeaturedIn,
-  TestimonialBanner, Testimonials, Eras, Bureau, BookBar,
+  TestimonialBanner, Testimonials, Eras, Bureau, BookBar, LatestQuestions,
 } from '@/components/Blocks';
 import IndustryIcon from '@/components/IndustryIcon';
 import industries from '@/data/industries.json';
 import testimonials from '@/data/testimonials.json';
 import eras from '@/data/eras.json';
 import { meta } from '@/lib/site';
+import { live } from '@/lib/writing';
+
+// Newest three published posts of any kind, now that the strip is headed "Latest writing."
+const latestQuestions = live.slice(0, 3);
 
 export const metadata = meta({
   title: 'Sam Rad | Change Has a Pattern | Keynote Speaker & Futurist',
@@ -76,6 +80,10 @@ export default function Home() {
           <div className="cap">CITE · The future needs innovators</div>
         </section>
 
+        {/* Press, moved up 22 Sep 2026 (Sam): proof right after "who she is", before the
+            pitch. No button (Sam, 22 Sep 2026): nothing pulls a buyer away one section before
+            the keynote. */}
+        <FeaturedIn />
         <section className="keynote-sec" id="keynote">
           <div className="narrow">
             <div className="tag mint">Speaking · The keynote</div>
@@ -182,7 +190,8 @@ export default function Home() {
           sub="Twenty years inside four technology revolutions. Now she hands the room the map."
         />
 
-        <FeaturedIn cta={<Link href="/writing" className="btn btn-ghost">Read the writing</Link>} />
+        <LatestQuestions posts={latestQuestions} />
+
 
         <section className="gallery">
           <div className="gallery-head">

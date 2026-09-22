@@ -292,10 +292,7 @@ will be. The heading, the nav, the schema `isPartOf` and the byline all say Writ
   a new series; that was tried on the morning of 22 Sep and lasted an hour.
 - **The kind is a label beside the number, not a namespace:** "Nº 0009 · R-A-D". It
   comes from `series` in the record (`dispatch` if absent) via `lib/series.js`. Add
-  new kinds there. **Only kinds with `shown: true` print**, decided 22 Sep 2026: R-A-D
-  shows, because it is a named series with its own audience; Dispatch does not, because
-  the site retired the word and a reader could not know what it meant. Legacy posts show
-  their industry alone. A new kind should be shown only if readers would recognize it.
+  new kinds there.
 - **No episode numbers.** R-A-D questions are evergreen; "episode 14" tells a reader
   nothing and dates the piece. The pipeline's own `RAD-0001` IDs are internal.
 - **The word "dispatch" is out of reader-facing copy** except as the label on the
@@ -336,86 +333,6 @@ recorded so nobody later mistakes the dates for the real publishing history.
 - The export's cover plan (hooks, three crops, a default OG image) was superseded before
   it landed: no covers, generated cards, one `stamp` word per post.
 
-### The R-A-D prompt pack
-
-The series agent works from `RAD-PROMPT-PACK`, which lives outside this repo. **v1.8, 22 Sep 2026,** is aligned with the site as built: Writing not R-A-D, one running number and no episode numbers, no blog covers and a required `stamp`, site batches live on arrival, LinkedIn cuts as their own export, every booking link to `/speaking`, the live record schema, plus journalist requests (Qwoted, Featured.com) and the monthly bureau packet. When a site decision changes any of those, update the pack in the same batch, or the next export arrives in the old shape.
-
-### R-A-D batch 02, scheduled 22 Sep 2026
-
-Seventeen questions, RAD-0014 to 0030, as **Nº 0022 to 0038, dated one per weekday from
-Friday 9 October to Monday 2 November 2026**, matching the LinkedIn export exactly. They
-sit in `dispatches.json` now and the date gate hides them until their morning; the daily
-publish job reveals each one. **This replaces "live on arrival" from batch 02 onward**
-(Sam, 22 Sep): the site and LinkedIn go out the same morning, the site first.
-
-Sam's decisions, 22 Sep:
-- **Quantum reframed.** "Will quantum computing break encryption before 2030?" competed with
-  Nº 0007 for the same search. Now "What are you encrypting today that must stay secret in
-  2035?", stamp `secret`, new deck, related link to Nº 0007 so the two pages read as a pair.
-  The body already argued the new question and is unchanged.
-- ***Mindjacked* is "the next book"** in public copy. Four body mentions changed; its four
-  self-citations dropped.
-- **Archived-industry tags kept** on five posts: Manufacturing (Nº 0027, 0038), Energy (0030,
-  0036), Insurance (0033). No hub pages; three posts in one industry is the evidence to
-  revive one.
-- **The five stages stay** in Nº 0022, as in Nº 0013.
-- **Sources verified:** Gartner's 74 percent (2016) to 43 percent (2022), via HBR, May 2023,
-  now linked, and the sentence no longer says "the number I've seen most often". Delft's
-  self-healing concrete is linked to Jonkers et al., *Ecological Engineering* (2010).
-  The other linked sources in the batch were not re-checked here.
-
-**Reviewing scheduled posts:** `PREVIEW_DATE=2026-11-02 npm run build` builds as if it were
-that day, so scheduled posts render for review. Never set it on Vercel.
-
-**`npm run check:writing`**, added 22 Sep: unique slugs and numbers, an unbroken sequence,
-dates that run with numbers, and a stamp and internal ID on every R-A-D post. Run it
-before every push. **Why:** a test record, `not-built-yet` as Nº 0099 dated 9 October,
-was left in the data by a script test and shipped in the `DAILY-PUBLISH` source zip. The
-date gate hid it, but it would have published on 9 October as a copy of Nº 0021. The
-check fails on it three ways. It also found Nº 0021 had no internal ID; now `RAD-0001`.
-
-**Homepage, 22 Sep:** the Featured in press strip moved up, from after the book to between
-the innovators photo and the keynote, with its button changed to "In the press" (`/press`).
-Proof straight after "who she is", before the pitch. The client logo strip stays under
-the hero; putting press there too was mocked and rejected, as two logo strips in a row.
-**Then, same day (Sam):** the press strip lost its button entirely, and a **Latest questions**
-strip went where the press strip used to be, between the book bar and "On stage.
-Worldwide." Sam's final form: **"Latest writing."** with the stamp on "writing", the tag
-"Writing", the three newest published posts of any kind as list rows (the same rows as
-`/writing`), and one **"Read the writing"** button under them, on every screen size.
-Because the daily publish job rebuilds the site each morning a post goes live, the
-homepage links to a fresh post every weekday, which is the point for discovery.
-`LatestQuestions` in `Blocks.jsx` keeps the two other mocked layouts (`cards`, `lead`)
-behind `variant`.
-
-### Daily publishing, built 22 Sep 2026
-
-**Phase 1, the site, automated.** `.github/workflows/daily-publish.yml` runs
-`scripts/daily-publish.mjs` every weekday at 11:30 UTC (7:30 a.m. Eastern in summer
-time, 6:30 in winter, so always before the 8:00 LinkedIn post). It finds posts dated
-today, triggers a Vercel rebuild so the date gate reveals them, waits until each page
-returns 200 and its preview image loads, then pings **IndexNow** (Bing, which feeds
-ChatGPT search and Copilot). A day with nothing dated skips the rebuild. If a page is not
-live within 20 minutes the run fails and **GitHub emails Sam: that is the signal not to
-post that day's LinkedIn yet.** Tested 22 Sep against a local production build: a live
-post passes, an empty day exits cleanly, a missing page fails.
-
-- IndexNow key file: `public/cf53ccc352c5ae796e9118ea88622d50.txt`. Public by design.
-- One-time setup (Sam): a Vercel deploy hook for `main`, saved in GitHub as the
-  repository secret `VERCEL_DEPLOY_HOOK`. Test with Actions, Daily publish, Run workflow
-  (dry run is the default).
-- GitHub pauses scheduled workflows in repositories with no activity for 60 days. Any
-  push resets it.
-
-**Phase 2, LinkedIn, deliberately manual until Sanity.** Sam pastes each weekday's post
-from the LinkedIn export after 8:00, once the page is live. Reasons, 22 Sep 2026: a
-LinkedIn developer app needs approval; its access tokens expire about every 60 days and
-need re-authorizing; n8n's LinkedIn node was broken against LinkedIn's API as of July
-2026; posting through the API means supplying the link preview's title, description and
-image by hand; and the first month is when the link-card versus image-first test runs.
-LinkedIn Articles have no API at all and stay manual permanently. Revisit when Sanity
-lands and approvals live in Studio (roadmap items 8 and 9).
-
 ### Scheduling: the publish-date gate
 
 `lib/writing.js` exports `isDue` (dated on or before the build day, UTC) and
@@ -434,14 +351,6 @@ Roadmap item 8.
 
 **Hubs** show writing from one post, capped at the three most recent (was: hidden below
 two posts, capped at four).
-
-**The writing list** (`DispatchList`), reworked 22 Sep 2026: three columns, number,
-post, date. The kind and a **short** industry name ride on one meta line above the title
-("R-A-D · Healthcare"), because a category column wrapped to two lines at "R-A-D ·
-Healthcare & Life Sciences". Short names live in `industries.json` as `short`; full
-names stay everywhere else. **On industry hubs the industry is dropped** (`hideIndustry`),
-since every row shares it. The component keeps two alternative layouts behind
-`variant` (`column`, `under`) from the comparison; `meta` is the one in use.
 
 **The `/writing` index**, set 22 Sep 2026: the newest live post is a **featured block**
 at the top of page 1 (`FeaturedPost` in `Blocks.jsx`, modeled on the Illicit Shadows
@@ -947,12 +856,12 @@ What shipped:
 
    | # | Step | Status |
    |---|---|---|
-   | 1 | Migrate DNS to GoDaddy | **Done and verified 22 Sep.** Sam entered the target zone below, set `samradocchia.com` to forward to sam-rad.com, and confirmed the checks. Nameservers moved 22 Sep to `ns69`/`ns70.domaincontrol.com`, before the zone was rebuilt, so mail and `www` briefly depended on stale caches. Target zone: A `@` 216.198.79.1; CNAME `www` to the Vercel target `5525d82313f37756.vercel-dns-017.com`; CNAME `archive` to `ext-cust.squarespace.com` until retirement; **one** MX, `smtp.google.com` priority 1 (Google's current single-record setup, as on Illicit Shadows; the five `aspmx` records were retired); TXT SPF `v=spf1 include:_spf.google.com ~all`, replacing Squarespace's `_spfm` include, which died with the old zone; TXT `google-site-verification`; DKIM at `google._domainkey`; DMARC at `_dmarc`. GoDaddy auto-created a DMARC of `p=quarantine` reporting to its own mailbox, which with no DKIM and no SPF would have sent Sam's outgoing mail to spam; set to `p=none` until DKIM verifies. |
+   | 1 | Migrate DNS to GoDaddy | **Done 22 Sep; verification pending.** Sam entered the target zone below and set `samradocchia.com` to forward to sam-rad.com. Still to confirm: the `after` snapshot, mail in both directions, and DKIM verified in Google Admin, after which DMARC goes to `p=quarantine`. Nameservers moved 22 Sep to `ns69`/`ns70.domaincontrol.com`, before the zone was rebuilt, so mail and `www` briefly depended on stale caches. Target zone: A `@` 216.198.79.1; CNAME `www` to the Vercel target `5525d82313f37756.vercel-dns-017.com`; CNAME `archive` to `ext-cust.squarespace.com` until retirement; **one** MX, `smtp.google.com` priority 1 (Google's current single-record setup, as on Illicit Shadows; the five `aspmx` records were retired); TXT SPF `v=spf1 include:_spf.google.com ~all`, replacing Squarespace's `_spfm` include, which died with the old zone; TXT `google-site-verification`; DKIM at `google._domainkey`; DMARC at `_dmarc`. GoDaddy auto-created a DMARC of `p=quarantine` reporting to its own mailbox, which with no DKIM and no SPF would have sent Sam's outgoing mail to spam; set to `p=none` until DKIM verifies. |
    | 2 | Blog and press pages on sam-rad.com | **Done** as `/writing` and `/press`. What remains is the old posts themselves: see step 2b. |
    | 2b | Capture the old blog | **Text captured 22 Sep; images pending.** Sam's WordPress export became `sam-rad-archive-2026-09-22`, kept at `~/Documents/sam-rad-archive`, outside this repo: the original XML, `archive.sqlite`, JSON and CSV. It holds 121 blog posts (18 already on `/writing`, 103 not), 67 glossary entries, 35 press items and 19 pages. The export links to 421 images on Squarespace's CDN but does not contain them. **Sam's call, 22 Sep: the images are not needed**, so they were not downloaded; the text is the record. Once Squarespace is cancelled, image links inside archived post bodies will stop working. The live site does not depend on any of them: checked, zero Squarespace-hosted URLs in the source or the built pages. If an old post is ever backfilled into `/writing`, it needs new images. `fetch-images.py` stays in the archive folder in case that changes before cancellation. The export omits event pages; `scripts/archive-squarespace.py` captures those if a record is wanted. |
    | 3 | Re-point archive redirects | **Done 14 Sep.** No rule references `archive.sam-rad.com`. Old blog URLs land on `/writing`, the 18 backfilled slugs on their own posts. |
    | 4 | Events and glossary | **Decided 22 Sep: keep the redirects as they are.** `/events/all` to `/speaking`; the Bitcoin Pizza glossary (67 entries), `/glossary` and `/bitcoin` to `/body-of-work#bitcoin-pizza`. The glossary text survives in the archive. |
-   | 5 | Retire Squarespace | **Done 22 Sep.** Subscription cancelled and the `archive` CNAME deleted. The archive lives on only in `~/Documents/sam-rad-archive`. |
+   | 5 | Retire Squarespace | After step 1 is verified (snapshot, mail both ways, DKIM), not before. Then delete the `archive` CNAME at GoDaddy. |
 
    Decoupled on purpose: steps 1 and 5 no longer depend on each other, because nothing
    on the live site depends on the archive.

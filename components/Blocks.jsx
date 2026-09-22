@@ -285,6 +285,52 @@ export function FeaturedPost({ d }) {
   );
 }
 
+// The homepage's Latest writing strip, added 22 Sep 2026: the three newest published
+// posts, so the homepage links to a fresh post every weekday (the daily publish job
+// rebuilds the site on the morning a post goes live, and this updates with it).
+// Sam's pick: the list layout, stamped "writing", one "Read the writing" button under
+// the rows, same tag and heading as the industry hubs. The two other mocked layouts,
+// `cards` and `lead`, stay behind `variant`.
+export function LatestQuestions({ posts, variant = 'list' }) {
+  if (!posts || !posts.length) return null;
+  const head = (
+    <div className="section-header">
+      <div className="tag">Writing</div>
+      <h2 className="h2">Latest <span className="mint-fill">writing.</span></h2>
+    </div>
+  );
+  const more = <div className="more"><Link href="/writing" className="btn btn-ghost">Read the writing</Link></div>;
+  let rows;
+  if (variant === 'cards') {
+    rows = (
+      <div className="lq-cards">
+        {posts.map((d) => (
+          <Link className="lq-card" href={`/writing/${d.slug}`} key={d.slug}>
+            <div className="m"><span className="n">{numberLabel(d)}</span><span className="dot">·</span>{SHORT[d.industrySlug] || d.industry}</div>
+            <div className="t">{d.title}</div>
+            <p className="dk">{d.deck.split(/(?<=[.?!])\s/)[0]}</p>
+            <span className="fp-read">Read <span aria-hidden="true">→</span></span>
+          </Link>
+        ))}
+      </div>
+    );
+  } else if (variant === 'lead') {
+    const [first, ...rest] = posts;
+    rows = <><FeaturedPost d={first} /><DispatchList dispatches={rest} /></>;
+  } else {
+    rows = <DispatchList dispatches={posts} />;
+  }
+  return (
+    <section className="latest-q">
+      <div className="narrow">
+        {head}
+        {rows}
+        {more}
+      </div>
+    </section>
+  );
+}
+
 // Newer on the left, older on the right, page numbers between. Renders nothing when
 // there is only one page, so the pager appears on its own once the archive grows.
 export function Pager({ page, count, href }) {
