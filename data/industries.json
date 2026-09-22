@@ -33,7 +33,8 @@
     ],
     "featured": true,
     "featuredOrder": 1,
-    "band": "cisco-live.jpg"
+    "band": "cisco-live.jpg",
+    "short": "Financial Services"
   },
   {
     "name": "Healthcare & Life Sciences",
@@ -102,7 +103,8 @@
       "note": "Final report submitted to the FDA, February 2020.",
       "url": "",
       "linkLabel": ""
-    }
+    },
+    "short": "Healthcare"
   },
   {
     "name": "Future of Work",
@@ -139,7 +141,8 @@
     "featured": true,
     "featuredOrder": 3,
     "band": "gofest-faster-horses.jpg",
-    "display": "Work"
+    "display": "Work",
+    "short": "Future of Work"
   },
   {
     "name": "Technology & AI",
@@ -175,7 +178,8 @@
     ],
     "featured": true,
     "featuredOrder": 7,
-    "band": "cisco-live.jpg"
+    "band": "cisco-live.jpg",
+    "short": "Technology & AI"
   },
   {
     "name": "Retail & Consumer Brands",
@@ -227,7 +231,8 @@
       "note": "Chronicled clients and partners, not speaking engagements.",
       "url": "",
       "linkLabel": ""
-    }
+    },
+    "short": "Retail"
   },
   {
     "name": "Hospitality & Travel",
@@ -261,7 +266,8 @@
     ],
     "featured": true,
     "featuredOrder": 6,
-    "band": "chicago-ballroom.jpg"
+    "band": "chicago-ballroom.jpg",
+    "short": "Hospitality"
   },
   {
     "name": "Higher Education",
@@ -297,7 +303,8 @@
     ],
     "featured": true,
     "featuredOrder": 4,
-    "band": "chicago-ballroom.jpg"
+    "band": "chicago-ballroom.jpg",
+    "short": "Higher Education"
   },
   {
     "name": "Government & Public Sector",
@@ -333,7 +340,8 @@
     ],
     "featured": true,
     "featuredOrder": 9,
-    "band": "cisco-live.jpg"
+    "band": "cisco-live.jpg",
+    "short": "Government"
   },
   {
     "name": "Supply Chain & Logistics",
@@ -369,6 +377,7 @@
     ],
     "featured": true,
     "featuredOrder": 5,
-    "band": "gofest-faster-horses.jpg"
+    "band": "gofest-faster-horses.jpg",
+    "short": "Supply Chain"
   }
 ]

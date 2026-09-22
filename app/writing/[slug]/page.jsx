@@ -75,7 +75,7 @@ export default function Dispatch({ params }) {
           <div className="narrow">
             <div className="meta">
               {d.number && <><span className="n">{numberLabel(d)}</span><span className="sep" /></>}
-              <span>{s.label}</span><span className="sep" />
+              {s.shown && <><span>{s.label}</span><span className="sep" /></>}
               {d.industry && <><span>{d.industry}</span><span className="sep" /></>}
               <span>{date}</span><span className="sep" />
               <span>{reading}</span>

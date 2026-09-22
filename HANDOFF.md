@@ -292,7 +292,10 @@ will be. The heading, the nav, the schema `isPartOf` and the byline all say Writ
   a new series; that was tried on the morning of 22 Sep and lasted an hour.
 - **The kind is a label beside the number, not a namespace:** "Nº 0009 · R-A-D". It
   comes from `series` in the record (`dispatch` if absent) via `lib/series.js`. Add
-  new kinds there.
+  new kinds there. **Only kinds with `shown: true` print**, decided 22 Sep 2026: R-A-D
+  shows, because it is a named series with its own audience; Dispatch does not, because
+  the site retired the word and a reader could not know what it meant. Legacy posts show
+  their industry alone. A new kind should be shown only if readers would recognize it.
 - **No episode numbers.** R-A-D questions are evergreen; "episode 14" tells a reader
   nothing and dates the piece. The pipeline's own `RAD-0001` IDs are internal.
 - **The word "dispatch" is out of reader-facing copy** except as the label on the
@@ -351,6 +354,14 @@ Roadmap item 8.
 
 **Hubs** show writing from one post, capped at the three most recent (was: hidden below
 two posts, capped at four).
+
+**The writing list** (`DispatchList`), reworked 22 Sep 2026: three columns, number,
+post, date. The kind and a **short** industry name ride on one meta line above the title
+("R-A-D · Healthcare"), because a category column wrapped to two lines at "R-A-D ·
+Healthcare & Life Sciences". Short names live in `industries.json` as `short`; full
+names stay everywhere else. **On industry hubs the industry is dropped** (`hideIndustry`),
+since every row shares it. The component keeps two alternative layouts behind
+`variant` (`column`, `under`) from the comparison; `meta` is the one in use.
 
 **The `/writing` index**, set 22 Sep 2026: the newest live post is a **featured block**
 at the top of page 1 (`FeaturedPost` in `Blocks.jsx`, modeled on the Illicit Shadows
@@ -856,12 +867,12 @@ What shipped:
 
    | # | Step | Status |
    |---|---|---|
-   | 1 | Migrate DNS to GoDaddy | **Done 22 Sep; verification pending.** Sam entered the target zone below and set `samradocchia.com` to forward to sam-rad.com. Still to confirm: the `after` snapshot, mail in both directions, and DKIM verified in Google Admin, after which DMARC goes to `p=quarantine`. Nameservers moved 22 Sep to `ns69`/`ns70.domaincontrol.com`, before the zone was rebuilt, so mail and `www` briefly depended on stale caches. Target zone: A `@` 216.198.79.1; CNAME `www` to the Vercel target `5525d82313f37756.vercel-dns-017.com`; CNAME `archive` to `ext-cust.squarespace.com` until retirement; **one** MX, `smtp.google.com` priority 1 (Google's current single-record setup, as on Illicit Shadows; the five `aspmx` records were retired); TXT SPF `v=spf1 include:_spf.google.com ~all`, replacing Squarespace's `_spfm` include, which died with the old zone; TXT `google-site-verification`; DKIM at `google._domainkey`; DMARC at `_dmarc`. GoDaddy auto-created a DMARC of `p=quarantine` reporting to its own mailbox, which with no DKIM and no SPF would have sent Sam's outgoing mail to spam; set to `p=none` until DKIM verifies. |
+   | 1 | Migrate DNS to GoDaddy | **Done and verified 22 Sep.** Sam entered the target zone below, set `samradocchia.com` to forward to sam-rad.com, and confirmed the checks. Nameservers moved 22 Sep to `ns69`/`ns70.domaincontrol.com`, before the zone was rebuilt, so mail and `www` briefly depended on stale caches. Target zone: A `@` 216.198.79.1; CNAME `www` to the Vercel target `5525d82313f37756.vercel-dns-017.com`; CNAME `archive` to `ext-cust.squarespace.com` until retirement; **one** MX, `smtp.google.com` priority 1 (Google's current single-record setup, as on Illicit Shadows; the five `aspmx` records were retired); TXT SPF `v=spf1 include:_spf.google.com ~all`, replacing Squarespace's `_spfm` include, which died with the old zone; TXT `google-site-verification`; DKIM at `google._domainkey`; DMARC at `_dmarc`. GoDaddy auto-created a DMARC of `p=quarantine` reporting to its own mailbox, which with no DKIM and no SPF would have sent Sam's outgoing mail to spam; set to `p=none` until DKIM verifies. |
    | 2 | Blog and press pages on sam-rad.com | **Done** as `/writing` and `/press`. What remains is the old posts themselves: see step 2b. |
    | 2b | Capture the old blog | **Text captured 22 Sep; images pending.** Sam's WordPress export became `sam-rad-archive-2026-09-22`, kept at `~/Documents/sam-rad-archive`, outside this repo: the original XML, `archive.sqlite`, JSON and CSV. It holds 121 blog posts (18 already on `/writing`, 103 not), 67 glossary entries, 35 press items and 19 pages. The export links to 421 images on Squarespace's CDN but does not contain them. **Sam's call, 22 Sep: the images are not needed**, so they were not downloaded; the text is the record. Once Squarespace is cancelled, image links inside archived post bodies will stop working. The live site does not depend on any of them: checked, zero Squarespace-hosted URLs in the source or the built pages. If an old post is ever backfilled into `/writing`, it needs new images. `fetch-images.py` stays in the archive folder in case that changes before cancellation. The export omits event pages; `scripts/archive-squarespace.py` captures those if a record is wanted. |
    | 3 | Re-point archive redirects | **Done 14 Sep.** No rule references `archive.sam-rad.com`. Old blog URLs land on `/writing`, the 18 backfilled slugs on their own posts. |
    | 4 | Events and glossary | **Decided 22 Sep: keep the redirects as they are.** `/events/all` to `/speaking`; the Bitcoin Pizza glossary (67 entries), `/glossary` and `/bitcoin` to `/body-of-work#bitcoin-pizza`. The glossary text survives in the archive. |
-   | 5 | Retire Squarespace | After step 1 is verified (snapshot, mail both ways, DKIM), not before. Then delete the `archive` CNAME at GoDaddy. |
+   | 5 | Retire Squarespace | **Done 22 Sep.** Subscription cancelled and the `archive` CNAME deleted. The archive lives on only in `~/Documents/sam-rad-archive`. |
 
    Decoupled on purpose: steps 1 and 5 no longer depend on each other, because nothing
    on the live site depends on the archive.

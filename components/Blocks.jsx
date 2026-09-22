@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { numberLabel, fmtDate, seriesOf } from '@/lib/series';
+import industries from '@/data/industries.json';
 import { SITE } from '@/lib/site';
 import clients from '@/data/clients.json';
 import logoWall from '@/data/logo-wall.json';
@@ -219,19 +220,44 @@ export function IndustryGrid({ industries, numbered = true, allLink = true }) {
 }
 
 
-export function DispatchList({ dispatches }) {
+// The writing list. Three columns only: number, the post, date. The kind (R-A-D,
+// Dispatch) and the industry sit on one short meta line above the title rather than
+// in a column of their own, which wrapped to two lines at "R-A-D · Healthcare & Life
+// Sciences" (22 Sep 2026). On an industry hub every row shares the hub's industry, so
+// `hideIndustry` drops it there and the meta line carries only the kind.
+const SHORT = Object.fromEntries(industries.map((i) => [i.slug, i.short || i.name]));
+
+export function DispatchList({ dispatches, hideIndustry, variant = 'meta' }) {
   return (
-    <div className="disp-list">
-      {dispatches.map((d) => (
-        <Link className="disp" href={`/writing/${d.slug}`} key={d.slug}>
-          <div className="n">{numberLabel(d)}</div>
-          <div className="i">{seriesOf(d).label}{d.industry ? ` · ${d.industry}` : ''}</div>
-          <div className="t">{d.title}</div>
-          <div className="d">
-            {fmtDate(d.date)}
-          </div>
-        </Link>
-      ))}
+    <div className={`disp-list v-${variant}`}>
+      {dispatches.map((d) => {
+        const s = seriesOf(d);
+        const kind = s.shown ? s.label : null;
+        const ind = hideIndustry ? null : (SHORT[d.industrySlug] || d.industry);
+        return (
+          <Link className="disp" href={`/writing/${d.slug}`} key={d.slug}>
+            <div className="n">
+              {numberLabel(d)}
+              {variant === 'under' && <span className="k">{kind}</span>}
+            </div>
+            {variant === 'column' && <div className="i">{ind || kind}</div>}
+            {variant === 'under' && <div className="i">{ind}</div>}
+            <div className="tt">
+              {variant === 'meta' && (
+                (kind || ind) ? (
+                  <div className="m">
+                    {kind}
+                    {kind && ind ? <span className="dot">·</span> : null}
+                    {ind}
+                  </div>
+                ) : null
+              )}
+              <div className="t">{d.title}</div>
+            </div>
+            <div className="d">{fmtDate(d.date)}</div>
+          </Link>
+        );
+      })}
     </div>
   );
 }
@@ -248,7 +274,7 @@ export function FeaturedPost({ d }) {
       <div className="fp-kicker">Latest</div>
       <div className="fp-meta">
         <span className="n">{numberLabel(d)}</span>
-        <span>{s.label}</span>
+        {s.shown && <span>{s.label}</span>}
         {d.industry && <span>{d.industry}</span>}
         <span>{fmtDate(d.date)}</span>
       </div>
