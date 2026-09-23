@@ -5,8 +5,8 @@ import { PhotoHero, CtaBreak, TestimonialBanner, BookBar, Bureau } from '@/compo
 import { meta } from '@/lib/site';
 
 export const metadata = meta({
-  title: 'Meet Sam | Sam Rad, The Change Futurist',
-  description: 'Sam Rad (born Samantha Radocchia) is an anthropologist, four-time tech founder, inventor, and #1 bestselling author of Radical Next.',
+  title: 'Meet Sam | The Change Futurist',
+  description: 'Sam Rad, The Change Futurist: anthropologist, entrepreneur and inventor. Four companies across AI, blockchain, and connected hardware. Author of Radical Next.',
   path: '/meet-sam',
   image: '/images/meet-green-paper.jpg',
   imageAlt: 'Sam Rad, portrait in a green suit',
@@ -45,7 +45,7 @@ export default function MeetSam() {
                 <div className="tag mint">Biography</div>
                 <h2 className="h2" style={{ marginBottom: 32 }}><span className="mint-word">Curiosity</span> of an anthropologist. <span className="mint-word">Instinct</span> of a tech founder. <span className="mint-word">Energy</span> of a rock star.</h2>
                 <div className="split-body">
-                  <p>Sam Rad (born Samantha Radocchia) is an anthropologist who spent twenty years inside technology revolutions, founding four companies through the rise of e-commerce, blockchain, and AI, and learning one thing above all: <em>change has a pattern.</em></p>
+                  <p>Sam Rad (born Samantha Radocchia) is an anthropologist and entrepreneur who spent two decades inside technology revolutions, founding four companies across AI, blockchain, and connected hardware, and learning one thing above all: <em>change has a pattern.</em></p>
                   <p>With the curiosity of an anthropologist, the instinct of a tech founder, the candor of a friend, and the calm of an ex-competitive skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
                   <p>She says the things other speakers won&apos;t, and she says them with warmth. Her talks lift the overwhelm, hand the room a simple way to read what&apos;s happening, and end on the promise every anxious audience needs to hear: <strong>we&apos;re going to be OK.</strong></p>
                   <p>Managed by Brandy Gibson at Executive Speakers Bureau, Sam Rad is the speaker you book when your people are facing change and you need them to walk out ready for it.</p>

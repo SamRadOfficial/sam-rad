@@ -8,7 +8,7 @@ import { meta } from '@/lib/site';
 export const metadata = meta({
   title: 'Resources | The research behind the keynote',
   description:
-    'Curated primary sources behind Sam Rad\'s keynotes. Peer-reviewed research, regulator rulings, and the incident reports behind the headlines, organized by sector.',
+    "The primary sources behind Sam Rad's keynotes: peer-reviewed research, regulator rulings and incident reports, organized by sector.",
   path: '/resources',
   image: '/images/hero-industries.jpg',
   imageAlt: 'Sam Rad speaking to an industry audience',

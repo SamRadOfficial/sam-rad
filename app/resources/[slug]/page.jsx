@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
   if (!r) return {};
   return meta({
     title: `${r.title} | Resources`,
-    description: r.deck,
+    description: r.metaDescription || r.deck,   // decks can run past what search shows
     path: `/resources/${r.slug}`,
     image: `/images/${r.image}`,
     imageAlt: r.imageAlt,

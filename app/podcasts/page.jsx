@@ -5,9 +5,9 @@ import MediaList from '@/components/MediaList';
 import { meta } from '@/lib/site';
 
 export const metadata = meta({
-  title: 'Podcasts & Interviews | Sam Rad',
+  title: 'Podcasts and Interviews',
   description:
-    'Long-form conversations with Sam Rad on AI, perception, the future of work, and what happens after the future happens. POLITICO Tech, Leaders of AI, Bloomberg, and more.',
+    'Long-form conversations with Sam Rad on AI, perception, and the future of work, including POLITICO Tech, Leaders of AI and Bloomberg.',
   path: '/podcasts',
   image: '/images/gofest-mindset.jpg',
   imageAlt: 'Sam Rad keynoting at GOFEST in Bogota',

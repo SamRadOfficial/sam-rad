@@ -6,7 +6,7 @@ memory of prior sessions. Last updated 11 September 2026.
 **Live:** https://sam-rad.com
 **Old site:** https://archive.sam-rad.com (Squarespace, still serving ~300 legacy URLs)
 **Repo:** github.com/SamRadOfficial/sam-rad → Vercel project `samradsite` (auto-deploys on push to `main`)
-**Local:** `~/Documents/sam-rad`
+**Local:** `~/Developer/sam-rad`
 
 `PLAYBOOK.md`, alongside this file, is the generalized version of what this project
 taught: method, patterns, pitfalls, and the reusable scripts. It exists so the next
@@ -53,7 +53,7 @@ the destination that isn't in the source. It wiped `components/Footer.jsx` once 
 `public/images/` once. Always instruct:
 
 ```bash
-cp -R app components data lib next.config.js ~/Documents/sam-rad/
+cp -R app components data lib next.config.js ~/Developer/sam-rad/
 ```
 
 **Never write a file with `open(f,'w')` and `open(f).read()` in one expression.**
@@ -292,10 +292,20 @@ will be. The heading, the nav, the schema `isPartOf` and the byline all say Writ
   a new series; that was tried on the morning of 22 Sep and lasted an hour.
 - **The kind is a label beside the number, not a namespace:** "Nº 0009 · R-A-D". It
   comes from `series` in the record (`dispatch` if absent) via `lib/series.js`. Add
-  new kinds there. **Only kinds with `shown: true` print**, decided 22 Sep 2026: R-A-D
-  shows, because it is a named series with its own audience; Dispatch does not, because
-  the site retired the word and a reader could not know what it meant. Legacy posts show
-  their industry alone. A new kind should be shown only if readers would recognize it.
+  new kinds there. **No kind prints beside a post as of 22 Sep 2026** (`shown: false` on
+  both). Dispatch went first: the site retired the word. R-A-D followed the same evening,
+  because once nearly every row said R-A-D the label separated nothing and crowded the
+  industry, which is the part a reader scans for. List rows and post meta now carry the
+  number, the industry and the date.
+
+  **The series is still named, three times over, where it does work:** the `/writing`
+  hero lead no longer names it (Sam, 22 Sep 2026); it reads "The most pressing and
+  provocative questions shaping our future (and present), one answered every weekday",
+  her wording with the dash turned into parentheses. So the series is named in a
+  small sidebar card on every R-A-D post linking back to the series, and every generated
+  preview card, which reads "Nº 0021 · R-A-D" wherever a post is shared. `lib/og-card.jsx`
+  uses the series `label` directly, so `shown` never affects the cards. Turning the label
+  back on in lists is a one-word change.
 - **No episode numbers.** R-A-D questions are evergreen; "episode 14" tells a reader
   nothing and dates the piece. The pipeline's own `RAD-0001` IDs are internal.
 - **The word "dispatch" is out of reader-facing copy** except as the label on the
@@ -434,10 +444,22 @@ post passes, an empty day exits cleanly, a missing page fails.
 
 - IndexNow key file: `public/cf53ccc352c5ae796e9118ea88622d50.txt`. Public by design.
 - One-time setup (Sam): a Vercel deploy hook for `main`, saved in GitHub as the
-  repository secret `VERCEL_DEPLOY_HOOK`. Test with Actions, Daily publish, Run workflow
+  repository secret `VERCEL_DEPLOY_HOOK`. **Done and tested 22 Sep 2026**: the dry run
+  passed on GitHub. First live run: Friday 9 October. Test with Actions, Daily publish, Run workflow
   (dry run is the default).
 - GitHub pauses scheduled workflows in repositories with no activity for 60 days. Any
   push resets it.
+- **Sam's working copy lives at `~/Developer/sam-rad`**, moved out of iCloud-synced
+  Documents on 22 Sep 2026. In Documents, iCloud was creating conflict copies ("app 2",
+  "components 2", "data 2", and so on) whenever whole folders were replaced mid-sync, and
+  was syncing `node_modules`. The duplicates were deleted. When Finder asks during a
+  paste, the answer is always **Replace**, never Keep Both: source zips carry complete
+  folders by design.
+- **Sam installs source zips by copying in Finder, which hides dot-folders.** The first
+  push of this workflow left `.github` behind and GitHub showed "Get started with GitHub
+  Actions". Fix, 22 Sep: in Finder, Command + Shift + . shows hidden items; leave it on so
+  `.github` copies with everything else. Tell her again if a future zip adds any other
+  dot-file.
 
 **Phase 2, LinkedIn, deliberately manual until Sanity.** Sam pastes each weekday's post
 from the LinkedIn export after 8:00, once the page is live. Reasons, 22 Sep 2026: a
@@ -552,6 +574,60 @@ Writing index and industry feeds. Used for old high-traffic posts kept for SEO.
 Every post ends with a LinkedIn follow line, then share links.
 
 ---
+
+**The opening bio line, set 22 Sep 2026** (homepage, Meet Sam, and the industry pages):
+
+> Sam Rad is an anthropologist and entrepreneur who spent two decades inside technology
+> revolutions, founding four companies across AI, blockchain, and connected hardware,
+> and learning one thing above all: change has a pattern.
+
+**Revised the same evening: "connected hardware" replaced "e-commerce"** (Sam's pick of
+four). It is the Chronicled work (NFC and Bluetooth authentication chips, IoT sealing, cold
+chain sensors) and reads as where things are going, not where they were. Dropping
+e-commerce does not break "two decades": the first company already used AI to map taste
+in 2010. "IoT" was rejected as a mid-2010s buzzword; "cryptography" as the most futuristic
+but at the cost of "blockchain", the word financial services and supply chain buyers
+search. The homepage description, capped at 160, says "tech revolutions" and "in AI,
+blockchain, and connected hardware" to fit; the page copy keeps the full wording.
+
+**AI comes first, deliberately**, so a reader sees the current field before the older
+ones. "Across", not "through the rise of", because the reversed order would otherwise
+claim a sequence that did not happen. E-commerce **stays**: it is what makes two decades
+add up, and three waves are what make "change has a pattern" evidence rather than a
+slogan. Considered and rejected for this line: "metaverse" (reads as a hype cycle that
+did not pay off; say "immersive worlds" if it is ever needed) and "applied cryptography"
+(overlaps with blockchain in a short list, and dropping blockchain would cost the term
+supply chain and financial services buyers search for). Both belong on `/cv` and in the
+fuller Meet Sam paragraphs instead.
+
+### Page metadata, audited 22 September 2026
+
+Rules, and what they fixed:
+
+- **No page title repeats "Sam Rad".** `app/layout.jsx` appends " | Sam Rad" to every
+  title, so a title that also contained it printed the brand twice: Press, Podcasts,
+  Contact, Meet Sam, the CV and all nine industry hubs. Titles are now under 60
+  characters everywhere, which is what search results show.
+- **Every description is 110 to 160 characters**, checked in the built HTML, not the
+  source. Over-long before: the CV (271), SamRad.AI (224), the provenance guide (213),
+  Press, Podcasts, Resources, Writing. Too thin: Body of Work (93).
+- **The nine industry hubs had one templated description** with the industry word swapped
+  in, so nine pages said the same thing. Each now lists that hub's **own forces** from
+  `industries.json`, as many as fit, built by `forcesLine()` in the hub page: longest
+  version first, singular grammar when only one force fits, the hub's `short` name as the
+  label ("Future of Work", not "Work").
+- **A resource page's `deck` is page copy, not a description.** Where a deck runs past 160
+  characters the record now carries `metaDescription`, trimmed at a sentence, and the
+  page uses it for search while the deck stays visible.
+- **One job title everywhere: The Change Futurist.** It was "Keynote Speaker and Futurist"
+  in the site-wide Person block and "Anthropologist and technologist" in the CV's. Three
+  descriptions of one person make a weaker entity for both search and AI answers. Keep
+  the two Person blocks in step.
+- **Descriptions state what the page answers**, since AI answers quote the useful
+  sentence, not the sales line. The homepage now names the identity line and the thesis.
+
+When adding a page: write the title without the brand, keep the description inside 160,
+and check the numbers in the built HTML.
 
 ## 6. Content facts — verified, do not change without asking
 
@@ -981,10 +1057,10 @@ What shipped:
    |---|---|---|
    | 1 | Migrate DNS to GoDaddy | **Done and verified 22 Sep.** Sam entered the target zone below, set `samradocchia.com` to forward to sam-rad.com, and confirmed the checks. Nameservers moved 22 Sep to `ns69`/`ns70.domaincontrol.com`, before the zone was rebuilt, so mail and `www` briefly depended on stale caches. Target zone: A `@` 216.198.79.1; CNAME `www` to the Vercel target `5525d82313f37756.vercel-dns-017.com`; CNAME `archive` to `ext-cust.squarespace.com` until retirement; **one** MX, `smtp.google.com` priority 1 (Google's current single-record setup, as on Illicit Shadows; the five `aspmx` records were retired); TXT SPF `v=spf1 include:_spf.google.com ~all`, replacing Squarespace's `_spfm` include, which died with the old zone; TXT `google-site-verification`; DKIM at `google._domainkey`; DMARC at `_dmarc`. GoDaddy auto-created a DMARC of `p=quarantine` reporting to its own mailbox, which with no DKIM and no SPF would have sent Sam's outgoing mail to spam; set to `p=none` until DKIM verifies. |
    | 2 | Blog and press pages on sam-rad.com | **Done** as `/writing` and `/press`. What remains is the old posts themselves: see step 2b. |
-   | 2b | Capture the old blog | **Text captured 22 Sep; images pending.** Sam's WordPress export became `sam-rad-archive-2026-09-22`, kept at `~/Documents/sam-rad-archive`, outside this repo: the original XML, `archive.sqlite`, JSON and CSV. It holds 121 blog posts (18 already on `/writing`, 103 not), 67 glossary entries, 35 press items and 19 pages. The export links to 421 images on Squarespace's CDN but does not contain them. **Sam's call, 22 Sep: the images are not needed**, so they were not downloaded; the text is the record. Once Squarespace is cancelled, image links inside archived post bodies will stop working. The live site does not depend on any of them: checked, zero Squarespace-hosted URLs in the source or the built pages. If an old post is ever backfilled into `/writing`, it needs new images. `fetch-images.py` stays in the archive folder in case that changes before cancellation. The export omits event pages; `scripts/archive-squarespace.py` captures those if a record is wanted. |
+   | 2b | Capture the old blog | **Text captured 22 Sep; images pending.** Sam's WordPress export became `sam-rad-archive-2026-09-22`, kept at `~/Developer/sam-rad-archive`, outside this repo: the original XML, `archive.sqlite`, JSON and CSV. It holds 121 blog posts (18 already on `/writing`, 103 not), 67 glossary entries, 35 press items and 19 pages. The export links to 421 images on Squarespace's CDN but does not contain them. **Sam's call, 22 Sep: the images are not needed**, so they were not downloaded; the text is the record. Once Squarespace is cancelled, image links inside archived post bodies will stop working. The live site does not depend on any of them: checked, zero Squarespace-hosted URLs in the source or the built pages. If an old post is ever backfilled into `/writing`, it needs new images. `fetch-images.py` stays in the archive folder in case that changes before cancellation. The export omits event pages; `scripts/archive-squarespace.py` captures those if a record is wanted. |
    | 3 | Re-point archive redirects | **Done 14 Sep.** No rule references `archive.sam-rad.com`. Old blog URLs land on `/writing`, the 18 backfilled slugs on their own posts. |
    | 4 | Events and glossary | **Decided 22 Sep: keep the redirects as they are.** `/events/all` to `/speaking`; the Bitcoin Pizza glossary (67 entries), `/glossary` and `/bitcoin` to `/body-of-work#bitcoin-pizza`. The glossary text survives in the archive. |
-   | 5 | Retire Squarespace | **Done 22 Sep.** Subscription cancelled and the `archive` CNAME deleted. The archive lives on only in `~/Documents/sam-rad-archive`. |
+   | 5 | Retire Squarespace | **Done 22 Sep.** Subscription cancelled and the `archive` CNAME deleted. The archive lives on only in `~/Developer/sam-rad-archive`. |
 
    Decoupled on purpose: steps 1 and 5 no longer depend on each other, because nothing
    on the live site depends on the archive.

@@ -6,9 +6,9 @@ import { meta, SITE } from '@/lib/site';
 import cv from '@/data/cv.json';
 
 export const metadata = meta({
-  title: 'Samantha Radocchia | Curriculum Vitae',
+  title: 'Curriculum Vitae | Samantha Radocchia',
   description:
-    'Curriculum vitae of Samantha Radocchia, who publishes and speaks as Sam Rad. Anthropologist and technologist, four-time founder, first-named inventor on four granted US patents, field researcher in illicit economies, co-founder of MISTIC. Research on perceptual security.',
+    'Curriculum vitae of Samantha Radocchia, who speaks as Sam Rad: anthropologist, four-time founder, first-named inventor on four US patents, co-founder of MISTIC.',
   path: '/cv',
   image: '/images/headshot.jpg',
   imageAlt: 'Samantha Radocchia',
@@ -64,7 +64,7 @@ export default function CV() {
           alternateName: 'Sam Rad',
           identifier: { '@type': 'PropertyValue', propertyID: 'ORCID', value: cv.orcid },
           url: `${SITE.url}/cv`,
-          jobTitle: 'Anthropologist and technologist',
+          jobTitle: 'The Change Futurist',   // matches lib/site.js; see HANDOFF
           email: `mailto:${cv.email}`,
           description: cv.subhead.professional,
           address: { '@type': 'PostalAddress', addressLocality: 'New York', addressRegion: 'NY' },

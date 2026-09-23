@@ -35,7 +35,7 @@ const HIGHLIGHTS = [
 
 export const metadata = meta({
   title: 'Body of Work | Books, Productions & Media',
-  description: 'Radical Next, Bitcoin Pizza, Illicit Shadows, MISTIC, and keynote video from five continents.',
+  description: 'Books, films and institutions by Sam Rad: Radical Next and Bitcoin Pizza, the Illicit Shadows investigative series, the MISTIC institute, and keynote video.',
   path: '/body-of-work',
   image: '/images/nyc-archway.jpg',
   imageAlt: 'Sam Rad walking through a stone archway on a New York street',

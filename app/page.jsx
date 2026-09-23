@@ -18,7 +18,7 @@ const latestQuestions = live.slice(0, 3);
 export const metadata = meta({
   title: 'Sam Rad | Change Has a Pattern | Keynote Speaker & Futurist',
   description:
-    "Anthropologist, four-time tech founder, and #1 bestselling author. Sam Rad shows leaders the pattern behind every big change, so they're ready for what's next.",
+    'Sam Rad is an anthropologist and entrepreneur who spent two decades inside tech revolutions, founding four companies in AI, blockchain, and connected hardware.',
   path: '/',
   image: '/images/hero-meet.jpg',
   imageAlt: 'Sam Rad delivering a keynote at the SIM Executive Conference',
@@ -55,7 +55,7 @@ export default function Home() {
                 <div className="tag mint">Meet Sam</div>
                 <h2 className="h2" style={{ marginBottom: 32 }}><span className="mint-word">Curiosity</span> of an anthropologist. <span className="mint-word">Instinct</span> of a tech founder. <span className="mint-word">Energy</span> of a rock star.</h2>
                 <div className="split-body">
-                  <p>Sam Rad is an anthropologist who spent twenty years inside technology revolutions, founding four companies through the rise of e-commerce, blockchain, and AI, and learning one thing above all: <em>change has a pattern.</em></p>
+                  <p>Sam Rad is an anthropologist and entrepreneur who spent two decades inside technology revolutions, founding four companies across AI, blockchain, and connected hardware, and learning one thing above all: <em>change has a pattern.</em></p>
                   <p>With the curiosity of an anthropologist, the instinct of a tech founder, the candor of a friend, and the calm of an ex-competitive skydiver, Sam shows leaders and their teams the pattern behind every big change, so they&apos;re ready for whatever comes next.</p>
                   <p>She says the things other speakers won&apos;t, and she says them with warmth. Her talks lift the overwhelm, hand the room a simple way to read what&apos;s happening, and end on the promise every anxious audience needs to hear: <strong>we&apos;re going to be OK.</strong></p>
                 </div>

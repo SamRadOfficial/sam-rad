@@ -23,8 +23,8 @@ const FORBES_PICKS = [
 ];
 
 export const metadata = meta({
-  title: 'Writing',
-  description: 'Questions, dispatches, and essays on change, technology, and what it means to be human. Some written this year, some a decade ago. The pattern was always the same.',
+  title: 'Writing | Questions on change and technology',
+  description: 'R-A-D: one pressing question about the future, answered, every weekday. Plus essays on change, technology, and what it means to be human, going back a decade.',
   path: '/writing',
   image: '/images/cta-audience.jpg',
   imageAlt: 'Sam Rad keynoting to a seated audience in Bangkok',
@@ -39,7 +39,7 @@ export default function Writing() {
           image="cta-audience.jpg"
           eyebrow="Writing · You are here"
           short
-          lead={<>Questions, dispatches, and essays on change, technology, and what it means to be human. Some written this year, some a decade ago. <strong>The pattern was always the same.</strong></>}
+          lead={<>The most pressing and provocative questions shaping our future (and present), one answered every weekday. Alongside them, essays and dispatches going back a decade. <strong>The pattern was always the same.</strong></>}
           caption="Bangkok"
         >
           Read the<br /><span className="mint-fill">pattern.</span>

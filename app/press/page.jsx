@@ -5,9 +5,9 @@ import MediaList from '@/components/MediaList';
 import { meta, SITE } from '@/lib/site';
 
 export const metadata = meta({
-  title: 'Press | Sam Rad',
+  title: 'Press and Media Coverage',
   description:
-    "Coverage of Sam Rad's work across technology, supply chain, and the future of business, from the New York Times, Fortune, Newsweek, TechCrunch, Forbes, and more.",
+    "Coverage of Sam Rad's work in the New York Times, Fortune, Newsweek, TechCrunch and Forbes. Interview requests go through Executive Speakers Bureau.",
   path: '/press',
   image: '/images/chicago-ballroom.jpg',
   imageAlt: 'Sam Rad keynoting to a full ballroom at CRMC in Chicago',

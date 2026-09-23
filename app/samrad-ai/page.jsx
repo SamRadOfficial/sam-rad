@@ -7,7 +7,7 @@ import { meta, SITE } from '@/lib/site';
 export const metadata = meta({
   title: 'SamRad.AI | The Meta-Human',
   description:
-    'In 2020 Sam Rad became one of the first people to build a working digital clone of herself. SamRad.AI has her voice, her likeness, and fifteen years of her commonplace books. This is why she made her, and what it taught her.',
+    'In 2020 Sam Rad built one of the first working digital clones: her voice, her likeness, fifteen years of her notebooks. Why she made it, and what it taught her.',
   path: '/samrad-ai',
   image: '/images/samrad-ai-avatar.jpg',
   imageAlt: 'SamRad.AI, the meta-human avatar of futurist Sam Rad',

@@ -17,13 +17,32 @@ function get(slug) {
   return industries.find((i) => i.slug === slug);
 }
 
+// Lists as many of the hub's own forces as fit in the 160 characters search results
+// show, longest version first. Force titles are phrases of different shapes, so they go
+// in a list after a colon rather than into a sentence, where some read as nonsense.
+const lower = (t) => (/^[A-Z][a-z]/.test(t) ? t.charAt(0).toLowerCase() + t.slice(1) : t);
+function forcesLine(short, forces) {
+  const tail = (n) => ` Sam Rad's keynote shows the pattern behind ${n > 1 ? 'them' : 'it'}, and the four moves that turn the corner.`;
+  const shortTail = (n) => ` The pattern behind ${n > 1 ? 'them' : 'it'}, and the four moves that turn the corner. A Sam Rad keynote.`;
+  for (const [n, t] of [[3, tail], [2, tail], [3, shortTail], [2, shortTail], [1, shortTail]]) {
+    const line = `${short}: ${forces.slice(0, n).map((f) => lower(f.title)).join(', ')}.${t(n)}`;
+    if (line.length <= 160) return line;
+  }
+  return `${short}: the forces reshaping the industry, the pattern behind them, and the four moves that turn the corner. A Sam Rad keynote.`;
+}
+
 export function generateMetadata({ params }) {
   const ind = get(params.slug);
   if (!ind) return {};
   const short = ind.display || ind.name.split(' & ')[0];
   return meta({
-    title: `The Future of ${short} | Keynote by Sam Rad`,
-    description: `Sam Rad's ${short.toLowerCase()} keynote maps the forces reshaping the industry and the four moves that turn the corner. Book a ${short.toLowerCase()} futurist speaker.`,
+    // Before 22 Sep 2026 every hub carried the same sentence with the industry word
+    // swapped, which is nine near-duplicate descriptions. Each now names that hub's own
+    // first two forces, so the page says something only it can say, and stays under the
+    // 160 characters search results show.
+    title: `The Future of ${short} | Keynote`,
+    // The hub's own short name ("Future of Work"), not the title word ("Work").
+    description: forcesLine(ind.short || short, ind.forces),
     path: `/industries/${ind.slug}`,
     image: '/images/hero-industries.jpg',
     imageAlt: `Sam Rad keynoting on change for ${ind.name} leaders`,
@@ -184,7 +203,7 @@ export default function IndustryPage({ params }) {
               <div>
                 <p>
                   Sam Rad is an anthropologist and four-time technology founder. She built companies
-                  through the rise of e-commerce, blockchain, and AI: two that used AI to map personal
+                  across AI, blockchain, and connected hardware: two that used AI to map personal
                   taste, then <strong>Chronicled</strong>, the San Francisco company bringing trust to
                   global commerce and supply chains, and <strong>NYOUM</strong>, a London-based
                   generative AI communication platform.

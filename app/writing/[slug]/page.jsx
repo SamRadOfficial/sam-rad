@@ -137,6 +137,15 @@ export default function Dispatch({ params }) {
                 <ShareLinks url={`${SITE.url}/writing/${d.slug}`} title={d.title} />
               </div>
               <aside className="side">
+                {s.key === 'rad' && (
+                  <div className="side-card" style={{ marginBottom: 24 }}>
+                    <div className="h">R-A-D</div>
+                    <p>
+                      Research and Development with Sam Rad. One pressing question about the future,
+                      answered. <Link href="/writing">Read the series</Link>
+                    </p>
+                  </div>
+                )}
                 <div className="side-card">
                   <div className="h">Bring this to your room</div>
                   <p style={{ fontSize: 15, lineHeight: 1.6, color: 'var(--ink-soft)', marginBottom: 8 }}>
