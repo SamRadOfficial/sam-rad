@@ -394,6 +394,9 @@ body.nav-open{overflow:hidden;}
 .book-page{padding:64px 0 110px;background:var(--paper);}
 .book-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:start;}
 .form{border:2px solid var(--ink);padding:40px;background:var(--paper-white);}
+.book-other{margin-top:20px;font-size:15px;line-height:1.6;color:var(--ink-soft);}
+.book-other a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--rule-strong);}
+.book-other a:hover{text-decoration-color:var(--ink);}
 .form h3{font-family:var(--fd);font-size:28px;text-transform:uppercase;margin-bottom:24px;}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
 .frow.one{grid-template-columns:1fr;}

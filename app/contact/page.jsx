@@ -22,7 +22,7 @@ export default function Book() {
           eyebrow="Booking"
           compact
           position="center 30%"
-          lead="Your room is facing change. Let's make sure it walks out ready for it."
+          lead="Every room is facing change. Yours walks out ready."
           caption="SIM Executive Conference"
         >
           Book <span className="mint-fill">Sam Rad.</span>
@@ -31,7 +31,14 @@ export default function Book() {
         <section className="book-page">
           <div className="narrow">
             <div className="book-grid">
-              <BookingForm />
+              <div>
+                <BookingForm />
+                {/* The address is the visible link text, so if a mail app will not open, the
+                    address is still on the page to copy (the site's mailto rule, HANDOFF). */}
+                <p className="book-other">
+                  For all other inquiries: <a href="mailto:sam@sam-rad.com">sam@sam-rad.com</a>
+                </p>
+              </div>
               <div className="book-side">
                 <div className="tag mint">How booking works</div>
                 <h2 className="h3">One keynote. Built for your room.</h2>

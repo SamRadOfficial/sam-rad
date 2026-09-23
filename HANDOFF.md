@@ -629,6 +629,28 @@ Rules, and what they fixed:
 When adding a page: write the title without the brand, keep the description inside 160,
 and check the numbers in the built HTML.
 
+### Favicon, added 22 September 2026
+
+There was none before: tabs showed a blank page and Google showed a generic globe beside
+the result. Now **"SR" in ink on a mint rounded square**, Bebas, the site's own stamp
+color (Sam's pick, B of three). Chosen over cream on ink because the ink square
+disappears in dark-mode tab bars; mint stands out in both. Files, all in `app/` so Next
+writes the link tags itself: `favicon.ico` (16, 32 and 48 in one file), `icon.png`
+(512, which also covers Google's 48-pixel minimum) and `apple-icon.png` (180, the home
+screen icon). Source art: the 512 file.
+
+**The build now reports 77 static pages, not 74**: the three icon files count as routes.
+
+**Contact page, under the form**, 22 Sep (Sam): "For all other inquiries:
+sam@sam-rad.com", the address itself as the `mailto:` link text, so a machine that blocks
+mailto still shows an address to copy. The form covers bookings, the line at its top
+routes press to `/press`, and this line catches everything else.
+
+**Contact page lead**, 22 Sep: "Every room is facing change. Yours walks out ready." Sam
+proposed "We are facing change. Walk out ready for it"; this keeps her length and her
+"walk out ready" while staying pointed at the buyer's audience, and it echoes the
+homepage's "Every room is asking the same question" and "Walk out ready."
+
 ## 6. Content facts — verified, do not change without asking
 
 - **Sam Rad**, born Samantha Radocchia. Both names on Meet Sam.
