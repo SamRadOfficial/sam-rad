@@ -350,6 +350,33 @@ recorded so nobody later mistakes the dates for the real publishing history.
 
 The series agent works from `RAD-PROMPT-PACK`, which lives outside this repo. **v1.8, 22 Sep 2026,** is aligned with the site as built: Writing not R-A-D, one running number and no episode numbers, no blog covers and a required `stamp`, site batches live on arrival, LinkedIn cuts as their own export, every booking link to `/speaking`, the live record schema, plus journalist requests (Qwoted, Featured.com) and the monthly bureau packet. When a site decision changes any of those, update the pack in the same batch, or the next export arrives in the old shape.
 
+### Schedule moved up, 23 September 2026 (Sam: "we are ready to go now")
+
+**Batches 02 and 03 go live one per weekday from Thursday 24 September**, Nº 0022 to 0068,
+ending **Friday 27 November**. They were dated 9 October to 14 December; only the dates
+moved (and `lastUpdated`, `nextReview` with them), numbers and order unchanged. Checked
+first that no source in either batch is dated after its new publish day. **Batch 04 is now
+due before 27 November**, not 14 December. The sections below keep the original dates as
+history.
+
+LinkedIn follows the site day for day, in one file, `RAD-LINKEDIN-SCHEDULE.md`, which
+replaces the two exports. Batch 01's eleven remaining LinkedIn cuts (Nº 0010 to 0020,
+already live on the site) moved to the end of the run, 30 November to 14 December.
+
+**Favicon changed the same day to "RAD"** in ink on the mint square (was "SR"), at the same
+sizes and in the same three files in `app/`.
+
+### Bureau materials, 23 September 2026
+
+One document for every bureau, `SAM RAD - Speaker Materials - 2026.docx`, kept outside the
+repo: banner, name and title, highlights, short and full bio, stage intro, the keynote, how
+to pitch, links, booking and fees, and, after a single page break that can be deleted, a
+table of corrections for existing listings. It replaces ESB's old document, whose "How to
+pitch" section described **a different speaker**, and it follows `bio-facts` wording
+throughout. Plus `Sam-Rad-Booking-Overview.pdf`, the two-pager, rebuilt with the new bio
+line and the booking link to `/speaking`. **Open with Sam:** the fees differ between ESB's
+figures and the two-pager's, and which of two videos is current.
+
 ### R-A-D batch 02, scheduled 22 Sep 2026
 
 Seventeen questions, RAD-0014 to 0030, as **Nº 0022 to 0038, dated one per weekday from
