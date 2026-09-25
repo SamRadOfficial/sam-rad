@@ -12,6 +12,7 @@ import { ImageResponse } from 'next/og';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { numberLabel, seriesOf } from '@/lib/series';
+import ANTON from '@/lib/og/anton-widths.json';
 
 export const OG_SIZE = { width: 1200, height: 630 };
 
@@ -88,27 +89,41 @@ export async function renderCard(d) {
 const CREAM_INK = '#0F1F3D';
 const FN_MINT = '#2FC48F';
 export async function renderFieldNotes(d, { display = 'anton', showNumber = true, frame = false } = {}) {
-  const [bg, anton, bebas, inter, interSemi, interBold] = await Promise.all([
+  const [bg, anton, bebas, inter, interSemi] = await Promise.all([
     font('lib/og/field-notes-bg.png'), font('lib/fonts/Anton-Regular.ttf'),
     font('lib/fonts/BebasNeue-Regular.ttf'), font('scripts/fonts/Inter-Regular.ttf'), font('scripts/fonts/Inter-SemiBold.ttf'),
-    font('lib/fonts/Inter-Bold.ttf'),
   ]);
   const fonts = [
     { name: 'Anton', data: anton, weight: 400, style: 'normal' },
     { name: 'Bebas', data: bebas, weight: 400, style: 'normal' },
     { name: 'Inter', data: inter, weight: 400, style: 'normal' },
     { name: 'Inter', data: interSemi, weight: 600, style: 'normal' },
-    { name: 'Inter', data: interBold, weight: 700, style: 'normal' },
   ];
   const face = display === 'anton' ? 'Anton' : 'Bebas';
   const words = d.title.toUpperCase().split(/\s+/);
   const want = (d.stamp || '').toUpperCase().replace(/[^A-Z0-9']/g, '');
   let hit = want ? words.findIndex((w) => w.replace(/[^A-Z0-9']/g, '') === want) : -1;
   if (hit < 0) hit = words.length - 1;
-  const n = d.title.length;
-  const k = display === 'anton' ? 1 : 1.12;
-  // Long questions step down so four lines still clear the wave band at the bottom.
-  const size = Math.round((n <= 34 ? 142 : n <= 48 ? 124 : n <= 62 ? 92 : 80) * k);
+  // Size the question to fill its box. Each size is tried from large to small, wrapping the
+  // words with Anton's real letter widths, and the first that fits in four lines inside the
+  // box wins. Sizing by character count left long questions small and floating (25 Sep).
+  const BOX_W = 900, BOX_H = 372, LEAD = 0.96, TRACK = -1, GAP = 0.16;
+  const wordW = (w, px) => [...w].reduce((a, c) => a + (ANTON[c] ?? 0.5) * px + TRACK, 0);
+  // Each word is a flex item carrying its own right margin, so a line's width includes the
+  // margin after its last word too; the 4% allowance covers rounding in the renderer.
+  const FIT_W = BOX_W * 0.96;
+  const lines = (px) => {
+    let n = 1, x = 0;
+    for (const w of words) {
+      const item = wordW(w, px) + px * GAP;
+      if (item > FIT_W) return 99;
+      if (x + item <= FIT_W) x += item; else { n += 1; x = item; }
+    }
+    return n;
+  };
+  let size = 72;
+  for (let px = 150; px >= 72; px -= 2) { const n = lines(px); if (n <= 4 && n * px * LEAD <= BOX_H) { size = px; break; } }
+  if (display !== 'anton') size = Math.round(size * 1.12);
   const src = `data:image/png;base64,${bg.toString('base64')}`;
   return new ImageResponse(
     (
@@ -121,24 +136,18 @@ export async function renderFieldNotes(d, { display = 'anton', showNumber = true
         {/* The question sits on the wave band rather than hanging from the header (Sam, 25 Sep):
             a box from under the name to just above the waves, its text aligned to the bottom, so
             a short question lands low and a long one still clears the header. */}
-        <div style={{ position: 'absolute', left: 42, top: 110, width: 900, height: 372, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
+        <div style={{ position: 'absolute', left: 42, top: 110, width: BOX_W, height: BOX_H, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
           <div style={{ display: 'flex', flexWrap: 'wrap', fontFamily: face, fontSize: size, lineHeight: 0.96, letterSpacing: display === 'anton' ? -1 : 0, color: CREAM_INK }}>
             {words.map((w, i) => (
-              <div key={i} style={{ display: 'flex', marginRight: Math.round(size * 0.16), color: i === hit ? FN_MINT : CREAM_INK }}>{w}</div>
+              <div key={i} style={{ display: 'flex', marginRight: Math.round(size * GAP), color: i === hit ? FN_MINT : CREAM_INK }}>{w}</div>
             ))}
           </div>
         </div>
         <div style={{ position: 'absolute', left: 36, top: 592, display: 'flex', alignItems: 'center', fontFamily: 'Inter', fontSize: 16, color: CREAM_INK, background: '#F6F2E7', padding: '5px 12px 5px 8px' }}>
           <span style={{ fontWeight: 600, letterSpacing: 4 }}>CHANGE HAS A PATTERN</span>
           <span style={{ margin: '0 14px' }}>|</span>
-          {/* Tagline "Rethink. Adapt. Disrupt." (Sam, 25 Sep 2026; was "Anticipate"), each
-              initial in bold so the three words spell R, A, D. */}
-          {['Rethink.', 'Adapt.', 'Disrupt.'].map((w, i) => (
-            <span key={w} style={{ display: 'flex', letterSpacing: 2, marginLeft: i ? 9 : 0 }}>
-              <span style={{ fontWeight: 700 }}>{w[0]}</span>
-              <span>{w.slice(1)}</span>
-            </span>
-          ))}
+          {/* The site's address, in place of the tagline (Sam, 25 Sep 2026). */}
+          <span style={{ letterSpacing: 2 }}>sam-rad.com</span>
         </div>
       </div>
     ),
