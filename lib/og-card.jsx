@@ -88,15 +88,17 @@ export async function renderCard(d) {
 const CREAM_INK = '#0F1F3D';
 const FN_MINT = '#2FC48F';
 export async function renderFieldNotes(d, { display = 'anton', showNumber = true, frame = false } = {}) {
-  const [bg, anton, bebas, inter, interSemi] = await Promise.all([
+  const [bg, anton, bebas, inter, interSemi, interBold] = await Promise.all([
     font('lib/og/field-notes-bg.png'), font('lib/fonts/Anton-Regular.ttf'),
     font('lib/fonts/BebasNeue-Regular.ttf'), font('scripts/fonts/Inter-Regular.ttf'), font('scripts/fonts/Inter-SemiBold.ttf'),
+    font('lib/fonts/Inter-Bold.ttf'),
   ]);
   const fonts = [
     { name: 'Anton', data: anton, weight: 400, style: 'normal' },
     { name: 'Bebas', data: bebas, weight: 400, style: 'normal' },
     { name: 'Inter', data: inter, weight: 400, style: 'normal' },
     { name: 'Inter', data: interSemi, weight: 600, style: 'normal' },
+    { name: 'Inter', data: interBold, weight: 700, style: 'normal' },
   ];
   const face = display === 'anton' ? 'Anton' : 'Bebas';
   const words = d.title.toUpperCase().split(/\s+/);
@@ -126,10 +128,17 @@ export async function renderFieldNotes(d, { display = 'anton', showNumber = true
             ))}
           </div>
         </div>
-        <div style={{ position: 'absolute', left: 44, top: 598, display: 'flex', alignItems: 'center', fontFamily: 'Inter', fontSize: 16, color: CREAM_INK }}>
+        <div style={{ position: 'absolute', left: 36, top: 592, display: 'flex', alignItems: 'center', fontFamily: 'Inter', fontSize: 16, color: CREAM_INK, background: '#F6F2E7', padding: '5px 12px 5px 8px' }}>
           <span style={{ fontWeight: 600, letterSpacing: 4 }}>CHANGE HAS A PATTERN</span>
           <span style={{ margin: '0 14px' }}>|</span>
-          <span style={{ letterSpacing: 2 }}>Rethink. Anticipate. Disrupt.</span>
+          {/* Tagline "Rethink. Adapt. Disrupt." (Sam, 25 Sep 2026; was "Anticipate"), each
+              initial in bold so the three words spell R, A, D. */}
+          {['Rethink.', 'Adapt.', 'Disrupt.'].map((w, i) => (
+            <span key={w} style={{ display: 'flex', letterSpacing: 2, marginLeft: i ? 9 : 0 }}>
+              <span style={{ fontWeight: 700 }}>{w[0]}</span>
+              <span>{w.slice(1)}</span>
+            </span>
+          ))}
         </div>
       </div>
     ),

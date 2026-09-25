@@ -356,7 +356,8 @@ Every series post's link preview is now the **cream card** Sam chose from her ow
 SAM RAD on the header line with a rule to a compass star; the question in **Anton**, heavy
 and condensed, sitting on the wave band, with the `stamp` word in mint type; a grid, a wave
 bundle crossing at one point, and a mint orbit with a rising arrow; the footer "CHANGE HAS A
-PATTERN | Rethink. Anticipate. Disrupt." It replaces the ink card with the mint block.
+PATTERN | Rethink. Adapt. Disrupt." (Sam changed Anticipate to Adapt on 25 Sep; the R, A and
+D are set in bold) It replaces the ink card with the mint block.
 
 - `lib/og-card.jsx` `renderFieldNotes()`; the route `app/writing/[slug]/opengraph-image.jsx`
   calls it. The old `renderCard()` stays in the file, unused, as a fallback.
@@ -364,6 +365,10 @@ PATTERN | Rethink. Anticipate. Disrupt." It replaces the ink card with the mint 
   there; the text layer is generated per post.
 - `lib/fonts/Anton-Regular.ttf` (SIL Open Font License, `Anton-OFL.txt`), taken from the
   `@fontsource/anton` package. Used on the cards only; the site itself stays Bebas.
+- **Tagline, 25 Sep 2026: "Rethink. Adapt. Disrupt."** (was "Anticipate"), with the initials
+  R, A and D in bold, which is why `lib/fonts/Inter-Bold.ttf` is bundled (OFL,
+  `Inter-OFL.txt`, from `@fontsource/inter`). The footer sits on a cream backing so the wave
+  lines stop behind it instead of running through the text.
 - Question size steps down with length so four lines still clear the waves; the block is
   bottom-aligned, so short questions sit low, on the band.
 - Decided and removed along the way: a "Field Notes" label and the post number (Sam, 25 Sep),
