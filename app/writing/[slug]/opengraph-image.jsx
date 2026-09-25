@@ -1,5 +1,5 @@
 import dispatches from '@/data/dispatches.json';
-import { renderCard, OG_SIZE } from '@/lib/og-card';
+import { renderFieldNotes, OG_SIZE } from '@/lib/og-card';
 import { isDue } from '@/lib/writing';
 
 // Generated link-preview card for posts without a photo (R-A-D). Served at
@@ -21,5 +21,5 @@ export function generateStaticParams() {
 }
 
 export default async function Image({ params }) {
-  return renderCard(dispatches.find((x) => x.slug === params.slug));
+  return renderFieldNotes(dispatches.find((x) => x.slug === params.slug));
 }

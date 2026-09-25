@@ -350,6 +350,26 @@ recorded so nobody later mistakes the dates for the real publishing history.
 
 The series agent works from `RAD-PROMPT-PACK`, which lives outside this repo. **v1.8, 22 Sep 2026,** is aligned with the site as built: Writing not R-A-D, one running number and no episode numbers, no blog covers and a required `stamp`, site batches live on arrival, LinkedIn cuts as their own export, every booking link to `/speaking`, the live record schema, plus journalist requests (Qwoted, Featured.com) and the monthly bureau packet. When a site decision changes any of those, update the pack in the same batch, or the next export arrives in the old shape.
 
+### New share card, 25 September 2026
+
+Every series post's link preview is now the **cream card** Sam chose from her own reference:
+SAM RAD on the header line with a rule to a compass star; the question in **Anton**, heavy
+and condensed, sitting on the wave band, with the `stamp` word in mint type; a grid, a wave
+bundle crossing at one point, and a mint orbit with a rising arrow; the footer "CHANGE HAS A
+PATTERN | Rethink. Anticipate. Disrupt." It replaces the ink card with the mint block.
+
+- `lib/og-card.jsx` `renderFieldNotes()`; the route `app/writing/[slug]/opengraph-image.jsx`
+  calls it. The old `renderCard()` stays in the file, unused, as a fallback.
+- The fixed parts are one image, `lib/og/field-notes-bg.png`, drawn once. Change the art
+  there; the text layer is generated per post.
+- `lib/fonts/Anton-Regular.ttf` (SIL Open Font License, `Anton-OFL.txt`), taken from the
+  `@fontsource/anton` package. Used on the cards only; the site itself stays Bebas.
+- Question size steps down with length so four lines still clear the waves; the block is
+  bottom-aligned, so short questions sit low, on the band.
+- Decided and removed along the way: a "Field Notes" label and the post number (Sam, 25 Sep),
+  and a thin ink frame (tested in a mocked LinkedIn feed, added nothing).
+- Links already shared keep their old card on LinkedIn until run through Post Inspector.
+
 ### Share previews, checked live 25 September 2026
 
 Sam asked whether the social previews were broken. On the live site they are not: each series
