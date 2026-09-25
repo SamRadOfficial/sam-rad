@@ -154,3 +154,15 @@ export async function renderFieldNotes(d, { display = 'anton', showNumber = true
     { ...OG_SIZE, fonts },
   );
 }
+
+// The card's public URL, versioned. The card is served with "immutable, max-age one year", so
+// LinkedIn keeps the first image it fetched for a URL and ignores later changes, even after
+// Post Inspector (found 25 Sep 2026, when redesigned cards kept showing the old one). The
+// version is a short hash of everything that changes the picture: the design version below,
+// the question, the stamp word. Bump CARD_DESIGN whenever the card's look changes.
+import { createHash } from 'node:crypto';
+export const CARD_DESIGN = '2026-09-25-cream-2';
+export const cardUrl = (d) => {
+  const v = createHash('sha1').update([CARD_DESIGN, d.title, d.stamp || ''].join('|')).digest('hex').slice(0, 10);
+  return `/writing/${d.slug}/opengraph-image?v=${v}`;
+};

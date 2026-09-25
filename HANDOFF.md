@@ -378,7 +378,14 @@ PATTERN | sam-rad.com" It replaces the ink card with the mint block.
   sits on the wave band.
 - Decided and removed along the way: a "Field Notes" label and the post number (Sam, 25 Sep),
   and a thin ink frame (tested in a mocked LinkedIn feed, added nothing).
-- Links already shared keep their old card on LinkedIn until run through Post Inspector.
+- **The card URL is versioned** (`cardUrl()` in `lib/og-card.jsx`, used for `og:image`,
+  `twitter:image` and the schema image): `/writing/<slug>/opengraph-image?v=<hash>`. Cards are
+  served "immutable, max-age one year", so LinkedIn kept the first image it saw at a URL and
+  showed the old card even after Post Inspector (25 Sep 2026, after two redesigns). The hash
+  covers `CARD_DESIGN`, the question and the stamp, so a new design or a retitled post gets a
+  new URL. **Bump `CARD_DESIGN` whenever the card's look changes.**
+- Links already shared keep their old card on LinkedIn until run through Post Inspector, and
+  only a changed image URL makes Post Inspector fetch the new picture.
 
 ### Share previews, checked live 25 September 2026
 

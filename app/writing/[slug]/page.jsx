@@ -9,6 +9,7 @@ import dispatches from '@/data/dispatches.json';
 import { meta, SITE } from '@/lib/site';
 import { seriesOf, numberLabel, fmtDate } from '@/lib/series';
 import { isDue, isPublished } from '@/lib/writing';
+import { cardUrl } from '@/lib/og-card';
 
 export function generateStaticParams() {
   return dispatches.filter(isDue).map((d) => ({ slug: d.slug }));
@@ -31,7 +32,7 @@ export function generateMetadata({ params }) {
     // Posts without a photo get the generated card beside this file. It has to be
     // named here: the file convention alone loses to this config (see
     // opengraph-image.jsx).
-    image: d.image ? `/images/${d.image}` : `/writing/${d.slug}/opengraph-image`,
+    image: d.image ? `/images/${d.image}` : cardUrl(d),
     imageType: d.image ? 'image/jpeg' : 'image/png',
     imageSize: d.image ? undefined : { width: 1200, height: 630 },
     imageAlt: d.imageAlt || d.title,
@@ -59,7 +60,7 @@ export default function Dispatch({ params }) {
     publisher: { '@id': `${SITE.url}/#person` },
     datePublished: d.date,
     dateModified: d.lastUpdated || d.date,
-    image: d.image ? `${SITE.url}/images/${d.image}` : `${SITE.url}/writing/${d.slug}/opengraph-image`,
+    image: d.image ? `${SITE.url}/images/${d.image}` : `${SITE.url}${cardUrl(d)}`,
     articleSection: d.industry,
     isPartOf: { '@type': 'Blog', name: 'Writing', url: `${SITE.url}/writing` },
     ...(s.key !== 'dispatch' ? { genre: s.name } : {}),
