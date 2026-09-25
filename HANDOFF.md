@@ -350,6 +350,23 @@ recorded so nobody later mistakes the dates for the real publishing history.
 
 The series agent works from `RAD-PROMPT-PACK`, which lives outside this repo. **v1.8, 22 Sep 2026,** is aligned with the site as built: Writing not R-A-D, one running number and no episode numbers, no blog covers and a required `stamp`, site batches live on arrival, LinkedIn cuts as their own export, every booking link to `/speaking`, the live record schema, plus journalist requests (Qwoted, Featured.com) and the monthly bureau packet. When a site decision changes any of those, update the pack in the same batch, or the next export arrives in the old shape.
 
+### Share previews, checked live 25 September 2026
+
+Sam asked whether the social previews were broken. On the live site they are not: each series
+post carries `og:type` article, a `summary_large_image` Twitter card, and `og:image` pointing
+at its generated card (absolute URL, 1200 by 630, PNG), and the card URL serves an image.
+**Where previews go wrong is LinkedIn's cache.** LinkedIn builds a link's preview the first
+time it sees the URL and keeps it. A post composed or scheduled before its page went live
+(the daily job reveals it about 7:30 a.m. Eastern) caches a blank card. Fix per link:
+LinkedIn Post Inspector, paste the URL, Inspect, which refetches. Rule: compose LinkedIn
+posts only after the morning's page loads.
+
+What was genuinely weak, and fixed: 20 series posts had share descriptions shorter than 110
+characters (the batch export's `metaDescription` was often just the deck's first sentence,
+"You don't.") or longer than 160. Each now takes the deck's opening sentences up to 160,
+cut at a word with an ellipsis where needed. `check:writing` now warns on any series post
+outside 110 to 160. Three legacy dispatches remain short; their decks are short.
+
 ### Series renamed: R-A-D became "Change Has a Pattern with Sam Rad", 25 September 2026
 
 Sam's call. Display layer only: the records keep `series: "rad"`, and URLs, slugs, numbers,

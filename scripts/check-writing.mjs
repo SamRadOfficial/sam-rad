@@ -29,6 +29,10 @@ for (const x of d) {
   if (JSON.stringify(x).includes('\u2014')) { if (x.series === 'rad') errs.push(`${x.slug}: em dash`); }
 }
 
+// Warn, not fail: a series post whose share and search description is outside 110 to 160
+// characters previews badly on LinkedIn and gets cut by Google (25 Sep 2026).
+const shortDesc = d.filter((x) => x.series === 'rad' && !x.archived).filter((x) => { const n = (x.metaDescription || x.deck).length; return n < 110 || n > 160; });
+if (shortDesc.length) console.warn(`note: ${shortDesc.length} series post(s) with a description outside 110 to 160 characters: ` + shortDesc.map((x) => 'Nº ' + x.number).join(', '));
 const future = d.filter((x) => x.date > new Date().toISOString().slice(0, 10));
 if (errs.length) { console.error(`writing check FAILED, ${errs.length} problem(s):\n  ` + errs.join('\n  ')); process.exit(1); }
 console.log(`writing ok: ${d.length} records, Nº ${numbered[0].number} to ${numbered.at(-1).number} unbroken, ${future.length} scheduled`);
