@@ -24,7 +24,7 @@ const FORBES_PICKS = [
 
 export const metadata = meta({
   title: 'Writing | Questions on change and technology',
-  description: 'R-A-D: one pressing question about the future, answered, every weekday. Plus essays on change, technology, and what it means to be human, going back a decade.',
+  description: 'The most pressing and provocative questions shaping our future (and present), one answered every weekday, plus essays on change and technology.',
   path: '/writing',
   image: '/images/cta-audience.jpg',
   imageAlt: 'Sam Rad keynoting to a seated audience in Bangkok',

@@ -350,6 +350,22 @@ recorded so nobody later mistakes the dates for the real publishing history.
 
 The series agent works from `RAD-PROMPT-PACK`, which lives outside this repo. **v1.8, 22 Sep 2026,** is aligned with the site as built: Writing not R-A-D, one running number and no episode numbers, no blog covers and a required `stamp`, site batches live on arrival, LinkedIn cuts as their own export, every booking link to `/speaking`, the live record schema, plus journalist requests (Qwoted, Featured.com) and the monthly bureau packet. When a site decision changes any of those, update the pack in the same batch, or the next export arrives in the old shape.
 
+### Series renamed: R-A-D became "Change Has a Pattern with Sam Rad", 25 September 2026
+
+Sam's call. Display layer only: the records keep `series: "rad"`, and URLs, slugs, numbers,
+dates and post text are untouched. Why: "R-A-D" had no search value and two competing
+expansions, while "Change Has a Pattern" is already the keynote, the homepage headline and
+the field guide, so every post now reinforces what planners can book; "with Sam Rad" keeps
+her name in it for longevity. The tagline "Rethink. Anticipate. Disrupt." existed to spell
+R-A-D and is retired; the description line carries the series.
+
+What changed: `lib/series.js` label "Change Has a Pattern" and name "Change Has a Pattern
+with Sam Rad"; the generated preview cards now read "Nº 0021 · CHANGE HAS A PATTERN"; the
+sidebar card on every series post; the `/writing` meta description; the Article schema
+`genre`. `/writing` itself was checked visibly identical: the label has not printed in
+lists since 22 Sep. **Outside the repo, still to follow:** the prompt pack (name, tagline,
+lockup), the podcast cover art, and the LinkedIn and YouTube images carrying the R-A-D mark.
+
 ### Schedule moved up, 23 September 2026 (Sam: "we are ready to go now")
 
 **Batches 02 and 03 go live one per weekday from Thursday 24 September**, Nº 0022 to 0068,

@@ -139,10 +139,10 @@ export default function Dispatch({ params }) {
               <aside className="side">
                 {s.key === 'rad' && (
                   <div className="side-card" style={{ marginBottom: 24 }}>
-                    <div className="h">R-A-D</div>
+                    <div className="h">Change Has a Pattern with Sam Rad</div>
                     <p>
-                      Research and Development with Sam Rad. One pressing question about the future,
-                      answered. <Link href="/writing">Read the series</Link>
+                      The most pressing and provocative questions shaping our future (and present),
+                      one answered every weekday. <Link href="/writing">Read the series</Link>
                     </p>
                   </div>
                 )}
